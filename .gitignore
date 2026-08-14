@@ -1,0 +1,4 @@
+.env
+/DAILY-SUMMARY.md
+.claude/settings.local.json
+*.DS_Store
