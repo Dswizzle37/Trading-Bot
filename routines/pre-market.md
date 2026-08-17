@@ -54,6 +54,15 @@ STEP 5 — Notification: silent unless urgent (held position already below -7% p
 
 STEP 6 — COMMIT AND PUSH (mandatory):
   bash scripts/gitpush.sh "pre-market research $DATE" memory/RESEARCH-LOG.md
-This script commits, pushes to main using GH_TOKEN, and auto-rebases on conflict.
-Do NOT use plain `git push` — Claude's GitHub App integration 403s on writes.
-Do NOT create a branch; the script pushes straight to main. Never force-push.
+CRITICAL — use ONLY this script to persist work. Do NOT run `git push` yourself,
+and do NOT push to your assigned claude/* branch and stop there.
+
+This bot's memory lives on main: every run clones main and reads its state from
+those files. A commit left on a side branch is invisible to the next run and is
+effectively lost. The script handles this — it pushes to main when permitted,
+and otherwise pushes your branch and merges it into main via the GitHub API.
+It rebases on conflict, exits cleanly when there is nothing to commit, and
+ignores paths that do not exist. Never force-push.
+
+If the script exits non-zero, the work did NOT reach main — report that plainly
+in your notification rather than treating the run as successful.
