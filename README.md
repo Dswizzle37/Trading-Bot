@@ -50,7 +50,7 @@ For each of the 5 workflows (repeat 5 times):
 4. Add environment variables: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`, `ALPACA_DATA_ENDPOINT`, `PERPLEXITY_API_KEY`, `PERPLEXITY_MODEL`, `RESEND_API_KEY`, `NOTIFY_FROM`, `NOTIFY_TO`, `GH_TOKEN`, `GH_REPO` — set these directly in the routine's UI, never in a committed file.
 5. Toggle on "Allow unrestricted branch pushes".
 6. Set the cron schedule + timezone from the table in `routines/README.md`.
-7. Paste the prompt from the matching `routines/*.md` file verbatim (everything between the `---` markers).
+7. Paste the **entire content** of the matching `routines/*.md` file verbatim — the whole file *is* the prompt now, nothing to trim.
 8. Save, then click **"Run now"** once to test — don't wait until the next scheduled fire to find out something's broken.
 9. Check the run logs: confirm the memory file was written, committed, and pushed.
 
