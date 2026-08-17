@@ -28,4 +28,4 @@ STEP 5 — Thesis check. If a thesis broke intraday, cut the position even if no
 STEP 6 — Optional intraday research via Perplexity if something is moving sharply with no obvious cause. Append afternoon addendum to RESEARCH-LOG.
 
 STEP 7 — Notification: only if action was taken.
-  bash scripts/gmail.sh "<action summary>"
+  bash scripts/notify.sh "<action summary>"

@@ -32,7 +32,7 @@ Defined in `.claude/commands/` (local) and `routines/` (cloud). Five scheduled r
 
 ## API Wrappers
 
-Use `bash scripts/alpaca.sh`, `scripts/perplexity.sh`, `scripts/gmail.sh`. Never curl these APIs directly.
+Use `bash scripts/alpaca.sh`, `scripts/perplexity.sh`, `scripts/notify.sh`. Never curl these APIs directly.
 
 ## Account Mode
 

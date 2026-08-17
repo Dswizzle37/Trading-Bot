@@ -27,7 +27,7 @@ STEP 4 — Append EOD snapshot to memory/TRADE-LOG.md:
 **Notes:** one-paragraph plain-english summary.
 
 STEP 5 — Send ONE email (always, even on no-trade days). <= 15 lines:
-  bash scripts/gmail.sh "EOD MMM DD
+  bash scripts/notify.sh "EOD MMM DD
   Portfolio: \$X (±X% day, ±X% phase)
   Cash: \$X
   Trades today: <list or none>
