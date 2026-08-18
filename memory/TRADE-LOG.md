@@ -32,3 +32,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 - **Target:** ~$76.27 | **R:R:** 2:1 (tail-dependent — see risk note)
 - Gate checks passed: 2 positions ≤ 6, 19.1% ≤ 20% size cap, catalyst documented in today's RESEARCH-LOG, daytrade count 0 (PDT room clear). Trade 2/3 for the week.
 - **Risk note:** entry is at the top of the 52-week range ($42.28-$63.46) after ~+40% YTD, and the driver is a geopolitical risk premium that can mean-revert violently on a de-escalation headline. The 10% trail, not the $76 target, is what caps the downside. Chose XLE over CVX/XOM (both quoting ~$14 spreads, untradeable) and over COP (clean quote but no company-specific catalyst to justify single-name risk at this size).
+
+### Aug 18 — EOD Snapshot (Day 2, Tuesday)
+**Portfolio:** $99,647.95 | **Cash:** $66,025.46 (66.3%) | **Day P&L:** -$464.41 (-0.46%) | **Phase P&L:** -$352.05 (-0.35%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.88 | $219.89 | -2.28% | -$395.44 | $205.13 (10% trail) |
+| XLE | 300 | $63.56 | $63.70 | +1.79% | +$43.40 | $57.34 (10% trail) |
+
+**Notes:** Added XLE today (energy sector-momentum leader, Iran-crude catalyst) — 2/6 positions, 2/3 trades used this week. NVDA pulled back -2.3% on the day but remains well inside its 10% trail; XLE opened green on the same crude-spike thesis. Cash 66.3% vs. 75-85% target — room to add on a qualified catalyst, capped at 1 more trade this week.
