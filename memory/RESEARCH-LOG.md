@@ -65,3 +65,40 @@ TRADE or HOLD (default HOLD if no edge)
 
 ### Decision
 HOLD — NVDA position and stop are fine as-is. No new trade meets the full entry checklist (confirmed catalyst + momentum + clean price read) pre-market. Energy/SNDK are on watch for a same-day or next-day setup if the open confirms cleaner pricing and a specific catalyst.
+
+## 2026-08-18 — Pre-market Research (run inline at market open)
+
+### Account
+- Equity: $99,672.78
+- Cash: $85,092.06 (85.4%)
+- Buying power: $381,194.26 (margin-inflated; effective non-marginable BP $92,382.42)
+- Position market value: $14,580.72 (14.6% deployed — far under 75-85% target)
+- Daytrade count: 0 (Alpaca omitted the field; order history confirms zero sells ever executed)
+- Open position: NVDA 66 sh @ $225.88 avg, ~$220.88, unrealized -$330 (-2.21%). Above the -7% cut line. Trailing 10% GTC stop live at $205.13 (hwm $227.92). No action.
+
+### Market Context
+- WTI: ~$85/bbl | Brent: ~$91/bbl — up from ~$82-83 / ~$88-89 yesterday. Multi-week highs.
+- S&P 500 futures: ~7,795 (-0.13%); index ~7,775. Futures pressured by oil-driven inflation worry.
+- VIX: ~15.2-16.0 (up ~5-6% but still a low-vol regime).
+- Today's catalysts: **US-Iran escalation is the dominant driver** — reporting that ceasefire talks collapsed and Iran shifted to a fully offensive posture, pushing crude to multi-week highs and reviving inflation concerns. Import/Export Price Indexes are the main scheduled macro release.
+- Earnings before open: Home Depot (HD), Baidu (BIDU), Hesai (HSAI), Dycom (DY). None held.
+- Economic calendar: Import/Export Price Indexes today. FOMC Minutes Wed 8/19 2pm ET.
+- Sector momentum: **Energy is the MTD leader (+9.34% as of 8/14)**, Info Tech and Comm Services also strong. Energy is the freshest signal — the Hormuz risk premium strengthened overnight rather than fading.
+- NVDA-specific: weakness attributed to rising long-term yields pressuring high-multiple AI names plus continued scrutiny of the up-to-$105B OpenAI/Ohio data-center guarantee ("circular financing" concern). No operational problem. Next real catalyst is Aug 26 earnings.
+- Quote quality (at 9:37 ET, market open): XLE $63.45/$63.46 (1c spread, 600x2300 size) and COP $128.64/$128.83 quote cleanly. CVX ($194.46/$208.00) and XOM ($155.80/$170.00) still show ~$14 spreads — untradeable read, same defect as yesterday. SNDK $1,635/$1,694 ($59 spread, 3.6%) — still no clean read, and no confirmed same-day catalyst.
+
+### Trade Ideas
+1. **XLE — TAKEN.** Catalyst: US-Iran ceasefire collapse driving crude to multi-week highs (WTI $82→$85, Brent $88→$91 overnight); Energy is the S&P MTD sector-momentum leader (+9.34%). This is yesterday's documented idea #1, whose stated trigger — "clean price read at the open + specific catalyst" — fired on both conditions today. Entry $63.5553, stop 10% trail ($57.20), target ~$76.27, R:R 2:1.
+2. **COP** — clean quote, higher beta to crude than XLE, but the catalyst is macro/sector-wide with no company-specific driver. XLE is the better expression of a macro sector thesis at 20% position size; single-name idiosyncratic risk isn't compensated here. Not taken.
+3. **SNDK** — carried over from yesterday's watchlist. Still fails the entry checklist: no clean price read (3.6% spread) and no confirmed catalyst today. Not taken. Dropping from the active watchlist unless a specific catalyst appears.
+
+### Risk Factors
+- **Entry is at the 52-week high.** XLE's 52-week range is $42.28-$63.46 and the fill was $63.5553 — a breakout entry at the top of the range after ~+40% YTD. Momentum-positive, but no overhead reference to lean on.
+- **The thesis is a geopolitical risk premium, and those mean-revert violently.** A de-escalation or ceasefire-restored headline could gap XLE down 5-8% with no warning. The 10% trail is the designed protection; the -7% manual cut rule is the earlier line.
+- The 2:1 target ($76.27) requires a further ~20% extension to all-time highs. That is tail-dependent on genuine Hormuz supply disruption (the chokepoint carries ~20% of seaborne oil), not a base case. The trailing stop — not the target — is what makes the trade work.
+- Portfolio now correlated to the inflation trade in two directions: Energy long benefits from higher oil, NVDA is pressured by the higher yields that same oil is driving. Partial natural hedge, but also means a single macro reversal moves both.
+- NVDA into Aug 26 earnings — event risk held through, per plan.
+- Trades this week now 2/3. One slot left through Friday.
+
+### Decision
+TRADE — bought XLE 300 sh @ $63.5553 (19.1% of equity). Executed the documented watch plan from 8/17 when its trigger fired. NVDA held, stop unchanged. Deployment improved 14.6% → 33.8%, still under the 75-85% target; not forcing the gap closed with the one remaining weekly slot.
