@@ -32,3 +32,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 - **Target:** ~$76.27 | **R:R:** 2:1 (tail-dependent — see risk note)
 - Gate checks passed: 2 positions ≤ 6, 19.1% ≤ 20% size cap, catalyst documented in today's RESEARCH-LOG, daytrade count 0 (PDT room clear). Trade 2/3 for the week.
 - **Risk note:** entry is at the top of the 52-week range ($42.28-$63.46) after ~+40% YTD, and the driver is a geopolitical risk premium that can mean-revert violently on a de-escalation headline. The 10% trail, not the $76 target, is what caps the downside. Chose XLE over CVX/XOM (both quoting ~$14 spreads, untradeable) and over COP (clean quote but no company-specific catalyst to justify single-name risk at this size).
+
+### Aug 19 — EOD Snapshot (Day 3, Wednesday)
+**Portfolio:** $99,444.01 | **Cash:** $66,025.45 (66%) | **Day P&L:** -$188.28 (-0.19%) | **Phase P&L:** -$555.99 (-0.56%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.88 | $217.66 | -0.95% | -$542.37 (-3.64%) | $205.13 (10% trail, hwm $227.92) |
+| XLE | 300 | $63.5553 | $63.51 | -0.27% | -$13.60 (-0.07%) | $57.83 (10% trail, hwm $64.25) |
+
+**Notes:** No trades today — third weekly slot (2/3 used) held per the market-open research call: XLV's momentum thesis disconfirmed, XOP/OIH rejected on energy concentration, ADI thesis strong but spread untradeable post-earnings. Both positions inside the -7% cut line, both stops >3% from price, no stop moved. Deployment 33.8%, still below the 75-85% target — third session running. Day P&L uses Alpaca's `last_equity` ($99,632.29) since no 8/18 EOD snapshot was logged that day; underlying trades and positions are unaffected.
