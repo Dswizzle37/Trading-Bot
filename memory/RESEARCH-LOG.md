@@ -102,3 +102,47 @@ HOLD — NVDA position and stop are fine as-is. No new trade meets the full entr
 
 ### Decision
 TRADE — bought XLE 300 sh @ $63.5553 (19.1% of equity). Executed the documented watch plan from 8/17 when its trigger fired. NVDA held, stop unchanged. Deployment improved 14.6% → 33.8%, still under the 75-85% target; not forcing the gap closed with the one remaining weekly slot.
+
+## 2026-08-19 — Pre-market Research
+
+### Account
+- Equity: $99,782.41 (prior close $99,632.29, +$150.12)
+- Cash: $66,025.45 (66.2%)
+- Buying power: $358,621.29 (margin-inflated; effective non-marginable BP $82,903.93)
+- Position market value: $33,756.96 (33.8% deployed — under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field again; no sell has ever filled)
+- Open positions:
+  - NVDA 66 sh @ $225.8777 avg, $220.56 last, unrealized **-$350.97 (-2.35%)**. Above the -7% cut line. 10% trailing GTC stop live at **$205.128** (hwm $227.92) = 7.0% below last. No action.
+  - XLE 300 sh @ $63.5553 avg, $64.00 last, unrealized **+$133.40 (+0.70%)**. 10% trailing GTC stop live at **$57.339** (hwm $63.71) = 10.4% below last. No action.
+- Neither position is near a trail-tightening trigger (+15% / +20%). Both stops >3% from price. No stop moved.
+
+### Market Context
+- WTI: ~$85.86-86.05 (+1.1-1.3%) | Brent: ~$91.89-92.06 (+1.0-1.1%) — a **third consecutive up day**, extending from ~$85 / ~$91 yesterday. Hormuz/US-Iran risk premium still the stated driver; no de-escalation headline found.
+- S&P 500 futures: ESU26 ~7,715-7,732 — **below** yesterday's ~7,795 read. Mild risk-off tilt into the open.
+- VIX: ~15.7-15.9. Grinding up but still a low-vol regime.
+- Today's catalysts: **FOMC Minutes 2:00 PM ET** (confirmed across sources) — the day's dominant scheduled event, and the one that moves the long-end yields currently pressuring NVDA. **EIA crude oil inventories ~10:30 AM ET** — direct same-day catalyst for the XLE position. MBA mortgage applications.
+- Earnings before open: **TGT, LOW, TJX, ADI, EL** plus WB, ZIM, VIK, YMM, OPRA, KC. **None held.** ADI is the semi read-through to watch for NVDA sentiment; TGT/LOW/TJX give the consumer-retail read.
+- Economic calendar note: Perplexity returned July CPI as *both* released today and released 8/12, and our own 8/17 entry logged it at 8:30 ET on 8/17. Treating CPI as **already released** — the only confirmed macro prints today are FOMC Minutes and EIA inventories.
+- Sector momentum: **Energy still the August MTD leader (+9.34% as of 8/14)**, Info Tech +5.90% MTD, Health Care +3.61% MTD. Caveat: the freshest weekly table available shows Energy *negative* week-to-date (-3.56%) while Info Tech led that week — so the Energy leadership number is dated and MTD-driven, not confirmed this week. Narrative across sources is rotation out of crowded AI into **energy and healthcare**.
+- NVDA-specific: closed 8/18 at $219.74, **-2.34%**. Drivers cited: broad semiconductor pullback, higher Treasury yields compressing high-multiple AI names, fresh AMD AI-roadmap competition chatter, and continued scrutiny of the OpenAI financing commitment. No operational problem. **Earnings Aug 26 after the close** — consensus ~$91.9B revenue / $2.08 EPS; cited history is -2.79% average next-day move.
+- XLE-specific: closed 8/18 at **$63.68, +1.76%**, a fresh 52-week high (range $42.28-$63.71). ~+40% YTD. Position is working as thesised; oil extended again overnight.
+- **Data quality — third day running:** Alpaca's quote feed returned yesterday's 4:00 PM ET close stubs for every symbol checked (NVDA 9.65% spread, XLE 6.00%, XLV 5.24%, XOP 5.42%, OIH 7.52%, COP 10.57%), all timestamped 2026-08-18T20:00. Only XLK quoted cleanly (0.20%, 20:59). The historical bars endpoint returns empty. **No clean pre-market price read is available for any candidate** — no entry can be sized responsibly before the open.
+
+### Trade Ideas
+1. **XLV / Health Care** — catalyst: the second-freshest rotation signal behind energy (defensive bid + GLP-1/pharma growth, led by LLY and UNH), +3.61% MTD, and it diversifies away from the single macro thesis the book is currently expressing. Blocked on price: 5.24% spread, stale stub quote, and no *same-day* company catalyst. If entered at a confirmed open print, structure would be ~$165-170 entry, 10% trail, 2:1 target — **not entering pre-market**. Best candidate for the remaining weekly slot if the open confirms.
+2. **XOP / OIH — explicitly rejected, not just deferred.** Higher-beta expressions of an oil move already working, with EIA inventories at 10:30 ET as a specific same-day catalyst. But the book already carries 19.2% in XLE on exactly this thesis; adding a second energy sleeve doubles down on one geopolitical premium that mean-reverts violently. Concentration, not price, is the disqualifier here.
+3. **ADI** — reports before the open today; semis read-through to NVDA. A post-earnings entry requires the printed number *and* the reaction, neither of which exists yet, and the pre-market book is unreadable. No action; revisit only if the reaction is clean and a stop can be placed.
+
+### Risk Factors
+- **FOMC Minutes 2:00 PM ET is a binary macro event.** It moves the long-end yields that are the direct pressure on NVDA. Opening a new position into it, in a low-vol tape, is bad timing regardless of the idea's merit.
+- **NVDA earnings 8/26 held through, by plan.** Cited history: -2.79% average day-after move. The 10% trail at $205.128 is the only protection and sits 7.0% below last — an earnings gap can clear it.
+- **The book is two sides of one macro trade.** Oil up lifts XLE; the same oil-driven yield pressure hits NVDA. Partial natural hedge, but a single macro reversal moves both, and in the bad direction it moves both against us.
+- **XLE sits at its 52-week high** on a geopolitical risk premium. A ceasefire or de-escalation headline gaps it down 5-8% with no warning.
+- **EIA inventories 10:30 ET cuts both ways** — a bearish build could knock the oil trade the same morning.
+- **Energy's leadership is dated.** The +9.34% MTD figure is as of 8/14 and the most recent weekly read was negative. Do not treat energy momentum as confirmed this week.
+- **Stale quote feed, third consecutive session.** Do not size anything from pre-market prints; re-check at/after 9:30 ET.
+- Trades this week: **2/3 used.** One slot left through Friday.
+- Deployment 33.8% vs the 75-85% target — a real gap, no rule violation. Strategy explicitly prefers patience to forcing it closed with the last slot.
+
+### Decision
+**HOLD.** No new position. Nothing clears the entry checklist pre-market: no candidate has a readable price, the one genuinely fresh sector signal (healthcare) has no same-day catalyst, and the strongest same-day catalyst (energy/EIA) points at a thesis the book is already 19.2% long. Both stops are correctly placed, both positions are inside their risk lines, no stop is moved. The final weekly slot is deliberately held — spending it pre-FOMC-minutes on a stale quote is exactly the trade the rulebook says not to make. Re-evaluate at the open and after 2:00 PM ET.
