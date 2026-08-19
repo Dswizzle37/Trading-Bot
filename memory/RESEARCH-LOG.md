@@ -172,3 +172,23 @@ Position management, both unchanged and both correct:
 - No stop moved. Both >3% from price. Both are real GTC orders on the book.
 
 **Standing gap, third session running:** deployment **33.8%** vs the 75-85% target. No rule is violated — rule 8 caps new trades at 3/week and rule 11 prefers patience — but the gap is now persistent rather than incidental, and it is the single biggest drag on beating the benchmark. It closes only when a candidate actually clears the checklist. ADI post-settle is the nearest one. Flagging it rather than letting it pass unremarked again.
+
+### Midday Scan (1:08-1:15 PM ET)
+
+**Account:** Equity **$99,623.71** | Cash $66,025.45 | Long market value $33,598.26 | **Deployment 33.7%** | Day P&L **-$8.58 (-0.01%)**
+
+| Ticker | Shares | Entry | Last | Unrealized | Trail stop | Dist. to stop | Action |
+|---|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.878 | $219.110 | **-$446.65 (-3.00%)** | $205.128 (hwm $227.92) | 6.4% | none |
+| XLE | 300 | $63.555 | $63.795 | **+$71.90 (+0.38%)** | $57.825 (hwm $64.25) | 9.4% | none |
+
+- **Step 3 — cut losers:** neither position is at or past -7%. NVDA -3.00% is the worse of the two and still 4pp of room. No position closed.
+- **Step 4 — tighten trails:** no position is at +15% or +20%. NVDA needs $259.76, XLE needs $73.09. **No stop moved.** Both trailing GTC orders live and >3% from price (XLE's hwm ratcheted 63.96 -> 64.25 on its own, stop 57.564 -> 57.825, which is the trail working, not a manual move).
+- **Step 5 — thesis check: both intact.**
+  - *NVDA (AI-infra / tech momentum, earnings 8/26):* -0.29% today against a Nasdaq **+0.41%** — mild relative underperformance, no operational news, no fresh company-specific headline. Yesterday's semi-led selloff is not extending; the tape recovered. Not a broken thesis.
+  - *XLE (oil risk premium):* WTI ~$85.41 (+0.55%), holding the third-day gain. **No US-Iran de-escalation headline** — the single event that would break this thesis has not occurred. Caveat logged: today's EIA weekly report showed **crude inventories still building**, a bearish fundamental that crude is currently ignoring in favor of the geopolitical bid. Watch item, not an exit trigger.
+- **Tape:** S&P 500 ~7,734 (+0.56%), Nasdaq ~26,397 (+0.41%), VIX ~15.1 (**-4.5%**) — risk-on reversal of yesterday's close. Treasury yields retreating.
+- **ADI re-check (the standing item from the market-open pass): skip stands.** Sampled the book three times at 13:08 ET — bid 358.47 / ask 378.27, **5.38% spread, frozen and unchanged across all three samples**. It has not settled since the open; if anything the quote is stale rather than merely wide. A market order still fills anywhere in a 5%+ band, which breaks the stop math. Thesis is still good (beat-and-raise, Info Tech momentum); execution is still impossible. Re-check tomorrow.
+- **FOMC Minutes 2:00 PM ET, ~50 minutes out.** Per this morning's own risk note, opening a position into a binary macro event in a low-vol tape is bad timing on its own — that independently rules out any midday entry, ADI included.
+
+**Midday Decision: NO ACTION.** No position cut, no stop moved, no new position. Trades this week remain **2/3**, one slot open through Friday. Deployment gap (33.7% vs 75-85%) persists and is unchanged — flagged for the fourth session running; it closes only on a candidate that clears the checklist, and ADI remains the nearest one pending a tradeable spread.
