@@ -146,3 +146,29 @@ TRADE — bought XLE 300 sh @ $63.5553 (19.1% of equity). Executed the documente
 
 ### Decision
 **HOLD.** No new position. Nothing clears the entry checklist pre-market: no candidate has a readable price, the one genuinely fresh sector signal (healthcare) has no same-day catalyst, and the strongest same-day catalyst (energy/EIA) points at a thesis the book is already 19.2% long. Both stops are correctly placed, both positions are inside their risk lines, no stop is moved. The final weekly slot is deliberately held — spending it pre-FOMC-minutes on a stale quote is exactly the trade the rulebook says not to make. Re-evaluate at the open and after 2:00 PM ET.
+
+### Market-Open Re-evaluation (9:35-9:40 ET)
+
+- **Quote feed recovered.** After three stale sessions, live quotes are fresh (13:36-13:38Z) and tight: XLV 173.63/173.67 (0.02%), XLE 63.78/63.80 (0.03%), XLK 185.60/185.63 (0.02%), SPY 769.79/769.83, NVDA 220.00/221.03 (0.47%). The pre-market price blocker is gone — so each deferred idea was re-tested on thesis, not on data quality.
+- Tape: mild risk-off, Nasdaq down more than the S&P, VIX ~15.8-15.9. Brent $91.26 / WTI $84.37, still bid on Hormuz; **no de-escalation headline**. EIA 10:30 ET and FOMC Minutes 2:00 ET both confirmed.
+
+**Idea 1 — XLV: rejected, thesis disconfirmed (not deferred).** Price is now readable at $173.65, but the reason to own it got worse, not better:
+- No confirmed health-care catalyst on 8/19 — no FDA decision, readout, or M&A. Two independent queries returned "not confirmed."
+- **The momentum premise fails on fresh data.** S&P 500 Health Care index is **-0.90% over 5 days and -4.78% over 1 month** (as of 8/17-18), directly contradicting the +3.61% MTD figure this idea rested on. Rule 9 is *follow* sector momentum; that momentum is not there.
+- Rotation-into-healthcare has price commentary but **no fund-flow confirmation**.
+- Entry would be at/above the 52-week high (cited range top $170.30) with no catalyst — chasing the top of a range on a dated signal.
+- Fails entry checklist items 1 (catalyst) and 2 (sector momentum). **Skip.**
+
+**Idea 2 — XOP/OIH: rejection stands.** Quote is clean (XOP 185.45/186.03, 0.31%) and EIA at 10:30 is a genuine same-day catalyst, but price was never the disqualifier. The book is already 19.2% XLE on this exact geopolitical premium. Concentration, unchanged. **Skip.**
+
+**Idea 3 — ADI: thesis upgraded, execution blocked.** ADI **beat and raised**: revenue $4.02B vs ~$3.91B consensus, adj EPS $3.45 vs $3.34, and guided next quarter $4.2-4.4B / $3.71-4.01 EPS, both above Street. That is a real same-day catalyst in the sector with confirmed momentum (Info Tech). But the post-earnings book is untradeable — sampled three times over 10s: **4.04%, 4.04%, 9.78% spread** (bid 358.47, ask 373.25-395.34), oscillating. A market order into that fills anywhere in a 5-10% band, which destroys both the entry and the stop math. **Skip on execution, not on thesis** — the only candidate whose merit survived the open. Re-check at midday once the book settles; if the spread normalizes under ~0.5% and the reaction holds, this is the strongest use of the last weekly slot.
+
+### Market-Open Decision
+**HOLD — no new position.** Trades this week stay **2/3**, one slot open through Friday. The pre-market call was "re-evaluate at the open"; the open resolved the data problem and then disqualified the ideas on merit — XLV's momentum premise turned out to be false, XOP is still concentration, and ADI is right on thesis but cannot be sized against a 5-10% spread. Spending the last slot on any of those would be forcing it.
+
+Position management, both unchanged and both correct:
+- NVDA 66 @ $225.878, last $220.95, **-$325.23 (-2.18%)** — inside the -7% cut line. Trail GTC live at **$205.128** (hwm $227.92), 7.2% below last. No tightening trigger (+15% = $259.76). No action.
+- XLE 300 @ $63.555, last $63.815, **+$77.90 (+0.41%)**. Trail GTC live at **$57.564** (hwm $63.96), 9.8% below last. No tightening trigger (+15% = $73.09). No action.
+- No stop moved. Both >3% from price. Both are real GTC orders on the book.
+
+**Standing gap, third session running:** deployment **33.8%** vs the 75-85% target. No rule is violated — rule 8 caps new trades at 3/week and rule 11 prefers patience — but the gap is now persistent rather than incidental, and it is the single biggest drag on beating the benchmark. It closes only when a candidate actually clears the checklist. ADI post-settle is the nearest one. Flagging it rather than letting it pass unremarked again.
