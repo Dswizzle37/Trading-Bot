@@ -224,3 +224,32 @@ Position management, both unchanged and both correct:
 **But today is not yesterday.** MRK carries the first verified, company-specific, non-macro catalyst to appear since the account launched, in a sector the book has zero exposure to, at a size and structure that fit the rulebook. It goes to the open as a **documented watch plan with an explicit trigger and an explicit disqualifier** — the same mechanism that worked for XLE on 8/17→8/18, and with yesterday's ADI fade wired in as the thing that kills it.
 
 Position management, both unchanged and both correct: no stop moved, both >3% from price, both inside the -7% cut line, both real GTC orders on the book. NVDA flagged at 3.2% from its cut line into 8/26 earnings.
+
+### Market-Open Re-evaluation (9:36-9:41 ET)
+
+- **Quote feed fresh for the second session running** — timestamps 13:36-13:41Z, tight books on everything liquid: SPY 767.25/767.94 (0.09%), XLV 174.03/174.06 (0.02%), XLE 64.42/64.44 (0.03%), NVDA 218.00/219.64 (0.75%). The four-session stale-stub problem is genuinely gone; today's skip is on merit, not data.
+- Tape: SPY $767.60 vs. yesterday's $764.52 read — mildly firm, consistent with the +0.16/+0.48% futures print. Brent ~$91.7-91.9 / WTI ~$84.4, still bid.
+
+**Idea 1 — MRK: trigger fails on BOTH conditions. Skip. The premise was also wrong.**
+
+The pre-market entry structured this as a +9% gap happening *today*, off a "~$145 8/19 close," with a planned ~$158 entry. **That premise does not survive verification.** MRK's official 8/19 close was **$152.20** — the melanoma Phase 3 catalyst moved the stock **on 8/19**, and MRK closed the re-rating yesterday. There is no gap to buy this morning; the move is already in the price.
+
+- **Trigger 1 — spread <0.5%: FAIL.** MRK is frozen at **bid 142.40 / ask 151.70 = 6.32%**, sampled ~20 times across five minutes (13:36-13:41Z). It printed 1.18% once and reverted. This is MRK-specific, not the feed — XLV, SPY and XLE quote at 0.02-0.09% in the same calls. A market order into a 6.3% band fills anywhere across $9.30 of price, which destroys both the entry and the stop math.
+- **Trigger 2 — holding the gap, not fading: FAIL.** Mid $147.05 against the $152.20 close is **-3.4% on the day**. MRNA, the pure-play on the same news, is reported **down ~11.6%** after its +85-160% spike. The catalyst is one day old and the tape is giving it back.
+- **The explicit disqualifier fired exactly as written.** This morning's plan said: "ADI beat and raised on 8/19 and still closed -0.89%, giving back the entire pop. If MRK fades its gap the same way, skip." It is fading the same way, one day later in the cycle. Skip — and note the honest weakness flagged pre-market (health care -0.90% 5d / -4.78% 1mo) was never resolved; the single-name catalyst did not carry the sector, so entry checklist item 2 also still fails.
+- Research-quality note: Perplexity returned internally inconsistent reads on MRK today (one response gave a $152.20 close *and* "$149.82, down 10.84%" in the same answer). The close was confirmed on a second independent query; the intraday direction was taken from Alpaca's live book, not from the model. **Do not size from a single Perplexity intraday quote.**
+
+**Ideas 2-4 — ADI, XLF, XOP/OIH: rejections stand,** unchanged from pre-market. ADI dropped (beat-and-raise closed red — thesis rejected by the tape). XLF fails the 2:1 math at +6% YTD into a 52-week high. XOP/OIH is still concentration on a thesis the book is already 19.4% long.
+
+**XLE risk check:** no confirmed de-escalation headline today. The two-sided tape flagged pre-market persists — "Hormuz deal nearing completion" runs alongside Reuters reporting Iran on a fully offensive posture and the ceasefire not extended. Brent/WTI holding the premium despite Tuesday's bearish 4.4M-barrel build. Thesis intact, risk unchanged, no action.
+
+### Market-Open Decision
+
+**HOLD — no order placed.** Trades this week stay **2/3**, one slot open through Friday. The best idea in four sessions was killed by its own pre-written disqualifier, plus a factual correction that removed its entry premise entirely. Holding the last slot rather than buying the day-after fade of a catalyst that already played out is the rulebook working, not the rulebook failing.
+
+Position management — both unchanged, both correct, **no stop moved**:
+- NVDA 66 @ $225.8777, last $219.17, **-$442.71 (-2.97%)**, intraday **+$106.26**. Trail GTC live at **$205.128** (hwm $227.92) = 6.4% below last. Cut line $210.07 — gap **widened to 4.2%** from this morning's 3.2%. No tightening trigger (+15% = $259.76). Earnings **8/26 after the close**, 4 sessions out. Still the position to watch.
+- XLE 300 @ $63.5553, last $64.46, **+$271.40 (+1.42%)**, intraday **+$264.00**. Trail GTC live at **$58.05** (hwm $64.50, trailed up from $57.825) = 9.9% below last. No tightening trigger (+15% = $73.09).
+- Both stops >3% from price, both real GTC orders on the book, neither near the -7% cut.
+
+**Deployment 33.9%** vs the 75-85% target, fifth session. As quantified pre-market, this is now explicitly a **multi-week** gap: one slot left this week caps Friday's reachable maximum at ~49%. Not a rule violation (rule 8 caps trades, rule 11 prefers patience), but it is the standing drag on the benchmark and it closes only with next week's slots.
