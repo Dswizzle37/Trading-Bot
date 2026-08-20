@@ -172,3 +172,55 @@ Position management, both unchanged and both correct:
 - No stop moved. Both >3% from price. Both are real GTC orders on the book.
 
 **Standing gap, third session running:** deployment **33.8%** vs the 75-85% target. No rule is violated — rule 8 caps new trades at 3/week and rule 11 prefers patience — but the gap is now persistent rather than incidental, and it is the single biggest drag on beating the benchmark. It closes only when a candidate actually clears the checklist. ADI post-settle is the nearest one. Flagging it rather than letting it pass unremarked again.
+
+## 2026-08-20 — Pre-market Research
+
+### Account
+- Equity: $99,675.85 (prior close $99,458.41, +$217.44)
+- Cash: $66,025.45 (66.2%)
+- Buying power: $358,322.92 (margin-inflated; effective non-marginable BP $82,850.65)
+- Position market value: $33,650.40 (**33.8% deployed** — fourth session under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field again; no sell has ever filled)
+- Open positions:
+  - NVDA 66 sh @ $225.8777 avg, $216.90 mark, unrealized **-$592.53 (-3.98%)**. 10% trailing GTC live at **$205.128** (hwm $227.92) = 5.4% below mark. Above the -7% cut line ($210.07) but the gap has narrowed to **3.2%** — closest it has been. No action today; flagged.
+  - XLE 300 sh @ $63.5553 avg, $64.45 mark, unrealized **+$268.40 (+1.41%)**. 10% trailing GTC live at **$57.825** (hwm $64.25) = 10.3% below mark. No action.
+- Neither position is near a trail-tightening trigger (NVDA +15% = $259.76; XLE +15% = $73.09). Both stops >3% from price. No stop moved.
+
+### Market Context
+- **FOMC Minutes were released yesterday 8/19 2:00 PM ET, not today.** Reported reaction was **hawkish** — officials described as willing to hike if inflation does not cool. Single-source characterization, treat with caution, but it is the relevant new macro input and it points the wrong way for high-multiple NVDA.
+- Today's calendar: **Initial jobless claims 8:30 ET** (consensus ~210K, prior 209K; continuing 1.777M prior, ~1.808M consensus), **Philly Fed Manufacturing**, **Conference Board Leading Index 10:00 ET**, weekly energy data. No FOMC event today.
+- S&P 500 futures: ESU26 ~7,726-7,748, **+0.16% to +0.48%** — mildly firm, recovering from yesterday's soft read. Market shrugged off the hawkish minutes.
+- VIX: **15.13** intraday, prior close 14.89. Still a low-vol regime.
+- Oil: **WTI ~$84.9-86.7**, roughly flat to modestly up. **Brent ~$93.26-93.90 (+2.5%)** — Brent extended, WTI did not; the spread is widening, which is the shape of a *seaborne/chokepoint* premium rather than a broad supply shock.
+- **EIA crude inventories (wk ending 8/14): BUILD of 4.4M barrels.** Bearish fundamental print that oil absorbed without giving back the geopolitical premium.
+- Earnings before open: **WMT, BABA, DE, AAP, NTES** plus a second calendar listing DRI, SNX, AYI, CMC, WGO. **None held.** WMT is the consumer bellwether read.
+- Sector momentum: **Energy still the leader** — August MTD +12.5-12.6%, and trailing 6mo +21.3% / 12mo +41.7%, i.e. persistent rather than a one-week spike. **Financials second** (~+6.0-6.2% August), with a golden cross and bank stocks breaking to record highs. Info Tech leads on earnings momentum but not on weekly price.
+- **Data quality — fourth consecutive session.** Pre-market at 08:40 ET, Alpaca returned 8/19 20:00 close stubs for nearly everything: NVDA (ask 0.00), XLF 5.20%, XLK 6.12%, WMT (ask 0.00), DE (ask 0.00), MRK 9.58%, MRNA 7.23%, XLV (ask 0.00). Only **SPY quoted fresh** (764.52/764.60, 0.01%, 12:38Z) and XLE semi-fresh. **No candidate can be sized responsibly before the open.**
+
+### Trade Ideas
+1. **MRK — the strongest idea in four sessions. Documented watch plan for the open, not a pre-market entry.**
+   - **Catalyst (verified, two independent queries):** Merck/Moderna **Phase 3 INTerpath-001** of **intismeran autogene + Keytruda** met its primary endpoint (recurrence-free survival) and key secondary (distant metastasis-free survival) in completely resected stage IIB-IV melanoma. First positive Phase 3 for an individualized neoantigen therapy, and the first to beat Keytruda monotherapy in adjuvant melanoma. MRK **+9% premarket**; MRNA +85% (Reuters: up as much as 160%).
+   - **Why MRK and not MRNA:** MRNA at +85-160% is a vertical gap on a headline. A 10% trail behind that gets taken out on the first mean-reversion day — the definition of chasing. MRK's +9% is proportionate, liquid, and speaks to the company's single biggest overhang (Keytruda LOE); a validated franchise extension is a re-rating, not a spike.
+   - **Structure if the trigger fires:** entry ~$158 (8/19 close ~$145 +9%), ~90-95 sh ≈ **15% of equity**, 10% trailing GTC ≈ **$142**, target ~$190 (**2:1**). Note the stop sits *below the pre-gap close* — the entire catalyst move plus more must unwind before it trips. That is a sound structure, not a tight one.
+   - **Trigger (all must hold at/after 9:35 ET):** quote fresh and spread <0.5%; MRK **holding the gap**, not fading it.
+   - **Explicit disqualifier — yesterday's lesson.** ADI beat and raised on 8/19 and still **closed -0.89% at $373.26**, giving back the entire pop. If MRK fades its gap the same way, skip. A catalyst that the tape rejects is not a catalyst.
+   - **Honest weakness:** rule 9 wants sector momentum, and health care was **-0.90% 5d / -4.78% 1mo** as of 8/17-18. This news is plausibly the thing that turns that — MRK is a top-weight in XLV — but as of this morning the sector test is a *fail*, and the idea rests on the single-name catalyst carrying it.
+2. **ADI — dropped, not deferred.** Yesterday it was the one idea whose merit survived the open, held back only on a 4-10% post-earnings spread. The reaction has now resolved and it resolved *against* the thesis: beat, raise, **closed red**. The condition set yesterday was "spread normalizes **and** the reaction holds." Half of it failed. Off the list.
+3. **XLF / Financials — real momentum, fails on R:R.** Second-best August sector, golden cross, banks at record highs, net inflows, and a hawkish Fed is NIM-supportive — plus it is the one momentum sector the book has zero exposure to. But XLF is only **+6.0-6.5% YTD** and would be entered near its 52-week high of $58.41. A 10% trail demands a **+20% move to $70** for 2:1. Energy could carry that math on a +40% YTD trend; financials at +6% cannot. **Fails entry checklist item 4.** Skip.
+4. **XOP/OIH — rejection stands, and the case got worse.** Concentration was always the disqualifier (book already 19.4% XLE on one geopolitical premium). Now add: a bearish 4.4M-barrel EIA build, and de-escalation headlines appearing for the first time (below). Skip.
+
+### Risk Factors
+- **First de-escalation headlines on the XLE thesis.** "Iran says a Hormuz shipping deal is nearing completion," "Trump says the U.S. has total control over the Strait," "Iran may be losing its grip on Hormuz." These run alongside still-escalatory items (Iranian attacks on shipping continuing, Iran weighing strikes on U.S. targets in Europe), so the tape is two-sided — but the specific gap-risk named when XLE was bought is now **live and visible**, not hypothetical. The 10% trail at $57.825 is the protection.
+- **Oil absorbed a bearish inventory build without breaking.** Constructive for now, but it means the price is *entirely* premium, not fundamentals. Premium unwinds fast.
+- **NVDA is 3.2% from the -7% manual cut line** with earnings **8/26 after the close** (4 sessions away). Hawkish minutes pressure the exact multiple this position depends on. The trail at $205.128 is 5.4% below mark; an earnings gap can clear it in one print. This is the position to watch, not XLE.
+- **The book is still two sides of one macro trade.** Oil up lifts XLE; the oil-driven yield pressure hits NVDA. A single macro reversal moves both, and in the bad direction it moves both against us.
+- **Stale quote feed, fourth consecutive session.** Do not size anything from pre-market prints; re-check at/after 9:35 ET.
+- Trades this week: **2/3 used.** One slot, today and Friday.
+- **Deployment gap is structural, not incidental.** At 33.8% with one weekly slot left, the *maximum* reachable by Friday is ~49%. The 75-85% target cannot be met this week under rule 8 (3 new trades/week) regardless of what happens today. Closing it requires next week's slots too. Flagging it as a multi-week plan rather than a daily failure.
+
+### Decision
+**HOLD pre-market — no order placed before the open.** Nothing can be sized against a fourth straight session of stale stub quotes, and the two ideas that cleared on merit yesterday are now resolved: ADI's beat-and-raise closed red (thesis rejected by the tape), XLF fails the 2:1 math, XOP is still concentration.
+
+**But today is not yesterday.** MRK carries the first verified, company-specific, non-macro catalyst to appear since the account launched, in a sector the book has zero exposure to, at a size and structure that fit the rulebook. It goes to the open as a **documented watch plan with an explicit trigger and an explicit disqualifier** — the same mechanism that worked for XLE on 8/17→8/18, and with yesterday's ADI fade wired in as the thing that kills it.
+
+Position management, both unchanged and both correct: no stop moved, both >3% from price, both inside the -7% cut line, both real GTC orders on the book. NVDA flagged at 3.2% from its cut line into 8/26 earnings.
