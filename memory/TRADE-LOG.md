@@ -42,3 +42,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $63.51 | -0.27% | -$13.60 (-0.07%) | $57.83 (10% trail, hwm $64.25) |
 
 **Notes:** No trades today — third weekly slot (2/3 used) held per the market-open research call: XLV's momentum thesis disconfirmed, XOP/OIH rejected on energy concentration, ADI thesis strong but spread untradeable post-earnings. Both positions inside the -7% cut line, both stops >3% from price, no stop moved. Deployment 33.8%, still below the 75-85% target — third session running. Day P&L uses Alpaca's `last_equity` ($99,632.29) since no 8/18 EOD snapshot was logged that day; underlying trades and positions are unaffected.
+
+### Aug 20 — EOD Snapshot (Day 4, Thursday)
+**Portfolio:** $99,469.15 | **Cash:** $66,025.45 (66%) | **Day P&L:** +$10.74 (+0.01%) | **Phase P&L:** -$530.85 (-0.53%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.88 | $216.95 | -0.28% | -$589.23 (-3.95%) | $205.13 (10% trail, hwm $227.92) |
+| XLE | 300 | $63.5553 | $63.75 | +0.27% | +$58.40 (+0.31%) | $58.23 (10% trail, hwm $64.70) |
+
+**Notes:** Flat day — no trades, no fills, no position changes. NVDA gave back a little (-0.28%) and XLE ticked up (+0.27%), netting +$10.74 on the day. Both trailing stops are live GTC and untouched by the bot; XLE's trailed itself up to $58.23 on a $64.70 high-water mark, NVDA's still sits at $205.13. Both positions are inside the -7% manual-cut line (NVDA -3.95% is the one to watch, with earnings Aug 26) and both stops are more than 3% below price. Deployment 33.6% — fourth straight session well under the 75-85% target, which remains the standing gap in this book. Third weekly trade slot still open (2/3 used). Day P&L is measured against Alpaca's official prior close of $99,458.41; the logged 8/19 snapshot of $99,444.01 was captured before the settle, so log-to-log reads +$25.14.
