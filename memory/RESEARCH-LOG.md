@@ -253,3 +253,51 @@ Position management — both unchanged, both correct, **no stop moved**:
 - Both stops >3% from price, both real GTC orders on the book, neither near the -7% cut.
 
 **Deployment 33.9%** vs the 75-85% target, fifth session. As quantified pre-market, this is now explicitly a **multi-week** gap: one slot left this week caps Friday's reachable maximum at ~49%. Not a rule violation (rule 8 caps trades, rule 11 prefers patience), but it is the standing drag on the benchmark and it closes only with next week's slots.
+
+## 2026-08-21 — Pre-market Research
+
+### Account
+- Equity: $99,521.89 (prior close $99,462.55, +$59.34)
+- Cash: $66,025.45 (66.3%)
+- Buying power: $357,891.83 (margin-inflated; effective non-marginable BP $82,773.67)
+- Position market value: $33,496.44 (**33.7% deployed** — fifth consecutive session under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field; no sell has ever filled)
+- Open positions:
+  - NVDA 66 sh @ $225.8777 avg, $217.84 mark, unrealized **-$530.49 (-3.56%)**. 10% trailing GTC live at **$205.128** (hwm $227.92) = 5.8% below mark. Cut line $210.07 — gap **3.6%**. Earnings **Wed 8/26 after the close** (confirmed). No action; still the position to watch.
+  - XLE 300 sh @ $63.5553 avg, $63.73 mark, unrealized **+$52.40 (+0.28%)**. 10% trailing GTC live at **$58.23** (hwm $64.70) = 8.6% below mark. No action.
+- Neither position is near a trail-tightening trigger (NVDA +15% = $259.76; XLE +15% = $73.09). Both stops >3% from price. **No stop moved.**
+
+### Market Context
+- **Light macro calendar — the quietest day of the week.** Only confirmed US release is BLS State Employment & Unemployment 10:00 ET (non-market-moving). S&P Global flash Manufacturing/Services PMI 9:45 ET is the one item with any teeth. Schwab's own calendar note: "August 21: No major earnings or data expected." **No Fed speaker today.**
+- **Jackson Hole is NEXT Friday (8/28), not today** — Powell speaks 8/28. Corrects any assumption that this morning carries the symposium risk.
+- S&P 500 futures ~**7,667-7,668, flat to slightly lower**. VIX **14.89** — low-vol regime holding, unchanged from yesterday's prior close.
+- **Oil is up, not flat: WTI $86.8-88.3 (from ~$84.4 yesterday), Brent $93.6-93.8.** WTI closed the gap toward Brent this week — the premium broadened out of the pure seaborne/chokepoint shape flagged 8/20. Directly supportive of the XLE thesis.
+- **Iran/Hormuz: still deadlocked, no final deal.** Reuters: diplomacy stalled, Iran on a "fully offensive" posture, US will not extend the temporary ceasefire, tanker traffic and talks "ground to a halt." The conditional two-week ceasefire / shipping-corridor reporting remains **incomplete and conditional** — Iran ties reopening to ceasefire, blockade removal, compensation, sanctions relief. Two-sided tape persists but **no confirmed de-escalation**.
+- Sector momentum: **Energy still the clear leader and extending** — +9.6% 1mo, **+7.7% 1wk**, nearly +6% week-to-date through Thursday and leading again Friday. Tech +4.6% 1mo / +1.1% 1wk. Health care +5.7% 1mo / +1.0% 1wk. Financials +2.8% 1mo / +1.0% 1wk. Energy's lead is *widening*, not decaying.
+- **Data quality — stale quote feed returns (sixth of six sessions pre-market).** At 12:38Z only **SPY quoted fresh** (766.30/766.40, 0.01%, 12:38Z). Everything else returned 8/20 20:00 close stubs: XLE 5.30%, NVDA 9.55%, XLK 5.98%, XOP (ask 0.00), COP (ask 0.00). **No candidate can be sized responsibly before the open.** Position marks above come from the positions endpoint (last trade), which is unaffected.
+- **Research-quality warning — Perplexity returned fabricated content on the movers query.** It claimed "NVDA, LLY, AMZN, PFE reported Thursday evening" and "AMD beat Q3 FY2027 after hours Thursday." **NVDA reports 8/26, not 8/20** — verified independently. The named micro-cap gainers (RFAI +477%, HOWL +80%, etc.) are unverifiable from this feed and are sub-$1bn names outside the mandate regardless. **Nothing from that response was used.** This is the second consecutive session Perplexity produced an internally inconsistent market read; keep sizing off Alpaca's book, never off a single model quote.
+
+### Trade Ideas
+1. **No qualifying entry today. The third weekly slot goes unused.**
+   - The entry checklist needs a **specific catalyst**, and today has none: light calendar, no Fed, no held-ticker news, no verified single-name event. The one "catalyst-rich" research response was fabricated (above).
+   - Even a valid idea could not be sized — sixth straight pre-market with stale stubs on everything but SPY.
+2. **Energy add-on (XOP / COP / OIH) — rejection stands and is now structural, not tactical.** The sector read is the strongest it has been (+7.7% 1wk, lead widening, oil breaking higher), and this is the one place a catalyst genuinely exists. But the book is already **19.2% XLE on one geopolitical premium**. A second energy position would put ~35-38% of equity on a single Hormuz headline. Rule 3 caps *position* size at 20%; concentration of that shape defeats the intent of the rule even where the letter allows it. **Skip — and this rejection should be read as permanent while XLE is held, not re-litigated daily.**
+3. **NVDA pre-earnings add — explicitly rejected.** Street expects a beat-and-raise (rev ~$91.5-92.0bn, adj EPS ~$2.07-2.08, ~96% YoY; consensus Buy, avg target ~$304). The position is already open and **red**. Adding into a binary event four sessions out, on a position that is down, to average into a print — that is not a catalyst trade, it is a hope trade. Skip.
+4. **MRK — closed out as an idea.** Killed yesterday by its own pre-written disqualifier (faded the gap, 6.3% spread, entry premise factually wrong — the move happened 8/19). Health care momentum (+1.0% 1wk) never confirmed. Not revisited.
+
+### Risk Factors
+- **NVDA earnings Wed 8/26 after the close is the dominant risk in this book.** Position -3.56%, 3.6% from the -7% manual cut, trail 5.8% below mark. **A bad print gaps straight through both.** The trail is the only protection and a gap does not respect it. This is a known, accepted, sized risk (14.4% of equity) — not a reason to act today, but it is the single largest exposure the account carries into next week.
+- **XLE thesis is intact and strengthening today** (oil up, no de-escalation confirmed, sector lead widening) — which is precisely when the gap risk is highest. The entire move is risk premium, not fundamentals; a genuine Hormuz agreement unwinds it in one session. Trail at $58.23 (8.6% below) is the protection.
+- **Both sides of the book still ride one macro trade.** Oil up lifts XLE and pressures the multiple NVDA depends on. Correlated in the bad direction.
+- **Jackson Hole 8/28 lands two days after NVDA earnings.** Next week carries both events; this week carries neither. That asymmetry argues for entering next week with dry powder and slots available, which is the position this HOLD produces.
+- **Trades this week: 2/3, and today is Friday.** The third slot expires unused. **This is a choice, not an oversight** — see Decision.
+- **Deployment 33.7%, sixth session.** Confirms the multi-week framing from 8/19-8/20: the 75-85% target was mathematically unreachable this week under rule 8 regardless of today. Next week resets to 3 fresh slots; with NVDA earnings and Powell both landing, the realistic path is 2-3 adds in the back half of next week, not the front.
+
+### Decision
+**HOLD. No order placed. Third weekly trade slot expires unused.**
+
+Three independent reasons, any one of which is sufficient: (1) **no catalyst** — the calendar is empty and the only catalyst-shaped research came back fabricated; (2) **no priceable quote** — sixth straight pre-market where nothing but SPY is fresh; (3) **the best available idea is a concentration violation in spirit** — energy is the right sector and the book is already there.
+
+Burning the last slot on a Friday with an empty calendar, purely to close a deployment gap that cannot be closed this week anyway, would be activity for its own sake. Rule 11. The slot is worth more unused going into a week that carries NVDA earnings (8/26) and Powell at Jackson Hole (8/28) — where real catalysts, and real dislocations, will actually exist.
+
+Position management — both unchanged, both correct, **no stop moved**: NVDA and XLE both inside the -7% cut line, both stops >3% below price, both live GTC orders on the book, neither at a tightening trigger. NVDA flagged into 8/26.
