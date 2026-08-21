@@ -301,3 +301,24 @@ Three independent reasons, any one of which is sufficient: (1) **no catalyst** �
 Burning the last slot on a Friday with an empty calendar, purely to close a deployment gap that cannot be closed this week anyway, would be activity for its own sake. Rule 11. The slot is worth more unused going into a week that carries NVDA earnings (8/26) and Powell at Jackson Hole (8/28) — where real catalysts, and real dislocations, will actually exist.
 
 Position management — both unchanged, both correct, **no stop moved**: NVDA and XLE both inside the -7% cut line, both stops >3% below price, both live GTC orders on the book, neither at a tightening trigger. NVDA flagged into 8/26.
+
+### 2026-08-21 — Afternoon Addendum (midday scan, 13:09 ET)
+
+**No action taken. No order placed, no stop moved, no position closed.**
+
+| Ticker | Shares | Entry | Mark | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.8777 | $215.52 | -$683.94 (-4.59%) | $210.07 | **2.5%** | $205.128 (10%, hwm $227.92) | 4.8% | $259.76 (+15%) |
+| XLE | 300 | $63.5553 | $63.82 | +$79.40 (+0.42%) | $59.11 | 7.4% | $58.23 (10%, hwm $64.70) | 8.8% | $73.09 (+15%) |
+
+- **Account:** equity $99,394.93 vs prior close $99,462.55 → **-$67.62 (-0.07%)** on the day. Cash $66,025.45. Position MV $33,369.99 = **33.6% deployed** (sixth session under 75-85%). Trades this week 2/3; third slot expires today per this morning's decision.
+- **Step 3 (cut losers):** neither position at or past -7%. NVDA is the one moving toward it — the gap narrowed from **3.6% pre-market to 2.5% now** on a -0.62% intraday drift. Still a hold; logging the narrowing explicitly so Monday's run has the trend, not just the level.
+- **Step 4 (tighten stops):** neither position is within ~15 points of a +15% trigger. Both trails >3% from price. **No stop moved** — correct and unchanged.
+- **Step 5 (thesis check):** both theses intact.
+  - **XLE — strengthening.** Reuters (8/21): oil set for a **second consecutive weekly gain** as the US ramps pressure on Iran; Brent/WTI at highest since late July. CNBC (8/21): hopes of a **swift Hormuz reopening are fading**, vessel traffic still at a crawl amid attacks; separate 8/21 reporting that Iran is **stopping ships in Hormuz**. This is escalation, not the de-escalation that would unwind the position. Brent ~$93.8 (+$0.04), WTI ~$86.8 (-0.06 to -0.4%) — the risk premium is holding, not extending, which is why XLE is only +0.11% intraday despite the headlines. Premium priced, not fading.
+  - **NVDA — no news.** No verifiable NVDA-specific headline today. The drift is tape, not thesis. Earnings **Wed 8/26 after the close** remains the dominant risk in the book.
+- **Market:** S&P 500 ~7,666 (+0.33%), Nasdaq ~26,096 (+0.11%), VIX ~15.3 and lower on the day. Low-vol regime holding. SPY quoted 766.45/766.58 on Alpaca, consistent.
+- **Data quality — the quote feed is FRESH intraday.** All four checked tickers quoted live at 17:09Z with institutional spreads: NVDA 0.01%, XLE 0.02%, SPY 0.02%, XLK 0.01%. This is the **first session in six where anything but SPY priced cleanly**. The stale-stub problem is a *pre-market* artifact, not a broken feed — **candidates can be sized during RTH**. That materially changes the workflow: the "cannot price it" objection that has blocked entries for six sessions does not apply after the open. Carry this into next week's market-open runs.
+- **Research quality:** Perplexity was materially better than the last two sessions — it **declined to answer** the NVDA-catalyst and sector-leaderboard questions rather than fabricating, which is the correct behavior and worth noting after two sessions of invented earnings. One artifact remains: it cited a VIX print timestamped "4:36 p.m. ET" during a 1:09 p.m. ET session — a next-day/stale stamp. Level (~15.3) cross-checks fine; the timestamp does not. Still no sizing off a single model quote.
+
+**Midday call: HOLD both. Nothing actionable. NVDA into 8/26 is the item to carry forward.**
