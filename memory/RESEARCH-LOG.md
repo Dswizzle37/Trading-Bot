@@ -301,3 +301,25 @@ Three independent reasons, any one of which is sufficient: (1) **no catalyst** �
 Burning the last slot on a Friday with an empty calendar, purely to close a deployment gap that cannot be closed this week anyway, would be activity for its own sake. Rule 11. The slot is worth more unused going into a week that carries NVDA earnings (8/26) and Powell at Jackson Hole (8/28) — where real catalysts, and real dislocations, will actually exist.
 
 Position management — both unchanged, both correct, **no stop moved**: NVDA and XLE both inside the -7% cut line, both stops >3% below price, both live GTC orders on the book, neither at a tightening trigger. NVDA flagged into 8/26.
+
+### Market-Open Re-evaluation (9:36-9:42 ET)
+
+- **Quote feed fresh at the open for the third straight session** — all six probes timestamped 13:36:25-13:36:26Z with tight books: SPY 764.71/764.73 (0.003%), XLE 64.23/64.24 (0.02%), NVDA 217.53/217.58 (0.02%), XLK 183.49/183.52 (0.02%), XLF 57.33/57.35 (0.03%), XLV 172.98/173.03 (0.03%). **The pattern is now established and should be treated as the operating assumption: pre-market quotes are stale stubs, the open is clean.** Pre-market rejection reason #2 ("no priceable quote") is therefore **void today** — it did not survive the open, and the skip below rests only on reasons #1 and #3.
+- Tape: SPY $764.72 vs. the $766.35 pre-market read — mildly soft open. Perplexity confirms 8/20 closed lower (S&P 7,641.16, **-0.87%**; Dow -1.3%, Nasdaq -1.0%) on **rising US-Iran tensions** — a detail the pre-market entry did not have, and one that cuts *for* the XLE thesis, not against it.
+
+**Reason #1 — no catalyst: CONFIRMED by two independent queries.** Both were run with an explicit "say NO VERIFIED DATA rather than guess" instruction, after two consecutive sessions of fabricated research output. Both complied and returned **NO VERIFIED DATA**: no earnings, no FDA approval, no M&A, no guidance change for 8/20-8/21; no sourced large-cap mover list. This is the clean negative the last two sessions did not produce — the model declining to invent names is itself the signal that there is nothing to find. The entry checklist's first item fails on verified absence, not on missing data.
+
+**Reason #3 — energy concentration: stands, structurally.** Oil confirmed still bid (Brent **$93.18-93.82**, WTI **$86.78-87.21**), Iran still threatening the Strait, shipping still volatile, **no confirmed de-escalation**. The thesis is strengthening — which is exactly the setup where adding is most tempting and least wise. Book is already **19.3% XLE** on one geopolitical premium. Rejection remains permanent while XLE is held, per 8/21 pre-market.
+
+### Market-Open Decision
+
+**HOLD — no order placed. Third weekly trade slot expires unused (Friday).** Trades this week final: **2/3**.
+
+The honest version: today's skip is a **one-reason skip, not a three-reason skip**. The quote-feed objection evaporated at 13:36Z as it has every session this week, and the energy objection is a self-imposed concentration limit rather than a market fact. What actually holds is that there is **no catalyst** — independently verified twice, by a source that was explicitly given permission to say so and did. Rule 11 and the entry checklist both point the same way, and burning the last slot on an empty Friday calendar to chase a deployment number that is unreachable this week regardless would be activity for its own sake.
+
+Position management — both unchanged, both correct, **no stop moved**:
+- NVDA 66 @ $225.8777, last **$217.725**, **-$538.08 (-3.61%)**, intraday **+$57.75 (+0.40%)**. Trail GTC live at **$205.128** (hwm $227.92) = **5.79%** below last. Cut line $210.07 — gap **3.52%**, tightest in the book. No tightening trigger (+15% = $259.76). **Earnings Wed 8/26 after the close, 2 sessions out.** 14.4% of equity.
+- XLE 300 @ $63.5553, last **$64.22**, **+$199.40 (+1.05%)**, intraday **+$141.00 (+0.74%)**. Trail GTC live at **$58.23** (hwm $64.70) = **9.33%** below last. No tightening trigger (+15% = $73.09). 19.3% of equity.
+- Both stops verified live on the order book as real GTC trailing orders (XLE `ef0c1da0`, NVDA `cb64c227`), both >3% from price, neither near the -7% cut. Daytrade count 0 — Alpaca omits the field and no sell has ever filled.
+
+**Account: equity $99,662.95** (prior close $99,462.55, **+$200.40 / +0.20%**), cash $66,025.45, position value $33,637.50 — **deployment 33.75%**, sixth consecutive session under the 75-85% target. The week closes with one slot unspent and the gap intact; it can only close next week, which carries **NVDA earnings (8/26)** and **Powell at Jackson Hole (8/28)** — two real dislocations, three fresh slots, and dry powder to meet them with.
