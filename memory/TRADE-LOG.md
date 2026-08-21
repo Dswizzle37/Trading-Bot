@@ -52,3 +52,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $63.75 | +0.27% | +$58.40 (+0.31%) | $58.23 (10% trail, hwm $64.70) |
 
 **Notes:** Flat day — no trades, no fills, no position changes. NVDA gave back a little (-0.28%) and XLE ticked up (+0.27%), netting +$10.74 on the day. Both trailing stops are live GTC and untouched by the bot; XLE's trailed itself up to $58.23 on a $64.70 high-water mark, NVDA's still sits at $205.13. Both positions are inside the -7% manual-cut line (NVDA -3.95% is the one to watch, with earnings Aug 26) and both stops are more than 3% below price. Deployment 33.6% — fourth straight session well under the 75-85% target, which remains the standing gap in this book. Third weekly trade slot still open (2/3 used). Day P&L is measured against Alpaca's official prior close of $99,458.41; the logged 8/19 snapshot of $99,444.01 was captured before the settle, so log-to-log reads +$25.14.
+
+### Aug 21 — EOD Snapshot (Day 5, Friday)
+**Portfolio:** $99,303.49 | **Cash:** $66,025.45 (66%) | **Day P&L:** -$159.06 (-0.16%) | **Phase P&L:** -$696.51 (-0.70%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| NVDA | 66 | $225.88 | $214.94 | -0.88% | -$721.89 (-4.84%) | $205.13 (10% trail, hwm $227.92) |
+| XLE | 300 | $63.5553 | $63.64 | -0.17% | +$25.40 (+0.13%) | $58.23 (10% trail, hwm $64.70) |
+
+**Notes:** No trades today, no fills, no position changes — third weekly slot stays open (2/3 used, unchanged since Tuesday). NVDA continued to slide (-0.88% today, now -4.84% unrealized) and is the position to watch into its Aug 26 earnings, though still well inside the -7% manual-cut line and its stop remains >3% below price. XLE ticked down slightly (-0.17%) but stays marginally positive (+0.13%) with its trail unchanged at $58.23 (hwm $64.70). Portfolio down $159.06 (-0.16%) on the day and -0.70% phase-to-date vs. the $100k baseline. Deployment ~33.5% — fifth straight session under the 75-85% target. Day P&L measured against Alpaca's official prior close ($99,462.55).
