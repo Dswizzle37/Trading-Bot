@@ -78,3 +78,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 - Gate checks (verified after the fact against Alpaca): 2 positions ≤ 6, 19.1% ≤ 20% size cap, PDT room clear. Trade 1/3 for the week.
 
 > **Reconstructed entry.** Both 8/24 sections above were re-entered by hand during the 8/24 midday scan, from Alpaca order history (the authoritative record) — the trades themselves are real, filled, and unaffected. Today's pre-market and market-open runs executed correctly against Alpaca but **neither committed its memory files**: `origin/main` at 17:08Z on 8/24 still had `a003222` (the 8/21 weekly review) as its head, with no 8/24 entry in either log. The exit reasoning above is inferred from the rule that fits the fill and from the prior logs; the XLV entry thesis and the day's research are **lost** and could not be reconstructed. This is the second persistence failure in the account (Day 1 was a GitHub 403); unlike that one, the notification output was not available to recover from. **The gap to fix: a run that trades must not be able to finish without persisting.**
+
+### Aug 24 — EOD Snapshot (Day 6, Monday)
+**Portfolio:** $98,836.00 | **Cash:** $61,020.40 (61.7%) | **Day P&L:** -$452.97 (-0.46%) | **Phase P&L:** -$1,164.00 (-1.16%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.16 | -0.75% | -$118.60 (-0.62%) | $58.23 (10% trail, hwm $64.70) |
+| XLV | 108 | $174.3756 | $174.70 | +0.05% | +$35.03 (+0.19%) | $157.43 (10% trail, hwm $174.92) |
+
+**Notes:** Two trades today (both reconstructed from Alpaca order history, see note above): cut NVDA at -7% (-$1,080.41 realized) and rotated into XLV at 19.1% of equity. Net realized P&L today: -$1,080.41. Tech sector now has 1 failed trade (rule 10: 2 before mandatory sector exit). Deployment is now 38.3% ($37,815.60 of $98,836) — still below the 75-85% target but the first meaningful step up after five sessions stuck near 33-34%. Both remaining positions (XLE, XLV) are flat-to-small on the day, stops untouched and >3% from price. Trades this week: 1/3 (XLV; the NVDA exit doesn't count against the new-trade cap). Day P&L measured against Alpaca's official prior-close reference ($99,288.97, `balance_asof` 2026-08-21) since Friday's own logged snapshot showed $99,303.49 — a small settlement difference, consistent with prior day notes.
