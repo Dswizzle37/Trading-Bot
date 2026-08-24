@@ -41,6 +41,13 @@ case "$cmd" in
     sym="${1:?usage: quote SYM}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$DATA/stocks/$sym/quotes/latest"
     ;;
+  bars)
+    sym="${1:?usage: bars SYM [start YYYY-MM-DD] [timeframe]}"
+    start="${2:-$(date -d '40 days ago' +%Y-%m-%d)}"
+    tf="${3:-1Day}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$DATA/stocks/$sym/bars?timeframe=$tf&start=$start&limit=1000&adjustment=split"
+    ;;
   orders)
     status="${1:-open}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/orders?status=$status"
@@ -65,7 +72,7 @@ case "$cmd" in
     curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
     ;;
   *)
-    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
+    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
     exit 1
     ;;
 esac

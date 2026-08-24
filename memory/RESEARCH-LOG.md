@@ -322,3 +322,117 @@ Position management — both unchanged, both correct, **no stop moved**: NVDA an
 - **Research quality:** Perplexity was materially better than the last two sessions — it **declined to answer** the NVDA-catalyst and sector-leaderboard questions rather than fabricating, which is the correct behavior and worth noting after two sessions of invented earnings. One artifact remains: it cited a VIX print timestamped "4:36 p.m. ET" during a 1:09 p.m. ET session — a next-day/stale stamp. Level (~15.3) cross-checks fine; the timestamp does not. Still no sizing off a single model quote.
 
 **Midday call: HOLD both. Nothing actionable. NVDA into 8/26 is the item to carry forward.**
+
+## 2026-08-24 — Pre-market Research (run inline at market open, 09:40 ET)
+
+### Account
+- Equity: $99,133.21 (prior close $99,288.97, **-$155.76 / -0.16%**)
+- Cash: $66,025.45 (66.6%)
+- Buying power: $356,803.53 (margin-inflated; effective non-marginable BP $82,579.33)
+- Position market value: $33,107.76 (**33.4% deployed** — seventh consecutive session under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field; no sell has ever filled)
+- Open positions:
+  - NVDA 66 sh @ $225.8777 avg, $212.805 mark, unrealized **-$862.80 (-5.79%)**. 10% trailing GTC live at **$205.128** (hwm $227.92) = 3.6% below mark. Cut line $210.07 — gap **1.3%**, narrowed from 2.5% at Friday midday and 3.6% Friday pre-market. Earnings **Wed 8/26 after the close**. Still a hold, but this is now the closest any position has come to a manual cut.
+  - XLE 300 sh @ $63.5553 avg, $63.54 mark, unrealized **-$4.60 (-0.02%)**. 10% trailing GTC live at **$58.23** (hwm $64.70) = 8.4% below mark. No action.
+- Neither position is near a trail-tightening trigger (NVDA +15% = $259.76; XLE +15% = $73.09). Both stops >3% from price. **No stop moved.**
+- **New week — weekly trade counter resets to 0/3.**
+
+### Market Context
+- **Leadership rotated over the last five sessions. This is the session's central finding.** Measured from Alpaca daily bars, not from a model summary:
+
+| Sector | 1wk | 1mo | | Sector | 1wk | 1mo |
+|---|---|---|---|---|---|---|
+| **XLV** | **+4.04%** | **+6.91%** | | XLC | +1.16% | +5.46% |
+| XLB | +3.24% | +5.21% | | XLF | +0.59% | +2.86% |
+| XLP | +2.76% | +3.44% | | XLRE | +0.56% | -1.89% |
+| XLE | +1.50% | +6.54% | | XLU | -3.24% | -7.65% |
+| XLY | +1.40% | +8.21% | | XLI | -3.72% | -1.80% |
+| | | | | **XLK** | **-5.28%** | +2.50% |
+| SPY | -1.18% | +3.33% | | **SMH** | **-7.72%** | -2.32% |
+
+- **Health care is now the leader on both timeframes.** It was +1.0% 1wk as recently as 8/21's log, when its momentum thesis was explicitly called *disconfirmed*. Price has since confirmed it. That prior rejection is now overturned by data, not by narrative.
+- **Semis broke down hard: SMH -7.72% 1wk, XLK -5.28% 1wk.** Energy's 1-week lead decayed from +7.7% (8/21 log) to +1.50%; its 1-month standing (+6.54%) is intact. Energy did not break — it stopped leading.
+- **Perplexity's sector numbers were wrong again — sixth session of unreliability.** It reported XLE +7.67% 1wk and XLK **+1.09%** 1wk. Measured: XLE +1.50% and XLK **-5.28%**. The sign was wrong on the single most important number of the day. It also placed Jackson Hole "Thursday through Saturday **this week**" — Powell speaks **Fri 8/28**, per the independently verified 8/21 log. **No sector call in this entry uses a Perplexity number.** All momentum figures above are computed from Alpaca bars via the new `alpaca.sh bars` subcommand added this session.
+- Overnight: S&P futures -0.18% to -0.24%, Nasdaq futures -0.58% to -0.64%. Weekend catalysts: failed US-Canada trade talks with new tariffs on Canadian goods; renewed Iran sanctions pressure. Long-end Treasury yields remain elevated.
+- Week ahead: consumer confidence + housing Tue, **core PCE and Q2 GDP revision Wed**, **NVDA earnings Wed after the close**, **Powell at Jackson Hole Fri 8/28**.
+- **Data quality — RTH feed is clean, confirming Friday's finding.** At 13:37Z all sector ETFs and the liquid megacaps quoted at institutional spreads (XLV 0.02%, XLE 0.02%, SPY 0.05%, NVDA 0.08%, QQQ 0.03%). The stale-stub problem is a pre-market artifact only. **However, the thin-feed problem on individual names persists and is severe:** AMAT 10.2% spread, LLY 6.5%, XOM 10.5%, COP 7.6%, UNH 3.2%, MSFT 3.1%, AMD 3.0%, JPM 2.1%, META 0.8%. The tradeable universe on this account is effectively **the sector ETFs plus AAPL / GOOGL / NVDA / QQQ / IWM / SMH**. Every single-name idea below was screened against this first.
+
+### Trade Ideas
+1. **XLV — BUY. Qualifies on every checklist item. Executed this session.** See Decision.
+2. **AMAT — rejected twice over.** Catalyst (Q3 FY2026 beat, $9.12bn vs $9.02bn, EPS $3.50 vs $3.40) is **8/13, seven sessions stale**, and the group it belongs to is the one that just fell 7.7%. Quote 458.06/505.00 = **10.2% spread, untradeable**. Skip.
+3. **LLY — rejected.** Catalysts are 8/5 earnings and an 8/10 UK authorization, both stale. Quote 1168.57/1244.90 = **6.5% spread, untradeable** at any size. The healthcare thesis is real; this is the wrong instrument to express it. Skip in favour of XLV.
+4. **MRNA / MRK — rejected as gap-chasing, consistent with the 8/20 precedent.** MRNA printed **+177.0% on 8/19** then **-23.5% on 8/20** and **-8.2% today**; MRK +12.6% on 8/19, -1.6% today. The event is real (below) but entering a name three sessions after a 177% print, mid-give-back, is precisely what killed the MRK idea on 8/20. The ETF carries the same thesis without the single-name blast radius — MRNA is ~0.4% of XLV.
+5. **Energy add-on — rejection stands, unchanged and still structural.** Book is already 19.2% XLE. Energy's 1-week lead has decayed besides. Not re-litigated.
+6. **NVDA pre-earnings add — rejected, as on 8/21.** Position is red, 1.3% from its cut line, two sessions from a binary print, in the week's worst-performing group. Adding would be a hope trade.
+7. **XLY (+8.21% 1mo, best 1-month reading) — held, not taken.** No specific dated catalyst, and new tariffs on Canadian goods are a direct consumer-discretionary headwind. Momentum alone does not clear the entry checklist. Keeps a weekly slot for post-NVDA / post-Powell dislocation.
+
+### The XLV catalyst — verified independently, not taken on trust
+Perplexity attributed the healthcare move to a Moderna/Merck personalized mRNA cancer-vaccine breakthrough on 8/17-21. Given five prior sessions of fabricated content, **this was checked against price data before being relied on**, by pulling daily bars for eleven large-cap healthcare names:
+
+| | 1wk | 8/19 move | | | 1wk | 8/19 move |
+|---|---|---|---|---|---|---|
+| MRNA | +106.58% | **+177.0%** | | GILD | +4.92% | +2.9% |
+| MRK | +10.39% | **+12.6%** | | LLY | +4.89% | +4.5% |
+| VRTX | +5.66% | +4.5% | | AMGN | +4.61% | +4.0% |
+| ABBV | +5.24% | +2.7% | | PFE | +3.94% | +3.6% |
+| BMY | +3.16% | +2.4% | | REGN | +2.95% | +3.8% |
+| | | | | JNJ | +2.94% | +0.8% |
+
+- The event is **confirmed and dated 8/19** (Perplexity's "8/17-21" window was loose). A +177% single-day move in MRNA with MRK +12.6% alongside is unambiguous.
+- **Breadth is the decisive evidence: 11 of 11 names are green on the week, ten of them +2.9% to +5.7%.** This is a sector repricing, not one stock dragging an index. A single-name artifact would show one outlier and ten flat lines.
+- Supporting flow: healthcare funds took in **$2.44bn in July** (Reuters, 8/5) — a pre-existing defensive tilt the event accelerated.
+- **Contrary evidence, logged rather than buried:** the 8/17 White House "largest prescription drug price drop in 60 years" announcement and CMS's 8/18 start of Medicare negotiation rulemaking are **margin headwinds for drugmakers, not tailwinds**. The sector rallied *through* them, which strengthens the read on the clinical catalyst but means the policy backdrop is a live risk to the position.
+
+### Why the ETF and not the news, and why the R:R actually clears
+- **XLV did not gap.** Its advance began **8/18 (+1.60%), before the 8/19 event**, then +3.51% on 8/19, -1.87%, +1.29%, -0.36% today. It gave back only part of the move and sits **-1.48% below its 45-session high** — digested and holding, not extended. Contrast the XLE entry on 8/18, taken at a 52-week high, which this log flagged as a risk at the time.
+- **The 2:1 R:R was tested against realized volatility rather than asserted**, because a mechanical "10% stop → need +20%" reading would have failed this trade. Measured since 2026-05-01 (79 sessions):
+
+| | ann. vol | max drawdown | worst 5-day |
+|---|---|---|---|
+| **XLV** | **18.6%** | **-3.74%** | -3.74% |
+| SPY | 13.2% | -4.49% | -3.82% |
+| XLE | 24.2% | -13.84% | -7.02% |
+| NVDA | 39.6% | -19.40% | -10.40% |
+
+  XLV's **deepest drawdown in four months is -3.74%**. A 10% trail sits roughly 2.7x outside anything the instrument has actually done — it is tail protection, not the expected exit. Realistic risk ≈ 4%; target $191 (+9.9%, a level the sector reaches on continuation) gives **≈2.4:1**. Against the tail case where the full 10% trail fills, it is ~1:1. Both numbers are stated so the trade can be judged on either. NVDA and XLE, by contrast, have both traded through a 10% band this year — for them the trail is a live exit, and that difference is the whole argument for sizing this position in an ETF.
+- **Diversification is the second reason, and it may matter more than the first.** The book is NVDA (semis) + XLE (energy) — and the 8/21 log noted these ride *the same macro trade in the bad direction*: oil up lifts XLE and compresses the multiple NVDA depends on. XLV is a genuinely third, defensive leg, added in the week that carries NVDA earnings (Wed) and Powell (Fri). It lowers book beta into two binary events instead of raising it.
+
+### Risk Factors
+- **NVDA is the dominant risk and it got worse over the weekend.** -5.79% unrealized, **1.3% from the -7% manual cut**, trail 3.6% below mark, earnings **Wed 8/26 after the close**, and its sector just fell 7.7% in a week. A bad print gaps through both the cut line and the trail — neither respects a gap. The gap-to-cut has narrowed every session measured: 3.6% → 2.5% → 1.3%. **If NVDA trades below $210.07 it is cut manually, earnings or not; that is the rule and it does not wait for the print.** Midday scan owns this.
+- **Buying a defensive sector does not make the week safe.** XLV is being bought two days before core PCE and four before Powell. A hawkish surprise pressures every long.
+- **The drug-pricing policy backdrop is an active headwind** (MFN pricing, CMS rulemaking) even as the clinical catalyst is a tailwind. The two are pulling opposite directions on the same position.
+- **Three sessions of give-back in the healthcare complex today** — MRNA -8.2%, MRK -1.6%, and every name in the table above red intraday. Entering while the first impulse cools is deliberate (it is why the entry is not a gap-chase) but it means the immediate tape is against the position.
+- **Deployment after this trade: ~52.6%.** Still below the 75-85% target for a seventh session, but this is the largest single step taken toward it since launch, and it is taken on the checklist rather than to close the gap for its own sake. Two weekly slots remain for the back half of the week, which is where the real dislocations sit.
+
+### Decision
+**BUY XLV — the third position, sized at ~18.9% of equity, with a 10% trailing GTC stop. Trade 1/3 for the week.**
+
+Health care leads on both the 1-week and 1-month tape; the catalyst is specific, dated 8/19, and was verified in eleven separate price series rather than taken from a model that has been wrong six sessions running; the instrument is liquid at a 0.02% spread where the single names expressing the same thesis are untradeable at 6-10%; it did not gap and sits below its recent high; and it is the first position in this book that does not ride the oil/AI axis. The R:R clears on realized volatility, and is stated honestly for the tail case where it does not.
+
+Position management — **no stop moved**, both existing trails live GTC. NVDA flagged at 1.3% from its cut line into Wednesday's print; XLE unchanged.
+
+### 2026-08-24 — Execution Addendum (market open, 09:46 ET)
+
+**Two orders executed. The session did not end the way the Decision above anticipated.**
+
+1. **BUY XLV 108 @ $174.3756** ($18,832.57, 19.0%). 10% trailing GTC accepted at $157.03. As planned, all eight gates passed.
+2. **SELL NVDA 66 @ $209.5079 — rule 5 manual cut. Realized -$1,080.41 (-7.25%).** Not planned; the rule fired mid-session.
+
+**How the NVDA cut unfolded, since the reasoning matters more than the outcome.** The Decision above flagged NVDA at 1.3% from its cut line and committed in writing: *"If NVDA trades below $210.07 it is cut manually, earnings or not; that is the rule and it does not wait for the print."* Within nine minutes of that being written it did exactly that:
+
+| Time (ET) | NVDA | P&L | Cut line $210.07 |
+|---|---|---|---|
+| 09:37 | $212.81 | -5.79% | 1.3% above |
+| 09:43 | $210.23 | -6.93% | 0.08% above |
+| 09:44 | $210.13 | -6.97% | **0.03% above — not fired** |
+| 09:45 | $209.47 | **-7.26%** | **broken** |
+| 09:45 (fill) | $209.51 | -7.14% | cut executed |
+
+- **The threshold was deliberately not rounded.** At -6.97% the temptation was to call it -7% and cut. That was refused: front-running a bright line by 3bp, two sessions before a binary print, is discretion wearing discipline's clothes — and had NVDA printed well on 8/26 it would have been an expensive unforced error. A price watch was armed instead and the rule was allowed to fire on its own. It did, eight minutes later, and the cut was then mechanical rather than a judgment call.
+- **Declining to cut would not have meant "risk capped at -7%."** The trailing stop sat at $205.128 = **-9.19% from entry**. Holding on the technicality would have set the true floor at -9.2%, not -7%. That asymmetry is why the manual cut rule exists alongside the trail, and it is the argument against ever letting a position sit "just above" the line.
+- **Execution hazard handled:** `qty_available` was 0 — the trailing stop held the shares as collateral. The GTC order was cancelled and its cancellation **verified** before the market sell was sent. Firing the sell on the strength of `qty_available` alone, while the stop was still live, could have double-filled and flipped the account short (shorting is enabled on this account). Sold into a 0.01% spread.
+- **Not a day trade** (opened 8/17, closed 8/24) — no PDT consumption, all three day trades still available.
+
+**What this says about the research above.** The XLV thesis and the NVDA cut are the same finding read twice. The sector table showed **SMH -7.72% / XLK -5.28% on the week** — semis were the worst group on the tape — and the book's response was to buy the new leader while still holding the broken one. The tape resolved that inconsistency within the hour. The sector signal led the position by roughly a week: NVDA never had a green day after entry and decayed -3.64% → -3.95% → -4.84% → -5.79% → cut across five sessions, while its group broke down around it. **The rules correctly stopped the account from *adding* to NVDA on 8/19, 8/20 and 8/21, but no rule exists that exits a position on sustained sector decay — only on its own price.** Rule 10 covers 2 consecutive failed *trades* in a sector; nothing covers 2 consecutive weeks of relative decay in a sector already held. **Flagging that gap for Friday's weekly review.**
+
+**Book after both orders:** equity $98,971.84 (-0.32% on the day, -1.03% phase). Cash $61,020.40. XLE 19.3% and XLV 19.1% — **deployment 38.3%**, i.e. the session opened at 33.4%, reached 52.3% on the XLV fill, and closed the gap back down when NVDA was cut. Seventh session under target and the gap was reopened by a realized loss, not narrowed. **This is not a reason to redeploy the NVDA proceeds today** — two entry slots remain and both of the week's real catalysts (core PCE Wed, Powell Fri 8/28) are still ahead. Both remaining positions carry live GTC trailing stops, no position is uncovered, no stray orders remain, and **no stop was moved**.
