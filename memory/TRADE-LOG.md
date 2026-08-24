@@ -62,3 +62,19 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $63.64 | -0.17% | +$25.40 (+0.13%) | $58.23 (10% trail, hwm $64.70) |
 
 **Notes:** No trades today, no fills, no position changes — third weekly slot stays open (2/3 used, unchanged since Tuesday). NVDA continued to slide (-0.88% today, now -4.84% unrealized) and is the position to watch into its Aug 26 earnings, though still well inside the -7% manual-cut line and its stop remains >3% below price. XLE ticked down slightly (-0.17%) but stays marginally positive (+0.13%) with its trail unchanged at $58.23 (hwm $64.70). Portfolio down $159.06 (-0.16%) on the day and -0.70% phase-to-date vs. the $100k baseline. Deployment ~33.5% — fifth straight session under the 75-85% target. Day P&L measured against Alpaca's official prior close ($99,462.55).
+
+## 2026-08-24 — SELL NVDA (cut at -7% per rule)
+- **Ticker:** NVDA | **Side:** sell | **Shares:** 66 | **Exit:** $209.5079 avg (market order, filled 09:45:55 ET)
+- **Entry was:** $225.8777 (8/17) | **Proceeds:** $13,827.52 | **Realized P&L:** **-$1,080.41 (-7.25%)**
+- **Reason:** Cut at -7% per rule 5. NVDA opened through the $210.07 cut line; the position had drifted from -3.6% (8/21 pre-market) to -4.84% (8/21 close) to past the line at Monday's open. Its 10% trailing stop (order `NVDA sell 66 trailing_stop`, $205.128) was canceled at 09:45:38 ET immediately before the market sell, per the workflow.
+- **Also:** removed the single largest known risk in the book — the Wed 8/26 after-the-close earnings print, which the 8/20 and 8/21 research logs both flagged as a gap that would jump straight through both the cut line and the trail. Cut before the binary, not into it.
+- First realized loss of the account. Tech sector: 1 failed trade (rule 10 counts 2 before a sector exit).
+
+## 2026-08-24 — BUY XLV
+- **Ticker:** XLV | **Side:** buy | **Shares:** 108 | **Entry:** $174.3756 avg (market order, filled 09:42:54 ET)
+- **Cost:** $18,832.57 (19.1% of equity)
+- **Stop:** 10% trailing GTC, accepted — $157.347 (hwm $174.83), placed 09:43:05 ET
+- **Thesis:** *Not recoverable — see reconstruction note below.* XLV had been examined and rejected twice earlier in the account (8/19 market-open: "momentum thesis disconfirmed"; 8/20), so the market-open run evidently found something that reversed that read. Whatever it was is not in the repo.
+- Gate checks (verified after the fact against Alpaca): 2 positions ≤ 6, 19.1% ≤ 20% size cap, PDT room clear. Trade 1/3 for the week.
+
+> **Reconstructed entry.** Both 8/24 sections above were re-entered by hand during the 8/24 midday scan, from Alpaca order history (the authoritative record) — the trades themselves are real, filled, and unaffected. Today's pre-market and market-open runs executed correctly against Alpaca but **neither committed its memory files**: `origin/main` at 17:08Z on 8/24 still had `a003222` (the 8/21 weekly review) as its head, with no 8/24 entry in either log. The exit reasoning above is inferred from the rule that fits the fill and from the prior logs; the XLV entry thesis and the day's research are **lost** and could not be reconstructed. This is the second persistence failure in the account (Day 1 was a GitHub 403); unlike that one, the notification output was not available to recover from. **The gap to fix: a run that trades must not be able to finish without persisting.**

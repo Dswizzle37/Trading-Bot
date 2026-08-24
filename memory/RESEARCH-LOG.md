@@ -322,3 +322,27 @@ Position management — both unchanged, both correct, **no stop moved**: NVDA an
 - **Research quality:** Perplexity was materially better than the last two sessions — it **declined to answer** the NVDA-catalyst and sector-leaderboard questions rather than fabricating, which is the correct behavior and worth noting after two sessions of invented earnings. One artifact remains: it cited a VIX print timestamped "4:36 p.m. ET" during a 1:09 p.m. ET session — a next-day/stale stamp. Level (~15.3) cross-checks fine; the timestamp does not. Still no sizing off a single model quote.
 
 **Midday call: HOLD both. Nothing actionable. NVDA into 8/26 is the item to carry forward.**
+
+## 2026-08-24 — Afternoon Addendum (midday scan, 13:08 ET)
+
+**No action taken. No order placed, no stop moved, no position closed.** Today's trading was done by the market-open run (see TRADE-LOG); this scan verified it and found nothing further to do.
+
+### Positions
+
+| Ticker | Shares | Entry | Mark | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.825 | -$219.10 (-1.15%) | $59.11 | 5.9% | $58.23 (10%, hwm $64.70) | 7.3% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $174.50 | +$13.43 (+0.07%) | $162.17 | 7.1% | $157.347 (10%, hwm $174.83) | 9.8% | $200.53 (+15%) |
+
+- **Account:** equity $98,715.40 vs prior close $99,288.97 → **-$573.57 (-0.58%)** on the day; **-$1,284.60 (-1.28%)** phase-to-date vs the $100k baseline. Cash $61,020.40. Position MV $37,695.00 = **38.2% deployed** (seventh session under 75-85%). Trades this week **1/3** (XLV) — fresh week, two slots open.
+- **Today's realized:** NVDA cut at $209.5079 for **-$1,080.41 (-7.25%)** — the account's first realized loss, and the reason the day is red while both open positions are near flat. The -0.58% day is almost entirely that closed trade booking, not deterioration in what is still held.
+- **Step 3 (cut losers):** neither open position at or past -7%. XLE -1.15% (5.9% of room), XLV +0.07% (7.1%). No cut.
+- **Step 4 (tighten stops):** neither position anywhere near a +15% trigger — XLE needs $73.09, XLV needs $200.53. Both trails >3% from price, both live GTC. **No stop moved.**
+- **Step 5 (thesis check):**
+  - **XLE — intact but weakening, first real test of the premium.** Crude is **down ~1.4-2.1% today**: Brent ~$91.0-93.0 (-1.4 to -1.8%), WTI ~$85.3-86.2 (-1.6 to -2.1%) across four same-day sources. XLE -1.28% is tracking oil, not diverging from it. Critically, **Perplexity found no August 24 report of a US-Iran ceasefire, de-escalation, or Hormuz reopening** — the most recent items on those topics are dated April 2026, plus an Aug 4 Guardian piece on Qatar-brokered *progress* with the strait still closed. So this is the risk premium easing on no news, not the pre-written disqualifier firing. **The disqualifier is a confirmed Hormuz agreement, and it has not happened.** Hold; if a genuine de-escalation headline lands, cut on it rather than waiting for the trail.
+  - **XLV — no verifiable catalyst either way, and no thesis on file to check it against.** No Aug 24 headline naming a health-care driver; the one dated read available is that healthcare was among the S&P's larger gainers on Aug 24 in a market rebounding from a yield-driven selloff. XLV is +0.07% vs entry and -0.07% on the day — it has done nothing since the 09:42 fill. **This position cannot be thesis-checked properly** because the market-open run never persisted its reasoning (see the reconstruction note in TRADE-LOG); the next run inherits a position it cannot evaluate on its original terms. Treat the 10% trail as the whole risk control here until a thesis is re-established.
+- **Market:** broad driver in the dated coverage is **rising long-term Treasury yields**, with a tech selloff and higher oil as the week's stated headwinds. Week ahead carries both **NVDA earnings (Wed 8/26 AC)** — now irrelevant to this book — and **Jackson Hole (8/28)**.
+- **Data quality:** quote feed **fresh** at 17:08Z, institutional spreads on all four checked — XLE 0.032%, XLV 0.011%, SPY 0.007%, XLK 0.011%. Second consecutive session confirming the stale-quote problem is a pre-market artifact only; candidates can be sized during RTH.
+- **Research quality:** Perplexity again **declined rather than fabricated** on both unverifiable asks (the XLE move attribution and the intraday sector leaderboard), which is the correct behavior — third session running. No sector leaderboard available for today, so no momentum read to act on.
+
+**Midday call: HOLD both. Nothing actionable.** Carry forward: (1) XLE's premium is deflating on no news — watch for the de-escalation headline, that is the cut trigger, not the drift; (2) XLV is held without a recorded thesis; (3) deployment 38.2% with two weekly slots and Jackson Hole 8/28 ahead.
