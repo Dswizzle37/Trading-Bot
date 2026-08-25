@@ -398,3 +398,52 @@ Three independent reasons: (1) **no stock-level catalyst** — a housing print a
 Holding two slots into Powell is the right shape of the week: the catalysts are Thursday-Friday, and dry powder is worth more on the other side of them than spent on a Tuesday with an empty calendar. Rule 11.
 
 Position management — both unchanged, both correct, **no stop moved**: XLE and XLV both well inside the -7% cut line (5.16% and 7.21% of room), both trails >3% below price, both live GTC orders verified on the book, neither at a tightening trigger. XLE flagged: the premium is deflating on price, not news — cut on confirmed vessel-traffic normalization, not on a de-escalation headline.
+
+## 2026-08-25 — Market-Open Execution (09:37 ET)
+
+**No order placed. No stop moved. No position closed.** Both weekly slots stay open (1/3 used).
+
+### Account (live, 13:37Z)
+- Equity **$98,641.28** vs prior close $98,820.68 → **-$179.40 (-0.18%)**; phase-to-date **-$1,358.72 (-1.36%)** vs the $100k baseline
+- Cash $61,020.08 | Position MV $37,621.20 → **38.1% deployed** (ninth consecutive session under the 75-85% target)
+- Trades this week **1/3** (XLV, Mon 8/24). Two slots open. Daytrade count 0.
+
+| Ticker | Shares | Entry | Mark | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.53 | -$307.60 (-1.61%) | $59.11 | 5.48% | $58.23 (10%, hwm $64.70) | 6.88% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $174.64 | +$28.55 (+0.15%) | $162.17 | 7.14% | $157.572 (10%, hwm $175.08) | 9.77% | $200.53 (+15%) |
+
+- **Step 3 (cut losers):** neither position at or past -7%. No cut.
+- **Step 4 (tighten stops):** neither near a +15% trigger. Both trails live GTC on the book, both >3% below price. **No stop moved.** XLV's trail self-trailed $157.428 → $157.572 on a $175.08 hwm — Alpaca's own trailing, not a bot action.
+
+### Market Context
+- **Risk-off headlines, defensive tape.** Verified Aug 24-25: US Treasury sanctioned **~60 Iran-linked entities, individuals and vessels** (Bessent describing an expanded economic campaign); US **50% tariffs on Canadian autos, auto parts and steel** (talks collapsed, effective Jan 1 2027 per some reports). A claimed new China tariff **could not be verified** — cross-check returned nothing, so it is not carried forward.
+- Intraday sector read (single dated source, **not** independently confirmable): Financials +1.29%, Utilities +1.05% leading; **Technology -1.78%, Energy -0.83%** lagging. Prior-day Bloomberg table: Staples +1.76%, Financials +1.24%, Utilities +1.04% led; Info Tech -1.59%, Energy -0.76% lagged.
+- Crude **lower again**: WTI ~$83.75 (-0.98%), Brent ~$92.12 (-0.05%). Third session of the premium deflating.
+- **NVDA reports Wed 8/26 after the close** — chip weakness is today's tech driver. Book has no tech exposure; this is now a spectator event.
+- **Jackson Hole 8/27-29, Powell keynote Fri 8/28** — still the week's dominant scheduled risk.
+
+### XLE — the disqualifier did NOT fire, and the tape moved the other way
+The written cut trigger is **normalizing Hormuz vessel traffic**, not a headline. Verified against dated shipping data:
+- **Aug 21: 7 commodity transits** (Reuters/Kpler); Aug 20: 9; Aug 12: 8 vs a 10-day average ~12
+- CNN (Aug 18): 3,456 crossings since Mar 1 ≈ **20% of pre-war traffic**; baselines cited range ~73-130/day
+- **No US-Iran ceasefire signed or implemented** as of Aug 25 — dated coverage describes "continued hostilities," "fading hopes of a peace deal," "US-Iran stalemate"
+
+**The strait has not reopened. The trigger has not fired.** Note the divergence worth watching: sanctions on ~60 Iranian entities/vessels remove supply and should be crude-bullish, yet crude fell anyway — tariff-driven demand fear is outweighing the supply premium. XLE is tracking the barrel (-0.92% today), not a broken thesis. **Hold. Cut on vessel-traffic normalization, not on drift and not on a de-escalation headline.**
+
+### Trade Ideas — all four fail the checklist
+1. **XLF — the pre-written trigger says skip, and it says so by 5%.** Financials led the tape today (+1.29%) and are #2 on 3mo momentum, but XLF quotes **$58.06/$58.07** against a 52-week high of $58.41 — **99.4% of the high**. The 8/25 pre-market rule was explicit: enter only on a pullback to **≤$55.30**. Price is 5.0% *above* that. The rule was written for exactly this setup — a leader printing at its high on a strong day — and taking it now is chasing. **Skip. Trigger stands unchanged.**
+2. **XLU — priceable, but it is a laggard, not momentum.** Live $43.33/$43.34; 52-week range **$41.15-$47.80**. That is 5.3% off the *low* and 9.4% below the high. Today's +1.05% is a defensive bounce in a risk-off tape, not sector momentum, and rule 9 follows momentum. No stock-level catalyst. **Skip.**
+3. **XLP — no verified momentum, no catalyst.** $87.45 vs a $75.16-$90.14 range (3% below high). Staples led 8/24, but the 3mo ranking could not be verified for any sector today, and a one-day defensive print is not a momentum read. **Skip.**
+4. **Tech / energy add / XLV add — all previously settled, all still no.** Tech: sector exited on 1 failed trade (NVDA), and NVDA's binary print lands tomorrow after the close. Energy add: rejection is permanent while XLE is held, and the driver is deflating. XLV add: already 19.1% of equity against the 20% cap (rule 3).
+
+### Data & Research Quality
+- **Quote feed fresh at the open — third consecutive RTH confirmation.** All six checked tickers institutional at 13:37Z: SPY 0.004%, XLV 0.011%, XLF 0.017%, XLK 0.016%, XLU 0.023%, XLE 0.032%. The stale-stub problem remains a pre-market artifact only. **Pricing work belongs in this run, and today it did the work** — XLU and XLF were both rejected on numbers that could not have been checked before the bell.
+- **Perplexity declined rather than fabricated on four separate asks** (month-to-date sector leaderboard, live XLF sector rank, XLI/XLF 52-week ranges, 3mo sector rankings) — fifth session running of correct behavior. It also **failed to confirm its own first-response claim** of new China tariffs on cross-check, and that claim was dropped rather than logged. Standing rule holds: never size off a single response.
+
+### Decision
+**HOLD both. No trades. 1/3 weekly slots used.**
+
+The binding constraint is unchanged and was re-tested with live prices rather than assumed: the two sectors the book does not own that have real momentum are at (financials, 99.4% of high) or beneath (utilities, near the low) the levels where a 2:1 setup exists. Deployment stays at 38.1% for a ninth session — that gap is real, but the fix is a qualifying setup, not a looser standard, and Powell on Friday is worth more dry powder than a Tuesday chase into a 52-week high. Rule 11.
+
+**Carry forward:** (1) XLF trigger ≤$55.30 unchanged — it is the third leg the moment it pulls back; (2) XLE held on confirmed-closed Hormuz, cut on traffic normalization; (3) XLV still held without a recorded entry thesis — trail is the whole risk control; (4) NVDA 8/26 AC and Powell 8/28 are the week's two events, both spectator risk for this book.
