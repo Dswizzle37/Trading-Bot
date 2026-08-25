@@ -88,3 +88,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLV | 108 | $174.3756 | $174.70 | +0.05% | +$35.03 (+0.19%) | $157.43 (10% trail, hwm $174.92) |
 
 **Notes:** Two trades today (both reconstructed from Alpaca order history, see note above): cut NVDA at -7% (-$1,080.41 realized) and rotated into XLV at 19.1% of equity. Net realized P&L today: -$1,080.41. Tech sector now has 1 failed trade (rule 10: 2 before mandatory sector exit). Deployment is now 38.3% ($37,815.60 of $98,836) — still below the 75-85% target but the first meaningful step up after five sessions stuck near 33-34%. Both remaining positions (XLE, XLV) are flat-to-small on the day, stops untouched and >3% from price. Trades this week: 1/3 (XLV; the NVDA exit doesn't count against the new-trade cap). Day P&L measured against Alpaca's official prior-close reference ($99,288.97, `balance_asof` 2026-08-21) since Friday's own logged snapshot showed $99,303.49 — a small settlement difference, consistent with prior day notes.
+
+### Aug 25 — EOD Snapshot (Day 7, Tuesday)
+**Portfolio:** $98,533.40 | **Cash:** $61,020.08 (61.9%) | **Day P&L:** -$302.60 (-0.31%) | **Phase P&L:** -$1,466.60 (-1.47%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $61.94 | -1.85% | -$484.60 (-2.54%) | $58.24 (10% trail, hwm $64.70) |
+| XLV | 108 | $174.3756 | $175.29 | +0.34% | +$98.75 (+0.52%) | $158.24 (10% trail, hwm $175.82) |
+
+**Notes:** No trades today — no fills, no position changes. XLE slid -1.85% (energy momentum cooling) while XLV ticked up +0.34%; net day P&L -$302.60. Both positions well inside the -7% manual-cut line and both stops remain >3% from current price, untouched. Deployment 38.1% ($37,513.32 of $98,533.40) — sixth of seven sessions under the 75-85% target. Trades this week: 1/3 (XLV, unchanged since Monday). Day P&L measured against yesterday's logged EOD snapshot ($98,836.00); Alpaca's `last_equity` shows $98,820.68 for the same reference, a small settlement difference consistent with prior days.
