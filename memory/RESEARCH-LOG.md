@@ -346,3 +346,55 @@ Position management — both unchanged, both correct, **no stop moved**: NVDA an
 - **Research quality:** Perplexity again **declined rather than fabricated** on both unverifiable asks (the XLE move attribution and the intraday sector leaderboard), which is the correct behavior — third session running. No sector leaderboard available for today, so no momentum read to act on.
 
 **Midday call: HOLD both. Nothing actionable.** Carry forward: (1) XLE's premium is deflating on no news — watch for the de-escalation headline, that is the cut trigger, not the drift; (2) XLV is held without a recorded thesis; (3) deployment 38.2% with two weekly slots and Jackson Hole 8/28 ahead.
+
+## 2026-08-25 — Pre-market Research
+
+### Account
+- Equity: $98,592.14 (prior close $98,820.68, **-$228.54 / -0.23%**); phase-to-date **-$1,407.86 (-1.41%)** vs the $100k baseline
+- Cash: $61,020.08 (61.9%)
+- Buying power: $349,282.08 (margin-inflated; effective non-marginable BP $79,806.10)
+- Position market value: $37,572.06 (**38.1% deployed** — eighth consecutive session under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field; one sell has filled, 8/24 NVDA — not a day trade)
+- Open positions:
+  - **XLE** 300 sh @ $63.5553 avg, $62.32 mark, unrealized **-$370.60 (-1.94%)**. Cut line $59.11 — gap **5.16%**. 10% trailing GTC live at **$58.23** (hwm $64.70) = 6.56% below mark. No action.
+  - **XLV** 108 sh @ $174.3756 avg, $174.78 mark, unrealized **+$43.49 (+0.23%)**. Cut line $162.17 — gap **7.21%**. 10% trailing GTC live at **$157.428** (hwm $174.92) = 9.93% below mark. No action.
+- Neither position is near a trail-tightening trigger (XLE +15% = $73.09; XLV +15% = $200.53). Both stops >3% from price, both real GTC orders verified on the book. **No stop moved.**
+- Trades this week: **1/3** (XLV, Mon 8/24). Two slots open.
+
+### Market Context
+- **Light calendar today.** 10:00 ET New Home Sales + Conference Board Consumer Confidence; **Fed Barkin** speaking; **2-year Treasury auction** today (5-year Wed 8/26). No FOMC. Nothing in the book reports.
+- **Earnings before the open:** DKS, BNS, BMO, VIPS, BZ, GFI, SLQT, CTRN. None held, none sector-relevant. (See research-quality note — part of that list is unreliable.)
+- S&P 500 futures ~**7,663-7,699, flat to +0.4%**. **VIX 15.79** (Cboe, 12:15Z) — low-vol regime holding, cross-checked 15.72-15.78 on two vendors.
+- **Oil is DOWN, and that is today's move: WTI ~$85.1, Brent ~$92.1**, with front-month crude quoted **-2.48% (-$2.16)** in the pre-market snapshot. XLE is tracking it: $62.32 vs. $63.11 prior close = **-1.25%** before the bell.
+- **CORRECTION — CPI is NOT this week.** One research response claimed the NY Fed calendar had CPI on Wednesday. **Verified false on an independent query: the next CPI (August data) is Friday, September 11.** PPI Thursday and initial claims Thursday are the week's data. Nothing was sized off the wrong claim.
+- **Jackson Hole confirmed Aug 27-29, Powell keynote expected Fri 8/28** — consistent with the 8/21 log. That is this week's event, and it lands Thursday-Friday, not today.
+- Sector momentum (3mo, as of 8/21): **Health care +17.0% (leader), Financials +11.1%, Energy +7.7%.** Weekly leadership is rotating rather than persistent — energy led the week ending 8/14, tech led 8/3-8/7, health care led the 8/19 read. Note this **retro-validates the 8/24 XLV entry** whose thesis was lost: health care is the momentum leader on the intermediate view, so the position sits in the right sector even though its original reasoning is unrecoverable.
+- **Data quality — stale pre-market stubs again (seventh of eight sessions).** At 12:38Z only **SPY quoted fresh** (766.24/766.36, 0.016%). Everything else returned 8/24 20:00 close stubs: XLE, XLV, XLK, XLU all ask 0.00; XLF 5.80%. **No candidate can be sized before the open.** Position marks above come from the positions endpoint (last trade), which is unaffected. Confirmed twice last week that the feed is clean during RTH — pricing work belongs in the market-open run.
+
+### Trade Ideas
+1. **No qualifying entry today. Neither weekly slot is spent.**
+   - Entry checklist needs a specific catalyst; today has a housing/confidence print, a Barkin speech and a 2-year auction. None is a stock-level catalyst, and the week's actual event (Powell, 8/28) is three sessions out.
+   - Nothing but SPY is priceable pre-market for the seventh session in eight.
+2. **XLF (financials) — the logical third leg, and it fails on the same math as before. Skip, with a written trigger.**
+   - The case: #2 on 3mo momentum (+11.1%), and it diversifies *away* from the oil trade rather than stacking on it — the objection that killed the energy add does not apply.
+   - The problem, unchanged from 8/19: XLF closed **$58.22** against a 52-week range of **$47.67-$58.41**. That is **99.7% of the high**, +5.85% YTD. A 2:1 setup off that entry needs a $53.56 stop and a **$67.54 target — +16% above a 52-week high**. The R:R does not clear the checklist; it only looks like it does because the stop is wide.
+   - **Pre-written trigger for a later run:** enter only on a pullback to **≤$55.30** (-5%, back inside the range) with financials still in the top-2 momentum read → stop $50.88 (-8%), target $64.42 (+16.5%), clears 2:1 *below* the prior high. Above $55.30, skip. Do not chase into the high.
+3. **XLV add — no room, and it would repeat the energy mistake. Skip.** Position is already 19.1% of equity against a 20% cap (rule 3). A second health-care name to express the same sector call would put ~38% of the book on one sector — the exact concentration that made the XOP/COP rejection permanent while XLE is held. Same objection, same answer.
+4. **Energy add-on — rejection stands and remains permanent while XLE is held** (8/21). Reinforced today: the sector's own driver is deflating (crude -2.5%), which is the wrong moment to double the exposure.
+
+### Risk Factors
+- **XLE's premium is deflating for the second session, and today it is the price of oil doing it, not a headline.** Crude -2.5% pre-market with XLE -1.25%. That is the position tracking its driver, not the thesis breaking.
+- **The XLE disqualifier has NOT fired — verified, and this is the one to get right.** The first research response led with "a conditional US-Iran ceasefire is the key driver today," citing BBC/NBC pieces the 8/20-8/21 logs already flagged as incomplete and conditional. A targeted follow-up on actual shipping data contradicts it: **Strait Live's Aug 25 update lists the strait "Closed"**; Reuters (8/24) counted **fewer than 20 vessels over the weekend, ~90% below pre-conflict baseline** (7 ships 8/21, 9 on 8/20, vs. a normal ~73/day). The strait has not reopened. **The cut trigger is normalizing vessel traffic, not an announcement of an agreement** — acting on the first response alone would have wrongly cut a live position.
+- **XLV is still held without a recorded thesis** (see the 8/24 TRADE-LOG reconstruction note). Today's sector read supports the sector but is not a substitute for the entry reasoning, which is lost. The 10% trail remains the whole risk control on this position.
+- **Powell at Jackson Hole, Fri 8/28**, is the week's dominant scheduled risk. Both current positions are macro-sensitive (rates hit health-care multiples; the dollar path moves crude).
+- **Deployment 38.1%, eighth session under target.** Unlike last week, the arithmetic now works: two slots × ~19% would reach **~76%**, inside the 75-85% band by Friday. The binding constraint is no longer the trade cap — it is that the two momentum sectors the book does not already own are at or near 52-week highs, where the 2:1 requirement fails. That is the standing research problem to solve, and chasing highs to close a percentage is not the solution.
+- **Research quality — mixed, one clean catch and one bad list.** Perplexity fabricated or mis-sourced the week's CPI date (corrected above) and returned a pre-market earnings list containing DRI, SNX, AYI, CMC and WGO — late-September fiscal reporters that do not report on 8/25. Cross-checking on independent queries caught both. Standing rule confirmed for a fourth session: **never size off a single Perplexity response.**
+
+### Decision
+**HOLD. No order placed. Both weekly trade slots stay open (1/3 used).**
+
+Three independent reasons: (1) **no stock-level catalyst** — a housing print and a Barkin speech are not entry triggers, and the week's real event is Powell on Friday; (2) **nothing is priceable** — seventh pre-market in eight with stale stubs on everything but SPY; (3) **the one idea with a real sector case, XLF, fails its R:R** at 99.7% of a 52-week high, and the fix is a written pullback trigger, not a looser standard.
+
+Holding two slots into Powell is the right shape of the week: the catalysts are Thursday-Friday, and dry powder is worth more on the other side of them than spent on a Tuesday with an empty calendar. Rule 11.
+
+Position management — both unchanged, both correct, **no stop moved**: XLE and XLV both well inside the -7% cut line (5.16% and 7.21% of room), both trails >3% below price, both live GTC orders verified on the book, neither at a tightening trigger. XLE flagged: the premium is deflating on price, not news — cut on confirmed vessel-traffic normalization, not on a de-escalation headline.
