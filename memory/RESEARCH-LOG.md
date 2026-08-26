@@ -540,3 +540,49 @@ Note the asymmetry that now defines this position: the supply story is being dis
 Three reasons, in order of weight: (1) **XLE's written cut trigger has not fired** — transit data says 4-10% of baseline and the strait is still classified closed, so the corridor *report* is not the corridor *working*, and cutting on a headline is exactly what the 8/24 rule was written to prevent; (2) **nothing is priceable** — eighth pre-market in nine with stale stubs on everything but SPY, so no new position could be sized honestly even if one qualified; (3) **today's two events are a macro print and a binary earnings report**, neither of which is an entry trigger, and the week's biggest scheduled risk (Warsh, Friday) is still two sessions out.
 
 **Carry forward to the market-open run — the one thing that actually needs doing:** re-check XLE with live prices at the open. Its gap to the -7% cut line is **4.05%** and has halved in four sessions; crude is down another ~2.5% pre-market. If XLE trades through **$59.11**, cut it per rule 5 — do not wait for the $58.23 trail. Also re-pull Hormuz transit counts: if the corridor is real and daily transits are climbing toward ~40, that is trigger (a) and the position goes regardless of price. Secondary: XLF trigger ≤$55.30 unchanged, XLV still held without a recorded thesis.
+
+## 2026-08-26 — Afternoon Addendum (midday scan, 13:10 ET)
+
+### Account
+- Equity **$98,606.27** (prior close $98,569.40, **+$36.87 / +0.04%**); phase-to-date **-$1,393.73 (-1.39%)**
+- Cash $61,020.08 (61.9%) | Position market value $37,586.19 — **38.1% deployed**, tenth consecutive session under the 75-85% target
+- Daytrade count: 0 (field omitted by Alpaca) | Trades this week **1/3** (XLV, Mon 8/24). Two slots open.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.675 | 19.1% | -$264.10 (-1.39%) | **+0.99%** | $59.11 | **5.69%** | $58.23 (10%, hwm $64.70) | 7.09% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $173.925 | 19.1% | -$48.67 (-0.26%) | -0.78% | $162.17 | 6.76% | $158.238 (10%, hwm $175.82) | 9.02% | $200.53 (+15%) |
+
+Both stops verified live on the book (XLE `ef0c1da0`, XLV `96c24a1e`), both >3% from price, neither near a tightening trigger. **No stop moved. No order placed. No position closed.**
+
+### The pre-market carry-forward is resolved — XLE did the opposite of what was feared
+The pre-market run flagged one thing to check at the open: XLE's gap to the $59.11 cut line had halved in four sessions to 4.05%, with crude down another ~2.5% overnight. Both halves of that came back the other way:
+
+- **Gap to the cut line widened to 5.69%**, from 4.05% this morning. XLE is **+0.99% on the day** at $62.675 against a $62.06 prior close.
+- **Note the pre-market mark was wrong.** That log carried XLE at $61.60 with -3.08% unrealized. Alpaca's own prior close is **$62.06**; $61.60 was a stale stub from the same dead pre-market book the log itself warned about. The position was never as close to the line as this morning's table showed — the direction of the four-session trend was real, the level was not. **Marks taken from a stale book do not go in the table.**
+- **XLE rose while the barrel fell** — Brent ~$86.71 (-2.1%), WTI near $80, on easing US-Iran tone and rising OPEC supply. That is the first session in five where XLE has **not** simply tracked crude down. One session is not a divergence; it is logged as something to confirm or discard tomorrow, not as a thesis.
+
+### Hormuz trigger (a) — checked with dated counts, has NOT fired
+Trigger (a) is daily transits ≥ ~40 (≈50% of the 85/day baseline) sustained two consecutive sessions.
+
+- **Aug 26: 5 commodity vessels** (Reuters/Kpler preliminary, 8/26) ≈ **6% of baseline**
+- **Aug 25: 2 tankers** (MarineLink, 8/25) ≈ 2% | **Aug 24 weekend: <20 total**, 13 Sat / 4 Sun (Reuters, 8/24)
+- Strait Live's **Aug 26** status still reads **"Closed"**
+
+Counts are 2-6% of normal and are **not rising** — 13 → 4 → 2 → 5 across four sessions is noise at a collapsed base, not a trend toward 40. The temporary corridor reported yesterday is **still not moving ships**. Trigger (a) has not fired; trigger (b) at $59.11 is 5.69% away. **XLE holds on its written terms, unchanged.**
+
+### Macro
+- **Core PCE landed in line** — 0.2% m/m, 3.3% y/y, consensus-matching; equities held, yields firmed modestly. One vendor in the same response printed a 3.7% headline figure, so **only the in-line characterization is carried forward**, not a specific level. Second straight session of a single Perplexity response contradicting itself on a number — the never-size-off-one-response rule is doing real work.
+- **NVDA reports after the close**, with CRWD/CRM/HPQ/SNPS also in the window. No exposure. Sets tomorrow's tape, not today's.
+- Quote quality **recovered at midday** — XLE 0.016%, XLV 0.011%, SPY 0.014% spreads, all fresh. The stale-stub problem is a pre-market book defect, not an all-day one.
+
+### Perplexity contradicted the tape, and the tape won
+Perplexity reported "**Energy sector (XLE) under pressure today alongside crude weakness**." Alpaca has XLE **+0.99%** against its own prior close, on a 1c spread. The research feed inferred the sector from the barrel instead of reading the sector. **Position facts come from Alpaca; Perplexity is for context and catalysts only.** This is the first time the feed has been caught stating a price direction that the account's own data contradicts — worth more than the usual research-quality note.
+
+### Persistence gap — the 8/26 market-open run left nothing on main
+`origin/main` head at 17:10Z is `df24319` ("pre-market research 2026-08-26"). There is **no 8/26 market-open section** in this log and no commit between the pre-market run and this one. The market-open run either did not fire or did not persist. **No trade was missed** — Alpaca order history shows no fills since 8/24 and both positions/stops are exactly as the pre-market run left them, so nothing was lost but the run's own reasoning. This is the **third** persistence gap in the account (Day 1 GitHub 403; 8/24 pre-market + market-open). The 8/24 note named the fix — "a run that trades must not be able to finish without persisting" — and it is still unbuilt.
+
+### Decision
+**HOLD both. No action taken.** Neither position is near the -7% cut line (XLE 5.69%, XLV 6.76% of room), neither is near a +15% tightening trigger, both trails are live GTC and >3% below price, and XLE's Hormuz disqualifier is still 2-6% of baseline against a ≥40 threshold. Both weekly slots stay open (1/3 used).
+
+**Carry forward to the EOD run:** (1) whether XLE's decoupling from crude survives a second session, or was a one-day artifact; (2) XLE cut line $59.11 and Hormuz transits ≥40 — both triggers unchanged; (3) NVDA's post-close print sets tomorrow's tape with no exposure either way; (4) **Warsh at Jackson Hole Fri 8/28, 10:00 ET** remains the week's dominant scheduled risk and the reason both slots stay unspent.
