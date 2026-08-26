@@ -88,3 +88,15 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLV | 108 | $174.3756 | $174.70 | +0.05% | +$35.03 (+0.19%) | $157.43 (10% trail, hwm $174.92) |
 
 **Notes:** Two trades today (both reconstructed from Alpaca order history, see note above): cut NVDA at -7% (-$1,080.41 realized) and rotated into XLV at 19.1% of equity. Net realized P&L today: -$1,080.41. Tech sector now has 1 failed trade (rule 10: 2 before mandatory sector exit). Deployment is now 38.3% ($37,815.60 of $98,836) — still below the 75-85% target but the first meaningful step up after five sessions stuck near 33-34%. Both remaining positions (XLE, XLV) are flat-to-small on the day, stops untouched and >3% from price. Trades this week: 1/3 (XLV; the NVDA exit doesn't count against the new-trade cap). Day P&L measured against Alpaca's official prior-close reference ($99,288.97, `balance_asof` 2026-08-21) since Friday's own logged snapshot showed $99,303.49 — a small settlement difference, consistent with prior day notes.
+
+> **Persistence gap.** No 2026-08-25 EOD snapshot exists in this log — the 8/25 pre-market and midday runs persisted to RESEARCH-LOG.md, but no EOD run committed that day (third persistence gap in the account per the 8/26 midday research addendum). No trades or fills occurred 8/25 per Alpaca order history; only this log's own daily cadence was missed. Day P&L below is measured against Alpaca's `last_equity` ($98,569.40, `balance_asof` 2026-08-25) rather than a logged 8/25 snapshot.
+
+### Aug 26 — EOD Snapshot (Day 8, Wednesday)
+**Portfolio:** $98,501.60 | **Cash:** $61,020.08 (61.9%) | **Day P&L:** -$67.80 (-0.07%) | **Phase P&L:** -$1,498.40 (-1.50%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.464 | +0.65% | -$327.40 (-1.72%) | $58.23 (10% trail, hwm $64.70) |
+| XLV | 108 | $174.3756 | $173.54 | -1.00% | -$90.25 (-0.48%) | $158.238 (10% trail, hwm $175.82) |
+
+**Notes:** No trades today — no fills since the 8/24 rotation, third weekly slot stays open (1/3 used, unchanged since Monday). XLE held its ground (+0.65%) despite crude staying weak, continuing the decoupling first noted at midday; XLV gave back a little (-1.00%) after NVDA and other tech names ran into their post-close earnings window. Both positions are well inside the -7% cut line (XLE -1.72%, XLV -0.48%) with stops untouched and >3% below price. Deployment 38.1% ($37,481.52 of $98,501.60) — eighth session under the 75-85% target. Hormuz trigger (a) for XLE has not fired (2-6% of baseline transits vs. a ≥40 threshold); trigger (b) at $59.11 is now 6.14% away. Warsh's Jackson Hole keynote (Fri 8/28, 10:00 ET) remains the reason both open slots stay unspent.
