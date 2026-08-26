@@ -472,3 +472,71 @@ The binding constraint is unchanged and was re-tested with live prices rather th
 - **Research quality:** Perplexity returned **dated, sourced transit counts** on the Hormuz ask rather than a summary judgment — the correct behavior, sixth session running. It did, however, return **three mutually inconsistent crude quotes** in one response on the market ask, which is why the level above is logged as unverified. Standing rule holds: never size off a single response.
 
 **Midday call: HOLD both. Nothing actionable.** Carry forward: (1) XLE held on a strait that is verifiably still closed — cut on traffic normalization, not on the drift, but the demand-side pressure is now the live risk; (2) XLF trigger ≤$55.30 unchanged, and it has not moved toward it in four hours; (3) XLV still held without a recorded thesis, trail is the whole control; (4) deployment 38.2% into NVDA 8/26 AC and Powell 8/28, two slots open by choice.
+
+## 2026-08-26 — Pre-market Research
+
+### Account
+- Equity: **$98,424.92** (prior close $98,569.40, **-$144.48 / -0.15%**); phase-to-date **-$1,575.08 (-1.58%)** vs the $100k baseline
+- Cash: $61,020.08 (62.0%) | Buying power $348,813.87 (margin-inflated; effective non-marginable BP $79,722.50)
+- Position market value: $37,404.84 (**38.0% deployed** — tenth consecutive session under the 75-85% target)
+- Daytrade count: 0 (Alpaca omits the field; the only sell to fill is 8/24 NVDA — not a day trade)
+- Trades this week: **1/3** (XLV, Mon 8/24). Two slots open.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $61.60 | 18.8% | **-$586.60 (-3.08%)** | $59.11 | **4.05%** | $58.23 (10%, hwm $64.70) | 5.47% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $175.23 | 19.2% | +$92.27 (+0.49%) | $162.17 | 7.45% | $158.238 (10%, hwm $175.82) | 9.70% | $200.53 (+15%) |
+
+Both stops are live GTC orders verified on the book (XLE `ef0c1da0`, XLV `96c24a1e`), both >3% below price, neither near a tightening trigger. **No stop moved.** Neither position is at or past the -7% cut line.
+
+### Market Context
+- **Today is a real macro day, and it is the first one this week.** BEA **Personal Income & Outlays incl. core PCE at 8:30 ET**, plus **Q2 GDP second estimate** and **durable goods orders**, same release window. Verified on BEA's own release calendar, not just a third-party aggregator — the 8/25 log's note that "the week's data is Thursday" was too narrow.
+- **NVDA reports after the close.** Also CRWD, CRM, HPQ, SNPS, VEEV, OKTA around the same session. Book has no tech exposure — spectator risk, but it sets tomorrow's tape.
+- **CORRECTION — the Jackson Hole keynote is Fed Chair Kevin Warsh, not Powell.** The 8/21, 8/25 pre-market and 8/25 market-open logs all named Powell. Per the Kansas City Fed's own release, **Warsh speaks Fri 8/28, 10:00 ET**; symposium runs 8/27-29. Nothing was sized off the wrong name, but the logs carried it three sessions.
+- S&P 500 futures ~**7,679-7,687, flat to -0.1%**. **VIX ~15.5-15.7** — low-vol regime holding for a fifth session, cross-checked across three vendors.
+- **Oil is down hard again — fifth consecutive session of the premium deflating.** WTI ~**$79.9-80.6 (-2.2% to -3.0%)**, Brent ~**$86.3-86.6 (-2.2% to -2.6%)**. Sources disagree on the level (TradingEconomics $79.89, CNBC/Markets Insider $80.50-80.56) so only the direction is carried forward as verified. For scale: WTI was **$85.1 on Monday pre-market and ~$92 Brent** — the barrel has given back most of the conflict premium in four sessions.
+- Sector momentum: **no clean 3-month ranking available today.** Schwab's trailing table has Energy +21.3% 6mo / +41.7% 12mo (top) and Health Care +5.5% 6mo / +21.3% 12mo. Those are 6/12mo windows and are **not comparable** to the 3mo ranking the 8/25 log used (Health care +17.0%, Financials +11.1%, Energy +7.7%). Both positions sit in sectors with a defensible momentum case on *some* window; no new momentum signal to act on.
+
+### XLE — the trigger has NOT fired, but the mechanism behind it appeared for the first time
+The written cut trigger is **confirmed Hormuz vessel-traffic normalization**, not a headline and not price drift. Checked against dated transit data:
+- **Aug 23: 3 transits** vs a pre-crisis baseline of **85/day** ≈ **4%** (IMF PortWatch / Strait Live)
+- **Aug 24: 4 inbound, 0 outbound** (Argus/Windward) | **Aug 25: 5 transits** (Reuters/Kpler) | weekend total **<20 vessels, ~90% below baseline** (Reuters)
+- Strait Live's Aug 25 brief still classifies the waterway **"closed" / "militarily closed"**; US-Iran diplomacy described as deadlocked
+
+**The strait has not reopened. On the written terms, the trigger has not fired — hold.**
+
+**But two things changed today and they belong in the record:**
+1. **A temporary maritime corridor through Hormuz is now being reported** (CNBC 8/25, MarineLink, TradingKey), alongside reports of diplomats returning to Middle East embassies and a less aggressive-than-feared US posture. This is the *mechanism* by which traffic would normalize. It is the closest the disqualifier has come to firing since the position was opened.
+2. **The "traffic skyrockets ~400%" headline (NY Post, 8/22) does not survive a cross-check.** Those are **weekly** totals — ~40 ships two weeks prior to ~200 last week — off a collapsed base. Daily counts are still 3-13 against 85. A 400% rise from 4% of normal is still ~10% of normal. Not normalization.
+
+**Trigger sharpened, so the next run does not have to improvise.** Cut XLE on whichever comes first:
+- **(a) Daily transits ≥ ~40 (≈50% of the 85/day baseline) sustained two consecutive sessions**, or a confirmed corridor with counts actually rising toward that, **or**
+- **(b) the -7% cut line at $59.11** (rule 5, which is only **4.05%** below the current mark).
+
+Note the asymmetry that now defines this position: the supply story is being dismantled by *both* sides — a corridor would remove the premium, and tariff-driven demand fear is already removing it without one. XLE is tracking the barrel, not diverging from it, so the thesis is not broken on its written terms. It is, however, the sharpest risk in the book and its room to the cut line has halved in four sessions (8.4% on 8/21 → 5.16% on 8/25 → 4.05% today).
+
+### XLV — unchanged, and still held without a recorded entry thesis
++0.49% vs entry, -0.03% overnight, 7.45% of room to the cut line, trail self-trailed to $158.238 on a $175.82 hwm (Alpaca's own trailing, not a bot action). **No Aug 26 health-care headline surfaced either way** — Perplexity declined rather than invent one. As noted since 8/24, this position cannot be thesis-checked on its original terms because the run that opened it never persisted its reasoning. **The 10% trail remains the entire risk control here.**
+
+### Trade Ideas
+1. **No qualifying entry today. Both open slots stay open.**
+   - **Nothing is priceable — eighth pre-market in nine.** At 12:57Z only **SPY quoted fresh** (765.05/765.12, 0.009%, timestamped 12:38Z). XLE, XLV, XLF and XLK all returned 8/25 20:00 close stubs with 5.9-6.3% spreads (XLE ask 0.00). No candidate can be sized before the bell. Position marks above come from the positions endpoint (last trade), which is unaffected.
+   - Today's catalysts are **macro and binary**, not stock-level entry triggers: an 8:30 PCE print and an after-the-close NVDA report are things to be positioned *around*, not entered *on*.
+2. **XLF — trigger unchanged at ≤$55.30, and it cannot even be checked pre-market.** Last verifiable read was $58.16/$58.17 (8/25 midday), ~5.2% above the trigger and pinned near its $58.41 52-week high. Today's stub (56.46/59.97, 5.85% spread) is not a price. **Skip.** The pullback rule stands: enter only ≤$55.30 with financials still top-2 on momentum → stop $50.88, target $64.42, clears 2:1 below the prior high.
+3. **Energy add-on — rejection remains permanent while XLE is held**, and today reinforces it for the fifth session: the sector's driver is deflating from both the supply and demand side. Adding here would double down on the one position whose room to the cut line is shrinking.
+4. **XLV add — no room.** Already 19.2% of equity against the 20% cap (rule 3). A second health-care name would put ~38% of the book on one sector — the concentration objection that made the XOP/COP rejection permanent.
+
+### Risk Factors
+- **XLE is the position that needs watching, and today is the first session where the disqualifier has a plausible path.** A corridor report plus a barrel that has given back ~$5 in four sessions. The trigger has not fired on transit data, and the -7% line is 4.05% away. If PCE runs hot and the dollar bids, crude gets a second push down in the same session.
+- **Core PCE at 8:30 ET is a live, un-hedgeable event for both positions.** Rates hit health-care multiples; the dollar path moves crude. Both holdings are macro-sensitive and both are held through the print by choice.
+- **NVDA after the close** sets tomorrow's tape and the AI-complex risk appetite. No exposure — this is exactly the binary the 8/24 NVDA cut was made to avoid, and that decision looks correct in hindsight regardless of the print.
+- **Warsh at Jackson Hole, Fri 8/28** — the week's dominant scheduled risk, and a *new* Fed chair's first keynote carries wider outcome dispersion than a known quantity would. That argues for keeping the two slots unspent rather than against it.
+- **Deployment 38.0%, tenth session under target.** The arithmetic still works — two slots × ~19% reaches ~76% — but the binding constraint is unchanged: the sectors the book does not own that have momentum are at (financials, 99.4% of high) or beneath (utilities, near the low) the levels where a 2:1 setup exists. Chasing a high to close a percentage is not the fix.
+- **Research quality — one real correction, one bad headline caught, one honest decline.** Perplexity's PCE claim was **verified true** against BEA's own calendar on an independent query (the 8/25 log's calendar read was incomplete). The NY Post "400%" Hormuz claim was **caught as a base-effect artifact** on cross-check and is not carried forward. Perplexity **declined rather than fabricate** an XLV catalyst — seventh session running of correct behavior. It also returned mutually inconsistent crude levels within one response for a second day, which is why only the direction is logged. Standing rule holds: **never size off a single response.**
+
+### Decision
+**HOLD both. No order placed, no stop moved, no position closed. Both weekly slots stay open (1/3 used).**
+
+Three reasons, in order of weight: (1) **XLE's written cut trigger has not fired** — transit data says 4-10% of baseline and the strait is still classified closed, so the corridor *report* is not the corridor *working*, and cutting on a headline is exactly what the 8/24 rule was written to prevent; (2) **nothing is priceable** — eighth pre-market in nine with stale stubs on everything but SPY, so no new position could be sized honestly even if one qualified; (3) **today's two events are a macro print and a binary earnings report**, neither of which is an entry trigger, and the week's biggest scheduled risk (Warsh, Friday) is still two sessions out.
+
+**Carry forward to the market-open run — the one thing that actually needs doing:** re-check XLE with live prices at the open. Its gap to the -7% cut line is **4.05%** and has halved in four sessions; crude is down another ~2.5% pre-market. If XLE trades through **$59.11**, cut it per rule 5 — do not wait for the $58.23 trail. Also re-pull Hormuz transit counts: if the corridor is real and daily transits are climbing toward ~40, that is trigger (a) and the position goes regardless of price. Secondary: XLF trigger ≤$55.30 unchanged, XLV still held without a recorded thesis.
