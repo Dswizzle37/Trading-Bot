@@ -586,3 +586,43 @@ Perplexity reported "**Energy sector (XLE) under pressure today alongside crude 
 **HOLD both. No action taken.** Neither position is near the -7% cut line (XLE 5.69%, XLV 6.76% of room), neither is near a +15% tightening trigger, both trails are live GTC and >3% below price, and XLE's Hormuz disqualifier is still 2-6% of baseline against a ≥40 threshold. Both weekly slots stay open (1/3 used).
 
 **Carry forward to the EOD run:** (1) whether XLE's decoupling from crude survives a second session, or was a one-day artifact; (2) XLE cut line $59.11 and Hormuz transits ≥40 — both triggers unchanged; (3) NVDA's post-close print sets tomorrow's tape with no exposure either way; (4) **Warsh at Jackson Hole Fri 8/28, 10:00 ET** remains the week's dominant scheduled risk and the reason both slots stay unspent.
+
+## 2026-08-27 — Afternoon Addendum (midday scan, 13:09 ET)
+
+**No action taken. No order placed, no stop moved, no position closed.**
+
+### Account
+- Equity **$98,298.98** (prior close $98,491.40, **-$192.42 / -0.20%**); phase-to-date **-$1,701.02 (-1.70%)** vs the $100k baseline
+- Cash $61,020.08 (62.1%) | Position market value $37,278.90 — **37.9% deployed**, eleventh consecutive session under the 75-85% target
+- No fills since 8/24 (Alpaca order history). Trades this week **1/3** (XLV, Mon 8/24). Two slots open.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.23 | 19.0% | -$397.60 (-2.09%) | -0.32% | $59.11 | **5.02%** | $58.23 (10%, hwm $64.70) | 6.43% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $172.30 | 18.9% | -$224.17 (-1.19%) | -0.71% | $162.17 | 5.88% | $158.238 (10%, hwm $175.82) | 8.16% | $200.53 (+15%) |
+
+Both stops verified live on the book (XLE `ef0c1da0`, XLV `96c24a1e`), both >3% from price, neither near a tightening trigger (both need +15%, i.e. ~+17-18% from here). **Step 3: no cut** — nearest is XLE at 5.02% of room. **Step 4: no stop moved.**
+
+### Thesis check
+- **XLE — intact, disqualifier still has not fired.** Trigger (a) is Hormuz daily transits ≥ ~40 sustained two sessions. Perplexity returned **NOT FOUND** for dated Aug 26-27 transit counts (declining rather than fabricating, fourth session running), but an **Aug 27 dated source still classifies the strait as closed**, and explicitly states the temporary Oman route agreement **does not mean it has reopened**. No US-Iran ceasefire, de-escalation deal, or formal reopening in any Aug 26-27 source. Trigger (b) at $59.11 is 5.02% away. **Holds on its written terms, unchanged.**
+- **XLV — still held without a recorded thesis** (fourth session; the 8/24 market-open run never persisted its reasoning). No dated Aug 27 health-care headline in either direction — the only mention is sector performance. The 10% trail remains the entire risk control on this position.
+
+### The book is flat-to-down on a green tape — that is the real read today
+S&P 500 **+0.4%**, Nasdaq **+1.0%** on the day, led by tech after NVDA's post-close beat ($96.2B revenue, +106% y/y, EPS $2.22). This book is **-0.20%**, with both holdings red. The gap is not a position problem — it is the **62% cash position**, eleventh straight session under the deployment target, in a week where the index is climbing. Against the mission (beat the S&P), being three-fifths in cash during a rally is the dominant source of underperformance, not either holding.
+
+Note also: the NVDA print this book cut ahead of on 8/24 came in strong and the stock led the tape today. The cut was correct on its rule (-7.25% through the line, before a binary), but the outcome is logged honestly — the avoided risk did not materialize.
+
+### Research quality
+Perplexity's sector readout **contradicted itself within one response** (health care listed as both leading and lagging) and reported **energy leading** while Alpaca has XLE **-0.32%** on the day. Second consecutive session the feed has stated a sector direction the account's own data contradicts. **Position facts come from Alpaca; Perplexity is context and catalysts only.** No usable sector-momentum leaderboard again today.
+
+### Persistence gap — three consecutive runs left no record
+`origin/main` head is `884b477` ("midday scan 2026-08-26"). There is **no 8/26 EOD snapshot, no 8/27 pre-market research, and no 8/27 market-open section** anywhere in the repo or on any remote branch (all 30 remote heads checked). So this scan ran without today's research to check against — the pre-market carry-forward it should have inherited does not exist.
+
+**No trade was missed:** Alpaca order history shows no fills since 8/24 and both positions and both stops are exactly as the 8/26 midday run left them. What was lost is three runs' reasoning, plus two EOD snapshots (8/25 and 8/26 are also absent from TRADE-LOG, whose last entry is the 8/24 Day 6 snapshot).
+
+**Structural cause, now identified:** every run commits to its **own per-session branch** (`claude/<name>-<id>`), and those branches are only sometimes merged to `main`. Nineteen such branches exist on the remote, most never merged. Work is not being lost to a failed commit — it is being stranded on abandoned branches. The 8/24 note's fix ("a run that trades must not be able to finish without persisting") is still unbuilt, and this is the fourth occurrence.
+
+### Decision
+**HOLD both. No action taken.** Neither position is near the -7% cut line (XLE 5.02%, XLV 5.88% of room), neither is near a +15% tightening trigger, both trails are live GTC and >3% below price, and XLE's Hormuz disqualifier has not fired. Both weekly slots stay open (1/3 used).
+
+**Carry forward to the EOD run:** (1) XLE cut line $59.11 and Hormuz transits ≥40 — both triggers unchanged; (2) XLV still un-thesised — either re-establish a thesis or treat the next weakness as an exit; (3) **deployment 37.9% into a rallying tape is the standing cost** — two weekly slots open; (4) **Warsh at Jackson Hole Fri 8/28** is the reason to spend them tomorrow rather than today; (5) TRADE-LOG is missing 8/25 and 8/26 EOD snapshots.
