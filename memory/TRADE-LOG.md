@@ -88,3 +88,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLV | 108 | $174.3756 | $174.70 | +0.05% | +$35.03 (+0.19%) | $157.43 (10% trail, hwm $174.92) |
 
 **Notes:** Two trades today (both reconstructed from Alpaca order history, see note above): cut NVDA at -7% (-$1,080.41 realized) and rotated into XLV at 19.1% of equity. Net realized P&L today: -$1,080.41. Tech sector now has 1 failed trade (rule 10: 2 before mandatory sector exit). Deployment is now 38.3% ($37,815.60 of $98,836) — still below the 75-85% target but the first meaningful step up after five sessions stuck near 33-34%. Both remaining positions (XLE, XLV) are flat-to-small on the day, stops untouched and >3% from price. Trades this week: 1/3 (XLV; the NVDA exit doesn't count against the new-trade cap). Day P&L measured against Alpaca's official prior-close reference ($99,288.97, `balance_asof` 2026-08-21) since Friday's own logged snapshot showed $99,303.49 — a small settlement difference, consistent with prior day notes.
+
+### Aug 27 — EOD Snapshot (Day 9, Thursday)
+**Portfolio:** $98,240.72 | **Cash:** $61,020.08 (62.1%) | **Day P&L:** -$250.68 (-0.25%) | **Phase P&L:** -$1,759.28 (-1.76%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.30 | -0.21% | -$376.60 (-1.98%) | $58.23 (10% trail, hwm $64.70) |
+| XLV | 108 | $174.3756 | $171.58 | -1.13% | -$301.93 (-1.60%) | $158.24 (10% trail, hwm $175.82) |
+
+**Notes:** No trades today, no fills, no position changes. Two EOD snapshots (8/25 Tue, 8/26 Wed) were never logged — those days' routines only ran pre-market/midday research (no trades) and evidently didn't commit an EOD snapshot; positions and stops are confirmed live and correct against Alpaca, nothing to reconstruct. Day P&L uses Alpaca's official `last_equity` ($98,491.40, balance_asof 2026-08-26) since the log's own last snapshot (8/24, $98,836.00) is three sessions stale. Both positions are down small (XLE -1.98%, XLV -1.60% unrealized), well inside the -7% manual-cut line, both stops >3% below price and untouched (no stop moved down). Deployment 37.9% ($37,220.64 of $98,240.72) — up from the 33-34% range but still below the 75-85% target. Trades this week: 1/3 (XLV on 8/24), slot still open. Tech sector: 1 failed trade on record (rule 10: 2 before mandatory sector exit).
