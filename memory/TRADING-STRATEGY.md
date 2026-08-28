@@ -22,6 +22,9 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 10. Exit a sector after 2 consecutive failed trades
 11. Patience > activity
 
+## Operating Rules
+12. **No trade is complete until it is persisted.** A run that places, cancels, or closes an order must commit and push its thesis, gate checks, stop, and the resulting log entry in the same run. If the push fails, say so explicitly in the notification. A later run that inherits a position with no recorded thesis must re-establish one or close the position — it may not simply carry it. *(Added 2026-08-28 after four persistence failures in two weeks left XLV, 19% of equity, held with no recoverable entry thesis.)*
+
 ## Entry Checklist
 - Specific catalyst?
 - Sector in momentum?
