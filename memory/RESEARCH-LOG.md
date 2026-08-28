@@ -691,3 +691,43 @@ The pre-market run held two slots all week for one specific event, then wrote do
 **Carry forward to the midday scan:** (1) re-read XLE and XLV after 10:15 ET once the Warsh + 3-print reaction settles — cut lines $59.11 and $162.17 unchanged, both ~5% away this morning; (2) **XLF is the one name to re-price after the keynote** — a hawkish reaction is the only path to ≤$55.30, and financials must still be top-2 on momentum before sizing; (3) both trails are live and untouched, no action owed on them.
 
 **Carry forward to today's weekly review (Friday):** unchanged from the pre-market list — (1) deployment stuck at ~38% for thirteen sessions, and whether the XLF ≤$55.30 trigger is reachable or is a level that will never print; (2) XLV's Aug 31 MFN event against a position with no recorded entry thesis; (3) the NVDA cut's rule-correct / outcome-adverse split; (4) the persistence guard, still unbuilt after four gaps.
+
+## 2026-08-28 — Afternoon Addendum (midday scan, 13:20 ET)
+
+### Account
+- Equity **$98,249.30** (prior close $98,237.72, **+$11.58 / +0.01%**); phase-to-date **-$1,750.70 (-1.75%)**
+- Cash $61,020.08 (62.1%) | Position market value $37,229.22 — **37.9% deployed**, thirteenth consecutive session under the 75-85% target
+- Daytrade count: 0 (field omitted by Alpaca; no sell has filled since 8/24) | Trades this week **1/3** (XLV, Mon 8/24). Two slots open, last session of the week.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.615 | 19.1% | -$282.10 (-1.48%) | +0.52% | $59.11 | 5.60% | $58.23 (10%, hwm $64.70) | 7.00% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $170.86 | 18.8% | -$379.69 (-2.02%) | -0.42% | $162.17 | 5.09% | $158.238 (10%, hwm $175.82) | 7.39% | $200.53 (+15%) |
+
+Both stops verified live on the book (XLE `ef0c1da0` $58.23 hwm $64.70; XLV `96c24a1e` $158.238 hwm $175.82), both >3% below price, neither within reach of a tightening trigger. **No stop moved. No order placed. No position closed.**
+
+### Warsh landed hawkish, and the tape shrugged
+The week's dominant scheduled risk — the one both open slots were held for since Monday — resolved without forcing anything.
+
+- Warsh's line was that the Fed **"will have work to do"** if policymakers are not confident inflation is returning to 2% — the closest he has come to signaling possible *hikes*, and read hawkish. Reaction was mild: **10-year ~4.694% (+~2bp)**, **dollar index +0.4% to ~99.48**, equities **higher** late morning. VIX ~14.28 against a 14.51 prior close — a hawkish keynote that *lowered* implied vol.
+- **The pre-market carry-forward on XLF is resolved, and against the setup.** The morning run said the one way XLF becomes live today is a gap toward $55.30 on a hawkish reaction. The reaction was hawkish and financials went the *other* way — higher rates read as better NIM. The ≤$55.30 trigger is farther away after the event, not closer. That is the second consecutive session where the trigger's own precondition argued against it firing, and it belongs in today's weekly review as evidence on the "is $55.30 reachable or is it a level that will never print" question.
+- No 9:45-10:15 trade was taken, per the pre-market instruction. Nothing about the post-keynote tape changes that call.
+
+### Hormuz trigger (a) — checked, has NOT fired, and the upward run broke
+Trigger (a) is daily transits ≥ ~40 (≈50% of the 85/day baseline) sustained two consecutive sessions. Trigger (b) is the -7% cut line at $59.11.
+
+- **Aug 28: 7 commodity vessels** (preliminary shipping data, reported today) | Aug 27: 10 (Reuters) | Aug 26: 8-12 | Aug 25: 5.
+- **This corrects this morning's read.** The pre-market log flagged 5 → 8-12 → 10 as "a low, choppy, but no longer obviously flat series" converging on a ~15 ten-day average. Today's 7 breaks that run. The series is choppy at a collapsed base, not trending — which is what the 8/26 log said before the pre-market run revised it. Both revisions were honest reads of the data available at the time; the four-session picture is noise.
+- 7 vessels is **~8% of the 85/day baseline** against a ≥40 threshold — a factor of five away, and not sustained. **Trigger (a) has not fired.** Trigger (b) is 5.60% away and has *widened* from 5.33% at the open. **XLE holds on its written terms.**
+- Crude **holding steady, heading for weekly losses**, with Hormuz flows described as choppy. The stronger dollar is a mild headwind. No level is carried forward — vendors disagreed again.
+
+### XLV — no news today, Monday's event unchanged
+No US drug-pricing or MFN headline surfaced today; the research feed said so explicitly rather than inventing one (ninth session of correct refusal behavior). The **Aug 31 MFN announcement** stands as logged: dated, direction unknown, 18.9% of the book, and still **held without a recorded entry thesis**. XLV was the weaker of the two today (-0.42%) but is 5.09% from its cut line with a live trail 7.39% below price. Not an exit trigger. It remains the account's largest un-analyzed exposure and the second item for the weekly review.
+
+### Research quality
+The feed had **no live quote for XLE, XLV, WTI or Brent** and said so, rather than inferring a sector direction from the barrel as it did on 8/26. That is the correct failure mode and worth logging as such. All position facts above come from Alpaca.
+
+### Decision
+**HOLD both. No action taken.** Neither position is at or past the -7% cut line (XLE 5.60% of room, XLV 5.09%), neither is near a +15% tightening trigger (XLE needs $73.09, XLV $200.53), both trails are live GTC and >3% below price, and no thesis broke intraday — the day's binary resolved mildly and XLE's Hormuz disqualifier moved *away* from firing. Both weekly slots stay open; the week closes at **1/3** used.
+
+**Carry forward to the EOD run and today's weekly review:** (1) deployment 37.9%, thirteenth session under target — the primary weekly-review item, with an explicit verdict on whether the XLF ≤$55.30 trigger is real, now that a hawkish Fed pushed financials *up*; (2) XLV's Aug 31 MFN event against a position with no recorded entry thesis; (3) the 8/24 NVDA cut's rule-correct / outcome-adverse split; (4) the persistence guard — still unbuilt after four gaps.
