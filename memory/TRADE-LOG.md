@@ -98,3 +98,13 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLV | 108 | $174.3756 | $171.58 | -1.13% | -$301.93 (-1.60%) | $158.24 (10% trail, hwm $175.82) |
 
 **Notes:** No trades today, no fills, no position changes. Two EOD snapshots (8/25 Tue, 8/26 Wed) were never logged — those days' routines only ran pre-market/midday research (no trades) and evidently didn't commit an EOD snapshot; positions and stops are confirmed live and correct against Alpaca, nothing to reconstruct. Day P&L uses Alpaca's official `last_equity` ($98,491.40, balance_asof 2026-08-26) since the log's own last snapshot (8/24, $98,836.00) is three sessions stale. Both positions are down small (XLE -1.98%, XLV -1.60% unrealized), well inside the -7% manual-cut line, both stops >3% below price and untouched (no stop moved down). Deployment 37.9% ($37,220.64 of $98,240.72) — up from the 33-34% range but still below the 75-85% target. Trades this week: 1/3 (XLV on 8/24), slot still open. Tech sector: 1 failed trade on record (rule 10: 2 before mandatory sector exit).
+
+### Aug 28 — EOD Snapshot (Day 10, Friday)
+**Portfolio:** $98,290.07 | **Cash:** $61,020.08 (62.1%) | **Day P&L:** +$52.35 (+0.05%) | **Phase P&L:** -$1,709.93 (-1.71%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.6157 | +0.52% | -$281.89 (-1.48%) | $58.23 (10% trail, hwm $64.70) |
+| XLV | 108 | $174.3756 | $171.16 | -0.25% | -$347.29 (-1.84%) | $158.24 (10% trail, hwm $175.82) |
+
+**Notes:** No trades today, no fills, no position changes — end of the second full week. XLE ticked up slightly (+0.52%) while XLV eased down (-0.25%), netting +$52.35 on the day (Alpaca `last_equity` $98,237.72 as prior-day reference). Both positions remain small drawdowns well inside the -7% manual-cut line, both stops untouched and >3% below price. Deployment 37.9% ($37,269.99 of $98,290.07) — sixth session in a row under the 75-85% target, the standing gap in this book. Trades this week: 1/3 (XLV on 8/24), two slots still open heading into next week. Tech sector: 1 failed trade on record (rule 10: 2 before mandatory sector exit). Phase P&L now -1.71% vs. the $100k baseline.
