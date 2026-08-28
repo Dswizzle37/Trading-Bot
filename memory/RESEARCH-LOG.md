@@ -654,3 +654,40 @@ Three reasons, in order of weight: (1) **today's open sits on a Fed-chair keynot
 **Carry forward to the market-open run:** (1) re-check XLE and XLV with live prices once the book is real — cut lines $59.11 and $162.17 unchanged; (2) do **not** trade in the 9:45-10:15 window, let the Warsh reaction settle before reading anything; (3) if XLF gaps toward $55.30 on a hawkish reaction, that is the one setup that becomes live today — verify financials are still top-2 on momentum before sizing.
 
 **Carry forward to today's weekly review (Friday):** (1) deployment stuck at 38% for twelve sessions — decide whether the XLF ≤$55.30 trigger is real or unreachable; (2) XLV's Aug 31 MFN drug-pricing event against a position with no recorded entry thesis; (3) the NVDA cut's rule-correct / outcome-adverse split; (4) build the persistence guard — fourth gap.
+
+## 2026-08-28 — Market-Open Execution (09:37 ET)
+
+**No order placed. No stop moved. No position closed.** The week closes at **1/3** slots used — two expire unspent, by choice.
+
+### Account (live, 13:36Z)
+- Equity **$98,218.58** vs prior close $98,237.72 → **-$19.14 (-0.02%)**; phase-to-date **-$1,781.42 (-1.78%)** vs the $100k baseline
+- Cash $61,020.08 | Position MV $37,198.50 → **37.9% deployed** (thirteenth consecutive session under the 75-85% target)
+- Trades this week **1/3** (XLV, Mon 8/24). Daytrade count 0 — no sell has filled since 8/24, PDT room clear.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.435 | 19.1% | -$336.10 (-1.76%) | +0.23% | $59.11 | 5.33% | $58.23 (10%, hwm $64.70) | 6.74% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $171.00 | 18.8% | -$364.57 (-1.94%) | -0.34% | $162.17 | 5.16% | $158.238 (10%, hwm $175.82) | 7.46% | $200.53 (+15%) |
+
+- **Step 3 (cut losers):** neither position at or past -7%. XLE -1.76%, XLV -1.94%. No cut.
+- **Step 4 (tighten stops):** neither near a +15% trigger. Both trails verified live on the book at the open — XLE `ef0c1da0` $58.23 (hwm $64.70), XLV `96c24a1e` $158.238 (hwm $175.82), both `new`/GTC, both >3% below price, **neither hwm moved since 8/27**. **No stop moved.** `qty_available` is 0 on both positions because the GTC stops hold the shares — expected, not a block.
+
+### Market Context — the open is readable, the day is not
+- **Quote feed institutional-tight at the bell**, reversing the pre-market stub problem for the fourth consecutive RTH check: SPY 0.005%, XLF 0.017%, XLE 0.032%, XLV 0.053%, all timestamped 13:36Z. Pre-market ask=0 remains a pre-market artifact only. Live prices confirmed both cut-line gaps the pre-market run could only estimate off the positions endpoint.
+- **Warsh has not spoken yet.** No prepared-remarks leak, no keynote headline as of 13:37Z — cross-checked and confirmed absent, not assumed. Chicago PMI (9:45), UMich final and the benchmark payrolls revision (10:00) are all still ahead. **Every scheduled risk this run was told to wait for is still in front of the tape.**
+- Perplexity **could not verify a single live number** — no first-minute index moves, no early sector leaderboard, no Aug 28 Hormuz count, no MFN headline — and said so on all five asks rather than filling the gaps. Ninth session of correct refusal behavior. The only thing it added is a small correction to the pre-market log: Hormuz transits were **8 on Aug 26 and 10 on Aug 27** (not the contested 8-12 range), still against a ~15 ten-day average. **Direction unchanged, trigger unchanged.**
+
+### Trade Ideas — the one live setup moved further away
+1. **XLF — trigger ≤$55.30. Not triggered, and it got worse.** Live $58.07/$58.08, which is **5.0% above** the entry level and **99.4% of the $58.41 52-week high**. The pre-market run named this the single setup that could become live today, on one condition: *a hawkish Warsh reaction gapping XLF toward $55.30*. Warsh has not spoken, and XLF opened **up** from yesterday's $57.88 — away from the trigger, not toward it. The condition did not occur. **Skip.**
+2. **XLE add — permanent rejection while XLE is held.** Seventh session. Unchanged.
+3. **XLV add — no room.** 18.8% of equity against the 20% cap (rule 3), with the Aug 31 MFN event attached.
+4. **No new candidate opened.** Nothing was screened into the 9:37-9:45 gap. Eight minutes ahead of a Fed-chair keynote is not a window in which a catalyst gets documented, sized and stopped to standard — and rule 11 does not have a Friday exception.
+
+### Decision
+**HOLD both. No trades. The week ends 1/3.**
+
+The pre-market run held two slots all week for one specific event, then wrote down the one condition that would spend a slot today. That condition — XLF gapping to ≤$55.30 on a hawkish reaction — did not fire, and the only honest reading at 09:37 ET is that it *cannot yet have* fired, because Warsh has not spoken. Entering ahead of the keynote to avoid ending the week at 1/3 would be spending a slot on the calendar rather than on a setup. Deployment stays at 37.9% for a thirteenth session; that gap is real and is the weekly review's primary item, but it is not an argument for taking a trade the rulebook rejects on price.
+
+**Carry forward to the midday scan:** (1) re-read XLE and XLV after 10:15 ET once the Warsh + 3-print reaction settles — cut lines $59.11 and $162.17 unchanged, both ~5% away this morning; (2) **XLF is the one name to re-price after the keynote** — a hawkish reaction is the only path to ≤$55.30, and financials must still be top-2 on momentum before sizing; (3) both trails are live and untouched, no action owed on them.
+
+**Carry forward to today's weekly review (Friday):** unchanged from the pre-market list — (1) deployment stuck at ~38% for thirteen sessions, and whether the XLF ≤$55.30 trigger is reachable or is a level that will never print; (2) XLV's Aug 31 MFN event against a position with no recorded entry thesis; (3) the NVDA cut's rule-correct / outcome-adverse split; (4) the persistence guard, still unbuilt after four gaps.
