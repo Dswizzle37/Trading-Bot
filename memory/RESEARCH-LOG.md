@@ -794,3 +794,39 @@ Friday's review made this today's binding item: *"Monday's pre-market run must e
 
 ### Decision
 **XLV closed on rule 12. XLE held on written terms. No new entry. Slots 0/3. Deployment 19.5% — escalated to the owner, not self-resolved.**
+
+## 2026-08-31 — Midday Scan (13:10 ET, Monday, Day 11)
+
+**No action taken. XLE held on written terms — no rule triggered, thesis intact. Slots 0/3.**
+
+### Account (live, 17:10Z)
+- Equity **$98,403.53** vs prior close $98,309.36 (`balance_asof` 2026-08-28) → **+$94.17 (+0.10%)**; phase-to-date **-$1,596.47 (-1.60%)**
+- Cash $79,386.56 | Position MV $19,016.97 → **19.33% deployed** — fifteenth consecutive session under the 75-85% target, and the account's lowest reading
+- Realized today: **-$466.08** (XLV, rule 12, 09:38 ET). **1 position, 1 open order.** Slots **0/3**, PDT room clear.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.39 | 19.3% | -$49.60 (-0.26%) | +1.13% | $59.11 | 6.75% | $58.23 (10%, hwm $64.70) | 8.14% | $73.09 (+15%) |
+
+- **STEP 3 (cut at -7%):** not triggered — XLE -0.26%, cut line 6.75% away.
+- **STEP 4 (tighten):** not triggered — nothing at +15%. Trail `ef0c1da0` verified live/`new`/GTC at **$58.23, hwm $64.70, untouched. No stop moved.** 8.14% below price, >3% clear. hwm unchanged: today's high (~$64.35 at the open) did not exceed $64.70. `qty_available` 0 is the GTC stop holding the shares — expected.
+- Quotes real again in RTH (17:09Z): XLE 63.38/63.39 (0.016%), SPY 765.60/765.63 (0.004%), XOP 186.89/187.05 (0.086%). Second consecutive session of tradeable intraday books.
+
+### XLE intraday reversal — investigated, and it is a give-back, not a thesis break
+XLE opened **+2.43%** ($64.34 mid, 09:38 ET) and has since faded to **$63.39** — **-1.48% off the open**, though still **+1.13%** on the day. That is a sharp enough intraday reversal in the position that now carries the entire book to warrant STEP 6 research. Result: **the driver did not turn.**
+
+- **Crude is up, not down.** WTI **~$86.11 (+1.62%**, open $84.73**)**, Brent **~$90.69 (+2.93%** vs prior day**)** at midday. The thesis input strengthened through the session rather than reversing.
+- **No de-escalation.** Perplexity found no evidence of a today-only ceasefire, negotiations breakthrough, or confirmed Hormuz reopening; the latest reporting still has reopening contingent on conditions. **Trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **has not fired and is not near firing**; transit counts remain unverifiable and were not carried forward as a number (twelfth session of correct refusal behavior; Perplexity also declined to state XLE's intraday change and the S&P's live level, and its own stale XLE mark of $62.66 was discarded in favour of the live Alpaca book).
+- **Trigger (b)** — the $59.11 cut line — is **6.75% away**, narrowed from 7.93% at the open purely by the give-back.
+- **The divergence worth recording:** crude +1.6-2.9% against XLE +1.13% and fading off its high is a mild re-emergence of the crude-decoupling question from last week — but in the **benign** direction (XLE lagging crude's upside, not falling while crude falls). Last week's version was the dangerous one. Watch, do not act: no written trigger keys off relative performance, and inventing one intraday to justify a trade would be fitting the rules to the outcome.
+- **Read:** an opening geopolitical spike being partially sold back through the session, with the underlying commodity holding its gain. **Hold on the written terms.** Nothing here is a rule 12 problem — XLE's entry thesis (8/18) is on record and was re-confirmed twice today.
+
+### No new entry
+Slots are 0/3 and the book is 80% cash, but the two candidates remain exactly where the open left them: **XLF suspended** (trigger expired unfired, Financials rank 4 of 5), and a **second energy name** (XOP priceable at $186.97 mid) would take Energy to ~38% of equity — **not self-authorized**, declined for the ninth time. Nothing new cleared the entry checklist between 09:38 and 13:10.
+
+### Risk
+- **XLE remains the whole book's directional risk and it is geopolitical.** The $58.23 trail and $59.11 cut line are the entire control, 8.14% and 6.75% below the mark, both live. A de-escalation headline is still the reversal case; today it did not come.
+- **Deployment 19.3% is now the account's dominant problem, not its pricing.** Both owner decisions escalated at the open — move the 75-85% target or move the entry bar, and where the third leg comes from — are **unanswered and compounding**. Every session at ~19% deployed against a 75-85% mandate is tracking error the bot cannot fix inside its own rules. Re-escalated, not self-resolved.
+
+### Decision
+**No action. HOLD XLE. No stop moved. No new entry. Slots 0/3.**
