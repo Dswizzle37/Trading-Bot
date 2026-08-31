@@ -118,3 +118,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 - **Confirming mark at execution:** XLV printed no relief bid into the MFN event — $169.81 mid at 09:38 ET, -0.79% on the day, below Friday's $171.16 close. Perplexity could not verify the announcement itself and said so.
 - **Cost of the decision, as pre-stated:** -$466.08 realized and deployment falls to **19.5%**, the account's most under-invested reading. Taken anyway; holding an unjustifiable 18.7% of the book is the larger error.
 - Health Care: **1 failed trade** (rule 10 counts 2 before a mandatory sector exit). Exits do not consume a new-trade slot — week stays **0/3**.
+
+### Aug 31 — EOD Snapshot (Day 11, Monday)
+**Portfolio:** $98,586.56 | **Cash:** $79,386.56 (80.5%) | **Day P&L:** +$277.20 (+0.28%) | **Phase P&L:** -$1,413.44 (-1.41%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.00 | +2.11% | +$133.40 (+0.70%) | $58.23 (10% trail, hwm $64.70) |
+
+**Notes:** One trade today: sold XLV (rule 12, no re-establishable thesis) for a realized loss of -$466.08 (-2.47%), see entry above. Cash freed to $79,386.56; deployment now 19.5% ($19,200 of $98,586.56, XLE only) — the account's most under-invested reading to date, but taken deliberately over holding an unjustifiable position. XLE was the only mover of note, up +2.11% on the day and now +0.70% unrealized ($133.40); its stop is untouched at $58.23 (9.0% below price, hwm $64.70). Day P&L +$277.20 (+0.28%) vs. Alpaca's `last_equity` reference ($98,309.36, balance_asof 2026-08-28, Friday). Phase P&L -$1,413.44 (-1.41%) vs. the $100k baseline. Trades this week: 0/3 (XLV exit doesn't consume a slot) — all three new-trade slots open heading into the rest of the week. Health Care sector: 1 failed trade on record (rule 10: 2 before mandatory sector exit).
