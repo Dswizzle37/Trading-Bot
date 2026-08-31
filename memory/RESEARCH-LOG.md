@@ -753,3 +753,44 @@ Friday's review made this today's binding item: *"Monday's pre-market run must e
 1. **Close XLV.** Cancel the GTC trailing stop `96c24a1e-4a31-4d97-b36c-4d049f21f9a1` **first**, confirm the cancel, then market-sell 108 shares. Same order as the 8/24 NVDA exit. Log the fill, the realized P&L and the reason (**rule 12 — no re-establishable thesis**) in the same run, and push before finishing — that is rule 12's other half.
 2. **Re-price XLE on a live RTH book** once quotes are real. Cut line $59.11, trail $58.23 (hwm $64.70) — do not move the stop; the hwm updates itself.
 3. **Do not open a new position to replace XLV.** The replacement question is an owner decision, flagged today; entering a name to fix a deployment number is fitting the rules to the outcome.
+
+## 2026-08-31 — Market-Open Execution (09:38 ET, Monday, Day 11)
+
+**Executed: SOLD XLV 108 @ $170.06 (rule 12). HELD XLE. No new entry. Slots 0/3.** Pre-market plan executed in full, in the order it specified.
+
+### Live re-validation at the open — quotes were real for the first time in eleven sessions
+| Symbol | Bid | Ask | Mid | Spread | Note |
+|---|---|---|---|---|---|
+| XLV | 169.80 | 169.83 | 169.81 | 0.018% | tradeable; no relief bid into MFN |
+| XLE | 64.33 | 64.35 | 64.34 | 0.031% | +2.43% on the day |
+| SPY | 766.21 | 766.24 | 766.23 | 0.004% | ~flat vs futures |
+| XLK | 185.84 | 185.87 | 185.86 | 0.016% | — |
+| XOP | 190.55 | 191.18 | 190.87 | 0.330% | tradeable, not acted on |
+
+- All five quoted fresh in RTH (13:38Z), tight books. The pre-market stub-price problem did not carry into the session — **the sizing objection that has blocked eleven pre-market runs is a pre-market artifact, not a market condition.** Worth recording for the deployment discussion: candidates *are* priceable at 09:38 ET.
+
+### Research at the open
+- **Energy — thesis strengthened past the pre-market read.** The weekend was not merely a collapse of talks: a **U.S. strike on Iran's Larak island and Iranian retaliation** drove crude up, Brent ~**$90.31**, WTI ~**$85.23**. Hormuz transit counts and any weekend normalization: **not verifiable** — Perplexity said so rather than filling the gap (eleventh session of correct refusal behavior). Trigger (a) (transits ≥~40/day, two consecutive sessions) is further from firing than Friday.
+- **MFN announcement: not verifiable.** Perplexity could not confirm whether today's round was announced, nor the healthcare reaction. The market answered instead — XLV opened with no relief bid, -0.79% on the day and below Friday's close.
+- Index and sector intraday readings, and this week's labor-market calendar: **not verifiable** from the result set; not carried forward as fact.
+
+### Execution log
+1. **XLV closed.** Stop `96c24a1e` canceled first, cancel confirmed (`qty_available` 108→free), then market sell 108. Filled 09:38:51 ET @ **$170.06**, realized **-$466.08 (-2.47%)**. Full reasoning in TRADE-LOG. Health Care now 1 failed trade.
+2. **XLE held and re-priced on a live RTH book.** $64.20 mark, **+1.01%** unrealized, +2.43% today. Cut line $59.11 → **7.93% away**. Trail `ef0c1da0` live at **$58.23 (hwm $64.70), untouched — no stop moved**; 9.30% below price, >3% clear. Tighten trigger $73.09 (+15%) not approached. hwm unchanged because today's high has not exceeded $64.70.
+3. **No replacement position opened**, per the pre-market instruction. Entering a name to fix a deployment number is fitting the rules to the outcome.
+
+### Post-trade state
+- Equity **$98,649.56** vs prior close $98,309.36 → **+$340.20 (+0.35%)** on the day; phase-to-date **-$1,350.44 (-1.35%)**
+- Cash $79,386.56 | Position MV $19,263.00 → **19.53% deployed** — the account's lowest ever, fifteenth consecutive session under the 75-85% target
+- **1 position** (XLE, 19.5% of equity). One open order, XLE's trail. Slots **0/3**, PDT room clear.
+
+### Owner decisions now overdue — both were flagged pre-market, and today's data sharpens both
+1. **Deployment.** The book is one position and 80% cash in week 3, against a 75-85% mandate. Today removed the standing excuse: **quotes are tradeable at the open**, so the blocker is the entry bar, not pricing. Friday's review scheduled exactly this call for exactly this point — move the 75-85% target or move the entry bar.
+2. **The third leg.** XLF is suspended (its ≤$55.30 trigger expired unfired, Financials rank 4 of 5). A second energy name (XOP quoted tradeable at $190.87, or COP) would take Energy to ~38% of equity — inside no written rule, but a concentration this bot has now declined eight times, and Energy is rank 1 by a 17-point YTD margin with the Hormuz catalyst re-confirmed by a shooting event. **Still not self-authorized.**
+
+### Risk
+- **XLE is now the entire book's directional risk, and it is geopolitical.** A de-escalation headline reverses ~3% of crude quickly. The $58.23 trail and $59.11 cut line are the whole control, both ~8-9% below the mark, both live.
+- Selling XLV before the MFN print gives up any relief pop — acknowledged pre-market, taken deliberately. The open's price action did not contradict the exit.
+
+### Decision
+**XLV closed on rule 12. XLE held on written terms. No new entry. Slots 0/3. Deployment 19.5% — escalated to the owner, not self-resolved.**
