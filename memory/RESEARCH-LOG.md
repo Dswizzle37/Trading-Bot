@@ -691,3 +691,65 @@ The pre-market run held two slots all week for one specific event, then wrote do
 **Carry forward to the midday scan:** (1) re-read XLE and XLV after 10:15 ET once the Warsh + 3-print reaction settles — cut lines $59.11 and $162.17 unchanged, both ~5% away this morning; (2) **XLF is the one name to re-price after the keynote** — a hawkish reaction is the only path to ≤$55.30, and financials must still be top-2 on momentum before sizing; (3) both trails are live and untouched, no action owed on them.
 
 **Carry forward to today's weekly review (Friday):** unchanged from the pre-market list — (1) deployment stuck at ~38% for thirteen sessions, and whether the XLF ≤$55.30 trigger is reachable or is a level that will never print; (2) XLV's Aug 31 MFN event against a position with no recorded entry thesis; (3) the NVDA cut's rule-correct / outcome-adverse split; (4) the persistence guard, still unbuilt after four gaps.
+
+## 2026-08-31 — Pre-Market Research (08:44 ET, Monday, Day 11)
+
+**Decision: HOLD XLE. EXIT XLV at the open — rule 12 re-establishment failed.** No new entry. Week resets to 0/3 slots.
+
+### Account (live, 12:44Z — pre-market marks)
+- Equity **$98,530.88** vs prior close $98,309.36 (`balance_asof` 2026-08-28) → **+$221.52 (+0.23%)**; phase-to-date **-$1,469.12 (-1.47%)** vs the $100k baseline
+- Cash $61,020.08 | Position MV $37,510.80 → **38.07% deployed** (fourteenth consecutive session under the 75-85% target)
+- New-trade slots **0/3** — new week. No fills since 8/24, PDT room clear.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.71 | 19.4% | +$46.40 (+0.24%) | +1.64% | $59.11 | 7.23% | $58.23 (10%, hwm $64.70) | 8.60% | $73.09 (+15%) |
+| XLV | 108 | $174.3756 | $170.35 | 18.7% | -$434.77 (-2.31%) | -0.47% | $162.17 | 4.80% | $158.238 (10%, hwm $175.82) | 7.11% | $200.53 (+15%) |
+
+- Neither position at or past -7%. Both trails verified live and unchanged — XLE `ef0c1da0` $58.23 (hwm $64.70), XLV `96c24a1e` $158.238 (hwm $175.82), both `new`/GTC, both >3% below price. **No stop moved.** `qty_available` 0 on both is the GTC stops holding the shares — expected.
+- Marks are from Alpaca's positions endpoint, not quotes. **Pricing unpriceable again — eleventh pre-market in thirteen.** Only SPY quoted fresh (766.70/766.77, 0.009%, 12:39Z). XLE 60.32/64.33, XLF 56.16/59.84, XLK 180.23/191.96 and **XLV bid $166.09 / ask 0.00** are all 8/28 20:00Z close stubs. Standing rule holds: stub prices do not size anything.
+
+### Market Context — the Hormuz thesis got its confirmation over the weekend
+- **U.S.-Iran diplomacy on Hormuz collapsed, and crude gapped.** WTI **~$85.6-86.1** vs a **$83.40** prior close (~+3%); Brent **~$90.7**. Investing.com attributes the rally directly to the breakdown of talks to restore normal shipping through the strait. Sources still disagree on "open" vs "closed" — Iran maintains it stays shut pending U.S. conditions, the administration says it is open — but no source in either query put transit counts anywhere near normal; the most recent hard figures remain single-digit to low-double-digit against a 85-110/day baseline.
+- **S&P futures 7,709.50, -12.50 (-0.16%)** pre-market. Softer open attributed to the Iran situation plus Canada trade tension. VIX not verifiable from the result set — not carried forward as a number.
+- **Sector momentum: Energy is rank 1 and not close.** YTD **Energy +43.1%**, Technology +25.4%, Health Care +13.8%, Financials +7.2%, Utilities +2.6%. Energy also leads on 50/100/150/200-day trend breadth.
+- Calendar: Dallas Fed Manufacturing 14:30 ET today. The week's binding event is **labor-market data**; the full week's schedule could not be confirmed from the result set and is not recorded as fact.
+
+### XLE — the disqualifier moved away from the trigger, not toward it
+Written triggers unchanged: **(a)** transits ≥~40/day sustained two consecutive sessions, **(b)** the $59.11 cut line.
+
+- Last week's worry was a slow upward drift in transits (5 → 8 → 10 across 8/25-8/27) against a ≥40 threshold. **The weekend reversed it.** Talks collapsed, crude gapped ~3%, and nothing in today's research shows traffic normalizing. Trigger (a) is further from firing than it was Friday.
+- Trigger (b) is **7.23% away** and has *widened* from 5.33% on Friday, because the position moved up.
+- **The crude-decoupling question from last week is now moot in the right direction:** crude +3% and XLE +1.64% pre-market are moving together. XLE is +0.24% unrealized — its first positive mark since 8/21 — and is the top-momentum sector in the index. **Hold, on the written terms, with the thesis better supported than at any point since entry.**
+
+### XLV — rule 12 applied: no defensible thesis could be written, so the position closes
+Friday's review made this today's binding item: *"Monday's pre-market run must either write a defensible current thesis for holding it through that event, or close it."* Run honestly against the entry checklist, it fails three of four:
+
+- **Catalyst?** No. Today's expected MFN announcement is another round of voluntary drug-pricing deals with midsize biotechs (17 agreements already signed; Pfizer, Lilly, Amgen, Merck, AbbVie, Regeneron and others in prior rounds). Analysts read the latest round as having **negligible effect on sales and profits** while reducing regulatory overhang. That is at best the removal of a bear risk, in an unknown direction, on the day itself. It is not a reason to own the sector.
+- **Sector in momentum?** No. Health Care is **rank 3 of 5** (+13.8% YTD) against Energy's +43.1%, and the position has bled -2.31% over five sessions in which the index rose. Note the recorded history: XLV was **examined and rejected twice on momentum grounds** (8/19 "momentum thesis disconfirmed", 8/20) in the week before it was bought. Today's data agrees with those rejections, not with the purchase.
+- **Stop?** Yes — trail live at $158.238, cut line $162.17.
+- **Target with 2:1 R:R?** No basis exists. From $170.35 with a $162.17 stop, 2:1 needs ~$186.70 — roughly the sector's 52-week high — and nothing in today's research supports that as a target.
+- The entry reasoning is unrecoverable (8/24 persistence failure). **This is exactly the case rule 12 was written for on Friday, and it was written before the answer was known.** A position that cannot be justified today, at 18.7% of the book, sitting on a same-day policy event whose direction no one can call, is not held on the grounds that it has not hurt yet.
+- **The honest counter, recorded:** XLV is only -2.31%, well inside its cut line, its trail is live, and selling into a binary is the mirror image of the NVDA lesson. The distinction is that NVDA was *past* its cut line and this is not — so this exit is **not** a risk-rule cut, it is a **rule 12 failure-to-re-establish**. It is being made on the written rule, not on the drawdown.
+- **Cost of the decision, stated plainly:** ~$18,398 proceeds, **~-$435 realized (-2.3%)**, and deployment falls from 38.1% to **~19.4%** — which makes the account's single worst standing metric materially worse. Taken anyway. Holding an unjustifiable fifth of the book is the larger error, and Friday's review pre-committed to this trade-off.
+- Health Care would then carry **1 failed trade** (rule 10 counts 2 before a mandatory sector exit).
+
+### Trade Ideas
+1. **No new entry pre-market.** Nothing is priceable (ask=0 on XLV, 6%+ spreads elsewhere), and no candidate cleared the checklist. Slots stay 0/3.
+2. **XLF — the trigger is expired, not merely unfired.** Friday's review required it be re-derived from current price or dropped this week; it is neither, so it is **suspended, not carried a third week unchanged**. Last mark ~$58 against a ≤$55.30 level that has not been approached in five sessions of checking, with Financials rank 4 of 5 on momentum (+7.2% YTD) — the confirming half of the setup has weakened since the level was written. **Recommendation to the owner: drop XLF and source the third leg from Energy or Technology,** which is a strategy change, not a daily call.
+3. **Energy add-on — the concentration objection now cuts both ways, and this is an owner call.** Eighth session of rejecting a second energy name at ~19% XLE. But Energy is rank 1 by a 17-point YTD margin, the Hormuz catalyst just re-confirmed, and post-XLV exit the book would be **one position and 80% cash**. A second energy name (XOP/COP) would take the sector to ~38% of equity — inside no written rule, but a concentration the bot has rejected seven times. **Not self-authorized.** Flagged for the owner alongside the deployment question.
+4. **XLV add — moot.** Position is being exited.
+
+### Risk Factors
+- **Selling XLV into the MFN announcement is a directional risk, acknowledged.** If the deals land as relief, the exit gives up a pop. The rule was written Friday knowing this event was Monday; overriding it today because the event is now imminent would make rule 12 decorative.
+- **Post-exit the book is one position, ~19% deployed, 80% cash.** That is the most under-invested the account has ever been, in week 3, against a 75-85% mandate and an index the bot already trails by 0.71 pts. **This is the owner decision Friday's review scheduled for exactly this point** ("if deployment is still sub-50% after week 3, the owner should decide whether the 75-85% target or the entry bar is the thing to move"). It is not being self-authorized in either direction.
+- **XLE is now the whole book's directional risk, and it is a geopolitical one.** A Hormuz de-escalation headline reverses ~3% of crude gain quickly. The trail at $58.23 and the $59.11 cut line are the entire control, both >7% below the mark, both live.
+- **Research quality.** Perplexity again returned inconsistent crude prints ($85.56 / $85.69 / $86.14) and could not verify VIX, 8/28-8/31 transit counts, or the full week's calendar — and **said so on each rather than filling the gaps** (tenth session of correct refusal behavior). Only ranges and directions carried forward. Position facts from Alpaca only.
+
+### Decision
+**HOLD XLE. EXIT XLV at the open. No new entry. Slots 0/3.**
+
+**Carry forward to the market-open run — execute in this order:**
+1. **Close XLV.** Cancel the GTC trailing stop `96c24a1e-4a31-4d97-b36c-4d049f21f9a1` **first**, confirm the cancel, then market-sell 108 shares. Same order as the 8/24 NVDA exit. Log the fill, the realized P&L and the reason (**rule 12 — no re-establishable thesis**) in the same run, and push before finishing — that is rule 12's other half.
+2. **Re-price XLE on a live RTH book** once quotes are real. Cut line $59.11, trail $58.23 (hwm $64.70) — do not move the stop; the hwm updates itself.
+3. **Do not open a new position to replace XLV.** The replacement question is an owner decision, flagged today; entering a name to fix a deployment number is fitting the rules to the outcome.
