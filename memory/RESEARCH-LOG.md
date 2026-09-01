@@ -830,3 +830,79 @@ Slots are 0/3 and the book is 80% cash, but the two candidates remain exactly wh
 
 ### Decision
 **No action. HOLD XLE. No stop moved. No new entry. Slots 0/3.**
+
+## 2026-09-01 — Pre-Market Research (08:56 ET, Tuesday, Day 12)
+
+**Decision: HOLD. No new entry. XLE thesis re-confirmed and strengthening. Slots 0/3. Deployment 19.70% — 16th consecutive session under mandate, re-escalated.**
+
+### Account (live, 12:56Z)
+- Equity **$98,856.14** vs prior close $98,574.14 (`balance_asof` 2026-08-31) → **+$282.00 (+0.29%)**; phase-to-date **-$1,143.86 (-1.14%)**
+- Cash $79,386.14 | Position MV $19,470.00 → **19.70% deployed**
+- **1 position** (XLE), **1 open order** (XLE trail). Slots **0/3** (new week, Aug 31–Sep 4). PDT room clear — no day trades; last two exits both opened on prior sessions.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.90 | 19.7% | **+$403.40 (+2.12%)** | +1.47% | $59.11 | 8.93% | $58.23 (10%, hwm $64.70) | 10.28% | $73.09 (+15%) |
+
+- **Cut at -7%:** not triggered — XLE +2.12%, cut line 8.93% away.
+- **Tighten:** not triggered — +2.12%, needs +15%.
+- **Trail `ef0c1da0` verified live/`new`/GTC at $58.23, hwm $64.70, untouched. No stop moved.**
+- **⚠ Hand to the market-open run:** XLE's pre-market mark **$64.90 is above the trail's hwm $64.70** — which is also its 52-week high. Alpaca ratchets hwm on RTH prints only. **Verify at the open that hwm and stop_price have advanced** if XLE prints >$64.70 in regular hours. Expected new stop ≈ 0.90 × new high. Do not touch the order by hand; never move a stop down.
+
+### Market Context
+- **WTI $87.00 (+1.45%) | Brent $92.14 (+1.83%)** — crude firm and extending, third consecutive session up.
+- **S&P 500 futures -0.45% to -0.58%** (7,687.50 / 7,654.50 depending on feed) — but **Nasdaq futures higher** on AI/semis. Index-level weakness with tech-led internals; not a broad risk-off.
+- **VIX: not obtained.** Perplexity had no live quote and said so rather than inventing one. Not carried forward as a number.
+- **Economic calendar: ISM Manufacturing PMI (Aug) 10:00 ET today** — 65 minutes after the open. **JOLTS** also watched. The open will trade into an unpriced macro print.
+- **Earnings/catalysts before open:** Micron **+16–20%** on a blowout quarter and FQ4 guide; Qualcomm **+11–13%** on a raised long-term non-handset/data-center target; SanDisk, Western Digital, Seagate, ON Semi all participating. NIO reported pre-open. Congress passed the 21st Century ROAD to Housing Act — builders bid.
+- **Sector momentum (YTD 2026):** Energy **+42.3%** (1) · Technology **+29.8%** (2) · Health Care **+10.1%** (3) · Financials **+5.4%** (4) · Utilities **-1.4%** (5). Energy still leads by a **12.5-point** margin.
+
+### Hormuz — the XLE thesis input, re-confirmed and worse, not better
+- **Strait remains effectively shut.** Reuters: **7 commodity vessels** transited Aug 28, below an already-collapsed average; trackers show throughput at a small fraction of normal with near-zero days.
+- **Fresh escalation today.** The British military reported on **Sep 1** that a tanker was **hit by three projectiles** while leaving the Strait.
+- The June ceasefire / interim-deal framework **broke down**; Iran keeps the strait shut pending U.S. compliance. No durable de-escalation as of today.
+- **Exit trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **has not fired and is nowhere near firing** (7 vs ~40). Transit counts remain unverifiable as a precise daily number and were not carried forward as one.
+- **Exit trigger (b)** — the $59.11 cut line — is **8.93% away**, wider than yesterday's 6.75%.
+- **Read: the position's driver strengthened overnight.** XLE held on written terms, thesis intact and re-confirmed for the second consecutive session.
+
+### Data-quality note — one stale Perplexity claim discarded
+The general catalyst query returned "**WTI slipped below $70 a barrel as tanker traffic through the Strait of Hormuz improved**." This is **directly contradicted** by both dedicated queries run in the same batch (WTI $87.00 +1.45%; strait still shut, tanker struck today). Treated as a stale citation and **discarded** — not carried into the market context above. Recorded because a single-source read of that line would have flipped the XLE thesis on false data.
+
+### Pre-market quote quality
+- **XLE 61.86 / 65.75 (6.3% spread)** and **XOP 181.99 / 193.97 (6.4%)** — both timestamped **2026-08-31T20:00Z**, i.e. stale from yesterday's close. **Not tradeable pre-market.**
+- **SPY 761.97 / 762.07 (0.013%)** — live and tight at 12:39Z.
+- Same pattern as prior sessions: sector ETFs do not quote pre-market on this feed. **Any entry must be priced at the open, not from these marks.**
+
+### Trade ideas — 3 examined, 0 clear the entry checklist
+**1. XLK (Technology Select Sector SPDR) — the third leg. FAILS on R:R.**
+- Catalyst: **strong and specific** — Micron/Qualcomm broadening the AI cycle beyond compute into memory, storage and foundry; breadth, not a single-name beat.
+- Sector momentum: **passes** — Tech rank 2 of 11, +29.8% YTD. Tech carries 1 failed trade (NVDA); rule 10 counts 2, so the sector is still tradeable.
+- Levels: entry ~$186 (52-wk range $126.68–$198.73, ~6% below the high). 100 sh ≈ $18,600 ≈ **18.8%** of equity, inside the 20% cap. Stop: 10% trailing GTC ≈ **$167.40**; -7% cut line ≈ **$172.98**.
+- **Fails leg 4.** A 2:1 R:R off a 7% risk needs **+14% ≈ $212** — **6.7% above the 52-week high**, with no basis for that target beyond "the breakout continues." Off the 10% trail it needs +20% ≈ $223. **This is the exact failure mode that closed XLV on rule 12.** Not taken. Recording it as failed rather than re-cutting the target to fit.
+
+**2. XOP (S&P Oil & Gas E&P) — passes the written checklist, blocked on unwritten concentration.**
+- Catalyst: **passes** — the same Hormuz supply shock, re-confirmed by today's projectile attack, expressed with higher crude beta than XLE.
+- Sector momentum: **passes** — Energy rank 1 by 12.5 points.
+- Levels (must be priced at the open; pre-market book is stale): ~100 sh at ~$187 ≈ **18.9%** of equity, inside the 20% cap. Stop 10% trailing GTC ≈ $168; cut line ≈ $174. Target +14% ≈ $213 on a crude-driven move — the only one of the three with a target that isn't pinned against a 52-week high.
+- **Blocker: takes Energy to ~38% of equity across two positions.** Inside every written rule (each leg ≤20%, ≤6 positions, ≤3 trades/week) but doubling the book's exposure to **one geopolitical factor** that a single de-escalation headline reverses. **Declined for the tenth time — still not self-authorized.**
+
+**3. Add to XLE — not actionable.** XLE is 19.70% of equity against a 20% cap of $19,771. Room is **~$301 (4 shares)**. Not a trade.
+
+### The structural finding — why this account is stuck at 19.7%
+The deployment gap is **not** a pricing problem and is no longer an idea-generation problem. It is an **arithmetic incompatibility** in the rulebook as applied to the sector-ETF universe this bot trades:
+- Rule 2 mandates **75–85% deployed** (needs **+$54,672** of position value, roughly three more full-size legs).
+- The entry checklist requires **min 2:1 R:R** against a 7–10% stop, i.e. a **+14% to +20%** target.
+- Sector ETFs in a strong tape trade **near their 52-week highs** (XLK ~6% below; XLE at its high today). A +14–20% target on such a name is, by construction, a projection **through and well beyond** the 52-week high with no independent basis.
+- **Therefore the checklist structurally rejects almost every candidate in the universe, and the book stays ~20% deployed.** Sixteen consecutive sessions confirm it.
+- This is not resolvable inside the rules. It is the **same two owner decisions escalated on 8/31 and unanswered**, now with a mechanism attached:
+  1. **Move the 75–85% target, or move the entry bar** (e.g. allow measured-move/ATR targets, or accept 1.5:1 on index-ETF legs) — one of the two has to give.
+  2. **Authorize or forbid the second energy leg** (~38% sector concentration). It is the only candidate currently passing catalyst + momentum, and it has been declined ten times for a reason found nowhere in the written rules.
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.23 trail (10.28% below) and the $59.11 cut line (8.93% below) are the whole control, both live. A de-escalation or Hormuz-reopening headline is the reversal case; today produced the opposite.
+- **ISM Manufacturing at 10:00 ET** lands 65 minutes into the session, unpriced. A weak print pressures cyclicals — energy included — regardless of crude.
+- **Being 80% cash is itself the dominant tracking error.** With the S&P near highs, under-deployment costs the benchmark race more than any single position's drawdown. Sixteen sessions of it, unresolved.
+- Crude's EIA-linked forward path (Brent ~$89 Q4 2026, ~$79 in 2027) is a medium-term headwind to XLE if the geopolitical premium unwinds — not a today risk, but it caps the case for adding energy beta at these levels.
+
+### Decision
+**HOLD XLE on written terms. No stop moved. No new entry. Slots 0/3. Deployment 19.70% and the rule-arithmetic behind it escalated to the owner, not self-resolved.**
