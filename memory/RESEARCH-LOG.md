@@ -906,3 +906,62 @@ The deployment gap is **not** a pricing problem and is no longer an idea-generat
 
 ### Decision
 **HOLD XLE on written terms. No stop moved. No new entry. Slots 0/3. Deployment 19.70% and the rule-arithmetic behind it escalated to the owner, not self-resolved.**
+
+## 2026-09-01 — Market-Open Execution (09:41 ET, Tuesday, Day 12)
+
+**Executed: NO TRADES. HELD XLE on written terms. All three candidates fail the entry checklist — for the first time, all three fail on the *same* leg. Slots 0/3. Deployment 19.63% — 17th consecutive session under mandate.**
+
+### Live re-validation at the open
+| Symbol | Bid | Ask | Mid | Spread | Note |
+|---|---|---|---|---|---|
+| XLE | 64.65 | 64.66 | 64.655 | 0.015% | +1.04% on the day, held |
+| XOP | 190.50 | 191.17 | 190.835 | 0.350% | tradeable, not acted on |
+| XLK | 183.28 | 183.31 | 183.295 | 0.016% | tradeable, not acted on |
+| SPY | 761.90 | 761.93 | 761.915 | 0.004% | — |
+
+All four quoted fresh in RTH (13:39Z), tight books — same as 8/31. Pricing is not the blocker; the entry bar is.
+
+### XLE — held, thesis re-confirmed for the third consecutive session
+- **Trail ratcheted itself overnight, exactly as the pre-market run flagged.** Order `ef0c1da0`: hwm **$64.70 → $64.94**, stop_price **$58.23 → $58.446**, status `new`/GTC. Alpaca advanced it on RTH prints. **Not touched by hand. No stop moved down.**
+- Position: 300 sh @ $63.5553, mark $64.625, **+$320.90 (+1.68%)**, +1.04% today, 19.63% of equity.
+- **Cut at -7%:** not triggered — cut line $59.11, **8.57% away**.
+- **Tighten:** not triggered — +1.68%, needs +15% ($73.09).
+- Trail distance 9.60% below price — >3% clear.
+- **Hormuz re-confirmed and still deteriorating.** Two independent queries: strait effectively closed **184 days**; **~5 vessel transits** on the latest reporting day (4 in, 1 out) vs a ~14 ten-day average; tanker struck by **three projectiles** 17nm east of Khasab, Oman while exiting today; Iranian official states **"no ongoing negotiations."** WTI **~$86.60**, Brent **~$91.10**.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **nowhere near firing** (~5 vs ~40). **Exit trigger (b)** — the $59.11 cut line — 8.57% away.
+- Tape confirms: Energy the day's leading sector (+0.8% to +2.1% across feeds); Tech lagging (-1.6% to -1.9%, semis worse).
+
+### Trade ideas — 3 examined, 0 clear the checklist, all 3 fail the *same* leg
+**1. XOP — the pre-market read was wrong at the live price. Now fails leg 4 on the written rule.**
+- Pre-market called XOP "the only one of the three with a target that isn't pinned against a 52-week high." That was computed off a stale ~$187 estimate. **At the live open book it is false.**
+- **XOP's 52-week high is $191.24** (Yahoo/Public; a second feed shows $190.36 — single-digit disagreement, same conclusion). Live ask today: **$191.17**. XOP is trading **at its 52-week high**, having run **+57% off the $122.11 low**.
+- 100 sh @ $191.17 = $19,117 = **19.35%** of equity (inside the 20% cap). Stop 10% trailing ≈ $172.05; cut line ≈ $177.79.
+- **Fails leg 4.** A 2:1 R:R off the 7% cut line needs **+14% ≈ $217.93 — 13.9% above the 52-week high**, with no basis beyond "the breakout continues." Off the 10% trail it needs ~$229.
+- **This is the identical failure mode that closed XLV on rule 12 and rejected XLK on 8/31 and today.** Recorded as failed rather than re-cutting the target to fit. **The concentration objection was not needed today** — the written checklist rejects it on its own. Noting that plainly, because ten prior declines rested on an unwritten rule and this one does not.
+- Secondary blocker unchanged: would take Energy to **38.98%** of equity on one geopolitical factor.
+
+**2. XLK — fails leg 4, and today the catalyst is disconfirmed by the tape.**
+- Catalyst (Micron/Qualcomm broadening the AI cycle) was strong pre-market. **The market is not paying it:** XLK gapped from the pre-market ~$186 estimate to **$183.31**, Tech is the day's worst sector at -1.6% to -1.9%, semis weaker still. A catalyst the tape rejects on the day it prints is not a momentum entry.
+- 100 sh @ $183.31 = $18,331 = 18.56% of equity. 2:1 target off a 7% stop = **$208.97 vs a 52-wk high of $198.73** — 5.2% above the high. **Fails leg 4**, same as 8/31.
+- Sector momentum leg also now questionable intraday, though Tech remains rank 2 YTD (+29.8%).
+
+**3. Add to XLE — not actionable.** XLE is 19.63% of equity against a 20% cap of $19,754.73. Room is **$367 (5 shares)**. Not a trade.
+
+### The structural finding — now demonstrated, not argued
+Yesterday's pre-market described the deployment gap as an *arithmetic incompatibility* between the 75-85% mandate and the 2:1-off-a-7-10%-stop entry bar in a sector-ETF universe trading at highs. **Today is the clean demonstration:** three candidates, three different sectors, three different catalysts — and **all three fail on leg 4 alone**, each requiring a target 5-14% above its own 52-week high. Not one failed on catalyst, size, position count, PDT, or trade slots. Every written gate except the R:R target passes for XOP and XLK.
+- The mandate needs **+$54,672** of position value (~3 more full legs) to reach 75%.
+- The checklist structurally cannot produce them from this universe. **Seventeen consecutive sessions.**
+- **This is not resolvable inside the rules, and this run did not resolve it by bending them.** No target was re-cut to fit; no unwritten authorization was self-granted.
+
+### Owner decisions — escalated for the third consecutive session, still unanswered
+1. **Move the 75-85% deployment target, or move the entry bar** (e.g. permit measured-move/ATR-derived targets, or accept 1.5:1 on index-ETF legs). One of the two has to give. Today proves the current pair cannot both hold.
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). Note: XOP fails the written checklist today independently, so this decision is **not** what blocked a trade this session — but it will recur the moment an energy name prices below its high.
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.446 trail and $59.11 cut line are the whole control, both live, both ~8.6-9.6% below the mark.
+- **Gap risk is the real reason concentration matters here:** a Hormuz de-escalation headline is an overnight-gap event, and a 10% trailing stop does not protect against a gap. At 19.6% in one factor a 20% gap costs ~4% of equity; at 39% it costs ~8%. That is the mechanism behind the concentration objection, stated explicitly for the owner rather than left as instinct.
+- **ISM Manufacturing PMI (Aug) at 10:00 ET — confirmed NOT yet released** at the time of this run (09:41 ET). Perplexity said so rather than inventing a print. It lands 19 minutes after this run and is unpriced; a weak number pressures cyclicals including energy. Handed to the midday scan.
+- **Being 80% cash remains the dominant tracking error** against the S&P benchmark. Seventeen sessions.
+
+### Decision
+**No trades. XLE held on written terms, thesis re-confirmed, trail verified advanced by Alpaca and untouched by hand. XLK and XOP both rejected on leg 4 of the entry checklist. Slots 0/3. Deployment 19.63%, escalated — not self-resolved.**
