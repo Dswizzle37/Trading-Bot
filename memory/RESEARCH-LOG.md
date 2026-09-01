@@ -965,3 +965,44 @@ Yesterday's pre-market described the deployment gap as an *arithmetic incompatib
 
 ### Decision
 **No trades. XLE held on written terms, thesis re-confirmed, trail verified advanced by Alpaca and untouched by hand. XLK and XOP both rejected on leg 4 of the entry checklist. Slots 0/3. Deployment 19.63%, escalated — not self-resolved.**
+
+## 2026-09-01 — Midday Scan (13:10 ET, Tuesday, Day 12)
+
+**No action taken. XLE held on written terms — no rule triggered, thesis intact. The ISM print handed over by the market-open run landed soft and did NOT pressure the position. Slots 0/3.**
+
+### Account (live, 17:10Z)
+- Equity **$98,751.14** vs prior close $98,574.14 (`balance_asof` 2026-08-31) → **+$177.00 (+0.18%)**; phase-to-date **-$1,248.86 (-1.25%)**
+- Cash $79,386.14 | Position MV $19,365.00 → **19.61% deployed** — seventeenth consecutive session under the 75-85% target
+- Realized today: **$0.00** — no fills since the open. **1 position, 1 open order.** Slots **0/3**, PDT room clear (`daytrade_count` 0).
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.55 | 19.6% | +$298.40 (+1.57%) | +0.92% | $59.11 | 8.43% | $58.446 (10%, hwm $64.94) | 9.46% | $73.09 (+15%) |
+
+- **STEP 3 (cut at -7%):** not triggered — XLE **+1.57%**, cut line 8.43% away.
+- **STEP 4 (tighten):** not triggered — needs +15% ($73.09), position is +1.57%. Trail `ef0c1da0` verified live/`new`/GTC at **$58.446, hwm $64.94, untouched by hand. No stop moved.** 9.46% below price, >3% clear. hwm unchanged since the open run — the day's high (~$64.94) has not been exceeded this afternoon. `qty_available` 0 is the GTC stop holding the shares — expected.
+- Quotes real in RTH (17:09Z): XLE 64.54/64.56 (0.031%), SPY 761.70/761.72 (0.003%). SPY effectively flat since the 09:41 open read ($761.92 → $761.71, -0.03%) — the benchmark gave the account nothing to make up or lose today.
+
+### ISM Manufacturing — the open run's one open question, now answered
+The market-open run explicitly deferred this: the August ISM print landed 19 minutes after it, unpriced, with a weak number flagged as a risk to cyclicals including energy. **Resolved, and it did not fire against the position.**
+- **Headline 54.6** vs **55.2 consensus** and **55.6 prior** — a miss and a second-derivative slowdown, but **still expansionary (>50)**. New orders **53.7**, employment **51.2** (both above 50; employment only just).
+- **The tape did not treat it as a cyclical shock, and energy specifically outperformed through it:** XLE +0.82% to +0.92% on the day at midday against Tech -1.24%. The sector-momentum leg of the XLE thesis survived the one scheduled event that could have broken it today.
+- **Read:** the pre-market/open risk flag was correct to raise and is now retired. A soft-but-expansionary print with energy leading anyway is not a reason to touch the position, and there is no written trigger that keys off ISM in any case.
+
+### XLE thesis re-check — third consecutive confirmation, driver still deteriorating
+- **Hormuz still severely constricted.** Latest ship-tracking (Reuters, 2026-09-01): **~5 transits** on the most recent reporting day, **4 in / 1 out**, against a ~14 ten-day average. Unchanged from the open read.
+- **Exit trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **nowhere near firing (~5 vs ~40)**. **Exit trigger (b)** — the $59.11 cut line — **8.43% away**, marginally tighter than the open's 8.57% purely because the mark eased back from its $64.94 high. Neither trigger is close.
+- **No de-escalation, and no new escalation either.** Perplexity found **no verified negotiation or diplomatic breakthrough** and, distinct from this morning, **no verified new attack or incident in the last 24 hours** — the first session in several without a fresh incident to point at. Recorded as an observation, not a trigger: an absence of new escalation is not thesis decay, and 5 transits/day is the fact that matters.
+- **Crude firm to slightly higher:** WTI **~$86.6-87.9**, Brent **~$91.0-92.2**, vs ~$86.60/~$91.10 at the open. The commodity input is holding its gain.
+- **Source-quality note (thirteenth session of correct refusal behavior):** Perplexity explicitly flagged that it **could not verify an official closure declaration from a primary source**, and that a live tracker (straits.live) asserting full closure **conflicts** with the ship-tracking transit data. Both readings support "severely constricted"; only the stronger word is unverified. Recording the conflict rather than laundering it into a cleaner claim.
+
+### No new entry
+Nothing changed between 09:41 and 13:10 to move any candidate across the entry checklist. XOP and XLK were both rejected at the open on **leg 4 (2:1 R:R)** — each requiring a target 5-14% above its own 52-week high — and neither has repriced enough to alter that arithmetic; XLK's disconfirming tape has if anything gotten worse (Tech -1.24% at midday). Adding to XLE remains non-actionable: at 19.61% of a $19,750 cap, room is **~$385 (5 shares)**. **Slots stay 0/3. No unwritten authorization self-granted.**
+
+### Risk
+- **XLE is still the entire book's directional risk and it is geopolitical.** The $58.446 trail and $59.11 cut line are the whole control — 9.46% and 8.43% below the mark, both live, both verified this run.
+- **Gap risk remains the reason concentration matters:** a 10% trailing stop does not protect against an overnight de-escalation gap. Today's absence of new escalation headlines is a mild reminder that the reversal case is a headline, not a drift.
+- **Deployment 19.61% against a 75-85% mandate is the dominant tracking error**, seventeen sessions running, and today the benchmark was flat — so the cost was ~nil *today* and remains structural. The two owner decisions escalated at the open (**move the deployment target or move the entry bar**; **authorize or forbid the second energy leg**) are **unanswered for a third consecutive session**. Re-escalated here, not self-resolved.
+
+### Decision
+**No action. HOLD XLE. No stop moved. No new entry. Slots 0/3. ISM risk flag retired; deployment escalation carried forward.**
