@@ -127,3 +127,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.77 | +1.27% | +$364.40 (+1.91%) | $58.45 (10% trail, hwm $64.94) |
 
 **Notes:** No trades today, no fills, no position changes. XLE is the account's sole position, up +1.27% on the day and +1.91% unrealized; trail live and untouched at $58.45 (hwm $64.94, 9.8% below the mark), cut line 8.4% away. Deployment 19.66% ($19,431 of $98,817) — twelfth-plus consecutive session under the 75-85% target. Both escalated owner decisions (move the deployment target or the entry R:R bar; authorize or forbid a second energy leg) remain unanswered for a third straight session per today's midday scan — carried forward, not self-resolved. Trades this week: 0/3 (the 8/31 XLV sale was an exit and doesn't consume a slot). Note: no EOD snapshot was logged for 8/31 (Mon) — that day's positions/trades are fully recorded in the XLV sell entry above, nothing to reconstruct. Day P&L measured against Alpaca's official `last_equity` ($98,574.14, balance_asof 2026-08-31).
+
+### Sep 2 — EOD Snapshot (Day 13, Wednesday)
+**Portfolio:** $98,898.35 | **Cash:** $79,386.14 (80.3%) | **Day P&L:** +$81.21 (+0.08%) | **Phase P&L:** -$1,101.65 (-1.10%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.0407 | +0.42% | +$445.61 (+2.34%) | $58.8105 (10% trail, hwm $65.345) |
+
+**Notes:** No trades today, no fills, no position changes. XLE remains the account's sole position, up +0.42% on the day and +2.34% unrealized — its best mark since entry — with the trail live and untouched at $58.8105 (hwm $65.345, 9.6% below the mark), cut line 9.6% away, well inside the -7% manual-cut rule and >3% from price. Deployment 19.73% ($19,512.21 of $98,898.35) — still well under the 75-85% target, now the longest-running gap in the book across two-plus weeks. Trades this week: 0/3 (fresh week, no trades Mon-Wed). Day P&L measured against Alpaca's official `last_equity` ($98,817.14, balance_asof 2026-09-01), consistent with the logged 9/1 snapshot.
