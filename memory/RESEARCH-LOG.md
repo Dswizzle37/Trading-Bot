@@ -1159,3 +1159,45 @@ Three candidates, two sectors, three distinct setups — one 7.7% below its high
 
 ### Decision
 **No trades. XLE held on written terms, thesis re-confirmed for a fifth session, trail verified advanced by Alpaca and untouched by hand. OIH, XOP and XLK all rejected on leg 4. Slots 0/3. Deployment 19.66% and the rule-arithmetic behind it escalated — not self-resolved.**
+
+## 2026-09-02 — Midday Scan (13:07 ET, Wednesday, Day 13)
+
+**No action taken. XLE held on written terms — no rule triggered, thesis intact for a sixth consecutive session. Trail ratcheted again by Alpaca, untouched by hand. Slots 0/3. Deployment 19.70%.**
+
+### Account (live, 17:07Z)
+- Equity **$98,863.64** vs prior close $98,817.14 (`last_equity`, `balance_asof` 2026-09-01) → **+$46.50 (+0.05%)**; phase-to-date **-$1,136.36 (-1.14%)**
+- Cash $79,386.14 (80.3%) | Position MV $19,477.50 → **19.70% deployed** — nineteenth-plus consecutive session under the 75-85% target
+- Realized today: **$0.00** — no fills since the open. **1 position, 1 open order.** Slots **0/3** (week Aug 31–Sep 4), PDT room clear (no day trade on record).
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.945 | 19.7% | **+$416.90 (+2.19%)** | +0.27% | $59.106 | 8.99% | $58.554 (10%, hwm $65.06) | 9.84% | $73.09 (+15%) |
+
+- **STEP 3 (cut at -7%):** not triggered — XLE **+2.19%**, cut line 8.99% away. Account's best unrealized reading on this position to date.
+- **STEP 4 (tighten):** not triggered — needs +15% ($73.09); position is +2.19%. Trail `ef0c1da0` verified live/`new`/GTC, **untouched by hand. No stop moved.** 9.84% below the mark, >3% clear. `qty_available` 0 is the GTC stop holding the shares — expected.
+- **Trail ratcheted intraday, again by Alpaca:** `updated_at` 15:41Z advanced hwm **$64.945 → $65.06** and stop_price **$58.4505 → $58.554** (+10.5c). Second confirmed self-ratchet in two sessions; the mechanism is working as designed.
+- Quotes real in RTH (17:07Z): XLE 64.94/64.95 (0.015%), SPY 765.04/765.09 (0.007%), QQQ 708.37/708.41, OIH 433.27/433.61 (0.078%), XOP 193.49/193.66 (0.088%). Books tight; pricing is not the blocker.
+
+### XLE thesis re-check — sixth consecutive confirmation, driver intact
+- **Hormuz still shut to a trickle.** Latest verifiable ship-tracking: **4 transits on 2026-09-01** (Windward via Argus); a second tracker gives **6 on 2026-08-30**. Against an ~85/day pre-crisis baseline.
+- **Exit trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **nowhere near firing (4-6 vs ~40)**. **Exit trigger (b)** — the $59.106 cut line — **8.99% away**, wider than the open's 8.70% because the mark rose. Neither is close.
+- **No de-escalation. If anything the opposite:** Perplexity found **no verified negotiation, ceasefire, or reopening in the last 12 hours**, and today's dated reporting attributes the crude bid to **fresh US-Iran strikes** stoking supply fears. The reversal case remains a headline that has not printed.
+- **Crude holding the gap:** WTI **~$89.7-90.7**, Brent **~$95.4-95.7** — level with the open read (~$90.2-90.7 / ~$94.65-95.44). No give-back.
+- **Source-quality note (fifteenth session of correct refusal behavior):** Perplexity explicitly declined to assert a single "right now" crude quote or today's % change from one consistent source, and could not verify intraday XLE, S&P or Nasdaq levels at all — index and ETF intraday marks in this entry come from **Alpaca quotes**, not from research. Recorded, not laundered.
+
+### No new entry — and the cost of leg 4 was visible today
+Nothing between 09:36 and 13:07 moved a candidate across the entry checklist. The arithmetic moved **against** the account:
+- **OIH — rejected at the open, and it ran.** Ask **$426.48 → $433.61, +1.67%** in one session while the held position did +0.27%. Headroom beneath the corrected $459.28 high narrowed to **5.92%**, but the 2:1 target off a 7% cut now needs **$494.32 — 7.63% above the high**, a **wider** miss than the open's 5.9% because the price rallied without the high moving. Size 45 sh = $19,512 = 19.74% (46 sh breaches the cap at 20.18%).
+- **This is the leg-4 constraint showing its cost, not just its logic:** the checklist's own arithmetic gets *stricter* as the best candidate confirms. Recorded as evidence for owner decision 1, **not** acted on and **not** re-cut to fit.
+- **XOP — unchanged rejection, still worst reading.** Ask $193.66 vs a $192.33 52-week high: headroom **-0.69%** (making new highs); 2:1 needs $220.77, **+14.79% above the high**.
+- **Adding to XLE — not actionable.** 20% cap $19,772.73 against MV $19,477.50: room **$289.23 (4 shares)**. Not a trade.
+- **Slots stay 0/3. No unwritten authorization self-granted.**
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.554 trail and $59.106 cut line are the whole control — 9.84% and 8.99% below the mark, both live, both verified this run.
+- **Gap risk is why concentration matters:** a 10% trailing stop does not protect an overnight de-escalation gap. At 19.7% in one factor a 20% adverse gap costs ~4% of equity.
+- **Being ~80% cash remains the dominant tracking error** — and today it had a measurable price: SPY **$762.04 → $765.07 (+0.40%)** since the open read against the account's **+0.05%**. Twenty sessions running.
+- The two owner decisions (**move the 75-85% deployment target or move the entry bar**; **authorize or forbid the second energy leg at ~39% concentration**) are **unanswered for a sixth consecutive session**. Re-escalated here, not self-resolved.
+
+### Decision
+**No action. HOLD XLE. No stop moved. No new entry. Slots 0/3. Thesis confirmed for a sixth session; deployment escalation carried forward.**
