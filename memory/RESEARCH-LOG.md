@@ -1079,3 +1079,83 @@ Nothing changed between 09:41 and 13:10 to move any candidate across the entry c
 
 ### Decision
 **No trades. HOLD XLE on written terms, thesis re-confirmed and strengthening for a fourth session. No stop moved. No new entry. Slots 0/3. Deployment 19.58% and the rule-arithmetic behind it escalated — not self-resolved.**
+
+## 2026-09-02 — Market-Open Execution (09:36 ET, Wednesday, Day 13)
+
+**Executed: NO TRADES. HELD XLE on written terms. Three candidates examined, all three fail leg 4 of the entry checklist — the fourth consecutive session where every rejection lands on the same leg. Slots 0/3. Deployment 19.66% — 19th consecutive session under mandate.**
+
+### Live re-validation at the open (13:36Z)
+| Symbol | Bid | Ask | Mid | Spread | Note |
+|---|---|---|---|---|---|
+| XLE | 64.74 | 64.75 | 64.745 | 0.015% | -0.05% on the day, held |
+| OIH | 424.55 | 426.48 | 425.515 | 0.453% | tradeable, not acted on |
+| XOP | 193.17 | 193.85 | 193.510 | 0.352% | tradeable, not acted on |
+| XLK | 182.88 | 182.91 | 182.895 | 0.016% | tradeable, not acted on |
+| SPY | 762.03 | 762.05 | 762.040 | 0.003% | — |
+
+All five quoted fresh in RTH, tight books. Pricing is not the blocker; the entry bar is. Same pattern as 8/31 and 9/1.
+
+### Account (live)
+- Equity **$98,808.14** vs prior close $98,817.14 (`last_equity`, `balance_asof` 2026-09-01) → **-$9.00 (-0.01%)**; phase-to-date **-$1,191.86 (-1.19%)**
+- Cash $79,386.14 | Position MV $19,422.00 → **19.66% deployed**
+- **1 position** (XLE), **1 open order** (XLE trail). Slots **0/3** (week Aug 31–Sep 4). PDT room clear (`daytrade_count` omitted by Alpaca; no day trade on record). **No fills today.**
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.74 | 19.7% | **+$355.40 (+1.86%)** | -0.05% | $59.106 | 8.70% | $58.4505 (10%, hwm $64.945) | 9.72% | $73.09 (+15%) |
+
+- **Cut at -7%:** not triggered — XLE +1.86%, cut line 8.70% away.
+- **Tighten:** not triggered — +1.86%, needs +15% ($73.09).
+- **Trail `ef0c1da0` verified live/`new`/GTC. No stop moved.** 9.72% below the mark, >3% clear.
+
+### The two pre-market handoffs — both resolved
+1. **Trail ratchet: fired, and verified.** Order `ef0c1da0` advanced during this run — hwm **$64.94 → $64.945**, stop_price **$58.446 → $58.4505**. Alpaca did it on an RTH print. **Not touched by hand. No stop moved down.** The ratchet is real but trivial (half a cent), because —
+2. **The pre-market's "+~2% indicated" read for XLE was wrong.** Third-party recaps had XLE indicated up ~2% (~$66.07); it opened **-0.05% at $64.74**. The stale $64.42 pre-market stub, which the pre-market run explicitly dismissed as noise of the opposite sign, was in fact the closer estimate. **Recorded as a miss:** third-party pre-market indications are not better than the stale stub, and neither is tradeable. Only the RTH book is.
+3. Consequence: **XLE did not cross the 20% weight cap on price** (19.66% vs a $19,761.63 cap). The flagged non-issue stayed a non-issue; no trim was warranted and none was made.
+
+### Market Context (verified)
+- **Crude held the overnight gap.** WTI **~$90.2–90.7**, Brent **~$94.65–95.44** across sources — the +4.3% gap the pre-market logged did not give back. Commodity input intact.
+- **Reuters (08:31 ET):** S&P 500 E-minis **+0.08%**, Nasdaq 100 E-minis **-0.09%** — "investors weighed renewed U.S.-Iran clashes against signs of strength in the AI trade." SPY opened $762.04, ~flat to yesterday's $761.71 midday read.
+- **Tuesday's close (context for the tape):** S&P 7,631.47 **-0.71%**, Nasdaq 26,099.77 **-1.03%**, Dow 52,766.88 **-0.79%** — third straight decline. **Nine of eleven sectors down; the S&P Energy index +2.1%, the only clearly positive sector.** SOXX -2%.
+- **VIX unresolved:** sources give 16.1 (-1.47%), 16.34, and a 17.18 futures open. Perplexity flagged the conflict rather than picking one. Directionally elevated vs 14.43 on 8/28; no single level trusted.
+- No unpriced macro print lands after this run (ADP already out at 08:15 ET, +47k vs +45k consensus). Day's weight is after the close: **AVGO, HPE, SNOW, NTAP** — tech-tape risk for tomorrow's open, no position exposure.
+
+### Hormuz — thesis input, re-confirmed for the fifth consecutive session
+- **Transits still at a trickle:** latest verifiable ship-tracking is **3 transits (2026-08-23)** against a pre-crisis baseline of **85/day**; a second tracker gives **~5/day on a 7-day average**.
+- **No verified negotiation, ceasefire, or reopening agreement in the last 24 hours.** Perplexity searched specifically for it and said so explicitly — the most recent dated talks reporting is August or earlier.
+- **Exit trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **nowhere near firing (~3-5 vs ~40)**. **Exit trigger (b)** — the $59.106 cut line — **8.70% away.** Neither is close.
+- **Source-quality note (fourteenth session of correct refusal behavior):** Perplexity again declined to assert an official closure declaration from a primary source, and flagged that live-tracker "closed" claims conflict with ship-tracking showing a handful of transits. Both readings support "effectively shut"; only the stronger word is unverified. Recorded, not laundered.
+
+### Trade ideas — 3 examined, 0 clear the checklist, all 3 fail leg 4
+**1. OIH — still the strongest candidate the account has surfaced. Still FAILS leg 4, but the margin narrowed.**
+- Catalyst live and specific (Hormuz supply shock, oil services geared to it). Sector momentum **passes** (Energy rank 1, +46.9% YTD, and the only green S&P sector Tuesday). Energy carries **0 failed trades**.
+- **Corrected 52-week high: $459.28** (verified today; the pre-market used $453.75). At the live ask of **$426.48**, OIH sits **7.69% below its high** — genuine headroom, and it is *cheaper* than the pre-market's $429.02 read.
+- Size: 46 sh × $426.48 = **$19,618.08 = 19.85%** of equity (inside the 20% cap). 7% cut line $396.63; 10% trail $383.83.
+- **Fails leg 4.** A 2:1 R:R off the 7% cut needs **$486.19 (+14.0%) — 5.9% above the 52-week high.** Available headroom beneath the high is **+7.69%**; the checklist demands **+14%**.
+- **The gap narrowed from 7.8% to 5.9% above the high** in one session (better price, higher verified high). It is the closest any candidate has come in nineteen sessions. **It is still a fail, and the target was not re-cut to fit.**
+- Secondary blocker unchanged: would take Energy to **~39%** of equity on one geopolitical factor.
+
+**2. XOP — fails leg 4, and now on the worst reading yet.** At the $193.85 ask XOP is **above its verified 52-week high of $192.33** — it is *making* a new high, headroom **-0.78%**. A 2:1 target off the 7% cut needs **$220.99, 14.9% above the high**. Same rejection as 8/31 and 9/1, on a worse setup. Same ~39% energy concentration objection behind it.
+
+**3. XLK — fails leg 4, and the tape keeps disconfirming.** 108 sh × $182.91 = $19,754.28 = 19.99% of equity. 2:1 off the 7% cut needs **$208.52 vs a $198.73 52-week high** (+4.9% above). Beyond the arithmetic: XLK printed **$182.91 today vs $183.31 yesterday**, Nasdaq futures negative while S&P futures are positive, and SOXX fell 2% Tuesday. Rising crude is a direct headwind to this basket — the one macro fact strengthening idea 1 weakens idea 3. Tech carries 1 failed trade (NVDA); rule 10 counts 2.
+
+**Adding to XLE — not actionable.** 20% cap $19,761.63 against MV $19,422.00. Room is **$339.63 (5 shares).** Not a trade.
+
+### The structural finding — fourth consecutive session of the same demonstration
+Three candidates, two sectors, three distinct setups — one 7.7% below its high, one at its high, one 8.7% below — and **all three fail on leg 4 alone.** Not one failed on catalyst, sector momentum, position count, size cap, PDT, or trade slots. The binding constraint is arithmetic: **2:1 off a 7-10% stop mandates a +14% to +20% target, and no liquid sector ETF in this tape offers that much headroom beneath its own 52-week high.**
+- The mandate needs **~+$54,700** of position value (~3 more full legs) to reach 75%.
+- **Nineteen consecutive sessions.** Not resolvable inside the rules; **this run did not resolve it by bending them.** No target re-cut, no unwritten authorization self-granted.
+
+### Owner decisions — escalated for the fifth consecutive session, still unanswered
+1. **Move the 75-85% deployment target, or move the entry bar** (permit measured-move/ATR-derived targets, or accept 1.5:1 on index-ETF legs). OIH now misses by 5.9 points of headroom — the narrowest miss on record, and still a miss. One of the two has to give.
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). OIH and XOP both fail the written checklist independently today, so this is **not** what blocked a trade — but it binds the moment the R:R bar moves.
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.4505 trail and $59.106 cut line are the whole control — 9.72% and 8.70% below the mark, both live, both verified this run.
+- **Gap risk is the reason concentration matters.** A 10% trailing stop does not protect against an overnight de-escalation gap. At 19.7% in one factor a 20% adverse gap costs ~4% of equity; at 39% it costs ~8%.
+- **The position's driver is the market's problem.** Oil at $90 is feeding yields and pressuring the index the account is benchmarked against — flattering relative performance while a broad de-rating still hurts absolute equity. A crude reversal would hit XLE *and* spark a market relief rally: the worst combination for a 20%-deployed, energy-only book.
+- **VIX elevated but unresolved** (16.1 / 16.34 / 17.18 futures open) — volatility expanding off a low base.
+- **Being ~80% cash remains the dominant tracking error**, nineteen sessions running.
+
+### Decision
+**No trades. XLE held on written terms, thesis re-confirmed for a fifth session, trail verified advanced by Alpaca and untouched by hand. OIH, XOP and XLK all rejected on leg 4. Slots 0/3. Deployment 19.66% and the rule-arithmetic behind it escalated — not self-resolved.**
