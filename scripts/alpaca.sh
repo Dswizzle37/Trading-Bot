@@ -41,6 +41,22 @@ case "$cmd" in
     sym="${1:?usage: quote SYM}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$DATA/stocks/$sym/quotes/latest"
     ;;
+  snapshot)
+    sym="${1:?usage: snapshot SYM}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" "$DATA/stocks/$sym/snapshot"
+    ;;
+  bars)
+    # usage: bars SYM [timeframe] [start] [limit] [feed]  e.g. bars XLE 1Day 2025-09-03 400
+    # feed defaults to sip (consolidated tape). iex is a partial tape and will
+    # disagree with position marks — only use it as a fallback.
+    sym="${1:?usage: bars SYM [timeframe] [start] [limit] [feed]}"
+    tf="${2:-1Day}"
+    start="${3:-$(date -u -d '400 days ago' +%Y-%m-%d 2>/dev/null || date -u -v-400d +%Y-%m-%d)}"
+    limit="${4:-400}"
+    feed="${5:-sip}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$DATA/stocks/$sym/bars?timeframe=$tf&start=$start&limit=$limit&adjustment=split&feed=$feed"
+    ;;
   orders)
     status="${1:-open}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/orders?status=$status"
@@ -65,7 +81,7 @@ case "$cmd" in
     curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
     ;;
   *)
-    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
+    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|snapshot|bars|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
     exit 1
     ;;
 esac
