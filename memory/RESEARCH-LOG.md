@@ -1269,3 +1269,50 @@ Four candidates across three sectors. **None was blocked by catalyst-plus-moment
 
 ### Decision
 **HOLD. No trade prepared for the open. XLE held on written terms, thesis re-confirmed for a seventh session (both exit triggers far from firing: transits 5-10 vs ~40, cut line 9.18% away). No stop moved. XME, OIH, XOP, XLK all rejected. Slots 0/3. Deployment ~19.7% and the rule-arithmetic behind it escalated — not self-resolved.**
+
+## 2026-09-03 — Market-Open Execution (09:37 ET, Thursday, Day 14)
+
+**HOLD. No trade placed. Pre-market's HOLD decision confirmed at the open: quote feed fresh and tight, all four rejected candidates re-priced within the same fail-envelope, XLE thesis intact, trail live and untouched. Slots 0/3. Deployment 19.77%, twenty-second consecutive session under target.**
+
+### Account (live, 13:37Z / 09:37 ET, 7 min into RTH)
+- Equity **$98,947.64** vs `last_equity` $98,916.14 → **+$31.50 (+0.03%)**
+- Cash **$79,386.14** (80.23%) | Position MV **$19,561.50** → **19.77% deployed**
+- **1 position, 1 open order.** Realized today $0.00. Slots **0/3** (week Aug 31-Sep 4). PDT room clear.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist |
+|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.205 | 19.77% | **+$495.00 (+2.60%)** | $59.1064 | 9.35% | $58.8105 (10%, hwm $65.345) | 9.80% |
+
+- **Cut at -7%:** not triggered — XLE +2.60%, 9.35% of room.
+- **Tighten:** not triggered — needs +15% ($73.09); position is +2.60%.
+- **Trail `ef0c1da0` verified live / `new` / GTC / trail_percent 10 / hwm $65.345 / stop $58.8105 — untouched by hand. No stop moved down.** `qty_available` 0 (GTC stop holding shares).
+
+### Data quality — quote feed fully recovered at the open
+Live two-sided quotes at 13:37Z (7 min into RTH), institutional spreads on every ticker checked:
+- XLE 65.19/65.21 (0.03%) | SPY 768.67/768.72 (0.01%) | XLK 182.67/182.69 (0.01%)
+- XME 119.82/120.48 (0.55%) | OIH 436.52/438.03 (0.35%) | XOP 192.12/192.67 (0.29%)
+
+Pre-market's "ETF ask=0 on the closing cross" defect is a pre-open artifact only, seventh session confirming this. Candidate math below uses live mid.
+
+### Candidates — re-validated at the open, all four still fail leg 4
+Pre-market rejected four (XME, OIH, XOP, XLK) on the same arithmetic: 2:1 target off a 7% stop needs +14% of upside; only broken-down names have that headroom under their 52-week high. The open confirmed nothing that would flip any of them.
+
+| Sym | Pre mid | Open mid | Δ | 20% shares | Cost | Weight | 2:1 target | Vs 52wk high | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| XME | $119.46 | $120.15 | +0.58% | 165 | $19,825 | 20.04% | $136.97 | +0.95% above $135.68 | still fails legs 1 & 2 (no catalyst, 63d -7%) — the +0.37% pre-market miss on leg 4 widened to +0.95% because XME rallied at the open while the high stood still |
+| OIH | $436.58 | $437.28 | +0.16% | 45 | $19,678 | 19.89% | $498.50 | +8.54% above $459.28 | still fails leg 4 (needs $498.50, worse than pre-market's +8.37%) |
+| XOP | $193.16 | $192.40 | -0.39% | 102 | $19,625 | 19.83% | $219.34 | +12.58% above $194.83 | still fails leg 4 |
+| XLK | $183.60 | $182.68 | -0.50% | 107 | $19,547 | 19.75% | $208.25 | +4.79% above $198.73 | still fails leg 4; tape carries the pre-market disconfirm (21d -1.77%, 63d -6.44%) |
+
+**Adding to XLE:** 20% cap $19,789.53 against MV $19,561.50 → room **$228.03 ≈ 3 shares.** Not a trade.
+
+### Market context (open re-check)
+- **Crude:** WTI ~$90.5-91.0 / Brent ~$95.3-95.5 — level with the pre-market read, no give-back on ADP.
+- **Hormuz:** unchanged — transits 5-10/day vs 125-138 baseline. No de-escalation on the wire.
+- **ADP (08:15 ET) / claims (08:30 ET):** no shock in the tape reaction (SPY -0.01% intraday, VIX unmoved at ~15.2), yields hold.
+- SPY $768.70 vs pre-market context ~$767 area — mildly firm open, low-vol.
+
+### Decision
+**HOLD — no order placed.** Pre-market rejected all four candidates on leg-4 R:R math; the open re-priced each within the same fail-envelope. XLE thesis intact (crude bid, Hormuz still shut, no de-escalation), trail live at $58.8105 (9.80% below mark) — untouched, not moved down. Slots stay **0/3**. Deployment **19.77%**, twenty-second consecutive session under target; the escalated owner decisions (move the deployment target or the R:R bar; authorize/forbid a second energy leg) remain unanswered and are the standing gap in this book, not a run failure to be self-resolved.
+
+No email sent — no trade to notify on (STEP 7).
