@@ -1269,3 +1269,56 @@ Four candidates across three sectors. **None was blocked by catalyst-plus-moment
 
 ### Decision
 **HOLD. No trade prepared for the open. XLE held on written terms, thesis re-confirmed for a seventh session (both exit triggers far from firing: transits 5-10 vs ~40, cut line 9.18% away). No stop moved. XME, OIH, XOP, XLK all rejected. Slots 0/3. Deployment ~19.7% and the rule-arithmetic behind it escalated — not self-resolved.**
+
+## 2026-09-03 — Midday Scan (13:10 ET, Thursday, Day 14)
+
+**No action taken. XLE held on written terms — no rule triggered, thesis intact for an eighth consecutive session and XLE printed a new 52-week high ($65.52) intraday. Trail ratcheted again by Alpaca, untouched by hand. Slots 0/3. Deployment 19.75%. One genuinely new finding: XME's leg-4 arithmetic flipped to passing — and it is still rejected, on legs 1 and 2.**
+
+### Account (live, 17:07-17:10Z)
+- Equity **$98,928.14** vs `last_equity` $98,916.14 (`balance_asof` 2026-09-02) → **+$12.00 (+0.01%)**; phase-to-date **-$1,071.86 (-1.07%)**
+- Cash $79,386.14 (80.2%) | Position MV $19,542.00 → **19.75% deployed** — twenty-second consecutive session under the 75-85% target
+- Realized today: **$0.00** — no fills since the open. **1 position, 1 open order.** Slots **0/3** (week Aug 31-Sep 4). Account ACTIVE, not blocked; `daytrade_count` absent from the Alpaca payload again, order history confirms no day trade on record.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.14 | 19.75% | **+$475.40 (+2.49%)** | +0.10% | $59.1064 | 9.26% | $58.968 (10%, hwm $65.52) | 9.47% | $73.09 (+15%) |
+
+- **STEP 3 (cut at -7%):** not triggered — XLE **+2.49%**, cut line 9.26% below the mark. Best unrealized reading this position has recorded.
+- **STEP 4 (tighten):** not triggered — needs +15% ($73.09); position is +2.49%. Trail `ef0c1da0` verified live / `new` / GTC / trail_percent 10, **untouched by hand. No stop moved down.** 9.47% below the mark, well clear of the 3% floor. `qty_available` 0 is the GTC stop holding the shares — expected.
+- **Fourth consecutive Alpaca self-ratchet:** `updated_at` 2026-09-03 15:19Z advanced hwm **$65.345 → $65.52** and stop **$58.8105 → $58.968** (+15.75c). hwm matches today's SIP session high ($65.515) to the half-cent and 65.52 × 0.90 = 58.968 exactly — mechanism confirmed a fourth time.
+- **Yesterday's mark discrepancy has resolved.** Alpaca `current_price` $65.14 vs SIP last trade $65.145 and SIP close $65.145 — the readings agree today, so equity and deployment above need no SIP-adjusted second figure. The 9/2 divergence is not recurring.
+- Quotes real in RTH: XLE 65.13/65.14 (0.015%), SPY two-sided, OIH 430.77/431.23 (0.107%), XOP 192.66/192.76 (0.052%), XME 118.65/118.82, XLK 185.63/185.65. Books tight; pricing is not the blocker.
+
+### XLE thesis re-check — eighth consecutive confirmation, driver intact
+- **Hormuz still shut to a trickle.** Latest ship-tracking in today's results: **5-6 transits/day** (Kpler), **IMF PortWatch most recent published day 6**, against an **~85/day** pre-crisis baseline. Al Jazeera published a piece today specifically on the gap between the traffic data and official claims — the disruption is being disputed in framing, not in the transit counts.
+- **Exit trigger (a)** — transits ≥~40/day sustained two consecutive sessions — **nowhere near firing (5-6 vs ~40)**. **Exit trigger (b)** — the $59.1064 cut line — **9.26% away**. Neither is close.
+- **No de-escalation.** Perplexity found **no verified ceasefire, negotiation, or reopening to normal tanker traffic in the last 24 hours** and said so explicitly rather than asserting one.
+- **Crude holding the war premium:** WTI **~$89.9-91.9**, Brent **~$94.1-95.1** — level with this morning's read, though one source has Brent -1.6% on the day. First session in several with any give-back visible in a source, and it is inside the noise band. Watch, don't act.
+- **Source-quality note (sixteenth session of correct refusal behavior):** Perplexity declined to assert a single authoritative crude print, could not verify intraday XLE-vs-S&P, and could not verify today's ADP or jobless-claims figures. **All intraday index/ETF/momentum numbers in this entry are computed from Alpaca SIP bars, not from research.** Recorded, not laundered.
+
+### The one new thing today: XME's leg 4 flipped to passing, and it is still a no
+Sizing at the 20% cap against $98,928.14; risk denominator the 7% cut line; 52-week highs from SIP daily bars this run.
+
+| Cand. | Last | Today | 52wH (date) | Headroom | Size | 7% stop | 2:1 tgt | Tgt vs 52wH | Leg 4 |
+|---|---|---|---|---|---|---|---|---|---|
+| **XME** | $118.84 | -0.50% | $135.68 (2026-01-26) | +14.17% | 166 sh = $19,727 (19.94%) | $110.52 | $135.48 | **-0.15%** | **PASS** |
+| OIH | $432.16 | -0.99% | $459.28 (2026-05-20) | +6.28% | 45 sh = $19,447 (19.66%) | $401.91 | $492.66 | +7.27% | fail |
+| XLK | $185.69 | +1.13% | $198.73 (2026-06-03) | +7.02% | 106 sh = $19,684 (19.90%) | $172.70 | $211.69 | +6.52% | fail |
+| XOP | $192.78 | -0.20% | $194.83 (2026-09-02) | +1.06% | 102 sh = $19,664 (19.88%) | $179.29 | $219.77 | +12.80% | fail |
+
+- **XME is the first candidate in the account's history to clear leg 4** — its 2:1 target now sits *below* its own 52-week high. **It is rejected anyway, on the two legs that matter more.** Leg 1 (catalyst): none — no copper, steel or XME-specific driver in today's research, same as this morning. Leg 2 (sector momentum): **5d -3.42%, 63d -7.66%**, both *worse* than the pre-market read (-0.71% / -7.06%); the January 2026 high is seven months stale. It cleared the arithmetic today **by falling 0.50% while the high stood still** — the headroom is a symptom of the breakdown, not of a setup.
+- **This is the cleanest possible statement of owner decision 1.** The checklist's fourth leg is now demonstrably inverted: the only name that passes it is the only name whose chart is broken, and the strongest chart in the set (**XOP: 5d +3.90%, 21d +16.66%, 63d +12.68%, the best momentum of any candidate including the held position**) fails it by 12.80%. The rule is selecting against its own rule 9.
+- **Not acted on.** No target re-cut, no leg waived, no unwritten authorization self-granted. XME would also double the book's long-commodity factor rather than diversify it.
+- **Adding to XLE — not actionable.** 20% cap $19,785.63 against MV $19,542.00 → room **$243.63 ≈ 3 shares.** Not a trade. XLE would itself fail leg 4 as a fresh entry today (2:1 needs $74.25, +13.33% above the $65.52 high it just set) — it is held on an existing thesis, not re-bought.
+- **Sector momentum (own SIP computation, for the record):** XLE 5d +4.57% / 21d +13.65% / 63d +10.87%; XOP +3.90 / +16.66 / +12.68; OIH +3.94 / +12.01 / -1.74; XLK -1.57 / -0.15 / -3.90; SPY +0.19 / +0.37 / +2.05. Energy is the leader on every window a fifth straight session.
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.968 trail and $59.1064 cut line are the whole control — 9.47% and 9.26% below the mark, both live, both verified this run.
+- **Gap risk is why concentration matters:** a 10% trailing stop does not protect an overnight de-escalation gap. At 19.75% in one factor a 20% adverse gap costs ~4% of equity.
+- **Today the cash drag was expensive and visible.** SPY **+0.98%** on the day against the account's **+0.01%** — the held position went nowhere (+0.10%) while the index rallied. Twenty-two sessions of ~80% cash; this is the single largest source of tracking error against the benchmark, and today it cost roughly a full percent of relative performance in one session.
+- **A soft-oil, strong-index tape is the adverse combination for this book** — precisely what printed today in miniature. It is not yet a thesis break (transits 5-6/day, no de-escalation verified), but it is the shape the break would take, and the exit triggers are written and unmoved.
+- The two owner decisions (**move the 75-85% deployment target or move the entry bar**; **authorize or forbid the second energy leg at ~39% concentration**) are **unanswered for an eighth consecutive session**. Re-escalated here, not self-resolved.
+- **Housekeeping carried forward:** no EOD snapshot logged in TRADE-LOG.md for **9/2 (Wed)**. Positions, orders and stops are confirmed live and correct against Alpaca — nothing to reconstruct — but the row is still missing and belongs to today's daily-summary run.
+
+### Decision
+**No action. HOLD XLE. No stop moved. No new entry. Slots 0/3. Thesis confirmed for an eighth session; XME's leg-4 flip logged as evidence for owner decision 1, not traded on.**
