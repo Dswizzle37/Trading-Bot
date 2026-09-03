@@ -127,3 +127,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.77 | +1.27% | +$364.40 (+1.91%) | $58.45 (10% trail, hwm $64.94) |
 
 **Notes:** No trades today, no fills, no position changes. XLE is the account's sole position, up +1.27% on the day and +1.91% unrealized; trail live and untouched at $58.45 (hwm $64.94, 9.8% below the mark), cut line 8.4% away. Deployment 19.66% ($19,431 of $98,817) — twelfth-plus consecutive session under the 75-85% target. Both escalated owner decisions (move the deployment target or the entry R:R bar; authorize or forbid a second energy leg) remain unanswered for a third straight session per today's midday scan — carried forward, not self-resolved. Trades this week: 0/3 (the 8/31 XLV sale was an exit and doesn't consume a slot). Note: no EOD snapshot was logged for 8/31 (Mon) — that day's positions/trades are fully recorded in the XLV sell entry above, nothing to reconstruct. Day P&L measured against Alpaca's official `last_equity` ($98,574.14, balance_asof 2026-08-31).
+
+### Sep 3 — EOD Snapshot (Day 14, Thursday)
+**Portfolio:** $98,774.87 | **Cash:** $79,386.14 (80.4%) | **Day P&L:** -$141.27 (-0.14%) | **Phase P&L:** -$1,225.13 (-1.23%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.6291 | -0.72% | +$322.13 (+1.69%) | $58.97 (10% trail, hwm $65.52) |
+
+**Notes:** No trades today, no fills, no position changes. Sep 2 (Wed) EOD snapshot was never logged — that gap is noted here, not reconstructed; position and stop confirmed live and correct against Alpaca, nothing lost. XLE eased -0.72% intraday but remains the account's only position, +1.69% unrealized with its 10% trail live and untouched at $58.97 (hwm $65.52, ~8.7% below current price), well inside the -7% manual-cut line. Deployment 19.6% ($19,388.73 of $98,774.87) — the longest-running gap in this book, still deep under the 75-85% target. Trades this week: 0/3 (week of 8/31; the 8/31 XLV sale was an exit and doesn't consume a slot) — the two open owner decisions (deployment target/entry bar, second energy leg) remain outstanding. Day P&L measured against Alpaca's official `last_equity` ($98,916.14, balance_asof 2026-09-02).
