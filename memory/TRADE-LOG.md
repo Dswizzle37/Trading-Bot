@@ -127,3 +127,21 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.77 | +1.27% | +$364.40 (+1.91%) | $58.45 (10% trail, hwm $64.94) |
 
 **Notes:** No trades today, no fills, no position changes. XLE is the account's sole position, up +1.27% on the day and +1.91% unrealized; trail live and untouched at $58.45 (hwm $64.94, 9.8% below the mark), cut line 8.4% away. Deployment 19.66% ($19,431 of $98,817) — twelfth-plus consecutive session under the 75-85% target. Both escalated owner decisions (move the deployment target or the entry R:R bar; authorize or forbid a second energy leg) remain unanswered for a third straight session per today's midday scan — carried forward, not self-resolved. Trades this week: 0/3 (the 8/31 XLV sale was an exit and doesn't consume a slot). Note: no EOD snapshot was logged for 8/31 (Mon) — that day's positions/trades are fully recorded in the XLV sell entry above, nothing to reconstruct. Day P&L measured against Alpaca's official `last_equity` ($98,574.14, balance_asof 2026-08-31).
+
+### Sep 2 — EOD Snapshot (Day 13, Wednesday) — *reconstructed 2026-09-04*
+**Portfolio:** $98,916.14 | **Cash:** $79,386.14 (80.26%) | **Day P&L:** +$99.00 (+0.10%) | **Phase P&L:** -$1,083.86 (-1.08%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.10 | +0.51% | +$463.40 (+2.43%) | $58.8105 (10% trail, hwm $65.345) |
+
+**Notes:** No trades, no fills, no position changes. XLE's best close of the phase — the trail self-ratcheted on the day's $65.345 high (Alpaca's own mechanism; not touched by hand, not moved down). Deployment 19.74% ($19,530.00 of $98,916.14), position well inside the 20% cap and 8.4% clear of the $59.1065 cut line. Trades this week: 0/3. **Row reconstructed by the 9/4 weekly review** — the 9/2 daily-summary run never logged it. Sourced from Alpaca `portfolio/history` (official 9/2 close $98,916.14) and the SIP daily bar (XLE close $65.10); cash + position MV ties to equity exactly. Nothing was inferred.
+
+### Sep 3 — EOD Snapshot (Day 14, Thursday) — *reconstructed 2026-09-04*
+**Portfolio:** $98,772.14 | **Cash:** $79,386.14 (80.37%) | **Day P&L:** -$144.00 (-0.15%) | **Phase P&L:** -$1,227.86 (-1.23%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.62 | -0.74% | +$319.40 (+1.68%) | $58.968 (10% trail, hwm $65.52) |
+
+**Notes:** No trades, no fills, no position changes. XLE printed a new 52-week high at $65.52 intraday and closed well off it at $64.62; the trail ratcheted to $58.968 against that high (`updated_at` 2026-09-03T15:19Z) and has not moved since. Deployment 19.63% ($19,386.00 of $98,772.14). Cut line $59.1065, 8.6% below the close. Trades this week: 0/3. **Row reconstructed by the 9/4 weekly review** — the 9/3 daily-summary run never logged it. Same sourcing as the 9/2 row above; cash + position MV ties to equity exactly. The **9/4 (Fri) snapshot is deliberately left to that day's daily-summary run** rather than written here, to avoid a duplicate row.

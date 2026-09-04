@@ -24,6 +24,7 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 
 ## Operating Rules
 12. **No trade is complete until it is persisted.** A run that places, cancels, or closes an order must commit and push its thesis, gate checks, stop, and the resulting log entry in the same run. If the push fails, say so explicitly in the notification. A later run that inherits a position with no recorded thesis must re-establish one or close the position — it may not simply carry it. *(Added 2026-08-28 after four persistence failures in two weeks left XLV, 19% of equity, held with no recoverable entry thesis.)*
+13. **Freshness beats consensus on a disputed price.** When a live quote disagrees with minute bars or third-party quotes, the freshest source wins — treat the outlier as a live hypothesis, not an artifact. No order may be sized off a pre-market price that a live RTH quote has not confirmed; if the disputed price would change the trade, the trade waits for the open. *(Added 2026-09-04 after the pre-market ruled a live $97.46 GDX print "bad data" on two stale sources, wrote "GDX is treated as ~$101.4," and staged a 194-share order — GDX opened $98.78 and traded to $98.05. Second occurrence in three sessions.)*
 
 ## Entry Checklist
 - Specific catalyst?

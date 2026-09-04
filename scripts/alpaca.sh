@@ -61,6 +61,25 @@ case "$cmd" in
     status="${1:-open}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/orders?status=$status"
     ;;
+  history)
+    # usage: history [period] [timeframe]  e.g. history 1M 1D
+    # Official equity series. Use this for week/phase start-end equity rather
+    # than reconstructing from log snapshots.
+    period="${1:-1M}"
+    tf="${2:-1D}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$API/account/portfolio/history?period=$period&timeframe=$tf"
+    ;;
+  activities)
+    # usage: activities [type] [after]  e.g. activities FILL 2026-08-31
+    # type: FILL, DIV, etc. Omit for all. Realized P&L source of record.
+    atype="${1:-}"
+    after="${2:-}"
+    q=""
+    [[ -n "$atype" ]] && q="activity_types=$atype"
+    [[ -n "$after" ]] && q="${q:+$q&}after=$after"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/account/activities${q:+?$q}"
+    ;;
   order)
     body="${1:?usage: order '<json>'}"
     curl -fsS -H "$H_KEY" -H "$H_SEC" -H "Content-Type: application/json" \
