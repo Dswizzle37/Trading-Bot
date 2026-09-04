@@ -1411,3 +1411,67 @@ Pre-market does not execute; this hands the market-open run a written, pre-commi
 
 ### Decision
 **HOLD XLE — thesis re-confirmed for a ninth session, no stop moved, no rule triggered. PREPARE GDX for the open: 194 shares, 10% trailing GTC, 2:1 target $115.70, executable only if the three gates above hold on live pricing. Slots 0/3 going in, 1/3 if it fills. XME, OIH, XOP, XLK, XLF rejected. Deployment 19.53%.**
+
+## 2026-09-04 — Market-Open Execution (09:38 ET, Friday, Day 15)
+
+**Executed: NO TRADES. The pre-committed GDX buy was KILLED BY ITS OWN GATE 3 — gold reversed on the day, so leg 1 (the catalyst) is gone. Gate 2 also fired on the facts: the "$97.46 phantom print" this morning's pre-market dismissed as bad data was real, and GDX opened -2.64%. XLE held, thesis re-confirmed for a tenth session. Slots close the week at 0/3. Deployment 19.43%, twenty-fourth straight session under mandate.**
+
+### Live re-validation at the open (13:36-13:38Z)
+| Symbol | Bid | Ask | Spread | Last vs prev close | Note |
+|---|---|---|---|---|---|
+| GDX | 98.57 | 98.61 | 0.041% | **-2.58%** (open $98.78, -2.64%; low $98.21) | **candidate — REJECTED** |
+| GLD | 400.50 | 405.44 | 1.218% | **-1.39%** | gold proxy — reversed |
+| SLV | 59.26 | 59.28 | 0.034% | **-2.15%** | precious complex confirms |
+| XLE | 63.76 | 63.78 | 0.031% | -1.18% | held |
+| SPY | 772.42 | 772.45 | 0.004% | -0.08% | index ~flat |
+
+Every quote fresh in RTH on a tight two-sided book. **Pricing was not the blocker today and neither was the entry bar — the catalyst was.**
+
+### Account (live)
+- Equity **$98,526.14** vs `last_equity` $98,772.14 (`balance_asof` 2026-09-03) → **-$246.00 (-0.25%)**; phase-to-date **-$1,473.86 (-1.47%)**
+- Cash $79,386.14 (80.6%) | Position MV $19,140.00 → **19.43% deployed**
+- **1 position** (XLE), **1 open order** (XLE trail). **0 orders submitted today, 0 fills.** Slots **0/3** (week Aug 31-Sep 4, now closed). PDT room clear.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Today | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.80 | 19.43% | **+$73.40 (+0.38%)** | -1.18% | $59.1065 | 7.36% | $58.968 (10%, hwm $65.52) | 7.57% | $73.09 (+15%) |
+
+- **Cut at -7%:** not triggered — XLE +0.38%, cut line 7.36% below the mark.
+- **Tighten:** not triggered — needs +15% ($73.09); position is +0.38%.
+- **Trail `ef0c1da0` verified live / `new` / GTC / trail_percent 10. Untouched by hand. No stop moved down.** 7.57% below the mark, well clear of the 3% floor. hwm unchanged at $65.52 (`updated_at` still 2026-09-03T15:19Z) — no self-ratchet, XLE has not made a new high since Wednesday.
+
+### GDX — the pre-committed trade, and why it was not taken
+This morning's pre-market staged a hard, written setup: BUY 194 GDX at the open, with **three do-not-execute gates**. The open re-priced it. Gates evaluated in order, against the live tape:
+
+1. **Gate 1 — "do not execute if GDX prints above $103.70."** **Not breached.** GDX printed $98.2-99.8, far below.
+2. **Gate 2 — "do not execute if the $97.46 artifact turns out to be real and GDX opens down >3%."** **FIRED on the substance.** The pre-market recorded a $97.46 print (-3.94%) at 12:38Z, ruled it bad data on the strength of stale minute bars ($101.39) and Perplexity's $100.83-101.70 range, and wrote "**GDX is treated as ~$101.4 in this entry**." That call was **wrong**. GDX **opened $98.78 (-2.64%)** and traded to a **$98.21 low (-3.20%)** on a 0.04% two-sided book. The pre-market's "two sources against one" reasoning lost to the one source. The open print is -2.64% against a gate written as ">3%", so the letter of this gate is arguable; its premise — that the artifact was not real — is definitively falsified.
+3. **Gate 3 — "do not execute if gold has reversed on the day."** **FIRED, unambiguously, and this is the decisive one.** Leg 1 of the GDX thesis was, verbatim, "spot gold **$4,468-4,493/oz, +1.76% to +2.41%** over the last two sessions, on a softening dollar" plus a dovish payrolls read. On the tape right now: **GLD -1.39%, SLV -2.15%, GDX -3.10%** at the low. Perplexity independently puts **spot gold at $4,402.40/oz, -1.56% on the day**, and reports the market reading this morning's payrolls print as **hawkish for rates** ("strong payrolls revive Fed-hike trade") — the *opposite* of the pre-market's dovish interpretation. The catalyst did not merely fail to show up; **it inverted, within hours of being written down.**
+
+**Decision: DO NOT BUY GDX.** The pre-market pre-committed the rule — "leg 1 is the catalyst; **if it is gone, the trade is gone**" — and it is gone.
+
+**Recorded honestly, because it cuts against the decision:** the *arithmetic* of the trade is better at $98.6 than it was at $101.49. A 2:1 target off the 7% cut is now **$112.68, 3.84% below** the $117.18 52-week high — leg 4 passes with more room than it did this morning, and leg 3 is unaffected. **The trade was rejected on leg 1 alone.** Buying it anyway would mean keeping the three legs that still pass and quietly discarding the one that stopped passing, on the same day it stopped — which is the exact improvisation the written gates existed to prevent. Two further reasons not to reach: GDX's **3.89% ATR14** against a mandated 10% trail is only 2.6 ATRs of room, so entering mid-reversal maximises the stop-out rate; and the pre-market itself flagged **"chasing"** as objection 2 when the concern was a +3.95% pop — the mirror-image objection applies to catching it 3% lower on a broken driver.
+
+**The candidate is not dead, it is un-triggered.** GDX still leads on 21d/63d momentum. If gold re-establishes a dated up-move, this setup can be re-derived from scratch — with a fresh leg 1, not this one warmed over.
+
+### XLE thesis re-check — tenth consecutive confirmation
+- **Hormuz still shut to a trickle.** Dated sources today: a **Sep 4** live tracker reports the strait **closed, day 187**, latest official PortWatch count **6 vessels (Aug 30)**; **Sep 3** AIS snapshot shows **4** outbound; **Sep 1** Kpler-sourced reporting has transits **in single digits**. Against a pre-disruption baseline of ~85-138/day.
+- **No new ceasefire.** Perplexity searched specifically for any US-Iran agreement **on or after Aug 30** and found none; the most recent dated diplomacy source (**Sep 1**) states no ceasefire is in force and that the prior memorandum **expired Aug 17, 2026**. This also independently closes out yesterday's stale-"peace deal" scare.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not close (4-6 vs ~40)**. **Exit trigger (b)** — the $59.1065 cut line — **7.36% away**. Neither firing. **HOLD.**
+- XLE is -1.18% today and has now given back to +0.38% unrealized from +2.49% at Wednesday midday. Not a rule trigger; the give-back is continuing and is noted for a second session.
+
+### Data-quality lesson from today — worth more than the trade
+The pre-market run did the right *procedure* (cross-check a suspicious print against a second source) and still reached the **wrong conclusion**, because both of its confirming sources were stale: SIP minute bars lag the quote feed by ~10 minutes in this environment, and Perplexity's premarket quotes were older still. The single disagreeing datapoint was the freshest one. **Revised rule of thumb for pre-market: when a live quote disagrees with bars and third-party quotes, recency beats consensus — treat the outlier as a live hypothesis, not an artifact, and size the plan to survive it being true.** Today that cost nothing, because the gate caught it. It is the second time in three sessions (see 9/2, the XLE "+2% indicated" miss) that a third-party or stale pre-market read was beaten by the ugliest available number.
+
+### Owner decisions — carried, unchanged
+1. **Move the 75-85% deployment target, or move the entry bar.** **Tenth session escalated.** Yesterday this looked like it was about to resolve itself — GDX was the first candidate ever to pass all four legs. It did not survive its own open. The structural point stands: **one passing candidate a quarter does not close a ~$54,700 gap to 75%**, and this week closes at **0/3 slots used** with nothing bought. The bar and the target are still incompatible, and it is still not the bot's call to change either.
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). Unchanged, unanswered, not engaged today.
+
+### Risk
+- **XLE remains the entire book's directional risk and it is geopolitical.** The $58.968 trail and $59.1065 cut line are the whole control — 7.57% and 7.36% below the mark, both live, both verified this run. Both gaps have *narrowed* ~1.3pts since this morning as XLE fell.
+- **The macro read flipped inside one session.** A +22K payrolls print was interpreted as dovish at 08:42 ET and is being traded as hawkish by 09:38 ET. Any thesis resting on a rate-path interpretation — GDX's did — is fragile on a day like this.
+- **A hawkish repricing is not neutral for the book that exists, either:** it pressures crude via demand expectations, and XLE is 19.4% of equity on a supply-shock thesis. Today's -1.18% is consistent with that and is the second down session in a row.
+- **Being ~81% cash remains the dominant tracking error**, twenty-four sessions running — and today it was, for once, the profitable posture.
+- **Housekeeping:** EOD snapshots still unlogged in TRADE-LOG.md for **9/2 (Wed) and 9/3 (Thu)** — the 9/2 gap is now four sessions old. Positions, orders and stops are confirmed live and correct against Alpaca; nothing to reconstruct, but the rows belong to the daily-summary run and are still missing.
+
+### Decision
+**NO TRADES. HOLD XLE — thesis re-confirmed for a tenth session, no stop moved, no rule triggered. GDX REJECTED at the open on gate 3 (catalyst reversed: gold -1.4%, silver -2.2%, spot gold -1.56%), with gate 2's premise falsified — the pre-market's "phantom" print was real. Week closes 0/3 slots used. Deployment 19.43%.**
