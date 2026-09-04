@@ -1322,3 +1322,92 @@ Sizing at the 20% cap against $98,928.14; risk denominator the 7% cut line; 52-w
 
 ### Decision
 **No action. HOLD XLE. No stop moved. No new entry. Slots 0/3. Thesis confirmed for an eighth session; XME's leg-4 flip logged as evidence for owner decision 1, not traded on.**
+
+## 2026-09-04 — Pre-Market Research (08:42 ET, Friday, Day 15)
+
+**First candidate in the account's history to pass all four entry legs: GDX. Prepared for the open, not executed — pre-market does not trade, and the pass is conditional on the market-open run re-pricing it live. XLE held, thesis intact for a ninth consecutive session (the "US-Iran peace deal" surfacing in today's research is the stale June 14-15 MoU, not new). Slots 0/3, and today is the last session of the week. Deployment 19.53%, twenty-third straight session under target.**
+
+### Account (live, 12:39Z / 08:39 ET, market closed, next open 09:30 ET)
+- Equity **$98,658.14** vs `last_equity` $98,772.14 (`balance_asof` 2026-09-03) → **-$114.00 (-0.12%)**; phase-to-date **-$1,341.86 (-1.34%)**
+- Cash **$79,386.14 (80.5%)** | Position MV $19,272.00 → **19.53% deployed**
+- **1 position, 1 open order.** Realized today $0.00. Slots **0/3** (week Aug 31-Sep 4). PDT room clear, no day trade on record. Positions 1 of 5-6.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.24 | 19.53% | **+$205.40 (+1.08%)** | $59.1064 | 8.69% | $58.968 (10%, hwm $65.52) | 8.94% | $73.09 (+15%) |
+
+- **Cut at -7%:** not triggered — XLE **+1.08%**, cut line **8.69%** below the mark.
+- **Tighten:** not triggered — needs +15% ($73.09); position is +1.08%.
+- **Trail `ef0c1da0` verified live / `new` / GTC / trail_percent 10, untouched by hand. No stop moved down.** 8.94% below the mark, well clear of the 3% floor. hwm unchanged at $65.52 (`updated_at` still 2026-09-03 15:19Z) — **no fifth self-ratchet**, because XLE faded from its $65.515 session high to a **$64.63 close (-0.74%)** yesterday and has not made a new high since.
+- XLE gave back its entire 9/3 intraday gain: midday marked it $65.14 (+2.49% unrealized); it closed $64.63 and is $64.24 pre-market. Unrealized has more than halved, +2.49% → **+1.08%**, in under 24 hours. Not a rule trigger; recorded because it is the first give-back of size in this position.
+
+### Data quality — the pre-market quote problem recurred, and one feed is outright wrong today
+1. **ETF pre-market quotes are still unusable** (fourth session confirming the 9/3 finding). At 12:42Z XLE is 63.14/66.67 (**5.29% spread**), XOP 5.16%, OIH 5.89%, XME one-sided with **ask = 0**. Only SPY (0.02%) and GDX are two-sided. **All candidate pricing below comes from SIP daily bars and today's SIP minute bars, not from `latestQuote`.**
+2. **Alpaca's `latestTrade`/`latestQuote` for GDX is bad data right now, and it nearly produced a false signal.** The endpoint reports a $97.46 print (12:38:35Z, size 100) and a 97.26/98.32 quote — **-3.94% vs the $101.46 close**, which read as a 4% post-NFP gap down. It is not real: today's SIP **minute bars run to 12:27Z at $101.39** and Perplexity's independent premarket quotes are **$100.83-101.70**, i.e. flat. Two sources against one. **GDX is treated as ~$101.4 in this entry**, and the $97.46 print is recorded as an artifact, not laundered into the thesis.
+   - Also ruled out as an explanation: **no September 2026 GDX distribution** — the ETF distributes annually, last ex-date 12/22/2025. Not an ex-dividend gap.
+   - The SIP **minute-bar feed lags the quote feed by ~10 minutes** in this environment (bars frozen at 12:27Z while quotes advanced to 12:42Z), so the artifact could not be disconfirmed from bars alone. Eight consecutive polls returned the same last bar.
+
+### Market context
+- **August payrolls, out at 08:30 ET: +22K vs ~53-56K consensus, unemployment 4.3% (from 4.1%), prior revised to 79K.** Clearly weak — the dovish print. Perplexity could not retrieve the actual on two attempts before returning it on the third; the first two correctly said the number was not yet in the index rather than inventing one.
+- **Index reaction is muted-to-soft, not the melt-up the research feed described.** SPY prints **771.76 at 12:35Z, -0.18%** on a live two-sided quote, and SPY minute bars hold ~773.4 through 12:27Z. Perplexity's claim of "SPY up 0.25%, QQQ up 0.71%" is **not confirmed by the tape** and is not used. VIX **~14.2** spot (Sep futures 16.10) — the lowest reading in weeks.
+- **Crude flat, war premium intact.** WTI **~$90.5-91.4**, Brent **~$95.1-95.7**; sources split between -0.5% and +0.2% on the day. No give-back of consequence. Perplexity again declined to assert one authoritative print (seventeenth session of correct refusal behavior).
+- **Sector momentum (own SIP computation, 9/3 closes):** XLE 5d **+3.74%** / 21d **+12.76%** / 63d **+9.99%**; XOP +3.70 / +16.43 / +12.46; OIH +3.58 / +11.62 / -2.09; **GDX -2.12 / +21.28 / +17.47**; XME -3.76 / +5.77 / -7.98; XLK -1.40 / +0.03 / -3.73; SPY +0.27 / +0.44 / +2.12. Energy leads on 5d a sixth straight session; **GDX leads on 21d and 63d.** Sector YTD: Energy ~+42-47% (#1), Tech ~+21-30%, Materials ~+16-17%, Financials ~+5%.
+
+### XLE thesis re-check — ninth consecutive confirmation, and one scare resolved
+- **The "US-Iran peace deal" in today's results is stale.** An Argus item citing "Sunday's announcement of a US-Iran peace deal" surfaced in the Hormuz search and would, if current, be the thesis break. A dated follow-up query resolves it: the MoU/60-day ceasefire framework that reopened the strait was announced **June 14-15, 2026**. The dated record since then runs the other way — **Aug 30** US strikes on Iranian launchers at Larak Island, **Aug 31** first direct exchange in weeks, **Sep 1** tanker hit by three projectiles plus US "tanker for tanker" strikes, **Sep 2** two tankers struck. **No new ceasefire on or after Aug 30 exists in the record.**
+- **Hormuz still shut to a trickle.** Kpler/Reuters: **6 transits Wed, 11 Tue, 5 Mon; 10-day average 13/day.** Lloyd's List ~12/day Aug 26-Sep 1. Windward/Argus 9 on Wednesday. Against a pre-disruption baseline of ~85-138/day.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not close (5-13 vs ~40)**. **Exit trigger (b)** — the $59.1064 cut line — **8.69% away**. Neither firing.
+- Yesterday's fade has no attributable catalyst: coverage describes a late-afternoon sector-wide pullback after a run to record highs, i.e. profit-taking, not a driver change. Crude itself made a six-week high in the same session.
+
+### Candidates — the leg-4 wall finally breaks, on a chart that is actually trending
+Sizing at the 20% cap against $98,658.14 equity ($19,731.63); risk denominator the 7% cut line; 52-week highs from SIP daily bars (252-session window) this run.
+
+| Cand. | Last (9/3) | 5d / 21d / 63d | 52wH (date) | Headroom | Size | 7% cut | 2:1 tgt | Tgt vs 52wH | Leg 4 |
+|---|---|---|---|---|---|---|---|---|---|
+| **GDX** | $101.49 | -2.12 / **+21.28** / **+17.47** | $117.18 (2026-03-02) | +15.45% | 194 sh = $19,689 (19.96%) | $94.39 | $115.70 | **-1.26%** | **PASS** |
+| XME | $118.36 | -3.76 / +5.77 / -7.98 | $135.68 (2026-01-26) | +14.61% | 166 sh = $19,647 (19.91%) | $110.07 | $134.92 | -0.56% | pass (rejected) |
+| OIH | $429.59 | +3.58 / +11.62 / -2.09 | $459.28 (2026-05-20) | +6.86% | 45 sh = $19,332 (19.59%) | $399.52 | $489.73 | +6.63% | fail |
+| XLK | $185.97 | -1.40 / +0.03 / -3.73 | $198.73 (2026-06-03) | +6.86% | 106 sh = $19,713 (19.98%) | $172.95 | $212.01 | +6.68% | fail |
+| XOP | $192.14 | +3.70 / +16.43 / +12.46 | $194.83 (2026-09-02) | +1.30% | 102 sh = $19,598 (19.86%) | $178.69 | $219.04 | +12.43% | fail |
+| XLF | $58.56 | +1.17 / +0.97 / +12.21 | $58.60 (2026-09-03) | +0.07% | 336 sh = $19,676 (19.94%) | $54.46 | $66.76 | +13.92% | fail |
+
+**GDX — runs the entry checklist clean, all four legs, for the first time in this account.**
+- **Leg 1 (catalyst) — PASS.** Dated and same-day: spot gold **$4,468-4,493/oz, +1.76% to +2.41%** over the last two sessions, on a **softening dollar**; and **today's +22K payrolls print with unemployment up to 4.3%** is directly dovish — lower expected real rates is the textbook driver for bullion, and miners' margins gear into it. This is a driver with a date on it, not the generic "defensive flows" that failed XME on this leg for two straight sessions.
+- **Leg 2 (sector momentum) — PASS.** **21d +21.28% and 63d +17.47%, the strongest of any candidate including the held position.** This is the leg that separates GDX from XME: XME clears leg 4 only by being broken (63d **-7.98%**, high seven months stale and never revisited); GDX clears it while advancing. 5d **-2.12%** and 126d **-0.32%** are the honest weak spots — six months of going nowhere, then a month of +21%.
+- **Leg 3 (stop) — PASS.** 10% trailing GTC at **$91.34** on a $101.49 fill, 10.00% below — well clear of the 3% floor. Manual cut line $94.39.
+- **Leg 4 (2:1 R:R) — PASS.** Target **$115.70** sits **1.26% below** the $117.18 52-week high. Achievable without a new high.
+- **Objections, recorded rather than buried:**
+  1. **Volatility.** GDX ATR14 is **3.89% of price** vs XLE's 1.71%. A 10% trail is only **2.6 ATRs** away (XLE's is 5.9). GDX's 63-day max drawdown is **-18.91%** — a 10% trail would have been taken out inside the last quarter. The rulebook mandates the 10% trail and gives no ATR alternative, so this is accepted risk, not a sizing lever.
+  2. **Chasing.** GDX closed **+3.95%** yesterday. Entering the session after a 4% pop is the worst-priced version of this trade.
+  3. **Stale high.** The $117.18 high is 2026-03-02, six months back, and GDX is 15.45% under it — structurally the same headroom-from-weakness the XME critique names. Partly rebutted by the 21d/63d, not fully.
+  4. **Correlation.** Long-commodity alongside XLE, but the driver is **real rates and the dollar**, not crude — genuinely a second factor, unlike XME (which would double the energy factor) or a second energy leg.
+- **XME is rejected for a third session** even though its leg 4 also passes: still **no catalyst** (no copper/steel/XME-specific driver in today's research either) and leg 2 now **worse again** (5d -3.76%, 63d -7.98%). Two legs failed. Not close.
+- **Adding to XLE — not actionable.** 20% cap $19,731.63 against MV $19,272.00 → room **$459.63 ≈ 7 shares.** Not a trade. XLE would itself fail leg 4 as a fresh entry (2:1 needs $73.68, **+12.45%** above its own $65.52 high) — held on an existing thesis, not re-bought.
+
+### Prepared for the open — GDX, conditional
+Pre-market does not execute; this hands the market-open run a written, pre-committed setup so the decision is not improvised at 09:30.
+- **Order:** BUY **194 GDX** market at the open, ≈$19,689 (19.96% of equity) at $101.49. **Re-size to the live open print so the fill stays ≤20%** — at any price above $101.71, 194 shares breaches the cap; cut shares accordingly.
+- **Stop:** 10% trailing GTC, placed immediately after the fill confirms. **Manual cut line: fill × 0.93.**
+- **Target:** fill + 2 × (fill − fill×0.93), i.e. 2:1. Must remain **at or below $117.18** to keep leg 4 intact.
+- **Slot:** trade **1/3** for the week (0/3 used, Friday is the last session of the week). Positions would go 1 → 2 of 5-6. **Deployment 19.53% → ~39.5%** — still under the 75-85% target, but the largest single step this account has taken toward it.
+- **Do not execute if, at the open:**
+  1. **GDX prints above $103.70** — the 2:1 target then crosses the $117.18 high and **leg 4 fails**. This is a hard gate, not a preference.
+  2. **The $97.46 artifact turns out to be real** and GDX opens down >3% — the 9/3-9/4 catalyst read would be wrong and the setup has to be re-derived, not bought into.
+  3. Gold has reversed on the day, or the payrolls print is revised/re-read hawkishly — **leg 1 is the catalyst; if it is gone, the trade is gone.**
+- **No rule was bent to produce this.** No target re-cut, no leg waived, no unwritten authorization self-granted. It passes as written.
+
+### Owner decisions — still open, but the first one is no longer blocking
+1. **Move the 75-85% deployment target, or move the entry bar.** **Ninth session escalated. Materially changed today:** for twenty-three sessions the answer was that nothing could be bought without bending leg 4. GDX buys without bending it. One passing candidate does not close a ~$54,700 gap to 75% — that still needs roughly three more legs — but the deadlock is no longer total, and this decision is no longer the thing standing between the account and its next trade.
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). Unchanged and still unanswered; **not engaged by GDX**, which is a different factor. OIH and XOP fail leg 4 independently anyway.
+
+### Risk
+- **XLE remains the entire book's directional risk and it is geopolitical.** The $58.968 trail and $59.1064 cut line are the whole control — 8.94% and 8.69% below the mark, both live, both verified this run.
+- **A dovish payrolls print is a two-sided event for this book.** It supports gold (the GDX thesis) but signals demand weakness that argues *against* crude — and XLE is 19.5% of equity on a supply-shock thesis. If the tape prices a slowdown, the war premium is the only thing holding the position up.
+- **Today's data was actively misleading twice** — a phantom -3.94% GDX print and a stale June "peace deal" that would have read as the XLE thesis break. Both were caught by cross-checking against a second source. Neither would have been caught by a single-source run.
+- **Adding GDX doubles the book's exposure to one macro variable in the other direction:** XLE wants high oil (inflationary), GDX wants low real rates. That is a hedge in normal conditions and a double loss in a hawkish-repricing tape.
+- **GDX's own volatility is the position-level risk:** 3.89% ATR against a 10% trail means an ordinary 2.5-day drawdown stops the trade out. Expect a materially higher stop-out rate than XLE.
+- **Being ~80% cash remains the dominant tracking error**, twenty-three sessions running.
+- **Housekeeping:** **no EOD snapshots logged in TRADE-LOG.md for 9/2 (Wed) or 9/3 (Thu)** — the 9/2 gap has now been carried three sessions. Positions, orders and stops are confirmed live and correct against Alpaca, nothing to reconstruct, but two snapshot rows are missing and belong to the daily-summary run.
+
+### Decision
+**HOLD XLE — thesis re-confirmed for a ninth session, no stop moved, no rule triggered. PREPARE GDX for the open: 194 shares, 10% trailing GTC, 2:1 target $115.70, executable only if the three gates above hold on live pricing. Slots 0/3 going in, 1/3 if it fills. XME, OIH, XOP, XLK, XLF rejected. Deployment 19.53%.**
