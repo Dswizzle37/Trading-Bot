@@ -145,3 +145,21 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.62 | -0.74% | +$319.40 (+1.68%) | $58.968 (10% trail, hwm $65.52) |
 
 **Notes:** No trades, no fills, no position changes. XLE printed a new 52-week high at $65.52 intraday and closed well off it at $64.62; the trail ratcheted to $58.968 against that high (`updated_at` 2026-09-03T15:19Z) and has not moved since. Deployment 19.63% ($19,386.00 of $98,772.14). Cut line $59.1065, 8.6% below the close. Trades this week: 0/3. **Row reconstructed by the 9/4 weekly review** — the 9/3 daily-summary run never logged it. Same sourcing as the 9/2 row above; cash + position MV ties to equity exactly. The **9/4 (Fri) snapshot is deliberately left to that day's daily-summary run** rather than written here, to avoid a duplicate row.
+
+### Sep 4 — EOD Snapshot (Day 15, Friday) — *reconstructed 2026-09-07*
+**Portfolio:** $98,604.14 | **Cash:** $79,386.14 (80.51%) | **Day P&L:** -$168.00 (-0.17%) | **Phase P&L:** -$1,395.86 (-1.40%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.06 | -0.87% | +$151.40 (+0.79%) | $58.968 (10% trail, hwm $65.52) |
+
+**Notes:** No trades, no fills, no position changes. The 9/4 daily-summary run did not commit this snapshot despite the 9/3 row's note pre-committing it to do so — the fourth persistence gap of the account (Day 1 GitHub 403, 8/24 uncommitted memory, 9/2-9/3 unlogged). **Row reconstructed by today's (9/7) daily-summary run** from the same-day weekly review (`a234f3b`), which sourced Alpaca's official 9/4 close ($98,604.14, `balance_asof` 2026-09-04) and the SIP XLE close ($64.06); cash + position MV ($19,218.00) ties to equity exactly, nothing inferred. Deployment 19.49%. Cut line $59.1065, 7.73% below the close, stop untouched and >3% from price. Trades week of 8/31-9/4: 0/3 (final tally for that week — see 9/4 weekly review).
+
+### Sep 7 — EOD Snapshot (Day 16, Monday) — Market Closed (Labor Day)
+**Portfolio:** $98,604.14 | **Cash:** $79,386.14 (80.51%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$1,395.86 (-1.40%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.06 | 0.00% | +$151.40 (+0.79%) | $58.968 (10% trail, hwm $65.52) |
+
+**Notes:** Market closed for Labor Day — no session, no trades, no fills, confirmed by today's pre-market/market-open/midday runs (`3c108d0`, `8820db7`, `9618772`), all logging XLE thesis re-confirmed and the trail unchanged. Equity, cash and position marks are identical to Friday 9/4's official close — nothing moved because nothing traded. Trail live at $58.968 (10% trail, hwm $65.52), untouched since 9/3's ratchet. Deployment 19.49% ($19,218 of $98,604.14) — still below the 75-85% target, the standing structural gap flagged in three consecutive weekly reviews and now escalated to the owner (unresolved). Trades this week (9/7-9/11): 0/3, fresh week.
