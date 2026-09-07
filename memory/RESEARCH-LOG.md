@@ -1656,3 +1656,49 @@ No order is being pre-committed for the open. Against the four-leg entry checkli
 
 ### Decision
 **HOLD — no action.** Next execution window is the **Tuesday 2026-09-08 09:30 ET** open. Carried into it: XLE thesis intact on its twelfth confirmation (Hormuz transits 4-10/day vs ~85 baseline, exit trigger (a) far from firing); a gap through $65.52 ratchets the trail automatically; GDX needs a **fresh, dated** leg 1, not the stale one; and both escalated owner decisions — raise deployment or lower the entry R:R bar, and authorize or forbid a second energy leg — remain unanswered.
+
+## 2026-09-07 — Midday Scan (13:07 ET, Monday, Labor Day — NO SESSION)
+
+**No action. No action was possible.** US equity markets are closed for Labor Day — there is no intraday tape to scan. This is the third and final state verification of the day; the pre-market (08:38) and market-open (09:36) entries above carry the full research pass. Recorded so the midday log has a row rather than a gap. **One thing was genuinely re-checked and is new: the wire-restricted de-escalation query was re-run at 13:07 ET, ~4.5 hours after the pre-market run, and Reuters now carries a dated Sep 6 Hormuz story that did not exist at 08:38 — it confirms the thesis rather than breaking it.** XLE thesis on its **thirteenth** consecutive confirmation.
+
+### Closure re-confirmed (authoritative, not inferred from the date)
+- `/v2/clock` at 13:06:57 ET: **`is_open:false`**, `next_open` **2026-09-08T09:30:00-04:00**.
+- `/v2/calendar?start=2026-09-04&end=2026-09-11` returns 9/4, 9/8, 9/9, 9/10, 9/11 — **2026-09-07 absent**.
+
+### Account state (live, 17:07Z / 13:07 ET) — unchanged from both earlier reads
+- Equity **$98,604.14** = `last_equity` $98,604.14 (`balance_asof` **2026-09-04**) → **day P&L $0.00 (0.00%)**. Phase-to-date **-$1,395.86 (-1.40%)**.
+- Cash $79,386.14 (80.51%) | Position MV $19,218.00 → **19.49% deployed** — seventeenth-plus consecutive session under the 75-85% target.
+- **`/v2/account/activities?activity_types=FILL&after=2026-09-04` returns `[]`** — zero fills since Friday, third confirmation today. 1 position, 1 open order. Order history totals 8, unchanged. Account `ACTIVE`, `trading_blocked:false`.
+
+| Ticker | Shares | Entry | Mark (9/4 close) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.06 | 19.49% | **+$151.40 (+0.79%)** | $59.1065 | 7.73% | $58.968 (10%, hwm $65.52) | 7.95% | $73.09 (+15%) |
+
+- **The mark is Friday's close, not a live price** — `current_price` = `lastday_price` = $64.06, `change_today` 0. Rule 13 remains unsatisfiable today by construction; nothing here may size an order, and anything acted on Tuesday must be re-priced against the live tape first.
+
+### Rule checks — all no-ops (steps 3, 4, 5 of the midday workflow)
+- **Step 3 — cut at -7%:** not triggered. XLE `unrealized_plpc` **+0.794%**; cut line $59.1065 is 7.73% below the mark. Nothing to close.
+- **Step 4 — tighten trail:** not triggered. Needs +15% (≈$73.09) for a 7% trail, +20% (≈$76.27) for 5%; position is +0.79%. No stop touched.
+- **Trail `ef0c1da0`** verified live for the third time today: status `new`, GTC, `trail_percent` 10, stop **$58.968**, hwm **$65.52**, `updated_at` still **2026-09-03T15:19Z**, `expires_at` 2026-11-16. Untouched by hand, not moved down, fifth consecutive session with no self-ratchet (correct — XLE has not traded above $65.52 and cannot today). `qty_available` 0 on the position is the stop holding all 300 shares, as expected.
+- **Step 5 — thesis check:** thesis **intact and strengthened**, see below. No intraday break, and no intraday in which to break.
+- **Weekly slots: 0/3** for Sep 7-11. A holiday consumes no slot. PDT room clear.
+
+### Step 6 — intraday research: the one check worth re-running, and what it returned
+The pre-market ran the full pass at 08:38. Re-running the whole board on a closed market would produce nothing, so exactly one query was re-issued — the wire-restricted de-escalation check, because it is the only input that can change the book's risk over a **three-night** holiday gap and because rule 14 now governs it.
+
+- **No wire de-escalation, restated with dates.** Perplexity, restricted to Reuters/AP/Bloomberg/AFP and official statements, returned **none dated Sep 5, 6 or 7** for a ceasefire, strike pause, negotiations, or any Hormuz agreement — and said so explicitly when asked to. The weekend x.com "US-Iran pause / Qatar talks" claim debunked this morning **still has no wire behind it** ~4.5 hours later. **Exit trigger (a) is not firing. Rule 14 held for the second time in one day.**
+- **New dated wire, and it cuts the other way: Reuters Sep 6 — "Hormuz traffic dips to lowest since May."** Dated transit counts: **2 vessels Saturday (Sep 5), 6 Sunday (Sep 6), 10-day moving average 10/day.** Pre-disruption baseline ~85/day. This is a *harder* source than the pre-market's Sep 7 straits.live brief for the same claim — a wire, with a date, published after the pre-market run.
+- **Trend of the dated series: 5 (Sep 1) → 4 (Sep 2) → 4 (Sep 4) → 2 (Sep 5) → 6 (Sep 6).** Flat-to-tightening, not recovering. **Exit trigger (a) requires ≥~40/day sustained two sessions — the series is at 2-6 against a 10-day average of 10.** Not remotely close.
+- Nothing was queried on GDX. Its blocker is leg 1 (a fresh, dated two-session gold advance), which cannot appear on a day gold's own tape is thin and the equity leg is shut. Rejected on leg 1 stands, unchanged from this morning; it will be re-checked against Tuesday's live tape.
+
+### Risk carried into Tuesday — unchanged, and the reason this run is not "all clear"
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.968 trail and $59.1065 cut line are the whole control, 7.95% and 7.73% below the mark.
+- **Three nights of headline risk into Tuesday's open, not two.** A 10% trailing stop does not protect an overnight de-escalation gap — and the risk is asymmetric in a way worth stating plainly: this weekend produced a *false* de-escalation story, and the checks that killed it were correct, but the next one may be true, and a true one arrives as a gap through the stop rather than a slide into it. **Largest un-hedged exposure in the account, and today's clean scan does not reduce it by one basis point.**
+- **CPI Friday 9/11, 08:30 ET** — last inflation print before the Sep 15-16 FOMC, and the week's real event for both the held position and the rejected candidate.
+
+### Owner decisions — carried, unchanged, twelfth session (third mention today)
+1. **Move the 75-85% deployment target, or move the entry bar.** 19.49% deployed, ~$54,700 short of 75%, week open at 0/3 slots. Unreachable from inside the rulebook; not the bot's call.
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). Still the binding constraint — XOP passes the checklist on the same twelve-times-confirmed Hormuz catalyst and sits behind this unanswered question.
+
+### Decision
+**HOLD — no action taken, none available.** Market closed for Labor Day; zero fills, zero orders, no stop moved, no rule triggered, position and trail identical to both earlier reads. **XLE thesis confirmed a thirteenth time and on a better source than this morning: Reuters Sep 6 dates Hormuz traffic at its lowest since May (2 vessels Sat, 6 Sun, 10-day avg 10 vs ~85 baseline), and no wire carries any de-escalation dated Sep 5-7.** Next action window is the **Tuesday 2026-09-08 09:30 ET** open — where every price in this entry must be re-verified live before anything is sized off it.
