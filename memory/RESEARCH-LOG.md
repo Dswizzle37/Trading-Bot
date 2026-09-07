@@ -1540,3 +1540,89 @@ Perplexity reports the market reaction as *"stronger-than-expected payrolls boos
 
 ### Decision
 **No action. HOLD XLE — eleventh consecutive thesis confirmation, no stop moved, no order placed. GDX remains rejected on leg 1 (gold -0.8% to -1.1% on the day, hawkish rate read), re-tested at midday on fresher data than the open had. Week closes 0/3 slots. Deployment 19.51%.**
+
+## 2026-09-07 — Pre-Market Research (08:38 ET, Monday, Labor Day — NO SESSION)
+
+**US equity markets are CLOSED today (Labor Day). No trades are possible; none were attempted. Alpaca `/v2/clock` `is_open:false`, next open 2026-09-08 09:30 ET, and 2026-09-07 is absent from the `/v2/calendar` range 9/4-9/11 — the authoritative confirmation. This entry is research for Tuesday's session, not a plan for today.** The one finding worth acting on: a weekend "US and Iran agreed to pause strikes, meeting in Qatar" story surfaced in the week-ahead search and **does not survive verification** — second false de-escalation scare in five sessions. XLE thesis confirmed for a **twelfth** consecutive session. GDX stays un-triggered on leg 1. Slots reset to **0/3** for the week of Sep 7-11.
+
+### Account (live, 12:38Z / 08:38 ET)
+- Equity **$98,604.14**; `last_equity` $98,604.14 (`balance_asof` **2026-09-04**) → **$0.00 (0.00%)** — no session has elapsed, as expected on a holiday. Phase-to-date **-$1,395.86 (-1.40%)**
+- Cash $79,386.14 (80.51%) | Position MV $19,218.00 → **19.49% deployed**
+- **1 position, 1 open order. 0 orders submitted, 0 fills.** PDT room clear. Account ACTIVE, `trading_blocked:false`.
+
+| Ticker | Shares | Entry | Mark (9/4 close) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten trigger |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.06 | 19.49% | **+$151.40 (+0.79%)** | $59.1065 | 7.73% | $58.968 (10%, hwm $65.52) | 7.95% | $73.09 (+15%) |
+
+- **Every price in this entry is Friday's close.** With no session, `current_price` and `lastday_price` are both $64.06 and `change_today` is 0. Nothing here is a live mark, and **rule 13 cannot be satisfied today at all** — there is no RTH quote to confirm anything against. No order may be sized off these numbers; anything acted on tomorrow must be re-priced against Tuesday's live tape first.
+- **Cut at -7%:** not triggered — XLE +0.79%, cut line 7.73% below the mark.
+- **Tighten:** not triggered — needs +15% ($73.09); position is +0.79%.
+- **Trail `ef0c1da0` verified live / `new` / GTC / trail_percent 10, `expires_at` 2026-11-16.** Untouched by hand. No stop moved down. hwm unchanged at $65.52, `updated_at` still 2026-09-03T15:19Z — third consecutive session with no self-ratchet, correct, since XLE has not traded above $65.52 since Wednesday. **Note for Tuesday: XLE is 2.28% below that hwm; a gap through $65.52 ratchets the trail automatically.**
+
+### The weekend de-escalation story — checked, and it does not hold up
+The week-ahead search returned, as a "major weekend geopolitical development," that **"the U.S. and Iran agreed to pause strikes and meet in Qatar"** to discuss the Strait of Hormuz. That is a direct hit on exit trigger (a) for the account's only position, so it was re-queried against wire services and official statements only:
+
+- **No wire service or official source reports it.** Perplexity, restricted to Reuters/AP/Bloomberg/AFP and government statements, returned **none** for Sep 5, 6 or 7.
+- **The dated wire record points the other way.** Reuters **Sep 2**: US-Iran strikes *resumed*, escalation, war not over. Reuters **Aug 27**: "No negotiations are happening right now." AFP/**Sep 1**: Qatar *urging* the two sides to resume talks — an appeal, not an agreement. Reuters **Sep 1**: Iran urging the US to comply with the interim deal after further strike threats.
+- **Provenance of the claim: an x.com post**, surfaced as citation [15] in a general week-ahead query. Not a wire report, no outlet, no dated confirmation anywhere.
+
+**Verdict: unverified social-media claim, treated as noise. Exit trigger (a) is NOT firing.** This is the **second** false peace-deal scare in five sessions (9/3 had a stale one). Both were caught the same way — re-query restricted to wires, demand a date. The pattern is now consistent enough to be worth stating as a standing habit: **a de-escalation headline that would close this position is not actionable until a wire service or a government says it, with a date.**
+
+### XLE thesis re-check — twelfth consecutive confirmation
+- **Hormuz still shut to a trickle.** Dated counts: **Reuters Sep 4 — 4 commodity vessels**; Reuters Sep 2 — 4; Reuters Sep 1 — ~5. Kpler 10-day moving average **10/day** as of a **Sep 7** brief; latest published PortWatch day (**Aug 30**) **6 transits**. Pre-disruption baseline **~85/day**. A Sep 7 live brief describes the strait as closed to normal commercial traffic and carrying its lightest commodity traffic since May.
+- **No ceasefire.** Two independent queries this run (one general, one wire-restricted) both returned none on or after Sep 4. See above.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not close (4-10 vs ~40)**. **Exit trigger (b)** — the $59.1065 cut line — **7.73% away**. Neither firing. **HOLD.**
+- **Crude: direction only, magnitude not assertable.** MarketWatch quoted WTI front-month **$92.37 at Sep 6 23:56** (futures trade the holiday even though equities do not), which reads firmer. But the Friday reference disagrees across sources in the same searches — **$91.48**, **$91.22** and **$85.46** were all returned as "Friday's WTI" — so the *change* cannot be stated and is not stated here. Recorded as **"indicated firmer, magnitude unverified,"** nothing stronger. Nineteenth session in which a crude number was either refused or held to what could actually be sourced.
+
+### GDX — still un-triggered, same leg, no change
+- Thursday's pre-committed GDX buy was killed Friday at the open on **gate 3** (catalyst reversed) and re-confirmed at midday. Nothing this weekend re-establishes it.
+- **Gold has not turned.** Friday **-0.92% to -0.98%** ($4,430.03 / $4,432.56 close-of-day readings). Monday spot **$4,405.47 (02:11 GMT)** and **$4,405.73 (03:43 ET)** — two feeds, agreeing, both **below** Friday. The rate read is still the hawkish post-payrolls one.
+- **Leg 1 as written — "spot gold +1.76% to +2.41% over two sessions, softening dollar" — remains absent.** The candidate needs a **fresh, dated** leg 1, not this one warmed over. Rejected on leg 1 for the third consecutive check.
+- Recorded because it cuts against the decision, as on Friday: GDX's arithmetic keeps improving as it falls. At $99.26 the 2:1 target off a 7% cut is **$113.16, 3.42% below** the $117.17 52-week high, and GDX still leads the board on 63d. **Leg 1 alone is the blocker.**
+
+### Sector momentum (own SIP computation, 2026-09-04 closes — one session stale, no session since)
+| Sym | 5d | 21d | 63d | 52wH (date) | Headroom |
+|---|---|---|---|---|---|
+| USO | **+9.45** | **+19.42** | +6.72 | $154.08 (2026-05-18) | +8.54% |
+| **GDX** | -0.39 | **+18.28** | **+25.90** | $117.17 (2026-03-02) | +18.05% |
+| XOP | +2.57 | +14.16 | +14.89 | $194.83 (2026-09-02) | +2.16% |
+| XLE | +2.20 | +10.14 | +11.08 | $65.52 (2026-09-03) | +2.28% |
+| OIH | +2.20 | +9.04 | +3.09 | $459.28 (2026-05-20) | +7.43% |
+| XME | -0.10 | +7.49 | +0.02 | $135.68 (2026-01-26) | +14.38% |
+| XLV | +0.17 | +4.26 | +12.05 | $176.59 (2026-08-19) | +3.00% |
+| XLK | +0.86 | +1.05 | +3.87 | $198.73 (2026-06-03) | +6.11% |
+| XLF | +0.00 | +0.50 | +11.09 | $58.60 (2026-09-03) | +0.86% |
+| SPY | +0.11 | +0.21 | +4.43 | $779.37 (2026-08-13) | +1.19% |
+| XLI | -1.06 | -5.14 | +0.63 | $188.19 (2026-08-05) | +7.37% |
+
+- **Energy owns the board an eighth straight session** — USO, XOP, XLE, OIH occupy four of the top five 21d slots, and SPY is flat (+0.21% 21d). The market is going nowhere and the supply shock is the only trend.
+- GDX still leads 63d (+25.90%) and is second on 21d, but is the only leader that is **negative on 5d** — consistent with Friday's reversal, and the reason leg 1 is gone.
+- *(Note: GLD's computed 52w high of $509.70 on 2026-01-29 is inconsistent with spot ~$4,405 and with GDX's own history — treated as a bad bar and excluded from the table rather than quietly used.)*
+
+### Week ahead — Sep 8-11
+- **Thu Sep 10, 08:30 ET — August PPI**, plus initial jobless claims. **ECB decision** the same day.
+- **Fri Sep 11, 08:30 ET — August CPI.** The dominant release of the week and **the last inflation print before the Sep 15-16 FOMC**. On a book whose only position rests on a supply shock and whose rejected candidate rests on the rate path, this is the week's real event.
+- **FOMC Sep 15-16** — next week, not this one.
+- Corporate: **Oracle** and **Adobe** earnings, **Kroger**; **Apple's iPhone event**. None touches the book or any live candidate.
+
+### Trade ideas for Tuesday — none staged, and why
+No order is being pre-committed for the open. Against the four-leg entry checklist:
+1. **XOP** (energy, +14.16% 21d) — the only name with a *live, confirmed, dated* catalyst, since it is the same Hormuz thesis that XLE is already long. **Blocked by owner decision 2**, which asks whether a second energy leg (~39% sector concentration) is authorized and has been unanswered for twelve sessions. Not the bot's call to self-authorize. Would otherwise be the trade.
+2. **GDX** — leg 1 absent, see above. Un-triggered, not dead.
+3. **Add to XLE** — **not a trade.** 20% cap is $19,720.83 against MV $19,218.00 → room **$502.83 ≈ 7 shares.** Rounding error, not a position.
+4. **Everything else on the board fails on catalyst.** XLF (+11.09% 63d) has 0.86% headroom and no catalyst; XLV has a failed trade on record (rule 10: 1 of 2) and was closed on 8/31 precisely for having no thesis; XLK is +1.05% on 21d. Nothing here passes leg 1, and none of it is worth manufacturing a reason for.
+
+**Default holds: HOLD. Patience > activity.** With the market shut, this is not even a live choice today — but it is the same answer that would have been given with a session open, and it is recorded that way deliberately.
+
+### Risk
+- **XLE is the entire book's directional risk and it is geopolitical.** The $58.968 trail and $59.1065 cut line are the whole control — 7.95% and 7.73% below the mark, both verified live this run.
+- **Three nights of headline risk into Tuesday's open**, not two, because of the holiday — and a 10% trailing stop does not protect an overnight de-escalation gap. This weekend already produced one false de-escalation story; the next one may be true, and if it is, it arrives as a gap, not as a slide into the stop. **This is the single largest un-hedged exposure in the account.**
+- **CPI Friday cuts both ways on this book.** A hot print reinforces the hawkish rate read that killed GDX's leg 1 and pressures crude demand expectations; a cool print revives the cut trade and could hand GDX its leg 1 back. Either way the position that exists is on the wrong side of the rate-path trade and on the right side of the supply trade.
+- **~80.5% cash remains the dominant tracking error, twenty-five sessions running.** SPY is +0.21% on 21d, so the cost of that has been small lately — but that is luck about the tape, not the design working.
+
+### Owner decisions — carried, unchanged, twelfth session
+1. **Move the 75-85% deployment target, or move the entry bar.** Nothing has changed and nothing can change it from inside the rulebook: **19.49% deployed, ~$54,700 short of 75%**, a new week opening at 0/3 slots, and the one candidate that has passed all four legs in a quarter (GDX) had its catalyst invert before it could be bought. The bar is working as written; the target is unreachable under it. **Still not the bot's call to change either number.**
+2. **Authorize or forbid the second energy leg** (~39% sector concentration). **This is now the binding constraint, not a theoretical one.** Energy holds four of the top five 21d momentum slots with a dated, twelve-times-confirmed catalyst, and XOP is a checklist-passing candidate sitting behind an unanswered question. Twelfth session escalated.
+
+### Decision
+**NO TRADES — market closed for Labor Day, and no trade would have been placed had it been open. HOLD XLE: thesis confirmed for a twelfth consecutive session; the weekend "US-Iran pause/Qatar talks" story is an unverified x.com claim contradicted by the Reuters record and is treated as noise. No stop moved, no order placed, no rule triggered. GDX rejected on leg 1 for a third check (gold below Friday, hawkish rate read intact). Week opens 0/3 slots. Deployment 19.49%. Next session 2026-09-08 09:30 ET; CPI Friday 9/11 is the week's event.**

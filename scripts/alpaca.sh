@@ -30,6 +30,18 @@ case "$cmd" in
   account)
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/account"
     ;;
+  clock)
+    # Authoritative "is the market open right now" + next open/close.
+    # Use this before assuming a session exists — holidays are silent otherwise.
+    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/clock"
+    ;;
+  calendar)
+    # usage: calendar [start] [end]  e.g. calendar 2026-09-07 2026-09-11
+    # A date absent from the response is a market holiday.
+    start="${1:-$(date -u +%Y-%m-%d)}"
+    end="${2:-$start}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/calendar?start=$start&end=$end"
+    ;;
   positions)
     curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/positions"
     ;;
@@ -100,7 +112,7 @@ case "$cmd" in
     curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
     ;;
   *)
-    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|snapshot|bars|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
+    echo "Usage: bash scripts/alpaca.sh <account|clock|calendar|positions|position|quote|snapshot|bars|orders|history|activities|order|cancel|cancel-all|close|close-all> [args]" >&2
     exit 1
     ;;
 esac
