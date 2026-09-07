@@ -1626,3 +1626,33 @@ No order is being pre-committed for the open. Against the four-leg entry checkli
 
 ### Decision
 **NO TRADES — market closed for Labor Day, and no trade would have been placed had it been open. HOLD XLE: thesis confirmed for a twelfth consecutive session; the weekend "US-Iran pause/Qatar talks" story is an unverified x.com claim contradicted by the Reuters record and is treated as noise. No stop moved, no order placed, no rule triggered. GDX rejected on leg 1 for a third check (gold below Friday, hawkish rate read intact). Week opens 0/3 slots. Deployment 19.49%. Next session 2026-09-08 09:30 ET; CPI Friday 9/11 is the week's event.**
+
+## 2026-09-07 — Market-Open Execution (09:36 ET, Monday, Labor Day — NO SESSION)
+
+**No trades. No orders submitted, none possible.** US equity markets are closed for Labor Day. There was no 09:30 ET open to execute against, so the market-open workflow ran as a state verification only. This is a second, independent confirmation of the call already made in this morning's pre-market entry — recorded here so the execution log has a row for the day rather than a gap.
+
+### Closure confirmed against the authoritative sources (not inferred from the date)
+- `/v2/clock` at 09:36:19 ET: **`is_open:false`**, `next_open` **2026-09-08T09:30:00-04:00**, `next_close` 2026-09-08T16:00:00-04:00.
+- `/v2/calendar?start=2026-09-04&end=2026-09-11`: returns **9/4, 9/8, 9/9, 9/10, 9/11**. **2026-09-07 is absent** — the holiday confirmation. Tuesday 9/8 is a full 09:30-16:00 session.
+
+### Account state (live, 13:36Z / 09:36 ET) — unchanged from the 08:38 ET read
+- Equity **$98,604.14** = `last_equity` $98,604.14 (`balance_asof` **2026-09-04**) → **day P&L $0.00 (0.00%)**, as it must be with no session. Phase-to-date **-$1,395.86 (-1.40%)**.
+- Cash $79,386.14 (80.51%) | Position MV $19,218.00 → **19.49% deployed** — sixteenth-plus consecutive session under the 75-85% target, still the standing gap in this book.
+- **`/v2/account/activities?activity_types=FILL&after=2026-09-04` returns `[]`** — zero fills since Friday. 1 position, 1 open order, both unchanged.
+- Account `ACTIVE`, `trading_blocked:false`.
+
+| Ticker | Shares | Entry | Mark (9/4 close) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist |
+|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.06 | 19.49% | **+$151.40 (+0.79%)** | $59.1065 | 7.73% | $58.968 (10%, hwm $65.52) | 7.95% |
+
+- **The mark is Friday's close, not a live price.** `current_price` and `lastday_price` are both $64.06 and `change_today` is 0 — there is no tape today. Nothing in this row may be used to size an order; anything acted on Tuesday must be re-priced against the live open first (rule 13, unsatisfiable today by construction).
+
+### Rule checks — all no-ops, recorded for continuity
+- **Cut at -7%:** not triggered (XLE +0.79%, cut line 7.73% below the mark).
+- **Tighten to 7%:** not triggered (needs +15% ≈ $73.09).
+- **Trail `ef0c1da0`:** verified live, status `new`, GTC, `trail_percent` 10, stop $58.968, hwm $65.52, `updated_at` still **2026-09-03T15:19Z** — untouched by hand, not moved down, fourth consecutive session with no self-ratchet (correct: XLE has not traded above $65.52, and cannot today). `expires_at` 2026-11-16.
+- **Weekly slots: 0/3** for Sep 7-11. A holiday consumes no slot.
+- **Entry candidates:** none re-run. GDX remains rejected on leg 1 (gold made a fresh low into Monday, per the pre-market entry) and no entry checklist can be completed without a live tape. Perplexity was **not** re-queried for signals — this morning's pre-market run already did the full research pass, including the wire-restricted check that debunked the weekend "US-Iran pause" claim as an unverified x.com post, and a second query on a closed market would produce nothing actionable.
+
+### Decision
+**HOLD — no action.** Next execution window is the **Tuesday 2026-09-08 09:30 ET** open. Carried into it: XLE thesis intact on its twelfth confirmation (Hormuz transits 4-10/day vs ~85 baseline, exit trigger (a) far from firing); a gap through $65.52 ratchets the trail automatically; GDX needs a **fresh, dated** leg 1, not the stale one; and both escalated owner decisions — raise deployment or lower the entry R:R bar, and authorize or forbid a second energy leg — remain unanswered.
