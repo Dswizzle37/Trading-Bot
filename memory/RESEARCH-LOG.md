@@ -1753,3 +1753,56 @@ The pre-market ran the full pass at 08:38. Re-running the whole board on a close
 
 ### Decision
 **HOLD — no trades. No orders placed, no stop moved, no rule triggered.** XLE thesis confirmed a fourteenth time on the strongest evidence yet: Reuters (Sep 7, dated) puts Hormuz transits at their lowest since May with the 10-day average falling 15 → 13 → 10 against a ~85 baseline, no wire carries any de-escalation dated Sep 6-8, and WTI is +2.74% at $93.99. Position +1.88%, trail live at $58.968 (hwm $65.52) and 8.93% below the mark, cut line 8.72% away, tighten trigger $73.09 untouched. GDX fails leg 1 for a fourth check (gold down two straight closes). XOP passes the checklist and is **blocked, not rejected** — the second-energy-leg authorization is the only thing standing in the way. Week **0/3** slots. Deployment **19.65%**. Next window: 09:30 ET open, where every price above must be re-verified live.
+
+## 2026-09-08 — Market-Open Execution (09:37 ET, Tuesday, Day 17)
+
+**No trades. No orders submitted, no stop moved, no rule triggered. HOLD.** The live tape confirmed the pre-market read rather than contradicting it — XLE opened up and is holding a +1.65% gain, the Hormuz thesis took its **fifteenth** consecutive dated confirmation, and the one candidate that passes the entry checklist (XOP) is blocked by the same unanswered owner authorization for a **fourteenth** session. GDX fails leg 1 for a fifth check, this time on Alpaca's own SIP bars rather than a third-party quote.
+
+### Session confirmed open
+- `/v2/clock` 09:36:00 ET: **`is_open:true`**, `next_close` 2026-09-08T16:00-04:00. Full session, as the calendar indicated Monday.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-04` returns **`[]`** — zero fills since Friday. 1 position, 1 open order, both unchanged across the holiday.
+
+### Account state (live, 13:37Z / 09:37 ET)
+- Equity **$98,920.64**; `last_equity` $98,604.14 (`balance_asof` **2026-09-04**, correct reference across the holiday) → **day P&L +$316.50 (+0.32%)**. Phase-to-date **-$1,079.36 (-1.08%)** — the account's best phase reading since 8/21.
+- Cash $79,386.14 (80.25%) | Position MV $19,534.50 → **19.75% deployed** — twenty-fifth-plus consecutive session under the 75-85% target. Gap to 75%: **~$54,800**.
+- Account `ACTIVE`, `trading_blocked:false`. Margin buying power unused, as always — not part of this strategy.
+- **Benchmark, same window:** SPY $768.33 vs its $770.19 close on 9/4 → **-0.24%** while the book is **+0.32%**. Cash is again not the reason today; the single position is.
+
+| Ticker | Shares | Entry | Mark (live RTH) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.115 | 19.75% | **+$467.90 (+2.45%)** | $59.1065 | 9.23% | $58.968 (10%, hwm $65.52) | 9.44% | $73.09 |
+
+- **Rule 13 satisfied — this mark is order-grade, unlike this morning's.** The pre-market's $64.75 was a pre-market print explicitly barred from sizing anything. The 09:37 ET RTH quote is **$65.10 / $65.12**, a two-cent two-sided spread on 1,800×1,900, last trade $65.135 — live, tight and consistent with the day bar (o $64.73, h $65.17). Alpaca's position `current_price` lagged it slightly at $64.965 → $65.115; the freshest source is used above and the difference changes nothing, since no order is being placed.
+- **XLE is up but has not made a new high.** Day high **$65.17** against the trail's hwm **$65.52** (set 9/3). No ratchet fired and none was due. A print through $65.52 ratchets the stop automatically — Alpaca's mechanism, not a hand adjustment.
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+2.45%**, cut line $59.1065 sits **9.23%** below the mark.
+- **Tighten to 7% at +15%:** not triggered (needs ≈ $73.09; position is +2.45%).
+- **Trail `ef0c1da0` verified live:** status `new`, GTC, `trail_percent` 10, stop **$58.968**, hwm **$65.52**, `updated_at` still **2026-09-03T15:19Z**, `expires_at` 2026-11-16. Untouched by hand, **never moved down**, **9.44%** below the mark so the 3% floor is nowhere near. Seventh session without a self-ratchet — correct, XLE has not traded above $65.52.
+- **Positions 1 of 6. Single-position weight 19.75% of 20%. Weekly slots 0/3** (Sep 7-11). PDT room untouched — no day trades, and nothing today would have been one.
+- **No options. Never.**
+
+### Rule 14 check — de-escalation, wire-restricted, re-run live
+- **Explicit "No wire report found."** Perplexity, restricted to Reuters/AP/Bloomberg/AFP and official statements and required to date every claim, found **no** report dated **Sep 6, 7 or 8** of a ceasefire, truce, negotiations, strike pause, or any Hormuz shipping agreement. **Fourth consecutive session the check comes back empty.**
+- **The dated wire it did return cuts the other way:** Reuters puts Hormuz commodity-ship transits at a **10-day moving average of 10/day, the lowest since May**, down from ~15 Friday and ~13 Saturday, against a **~85/day pre-disruption baseline**. Exit trigger (a) needs ~40/day sustained two sessions — the number is a quarter of that and **falling**, not converging.
+- *Date note, recorded rather than smoothed over:* today's query dates that transit story **Sep 6**; this morning's pre-market dated the same figures **Sep 7**. Same wire, same numbers, same direction; one of the two attributions is off by a day. It changes no decision — under either date the report is well inside the freshness the rule asks for — but the benchmark source has now mis-dated a print three times in four weeks, and per the 9/4 weekly review's lesson the *date* gets checked, not just the number.
+- **The 9/8 pre-market's one watch item is still un-wired.** The undated aggregator headline *"U.S. Navy escorts keep Hormuz oil flowing"* has produced no wire text on a second, independent query. Rule 14 bars acting on it and today's harder facts point the other way (transits at a May low, crude +2.75%). Still noise-until-wired.
+- **XLE thesis: intact, fifteenth consecutive confirmation.**
+
+### Market context at the open
+- **WTI $93.99, +2.75%** (07:00 ET); **Brent $98.56, +1.61%** (08:09 BST). Crude leading again, and in the direction the position needs.
+- **VIX 15.65-15.83, +3.5% to +7.7%** off a 15.30 prior close — up but still low; no fear bid.
+- **SPY -0.24% intraday.** Equities soft while crude rips; the split favours the energy leg specifically, not beta. Unchanged from the pre-market read.
+- **This week's only real event is CPI, Fri 9/11 08:30 ET**, with PPI + claims + EIA crude inventories Thu 9/10. Nothing today (NFIB, Consumer Credit) is a market event.
+
+### Entry candidates re-tested live
+1. **XOP — passes the entry checklist for a second session, BLOCKED, not rejected.** It is the strongest thing on the board: **$195.65 intraday vs a $190.71 close on 9/4, +2.6%**, a fresh high for the move and outrunning XLE's +1.65% on the same catalyst. Catalyst dated and fifteen-times confirmed; sector #1 on 1M and 21d; a 10% trail sits ≈$176 and a 2:1 target ≈$233 off a leader making highs. **Not placed, and the reason is not the tape.** A second energy leg takes sector concentration to **~39%** on one geopolitical thesis, and the 9/4 weekly review pre-committed in writing: *"The second energy leg stays forbidden until answered."* That authorization is the owner's and it is unanswered. **An autonomous run does not get to grant itself the permission it escalated** — least of all on the session where the trade looks best, which is exactly when the pre-commitment is worth something. Logged, not re-litigated.
+2. **GDX — rejected on leg 1, fifth consecutive check, and this time on first-party data.** Leg 1 needs a *fresh, dated two-session gold advance*. Alpaca SIP daily closes on GLD: **$402.78 (9/2) → $410.22 (9/3) → $406.77 (9/4) → $403.22 (9/8 intraday)** — one up close followed by two down. GDX itself: $101.49 (9/3) → $99.26 (9/4) → $99.36 today, flat. **Leg 1 fails outright.** Note this was settled without Perplexity, which could not verify the gold prints at all and correctly said so rather than guessing — the Alpaca bars are the better source and were used instead.
+3. **Tech / XLK — not re-run.** No catalyst, 1M momentum stalled, one failed trade already on the sector's record, and CPI is Friday. Unchanged from the pre-market.
+
+### Owner decisions — carried, unchanged, fourteenth session
+1. **Move the 75-85% deployment target, or move the entry bar.** 19.75% deployed, ~$54,800 short of the floor, week 0/3. Twenty-fifth-plus session in breach of rule 2 — the account's only standing rule violation, and it is structural, not a lapse. Options as put to the owner on 9/4: (a) lower the mandate, (b) relax the entry bar (most plausibly the 2:1 R:R leg), or (c) authorize a benchmark-tracking core so cash stops acting as an unintended index short.
+2. **Authorize or forbid the second energy leg (~39% concentration).** **This is the binding constraint and today it has a visible price: XOP is +2.6% and making highs, on a catalyst this account has verified fifteen times, and it was not bought.** Second session running that the block, not the analysis, is what kept the account in cash.
+
+### Decision
+**HOLD — no trades, no orders, no stop changes.** Every risk rule checked and clean: XLE +2.45% with the cut line 9.23% away, the trail live at $58.968 and 9.44% below the mark, never moved down, hwm $65.52 unbroken. Thesis re-confirmed a fifteenth time on a dated wire (Hormuz transits at a May low of 10/day vs ~85 baseline, falling) with no de-escalation report dated Sep 6-8 and crude +2.75%. GDX fails leg 1 for a fifth check on first-party SIP data. XOP passes and stays blocked on the unanswered authorization. Week **0/3** slots, deployment **19.75%**, day **+0.32%** against SPY's **-0.24%**. Next window: 13:00 ET midday scan.
