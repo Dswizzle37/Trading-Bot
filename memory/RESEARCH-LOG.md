@@ -1806,3 +1806,47 @@ The pre-market ran the full pass at 08:38. Re-running the whole board on a close
 
 ### Decision
 **HOLD — no trades, no orders, no stop changes.** Every risk rule checked and clean: XLE +2.45% with the cut line 9.23% away, the trail live at $58.968 and 9.44% below the mark, never moved down, hwm $65.52 unbroken. Thesis re-confirmed a fifteenth time on a dated wire (Hormuz transits at a May low of 10/day vs ~85 baseline, falling) with no de-escalation report dated Sep 6-8 and crude +2.75%. GDX fails leg 1 for a fifth check on first-party SIP data. XOP passes and stays blocked on the unanswered authorization. Week **0/3** slots, deployment **19.75%**, day **+0.32%** against SPY's **-0.24%**. Next window: 13:00 ET midday scan.
+
+## 2026-09-08 — Midday Scan (13:10 ET, Tuesday, Day 17)
+
+**No action. No trades, no orders, no stop moved, no rule triggered. HOLD.** Every risk rule re-checked live and clean. The one thing that changed since the 09:37 open entry is price, not thesis: **XLE gave back the morning move**, fading from a $65.24 day high to $64.41 near the session low, tracking crude's own reversal off $94.73. Checked for a break and there isn't one — the Hormuz thesis took its **sixteenth** consecutive dated confirmation, and a third circulating "de-escalation" headline was date-checked and killed, this one **five months stale**.
+
+### Account state (live, 17:08Z / 13:08 ET)
+- Equity **$98,709.14**; `last_equity` $98,604.14 (`balance_asof` 2026-09-04) → **day P&L +$105.00 (+0.11%)**. Phase-to-date **-$1,290.86 (-1.29%)**.
+- Cash $79,386.14 (80.42%) | Position MV $19,323.00 → **19.58% deployed**. Gap to the 75% floor: **$54,708.85**.
+- **`/v2/account/activities?activity_types=FILL&after=2026-09-04` returns `[]`** — still zero fills since Friday. **1 position, 1 open order**, both unchanged. Account `ACTIVE`, `trading_blocked:false`.
+- **Benchmark, same window:** SPY **$767.82** live vs its $770.18 close on 9/4 → **-0.31%**, against the book's **+0.11%**. Spread **+0.42 pts** to the account on the day — narrowed from the open's +0.56 as XLE faded, still positive.
+
+| Ticker | Shares | Entry | Mark (live RTH) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.41 | 19.58% | **+$256.40 (+1.35%)** | $59.1065 | 8.23% | $58.968 (10%, hwm $65.52) | 8.45% | $73.09 |
+
+- **Rule 13 satisfied.** The 13:08 ET quote is **$64.40 / $64.41**, a one-cent two-sided spread on 5,400×1,600, last trade $64.41 at 13:08:03 — live, tight, and matching Alpaca's position `current_price` exactly. No disputed price this run and no order being sized off it either way.
+
+### The fade — measured, then explained
+- **XLE day bar: o $64.73, h $65.24, l $64.355, last $64.41, vwap $64.92.** The position is **-1.27% off the day high** and **-1.08% below the $65.115 mark this morning's open entry recorded** — but still **+0.55% on the day** and **+1.35% unrealized**. The whole morning gain is gone; the position is not.
+- **Crude did the same thing, and it is the cause.** WTI ran to a **$94.73** session high and traded back to **~$92.90 (+0.43%)** by midday, per MarketWatch — the +2.75% print this morning's entry logged at 07:00 ET has mostly unwound. Energy equities followed crude down; XLE did not underperform it.
+- **Explicitly checked for a news catalyst and there is none.** Perplexity, asked directly for a dated 9/8 driver (inventory print, OPEC headline, supply story, broad-market move), returned **no identifiable catalyst** and said so rather than manufacturing one. EIA inventories are **Thursday 9/10**, not today. **This is a give-back of an intraday spike, not a repricing of the thesis.**
+- *Magnitude caveat, as every session:* the $92.90 print carries a `3:49 p.m.` stamp on a UK page (≈10:49 ET), so it is the direction that is asserted here, not a to-the-minute level. Twentieth session in which the crude number is held to what can actually be sourced.
+
+### Rule 14 check — third stale/false de-escalation story, caught the same way
+- **Wire-restricted query returns "No wire report found."** No Reuters/AP/Bloomberg/AFP report or official statement **dated Sep 7 or Sep 8** of a ceasefire, truce, strike pause, negotiations, peace deal or Hormuz reopening agreement. **Fifth consecutive session the check comes back empty.**
+- **The aggregator headline that surfaced this run — *"Iran, US receive proposal to end conflict, reopen strait — Reuters"* — is dated April 6, 2026.** Five months stale, re-circulating on a third-party aggregator with no visible date. Asked directly for its publication date, the answer was unambiguous. It is also, on its own terms, a *proposal received*, never accepted: no wire has reported either side accepting it, then or since. **Exit trigger (a) is NOT firing.** Third de-escalation scare in six sessions; all three died on the same two questions — which wire, and what date.
+- **The dated wire record cuts the other way, again.** Reuters **Sep 7**: Iran says it will announce a **new restricted zone** in the Gulf within days and publish maps of a new shipping corridor — a unilateral Iranian restriction, framed by Reuters as **not** an agreement to reopen. Reuters **Sep 6**: Hormuz commodity transits at a **10-day moving average of 10/day, the lowest since May**.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **10 vs ~40, still a quarter of the level and not converging**. **Exit trigger (b)** — the $59.1065 cut line — **8.23% away**. Neither firing. **HOLD. Thesis intact, sixteenth consecutive confirmation.**
+- *Baseline note, recorded not smoothed:* Reuters **Sep 4** gives a pre-war baseline of **~125 large commercial vessels/day**, against the **~85/day** this log has used throughout. Different denominators (all large commercial vs. commodity ships), not a contradiction — and the trigger is written on the transit count itself, so neither figure changes the arithmetic. Noted so the next run doesn't read it as a discrepancy.
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+1.35%**; the $59.1065 cut line sits **8.23%** below the mark.
+- **Tighten to 7% at +15%:** not triggered (needs ≈ **$73.09**; position is +1.35%).
+- **Trail `ef0c1da0` verified live:** status `new`, GTC, `trail_percent` 10, stop **$58.968**, hwm **$65.52**, `updated_at` still **2026-09-03T15:19Z**, `expires_at` 2026-11-16. Untouched by hand, **never moved down**, **8.45%** below the mark — the 3% floor is nowhere near. **Eighth session without a self-ratchet, and correctly so: the day high of $65.24 never reached the $65.52 hwm.** A print through $65.52 still ratchets it automatically.
+- **Positions 1 of 6. Weight 19.58% of the 20% cap** — room is **$418.83 ≈ 6 shares**, still a rounding error, still not a trade. **Weekly slots 0/3** (Sep 7-11). PDT room untouched.
+- **No options. Never.**
+
+### Entry candidates — no midday change
+- **XOP — still passes, still BLOCKED.** Faded with the sector on crude's reversal rather than on anything of its own. The block is the unanswered owner authorization on a second energy leg (~39% concentration), **fifteenth session**, and it is not the bot's to grant itself. Unchanged from the open entry; not re-litigated.
+- **GDX — not re-run.** Rejected on leg 1 this morning on first-party SIP bars (GLD $410.22 → $406.77 → $403.22; one up close, two down). Leg 1 needs a fresh, dated two-session gold advance; half a session does not create one.
+- **Nothing new tested.** No candidate is worth opening on a day whose only move was an unwound intraday spike, three sessions ahead of CPI.
+
+### Decision
+**HOLD — no action taken, none warranted.** XLE +1.35% unrealized with the cut line 8.23% away and the trail live at $58.968, 8.45% below the mark, never moved down, hwm $65.52 unbroken. The morning's gain unwound with crude off its $94.73 high, on **no identifiable catalyst** — price, not thesis. Hormuz transits 10/day vs a ~85-125 baseline; **no wire de-escalation dated Sep 7-8**, and the circulating "proposal" headline is an April 6 story with no acceptance ever reported. Week **0/3** slots, deployment **19.58%**, day **+0.11%** vs SPY **-0.31%**. Next window: the 16:00 ET daily summary. **CPI Friday 9/11 08:30 ET remains the week's event.**
