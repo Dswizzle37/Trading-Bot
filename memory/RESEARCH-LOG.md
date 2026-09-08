@@ -1702,3 +1702,54 @@ The pre-market ran the full pass at 08:38. Re-running the whole board on a close
 
 ### Decision
 **HOLD — no action taken, none available.** Market closed for Labor Day; zero fills, zero orders, no stop moved, no rule triggered, position and trail identical to both earlier reads. **XLE thesis confirmed a thirteenth time and on a better source than this morning: Reuters Sep 6 dates Hormuz traffic at its lowest since May (2 vessels Sat, 6 Sun, 10-day avg 10 vs ~85 baseline), and no wire carries any de-escalation dated Sep 5-7.** Next action window is the **Tuesday 2026-09-08 09:30 ET** open — where every price in this entry must be re-verified live before anything is sized off it.
+
+## 2026-09-08 — Pre-Market Research (08:50 ET, Tuesday)
+
+**First live session since Friday 9/4 — three-night gap closed with no bad news and one clearly good one: WTI is $93.99, +2.74% on the day, and the Hormuz disruption that is XLE's entire thesis is confirmed by a dated Reuters wire as *tightening*, not recovering.** XLE marks $64.75 pre-market (+1.08%), a fresh high-water print for the position at +1.88% unrealized. No rule triggered, no stop touched, no order placed. **HOLD.** GDX rejected on leg 1 for a fourth check. Both owner decisions unanswered for a **thirteenth** session — and today they are what stands between the account and the only checklist-passing candidate on the board.
+
+### Account (live, 12:37Z / 08:37 ET)
+- Equity **$98,805.14**; `last_equity` $98,604.14 (`balance_asof` **2026-09-04** — Friday's close, correct reference across the holiday) → **day P&L +$201.00 (+0.20%)**. Phase-to-date **-$1,194.86 (-1.19%)**
+- Cash $79,386.14 (80.35%) | Position MV $19,419.00 → **19.65% deployed** — eighteenth-plus consecutive session under the 75-85% target. Gap to 75%: **~$54,700**
+- Account `ACTIVE`, `trading_blocked:false`. 1 position, 1 open order. Buying power $371,917.76 (unused — margin is not part of this strategy)
+- `/v2/clock` 08:37:26 ET: `is_open:false`, **next_open 2026-09-08T09:30-04:00**. `/v2/calendar` 9/8-9/11 returns all four days — full sessions, CPI Friday is a normal trading day
+
+| Ticker | Shares | Entry | Mark (pre-mkt) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.75 | 19.65% | **+$358.40 (+1.88%)** | $59.1065 | 8.72% | $58.968 (10%, hwm $65.52) | 8.93% | $73.09 |
+
+- **Rule 13 — the mark is a pre-market print and may not size anything.** `current_price` $64.75 vs `lastday_price` $64.06 (`change_today` +1.077%), while the SIP snapshot's `latestQuote` is still Friday's 20:00Z close ($64.07) with a junk 62.12/66.20 spread. Nothing in this row is order-grade until the 09:30 tape confirms it. It changes no decision today because no order is being placed.
+- **Trail `ef0c1da0` verified live:** status `new`, GTC, `trail_percent` 10, stop **$58.968**, hwm **$65.52**, `updated_at` still **2026-09-03T15:19Z**, `expires_at` 2026-11-16. Untouched by hand, never moved down, sixth session with no self-ratchet — correct, XLE has not traded above $65.52. A print through $65.52 today ratchets it automatically.
+
+### Market context
+- **Crude: WTI $93.99, +2.74%** (front month, 07:00 ET). **Brent $97.31, +0.32%.** The WTI-led move narrows the Brent premium to ~$3.30 — worth noting but not thesis-relevant either way; the direction is what matters and it is up hard.
+- **S&P 500 futures 7,710.75, -0.15%.** Equities flat-to-soft while crude rips — the split favors the energy leg specifically, not beta.
+- **VIX 14.53, +1.47%.** Low. No fear bid, no crash signal.
+- **Today's releases: NFIB Small Business Optimism (Aug), Consumer Credit.** Neither is a market event.
+- **This week: Thu 9/10 PPI + initial claims + EIA crude inventories; Fri 9/11 CPI 08:30 ET** — last inflation print before the Sep 15-16 FOMC and the week's only real event. EIA Thursday is a second, smaller catalyst for the held position.
+- **Earnings BMO today:** CASY, ABM, Braze, GME, TTAN, UNFI. Nothing held, nothing adjacent.
+- **Sector momentum (Perplexity):** Energy **+11.78% 1M, +43.28% YTD** — leader by a wide margin. Tech is the 3M leader (+30.08%) but only +0.74% 1M. Health Care +4.44% 1M. **Cross-checked on Alpaca daily bars, 21d through 9/4:** GDX +18.28%, XOP +14.16%, XLE +10.14%, OIH +9.04%, XLF +0.50%, XLU -0.69%. Energy holds three of the top four; the two independent sources agree.
+
+### Rule 14 check — de-escalation, wire-restricted
+- **Explicit "No."** Perplexity, restricted to Reuters/AP/Bloomberg/AFP and official statements, found **no** report dated **Sep 6, 7 or 8** of a ceasefire, strike pause, negotiations, or any Hormuz agreement. Third consecutive session the check comes back empty; the weekend x.com "Qatar talks" claim debunked on 9/7 still has no wire behind it.
+- **Reuters Sep 7 (dated, on the wire): Hormuz commodity-ship transits at a 10-day average of 10/day, lowest since May** — 2 vessels Saturday, 6 Sunday. Reuters Sep 4: 4 vessels, 10-day avg ~15. Reuters Sep 2: 4 vessels, 10-day avg ~13. **The 10-day average is falling (15 → 13 → 10) against a ~85/day pre-disruption baseline.** Exit trigger (a) requires ~40/day sustained two sessions. Not close; moving away, not toward.
+- **One watch item, correctly not acted on.** An aggregator headline list surfaced *"U.S. Navy escorts keep Hormuz oil flowing, energy chief says"* — **undated, no wire text, no source article.** Rule 14 bars acting on it, and the two harder facts point the other way: Reuters' own Sep 7 transit count is the lowest since May, and crude is +2.7% today. Logged as noise-until-wired, re-check tomorrow. A dated wire version of this story *would* be thesis-relevant and is the specific thing to watch for.
+- **XLE thesis: intact, fourteenth consecutive confirmation**, and today on the strongest evidence yet (a dated wire plus a 2.7% crude move in the same direction).
+
+### Trade ideas
+1. **XOP (SPDR Oil & Gas E&P) — passes the entry checklist, BLOCKED on an unanswered owner decision.** Catalyst: the same dated, fourteen-times-confirmed Hormuz supply disruption, with crude +2.74% today confirming it live. Sector: #1 on both 1M (+11.78%) and 21d (+14.16%, best of the energy complex). Reference close $190.71 (9/4); a 10% trail sits ~$171.6 and a 2:1 target ~$228 — both plausible off a leader making highs, unlike the XLV case. **Not placed.** A second energy leg would put sector concentration near **39%** of equity, and authorizing that is explicitly not the bot's call (see below). If authorized, size must be re-priced against the live 09:30 tape per rule 13 — the levels above are Friday's close, not order-grade.
+2. **GDX — rejected on leg 1, fourth consecutive check.** 21d momentum is the board's best (+18.28%), but the entry requires a *fresh, dated two-session gold advance* and gold has done the opposite: **$4,474.93 (9/3) → $4,429.95 (9/4) → $4,406.15 (9/7)**, two straight down closes. Live spot ~$4,433 is one intraday up-tick, unconfirmed by a close. Leg 1 fails. Re-check tomorrow.
+3. **Tech (XLK / megacap) — rejected, no catalyst.** It is the 3M leader (+30.08%) but 1M momentum has stalled to +0.74%, the sector already carries **1 failed trade** in this account (NVDA, -7.25%), and entering three days ahead of a CPI print that is the week's binary is not a catalyst — it is a coin flip with a rule 8 slot spent on it. Pass.
+
+### Risk factors today
+- **XLE is 100% of the book's directional risk and the risk is geopolitical.** The $58.968 trail and $59.1065 cut line are 8.93% and 8.72% below the mark — a slide is covered, an overnight de-escalation gap is not. Today's confirming evidence does not reduce that by a basis point; it is the same asymmetry logged 9/7, just with the position further in the money.
+- **CPI Friday 9/11.** A hot print is a hawkish repricing that hits equities broadly; energy's supply catalyst is largely independent of it, but a broad risk-off day still marks XLE down.
+- **Crude at $94 is itself a risk to the position.** The higher it goes on disruption, the more violently energy equities unwind if the disruption ends. That is precisely what the trail is for.
+- **EIA crude inventories Thursday 9/10** — a large build would cut against the scarcity narrative mid-week.
+- **Pre-market marks are not tradeable prices** (rule 13). Anything acted on today must be re-priced at 09:30.
+
+### Owner decisions — carried, unchanged, thirteenth session
+1. **Move the 75-85% deployment target, or move the entry bar.** 19.65% deployed, ~$54,700 short of 75%, week at 0/3 slots. Eighteen-plus sessions under target. Unreachable from inside the rulebook as written; not the bot's call.
+2. **Authorize or forbid the second energy leg (~39% sector concentration).** **This is the binding constraint and today it has a price.** XOP passes all four checklist legs on a catalyst that just got its strongest confirmation of the phase, and it is not being bought solely because this question is unanswered. Every session it stays open, the account holds ~80% cash against a thesis it has verified fourteen times.
+
+### Decision
+**HOLD — no trades. No orders placed, no stop moved, no rule triggered.** XLE thesis confirmed a fourteenth time on the strongest evidence yet: Reuters (Sep 7, dated) puts Hormuz transits at their lowest since May with the 10-day average falling 15 → 13 → 10 against a ~85 baseline, no wire carries any de-escalation dated Sep 6-8, and WTI is +2.74% at $93.99. Position +1.88%, trail live at $58.968 (hwm $65.52) and 8.93% below the mark, cut line 8.72% away, tighten trigger $73.09 untouched. GDX fails leg 1 for a fourth check (gold down two straight closes). XOP passes the checklist and is **blocked, not rejected** — the second-energy-leg authorization is the only thing standing in the way. Week **0/3** slots. Deployment **19.65%**. Next window: 09:30 ET open, where every price above must be re-verified live.
