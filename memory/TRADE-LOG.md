@@ -163,3 +163,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.06 | 0.00% | +$151.40 (+0.79%) | $58.968 (10% trail, hwm $65.52) |
 
 **Notes:** Market closed for Labor Day — no session, no trades, no fills, confirmed by today's pre-market/market-open/midday runs (`3c108d0`, `8820db7`, `9618772`), all logging XLE thesis re-confirmed and the trail unchanged. Equity, cash and position marks are identical to Friday 9/4's official close — nothing moved because nothing traded. Trail live at $58.968 (10% trail, hwm $65.52), untouched since 9/3's ratchet. Deployment 19.49% ($19,218 of $98,604.14) — still below the 75-85% target, the standing structural gap flagged in three consecutive weekly reviews and now escalated to the owner (unresolved). Trades this week (9/7-9/11): 0/3, fresh week.
+
+### Sep 8 — EOD Snapshot (Day 17, Tuesday)
+**Portfolio:** $98,821.64 | **Cash:** $79,386.14 (80.33%) | **Day P&L:** +$217.50 (+0.22%) | **Phase P&L:** -$1,178.36 (-1.18%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.785 | +1.13% | +$368.90 (+1.94%) | $58.968 (10% trail, hwm $65.52) |
+
+**Notes:** No trades today, no fills, no position changes. XLE up +1.13% on the day to $64.785, its best close of the phase; trail unchanged at $58.968 (hwm $65.52, untouched since 9/3 — today's high didn't clear the prior watermark). Deployment 19.67% ($19,435.50 of $98,821.64), still below the 75-85% target — the standing gap flagged in prior weekly reviews, unresolved. Cut line $59.1065, 8.76% below the close, stop untouched and >3% from price. Trades this week (9/7-9/11): 0/3, three slots open.
