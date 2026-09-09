@@ -172,3 +172,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.77 | +1.11% | +$364.40 (+1.91%) | $58.968 (10% trail, hwm $65.52) |
 
 **Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL&after=2026-09-04` returns `[]` on the 9/9 pre-market check. XLE opened $64.73, ran to $65.24, faded to $64.315 and closed $64.77 (+1.11% off Friday's $64.06) — the intraday spike unwound with crude, as the 9/8 midday scan recorded, but the close held the day's gain. The trail did **not** self-ratchet and correctly so: the $65.24 high never reached the $65.52 hwm set 9/3. Stop untouched by hand, never moved down, `updated_at` still 2026-09-03T15:19Z. Deployment 19.66% ($19,431.00 of $98,817.14); cut line $59.1065, 8.75% below the close. Trades this week (9/7-9/11): 0/3. **Row reconstructed by the 9/9 pre-market run** — the 9/8 daily-summary run never logged it, the account's fifth persistence gap (Day 1 GitHub 403, 8/24 uncommitted memory, 9/2-9/3 unlogged, 9/4 unlogged). Sourced from Alpaca `last_equity` $98,817.14 (`balance_asof` 2026-09-08) and the SIP daily bar (XLE close $64.77); cash + position MV ties to equity exactly ($79,386.14 + $19,431.00 = $98,817.14). Nothing inferred. Day P&L measured against Alpaca's official 9/4 close reference ($98,604.14).
+
+### Sep 9 — EOD Snapshot (Day 18, Wednesday)
+**Portfolio:** $98,982.14 | **Cash:** $79,386.14 (80.20%) | **Day P&L:** +$165.00 (+0.17%) | **Phase P&L:** -$1,017.86 (-1.02%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.32 | +0.85% | +$529.40 (+2.78%) | $59.3235 (10% trail, hwm $65.915) |
+
+**Notes:** No trades today, no fills, no position changes — orders check confirms only the standing GTC trailing stop (`ef0c1da0`, unfilled). XLE printed a new phase high ($65.915 hwm) and the trail self-ratcheted accordingly ($58.968 → $59.3235); untouched by hand, never moved down. Deployment 19.80% ($19,596.00 of $98,982.14) — still below the 75-85% target, the standing structural gap now unresolved across many consecutive sessions. Trades this week (9/7-9/11): 0/3. Day P&L measured against Alpaca's official `last_equity` ($98,817.14, `balance_asof` 2026-09-08).
