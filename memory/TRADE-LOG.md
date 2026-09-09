@@ -163,3 +163,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.06 | 0.00% | +$151.40 (+0.79%) | $58.968 (10% trail, hwm $65.52) |
 
 **Notes:** Market closed for Labor Day — no session, no trades, no fills, confirmed by today's pre-market/market-open/midday runs (`3c108d0`, `8820db7`, `9618772`), all logging XLE thesis re-confirmed and the trail unchanged. Equity, cash and position marks are identical to Friday 9/4's official close — nothing moved because nothing traded. Trail live at $58.968 (10% trail, hwm $65.52), untouched since 9/3's ratchet. Deployment 19.49% ($19,218 of $98,604.14) — still below the 75-85% target, the standing structural gap flagged in three consecutive weekly reviews and now escalated to the owner (unresolved). Trades this week (9/7-9/11): 0/3, fresh week.
+
+### Sep 8 — EOD Snapshot (Day 17, Tuesday) — *reconstructed 2026-09-09*
+**Portfolio:** $98,817.14 | **Cash:** $79,386.14 (80.34%) | **Day P&L:** +$213.00 (+0.22%) | **Phase P&L:** -$1,182.86 (-1.18%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.77 | +1.11% | +$364.40 (+1.91%) | $58.968 (10% trail, hwm $65.52) |
+
+**Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL&after=2026-09-04` returns `[]` on the 9/9 pre-market check. XLE opened $64.73, ran to $65.24, faded to $64.315 and closed $64.77 (+1.11% off Friday's $64.06) — the intraday spike unwound with crude, as the 9/8 midday scan recorded, but the close held the day's gain. The trail did **not** self-ratchet and correctly so: the $65.24 high never reached the $65.52 hwm set 9/3. Stop untouched by hand, never moved down, `updated_at` still 2026-09-03T15:19Z. Deployment 19.66% ($19,431.00 of $98,817.14); cut line $59.1065, 8.75% below the close. Trades this week (9/7-9/11): 0/3. **Row reconstructed by the 9/9 pre-market run** — the 9/8 daily-summary run never logged it, the account's fifth persistence gap (Day 1 GitHub 403, 8/24 uncommitted memory, 9/2-9/3 unlogged, 9/4 unlogged). Sourced from Alpaca `last_equity` $98,817.14 (`balance_asof` 2026-09-08) and the SIP daily bar (XLE close $64.77); cash + position MV ties to equity exactly ($79,386.14 + $19,431.00 = $98,817.14). Nothing inferred. Day P&L measured against Alpaca's official 9/4 close reference ($98,604.14).
