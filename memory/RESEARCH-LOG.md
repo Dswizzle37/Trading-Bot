@@ -1977,3 +1977,57 @@ The pre-market ran the full pass at 08:38. Re-running the whole board on a close
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes.** Every risk rule checked and clean. The session's one substantive event was the **trailing stop ratcheting to $59.202 on a new $65.78 high** — the first stop improvement since 9/3, executed by Alpaca's own mechanism, moving the floor **up** $0.234. XLE **+3.50%**, cut line **10.15%** away, trail **10.00%** below the mark. Thesis re-confirmed an **eighteenth** time: Hormuz transits **10/day and falling**, **no wire de-escalation dated Sep 7-9** (seventh empty check, no candidate item at all). XOP passes and stays blocked; GDX fails leg 1 a seventh time but is the closest it has been. Week **0/3** slots. Deployment **19.89%**. Day **+0.28%** vs SPY **-0.29%**; week-to-date **+0.49%** vs SPY **-0.83%**. Phase **-0.91%**, best of the phase. Next window: **midday scan**. **CPI Friday 9/11 08:30 ET remains the week's event.**
+
+## 2026-09-09 — Midday Scan (13:10 ET, Wednesday, Day 18)
+
+**No trades. No orders submitted, no stop touched by hand, no rule triggered. HOLD.** The trail **ratcheted a second time today** — $59.202 → **$59.3235** on a new $65.915 high at 13:39:12Z (09:39 ET), six minutes after the open ratchet this morning's run recorded. Two stop improvements in one session after a nine-session drought. Energy then **faded most of the day's gain**: XLE $65.915 high → **$65.205** (+0.67% on the day, down from +1.77% at the high), XOP $196.305 → **$193.97** (+0.04%, a full round-trip). **No dated catalyst for the fade** — crude is still bid. Hormuz thesis takes its **nineteenth** consecutive dated confirmation. XOP passes the checklist a fifth session and stays blocked on the same unanswered owner authorization (**eighteenth** session). GDX fails leg 1 for an eighth check.
+
+### Account state (live, 17:08Z / 13:08 ET)
+- Equity **$98,947.64**; `last_equity` $98,817.14 (`balance_asof` 2026-09-08) → **day P&L +$130.50 (+0.13%)**. Phase-to-date **-$1,052.36 (-1.05%)**.
+- Cash $79,386.14 (80.23%) | Position MV $19,561.50 → **19.77% deployed**. Gap to the 75% floor: **$54,649.23**.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-04` returns **`[]`** — still zero fills since Friday 9/4. **1 position, 1 open order**, both unchanged. Account `ACTIVE`, `trading_blocked:false`.
+- **Benchmark, same window:** SPY **$762.71** vs its $766.06 close 9/8 → **-0.44%** while the book is **+0.13%**. Week-to-date: SPY **-0.97%** from Friday's $770.18 vs the account **+0.35%** — **+1.32 pts** to the book this week.
+
+| Ticker | Shares | Entry | Mark (live RTH) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.205 | 19.77% | **+$494.90 (+2.60%)** | $59.1065 | 9.35% | **$59.3235 (10%, hwm $65.915)** | 9.02% | $73.09 |
+
+- **The trail ratcheted twice today, both times by Alpaca's own mechanism.** Order `ef0c1da0` now reads `stop_price` **$59.3235**, `hwm` **$65.915**, `updated_at` **2026-09-09T13:39:12Z**. Start of day it was $58.968 / $65.52 / 2026-09-03T15:19Z; the market-open run caught the first move to $59.202 / $65.78 at 13:33:13Z. **Net for the session: the floor is up $0.3555 and has never moved down.** Rule 4 intact, rule 7 intact. Not a hand adjustment — no order was placed or replaced by this run.
+- **Mark is order-grade (rule 13).** XLE `latestQuote` **$65.20 / $65.21** stamped 17:08:05Z, a one-cent two-sided spread, last trade **$65.205** at 17:08:04Z. Live, two-sided, current. Alpaca's position `current_price` agrees exactly. No disputed print today.
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+2.60%**; the $59.1065 cut line sits **9.35%** below the mark.
+- **Tighten to 7% at +15%:** not triggered (needs ≈ **$73.09**; position is +2.60%). The trail is doing this work on its own — twice today.
+- **Never within 3% of price:** trail is **9.02%** below the mark. Nowhere near. **Never moved down:** confirmed, it moved up twice.
+- **Positions 1 of 6. Weight 19.77% of the 20% cap.** **Weekly slots 0/3** (Sep 7-11). PDT room untouched (zero day trades).
+- **No options. Never.**
+
+### Rule 14 check — eighth consecutive empty
+- **Wire-restricted query returns "No wire report found."** No Reuters/AP/Bloomberg/AFP report or official statement **dated Sep 7, 8 or 9, 2026** of a ceasefire, truce, strike pause, negotiations, peace deal or Hormuz reopening agreement. **Eighth straight empty check.**
+- **One citation chased down rather than waved off.** The query surfaced a Reuters URL slug dated **2026-09-02** reading *"us-iran-exchange-attacks-lull-war-appears-over"* — a headline that, read off the slug alone, would look like exit trigger (a). **It is not.** The report's actual content: the US and Iran exchanged **their biggest barrage since July**, the US striking Iran's southern coast and Iran firing at US bases across the region — Reuters framing it as renewed escalation. The slug misreads the story. It is also **a week old and superseded** by the Sep 6/7/8 wires below. Fifth circulating Hormuz-adjacent item in eight sessions; three died on date, one on its own text, this one on both.
+- **The dated wire record, re-confirmed this midday.** Reuters **Sep 8**: *"Hormuz traffic slows after Iran threatens retaliation for US attacks."* Reuters **Sep 7**: *"Iran says [it will] announce new restricted zone [in the] Gulf [in] coming days"* — an escalation, not a reopening. Reuters **Sep 6**: transits at their **lowest since May**. Perplexity additionally attributes the Sep 8 six-week high in crude to **Houthi attacks on Saudi energy facilities**; *this run's earlier logs attributed the same six-week high to Iran's vow to strike energy infrastructure. Both are escalation, but the attribution differs — recorded as reported, not smoothed, and not relied on.*
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **10/day vs ~40, a quarter of the level and falling (15 → 13 → 10).** **Exit trigger (b)** — the $59.1065 cut line — **9.35% away.** Neither firing.
+- **XLE thesis: intact, nineteenth consecutive confirmation.**
+
+### The intraday fade — researched, and it is not a thesis break
+- **What faded:** XLE opened $65.53, high $65.915, now **$65.205** — giving back 1.08% off the high but still **+0.67%** on the day. XOP opened $196.18, high $196.305, now **$193.97** — a complete round-trip to **+0.04%**. Energy gave back most of a strong open.
+- **Crude did not fade with it.** WTI **$95.83** (08:59 ET Sep 9) and **$95.06** (10:00 UTC); Brent **$100.38** (07:02 ET). All still elevated and above yesterday. *Every one of these stamps is hours stale at a 13:10 ET read — the levels are directional, not order-grade, and nothing is sized off them.*
+- **Perplexity could source no dated Sep 9 catalyst for the reversal** and said so; its read is that the open's move simply was not sustained by fresh news. **Recorded as unexplained rather than given a story.** An equity-side unwind on no news, with the supply catalyst and crude both intact, is not a thesis break — and it is exactly the profit-taking the trail exists to absorb. **No exit trigger fires on a fade.**
+- **21d momentum, first-party SIP bars through this print:** **GDX +10.79%**, **XOP +10.28%**, **XLE +8.33%**, OIH +4.31%, XLK +0.94%, GLD +0.66%, **SPY -1.35%**. Energy's lead narrowed on today's fade and **GDX has taken the top slot** for the first time in this stretch. SPY is still the only negative on the board.
+
+### Trade ideas — unchanged in substance
+1. **XOP — passes the entry checklist a fifth session, BLOCKED on the unanswered owner authorization.** Round-tripped today to $193.97, a hair above its $193.895 close. Still #2 on 21d momentum. **The block, not the analysis, is again what kept the account in cash — fifth consecutive session.** An autonomous run does not grant itself the permission it escalated. Not placed.
+2. **GDX — rejected on leg 1, eighth consecutive check.** Leg 1 needs a *fresh, dated two-session gold advance*. GLD closes: $406.77 (9/4) → $399.72 (9/8, **-1.73%**) → **$405.19 intraday today**. That is **one** up session in progress against a down close before it — a bounce, not a two-session advance, and today has not closed. Leg 1 fails. Noted that GDX now leads the board on 21d momentum (+10.79%) and is the closest it has come; **the momentum leg is not the leg that is failing.** Re-check tomorrow.
+3. **Tech / XLK — rejected, no catalyst.** 21d +0.94%. Sector carries 1 failed trade (NVDA, -7.25%). Entering two days ahead of CPI is a coin flip with a rule 8 slot spent on it. Pass, unchanged.
+
+### Risk factors into the close
+- **XLE remains 100% of the book's directional risk, and the risk is geopolitical.** The trail is **9.02%** below the mark — that covers a slide, not an overnight de-escalation gap. Today's fade on no news is a reminder the position gives back as fast as it gains.
+- **EIA crude inventories Thursday 9/10** — a large build cuts against the scarcity narrative. No consensus sourced.
+- **CPI Friday 9/11, 08:30 ET** — the week's binary and the last inflation print before the Sep 15-16 FOMC.
+
+### Owner decisions — carried, unchanged, eighteenth session
+1. **Move the 75-85% deployment target, or move the entry bar.** **19.77% deployed, $54,649.23 short of the floor**, week 0/3. Twenty-eighth-plus session in breach of rule 2 — the account's only standing rule violation, structural rather than a lapse. Options as put on 9/4: (a) lower the mandate, (b) relax the entry bar (most plausibly the 2:1 R:R leg), or (c) authorize a benchmark-tracking core. *Cash is still helping — SPY -0.97% this week against the book's +0.35% — but that is luck, not design, and it does not resolve the breach.*
+2. **Authorize or forbid the second energy leg (~39% concentration).** Fifth consecutive session the block is the binding constraint.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes.** Every risk rule checked and clean. The session's substantive events were both mechanical and both favourable: **the trail ratcheted twice**, lifting the floor $0.3555 to **$59.3235** on a $65.915 high, and then **energy faded on no dated news** — XLE holding **+0.67%** on the day, XOP round-tripping to flat. XLE **+2.60%** unrealized, cut line **9.35%** away, trail **9.02%** below the mark and never moved down. Thesis re-confirmed a **nineteenth** time: Hormuz transits **10/day and falling**, Iran announcing a **new Gulf restricted zone** (Reuters 9/7), traffic slowing further (Reuters 9/8), and **no wire de-escalation dated Sep 7-9** — eighth empty check, with the one alarming-looking slug chased to its text and found to report escalation. XOP passes and stays blocked; GDX fails leg 1 an eighth time while leading the board on momentum. Week **0/3** slots. Deployment **19.77%**. Day **+0.13%** vs SPY **-0.44%**; week-to-date **+0.35%** vs SPY **-0.97%**. Next window: **daily summary after the 16:00 ET close**. **CPI Friday 9/11 08:30 ET remains the week's event.**
