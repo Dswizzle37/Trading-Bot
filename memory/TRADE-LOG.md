@@ -181,3 +181,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $65.31 | +0.83% | +$526.40 (+2.76%) | $59.3235 (10% trail, hwm $65.915) |
 
 **Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL&after=2026-09-04` returns `[]` on the 9/10 pre-market check. XLE opened $65.53, ran to $65.915, faded to $65.035 and closed $65.31 (+0.83%). The trail ratcheted **twice** during the session (both by Alpaca's own mechanism, both recorded live by that day's market-open and midday runs): $58.968/hwm $65.52 → $59.202/hwm $65.78 at 13:33:13Z → **$59.3235/hwm $65.915** at 13:39:12Z. Net for the session the floor rose **$0.3555** and never moved down; `updated_at` still reads 2026-09-09T13:39:12Z. Deployment 19.80% ($19,593.00 of $98,979.14); cut line $59.1065, 9.51% below the close. Trades this week (9/7-9/11): 0/3. **Row reconstructed by the 9/10 pre-market run** — the 9/9 daily-summary run never logged it, the account's **sixth persistence gap** (Day 1 GitHub 403, 8/24 uncommitted memory, 9/2-9/3 unlogged, 9/4 unlogged, 9/8 unlogged). Sourced from Alpaca `last_equity` $98,979.14 (`balance_asof` 2026-09-09) and the SIP daily bar (XLE close $65.31); cash + position MV ties to equity exactly ($79,386.14 + $19,593.00 = $98,979.14). Nothing inferred.
+
+### Sep 10 — EOD Snapshot (Day 19, Thursday)
+**Portfolio:** $98,844.14 | **Cash:** $79,386.14 (80.32%) | **Day P&L:** -$135.00 (-0.14%) | **Phase P&L:** -$1,155.86 (-1.16%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.86 | -0.69% | +$391.40 (+2.05%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL` shows nothing after the 8/31 XLV exit. XLE opened above Wednesday's $65.31 close, printed a fresh high (trail's hwm ratcheted to $66.17, implying an intraday print at/above that level) and closed $64.86, -0.69% on the day. The trail self-ratcheted from $59.3235/hwm $65.915 to **$59.553/hwm $66.17** (Alpaca's own mechanism; `updated_at` 2026-09-10T13:30:02Z), never moved down. Deployment 19.68% ($19,458.00 of $98,844.14); cut line $59.1065, 8.19% below the close, stop untouched and >3% from price. Trades this week (9/7-9/11): 0/3. Day P&L measured against Alpaca's official `last_equity` $98,979.14 (`balance_asof` 2026-09-09); cash + position MV ties to equity exactly ($79,386.14 + $19,458.00 = $98,844.14).
