@@ -2174,3 +2174,88 @@ XOP retook the top slot from GDX. SPY remains the only negative on the board.
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes.** Every risk rule checked and clean: XLE **+2.89%** unrealized, cut line **9.61%** away, trail live at **$59.553**, **8.93%** below the mark, never moved down, **ratcheted up $0.2295 at the open** by Alpaca's own mechanism (hwm $65.915 → $66.17, 13:30:02Z). The session's substantive event was **PPI at +0.4% m/m vs 0.0% consensus and +5.4% y/y vs 4.7%** — hot, corroborated independently by SPY -0.53%, XLK -1.51% and GDX -3.37%, and it took XLE from a $66.41 pre-market high to $65.46 live. Rule 14 re-run on yesterday's correction: **the Hormuz deal is still unsigned three days after "days away"** — no exit trigger fires, and the gap risk stays unhedged pending owner decision 3. XOP passes and stays blocked (seventh session); GDX fails leg 1 a tenth time by its widest margin; XLK rejected. Week **0/3** slots, deployment **19.81%** (weight back under the 20% cap on its own), day **+0.02%** vs SPY **-0.53%**, week-to-date **+0.40%** vs SPY **-1.53%**. Phase **-1.00%**. Next window: **midday scan** — **EIA crude inventories ~10:30-11:00 ET** is its first job, and the PPI y/y figure is worth one re-check. **CPI tomorrow 08:30 ET is now the week's binary with a hot PPI behind it.**
+
+## 2026-09-10 — Midday Scan (13:10 ET, Thursday, Day 19)
+
+**No trades. No orders submitted, no stop touched by hand, no rule triggered. HOLD.** The session's two flagged jobs came back in opposite states. **The PPI "hot print" is now disputed and this run does not carry it forward as settled:** a wire-restricted re-query returns the *consensus* as **+0.4% m/m / +5.4% y/y — identical to the actuals**, where this morning's runs recorded consensus **0.0% / 4.7%**. The actuals are confirmed and unchanged; the **surprise** behind the morning's framing is unverified, and the tape half-agrees — the hawkish move partially unwound through midday. **The EIA report is UNSOURCED after three attempts** and is recorded as absent, not skipped. XLE round-tripped a **$1.83 range** ($66.17 high → **$64.34** low at 10:25 ET → $65.155 now) and is **-0.24%** on the day, still ahead of SPY **-0.45%**.
+
+### Session / account state (live, 17:07Z / 13:07 ET — market open)
+- `/v2/clock` 13:07:04 ET: **`is_open:true`**, `next_close` 2026-09-10T16:00-04:00.
+- `/v2/account/activities` — most recent FILL is **XLV 8/31**. **Zero fills since Friday 9/4**, now four sessions. 1 position, 1 open order. Account `ACTIVE`, `trading_blocked:false`.
+- Equity **$98,935.67**; `last_equity` $98,979.14 (`balance_asof` 2026-09-09) → **day P&L -$43.47 (-0.04%)**. Phase-to-date **-$1,064.33 (-1.06%)**.
+- Cash $79,386.14 (80.24%) | Position MV $19,546.50 → **19.76% deployed**. Gap to the 75% floor: **$54,655.25**.
+- **Benchmark, same window:** SPY **$759.005** vs its $762.425 close → **-0.45%** against the book's -0.04%. Week-to-date: SPY **-1.45%** from Friday's $770.19 vs the account **+0.34%** — **+1.79 pts** to the book this week.
+
+| Ticker | Shares | Entry | Mark (live RTH) | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.155 | 19.76% | **+$479.90 (+2.52%)** | $59.1065 | 9.28% | **$59.553 (10%, hwm $66.17)** | 8.60% | $73.09 |
+
+- **Rule 13 — the mark is order-grade.** SIP `latestQuote` **65.14 / 65.15** stamped 17:07:22Z, a **one-cent two-sided spread**; last trade **$65.155** on **610 shares** at 17:07:16Z. Live, two-sided, real size. Position `current_price` agrees exactly.
+- **The trail has not moved since the open.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `updated_at` **2026-09-10T13:30:02.170843Z** — the same ratchet the market-open run recorded, no further move. Correct: nothing traded above $66.17 after the opening five minutes. Floor has only ever moved up.
+- **The market-open run's hwm discrepancy is RESOLVED — it was not a discrepancy.** That run flagged Alpaca's $66.17 hwm as matching neither the SIP `dailyBar` high ($66.13) nor the pre-market minute high ($66.41), and guessed at an excluded auction print. The **SIP 5-minute tape now carries the RTH bars it could not yet see**: the 13:30Z bar reads `o=66.14 h=66.17 l=65.44 c=65.60` on 1,917,068 shares. **The $66.17 hwm is an ordinary print on the consolidated tape, exact to the cent.** The outlier is the `dailyBar` aggregate at $66.13, not the stop. No hand edit, nothing to correct.
+
+### The PPI re-check — the run's substantive finding
+The market-open run wrote that PPI was *"hot, and the headline miss is large,"* and explicitly asked midday to re-check the y/y figure. It was re-checked, restricted to BLS/Reuters/Bloomberg/AP, and the result changes the reading:
+
+| Measure | Actual (both runs agree) | Consensus per pre-market | Consensus per this re-query |
+|---|---|---|---|
+| Headline m/m | **+0.4%** | 0.0% | **+0.4%** |
+| Headline y/y | **+5.4%** | 4.7% | **+5.4%** |
+| Core m/m | +0.2% *(disputed: this query says +0.3%)* | +0.2% | +0.3% |
+| Core y/y | not sourced this morning | 4.2% | +4.7% |
+
+- **The actuals are not in question.** +0.4% m/m and +5.4% y/y are carried by both queries and by three outlets this morning. **What is in question is the surprise** — and the surprise is the entire basis for calling the print hawkish.
+- **This run does not adopt the new consensus either.** A consensus table that equals the actual on **every single line** is the classic shape of a model reading the release back as its own forecast. It is evidence that the 0.0%/4.7% figures are unreliable, **not** evidence that +0.4%/+5.4% were the true consensus. Core m/m is disputed between the two queries as well (+0.2% vs +0.3%), which is a second reason to distrust both tables.
+- **Honest status: the PPI actuals stand; the magnitude of the surprise is UNVERIFIED.** The morning's "large upside miss" framing is withdrawn pending a figure this account can actually source. Recorded rather than smoothed, because the framing drove today's whole market-open narrative.
+- **The tape partially corroborates the softer reading.** Everything the market-open run cited as confirming a hawkish repricing has recovered part of the move since: **GDX -3.37% → -2.42%**, **XLK -1.51% → -1.04%**, **SPY -0.53% → -0.45%**. A genuine hot-PPI repricing into a FOMC does not typically hand back a third of itself by lunchtime. This is corroboration of a softer read, not proof of one.
+- **It changes no rule and no position.** Logged because tomorrow's CPI is the week's binary and the market-open entry set it up as *"a hot PPI behind it"* — that premise is now weaker than it was written.
+
+### EIA crude inventories — UNSOURCED, three attempts, recorded as absent
+- This was the midday run's stated first job. **Three separate wire/official-restricted queries could not source an actual figure**, and the third returned the literal `UNSOURCED` it was instructed to return if nothing dated existed.
+- **The one dated fact recovered:** the release was **shifted to Thursday 2026-09-10 at noon ET** by the Labor Day week, not the usual Wednesday 10:30 ET. **This matters** — it means the 10:25 ET low and the reversal that followed came *before* the report, and cannot be attributed to it, as one query tried to.
+- One query volunteered that the report *"showed a build, not a draw"* while citing only a **release-timing note** carrying no number. **Rejected as unsupported.** An undated aggregator ("3.8 mb build") and an API figure ("-300k barrels") appeared in citation lists; neither is a dated wire and neither is logged as fact.
+- Consensus, best available and weak: **-0.391 mb** for the Sep 4 reference week (Investing.com, release date Sep 10). Not wire copy.
+- **No rule depends on this figure.** It is flagged for the daily-summary run to retry after the close.
+
+### Intraday tape — XLE round-tripped $1.83 and recovered most of it
+- **Path:** opened $66.115, high **$66.17** in the first five minutes, then thirteen consecutive five-minute bars lower into a **$64.34** low at **14:25Z (10:25 ET)** — **-1.48%** on the day at the trough — then a steady, unbroken recovery to **$65.155**, **+1.27% off the low**.
+- **The low was never near anything.** At $64.34 the trail sat **7.4%** below and the $59.1065 cut line **8.1%** below. No rule came within reach at any point in the session.
+- **Crude is the most plausible driver and it is dated:** WTI **$97.57** (+$1.52, **+1.58%**) and Brent **$102.30** (+$1.09, **+1.08%**) at **10:51 ET**, per Barron's market data — **above** this morning's pre-market $95.74 / $100.88 and Brent further through $100. The recovery in energy equities tracks crude firming, not the inventory report, which had not yet been published.
+- **Energy still leads and the lead widened back out since the open:** XLE **-0.24%** and XOP **+0.97%** (up from +0.63% at the open) against SPY **-0.45%**. **Ninth consecutive session** of the equities-soft / crude-firm split.
+- Gold: GLD **-0.86%**, GDX **-2.42%** — still a second down session, but well off the morning's lows.
+
+### Rule 14 check — Hormuz, re-run at midday, unchanged
+- **Wire-restricted, Sep 8-10 window: NO WIRE ITEM IN WINDOW.** The deal is **not signed, not formally announced, not in force**. The most recent items remain the two Bloomberg **Sep 7** pieces ("final stages," "imminent"), Reuters **Aug 26** (Iran/Oman agreed shares and revenues), Reuters **Aug 8** ("close" but not enough to reopen the waterway). Four days on from "days away," nothing signed.
+- **A fresher transit figure surfaced than the log has been carrying.** Reuters **Sep 4**: **four** commodity vessels transited that day, down from nine the day before, against a **10-day average of about 15/day**. The log has been carrying "10-day moving average 10/day as of Sep 6" (Reuters Sep 7). **Both are recorded; they disagree on the average and agree completely on the direction and the order of magnitude.** Either way the figure is **10-15/day against an exit trigger at ~40/day**.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met, not close.** **Exit trigger (b)** — the $59.1065 cut line — **9.28% away.** **No exit rule fires.**
+- The correction's substance is unchanged and still unhedged: the thesis has a named counterparty, a mechanism and a public timeline, and **no written trigger would catch a signing before it gapped the position.** Proposed trigger (c) remains the owner's call — decision 3.
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+2.52%**; cut line **9.28%** below the mark. Also verified against the session low ($64.34): **8.1%** clear even there.
+- **Tighten to 7% at +15%:** not triggered (needs ≈ **$73.09**; position is +2.52%).
+- **Never within 3% of price:** trail is **8.60%** below the mark. **Never moved down:** confirmed — `updated_at` 13:30:02Z today, and that move was **up** $0.2295.
+- **Thesis check (STEP 5):** intact. The disruption is unresolved on the wires, crude is firmer than it was pre-market, and energy outperformed a down tape for a ninth session. Nothing broke intraday.
+- **Positions 1 of 6. Weight 19.76%** — under the 20% cap, and further under it than at the open, by the fade rather than by an order.
+- **Weekly slots 0/3** (Sep 7-11). PDT room untouched (zero day trades).
+- **No options. Never.**
+
+### Trade ideas — re-checked live, nothing bought
+1. **XOP — passes, BLOCKED on the unanswered owner authorization, eighth session.** *Tape:* **$196.925 live**, +0.97%, recovered from a $192.66 session low. *Levels (live, order-grade):* 10% trail ≈ **$177.23**, 2:1 target ≈ **$235**. **Not placed.** The 9/4 weekly review pre-committed in writing that the second energy leg *"stays forbidden until answered,"* and **an autonomous run does not grant itself the permission it escalated** — least of all on a scheduled run with no live owner input. The two standing reasons to forbid are unchanged: ~39% of the book on one negotiable thesis, and buying energy the session before CPI.
+2. **GDX — rejected on leg 1, eleventh consecutive check.** Leg 1 needs a fresh, dated **two-session** gold advance. GLD is **-0.86%** today after **+0.92%** yesterday — the second session is down. Fails, though by less than at the open.
+3. **Tech / XLK — rejected, no catalyst.** **-1.04%** today. Sector carries 1 failed trade (NVDA, -7.25%). Entering the day before CPI spends a rule 8 slot on a binary. Pass.
+4. **No fourth idea. Deployment stays at 19.76% because nothing passes the checklist.**
+
+### Risk factors
+- **A signed Iran-Oman Hormuz deal remains the position's primary named risk**, unsigned four days past "days away," with the account holding **100% of its directional risk** in the trade that unwinds on it. The trail at $59.553 covers a slide, not a gap.
+- **Tomorrow's CPI (08:30 ET) is the week's binary** — but the "hot PPI behind it" framing is **weaker than this morning wrote**, per the re-check above. The risk is a hot CPI, not a confirmed hawkish trend.
+- **Brent through $102 is itself a risk to the position** — the further crude runs on disruption, the more violently energy equities unwind if the disruption ends.
+- **Today's $1.83 XLE round-trip is a live preview of the gap risk**, at a magnitude the trail absorbs comfortably. A signing headline would not be that magnitude.
+- **The EIA figure is unknown, not benign.** A large build published at noon ET that this run could not source may still be working through crude.
+
+### Owner decisions — carried, twenty-first session
+1. **Move the 75-85% deployment target, or move the entry bar.** **19.76% deployed, $54,655.25 short of the floor**, week 0/3. **Thirtieth-plus session in breach of rule 2** — the account's only standing rule violation, structural rather than a lapse. Options as put on 9/4: (a) lower the mandate, (b) relax the entry bar (most plausibly the 2:1 R:R leg), or (c) authorize a benchmark-tracking core. *Cash is still helping — SPY -1.45% this week against the book's +0.34% — and that remains luck rather than design.*
+2. **Authorize or forbid the second energy leg (~39% concentration).** Eighth consecutive session the block is the binding constraint. **Recommendation unchanged: FORBID.** An answer is still owed either way.
+3. **The thesis needs a headline-based exit trigger, not just a data one.** Exit trigger (a) counts transits/day, which **lags** — transits normalise *after* a deal. **Proposed trigger (c): a Reuters/AP/Bloomberg/AFP wire or official statement, dated, reporting the Iran-Oman Hormuz arrangement as signed, announced or in force → close XLE at the next open, regardless of P&L.** Not self-adopted — a strategy change is the owner's call. **Third session carried.** Flagged for tomorrow's weekly review if not answered sooner.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes.** Every risk rule checked and clean: XLE **+2.52%** unrealized, cut line **9.28%** away (**8.1%** even at the session low), trail live at **$59.553**, **8.60%** below the mark, unmoved since the open ratchet and never moved down. Equity **$98,935.67**, day **-0.04%** vs SPY **-0.45%**, week-to-date **+0.34%** vs SPY **-1.45%** (**+1.79 pts**), phase **-1.06%**. Week **0/3** slots, deployment **19.76%**, 1 of 6 positions. **The run's substantive finding is that this morning's "hot PPI" framing does not survive a re-check** — the actuals hold, the surprise does not, and the tape has handed back a third of the hawkish move; the honest status is *unverified*, not *refuted*, and it is withdrawn rather than carried into tomorrow's CPI setup. **The EIA report is UNSOURCED after three attempts** and cannot have driven the 10:25 ET reversal, since it published at noon ET — crude firming to WTI $97.57 / Brent $102.30 (Barron's, 10:51 ET) is the dated explanation. **Rule 14 re-run: Hormuz still unsigned, transits 10-15/day against a ~40/day trigger.** The market-open run's flagged hwm discrepancy is **resolved and was never a discrepancy** — $66.17 is an exact print on the SIP 5-minute tape. Next window: **daily summary after the close** — retry the EIA figure there. **CPI tomorrow 08:30 ET.**
