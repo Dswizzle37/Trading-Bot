@@ -2412,3 +2412,54 @@ The 9/11 pre-market gave the "XLE has stopped responding to crude" hypothesis **
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes. Week final: 0/3 slots used.** Every risk rule checked against an order-grade mark and every one clean: XLE **+$434.90 (+2.28%)** at **$65.00**, cut line **9.98%** below, trail live at **$59.553** — **8.39%** below the mark, never moved down, no ratchet today because the $65.26 high never reached the $66.17 hwm. Equity **$98,886.14**, day **+0.02%**, phase **-1.11%**. Deployment **19.72%**, 1 of 6 positions, **six sessions with zero fills**. **CPI actuals sourced: headline 0.4% m/m / 3.4% y/y in line, core 0.3% m/m HOT vs 0.2%, core y/y 2.4% cooled** — and the pre-market's refusal to infer "in line" from price is vindicated. **Rule 14 re-run: no wire in window, deal unsigned six days past "days away," transits down to 7/day — exit trigger (a) further away than ever, trigger (b) 9.98% off. No exit fires.** **The divergence hypothesis did not confirm and is not withdrawn:** today tested it in reverse (crude down, XLE +0.11% vs SPY +1.04%) and the refined finding is that the rates channel **caps the position in both directions**. Three candidates all had live order-grade quotes and all three failed on **catalyst**, not price. Next window: **midday scan**, then the **weekly review** — where three owner decisions, unanswered for twenty-three sessions, and the two-sided-cap finding both land.
+
+## 2026-09-11 — Midday Scan (13:07 ET, Friday, Day 20)
+
+**HOLD. No trades, no orders, no hand-set stop changes.** Every risk rule checked against an order-grade RTH mark and every one clean; **zero fills — seventh consecutive session.** Two things worth recording. **(1) Crude went back up and XLE still did not get paid.** WTI is back to **~$103.45** and Brent **~$108.68** midday — *above* Thursday's $102.48 settle, i.e. crude has made back the morning's pullback and then some — and XLE is **+0.28%** while SPY is **+1.03%**. That is a third state for the two-sided-cap finding, and it is the unfavourable one: crude up, XLE lagging the index anyway. **(2) XLE printed $65.72 (+1.20%) intraday and gave back three-quarters of it** — a higher high than any level the market-open run had, still **$0.45 short** of the $66.17 hwm, so the trail correctly did not ratchet.
+
+### Session / account state (live, 17:07Z / 13:07 ET — RTH, order-grade)
+- `/v2/clock` 13:06:48 ET: **`is_open:true`**, `next_close` 2026-09-11T16:00-04:00. ~2h53m left in the session.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-09` → **`[]`**. **Zero fills since Friday 9/4 — seven sessions.** 1 position, 1 open order. Account `ACTIVE`, `trading_blocked:false`, zero day trades (full PDT room).
+- Equity **$98,922.14**; `last_equity` **$98,865.14** (`balance_asof` 2026-09-10) → **day P&L +$57.00 (+0.06%)**. Phase-to-date **-$1,077.86 (-1.08%)** — the phase's best reading since 9/10 pre-market.
+- Cash $79,386.14 (80.25%) | Position MV $19,536.00 → **19.75% deployed**. Gap to the 75% floor: **$54,655.60**.
+- **Benchmark:** SPY **765.64 / 765.67** at 17:07:06Z (two-sided, live, RTH) vs its **$757.87** close → **+1.03%**. Week-to-date: SPY **-0.58%** (from $770.19) vs the account **+0.32%** (from the official 9/4 base $98,604.14) → **+0.91 pts to the book**.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.12 | 19.75% | **+$469.40 (+2.46%)** | $59.1065 | 9.24% | **$59.553 (10%, hwm $66.17)** | 8.55% | $73.09 |
+
+- **Rule 13 — satisfied.** XLE quotes **65.12 / 65.13** at 17:07:06Z — a **one-cent** two-sided RTH spread, 600×5,800, last trade **$65.125** on 443 sh at 17:07:00Z. Order-grade. Nothing was sized off it because nothing was ordered.
+- **XLE session so far:** open **$64.915**, high **$65.72**, low **$64.72**, last **$65.12** on 1.79M shares (SIP daily bar, 17:07Z). The high is **+1.20%** on the day and came *after* the market-open run's read; the position has since given back three-quarters of it. Best unrealized mark of the phase (**+2.46%**, beating the open's +2.28%).
+- **The trail has NOT ratcheted today, and correctly so.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for a second session. Today's $65.72 high is **$0.45 below** the hwm, so Alpaca's mechanism had nothing to do. Floor has only ever moved up. Rule 4 intact, rule 7 intact.
+- `qty_available: 0` on the position is the trailing stop holding all 300 shares — expected, not a restriction.
+
+### The divergence — a third state, and it is the unfavourable one
+The market-open run framed the finding as a **two-sided rates cap**: XLE marked down when crude rallies on the disruption in its own thesis (Thu), left behind when crude cools (Fri open). Midday supplies the state that framing did not have — **crude back up, XLE still lagging the index.**
+
+| Session / time | Crude | XLE | SPY | Reading |
+|---|---|---|---|---|
+| Thu 9/10 | WTI **$102.48** (+6.69%) | **-0.58%** | -0.60% | no capture on crude's best day |
+| Fri 9/11 09:38 | Brent ~$106 (off $109.97 high) | +0.11% | **+1.04%** | held on a crude-down morning |
+| **Fri 9/11 13:07** | **WTI ~$103.45 / Brent ~$108.68** — *above* Thu's settle | **+0.28%** | **+1.03%** | **crude recovers, XLE still −0.75 pts vs SPY** |
+
+- **What this adds:** the open's charitable reading was that XLE was merely "not joining a relief rally." Midday removes that excuse — crude retraced its morning dip and went through Thursday's settle, and the position picked up **17 bps** while the index held **+1.03%**. Three sessions, three crude states (big up, down, recovery), and the position has captured essentially none of them.
+- **Sourcing caveat, deliberate:** the midday crude levels come from a **secondary report, not a wire**. Rule 14's wire bar governs headlines that would *fire an exit*, which this is not — but the levels are recorded as secondary-sourced and are not load-bearing for any decision here.
+- **Still not an exit signal, and still not self-escalated.** No rule references beta-to-crude or participation rate. n=3. This goes to **thesis quality** and lands in the weekly review **this afternoon**, alongside owner decisions 2 and 3.
+- **Counter-case, recorded:** XLE is green on the day, at the **best unrealized mark of the phase**, still the #1 YTD sector (+45.22%), and it printed +1.20% intraday before fading — the bid exists, it just doesn't hold.
+
+### Rule 14 check — Hormuz, re-run at midday, unchanged
+- **Wire-restricted, dated: NO WIRE ITEM REPORTING THE DEAL AS SIGNED.** Perplexity returned Reuters **Aug 26** ("still working on the details," "has not been finalised") as the latest item speaking to status — **six days** past Bloomberg's Sep 7 "days away," and the Aug 26 wire is *older* than that claim, which is itself the tell.
+- **Reuters Sep 10 — transits at 7/day**, down from 12, against a 10-day average of 14. Re-confirmed at midday, same figures as the open.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met, not close** (7/day). **Exit trigger (b)** — the $59.1065 cut line — **9.24% away**. **No exit rule fires.**
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+2.46%**; cut line **9.24%** below the mark. No position anywhere near it.
+- **Tighten to 7% at +15%:** not triggered (needs ≈ **$73.09**, position is at $65.12). **Tighten to 5% at +20%:** not triggered.
+- **Never within 3% of price:** trail **8.55%** below. **Never moved down:** confirmed, `updated_at` 2026-09-10T13:30:02Z, unchanged today.
+- **Thesis check (STEP 5):** wires intact (disruption unresolved, transits deepening), tape **impaired** — third session of non-capture, now including a crude-up state. Split verdict again, escalated to the weekly review, not to an exit.
+- **Positions 1 of 6. Weight 19.75%** — under the 20% cap. **Weekly slots 0/3** (Sep 7-11, final unless something trades this afternoon). PDT room untouched.
+- **Rule 2 breach continues: 19.75% deployed, $54,655.60 short of the 75% floor** — thirty-first-plus session, the account's only standing rule violation.
+- **No options. Never.**
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$469.40 (+2.46%)** at **$65.12**, the best mark of the phase; cut line **9.24%** below, trail live at **$59.553**, **8.55%** below the mark, never moved down, no ratchet because today's $65.72 high fell $0.45 short of the $66.17 hwm. Equity **$98,922.14**, day **+0.06%**, phase **-1.08%**, week **+0.32%** vs SPY **-0.58%**. Deployment **19.75%**, 1 of 6 positions, **seven sessions with zero fills**. **Rule 14 re-run: no wire has the deal signed, latest status wire is Reuters Aug 26 "not finalised," transits 7/day — neither exit trigger fires.** **The divergence got a third state and it is the unfavourable one:** crude recovered above Thursday's settle and XLE still lags SPY by 0.75 pts on the day. Next window: **weekly review this afternoon**, where the two-sided-cap finding and three owner decisions unanswered for twenty-three sessions both land.
