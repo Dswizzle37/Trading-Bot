@@ -2606,3 +2606,74 @@ Wire-restricted query, re-run because the position's entire gap risk is one head
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$715.40 (+3.75%)** at **$65.94**; cut line **10.36%** below, trail live at **$59.553**, **9.69%** below the mark, never moved down, and **correctly un-ratcheted — the RTH high $66.025 fell $0.145 short of the $66.17 hwm**, closing out the pre-market's first handoff. Equity **$99,166.64**, day **+0.24%** vs **SPY -0.73%** (**+0.97 pts**), phase **-0.83%**. Deployment **19.95%**, 1 of 6 positions, **nine sessions with zero fills**, week **0/3**. **Rule 14 re-run: NONE — Reuters 9/12 says no signed deal is expected from today's Oman meeting and the Iran-Oman understanding explicitly excludes immediate reopening. Neither exit trigger fires.** **The session's new facts: (i) the weekend crude gap is now wire-attributed to new strikes on Saudi energy infrastructure (Reuters 9/13), so the thesis fired and is being paid in the same session for the first time in four tests; (ii) the Oman meeting is TODAY, which makes owner decision 3 operational rather than theoretical.** All three pre-market candidates fail STEP 3 — two blocked on owner decision 2 (12th session), one on the catalyst leg — and **FOMC Wednesday carries a ~85% hike**. Next window: **midday scan** — first job is the trail ratchet ($0.145 to the hwm), second is the rule-14 wire re-check on the Oman meeting.
+
+## 2026-09-14 — Midday Scan (13:07 ET, Monday, Day 21)
+
+**HOLD. No trades, no orders, no hand-set stop changes. Nothing to cut, nothing to tighten.** Both handoffs from the market-open run are answered, and one of them **reverses the day's headline finding.** **(1) The trail did not ratchet — the RTH high $66.03 fell $0.14 short of the $66.17 hwm**, so Alpaca's mechanism had nothing to do for a third session. **(2) The rule-14 wire re-check turned up the day's material fact, and the market-open run had it wrong: the Oman meeting did not happen. Reuters 9/13 — "Oman meeting between Gulf states and Iran postponed, Omani foreign minister says."** Diplomacy went backwards over the weekend, not forwards. **(3) And the fourth state of the divergence — the first favourable one, declared twice this morning — evaporated inside four hours. Crude is up 3-4% on the session on fresh strikes and a closed Saudi pipeline, and XLE is DOWN 0.71% while SPY recovered to -0.18%.** That is the **fifth** observation of non-capture and the first to reverse a favourable state intraday.
+
+### Session / account state (live, 17:07Z / 13:07 ET — RTH, order-grade)
+- `/v2/clock` 13:06:44 ET: **`is_open:true`**, `next_close` 2026-09-14T16:00-04:00. ~2h53m left in the session.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-11` → **`[]`**. **Zero fills since Friday 9/4 — nine sessions.** 1 position, 1 open order. Account `ACTIVE`, `trading_blocked:false`, zero day trades (full PDT room).
+- Equity **$98,787.14**; `last_equity` **$98,928.14** (`balance_asof` 2026-09-11) → **day P&L -$141.00 (-0.14%)**. Phase-to-date **-$1,212.86 (-1.21%)** — this morning's **-0.79%**, the account's best-ever reading, is given back and then some.
+- Cash $79,386.14 (80.36%) | Position MV $19,402.50 → **19.64% deployed**. Gap to the 75% floor: **$54,687.86**.
+- **Benchmark:** SPY **762.67 / 762.72** at 17:07:00Z (360×360, two-sided, live) vs its **$764.14** SIP close → **-0.18%**. Book **-0.14%** → **+0.04 pts on the day** — the +0.97 pts the market-open run carried is essentially gone.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.675 | 19.64% | **+$335.90 (+1.76%)** | $59.1065 | 8.61% | **$59.553 (10%, hwm $66.17)** | 7.92% | $73.09 |
+
+- **Rule 13 — satisfied, nothing sized off anything.** XLE quotes **64.66 / 64.67** at 17:06:59Z — a **one-cent** two-sided RTH spread, 6,800×600, last trade **$64.67** on 100 sh at 17:06:48Z. Order-grade. Every mark here is built on it.
+- **XLE session so far:** open **$65.99**, high **$66.03**, low **$64.52**, last **$64.67** on 2.65M shares, VWAP **$65.22** (SIP daily bar, 17:07Z). The position is **-$1.32 (-1.99%) off its own open** and **-$1.36 (-2.05%) off the high**, and it is trading **55c below VWAP** — the whole session has been distribution.
+- **Prior-close note:** the position's `lastday_price` reads **$65.14** while the SIP `prevDailyBar` close reads **$65.125** — 1.5c apart. Day-change figures here use Alpaca's **$65.14** (`change_today` -0.71%) to stay consistent with the position record. No decision turns on it; recorded so the series stays clean.
+- **The trail has NOT ratcheted, and that is the correct outcome — third session running.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z**, unchanged. Today's RTH high **$66.03** is **$0.14 below** the hwm — the closest approach yet, and it still did not clear. The pre-market's **$66.33** high correctly never counted (Alpaca tracks RTH only). Floor has only ever moved up, never touched by hand. **Rule 4 intact, rule 7 intact.** *This closes the market-open run's handoff: the answer is no ratchet, and after the fade the hwm is now $1.50 away.*
+- `qty_available: 0` on the position is the trailing stop reserving all 300 shares — expected, not a restriction.
+
+### Rule 14 re-run — NONE fires, and the meeting was called off
+Wire-restricted query, re-run because the position's entire gap risk is one headline. **No signed, announced or in-force Hormuz arrangement exists.** The new dated items, all newer than what the market-open run had:
+
+| Date | Wire | Says |
+|---|---|---|
+| **Sep 13** | Reuters | *"Oman meeting between Gulf states and Iran postponed, Omani foreign minister says"* — **the meeting did not take place** |
+| **Sep 13** | Reuters | *"Gulf states call off meeting with Iran, Houthis launch new attack"* |
+| **Sep 13** | Reuters | *"Diplomacy stumbles with postponement of meeting, Strait of Hormuz proposal"* |
+| **Sep 13** | Reuters | *"Oil prices jump more than 3% after new strikes on Saudi, Strait of Hormuz"* — plus the closure of a key Saudi oil pipeline |
+| Sep 12 | Reuters | *"No signed Hormuz deal expected yet from Oman meeting on Monday"* (carried from the open) |
+| Sep 12 | Reuters (Tasnim) | Iran-Oman understanding *"does not provide for the immediate reopening"* of the strait (carried from the open) |
+
+- **Correction to this morning's record.** The market-open run wrote that "the Oman meeting is happening TODAY (Monday 9/14)" and flagged it as the first scheduled event that could gap the book. **It was postponed on Sept 13, per the Omani foreign minister on Reuters — before that run wrote it.** The run had the 9/12 "no deal expected" wire but not the 9/13 postponement. The risk it flagged did not materialise today, and **it did not materialise in the de-escalation direction — the diplomacy collapsed.**
+- **Direction of travel is escalation, not resolution:** meeting called off, new strikes on Saudi energy infrastructure, a key Saudi pipeline shut, a fresh Houthi attack. **Owner decision 3's proposed trigger (c) moved further away this weekend, not closer** — the opposite of what the market-open run projected.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — latest dated count remains **7** (Reuters 9/11); no 9/12-9/14 count has been published. Not met, not close. **Exit trigger (b)** — the $59.1065 cut line — **8.61%** below the mark. **Neither exit rule fires.**
+
+### The divergence — fifth state, and the favourable one died intraday
+This morning's two runs both led with the same claim: the thesis had finally fired and was *being paid in the same session for the first time in four tests*. **Four hours later that claim is dead, and it died on a day crude went up.**
+
+| Time (9/14) | Crude | XLE | SPY | Reading |
+|---|---|---|---|---|
+| 08:39 pre-market | WTI ~$103.3 (weekend gap) | **+1.43%** | -0.81% | state 4 — first favourable |
+| 09:37 open | same | **+1.23%** | -0.73% | survived the bell, called an RTH fact |
+| **13:07 midday** | **WTI ~$103-104 / Brent ~$107-109, +3-4% on the session** | **-0.71%** | **-0.18%** | **state 5 — crude up 3-4%, XLE red, index green** |
+
+- **What this adds, and it is worse than the prior four.** The earlier non-captures were XLE *failing to join* a crude move. Today XLE **had** the move — up 1.4% pre-market, up 1.2% at the bell — and **gave back the entire thing and 0.7% more while crude held +3-4% and the index rallied off its lows.** SPY recovering from -0.81% to -0.18% rules out market-wide risk-off as the cause: the index went up 0.63 pts while the position went down 1.94 pts off its open.
+- **The bullish catalyst was intact all day.** The crude bid is sourced to fresh strikes on Saudi energy infrastructure, a closed Saudi pipeline and collapsed diplomacy (Reuters 9/13) — every one of those is the XLE thesis working. The tape sold it anyway.
+- **No sourced explanation exists, and I am not inventing one.** Perplexity offered "equity-market rotation/profit-taking after the open" — it explicitly flagged this as inference, noting the oil news flow today was bullish and that such a move "usually helps energy equities." **Recorded as speculation, not as a finding.** No wire or data release from today explains the reversal.
+- **Sourcing caveat, deliberate and unchanged from 9/11:** today's intraday crude levels are **secondary-sourced** (commodity data pages), not a wire. Rule 14's bar governs headlines that would *fire an exit*; this is not one, and no decision here is load-bearing on those levels. The Reuters 9/13 items above are wire-dated.
+- **Still not an exit signal, and still not self-escalated.** No rule in the book references beta-to-crude or participation rate, the position is **+1.76%** and **8.61%** clear of its cut line, and the trail is live. n=5. **This goes to the weekly review and to owner decision 2, not to a close.** But the n=5 reading is now unambiguous: **five observations, five non-captures, across every crude state including one the position briefly won and then surrendered.**
+- **What it does to owner decision 2:** **FORBID, stronger again.** Adding a second energy leg would double the book's exposure to the one transmission mechanism that has failed five times out of five.
+
+### Rule checks — every one a no-op, recorded for continuity
+- **Cut at -7%:** not triggered. XLE **+1.76%**; cut line **$59.1065**, **8.61%** below the mark. Nowhere near.
+- **Tighten to 7% at +15%:** not triggered (needs **$73.09**; position is at $64.675, +1.76%). **Tighten to 5% at +20%:** not triggered (needs $76.27).
+- **Never within 3% of price:** trail **7.92%** below the mark. Compliant. **Never moved down:** confirmed, `updated_at` 2026-09-10T13:30:02Z, untouched today.
+- **Thesis check (STEP 5):** **premise intact and arguably stronger** — escalation deepened over the weekend (strikes, pipeline closure, diplomacy called off), crude is up 3-4%, transits still 7/day. **Transmission impaired for a fifth session, now including an intraday surrender of a favourable state.** Split verdict again; escalated, not acted on. **Not a cut — the thesis that would have to break is "Hormuz disruption bids energy," and it has not broken; what has failed is XLE's participation, which no rule addresses.**
+- **Positions 1 of 6. Weight 19.64%** — back under the 20% cap on price alone, so **owner decision 4 (passive drift through the cap) is moot today**; the default remains (a), no action.
+- **Weekly slots 0/3** (week of 9/14-9/18). PDT room untouched, zero day trades.
+- **Rule 2 breach continues: 19.64% deployed, $54,687.86 short of the 75% floor** — thirty-fourth-plus session, the account's only standing rule violation.
+- **No options. Never.**
+
+### Carried forward
+- **FOMC Wednesday 9/16 with a ~25bp hike priced ~85%** after Thursday's hot core CPI (Reuters 9/11). All three pre-market candidates (XOP, OIH, XLC) failed STEP 3 at the open and are deferred past it; nothing has changed to revive any of them, and today's fifth non-capture argues against the two energy names specifically.
+- **Owner decisions 1-4 all unanswered** — deployment target (1), second energy leg (2, **recommend FORBID, now on 5-of-5 evidence**), headline-based exit trigger (3, which this weekend moved *away* from firing), cap drift (4, moot today).
+- **The 9/11 weekly review still has not run.** `memory/WEEKLY-REVIEW.md` ends at "Week ending 2026-09-04." Two weeks must land on Fri 9/18.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$335.90 (+1.76%)** at **$64.675**; cut line **8.61%** below, trail live at **$59.553**, **7.92%** below the mark, never moved down, and **correctly un-ratcheted — the RTH high $66.03 came within $0.14 of the $66.17 hwm and did not clear it.** Equity **$98,787.14**, day **-0.14%** vs **SPY -0.18%**, phase **-1.21%**. Deployment **19.64%**, 1 of 6 positions, **nine sessions with zero fills**, week **0/3**. **Rule 14 re-run: NONE — and the day's material fact is that the Oman meeting was postponed (Reuters 9/13), so this morning's "the meeting is TODAY" flag is corrected and the diplomacy moved backwards, away from the headline that would close this position.** **The session's finding: the fourth, favourable state of the divergence lasted four hours — crude is up 3-4% on wire-dated strikes and a closed Saudi pipeline, SPY recovered to -0.18%, and XLE gave back its entire +1.2% open to sit -0.71%. Five observations, five non-captures. Owner decision 2's FORBID is now the best-evidenced recommendation in the book.** Next window: **daily summary** — log the EOD snapshot (eight of the last nine were missed) and re-run the rule-14 wire check into the close.
