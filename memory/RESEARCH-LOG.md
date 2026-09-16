@@ -2850,3 +2850,70 @@ Wire-restricted query, re-run because the position's entire gap risk is one head
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$401.90 (+2.11%)** at **$64.895**; cut line **8.92%** below, trail live at **$59.553**, **8.23%** below the mark, never moved down, **correctly un-ratcheted for a sixth session — XLE opened down and the RTH high $65.105 is $1.065 short of the $66.17 hwm.** Equity **$98,854.64**, day **-0.31%** vs **SPY +0.26%** (**-0.57 pts**), phase **-1.15%**. Deployment **19.69%**, 1 of 6 positions, **ten completed sessions with zero fills**, week **0/3**. **Rule 14 re-run at the bell: NONE — no signed, announced or in-force Hormuz arrangement, transits single-digit on both available counts, neither exit trigger fires.** **The session's fact: the complex transmitted crude *down* today (XLE -1.57%, XOP -2.04% against SPY +0.26%) as cleanly as it transmitted crude *up* yesterday — a seventh observation and a second consecutive capture, which weakens the divergence finding further and is recorded as a second consecutive correction to my own prior framing.** All three candidates fail STEP 3, XOP blocked for a fourteenth session, and **FOMC lands at 14:00 with the dot plot unpriced.** Next window: **midday scan** — first job is the EIA question (third handoff), second is the FOMC reaction and the cut line, third is the rule-14 wire re-check.
+
+## 2026-09-16 — Midday Scan (13:07 ET, Wednesday, Day 23)
+
+**HOLD. No trades, no orders, no hand-set stop changes. Nothing to cut, nothing to tighten. Week stays 0/3.** All three jobs handed over by the market-open run are worked below. **(1) The EIA question is resolved as far as it can be, and the answer is that the report's own publication schedule — summary tables after 10:30 ET, remaining files after 13:00 ET — is confirmed, but no released figure for today was obtainable; the third handoff ends in a fourth, to the daily summary.** **(2) FOMC has NOT landed — statement, SEP and dot plot 14:00 ET, presser 14:30 ET, i.e. 53 minutes after this scan.** The day's whole variance is still ahead, and this run deliberately takes no position into it. **(3) Rule 14 re-run: still NONE.** **The session's own fact: XLE printed a $63.87 low at 11:00 ET — down 3.13% on the day and the deepest intraday drawdown of the phase — and has since recovered roughly half of it to $64.725. The complex fell with crude (USO -3.03%), so this is an eighth observation and a third consecutive clean capture.**
+
+### Session / account state (live, 17:06Z / 13:06 ET — RTH, order-grade)
+- `/v2/clock` 13:06:44 ET: **`is_open:true`**, `next_close` 2026-09-16T16:00-04:00. Full session.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-14` → **`[]`**. Still **zero fills since the 8/31 XLV exit** — ten completed sessions and today is the eleventh. Account `ACTIVE`, `trading_blocked:false`, 1 position, 1 open order, full PDT room.
+- Equity **$98,803.64**; `last_equity` **$99,165.14** (`balance_asof` 2026-09-15) → **day P&L -$361.50 (-0.36%)**. Phase-to-date **-$1,196.36 (-1.20%)**.
+- Cash $79,386.14 (80.35%) | Position MV **$19,417.50** → **19.65% deployed**. Gap to the 75% floor: **$54,685.23**.
+- **Benchmark:** SPY **759.40 / 759.43** live at 17:06:55Z vs its **$757.42** SIP close → **+0.27%**. Book **-0.36%** → **-0.63 pts to the account on the day**, unchanged in magnitude from the 09:37 read.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.725 | 19.65% | **+$350.90 (+1.84%)** | $59.1065 | 8.68% | **$59.553 (10%, hwm $66.17)** | 7.99% | $73.09 |
+
+- **Quote is order-grade:** XLE **64.71 / 64.72** at 17:06:53Z, **one-cent** two-sided RTH spread, last trade **$64.715** (1,193 sh, 17:06:51Z). 300 × $64.725 = **$19,417.50**, ties to `long_market_value` exactly. Live mid ($64.715) and the position mark ($64.725) agree to a cent — **no rule-13 dispute to resolve today**, the first session in six with nothing to adjudicate.
+- **XLE session so far:** open **$65.06**, high **$65.22** (09:30-10:00 ET; the consolidated `dailyBar` reads `h=65.105` on a still-forming bar — both are far below the hwm and nothing turns on which is used), **low $63.87 at 11:00-11:30 ET**, now $64.725 on **28.3M** shares. **The low is -3.13% on the day and the deepest intraday hole the position has been in during the phase.** The recovery off it (+1.34% from the low) is the tape's own, not news this run could source.
+- **The trail did NOT ratchet, correctly.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for a **sixth** session. The session high **$65.22** is **$0.95 (1.44%) below** the hwm. **The morning's handoff was right: the live job on this order today was never the ratchet — it was the cut line, and the $63.87 low closed the gap to it from 8.92% to 7.35% at the worst tick before it widened back to 8.68%.** Floor has only ever moved up; never touched by hand. **Rules 4 and 7 intact.**
+- `qty_available: 0` is the trailing stop reserving all 300 shares. Expected.
+
+### The three handoffs, worked
+
+**(1) EIA weekly petroleum status report — schedule confirmed, figures not obtainable, handed on a fourth time.**
+- EIA's own publication page puts the **summary and data tables after 10:30 ET** and the **remaining PDF/HTML files after 13:00 ET** on Wednesdays. This **retires the 14:30 ET claim** one market calendar carried into the last three runs — that time was never sourced to EIA and is not supported.
+- **No released figure for today was obtainable at 13:07 ET.** The only EIA-linked numbers any source carried are still the prior week's (0.4 Mbbl draw to 424.1 Mbbl, week ending Sept 4). **Nothing asserted for today.** Handed to the **daily summary**, which runs after the close and will have it.
+- **Crude itself is down hard and that much is not in dispute directionally.** Dated sources gave **two incompatible WTI reads — $103.75 and $101.52** — so **no WTI level is asserted here** (rule 13 governs prices used for sizing; nothing is being sized). The tradeable proxy is unambiguous: **USO -3.03%** on the day, with a $154.62 low. That is the move the sector is following.
+
+**(2) FOMC — not yet out, and this run stands aside from it.**
+- Statement, **SEP and dot plot at 14:00 ET**; **press conference 14:30 ET**. At the time of this scan the decision is **53 minutes away**. Consensus in today's previews is a **25bp hike to 3.75-4.00%**, with the dot plot unpriced — the dispersion this morning's pre-market recorded across trackers (65-93%) has not resolved.
+- **No position is opened, closed, or resized into an unpriced event 53 minutes out.** That is rule 11, and it is the same call the market-open run made at 09:37.
+- One caution recorded against my own sources: a widely-syndicated market wrap dated "Sep 16" reported **Energy +2.3% as the day's leading sector**. That is **yesterday's session** (XLE closed +2.17% on 9/15), republished under today's date. **The live tape, not the wrap, is the record: XLE is -1.83% right now.** Third time in this log a dated-but-stale secondary source has had to be overruled by an order-grade quote.
+
+**(3) Rule 14 wire re-check — NONE.**
+
+| Date | Wire | Says |
+|---|---|---|
+| Sep 12 | Reuters | Iran-Oman understanding **"does not provide for the immediate reopening"** of the strait; depends on US action |
+| Sep 12 | Reuters | **No signed Hormuz deal expected** from the Oman meeting, Iranian official says |
+| Sep 10 | Reuters | Hormuz transits **7** on Sep 9, from preliminary ship-tracking data |
+
+- **No signed, announced or in-force US-Iran agreement or Hormuz reopening arrangement exists as of 2026-09-16**, on a wire-restricted, date-required query. Explicit NONE.
+- **Transit counts remain single-digit on every dated count in evidence** (4 on Sep 4, 7 on Sep 9, and this morning's fresher Reuters 9/16 item at 4 on Tuesday). **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met and not close**. **Exit trigger (b)** — the $59.1065 cut line — **8.68%** below the mark. **Neither exit rule fires.**
+- Today's energy weakness is a **crude-inventory and rate-risk** move. Per rule 14 no de-escalation reading is even eligible here, and none was offered by any wire.
+
+### Transmission — n=8, third consecutive capture, and the divergence finding is now spent
+| | XLE | XOP | OIH | USO (crude proxy) | SPY |
+|---|---|---|---|---|---|
+| Today, 13:06 ET | **-1.83%** | **-2.85%** | **-0.91%** | **-3.03%** | **+0.27%** |
+
+- Crude down ~3%, the whole complex down with it, against a **higher** broad tape. **Yesterday the complex captured crude up against a down tape; today and this morning it captures crude down against an up tape.** Three clean transmissions in a row, in both directions.
+- **What is left of the 9/11 and 9/14 "XLE has stopped transmitting crude" finding is now only this: transmission was absent over 9/9-9/14 and has been present over 9/15-9/16.** That is a statement about six sessions, not a property of the instrument, and it no longer supports any trading conclusion. **Third consecutive run correcting my own prior framing; the finding is closed rather than carried forward again.**
+- It cuts against a second energy leg either way: the complex moves as one, so XOP/OIH add correlation, not diversification. **Owner decision 2 (authorize or forbid a second energy leg) stays blocked and unanswered — fifteenth consecutive session.**
+
+### Position management — nothing to do, checked explicitly
+- **Cut at -7%:** cut line **$59.1065**, mark $64.725 — **8.68%** above it. Not triggered. **Worst tick today ($63.87) was still 7.35% clear.**
+- **Tighten to 7% at +15%:** needs **$73.09**; position is **+1.84%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Stop within 3% of price:** trail sits **7.99%** below the mark. Compliant.
+- **Stop moved down:** never. `updated_at` unchanged since 2026-09-10T13:30:02Z.
+- **Thesis check (STEP 5):** intact. The supply thesis rests on Hormuz closure, and the wire check above confirms no reopening, no deal, single-digit transits. Today's drawdown is inventory and rate risk, **not** a thesis break — no basis for an early cut.
+- **20% cap:** XLE at **19.65%**. Under.
+- **Positions 1 of 6. Weekly slots 0/3** (week of 9/14-9/18). **No candidate was staged; none clears STEP 3 and the FOMC is 53 minutes out.**
+- **Rule 2 breach continues: 19.65% deployed, $54,685.23 short of the 75% floor.** The account's only standing rule violation, ~39 sessions old, escalated and unanswered.
+- **No options. Never.**
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$350.90 (+1.84%)** at **$64.725**; cut line **8.68%** below, trail live at **$59.553**, **7.99%** below the mark, never moved down, **correctly un-ratcheted for a sixth session (session high $65.22 vs. the $66.17 hwm).** Equity **$98,803.64**, day **-0.36%** vs **SPY +0.27%** (**-0.63 pts**), phase **-1.20%**. Deployment **19.65%**, 1 of 6 positions, **eleven sessions with zero fills**, week **0/3**. **Rule 14: NONE — no signed, announced or in-force arrangement, transits single-digit on every dated count, neither exit trigger fires.** **The session's facts: (i) XLE's $63.87 low was the deepest intraday drawdown of the phase, 7.35% clear of the cut line at its worst, and half of it is already recovered; (ii) n=8 is a third straight clean capture and the divergence finding is closed, not carried; (iii) EIA's real schedule is 10:30/13:00 ET, retiring the 14:30 claim, but no figure for today was obtainable — handed to the daily summary.** **FOMC lands at 14:00 with the dot plot unpriced and this run takes nothing into it.** Next window: **daily summary** — first job is the EIA print, second is the FOMC reaction and the close, third is the EOD snapshot, which has now been missed on nine of the last eleven sessions and must not be missed again.
