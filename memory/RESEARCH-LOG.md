@@ -2780,3 +2780,73 @@ Wire-restricted query, re-run because the position's entire gap risk is one head
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$506.51 (+2.66%)** at **$65.2437**; cut line **9.41%** below, trail live at **$59.553**, **8.72%** below the mark, never moved down, **correctly un-ratcheted across both missed sessions — the 9/15 RTH high $66.115 came within $0.055 of the $66.17 hwm and did not clear it.** Equity **$98,959.25**, day **-0.21%** vs **SPY +0.27%** pre-market, phase **-1.04%**. Deployment **19.78%**, 1 of 6 positions, **ten sessions with zero fills**, week **0/3**. **Rule 14: NONE — Reuters 9/16 has Hormuz transits at 4, the lowest count in this log, against a 10-day average of 18; no deal is signed, announced or in force, and neither exit trigger fires.** **The session's two findings: (i) nobody ran on 9/15 — a full trading session passed unobserved with a live position, a new failure class beyond the nine prior logging gaps, and both the 9/14 and 9/15 EOD snapshots are reconstructed here; (ii) 9/15 was a clean sector-wide capture of the crude move (XLE +2.17%, XOP +3.22%, OIH +2.35% against SPY -0.46%), which falsifies the strong "XLE has stopped transmitting crude" claim at n=6 and removes the evidentiary footing the 9/14 FORBID recommendation was resting on — the recommendation stands on concentration instead.** All three candidates fail STEP 3, and **FOMC is at 14:00 with a hike ~80-90% priced and the dot plot unpriced.** Next window: **market-open** — first job is the trail ratchet ($0.055 to the hwm), second is confirming whether an EIA crude print lands today, third is the rule-14 wire re-check.
+
+## 2026-09-16 — Market-Open Execution (09:37 ET, Wednesday, Day 23)
+
+**HOLD. No trades, no orders, no hand-set stop changes. Week stays 0/3.** All three jobs the pre-market handed this run are done. **(1) The trail ratchet did NOT fire, and correctly so — XLE opened *down* and the RTH high stopped $1.065 short of the hwm.** The $0.055 near-miss of 9/15 was the closest this position will get for now; the floor is unchanged for a sixth session. **(2) Rule 14 re-run at the bell: still NONE.** No signed, announced or in-force Hormuz arrangement; transits still single-digit. **(3) The EIA question is still not resolved** — one calendar source puts the weekly petroleum status report at **14:30 ET today**, which would land *after* the FOMC statement; not asserted, handed to the midday scan for a third time. **The session's own fact: yesterday's capture has reversed, and it reversed cleanly in both directions.** Crude is back toward four-week lows on a larger-than-expected gasoline build, **Energy is the worst S&P sector this morning**, and XLE is **-1.57%** against **SPY +0.26%** — i.e. the complex transmitted crude *down* today as faithfully as it transmitted it *up* yesterday.
+
+### Session / account state (live, 13:37Z / 09:37 ET — RTH, order-grade)
+- `/v2/clock` 09:35:40 ET: **`is_open:true`**, `next_close` 2026-09-16T16:00-04:00. Full Wednesday session, no holiday.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-14` → **`[]`**. **Zero fills since the 8/31 XLV exit — ten completed sessions** (9/1, 9/2, 9/3, 9/4, 9/8, 9/9, 9/10, 9/11, 9/14, 9/15) and today is the eleventh. 1 position, 1 open order. Account `ACTIVE`, `trading_blocked:false`, **zero day trades** (full PDT room).
+- Equity **$98,854.64**; `last_equity` **$99,165.14** (`balance_asof` 2026-09-15) → **day P&L -$310.50 (-0.31%)**. Phase-to-date **-$1,145.36 (-1.15%)**.
+- Cash $79,386.14 (80.31%) | Position MV **$19,468.50** → **19.69% deployed**. Gap to the 75% floor: **$54,672.48**.
+- **Benchmark:** SPY **759.32 / 759.35** at 13:35:57Z (two-sided, live) vs its **$757.39** SIP close → **+0.26%**. Book **-0.31%** → **-0.57 pts to the account on the day**.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.895 | 19.69% | **+$401.90 (+2.11%)** | $59.1065 | 8.92% | **$59.553 (10%, hwm $66.17)** | 8.23% | $73.09 |
+
+- **Quote is order-grade:** XLE **64.89 / 64.90** at 13:36:48Z, **one-cent** two-sided RTH spread, last trade **$64.90** (100 sh, 13:36:46Z). Every mark in this entry is built on it; 300 × $64.895 = **$19,468.50**, which ties to `long_market_value` exactly.
+- **Rule 13 — the disputed pre-market price is resolved, and the freshest source won a fifth straight session.** The pre-market recorded two non-order-grade marks 5.4c apart and sized nothing off either: Alpaca's position mark **$65.2437** and the fresher SIP pre-market minute bar **$65.19**, carried as the live hypothesis. **XLE opened $65.06.** The fresher source was off by **$0.13**, the staler by **$0.1837**. Rule 13's tie-break has now been right five sessions running, and it cost nothing today because the decision was HOLD on every reading.
+- **XLE session so far:** RTH open **$65.06**, high **$65.105**, low **$64.77**, **335,725 sh** at 13:36Z. The pre-market fade (open $65.49 → last $65.19) carried straight through the bell and extended — the whole morning is one-way.
+- **The trail has NOT ratcheted, and that is the correct outcome.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for a **sixth** session. The RTH high **$65.105** is **$1.065 (1.64%) below** the hwm; the $0.055 approach of 9/15 was the high-water mark of the attempt. Floor has only ever moved up; never touched by hand. **Rule 4 intact, rule 7 intact.** *Handoff to the midday scan: the hwm is now $1.065 away and receding — the live job on this order today is not the ratchet but the cut line, 8.92% below.*
+- `qty_available: 0` is the trailing stop reserving all 300 shares. Expected, not a restriction.
+
+### Rule 14 re-run at the open — NONE
+Wire-restricted query, re-run because the position's entire gap risk is one headline. **No signed, announced or in-force Hormuz arrangement exists as of 9/16.**
+
+| Date | Wire | Says |
+|---|---|---|
+| Sep 12 | Reuters | **No signed Hormuz deal expected** from the Oman meeting, Iranian official says |
+| Sep 12 | Reuters (Tasnim-sourced) | The Iran-Oman understanding **"does not provide for the immediate reopening"** of the strait |
+| Sep 11 | Reuters | Hormuz transits **7** on Thursday, down from 11 the prior day |
+
+- **US-Iran negotiations or ceasefire, 9/13-9/16: NONE returned on a wire-restricted query.** The newest wire items this run surfaced are still the two Sept 12 Reuters pieces.
+- **Transit-count discrepancy, recorded rather than resolved.** This run's query returned **7 on 9/11**; this morning's pre-market surfaced a **Reuters 9/16** item with **4 transits Tuesday**, which is both fresher and dated. Per rule 13's spirit the fresher dated wire is carried as the live reading — **4** — and this run's older count is not treated as a contradiction of it, only as a query that failed to reach the newer item. **Nothing turns on which is right: both are single-digit and both are an order of magnitude below the trigger.**
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met, not close** on either count. **Exit trigger (b)** — the $59.1065 cut line — **8.92%** below the mark. **Neither exit rule fires.**
+- **Direction of travel still favours the position on the supply story.** No deal, meeting called off (Reuters 9/13), transits in single digits. Today's energy weakness is a **crude-inventory and rate-risk** move, not a de-escalation move — and per rule 14 no de-escalation claim is even eligible without a dated wire, which none of today's sources carry.
+
+### Today's tape — Energy is the worst sector, and that is the divergence working in reverse
+- **Perplexity (dated today):** Energy is the **worst-performing S&P sector this morning**, attributed to crude falling toward **four-week lows** on a **larger-than-expected gasoline build and a smaller crude draw**, compounded by profit-taking after Tuesday's record close and caution into the FOMC. No live WTI/Brent print was obtainable this morning — **magnitude not asserted**, direction (down) consistent across sources.
+- **This is the seventh observation, and it is a capture.** Crude down → XLE **-1.57%**, XOP **-2.04%**, against **SPY +0.26%**. Yesterday the complex captured crude *up* against a down tape; today it captures crude *down* against an up tape. **Two consecutive clean sector-wide transmissions, in opposite directions.** The n=6 rework this morning downgraded the finding from "XLE has stopped transmitting crude" to "transmission is intermittent and lossy"; **n=7 weakens it further** — the last two sessions are the two cleanest transmissions in the whole series. What survives now is only that transmission was **absent over 9/9-9/14 and present over 9/15-9/16**, which is a much smaller claim than either the 9/11 or the 9/14 framing. **Recorded as a second consecutive correction to my own prior conclusion.**
+- **It also cuts against the concentration case in one direction and for it in the other:** the complex moves together, which is exactly the reason a second energy leg is blocked.
+- **FOMC 14:00 ET** — 25bp hike to **3.75-4.00%** is the consensus in today's sources, **with the dot plot released alongside the statement**. The dispersion this morning's pre-market recorded across trackers (65-93%) means this is **not** a fully-priced outcome.
+- **EIA weekly petroleum status report — still unresolved, third handoff.** One market calendar puts it at **14:30 ET today**, i.e. *after* the FOMC statement rather than the usual 10:30 ET Wednesday slot; no confirmed print was obtainable. The only EIA-linked figure sourced is the **prior** week: a **0.4 Mbbl draw to 424.1 Mbbl** for the week ending Sept 4. **Not asserted for today. Handed to the midday scan.**
+
+### STEP 3 gate checks — three candidates, none clears, no order placed
+| Gate | XOP | OIH | XLV |
+|---|---|---|---|
+| Positions after trade ≤ 6 | ✓ (2) | ✓ (2) | ✓ (2) |
+| Trades this week ≤ 3 | ✓ (0/3) | ✓ (0/3) | ✓ (0/3) |
+| Cost ≤ 20% of equity | ✓ | ✓ | ✓ |
+| PDT room | ✓ (0 day trades) | ✓ | ✓ |
+| Sector in momentum | ~ Energy #1 YTD but **worst sector today** | ✗ 1w downtrend | ✗ Health Care mid-pack |
+| **Catalyst documented & unblocked** | **✗ BLOCKED (owner decision 2)** | ✗ | ✗ |
+| Stop structurally placed | ✓ | ✗ | ✓ |
+
+- **XOP** (**$195.49 / $195.75** live, **-2.04%** on the day): has given back roughly two-thirds of yesterday's +3.22% and is **no longer at its 20d high** — the single best fact in its favour this morning is gone. **Blocked on owner decision 2 for a fourteenth consecutive session**, and today's tape makes the concentration argument rather than undermining it: a second energy leg would have compounded a -1.6% sector day across ~39% of the book.
+- **OIH** and **XLV**: unchanged from this morning's pre-market assessment — OIH fails momentum outright, XLV fails catalyst and momentum and remains below its 8/31 exit. Neither needs an owner decision to reject.
+- **And the day's event is at 14:00 with an unpriced dot plot.** Opening any position in the four hours before it is the wrong side of rule 11. **No candidate clears STEP 3. No order placed. No order staged.**
+
+### Position management — nothing to do, checked explicitly
+- **Cut at -7%:** cut line **$59.1065**, mark $64.895 — **8.92%** above it. Not triggered.
+- **Tighten to 7% at +15%:** needs **$73.09**; position is **+2.11%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Stop within 3% of price:** trail sits **8.23%** below the mark. Compliant.
+- **Stop moved down:** never. `updated_at` unchanged since 2026-09-10T13:30:02Z.
+- **20% cap:** XLE at **19.69%** of equity. Under, and drifting down with price — owner decision 4 moot again today.
+- **Positions 1 of 6. Weekly slots 0/3** (week of 9/14-9/18).
+- **Rule 2 breach continues: 19.69% deployed, $54,672.48 short of the 75% floor.** The account's only standing rule violation, ~38 sessions old, escalated to the owner and unanswered.
+- **No options. Never.**
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$401.90 (+2.11%)** at **$64.895**; cut line **8.92%** below, trail live at **$59.553**, **8.23%** below the mark, never moved down, **correctly un-ratcheted for a sixth session — XLE opened down and the RTH high $65.105 is $1.065 short of the $66.17 hwm.** Equity **$98,854.64**, day **-0.31%** vs **SPY +0.26%** (**-0.57 pts**), phase **-1.15%**. Deployment **19.69%**, 1 of 6 positions, **ten completed sessions with zero fills**, week **0/3**. **Rule 14 re-run at the bell: NONE — no signed, announced or in-force Hormuz arrangement, transits single-digit on both available counts, neither exit trigger fires.** **The session's fact: the complex transmitted crude *down* today (XLE -1.57%, XOP -2.04% against SPY +0.26%) as cleanly as it transmitted crude *up* yesterday — a seventh observation and a second consecutive capture, which weakens the divergence finding further and is recorded as a second consecutive correction to my own prior framing.** All three candidates fail STEP 3, XOP blocked for a fourteenth session, and **FOMC lands at 14:00 with the dot plot unpriced.** Next window: **midday scan** — first job is the EIA question (third handoff), second is the FOMC reaction and the cut line, third is the rule-14 wire re-check.
