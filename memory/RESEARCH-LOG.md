@@ -2677,3 +2677,106 @@ This morning's two runs both led with the same claim: the thesis had finally fir
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$335.90 (+1.76%)** at **$64.675**; cut line **8.61%** below, trail live at **$59.553**, **7.92%** below the mark, never moved down, and **correctly un-ratcheted — the RTH high $66.03 came within $0.14 of the $66.17 hwm and did not clear it.** Equity **$98,787.14**, day **-0.14%** vs **SPY -0.18%**, phase **-1.21%**. Deployment **19.64%**, 1 of 6 positions, **nine sessions with zero fills**, week **0/3**. **Rule 14 re-run: NONE — and the day's material fact is that the Oman meeting was postponed (Reuters 9/13), so this morning's "the meeting is TODAY" flag is corrected and the diplomacy moved backwards, away from the headline that would close this position.** **The session's finding: the fourth, favourable state of the divergence lasted four hours — crude is up 3-4% on wire-dated strikes and a closed Saudi pipeline, SPY recovered to -0.18%, and XLE gave back its entire +1.2% open to sit -0.71%. Five observations, five non-captures. Owner decision 2's FORBID is now the best-evidenced recommendation in the book.** Next window: **daily summary** — log the EOD snapshot (eight of the last nine were missed) and re-run the rule-14 wire check into the close.
+
+## 2026-09-16 — Pre-Market Research (08:40 ET, Wednesday, Day 23)
+
+**HOLD. No trades, no orders, no hand-set stop changes.** Four things define this session. **(1) Tuesday 9/15 did not happen for this bot.** `origin/main` head was the **9/14 midday scan** — no pre-market, no market-open, no midday, no daily summary ran or committed on 9/15. This is not another unlogged EOD row; **an entire trading session went unobserved with a live position and a live GTC stop.** New failure class, escalated below. **(2) The divergence finding is partly reversed, and it took a whole session for nobody to see it.** On 9/15 crude rallied and the **entire energy complex captured it** — XLE **+2.17%**, XOP **+3.22%**, OIH **+2.35%** — while **SPY fell 0.46%**. Six observations, five non-captures, **one clean sector-wide capture**. The 9/14 midday claim that non-capture was "unambiguous" at n=5 does not survive n=6. **(3) FOMC is today, 2:00 PM ET, with a 25bp hike the base case (~78-90% across trackers).** Opening anything this morning is the wrong side of rule 11. **(4) Rule 14: still NONE — and Reuters 9/16 has transits at 4, the lowest count on record in this log.** Diplomacy is moving away from the headline that would close this position, not toward it.
+
+### Session / account state (live, 12:40Z / 08:40 ET — pre-market)
+- `/v2/clock` 08:36:42 ET: **`is_open:false`**, `next_open` 2026-09-16T09:30-04:00. Normal Wednesday session (`/v2/calendar` confirms 9/16 open 09:30 / close 16:00 — no holiday).
+- `/v2/account/activities?activity_types=FILL&after=2026-08-28` → the only fills are the **8/31 XLV exit** (11 sh + 97 sh @ $170.06). **Zero fills since 8/31 — ten completed sessions** (9/1, 9/2, 9/3, 9/4, 9/8, 9/9, 9/10, 9/11, 9/14, 9/15). 1 position, 1 open order. Account `ACTIVE`, `trading_blocked:false`, zero day trades (full PDT room).
+- Equity **$98,959.25**; `last_equity` **$99,165.14** (`balance_asof` 2026-09-15) → **day P&L -$205.89 (-0.21%)** on the pre-market mark. Phase-to-date **-$1,040.75 (-1.04%)**.
+- Cash $79,386.14 (80.22%) | Position MV $19,573.11 → **19.78% deployed**. Gap to the 75% floor: **$54,646.33**.
+- **Benchmark:** SPY **759.42 / 759.52** at 12:39:20Z (80×80, two-sided, live) vs its **$757.39** SIP close → **+0.27%** pre-market. XLE **-1.05%** → **-1.32 pts** against the position before the bell.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.2437 | 19.78% | **+$506.51 (+2.66%)** | $59.1065 | 9.41% | **$59.553 (10%, hwm $66.17)** | 8.72% | $73.09 |
+
+- **Rule 13 — disputed price, recorded, nothing sized off it.** XLE has **no order-grade quote**: `latestQuote` is **65.21 / 65.30** at **12:03:13Z** — 100×100, condition `R` (pre-market), and already **36 minutes stale** at the 12:40Z read. The freshest sources disagree by 5.4c: the last SIP pre-market minute bar reads **$65.19** (12:22Z), Alpaca's position mark reads **$65.2437**. Per rule 13 the position mark is carried in the table for consistency with the position record, and the **fresher bar ($65.19) is the live hypothesis** — but **neither is order-grade and no order is being sized off either**. Costs nothing today: the decision is HOLD on every reading.
+- **XLE pre-market session:** open **$65.49** (08:00Z), high **$65.89** (08:01Z), low **$65.18**, last **$65.19** (12:22Z), **569,349 shares** across 95 minute bars. Real participation. The whole pre-market has been a one-way fade off the high.
+- **The trail has NOT ratcheted through two sessions, and that is the correct outcome.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for a **fifth** session. The 9/14 RTH high **$66.05** and the 9/15 RTH high **$66.115** both fell short of the $66.17 hwm — 9/15 by **$0.055**, the closest approach the position has ever made. Floor has only ever moved up; never touched by hand. **Rule 4 intact, rule 7 intact.** *Handoff to the market-open run: the hwm is $0.055 from being taken out on any print ≥ $66.17. If it goes, the floor self-ratchets to ≥ $59.553 — verify and log the new level.*
+- Note: the SIP **bars** feed lags ~15-18 min on this key (last minute bar 12:22Z at a 12:40Z wall clock); the **snapshot** `dailyBar` runs a partial feed (XLE 9/15 volume 3.12M vs the SIP bar's 34.5M) and must not be used for closes. All closes in this entry are SIP daily bars; all of them tie to equity exactly (below).
+- `qty_available: 0` on the position is the trailing stop reserving all 300 shares — expected, not a restriction.
+
+### THE SESSION THAT NOBODY RAN — 9/15, and what it cost
+`origin/main` head on arrival: **`5585eec` "midday scan 2026-09-14"**. Nothing between that and now.
+
+- **Every prior gap in this account was a *logging* gap** — a run executed against Alpaca and failed to commit, so the decisions were made and only the record was lost. **9/15 is different: no run executed at all.** For one full session the position had no thesis re-check, no rule-14 wire check, no cut-line check and no trail verification. Nothing broke — the stop was live at Alpaca the whole time and the position went **up** 2.17% — but that is luck, not process.
+- **It also swallowed the most informative session the divergence finding has had** (below). The 9/14 midday scan closed by handing three jobs to the daily summary; none was done.
+- **Reconstructed into `memory/TRADE-LOG.md` by this run: both the 9/14 and 9/15 EOD snapshots** — the account's **ninth and tenth** persistence gaps (Day 1 GitHub 403, 8/24 uncommitted memory, 9/2, 9/3, 9/4, 9/8, 9/9, 9/10, 9/11, and now 9/14 + 9/15). Sourced from Alpaca `portfolio/history` and SIP daily bars; cash + position MV ties to equity **exactly** on both days, nothing inferred.
+- **Still outstanding: `memory/WEEKLY-REVIEW.md` ends at "Week ending 2026-09-04."** The week of 9/7-9/11 has no review, so **two** weeks must land on Friday 9/18, along with the four unanswered owner decisions routed into them.
+
+### The divergence — n=6, and the sixth observation is a clean capture
+The 9/14 midday scan concluded: *"five observations, five non-captures... the n=5 reading is now unambiguous."* **9/15 contradicts it, and the contradiction is sector-wide rather than an XLE quirk** — which is exactly the shape of evidence the 9/14 pre-market's XOP/OIH test said would matter.
+
+| Date | Crude | XLE | XOP | OIH | SPY | Reading |
+|---|---|---|---|---|---|---|
+| 9/9-9/11 | **+6.4%** | +0.25% | +0.36% | -2.02% | — | non-capture, sector-wide |
+| 9/14 | +3-4% intraday | **-0.94%** | -1.15% | -4.42% | -0.45% | non-capture, favourable state surrendered intraday |
+| **9/15** | **up (see caveat)** | **+2.17%** | **+3.22%** | **+2.35%** | **-0.46%** | **CAPTURE — first clean one, whole complex, against a down tape** |
+
+- **XLE closed 9/15 at $65.93, +2.17%** — independently corroborated by Yahoo Finance at the same price and percentage, and **MarketWatch 9/15 has the energy sector heading for its "4th record close this month"** on an oil rally. This is not a marginal print.
+- **SPY was -0.46% on the day** (760.88 → 757.39, SIP). So the capture happened *against* the tape, which rules out "energy just went up with everything else."
+- **What this does to the finding:** the strong form — *"XLE has stopped transmitting crude"* — is **falsified**. What survives is weaker and still worth carrying: transmission is **intermittent and lossy**, roughly 1-for-6 on the sessions logged. That is a real handicap on any crude-driven thesis, but it is not the structural break the 9/11 and 9/14 runs described.
+- **What this does to owner decision 2 (authorize/forbid a second energy leg):** the FORBID recommendation was resting explicitly on "five of five." **That footing is gone.** The recommendation still stands, but on the *original and better* ground — **concentration**, not transmission: a second energy leg takes the book to ~39% single-sector, and 9/15 is a reminder that the complex moves together **in both directions**. Recorded as a correction to the 9/14 midday framing, which overstated the evidence.
+- **Crude sourcing caveat, and it is worse than usual.** Today's secondary sources conflict materially on 9/15: one has WTI at **$104.91 (+2.09%)**, another has WTI futures at **$101.56 (+0.17%)** with Brent **+3.21%**. Current levels read **WTI ~$103.75 / Brent ~$107.55** (11:06Z snapshot). **No wire-dated crude settle was obtainable for 9/15.** The *direction* (up) is consistent across every source; the magnitude is not asserted. **No decision in this entry is load-bearing on those levels** — the capture is measured on equity closes, which are exact.
+
+### Rule 14 re-run — NONE fires, and transits hit a new low
+Wire-restricted query, re-run because the position's entire gap risk is one headline. **No signed, announced or in-force Hormuz arrangement exists as of 9/16.**
+
+| Date | Wire | Says |
+|---|---|---|
+| **Sep 16** | Reuters | *"Strait of Hormuz ship crossings remain in single digits, data shows"* — **4 transits Tuesday**, down from **7** the prior day, vs a 10-day average of **18** |
+| Sep 12 | Reuters | No signed Hormuz deal expected from the Oman meeting; Iran-Oman understanding *"does not provide for the immediate reopening"* |
+| Sep 13 | Reuters | Oman meeting **postponed**; Gulf states call off meeting with Iran (carried from 9/14 midday) |
+| Aug 26 | Reuters | Iran-Oman agreements on Hormuz revenues — senior Iranian source: **not finalised** |
+
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — latest dated count is **4**, the **lowest in this log's history** (7 on 9/10, 6 on 9/8, 7 on 9/11). Not met, and moving **away** from the trigger.
+- **Exit trigger (b)** — the $59.1065 cut line — **9.41%** below the mark. **Neither exit rule fires.**
+- **Direction of travel remains escalation.** Meeting called off, transits at 4, no deal. **Owner decision 3's proposed trigger (c) is further away than it was on 9/12.** The supply thesis underpinning the XLE position is intact and, on transit counts, tightening.
+
+### Today's calendar — the day is binary and it is not about oil
+- **08:30 ET — Advance Retail Sales (August).** Pre-FOMC, low weight today.
+- **10:00 ET — Business Inventories (July).** Noise.
+- **14:00 ET — FOMC statement + Chair Warsh press conference ~14:30.** **A 25bp hike is the base case**: Polymarket 9/12 **78.5%** hike / 20.5% hold; CME FedWatch and others **~86-91%**; Robinhood 84c. The dispersion across trackers (65-93%) is itself the story — this is **not** a fully-priced outcome, and the dot plot is unpriced.
+- **No EIA weekly crude inventories release could be confirmed for today** — the energy items on the calendars found are the sub-series (Cushing, imports, refinery runs), not the headline print. **Not asserted either way; handed to the midday scan to resolve.**
+- **Pre-market context:** ES futures ~**7,667-7,670** (+0.15%), **VIX 17.20**. Benign, which is what pre-FOMC tape usually looks like.
+- **No sourced explanation for XLE's -1.05% pre-market fade.** Perplexity offered "sector rotation and macro pressure / hawkish rate expectations" and explicitly flagged the read-through as mixed and inferential. **Recorded as speculation, not a finding.** The plain reading is a give-back after a +2.17% record close, into a rate decision — but that is my inference and it is labelled as one.
+
+### STEP 3 gate checks — three candidates, none clears
+| Gate | XOP | OIH | XLV |
+|---|---|---|---|
+| Positions after trade ≤ 6 | ✓ (2) | ✓ (2) | ✓ (2) |
+| Trades this week ≤ 3 | ✓ (0/3) | ✓ (0/3) | ✓ (0/3) |
+| Cost ≤ 20% of equity | ✓ | ✓ | ✓ |
+| PDT room | ✓ (0 day trades) | ✓ | ✓ |
+| Sector in momentum | ✓ Energy #1 YTD **+47.5%** | ✗ **-3.98% 1w, -2.33% since 8/14** | ✗ **+0.17% since 8/14**, Health Care mid-pack |
+| **Catalyst documented & unblocked** | **✗ BLOCKED (owner decision 2)** | ✗ | ✗ |
+| Stop structurally placed | ✓ (20d low $180.19 well below a 10% stop off $199.70) | ✗ (20d low **$397.00** sits inside a 10% stop off $411.51 ≈ $370 — but the 1w downtrend makes the stop the least of it) | ✓ |
+
+- **XOP** ($199.70, +3.22% on 9/15, 20d high $200.89 — it is *at* its high): the only candidate with both a catalyst and momentum. **Blocked on owner decision 2 for a thirteenth consecutive session.** Note honestly that **this morning's evidence weakened the specific argument I have been using against it** (see the divergence section); the concentration argument is unaffected, and the block is the owner's to lift, not mine.
+- **OIH** ($411.51): fails momentum outright — **-3.98% on the week** while XOP was +2.99%. Services are not participating in the crude bid. Rejected on its own merits, no owner decision needed.
+- **XLV** ($167.66): fails catalyst and momentum. It is **$2.40 (-1.4%) below the $170.06 exit** of 8/31 and **+0.17% since 8/14** — the 8/31 rule-12 close is vindicated by 11 sessions of tape. Health Care carries **1 failed trade** (rule 10: 2 before mandatory sector exit). Not a re-entry.
+- **And the day's event is at 14:00 with a hike ~80-90% priced and a dot plot that isn't.** Per the two-sided-cap finding, a hike is a specific headwind for energy equities. **Opening any position in the four hours before an unpriced dot plot is the wrong side of rule 11.**
+- **No candidate clears STEP 3. No order placed. No order staged.**
+
+### Position management — nothing to do, checked explicitly
+- **Cut at -7%:** cut line **$59.1065**, mark $65.2437 — **9.41%** above it. Not triggered.
+- **Tighten to 7% at +15%:** needs **$73.09**; position is **+2.66%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Stop within 3% of price:** trail sits **8.72%** below the mark. Compliant.
+- **Stop moved down:** never. `updated_at` unchanged since 2026-09-10T13:30:02Z.
+- **20% cap:** XLE at **19.78%** of equity. Under. Owner decision 4 (passive drift) moot today.
+- **Positions 1 of 6. Weekly slots 0/3** (week of 9/14-9/18) — **the sixth straight week the account will likely use no slot.**
+- **Rule 2 breach continues: 19.78% deployed, $54,646.33 short of the 75% floor.** The account's only standing rule violation, now ~37 sessions old and escalated to the owner unanswered.
+- **No options. Never.**
+
+### Risk factors today
+1. **FOMC 14:00 ET.** Hike base case but **not fully priced** (trackers span 65-93%) and the dot plot is unpriced. A hawkish dot plot is a broad de-rating; a hold is a risk-on gap. Either way the 2pm-4pm window carries the day's whole variance, and it is a **market** risk, not an oil risk.
+2. **The hwm is $0.055 away.** Any RTH print ≥ $66.17 ratchets the floor up. Benign, but it must be *observed* — and the last two sessions show what happens when nobody looks.
+3. **Single-name concentration of thesis risk.** 100% of the book's directional exposure is one ETF on one supply story. Transits at 4/day say the story is intact; one signed deal ends it in a gap.
+4. **Transmission is lossy.** 1-for-6. A crude-positive day is not a reliable XLE-positive day, in either direction.
+5. **Operational risk is now the largest measurable risk in this account.** A whole session ran unobserved. The stop held, but the account is one un-run session away from a -7% cut line being crossed with nobody there to cut.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$506.51 (+2.66%)** at **$65.2437**; cut line **9.41%** below, trail live at **$59.553**, **8.72%** below the mark, never moved down, **correctly un-ratcheted across both missed sessions — the 9/15 RTH high $66.115 came within $0.055 of the $66.17 hwm and did not clear it.** Equity **$98,959.25**, day **-0.21%** vs **SPY +0.27%** pre-market, phase **-1.04%**. Deployment **19.78%**, 1 of 6 positions, **ten sessions with zero fills**, week **0/3**. **Rule 14: NONE — Reuters 9/16 has Hormuz transits at 4, the lowest count in this log, against a 10-day average of 18; no deal is signed, announced or in force, and neither exit trigger fires.** **The session's two findings: (i) nobody ran on 9/15 — a full trading session passed unobserved with a live position, a new failure class beyond the nine prior logging gaps, and both the 9/14 and 9/15 EOD snapshots are reconstructed here; (ii) 9/15 was a clean sector-wide capture of the crude move (XLE +2.17%, XOP +3.22%, OIH +2.35% against SPY -0.46%), which falsifies the strong "XLE has stopped transmitting crude" claim at n=6 and removes the evidentiary footing the 9/14 FORBID recommendation was resting on — the recommendation stands on concentration instead.** All three candidates fail STEP 3, and **FOMC is at 14:00 with a hike ~80-90% priced and the dot plot unpriced.** Next window: **market-open** — first job is the trail ratchet ($0.055 to the hwm), second is confirming whether an EIA crude print lands today, third is the rule-14 wire re-check.
