@@ -3031,3 +3031,107 @@ Closes 2026-09-16, SIP daily bars, sorted by month-to-date:
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$19.40 (+0.10%)** at **$63.62**, essentially flat after round-tripping a +3.96% gain in nine sessions; cut line **7.09%** below and narrower than at any prior point in the phase, trail live at **$59.553**, **6.39%** below the mark, never moved down, **correctly un-ratcheted for a seventh session** (pre-market high $64.31 vs the $66.17 hwm). Equity **$98,472.14**, day **-0.12%**, phase **-1.53%** — against **SPY -2.87% since inception, a 1.47-point lead that is a cash position rather than a stock-picking result and gives back about a point today if the +1.27% gap holds.** Deployment **19.38%**, 1 of 6 positions, **eleven completed sessions with zero fills**, week **0/3**. **Rule 14: NONE — no signed, announced or in-force arrangement; today's query returned no dated transit count, so the Reuters 9/16 count of 4 stands as the freshest evidence and neither exit trigger fires.** **The run's three facts: (i) the EIA question is closed after five handoffs — 0.640 Mbbl draw to 423.4 Mbbl, a second consecutive draw, with crude down anyway on profit-taking; (ii) the sector screen is empty structurally, not by judgement — eleven of thirteen sectors negative MTD and six plus SPY at 20-day lows, leaving rule 9 exactly two candidates, one of which is already held; (iii) all three worked candidates fail — XLC on catalyst and a 0.9:1 R:R, XOP on its own momentum for the first time rather than on the owner block, SMH as a gap-up inside a downtrend.** **FOMC delivered 25bp to 3.75-4.00% with a hawkish 4.1%/4.1% dot plot, and the tape is gapping +1.27% the morning after anyway.** Next window: **market-open execution** — first job is an RTH quote to replace this morning's unusable $4.01 pre-market spread, second is the narrowed 7.09% cut-line gap if XLE sells off with crude, third is whether the +1.27% broad gap survives the bell.
+
+## 2026-09-17 — Market-Open Execution (09:38 ET, Thursday, Day 24)
+
+**HOLD. No trades, no orders, no hand-set stop changes. Nothing to cut, nothing to tighten. Week stays 0/3.** Live RTH data confirms the pre-market's read on every candidate, and the run's own finding is not a trade — it is that **the benchmark lead this book has been carrying on cash collapsed from +1.47 pts to ~+0.56 pts in the first eight minutes of the session, exactly as this morning's run predicted it would.** Also closed today: **the macro-actuals sourcing failure that has recurred five times in this log is a query-construction problem, and the fix is reproducible** — see below.
+
+### Session / account state (live, 13:38Z / 09:38 ET — RTH, order-grade)
+- `/v2/clock` 09:35:49 ET: **`is_open:true`**, `next_close` 2026-09-17T16:00-04:00. Regular session.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-16` → **`[]`**. **Twelve completed sessions with zero fills since the 8/31 XLV exit; today is the thirteenth.** Account `ACTIVE`, `trading_blocked:false`, 1 position, 1 open order, full PDT room.
+- Equity **$98,565.14**; `last_equity` **$98,595.14** (`balance_asof` 2026-09-16) → **day -$30.00 (-0.03%)**. Phase-to-date **-$1,434.86 (-1.43%)**.
+- Cash $79,386.14 (80.54%) | Position MV **$19,179.00** → **19.46% deployed**. Gap to the 75% floor: **$54,744.86**.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.93 | 19.46% | **+$112.40 (+0.59%)** | $59.1065 | 7.54% | **$59.553 (10%, hwm $66.17)** | 6.85% | $73.09 |
+
+- **Rule 13 satisfied — this run's quotes ARE order-grade and the pre-market's were not.** XLE `latestQuote` 13:38:44Z reads **63.88 / 63.89, a 1-cent two-sided spread**, against the pre-market's unusable **$4.01** stale close-auction spread (61.76 / 65.77). Last trade **$63.96** @ 13:36:19Z; position mark **$63.93**; today's SIP bar o=$63.54 h=$63.98 l=$63.46. **All four agree inside 5 cents — the pre-market's $63.62 read is confirmed by RTH and nothing had to be re-sized.** First job of this run, per the pre-market's handoff, done.
+- **The trail did NOT ratchet, correctly.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for an **eighth** session. Today's session high **$63.98** is **$2.19 (3.31%) below** the hwm. Floor has only ever moved up, never touched by hand. **Rules 4 and 7 intact.**
+
+### The day's material fact — the cash lead is being paid back, on schedule
+
+| | Since inception (8/14) | This morning's pre-market | Now (09:38 ET) |
+|---|---|---|---|
+| Account | -1.53% | -1.53% | **-1.43%** |
+| SPY | -2.87% ($754.05) | -2.87% | **-1.99%** ($760.91 mid) |
+| **Difference** | — | **+1.47 pts** | **+0.56 pts** |
+
+- **SPY is +0.91% on the session at the mark; the book is +0.10%.** A 19.46%-deployed account captured roughly a fifth of the tape's move, and **~0.9 points of the 1.47-point lead went in eight minutes.**
+- This is not a new argument — **this morning's run wrote the prediction down explicitly** ("gives back about a full point of the 1.47-point lead in one session" if the +1.27% gap held). The gap did not fully hold (+1.27% pre-market → +0.91% at the mark) and the give-back still landed. **The forecast is now a measurement, and it belongs in tomorrow's review as one.**
+- **Read honestly in both directions:** the same mechanism is why the book was ahead at all, and a 19.46% book still cannot lose what the index loses. **Nothing here is a reason to trade today** — it is evidence for the owner decision on the deployment floor, which is where it is being sent, not a licence to buy something that fails the checklist.
+
+### Rule 14 wire check — NONE (re-run live, independent of the pre-market's)
+- Wire-restricted, date-required query: **NONE. No signed, announced or in-force US-Iran agreement, ceasefire or Strait of Hormuz reopening arrangement exists.** Reuters **9/12** is again the governing item — the Iran-Oman understanding "does not provide for the immediate reopening" and is a basis for possible reopening, not an in-force arrangement. Reuters **8/9** and **8/17** confirm no broader deal.
+- **This run obtained a dated transit count where the pre-market could not: 7 vessels on Thursday Sep 11 (Reuters), down from 11 the prior day.** That is *older* than the log's freshest dated count (**4 on Tuesday, Reuters 9/16**), so **the 9/16 count of 4 still stands as the freshest evidence** and is not superseded. Both are single digits; the picture is unchanged.
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met, not close.** **Exit trigger (b)** — the $59.1065 cut line — **7.54%** below the mark, and *wider* than this morning's 7.09% because XLE firmed. **Neither exit rule fires. Thesis intact.**
+- No dated OPEC+ decision or Saudi/Iranian infrastructure item dated 9/16 or 9/17 found.
+
+### Macro actuals — the recurring sourcing failure is CLOSED, with a reproducible fix
+**This is the run's methodological finding and it is worth more than any of today's candidates.**
+- The first query of this run returned **claims 206,000 vs 208,000 consensus** and **Philly Fed 47.4 vs 30.5 consensus** — presented as today's actuals. **Both are stale: 206,000 is the week ended Sep 5 released Sep 10, and 47.4 is the *prior* (August) Philly Fed reading, which this morning's run had already recorded as the prior.** This is the **fifth** time a dated-but-stale secondary source has had to be caught in this log.
+- **A second query that named the stale values explicitly and instructed the model to declare them unavailable if they were all it had, returned correctly-dated actuals:**
+
+| Release | Actual | Consensus / prior | Reference period | Released |
+|---|---|---|---|---|
+| Initial jobless claims | **196,000** | 208,000 cons. | week ended **Sep 12** | Sep 17 |
+| Philadelphia Fed Business Outlook | **37.8** | ~28.6 cons. / **47.4 prior** | **Sep 2026** | Sep 17 |
+| Housing starts (Aug) | *no figure returned* | 1.31M cons. | Aug 2026 | Sep 17 |
+
+- **Both actuals beat: a 196K claims print is a tight labour market, and 37.8 is a solid expansionary Philly Fed well above a ~28.6 consensus.** Constructive for the tape and consistent with the risk-on session — **and also consistent with the hawkish 4.1%/4.1% dot plot the Fed delivered yesterday.** Strong data after a hawkish hike is not an easing signal.
+- **The fix, stated so later runs can reuse it: name the known-stale figure in the query and require the model to say the current one is unavailable rather than substitute.** The naive query substitutes silently; the adversarial one does not. **Housing starts remains unreturned — handed to the midday run, and this handoff is logged so it cannot go five rounds like the EIA question did.**
+
+### Candidate re-validation — all three re-worked on live RTH data, all three still fail
+20-day and 50-day metrics below are computed from SIP daily bars **including today's partial session bar**, so they flatter every gap-up name — that is the point of the exercise.
+
+| | Live | Day% | 20d% | vs 20d high | vs 50dma | vs 52w high |
+|---|---|---|---|---|---|---|
+| **SMH** semis | $559.42 | **+2.49%** | -0.22 | -3.60% | **-1.02%** | -16.69% |
+| **XLK** tech | $186.89 | **+1.55%** | +1.80 | -1.13% | +2.15% | -5.93% |
+| **XLC** comm svcs | $113.12 | **+0.18%** | +1.63 | -1.84% | +1.75% | -6.03% |
+| **XOP** E&P | $191.57 | -0.11% | — | — | — | — |
+| **XLE** *(held)* | $63.93 | -0.14% | +0.55 | -3.39% | +4.84% | — |
+
+**1. SMH — REJECTED. The gap-up-in-a-downtrend call was right and live data makes it sharper.**
+- Up **+2.49%**, the session's strongest sector, **and still below its own 50dma (-1.02%), still -3.60% off its 20-day high, still -16.69% below its 52-week high, and still *negative* over 20 days (-0.22%) even counting today's gap.**
+- **A name that cannot clear its 50-day moving average on its best day in a fortnight is not in momentum.** Rule 9 does not buy bounces.
+
+**2. XLK — REJECTED, and it is the one that deserved a second look.** The pre-market bundled it with SMH; on the numbers it is a genuinely better chart — **+1.80% over 20d, +2.15% above its 50dma, only 1.13% off its 20-day high.** It fails anyway, on two independent gates:
+- *Catalyst (gate 1):* **NONE.** A wire-restricted query for any dated 9/16–9/17 catalyst for NVDA, AVGO, AAPL, MSFT, TSM or the semi group returned **no U.S.-specific item** — explicitly "a broad post-FOMC risk-on tone, not a specific dated catalyst." **A broad tape gap is not a catalyst for a sector; it is the reason the sector looks good this minute.**
+- *R:R (gate 4):* entry **$186.89**, 7% stop **$173.81** (risk **$13.08**, and structurally sound — below the $178.81 20-day low and the $183.01 50dma). A 2:1 target needs **$213.05**, which is **+7.2% above the 52-week high of $198.73**. **Target the 52w high instead and it is $198.73 = +$11.84 reward against $13.08 risk = 0.91:1. Fails outright.**
+- **Note the arithmetic is the same shape as XLC's 0.9:1, and for the same structural reason: these sectors are 6% under their 52-week highs with 7% stops. In this tape the 2:1 bar and the 7% stop are mathematically incompatible for any large-cap sector ETF that is not making new highs.** That is the real content of "all candidates fail," and it is owner decision 1 (move the deployment target or the R:R bar) restated as a fact rather than a preference.
+
+**3. XLC — REJECTED, unchanged.** Momentum leg still passes (+1.63% 20d, +1.75% above 50dma) and it is **the only sector that passes rule 9 other than the one already held.** No dated catalyst; R:R **0.92:1** against the 52w high on a 7% stop (entry $113.12, stop $105.20, risk $7.92, reward to $120.41 = $7.29). **And it is +0.18% on a +0.91% tape — the "leadership" is not leading today.**
+
+**4. XOP — REJECTED.** **-0.11% on the session while the broad tape is +0.91%**, still below its 20-day high, crude soft. Fails its own momentum screen for a second consecutive session, independent of the standing **FORBID** recommendation on a second energy leg (concentration: a second leg takes the book to ~39% single-sector). **Owner decision 2 unanswered for a seventeenth session, and still not the binding constraint.**
+
+**No candidate clears the entry checklist. No order placed. No order staged.**
+
+### STEP 3 hard-check — run explicitly, for the record
+| Gate | Status |
+|---|---|
+| Positions after trade ≤ 6 | **1 of 6** — room for 5, not the constraint |
+| Trades this week ≤ 3 | **0 of 3** — room for 3, not the constraint |
+| Position cost ≤ 20% equity | XLE **19.46%**, under cap; drifts with price, binds at entry only |
+| Catalyst in today's RESEARCH-LOG | **FAILS for all four candidates** — the binding gate |
+| PDT room (3 / 5 rolling) | Full room, zero day trades; not the constraint |
+
+### Position management — nothing to do, checked explicitly
+- **Cut at -7%:** cut line **$59.1065**, mark $63.93 — **7.54%** above it, *wider* than this morning's 7.09% (the pre-market flagged that narrowing for this run's attention; XLE firmed off the $63.46 session low and the concern eased rather than triggered). **Not triggered.** A -7.6% XLE session would still trigger the manual cut before the trail fires — the structural point stands and is carried.
+- **Tighten to 7% at +15%:** needs **$73.09**; position **+0.59%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Stop within 3% of price:** trail **6.85%** below the mark. **Compliant.**
+- **Stop moved down:** never. `updated_at` unchanged since 2026-09-10T13:30:02Z, eighth session.
+- **Thesis check:** intact — no wire, no arrangement, transit counts in single digits on every dated observation since Sep 4.
+- **Positions 1 of 6. Weekly slots 0/3** (week of 9/14-9/18). With only Friday's witching session left, **this will be the sixth consecutive week the account uses no slot.**
+- **No options. Never.**
+
+### Standing items carried
+- **Rule 2 breach continues: 19.46% deployed against a 75% floor, $54,744.86 short.** ~40 sessions old. **Today supplied the first hard *measurement* of its cost — ~0.9 pts of benchmark lead in one morning — where every prior run could only argue it in the abstract.**
+- **Owner decisions 1–4 unanswered (16–17 sessions).** All four land on tomorrow's 9/18 review. **Decision 1 is now answerable on evidence: the 2:1 bar and the 7% stop cannot both hold for a sector ETF 6% below its 52-week high, which is every sector that passes rule 9 right now.**
+- **`memory/WEEKLY-REVIEW.md` still ends at "Week ending 2026-09-04."** Tomorrow's review **must cover two weeks** (9/7-9/11 and 9/14-9/18) and all four owner decisions. Third consecutive run to flag it.
+- **Tomorrow is September quarterly witching** (quad expiry + S&P rebalance). Exposure note only; this book holds no options and never will.
+- **Persistence: 9/16 and today's pre-market both committed cleanly** (`1052739`, `0f12068` — `origin/main` verified at `0f12068` this run). **Second consecutive fully-observed session** after ten logged gaps. Streak worth keeping.
+- **Open handoff: August housing starts actual** — not returned by either query today. Handed to the midday run, once.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$112.40 (+0.59%)** at **$63.93** on a 1-cent order-grade spread that confirms the pre-market's $63.62 mark; cut line **7.54%** below (wider than this morning), trail live at **$59.553**, **6.85%** below the mark, never moved down, **correctly un-ratcheted for an eighth session** (session high $63.98 vs $66.17 hwm). Equity **$98,565.14**, day **-0.03%**, phase **-1.43%**. Deployment **19.46%**, 1 of 6 positions, **twelve completed sessions with zero fills**, week **0/3**. **Rule 14: NONE — no signed or in-force arrangement; this run obtained a dated count (7 transits Sep 11, Reuters) but it is older than the log's freshest (4 on Sep 16) and does not supersede it; neither exit trigger fires.** **The run's three facts: (i) the cash-funded benchmark lead fell from +1.47 pts to ~+0.56 pts in eight minutes, converting this morning's prediction into a measurement for tomorrow's review; (ii) the macro-actuals sourcing failure is a query-construction problem with a reproducible fix — naming the stale figure in the query recovered claims 196K (wk 9/12) and Philly Fed 37.8, both beats; (iii) all four candidates fail, and XLK's re-work exposes why structurally — a 7% stop and a 2:1 target are mathematically incompatible for any sector ETF trading 6% below its 52-week high, which is every sector rule 9 currently admits.** Next window: **midday scan** — carry the housing-starts handoff, watch whether the +0.91% tape holds into the afternoon, and re-check the cut-line gap if XLE rolls over with crude.
