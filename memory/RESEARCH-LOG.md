@@ -2917,3 +2917,117 @@ Wire-restricted query, re-run because the position's entire gap risk is one head
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$350.90 (+1.84%)** at **$64.725**; cut line **8.68%** below, trail live at **$59.553**, **7.99%** below the mark, never moved down, **correctly un-ratcheted for a sixth session (session high $65.22 vs. the $66.17 hwm).** Equity **$98,803.64**, day **-0.36%** vs **SPY +0.27%** (**-0.63 pts**), phase **-1.20%**. Deployment **19.65%**, 1 of 6 positions, **eleven sessions with zero fills**, week **0/3**. **Rule 14: NONE — no signed, announced or in-force arrangement, transits single-digit on every dated count, neither exit trigger fires.** **The session's facts: (i) XLE's $63.87 low was the deepest intraday drawdown of the phase, 7.35% clear of the cut line at its worst, and half of it is already recovered; (ii) n=8 is a third straight clean capture and the divergence finding is closed, not carried; (iii) EIA's real schedule is 10:30/13:00 ET, retiring the 14:30 claim, but no figure for today was obtainable — handed to the daily summary.** **FOMC lands at 14:00 with the dot plot unpriced and this run takes nothing into it.** Next window: **daily summary** — first job is the EIA print, second is the FOMC reaction and the close, third is the EOD snapshot, which has now been missed on nine of the last eleven sessions and must not be missed again.
+
+## 2026-09-17 — Pre-Market Research (08:40 ET, Thursday, Day 24)
+
+**HOLD. No trades, no orders, no hand-set stop changes. Nothing to cut, nothing to tighten. Week stays 0/3.** Three things make this run worth reading. **(1) The EIA question, handed forward five times since 9/14, is CLOSED with a real figure — a 0.640 Mbbl draw to 423.4 Mbbl for the week ending Sep 11, released 9/16.** **(2) The sector screen is empty for a structural reason, not a judgement call: eleven of thirteen sector ETFs are negative month-to-date and six closed 9/16 sitting exactly on their 20-day low, as did SPY itself.** Rule 9 has two candidates in the entire tape and the book already owns one of them. **(3) The mission metric is favourable and should be read honestly: the account is -1.40% since inception against SPY -2.87%, ahead by 1.47 points — but that lead is bought with 80.6% cash in a falling tape, and this morning's +1.27% SPY gap is the live demonstration of what it costs in the other direction.**
+
+### Session / account state (live, 12:40Z / 08:40 ET — pre-market, NOT order-grade)
+- `/v2/clock` 08:40:20 ET: **`is_open:false`**, `next_open` 2026-09-17T09:30-04:00. Regular session, no holiday. `/v2/calendar` confirms 9/17 and 9/18 are both full sessions.
+- `/v2/account/activities?activity_types=FILL&after=2026-09-14` → **`[]`**. **Eleven completed sessions with zero fills since the 8/31 XLV exit; today is the twelfth.** Account `ACTIVE`, `trading_blocked:false`, 1 position, 1 open order, full PDT room.
+- Equity **$98,472.14** (pre-market mark); `last_equity` **$98,595.14** (`balance_asof` 2026-09-16) → **day -$123.00 (-0.12%)**. Phase-to-date **-$1,527.86 (-1.53%)**.
+- Cash $79,386.14 (80.62%) | Position MV **$19,086.00** → **19.38% deployed**. Gap to the 75% floor: **$54,768.10**.
+
+| Ticker | Shares | Entry | Mark | Wt | Unreal. | Cut line (-7%) | Gap to cut | Trail (GTC) | Trail dist | Tighten @ +15% |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $63.62 | 19.38% | **+$19.40 (+0.10%)** | $59.1065 | 7.09% | **$59.553 (10%, hwm $66.17)** | 6.39% | $73.09 |
+
+- **Rule 13 — the quote is NOT order-grade and nothing is sized off it.** XLE's `latestQuote` is **61.76 / 65.77** stamped 2026-09-16T20:00:00Z — a $4.01 stale close-auction spread, unusable. The freshest source is the pre-market minute tape: **87 SIP one-minute bars, 04:00–08:23 ET, last print $63.69**, high **$64.31** (08:01 ET), low **$63.5868** (08:20 ET). Position mark $63.62 and the last print $63.69 agree to 7 cents. **No order may be sized off any of this until an RTH quote confirms it — that is the market-open run's job, not this one's.**
+- **XLE has round-tripped.** The position was **+3.96% ($66.07)** on the 9/14 pre-market — the best mark of the phase — and is **+0.10%** now. Nine trading days, the entire gain surrendered, and the 9/16 -2.88% session did most of it.
+- **The trail did NOT ratchet, correctly.** Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `updated_at` **2026-09-10T13:30:02.170843Z** — unchanged for a **seventh** session. The pre-market high $64.31 is **$1.86 (2.81%) below** the hwm; nothing close. Floor has only ever moved up, never touched by hand. **Rules 4 and 7 intact.**
+- `qty_available: 0` is the trailing stop reserving all 300 shares. Expected.
+
+### Market context
+
+**FOMC (the week's event, now resolved).** The Fed **raised** the target range **25bp to 3.75–4.00%** on a **12–0** vote (Federal Reserve press release, 2026-09-16). The **dot plot came in hawkish**: median **4.1% at end-2026 and 4.1% at end-2027**, implying **fewer cuts** than the prior SEP. Equities sold the presser — SPY **-0.44%** to **$754.05**, Dow **-1.21%**, Nasdaq roughly flat. **The dot plot that three prior runs recorded as "unpriced" is now priced, and the decision to take nothing into it was the right call on the day.**
+
+**This morning's tape is a sharp reversal of that.** At 12:37–12:38Z: S&P futures **7,688.25 (+0.86%)**, Nasdaq futures **29,586.25 (+1.13%)**, Dow futures **52,315 (+0.77%)**; **VIX 15.98 (-9.77%)** — *no timestamp available on the VIX source, recorded but not relied on*. **SPY's own pre-market quote is order-grade-tight — 763.58 / 763.68, a 10-cent two-sided spread at 12:38Z — and puts the broad tape +1.27% against its $754.05 close.** A risk-on gap the session after a hawkish hike.
+
+**Crude is down and the complex will likely lag the gap.** Two dated sources disagreed on WTI ($100.46 vs $100.36), so **no WTI level is asserted** — rule 13 governs prices used for sizing and nothing is being sized. The same-source FT pair reads **WTI $100.36 (-2.02%), Brent $102.88 (-2.79%)**. Wires attribute the move to **profit-taking after the Middle East-driven run-up**, plus Saudi officials describing pipeline repairs as holding — an easing of fear premium, **not** a new bearish supply shock and **not** a de-escalation story under rule 14. No fresh OPEC action sourced.
+
+**EIA — fifth handoff, finally closed.** The 9/16 release (week ending **Sep 11**): commercial crude stocks **fell 0.640 Mbbl to 423.4 Mbbl**. That is a **second consecutive draw** (prior week 0.4 Mbbl draw to 424.1 Mbbl) on strong exports. **Mildly constructive for crude, and crude is down anyway** — which is consistent with the profit-taking read rather than a fundamentals read. **This question was handed from the 9/14 midday to 9/16 pre-market, market-open, midday and the daily summary before landing here. It is now answered and closed; no further handoff.**
+
+**Today's calendar.** Weekly **jobless claims** and the **Philadelphia Fed Business Outlook** at 08:30 ET, **housing starts** the same morning — **none released at the time of this run (08:40 ET)**. One caution on my own sources: a claims figure came back as "206,000," which is the **week ended Sep 5, released Sep 10** — *stale, republished under today's date.* **Nothing is asserted for today's claims print.** The only forward number in evidence is a calendar consensus of **~28.6 for Philly Fed vs 47.4 prior** — a consensus, not an actual. Fourth time in this log a dated-but-stale secondary source has had to be caught.
+
+**Earnings.** Before the open: **FDX, DRI, HUBG, SCHL, FDS**. After the close: **LEN**. **FedEx is the one that matters beyond its own ticker** — freight guidance is a read on goods demand into Q4. No position or candidate here is exposed to any of them.
+
+**Tomorrow is September quarterly witching (Fri 9/18) — third Friday, quad expiry plus the S&P index rebalance.** Volume and closing-auction distortion are near-certain. It is **not** a reason to trade today and it **is** a reason not to open anything that needs a clean Friday exit. *(Recorded as an exposure note only — this book holds no options and never will.)*
+
+### Rule 14 wire check — NONE
+- Wire-restricted, date-required query as of 2026-09-17: **NONE. No signed, announced or in-force US-Iran agreement or Strait of Hormuz reopening arrangement exists.** The best the query surfaced is Reuters **Aug 7** ("could soon reopen") and **Aug 9** (Iran-Oman lanes "in final stages," reopening conditional on US action) — *both older than what the 9/16 run already had in evidence (Reuters 9/12, Reuters 9/16).*
+- **Honest limitation: today's query returned NO dated transit count at all.** The freshest dated count in the log remains **4 transits on Tuesday (Reuters, 9/16)**, carried from yesterday's run, against single-digit counts on every dated observation since Sep 4. **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met and not close, on the evidence that exists.** **Exit trigger (b)** — the $59.1065 cut line — **7.09%** below the mark. **Neither exit rule fires.**
+- Today's crude weakness is **profit-taking and fear-premium decay**, which rule 14 makes explicitly ineligible as a thesis-break signal absent a wire carrying an actual arrangement. **Thesis intact. No basis for an early cut.**
+
+### The sector screen — the run's finding, and why it is empty
+Closes 2026-09-16, SIP daily bars, sorted by month-to-date:
+
+| Sector | Close | 1d% | 5d% | 20d% | MTD% | vs 20d high | At 20d low? |
+|---|---|---|---|---|---|---|---|
+| **XLC** comm svcs | 113.00 | -0.90 | **+1.96** | **+2.28** | **+1.38** | -1.80% | no |
+| **XLE** energy *(held)* | 64.03 | -2.88 | -1.96 | **+0.55** | **+0.11** | -2.88% | no |
+| XLK tech | 183.93 | +0.10 | -2.10 | -0.91 | -1.38 | -2.48% | no |
+| XLV health | 167.77 | +0.07 | +0.71 | -1.15 | -1.62 | -4.50% | no |
+| **SPY** | 754.05 | -0.44 | -1.10 | -1.75 | -1.69 | -2.47% | **YES** |
+| XLP staples | 83.33 | -0.48 | +0.34 | -2.63 | -1.94 | -4.71% | no |
+| SMH semis | 545.56 | +0.64 | -5.00 | -4.25 | -1.99 | -5.00% | no |
+| XLU utilities | 41.32 | 0.00 | -3.77 | -6.13 | -2.15 | -6.13% | **YES** |
+| XLRE real est | 42.81 | -0.60 | -1.38 | -4.08 | -2.95 | -5.62% | **YES** |
+| XLF financials | 55.93 | -1.62 | -1.98 | -3.30 | -3.08 | -4.49% | **YES** |
+| XLI industrials | 168.71 | -0.08 | -1.79 | -8.10 | -3.67 | -7.28% | **YES** |
+| XLB materials | 50.36 | -0.73 | -2.00 | -2.74 | -4.42 | -6.17% | **YES** |
+| XLY discretionary | 110.18 | -0.63 | -2.03 | -5.31 | -5.50 | -7.09% | **YES** |
+
+- **Eleven of thirteen are negative MTD. Six sectors plus SPY closed 9/16 sitting exactly on their 20-day low.** This is not a rotation — it is a broad-based drawdown with two holdouts.
+- **Rule 9 (follow sector momentum) admits exactly two sectors in the entire tape: XLC and XLE. The book already owns XLE.** The screen is empty for a structural reason, and that is a different and more defensible statement than "no candidate looked good today."
+- **This also settles something the log has been circling.** The last fourteen sessions of "all candidates fail STEP 3" were not excessive caution: in a tape where the median sector is 4.5% below its 20-day high and half of them are at 20-day lows, a momentum rulebook is *supposed* to produce no entries. **Rule 11 has been doing its job.**
+
+### Trade ideas — three worked, three rejected, none staged
+
+**1. XLC (communication services) — the only genuine momentum candidate, and it fails on reward-to-risk.**
+- *Catalyst:* **NONE dated.** Perplexity found no dated upgrade or company catalyst for **GOOGL** or **META** (together ~29–36% of the fund) in the last week; the sector's 9/14 +1.4% day was macro — oil down, in-line CPI. A relative-strength reading is not a catalyst. **Fails entry-checklist gate 1.**
+- *Momentum:* **passes, and it is the only one that does** — +2.28% over 20d, +1.38% MTD, +1.69% above its 50dma, 1.80% off its 20d high.
+- *Entry:* ~$113.00 (**RTH confirmation required — this is a pre-market read**). *Stop:* **$105.09** (-7.0%, below both the 20d low $110.68 and the 50dma $111.12 — **structurally placed, this leg passes**). *Target for the required 2:1:* **$128.82**, which is **7.3% above the 52-week high of $120.08 set 1/30**. A realistic target at the 52w high gives **+6.3% against -7.0% risk = 0.9:1. Fails gate 4 outright.**
+- *Also:* XLC is **-5.90% from its 52w high and -0.91% below its 200dma, down 4.9% on the year.** Its "leadership" is leadership of a falling field.
+- **REJECTED — no catalyst, R:R 0.9:1 against a 2:1 minimum. No owner decision needed.**
+
+**2. XOP (oil & gas E&P) — rejected on its own merits for the first time; the owner block is no longer the binding constraint.**
+- **-3.96% on 9/16 to $191.80, now 3.96% below its 20d high ($199.70) and -1.65% over 5 days.** It is not broken — still +3.48% over 20d and +7.03% above its 50dma — but **it is no longer at a high, and crude is down again pre-market.** *Momentum leg fails today.*
+- **Owner decision 2 (authorize or forbid a second energy leg) is unanswered for a sixteenth consecutive session, but note what changed: it is not what stops this trade today.** XOP fails the screen on its own. The concentration argument — a second energy leg takes the book to ~39% single-sector, and 9/15/9/16 showed the complex moves as one in both directions — is unchanged and still the honest ground for the standing **FORBID** recommendation.
+- **REJECTED.**
+
+**3. SMH / XLK (the gap-up idea) — rejected, and worth naming as a trap.**
+- Nasdaq futures **+1.13%** make semis the likeliest leader at the bell, and SMH was the only green sector ETF on 9/16 (+0.64%). **That is the whole case, and it is not enough.** SMH is **-4.25% over 20d, -5.00% below its 20d high, -3.63% below its 50dma**, and -5.00% over five sessions.
+- **A gap-up inside a downtrend is not momentum — it is a bounce, and rule 9 does not buy bounces.** Chasing a +1.1% futures print into a name 3.6% under its 50dma is the exact trade rule 11 exists to prevent.
+- **REJECTED.**
+
+**No candidate clears the entry checklist. No order placed. No order staged. Nothing handed to the market-open run to size.**
+
+### Position management — nothing to do, checked explicitly
+- **Cut at -7%:** cut line **$59.1065**, mark $63.62 — **7.09%** above it. **Not triggered**, but this is the narrowest the gap has been in the phase (it read 8.68% at the 9/16 midday). **Worth the market-open run's attention: a -7.1% XLE session would trigger the manual cut before the trail ever fires.**
+- **Tighten to 7% at +15%:** needs **$73.09**; position is **+0.10%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Stop within 3% of price:** trail sits **6.39%** below the mark. **Compliant**, and narrowing with price — if XLE falls a further ~3.5% the trail enters the 3% exclusion zone and the manual cut line becomes the operative exit. Flagged, not actioned.
+- **Stop moved down:** never. `updated_at` unchanged since 2026-09-10T13:30:02Z, seventh session.
+- **Thesis check:** intact. Supply thesis rests on Hormuz closure; the wire check confirms no arrangement, and the only dated transit count in evidence is 4/day. Today's crude weakness is profit-taking, which rule 14 makes ineligible as a break signal.
+- **20% cap:** XLE at **19.38%** of equity. Under, and drifting down with price — **owner decision 4 moot for a fourth straight session**; default remains (a), the cap binds at entry only.
+- **Positions 1 of 6. Weekly slots 0/3** (week of 9/14-9/18) — **and with only Friday's witching session left, this will be the sixth consecutive week the account uses no slot.**
+- **No options. Never.**
+
+### Benchmark — the mission metric, read honestly
+| | Since inception (8/14) | 
+|---|---|
+| Account | **-1.40%** (9/16 close $98,595.14) / **-1.53%** at this morning's mark |
+| SPY | **-2.87%** ($776.34 → $754.05) |
+| **Difference** | **+1.47 pts in the account's favour** |
+
+- **The account is beating its benchmark, and that is the mission.** It should still be read for what it is: **the lead is a cash position, not stock selection.** 80.62% in cash cannot lose what the index loses.
+- **It reverses symmetrically, and today is the demonstration.** SPY is **+1.27%** pre-market. If that holds to the close, a book that is 19.38% deployed captures roughly **+0.25%** of it and **gives back about a full point of the 1.47-point lead in one session.**
+- **This is the honest case for and against the standing deployment breach, in one table, and it is the owner's call — not this run's.**
+
+### Standing items carried
+- **Rule 2 breach continues: 19.38% deployed against a 75% floor, $54,768.10 short. The account's only standing rule violation, now ~40 sessions old, escalated repeatedly and unanswered.** Today's screen explains *why* it persists — the momentum rule and the deployment rule are in direct conflict in a tape where half the sectors sit at 20-day lows, and every run has resolved that conflict toward rule 11. **That resolution is defensible and it has been worth +1.47 pts, but it cannot be rediscovered from first principles every session for another forty. It needs an owner decision.**
+- **Owner decisions 1–4 remain unanswered (15–16 sessions).** All four land on tomorrow's weekly review.
+- **`memory/WEEKLY-REVIEW.md` still ends at "Week ending 2026-09-04."** The week of 9/7-9/11 has no review. **Tomorrow's review (Fri 9/18) must cover two weeks and all four owner decisions.** This is the second consecutive run to flag it.
+- **Persistence: 9/16 was covered end-to-end** — pre-market, market-open, midday and daily summary all ran and committed (`1052739` closes the day with a real EOD snapshot). **First fully-observed session since 9/14, after ten logged persistence gaps.** Streak worth keeping.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$19.40 (+0.10%)** at **$63.62**, essentially flat after round-tripping a +3.96% gain in nine sessions; cut line **7.09%** below and narrower than at any prior point in the phase, trail live at **$59.553**, **6.39%** below the mark, never moved down, **correctly un-ratcheted for a seventh session** (pre-market high $64.31 vs the $66.17 hwm). Equity **$98,472.14**, day **-0.12%**, phase **-1.53%** — against **SPY -2.87% since inception, a 1.47-point lead that is a cash position rather than a stock-picking result and gives back about a point today if the +1.27% gap holds.** Deployment **19.38%**, 1 of 6 positions, **eleven completed sessions with zero fills**, week **0/3**. **Rule 14: NONE — no signed, announced or in-force arrangement; today's query returned no dated transit count, so the Reuters 9/16 count of 4 stands as the freshest evidence and neither exit trigger fires.** **The run's three facts: (i) the EIA question is closed after five handoffs — 0.640 Mbbl draw to 423.4 Mbbl, a second consecutive draw, with crude down anyway on profit-taking; (ii) the sector screen is empty structurally, not by judgement — eleven of thirteen sectors negative MTD and six plus SPY at 20-day lows, leaving rule 9 exactly two candidates, one of which is already held; (iii) all three worked candidates fail — XLC on catalyst and a 0.9:1 R:R, XOP on its own momentum for the first time rather than on the owner block, SMH as a gap-up inside a downtrend.** **FOMC delivered 25bp to 3.75-4.00% with a hawkish 4.1%/4.1% dot plot, and the tape is gapping +1.27% the morning after anyway.** Next window: **market-open execution** — first job is an RTH quote to replace this morning's unusable $4.01 pre-market spread, second is the narrowed 7.09% cut-line gap if XLE sells off with crude, third is whether the +1.27% broad gap survives the bell.
