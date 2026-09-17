@@ -227,3 +227,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.03 | -2.88% | +$142.40 (+0.75%) | $59.553 (10% trail, hwm $66.17) |
 
 **Notes:** No trades, no fills, no position changes — activities feed shows nothing after the 8/31 XLV exit. XLE gave back most of yesterday's record session, opening near the $65.93 close and fading to $64.03 (-2.88%), still net positive on the position at +0.75% unrealized. The trail did not ratchet (high stayed well below the $66.17 hwm set 9/10); stop untouched by hand, never moved down, `updated_at` still 2026-09-10T13:30:02.170843Z. Deployment 19.48% ($19,209.00 of $98,595.14). Cut line $59.1065, 7.68% below the close. Trades week of 9/14-9/18: 0/3.
+
+### Sep 17 — EOD Snapshot (Day 24, Thursday)
+**Portfolio:** $98,763.14 | **Cash:** $79,386.14 (80.39%) | **Day P&L:** +$168.00 (+0.17%) | **Phase P&L:** -$1,236.86 (-1.24%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.59 | +0.88% | +$310.40 (+1.63%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes — activities feed still shows nothing after the 8/31 XLV exit. XLE clawed back part of yesterday's -2.88% fade, closing $64.59 (+0.88%) on the day. The trail did not ratchet (today's range stayed well below the $66.17 hwm set 9/10); stop untouched by hand, never moved down, `updated_at` still 2026-09-10T13:30:02.170843Z. Deployment 19.62% ($19,377.00 of $98,763.14). Cut line $59.1065, 8.49% below the close. Trades week of 9/14-9/18: 0/3.
