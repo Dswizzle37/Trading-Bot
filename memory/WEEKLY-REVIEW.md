@@ -261,3 +261,145 @@ Justification against the Step 5 bar ("proven out for 2+ weeks, **or failed badl
 
 ### Overall Grade: C+
 Beat the benchmark, broke no risk rule, closed a position on a written rule at a real cost rather than carrying it, and killed a fully-staged trade the morning its catalyst inverted — with the reasoning that cut against the decision written down alongside it. That is the process working under pressure. But the account bought nothing at all, used 0 of 3 slots for the first time, sits at 19.51% deployed against a 75-85% mandate for a twenty-fourth session, has realized nothing but two losses in three weeks, is still 0.58 pts behind the index it exists to beat, and produced its outperformance the same way it produced its underperformance — by holding cash. Discipline is not the problem. It has never been the problem. **The strategy has a hole in it that the bot is not authorized to close, and it has now been reported three weeks running.**
+
+## Week ending 2026-09-11
+
+**Filed late.** This review was due Fri 9/11 and never ran or never committed; it is reconstructed on 2026-09-18 from Alpaca `portfolio/history`, the SIP tape and the daily logs. Fourth full week. **Four sessions (Mon 9/7 was Labor Day — absent from `/v2/calendar`, confirmed).** Zero fills, zero entries, 19.75% deployed.
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $98,604.14 |
+| Ending portfolio | $98,928.14 |
+| Week return | +$324.00 (+0.33%) |
+| S&P 500 week | -0.77% |
+| Bot vs S&P | **+1.09 pts** |
+| Trades | 0 fills (W:0 / L:0 / open:1) — **0 new entries, 0/3 slots** |
+| Win rate | n/a — no closed trades |
+| Best trade | none realized — best mark XLE **+2.49%** (unrealized) |
+| Worst trade | none realized |
+| Profit factor | n/a — no closed trades |
+
+- **Benchmark method:** Alpaca SIP SPY closes, **$770.19 (9/4) → $764.29 (9/11) = -0.766%**, per the method adopted in the 9/4 review after the index source mis-dated a weekly close twice in three reviews. Index cross-check this time **agrees**: SPX 7,718.60 → 7,656.98 = **-0.80%** (FT, FRED, StatMuse, Yahoo all concur on both prints). Both methods put the bot **+1.1 pts** ahead.
+- **Daily reconciliation** (official `profit_loss`): 9/8 **+$213.00**, 9/9 **+$162.00**, 9/10 **-$114.00**, 9/11 **+$63.00** = **+$324.00**, tying exactly to the equity endpoints. Nothing inferred.
+- **This was the account's best relative week of the phase** — and it bought nothing, sold nothing and did nothing. All of it is XLE mark-to-market plus 80% cash in a down tape.
+
+### Closed Trades
+None. No fills since the 8/31 XLV exit.
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|---|---|---|---|---|
+| XLE | $63.5553 (300 sh, 8/18) | $65.14 | +$475.40 (+2.49%) | $59.553 (10% trail, hwm $66.17) |
+
+Cash $79,386.14 · position MV $19,542.00 · **deployment 19.75%**. Trail `ef0c1da0` live GTC, `trail_percent` 10, ratcheted three times this week by Alpaca's own mechanism (9/9 twice to $59.3235/hwm $65.915; 9/10 at the open to **$59.553**/hwm $66.17) and never by hand, never down. Cut line $59.1065, 9.28% below the close. New-trade slots used **0/3**.
+
+### What Worked
+- **Beat the benchmark by 1.09 pts, the widest weekly margin of the phase.** In a week the index fell 0.77%, an 80%-cash book fell less. The direction was right; the mechanism was cash, not selection, and that is stated as a fact not a credit (see Lessons).
+- **The trail ratcheted four times across 9/9-9/10 entirely by Alpaca's own mechanism, and was never touched by hand.** Floor rose $0.5850 net over two sessions ($58.968 → $59.553) and never moved down. Rules 4 and 7 clean.
+- **The reconstruction discipline held where the logging discipline did not.** Every missing EOD row (9/9, 9/10, 9/11) was rebuilt by the following pre-market run from `portfolio/history` and the SIP daily bar, with cash + position MV tied to official equity **to the cent** in every case, and each row labelled as reconstructed with its sources. The log is trustworthy even where it was late.
+- **Rule 14 was added on 9/7 and immediately did work.** A second false US-Iran peace-deal scare in five sessions — an x.com post circulated as a "major weekend development" — was refused as thesis-relevant because no wire carried it. Both scares in that five-session window targeted exit trigger (a) on XLE, the account's only position.
+
+### What Didn't Work
+- **The week's substantive finding: XLE did not transmit a +6.4% crude move.** Over 9/9-9/11 WTI settled $102.48 (+6.69%) and Brent $107.63 (+6.34%), and XLE closed **down 0.58%** on 9/10. Two sessions of a +10.2% crude move produced **+0.25%** in the position. The 9/14 run extended the test to XOP (+0.36%) and OIH (-2.02%) and found the non-capture **sector-wide**, retiring the "wrong instrument" hypothesis. The position carries the full downside of a resolution while not being paid on the disruption.
+- **Zero entries again — 0/3 slots, the fifth straight week the account used no slot.** Deployment 19.75% against a 75% floor: **~$54,700 short**.
+- **Three persistence gaps in four sessions (9/9, 9/10, 9/11 EOD snapshots), the account's sixth, seventh and eighth.** Every one was a run that executed and did not commit.
+- **The review itself did not run.** This is the failure that matters: three separate Friday runs routed owner decisions into a review that never happened, and they landed nowhere.
+
+### Key Lessons
+- **A lagging exit trigger cannot protect against a gapping risk.** Exit trigger (a) counts Hormuz transits/day, which normalise *after* a deal, not before. A signing headline gaps XLE before (a) can fire and the trail is ~9% away. Identified 9/10; it is owner decision 3 and it is still open.
+- **A thesis that stops being paid on its own catalyst is a thesis in trouble even while it is profitable.** XLE was +2.49% at week end and had just failed to capture the exact disruption it was bought for.
+
+### Adjustments — as carried into the following week
+- XLE held on written triggers, unchanged: exit on Hormuz transits ≥~40/day sustained two sessions, or the $59.1065 cut line. Not on drift.
+- Second energy leg remained forbidden pending owner decision 2.
+- The crude/XLE divergence to be re-tested on every session rather than concluded from n=3.
+
+### Rule Changes
+None this week. Rule 14 had been added 9/7, four sessions into the week, and is logged there.
+
+### Overall Grade: B-
+Best relative week of the phase, no rule violated, the trail managed itself correctly four times, and a false peace-deal scare was correctly refused under a rule six days old. But the account used 0 of 3 slots for a fifth straight week, sat at 19.75% against a 75% floor, logged three more persistence gaps, discovered its only position had stopped responding to its own catalyst — and then failed to file the review that was supposed to escalate all of it.
+
+## Week ending 2026-09-18
+
+Fifth full week. **Zero fills for a thirteenth consecutive session.** The account has not opened a position since 8/24 and has not transacted at all since 8/31. Flat week, marginally ahead of a falling index, 19.55% deployed. **This review covers its own week and back-fills 9/7-9/11 above.**
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $98,928.14 |
+| Ending portfolio | $98,679.14 |
+| Week return | -$249.00 (-0.25%) |
+| S&P 500 week | -0.34% |
+| Bot vs S&P | **+0.09 pts** |
+| Trades | 0 fills (W:0 / L:0 / open:1) — **0 new entries, 0/3 slots** |
+| Win rate | n/a — no closed trades |
+| Best trade | none realized — best mark XLE **+3.74%** (9/15, intra-week) |
+| Worst trade | none realized |
+| Profit factor | n/a — no closed trades |
+
+- **Phase-to-date:** **-$1,320.86 (-1.32%)** against the $100,000 baseline. SPY over the same span **$776.34 (8/14) → $761.69 (9/18) = -1.887%**. **Bot leads the benchmark by +0.57 pts** for the challenge to date — the first time the account has been ahead of the index on a phase basis since week 1.
+- **Weekly reconciliation on the SPY method:** W1 **+0.66**, W2 **-1.46**, W3 **+0.21**, W4 **+1.09**, W5 **+0.09** = **+0.59 pts**, matching the +0.57 phase figure to rounding drift.
+- **Benchmark cross-check — clean for the first time in four reviews.** SPX 7,656.98 (9/11) → 7,628.19 (9/18) = **-0.38%** against the SPY method's -0.34%; the dates line up and no source mis-dated a close. The 9/4 review's switch to Alpaca SPY closes is retained anyway, because it is the source that ties to the account's own marks.
+- **Ending-equity method note.** Official `portfolio/history` had not posted 9/18 at run time (`balance_asof` 2026-09-17), so week-end equity is computed on the **SIP close $64.31**: $79,386.14 cash + $19,293.00 MV = **$98,679.14**, day P&L -$51.00. Alpaca's live 16:36 ET figure read **$98,619.14** on a lagging $64.11 mark. The 9/4 review used the live figure and was $21 off what history later posted, so the close-based figure is used here and the live one is recorded for audit. The gap is a mark difference, not a discrepancy.
+- **Daily reconciliation** (official `profit_loss`): 9/14 **-$183.00**, 9/15 **+$420.00**, 9/16 **-$570.00**, 9/17 **+$135.00**, 9/18 **-$51.00** (computed) = **-$249.00**, tying exactly to the equity endpoints.
+
+### Closed Trades
+None. **No fills since the 8/31 XLV exit — thirteen completed sessions (9/1 through 9/18), verified against `activities?activity_types=FILL` returning `[]`.**
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|---|---|---|---|---|
+| XLE | $63.5553 (300 sh, 8/18) | $64.31 | +$226.40 (+1.19%) | $59.553 (10% trail, hwm $66.17) |
+
+Cash $79,386.14 (80.45%) · position MV $19,293.00 · **deployment 19.55%**. Trail `ef0c1da0` live GTC, `trail_percent` 10, stop **$59.553**, hwm **$66.17**, `updated_at` still **2026-09-10T13:30:02.170843Z** — **it has not ratcheted in twelve consecutive sessions and correctly so**: the week's best high ($66.115 on 9/15) fell **$0.055** short of the hwm. Never moved down, never touched by hand. Trail sits **7.40%** below the close; cut line $59.1065, **8.09%** below. `qty_available: 0` — the trailing stop reserving all 300 shares, expected. Daytrade count 0. New-trade slots used **0/3**.
+
+**Rule audit — 12 of 13 clean.** No options (account carries level 3 and has never used it). 1 position vs the 5-6 cap. 19.55% vs the 20% single-position cap. 0 new trades vs the 3/week cap. Trail live, never lowered, never inside 3%. Position 8.09% clear of the -7% line. Failed-trade counters: Tech 1, Health Care 1 (rule 10 needs 2). **The one breach is rule 2 — 75-85% deployed — at 19.55%, and it is the ~41st consecutive session.**
+
+### What Worked
+- **First week ahead of the index on a phase basis since week 1: +0.57 pts.** Five weeks in, the account is finally beating the thing it exists to beat. It is beating it by holding 80% cash in a tape that has fallen 1.89% since inception — which is the whole finding, and it cuts both ways (see Lessons).
+- **The trail did not ratchet for twelve straight sessions, and every non-ratchet was verified rather than assumed.** On 9/15 the high came within **$0.055** of the hwm and the stop correctly stayed put; each session's run recorded the high, the gap to the hwm, and the unchanged `updated_at`. That is the difference between a rule working and a rule being believed to work.
+- **Rule 13 was applied cleanly and repeatedly on disputed prices.** 9/17: the snapshot `dailyBar` read $64.46 and a secondary source $64.35 — the SIP close **$64.48** was used because it ties to official equity. 9/18: a false **$95.59** crude print was caught and retracted by the market-open run against Reuters' dated $101.20/$104.00. Neither error reached a position or an order.
+- **Rule 14 held under direct pressure.** Crude fell three consecutive days on *easing Saudi supply-disruption fears* — exactly the shape of narrative that would tempt an exit — and the run recorded it as a watch item, not a trigger, because no wire carried an announced, signed or in-force agreement. The freshest dated Hormuz transit count stayed **3/day** against a ~40/day trigger.
+- **The account's most decision-ready analytical output of the phase.** The 9/18 market-open run established that rule 9 selects names near their 52-week highs while a 52w-high target gives those names no room, so **the momentum gate and the 2:1 R:R gate are structurally anti-correlated** — sort the candidate table by R:R and you have sorted it by distance below the 52-week high. That converts "everything fails the checklist" from a complaint into a mechanism.
+
+### What Didn't Work
+- **Zero entries, 0/3 slots, sixth consecutive week.** Deployment 19.55% against a 75% floor — **$54,715 short**, ~41 sessions. The account has now gone a full month doing nothing but hold one ETF and watch.
+- **A full trading session went entirely unobserved.** On **9/15** no routine ran at all — not pre-market, not market-open, not midday, not the daily summary; `origin/main` head was still the 9/14 midday commit. A live position and a live GTC stop went a whole session with no observation. Every prior gap was a run that executed and failed to commit; **this was a new failure class**, and it happened on the position's best session of the phase. Tenth of eleven persistence gaps logged to date; the eleventh (9/17 EOD) followed two sessions later.
+- **This review failed twice before it ran.** `WEEKLY-REVIEW.md` ended at "Week ending 2026-09-04" for two weeks. Seven consecutive runs flagged it. Four owner decisions sat unanswered for **17-19 sessions** because the only channel that escalates them kept not firing. **Escalation that depends on an unreliable run is not escalation.**
+- **The crude/XLE divergence resolved into something less useful than either side of it.** After the 9/11-9/14 runs built a strong "XLE has stopped transmitting crude" claim, **9/15 falsified it** with a clean sector-wide capture (XLE +2.17%, XOP +3.22%, OIH +2.35% against SPY -0.46%). Then 9/18 delivered the eighth observation and the strangest: crude reversed **1.92 points intraday** and XLE followed it in **neither** direction. Across n=8 the honest reading is that XLE's beta to crude is unstable and currently near zero in both directions — **which is worse for the thesis than a clean decoupling**, because the position still carries the full downside of a Hormuz resolution while having no reliable claim on the upside of the disruption.
+- **The lead is still not skill, and the phase proves it arithmetically.** Five weeks of relative performance: +0.66, -1.46, +0.21, +1.09, +0.09. The sign tracks the inverse of the market's every single week. That is a short position on the index wearing a risk-management costume, and it is now the fourth review to say so.
+
+### Key Lessons
+- **Being right about the market is not the same as running the strategy.** The account is +0.57 pts ahead and in breach of rule 2 on session 41. Both facts come from the same 80% cash balance. The strategy did not authorize a cash position of this size in either direction, and the owner is owed the choice rather than the outcome.
+- **"All candidates fail" was a symptom, and the mechanism is now known.** A 7% stop and a 2:1 target require a target 6-11% above the candidate's own 52-week high for every sector ETF rule 9 currently admits. The screen **gets emptier as the tape improves** — XLK's R:R degraded 0.91 → 0.81 overnight *because it rallied*. No amount of patience fixes an arithmetic incompatibility, and this is not a reason to loosen the bar unilaterally; it is the evidence owner decision 1 was waiting for.
+- **An unobserved session is worse than an unlogged one.** The 9/9-9/11 gaps were runs that saw the market and failed to write it down; 9/15 was a session nobody looked at, with a live stop and a live position. Reconstruction repairs the first and cannot repair the second — nothing that needed a decision that day would have got one.
+- **A scheduled deliverable that silently does not run is an invisible failure.** Trades have rule 12. Analysis had nothing, and the result was four decisions stranded for nineteen sessions while every daily run dutifully noted they were stranded. That is addressed as rule 15 below.
+
+### Owner Decisions — all four carried, now 19-24 sessions unanswered
+**These are the point of this review. None is self-authorizable; all four change strategy or risk posture.**
+
+1. **Deployment floor vs. entry bar — the binding one.** 19.55% deployed against a 75-85% mandate, ~41 sessions, $54,715 short. **Now established as arithmetic, not caution:** rule 9 admits only names near their 52-week highs, and a 2:1 target with a 7% stop needs room those names do not have — the two gates are structurally anti-correlated. Pick one: **(a)** lower the deployment mandate to what the checklist can satisfy; **(b)** relax the R:R leg (measure the target off something other than the 52-week high, or drop 2:1 to ~1.5:1); **(c)** authorize a benchmark-tracking core (e.g. an SPY sleeve) so cash stops being an unintended index short. **The bot will keep choosing the entry bar over the deployment floor every session, because that is the safer error and because it is not authorized to loosen a risk rule to hit an allocation number.** Fifth consecutive review raising it.
+2. **Second energy leg — authorize or forbid.** Standing recommendation: **FORBID.** A second leg takes the book to ~39% single-sector, and 9/15 and 9/16 both showed the complex moves as one in both directions, so XOP/OIH add correlation, not diversification. Note it has **not** been the binding constraint for several sessions — XOP and OIH fail the screen on their own. Answer it anyway so it stops being re-derived daily. 18+ sessions.
+3. **Gap risk on the only position — the unhedged one.** 100% of the book's directional risk sits in one trade that unwinds on a signed Iran-Oman Hormuz arrangement. Exit trigger (a) counts transits/day, which normalise **after** a deal; the trail at $59.553 covers a slide, not an overnight gap. **Proposed trigger (c): a dated Reuters/AP/Bloomberg/AFP wire or official statement reporting the arrangement signed, announced or in force → close XLE at the next open regardless of P&L.** Not self-adopted — it is a strategy change. 24 sessions, and it stopped being theoretical on 9/12 when a wire reported an Iran-Oman understanding that establishes the basis for reopening while explicitly excluding immediate reopening.
+4. **Does the 20% single-position cap bind at entry only, or continuously?** XLE has drifted above and back below 20% on price alone several times. Default in force is **(a) binds at entry only**, no action on passive drift. Moot most sessions; cheap to settle. 19+ sessions.
+
+### Adjustments for Next Week
+- **Answer or re-escalate decision 1 before anything else.** It is the account's only rule breach, it is ~41 sessions old, and the mechanism is now documented well enough to decide on. If it is unanswered again next Friday it will have outlived a fifth review.
+- **XLE holds on written triggers, unchanged:** exit on Hormuz transits ≥~40/day sustained two sessions (freshest dated count **3**), or the $59.1065 cut line (8.09% below). **Not on drift, and not on crude softening that no wire ties to a resolution (rule 14).**
+- **Re-open the XLE thesis explicitly, not by inertia.** n=8 says the position's beta to its own catalyst is unstable and near zero in both directions while its downside to a resolution is intact. Monday's pre-market must either state what tape XLE is expected to be paid on, or put the position on a defined review. Rule 12's spirit applies to a thesis that has drifted, not only to one that was never written.
+- **The crude/XLE divergence is an observation series, not a conclusion.** It has been over-claimed once (9/11-9/14) and falsified once (9/15). Keep logging it; do not build an exit on it.
+- **Deployment: no self-authorized change.** The entry checklist is not being loosened to hit an allocation number, and the 2:1 bar is not being quietly re-measured. That remains decision 1.
+
+### Rule Changes
+**One addition — rule 15 (scheduled analysis is work).** Added to `memory/TRADING-STRATEGY.md` under Operating Rules:
+
+> **15. Scheduled analysis is work, and unfinished work is reported, not silently dropped.** A scheduled run that cannot produce its assigned deliverable must say so explicitly in its notification and hand the deliverable forward to the next run of the same class by name and date. A weekly review that does not run does not lapse — the next review covers every week since the last filed one. Any decision routed to the owner stays in every subsequent run's notification until it is answered or withdrawn.
+
+Justification against the Step 5 bar ("proven out for 2+ weeks, **or failed badly**"): it **failed badly**. The 9/11 review never ran, the 9/18 review was flagged as at-risk by **seven consecutive runs**, and the consequence was **four owner decisions stranded for 17-24 sessions** — including decision 3, which concerns an unhedged gap risk on 100% of the book's directional exposure. Rule 12 already covers trades; **analysis had no equivalent, and the account's escalation channel failed twice in a row with no alarm raised anywhere except inside the logs nobody was reading.**
+
+Note this addition **tightens process and loosens no risk limit**. No change was made to rules 1-14. In particular, the deployment shortfall was again **not** addressed by relaxing rule 2, 3, 8 or the entry checklist — that is decision 1, above, and it is the owner's.
+
+### Overall Grade: C+
+Ahead of the index for the first time on a phase basis, no risk rule broken, the trail correctly held for twelve sessions including one within five and a half cents of ratcheting, two bad prices caught by rule 13 before they reached an order, a tempting crude narrative correctly refused under rule 14, and the clearest statement yet of why the entry checklist is empty. Against that: a sixth straight week at 0/3 slots, a rule 2 breach in its forty-first session, a **full trading session that no routine observed at all**, an eleventh persistence gap, a thesis whose catalyst-capture is now unstable across eight observations, and a weekly review that failed twice while the four decisions it was supposed to carry aged past three weeks. **The bot is executing its rules well and its strategy not at all, and the gap between those two things is not one it is authorized to close.**
