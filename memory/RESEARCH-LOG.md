@@ -3323,3 +3323,104 @@ Rule 9 momentum gate = positive 20-day **and** above the 50dma.
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$187.40 (+0.98%)** at an indicative $64.18; cut line **8.58%** below, trail live at **$59.553**, **7.21%** below the mark, never moved down, correctly un-ratcheted for a **tenth** session. Equity **$98,640.14** pre-market against an official 9/17 close of **$98,730.14**; phase **-1.27%** at that close. Deployment **19.52%**, 1 of 6 positions, **fourteen completed sessions with zero fills**, week **0/3**. **Rule 14: NONE — freshest dated count still 4 transits (Reuters 9/16); neither exit trigger fires.** **The run's three facts: (i) crude is -6.7% in six sessions ($102.48 → $95.59) while XLE has held — the thesis's slow leak is now visible in the commodity, and it is the day's thing to watch; (ii) the 7%-stop/2:1-target incompatibility is confirmed across all four rule-9 sectors, needing targets 6-11% above their own 52-week highs, and it gets *worse as names rally* — XLK went 0.91:1 → 0.81:1 overnight by going up; (iii) the 9/17 EOD snapshot was never logged, the eleventh persistence gap, reconstructed here.** Next window: **market-open** — re-price XLE on an order-grade RTH quote, watch whether crude's decline finally transmits, and treat nothing in the witching close as signal. **Then the two-week weekly review, which is today's binding obligation.**
+
+## 2026-09-18 — Market-Open Execution (09:39 ET, Friday, Day 25) — quarterly witching
+
+### Account snapshot (Alpaca, live 13:36Z / 09:36 ET — RTH, order-grade)
+| | Value |
+|---|---|
+| Equity | **$98,646.14** |
+| Official 9/17 close | $98,730.14 (`last_equity`) |
+| Day P&L | **-$84.00 (-0.09%)** |
+| Cash | $79,386.14 (80.48%) |
+| Deployment | **19.51%** ($19,249.50) |
+| Positions | **1 of 6** |
+| Trades this week (9/14-9/18) | **0 of 3** |
+| Day trades used | 0 — full PDT room |
+| Fills since 9/1 | **none** — `activities?activity_types=FILL&after=2026-09-01` returns `[]` |
+
+| Ticker | Shares | Entry | Live mark | Unrealized | Stop |
+|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | **$64.165** | **+$182.90 (+0.96%)** | $59.553 (10% trail, hwm $66.17) |
+
+**Rule 13 satisfied.** XLE's pre-market $64.18 was an indicative position mark on a stale feed; the RTH quote is **$64.16 / $64.17, a 1-cent spread on 1400x700** — order-grade, and it confirms the pre-market mark to within two cents. Nothing was sized off the indicative figure and nothing needed to be.
+
+### FINDING 1 — the pre-market's headline crude figure was wrong, and the tape falsifies it
+This morning's run built its lead finding on **WTI $95.59**, calling it **-6.7% in six sessions** and "the thesis's slow leak, now visible in the commodity." **That price is bad and the finding is retracted.**
+
+Adjudicated on instrument data rather than on a second opinion:
+
+| | USO close | Implied read |
+|---|---|---|
+| Sep 10 | **158.38** | the session Reuters put WTI at **$102.48** — the log's own anchor |
+| Sep 17 | **155.31** | **-1.94%** from Sep 10 |
+| Sep 18 (live) | **157.22** | **+1.11% today**, -0.73% from Sep 10 |
+
+A WTI move to **$95.59** is **-6.7%** from the $102.48 anchor, which would put USO near **147.7**. USO is at **157.22** — **6.4% away**. The $95.59 print cannot be reconciled with the tape. Re-queried on wires: **Reuters has WTI settling $101.91 on Sep 17**. Crude is **roughly flat over six sessions (~-0.6%)**, not collapsing.
+
+**This is the seventh stale-secondary-source catch in this log and the first one that corrupted a run's own headline conclusion rather than being caught before it propagated.** Rule 13 was written for a disputed *quote*; the mechanism that caught this was the same one — prefer the instrument you can actually trade over the number someone reports about it. **The "slow leak in the commodity" is not a fact of this account's record and should not be carried forward by later runs.**
+
+### FINDING 2 — today inverts the pre-market's watch item: crude up, energy down
+The pre-market's stated thing-to-watch was whether XLE would "finally transmit" a crude decline. The decline was not real, and the tape ran the other way:
+
+| | Live chg |
+|---|---|
+| USO (crude proxy) | **+1.11%** |
+| **XLE** *(held)* | **-0.47%** |
+| XOP | **-0.56%** |
+| OIH | **-0.50%** |
+| SPY | -0.26% |
+
+**Crude up, the whole energy complex down** — the **seventh** logged observation of the divergence and a clean repeat of the original direction, not a new pattern. It neither confirms nor breaks the thesis; it re-states the unresolved question the 9/11-9/16 work opened. Witching volume argues against over-reading any of it.
+
+### FINDING 3 — SMH clears 2:1 for the first time this phase, *because* it is beaten down
+Rechecked at live mids (7% stop, target = the name's own 52-week high):
+
+| | Entry | 7% stop | Risk | Reward to 52wH | **R:R** | vs 52wH |
+|---|---|---|---|---|---|---|
+| **SMH** | $565.055 | $525.50 | $39.55 | $106.78 | **2.70:1 PASS** | **-15.85%** |
+| XLC | $111.825 | $104.00 | $7.83 | $8.59 | 1.10:1 FAIL | -7.14% |
+| XLK | $188.545 | $175.35 | $13.20 | $10.19 | 0.77:1 FAIL | -5.05% |
+| XOP | $191.295 | $177.90 | $13.39 | $9.60 | 0.72:1 FAIL | -4.74% |
+| XLE *(held)* | $64.165 | $59.67 | $4.49 | $2.01 | 0.45:1 FAIL | -3.02% |
+
+**Sort that table by R:R and you have sorted it by distance below the 52-week high.** The two gates are not merely both binding — they are **structurally anti-correlated**: rule 9 selects names near their highs, and a 52w-high target gives those names no room. **This is owner decision 1 stated as a mechanism rather than an observation**, and it is the sharpest form the finding has taken. Yesterday's version (XLK degrading 0.91 → 0.81 by rallying) was the same effect seen from one name.
+
+**SMH is rejected anyway, on two counts.** (i) **No dated catalyst** — the research pass returns "broad tape move," with only a Sep 17 piece on *possible* export controls for Chinese memory chips and no rule change or company event. (ii) Its rule-9 "pass" is an artifact: **+0.48% 20-day and +0.13% above the 50dma**, both hairline flips on a *partial intraday bar during quarterly witching*, inside a **-6.97% 50-day downtrend** and **-15.85%** below its 52-week high. On completed 9/17 bars it failed both legs (-0.06%, -0.86%). **Rule 9 does not buy bounces, and a gate that flips sign on a witching-day partial bar has not been passed.**
+
+### Rule 14 wire check — NONE
+- **No signed, announced or in-force US-Iran agreement, ceasefire, de-escalation deal or Hormuz reopening arrangement exists as of Sep 18.** Reuters **9/12** still governs (the Iran-Oman understanding "does not provide for immediate reopening," reopening tied to US conditions). Nothing dated 9/17 or 9/18 changes it.
+- **Freshest dated transit count is now 3, observed Sep 16, reported by Reuters Sep 17** — newer than the log's prior freshest (4, Reuters 9/16) and **lower**. The dated series since Sep 4 reads 3, 4, 4, 7, 7, 6 against a 10-day average of 18.
+- **Exit trigger (a)** — ≥~40 transits/day sustained two sessions — **not met, and the freshest print moved further away from it.** **Exit trigger (b)** — the $59.1065 cut line — **8.56%** below the mark. **Neither fires. Thesis intact**, and with Finding 1 retracted, without the commodity headwind this morning claimed.
+
+### STEP 3 hard-check
+| Gate | Status |
+|---|---|
+| Positions after trade ≤ 6 | 1 of 6 — not the constraint |
+| Trades this week ≤ 3 | 0 of 3 — not the constraint |
+| Position cost ≤ 20% equity | XLE **19.51%**, under cap |
+| Catalyst in today's RESEARCH-LOG | **FAILS for all candidates, SMH included** |
+| R:R ≥ 2:1 | FAILS for XLC/XLK/XOP; **SMH passes and is rejected on catalyst + rule 9** |
+| PDT room (3 / 5 rolling) | Full room, zero day trades |
+
+**No candidate clears the entry checklist. No order placed. No order staged.**
+
+### Position management — nothing triggered, every rule checked
+- **Cut at -7%:** cut line **$59.1065**; mark $64.165 is **8.56%** above. **Not triggered.**
+- **Tighten to 7% at +15%:** needs $73.09; position **+0.96%**. **Tighten to 5% at +20%:** needs $76.27. Neither triggered.
+- **Trail ratchet:** correctly **un-ratcheted for an eleventh session** — today's $64.42 high is $1.75 short of the $66.17 hwm set 9/10. `updated_at` still 2026-09-10T13:30:02.170843Z.
+- **Stop within 3% of price:** trail is **7.19%** below the mark. **Compliant.**
+- **Stop moved down:** never. Order live, `status: new`, GTC, expires 2026-11-16.
+- **No options. Never.**
+
+### Benchmark
+- Account ITD **-1.35%** ($98,646.14 on a $100,000 basis); SPY **-2.02%** ($760.63 vs the $776.34 inception reference). **Lead +0.67 pts**, up from +0.50 at the pre-market — and up **for the wrong reason again**: SPY fell, the book did not rise. Still a cash position, not selection.
+
+### Standing items carried
+- **Rule 2 breach continues: 19.51% deployed against a 75% floor, ~$54,700 short.** ~41 sessions old.
+- **Owner decisions 1-4 unanswered (17-19 sessions).** Finding 3 gives decision 1 its mechanism.
+- **`memory/WEEKLY-REVIEW.md` still ends at "Week ending 2026-09-04."** Today's review must cover **two weeks (9/7-9/11, 9/14-9/18)** and all four owner decisions. **Sixth consecutive run to flag it; it has failed twice.** This is today's binding scheduled work and it is not this run's window.
+- **Week 9/14-9/18 closes 0/3 — the sixth consecutive week the account used no trade slot.**
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$182.90 (+0.96%)** at an order-grade **$64.165**; cut line **8.56%** below, trail live at **$59.553**, **7.19%** below the mark, never moved down, correctly un-ratcheted for an **eleventh** session. Equity **$98,646.14**, day **-$84.00 (-0.09%)**, deployment **19.51%**, 1 of 6, week **0/3**, fifteen completed sessions with zero fills. **Rule 14: NONE — freshest dated count now 3 transits (Reuters 9/17), lower and newer; neither exit trigger fires.** **The run's three facts: (i) this morning's $95.59 WTI print is false and its "crude -6.7%, the thesis is leaking" headline is retracted — USO at 157.22 vs the 147.7 that price implies, and Reuters has WTI settling $101.91 on 9/17, so crude is flat over six sessions, not collapsing; (ii) crude is *up* 1.11% today and XLE is *down* 0.47% with XOP and OIH alongside it — the seventh non-capture, the pre-market's watch item inverted; (iii) SMH is the first name this phase to clear 2:1 (2.70:1) and it does so only because it is 15.85% below its 52-week high, which makes the R:R and momentum gates structurally anti-correlated rather than merely both binding — rejected on no dated catalyst and on a rule-9 pass that is a hairline witching-day partial-bar artifact.** Next window: **midday**, then **the two-week weekly review, which is today's binding obligation.**
