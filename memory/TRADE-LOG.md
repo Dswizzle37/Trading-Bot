@@ -227,3 +227,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 | XLE | 300 | $63.5553 | $64.03 | -2.88% | +$142.40 (+0.75%) | $59.553 (10% trail, hwm $66.17) |
 
 **Notes:** No trades, no fills, no position changes — activities feed shows nothing after the 8/31 XLV exit. XLE gave back most of yesterday's record session, opening near the $65.93 close and fading to $64.03 (-2.88%), still net positive on the position at +0.75% unrealized. The trail did not ratchet (high stayed well below the $66.17 hwm set 9/10); stop untouched by hand, never moved down, `updated_at` still 2026-09-10T13:30:02.170843Z. Deployment 19.48% ($19,209.00 of $98,595.14). Cut line $59.1065, 7.68% below the close. Trades week of 9/14-9/18: 0/3.
+
+### Sep 17 — EOD Snapshot (Day 24, Thursday) — *reconstructed 2026-09-18*
+**Portfolio:** $98,730.14 | **Cash:** $79,386.14 (80.41%) | **Day P&L:** +$135.00 (+0.14%) | **Phase P&L:** -$1,269.86 (-1.27%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $64.48 | +0.70% | +$277.40 (+1.46%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL&after=2026-09-01` returns `[]` on the 9/18 pre-market check. XLE opened $63.54, ranged $63.46-$64.515 and closed **$64.48** (+0.70% off $64.03) on 3.1M shares (partial-feed count; the SIP daily bar is the one used). The trail did **not** ratchet and correctly so: the $64.515 high fell **$1.655 short** of the $66.17 hwm set 9/10. Stop untouched by hand, never moved down, `updated_at` still 2026-09-10T13:30:02.170843Z. Deployment 19.59% ($19,344.00 of $98,730.14); cut line $59.1065, 8.34% below the close. Trades week of 9/14-9/18: 0/3. **Row reconstructed by the 9/18 pre-market run** — the 9/17 daily-summary run never logged it, the account's **eleventh persistence gap**, and it ends the three-session fully-observed streak the 9/17 runs had built. Sourced from Alpaca `portfolio/history` (official 9/17 equity **$98,730.14**, `profit_loss` +$135.00, `balance_asof` 2026-09-17) and the SIP daily bar (XLE `c=64.48`, matching the position's `lastday_price`); cash + position MV ties to equity exactly ($79,386.14 + $19,344.00 = $98,730.14). Nothing inferred. **Rule 13 note:** the snapshot endpoint's `dailyBar` reads `c=64.46` and one secondary source read $64.35 — the SIP close **$64.48** is the one that ties to official equity, and is used.

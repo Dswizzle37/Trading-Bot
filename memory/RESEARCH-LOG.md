@@ -3204,3 +3204,122 @@ The market-open run predicted the +1.47-pt lead would be paid back on a strong t
 
 ### Decision
 **HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$212.90 (+1.12%)** at **$64.265**; cut line **8.73%** below, trail live at **$59.553**, **7.33%** below the mark, never moved down, correctly un-ratcheted for a **ninth** session. Equity **$98,665.64**, day **+0.07%**, phase **-1.33%**. Deployment **19.54%**, 1 of 6 positions, **thirteen completed sessions with zero fills**, week **0/3**. **Rule 14: NONE.** **The run's two facts: (i) the cash-funded benchmark lead is down to +0.42 pts — SPY +1.15% against a book that made +0.07% — the third and sharpest measurement of what rule 2's breach costs, and the number tomorrow's review should open with; (ii) the housing-starts handoff closed on the first attempt using the market-open run's query fix, two-for-two, and a 1.275M miss is the day's only soft print.** Next window: **daily summary** — log the 9/17 EOD snapshot (do not let it become the eleventh gap) and carry the +0.42-pt lead measurement into the 9/18 two-week review.
+
+## 2026-09-18 — Pre-Market Research (08:38 ET, Friday, Day 25) — quarterly witching
+
+### Account snapshot (Alpaca, live 12:36Z / 08:36 ET — pre-market marks, indicative)
+| | Value |
+|---|---|
+| Equity | **$98,640.14** (pre-market mark) |
+| Official 9/17 close | **$98,730.14** (`last_equity`, `balance_asof` 2026-09-17) |
+| Cash | $79,386.14 (80.48%) |
+| Deployment | **19.52%** ($19,254.00) |
+| Buying power | $371,455.76 (regt $178,026.28) |
+| Positions | **1 of 6** |
+| Trades this week (9/14-9/18) | **0 of 3** |
+| Day trades used | 0 — full PDT room |
+| Fills since 9/1 | **none** — `activities?activity_types=FILL&after=2026-09-01` returns `[]` |
+
+| Ticker | Shares | Entry | Pre-mkt mark | Unrealized | Stop |
+|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | **$64.18** | **+$187.40 (+0.98%)** | $59.553 (10% trail, hwm $66.17) |
+
+XLE's quote feed is stale pre-market (last quote 2026-09-17T20:00Z, bid $64.46 / no ask); the $64.18 mark is Alpaca's own position mark and is **indicative, not order-grade**. Per rule 13 nothing may be sized off it — moot today, no order is being placed.
+
+### Market context
+| | Level | Source / date |
+|---|---|---|
+| WTI | **$95.59** | Sep 18 |
+| Brent | **$103.60** | Sep 18 |
+| SPY | **$760.26 / $760.39** live pre-mkt (**-0.30%** vs $762.60 close) | Alpaca quote 12:38Z, order-grade |
+| VIX | 15.31 | Sep 18 |
+| S&P futures | *reported 7,720.75 — **rejected*** | see below |
+
+- **Rule 13 source rejection.** The research pass returned "S&P 500 futures 7,720.75" for this morning. SPY's 9/17 close of $762.60 implies an index near **7,626**, so a 7,720.75 futures print is **+1.2%**, while the **live, order-grade SPY quote is -0.30%**. The freshest source is the live quote and it governs; the futures figure is logged as **unverified and not used**. Sixth stale-secondary-source catch in this log.
+- **Crude is the week's real move and it is against the position.** WTI **$95.59** today vs the **$102.48** Sep 10 settle — **-6.7% in six sessions**, on Saudi ship-to-ship barrels offered off Oman and an easing pipeline-repair timeline. The supply scare is bleeding out. **That is the XLE thesis's slow leak, and it is now measurable in the commodity even though the ETF has held.**
+- **Today's calendar:** Industrial Production / Capacity Utilization 09:15 ET, CB Leading Index 14:00 ET, Baker Hughes rig count 17:00 ET, **Fed Bowman 13:30 ET**. Overnight: **BOJ policy decision**. No tier-1 US release.
+- **Today is September quarterly witching** (quad expiry + S&P 500 rebalance) — elevated volume and late-session volatility are structural, not signal. **This book holds no options and never will.**
+
+### Rule 14 wire check — NONE
+- Wire-restricted, date-required query: **NONE. No signed, announced or in-force US-Iran agreement, ceasefire, de-escalation deal or Strait of Hormuz reopening arrangement exists as of Sep 18.** Reuters **9/12** remains governing (the Iran-Oman understanding "does not provide for immediate reopening"); Reuters/AP separately report the June arrangement crumbled and diplomacy stalled.
+- **Freshest dated transit count: 4, Reuters 9/16** — unchanged from the log's existing freshest. The same wire set gives 4 on Sep 15, 7 on Sep 11, 7 on Sep 10, 6 on Sep 9. **Every dated observation since Sep 4 is single digits against a 10-day average of 18.**
+- **Exit trigger (a)** — transits ≥~40/day sustained two sessions — **not met, not close.** **Exit trigger (b)** — the $59.1065 cut line — **8.58%** below the mark. **Neither exit rule fires. Thesis intact, and softening at the commodity rather than at the chokepoint.**
+
+### Sector screen (SIP daily bars through 9/17 close)
+Rule 9 momentum gate = positive 20-day **and** above the 50dma.
+
+| | Close | 20d% | 50d% | vs 50dma | vs 20d high | vs 52w high | Rule 9 |
+|---|---|---|---|---|---|---|---|
+| **XOP** E&P | $192.59 | **+3.36** | +18.89 | **+7.11%** | -4.13% | -4.13% | **PASS** |
+| **XLK** tech | $188.06 | **+2.41** | +3.67 | **+2.75%** | **-0.54%** | -5.37% | **PASS** |
+| **XLE** *(held)* | $64.48 | **+1.42** | +15.97 | **+5.73%** | -2.55% | -2.55% | **PASS** |
+| **XLC** comm svcs | $112.35 | **+0.93** | +2.64 | **+1.05%** | -2.52% | -6.69% | **PASS** (marginal) |
+| SMH semis | $560.61 | -0.06 | -5.46 | -0.86% | -3.44% | **-16.55%** | fail |
+| SPY | $762.60 | -0.84 | +2.31 | +0.40% | -1.64% | — | — |
+| XLF | $55.88 | -2.78 | +1.66 | -2.26% | -4.64% | — | fail |
+| XLB | $50.71 | -3.45 | +1.10 | -2.06% | -6.42% | — | fail |
+| XLP | $83.49 | -3.52 | -1.07 | -1.69% | -4.54% | — | fail |
+| XLV | $168.81 | -3.91 | +4.01 | +1.31% | -3.99% | — | fail |
+| OIH | $400.60 | -4.32 | +6.03 | -0.31% | -8.98% | — | fail |
+| XLRE | $42.94 | -4.56 | -2.74 | -3.80% | -5.55% | — | fail |
+| XLU | $41.69 | -5.29 | -8.09 | -5.03% | -5.81% | — | fail |
+| XLY | $111.39 | -6.07 | -3.39 | -3.55% | -6.23% | — | fail |
+| XLI | $169.01 | **-7.11** | -6.32 | -5.69% | -7.15% | — | fail |
+
+**SMH is now formally rejected on the screen rather than on judgement** — the 9/17 gap-up it was rejected for did not hold it above its 50dma, it is *still* negative over 20 days, and -16.55% below its 52-week high. Rule 9 does not buy bounces; the call made on 9/17 is confirmed by the tape, not just repeated.
+
+### Candidates — the R:R arithmetic, which is the binding gate again
+7% stop, target = the name's own 52-week high (the most generous defensible target):
+
+| | Entry | 7% stop | Risk | Reward to 52wH | **R:R** | A true 2:1 target needs |
+|---|---|---|---|---|---|---|
+| **XLC** | $112.35 | $104.49 | $7.86 | $8.06 | **1.02:1** | $128.08 = **+6.4% above** the 52w high |
+| **XLK** | $188.06 | $174.90 | $13.16 | $10.67 | **0.81:1** | $214.39 = **+7.9% above** the 52w high |
+| **XOP** | $192.59 | $179.11 | $13.48 | $8.30 | **0.62:1** | $219.55 = **+9.3% above** the 52w high |
+| **XLE** *(held)* | $64.48 | $59.97 | $4.51 | $1.69 | **0.37:1** | $73.51 = **+11.1% above** the 52w high |
+
+1. **XOP — REJECTED.** Best momentum on the board (+3.36% 20d, +7.11% above its 50dma) and it still fails on **0.62:1** and on **no dated catalyst**. Independently: **WTI is -6.7% in six sessions**, so the momentum reading is trailing a commodity that has already turned, and a second energy leg takes the book to **~39% single-sector**. The standing **FORBID** recommendation is unchanged — **owner decision 2 unanswered for an eighteenth session, and still not the binding constraint**, because the R:R gate fails first.
+2. **XLK — REJECTED.** Cleanest chart in the market (**-0.54% off its 20-day high**, +2.75% above its 50dma) and it fails on two independent gates: **no dated US-specific catalyst** — the research pass again attributes the move to "a broad post-Fed risk-on tone," which is a *description of the tape, not a catalyst for a sector* — and **0.81:1**, which is *worse* than yesterday's 0.91:1 because XLK rose while its 52-week high did not.
+3. **XLC — REJECTED.** Momentum leg is the weakest of the four passes (+0.93% 20d, +1.05% above its 50dma) and it is -2.52% off its own 20-day high. **1.02:1** is the best R:R on the board and still half the required bar. No dated catalyst.
+
+**The structural finding from 9/17 is confirmed and sharpened: for every sector rule 9 currently admits, a 7% stop and a 2:1 target are mathematically incompatible.** All four names need a target **6-11% above their own 52-week high** to clear 2:1. **This is arithmetic, not caution** — and note the mechanism bites *harder as a name rallies*: XLK's R:R degraded 0.91 → 0.81 overnight **because it went up**. Any screen built this way gets emptier the better the tape does. **That is owner decision 1, stated as a fact.**
+
+**No candidate clears the entry checklist. No order placed. No order staged.**
+
+### STEP 3 hard-check
+| Gate | Status |
+|---|---|
+| Positions after trade ≤ 6 | **1 of 6** — not the constraint |
+| Trades this week ≤ 3 | **0 of 3** — not the constraint |
+| Position cost ≤ 20% equity | XLE **19.52%**, under cap |
+| Catalyst in today's RESEARCH-LOG | **FAILS for all three candidates** |
+| R:R ≥ 2:1 | **FAILS for all three candidates** — the binding gate |
+| PDT room (3 / 5 rolling) | Full room, zero day trades |
+
+### Position management — nothing triggered, every rule checked
+- **Cut at -7%:** cut line **$59.1065**; mark $64.18 is **8.58%** above it. **Not triggered.**
+- **Tighten to 7% at +15%:** needs **$73.09**; position **+0.98%**. Not triggered. **Tighten to 5% at +20%:** needs **$76.27**. Not triggered.
+- **Trail ratchet:** correctly **un-ratcheted for a tenth session** — 9/17's $64.515 high fell $1.655 short of the $66.17 hwm set 9/10. `updated_at` still 2026-09-10T13:30:02.170843Z.
+- **Stop within 3% of price:** trail **7.21%** below the mark. **Compliant.**
+- **Stop moved down:** never.
+- **Thesis:** intact. No wire, no arrangement, transits single-digit on every dated observation since Sep 4. **Crude -6.7% in six sessions is a headwind, not a break** — and the position is +0.98%, not impaired.
+- **No options. Never.** (Note for the record: the Alpaca account reports `options_trading_level: 3`. Irrelevant — the strategy forbids options unconditionally and no run will use it.)
+
+### Benchmark
+- Account ITD **-1.27%** at the 9/17 close; SPY **-1.77%** on the same basis. **Lead +0.50 pts**, against +1.47 on 9/17 morning and +0.42 at midday. The lead has stopped collapsing only because SPY stopped rallying — **it is still a cash position, not selection.**
+
+### Risk factors today
+- **Quarterly witching + S&P rebalance** — volume and late-session volatility are mechanical. Do not read the close as information.
+- **Crude's six-session -6.7%** is the live risk to the only position. Watch whether XLE finally transmits it downward.
+- **BOJ overnight; Bowman 13:30 ET.** A hawkish Bowman after Wednesday's 4.1%/4.1% dots would pressure the whole tape.
+- **XLE quote was not order-grade at this hour.** Any position action today waits for an RTH quote (rule 13).
+
+### Standing items carried
+- **Rule 2 breach continues: 19.52% deployed against a 75% floor, ~$54,700 short.** ~41 sessions old.
+- **Owner decisions 1-4 unanswered (17-19 sessions).** Decision 1 is answerable on evidence today: the R:R/stop incompatibility above plus the three lead measurements from 9/17.
+- **`memory/WEEKLY-REVIEW.md` still ends at "Week ending 2026-09-04."** **Today's review must cover two weeks (9/7-9/11 and 9/14-9/18) and all four owner decisions.** Fifth consecutive run to flag it. **This is today's most important scheduled work and it has now failed twice.**
+- **Persistence: the 9/17 daily summary never logged its EOD snapshot — the account's eleventh gap.** Reconstructed into `TRADE-LOG.md` by this run from `portfolio/history` (official equity $98,730.14, `profit_loss` +$135.00) and the SIP bar (XLE $64.48); ties to equity exactly. The three-session fully-observed streak is broken.
+- **Sixth week in a row the account will use no trade slot** (0/3, one session left).
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **+$187.40 (+0.98%)** at an indicative $64.18; cut line **8.58%** below, trail live at **$59.553**, **7.21%** below the mark, never moved down, correctly un-ratcheted for a **tenth** session. Equity **$98,640.14** pre-market against an official 9/17 close of **$98,730.14**; phase **-1.27%** at that close. Deployment **19.52%**, 1 of 6 positions, **fourteen completed sessions with zero fills**, week **0/3**. **Rule 14: NONE — freshest dated count still 4 transits (Reuters 9/16); neither exit trigger fires.** **The run's three facts: (i) crude is -6.7% in six sessions ($102.48 → $95.59) while XLE has held — the thesis's slow leak is now visible in the commodity, and it is the day's thing to watch; (ii) the 7%-stop/2:1-target incompatibility is confirmed across all four rule-9 sectors, needing targets 6-11% above their own 52-week highs, and it gets *worse as names rally* — XLK went 0.91:1 → 0.81:1 overnight by going up; (iii) the 9/17 EOD snapshot was never logged, the eleventh persistence gap, reconstructed here.** Next window: **market-open** — re-price XLE on an order-grade RTH quote, watch whether crude's decline finally transmits, and treat nothing in the witching close as signal. **Then the two-week weekly review, which is today's binding obligation.**
