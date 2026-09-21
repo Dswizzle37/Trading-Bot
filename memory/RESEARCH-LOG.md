@@ -3638,3 +3638,115 @@ That run rejected SMH partly on "a rule-9 pass that is a hairline witching-day p
 ### Handoffs (rule 15)
 - **To the 9/21 market-open run, by name:** re-measure (a) the XLE mark on an **order-grade RTH quote** — the pre-market $63.38 has no confirming two-sided quote — and (b) the **benchmark lead flip**, which is currently built on two indicative pre-market prints. Confirm the ex-dividend drop is the $0.38028 and not incremental weakness.
 - **Carried:** the rule 2 breach (~44 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
+
+## 2026-09-21 — Market-Open Execution (09:37 ET, Monday, Day 26)
+
+**HOLD — no trades, no orders placed, no orders staged, no hand-set stop changes.** Nothing clears the entry checklist; neither written exit trigger fires. **All three of the pre-market's named handoffs are answered on order-grade RTH data, and two of the three answers are worse than the pre-market's indicative reading.** The ex-dividend drop does **not** account for XLE's fall — **0.94% of it is incremental weakness** — and the benchmark lead flip is **confirmed and wider** at **-0.38 pts**. A **new wire-dated fact (Reuters 9/20)** has Iran refusing to reopen Hormuz, and crude fell **2.88%** anyway: **USO is now 0.37% *below* its pre-strike base, having gone through it rather than merely back to it.** **The standing recommendation to CLOSE XLE (owner decision 5) is restated and strengthened, not withdrawn.**
+
+### Session / account state (13:36-13:37Z / 09:36-09:37 ET — RTH, order-grade)
+- `/v2/clock` 09:36:13 ET: **`is_open:true`**, `next_close` 2026-09-21T16:00-04:00. Normal Monday session, confirmed live.
+- Account `ACTIVE`, `trading_blocked:false`, **1 position, 1 open order**, full PDT room. `activities?after=2026-09-15` returns `[]` — **eighteenth consecutive session with zero fills.**
+- Equity **$98,343.14** (13:37Z); `last_equity` **$98,679.14** (`balance_asof` 2026-09-18) → day **-$336.00 (-0.34%)**. Ex-dividend-adjusted: **-$221.92 (-0.22%)**.
+- Cash $79,386.14 | Position MV **$18,999.00** → **19.32% deployed**. Gap to the 75% floor: **$54,758.35**.
+- Phase-to-date **-$1,656.86 (-1.66%)**; including the $114.08 dividend receivable **-$1,542.78 (-1.54%)**.
+
+| Ticker | Shares | Entry | Mark (RTH) | Wt | Unreal. (price) | Unreal. (+div) | Cut line | Gap to cut | Trail (GTC) | Trail dist |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | **$63.33** | 19.32% | **-$67.59 (-0.35%)** | **+$46.49 (+0.24%)** | $59.1064 | **7.15% above** | **$59.553 (10%, hwm $66.17)** | 5.96% |
+
+### HANDOFF (a) — the XLE mark is now order-grade. Rule 13 satisfied.
+The pre-market could not size anything off $63.38: Alpaca's only quote was a **$4.08-wide** after-hours 100x100 ($62.38 / $66.46). **Resolved.** RTH quote 13:36:37Z: **bid $63.31 (600) / ask $63.33 (4,300), a 2-cent spread**, condition `R`, tape B. Latest trade **$63.33** (200 sh, 13:36:40Z). Minute bar 13:35Z o/h/l/c $63.39/$63.41/$63.28/$63.35. **The pre-market's $63.38 was sound to within 5 cents** — no repeat of the 9/4 GDX failure. Mark **$63.33** adopted; every rule check below is computed on it.
+
+### HANDOFF (c) — NO. The ex-dividend does not explain the drop. **0.94% is real.**
+The pre-market flagged the ex-div so intraday runs would not double-count it, and asked this run to confirm the fall **was** the $0.38028. **It is not.**
+
+| Component | Value |
+|---|---|
+| Prev close (ties to official equity) | $64.31 |
+| Raw move to $63.33 | **-1.52%** |
+| Dividend, mechanical | **-0.59%** ($0.38028, ex-date 9/21, pay 9/23) |
+| **Ex-div-adjusted close $63.92972 → $63.33** | **-0.94%** |
+
+**So the split is -0.59% mechanical and -0.94% incremental weakness, not -0.85%/0 as the pre-market's indicative $63.38 implied.** XLE is genuinely down on the session, roughly 1%, on a day SPY is **+0.63%**. Recorded so the midday run reads the tape correctly in both directions: the drop is neither "all dividend" nor as bad as the raw -1.52% headline.
+
+### HANDOFF (b) — the benchmark lead flip is CONFIRMED on RTH prints, and wider.
+| | 9/18 close | Pre-market (indicative) | **09:37 ET (RTH, order-grade)** |
+|---|---|---|---|
+| SPY | $761.62 | $766.51 | **$766.45** (trade 13:36:41Z) |
+| SPY ITD vs $776.34 inception ref | -1.89% | -1.27% | **-1.27%** |
+| Book ITD | -1.32% | -1.60% | **-1.66%** |
+| **Lead** | **+0.57 pts** | -0.33 pts | **-0.38 pts** (div-adj **-0.27 pts**) |
+
+- **The flip is real and not a pre-market artifact.** SPY's +0.64% indicative print was accurate (+0.63% RTH); the book is 80.7% cash and its one position is *falling*, so the lead widened rather than recovered on the open. **~0.95 pts of swing from Friday's close in one session.**
+- Six reviews have described the lead as a cash position rather than selection skill. **It is now confirmed on the tape in the direction that costs money.** This is the hard cost attaching to owner decision 1(c) and it grew today.
+
+### FINDING — a new wire-dated fact hardens the chokepoint, and crude fell anyway
+Rule 14 re-query, wires only, dates demanded:
+- **Reuters 9/20 (NEW, newer than anything in the pre-market entry): Iran said Sunday it will not reopen the Strait until the June terms are met, and there is "little sign" of a return to the June interim ceasefire.** Reuters 9/13: Oman postponed a related meeting; IRGC Navy statement has the Strait closed and under control.
+- **Freshest dated transit count: still 4**, observed Thu 9/17, reported Reuters 9/18. The 9/20 item is qualitative and carries no newer count. Dated series since 9/4: **3, 4, 4, 7, 7, 6, 3, 4** vs a ~125/day pre-war baseline.
+- **Rule 14 — NONE.** No announced, signed or in-force agreement, ceasefire or reopening arrangement on any wire as of 9/21. Nothing dated 9/19-9/21 changes it; the 9/20 item cuts the *opposite* way.
+- **Exit trigger (a)** — ≥~40 transits/day sustained two sessions — **not met, not close.** **Exit trigger (b)** — the $59.1064 cut line — **7.15% below the mark.** **Neither fires.**
+
+**The significance is the conjunction.** On Sunday a wire service reported Iran *refusing* to reopen the chokepoint — unambiguously bullish for a disruption-premium thesis — and on Monday's open:
+
+| | Level | Move |
+|---|---|---|
+| USO (13:36Z) | **$149.42** | **-2.88%** on the day (prev close $153.85) |
+| vs 9/9 pre-strike close $149.97 | — | **-0.37% — through it, not merely back to it** |
+| USO since XLE entry (8/18 $130.66) | — | **+14.36%** |
+| **XLE position total return since entry** | — | **+0.24%** |
+
+**Full-period capture of crude's move: ~1.7%**, down from the pre-market's ~2% because crude fell further. The pre-market's central finding — *the premium is being repriced away without a resolution, the one path neither written exit trigger covers* — is now demonstrated **against a fresh wire-dated hardening of the supply risk**. That is the strongest form of the evidence yet: the market is no longer paying for the chokepoint even when told it stays shut.
+
+- The pre-market's proposed defined-review level for a hold — **USO closing below $146.03** with transits <40/day — is **2.27% away** and closed the gap today (was 2.6%).
+
+### STEP 3 hard-check — every gate, at live RTH marks
+| Gate | Status |
+|---|---|
+| Positions after trade ≤ 6 | 1 of 6 — not the constraint |
+| Trades this week ≤ 3 | **0 of 3**, fresh week — not the constraint |
+| Position cost ≤ 20% equity | XLE **19.32%**, under cap |
+| Rule 9 sector momentum | XLE, XLK, XOP, SMH pass (9/18 bars; unchanged) |
+| **Catalyst in today's RESEARCH-LOG** | **FAILS for every candidate, SMH included** |
+| **R:R ≥ 2:1** | **FAILS** XLK 0.56, XOP 1.04, XLE 0.64; **SMH 2.25 passes** |
+| PDT room (3 / 5 rolling) | Full room, zero day trades |
+
+**No candidate clears the entry checklist. No order placed. No order staged.**
+
+### Candidates re-priced at RTH marks — all three rejected, unchanged
+| Sym | Live mark | 52w high | % below high | R:R @7% | Verdict |
+|---|---|---|---|---|---|
+| SMH | $580.50 | $671.83 | -13.59% | **2.25** | **REJECTED — no dated catalyst** |
+| XOP | $187.20 | $200.89 | -6.81% | 1.04 | REJECTED on R:R; also owner decision 2 |
+| XLK | $191.25 | $198.73 | -3.76% | 0.56 | REJECTED on R:R |
+
+- **SMH: the catalyst search was re-run explicitly this morning and returned nothing dated.** No earnings, guidance, policy, M&A or analyst action dated 9/19-9/21 for semis or SMH. The only dated index event today is the **S&P DJI quarterly rebalance effective 9/21** (Bloom Energy, Everpure, Illumina in; Molson Coors, Trade Desk, Builders FirstSource out) — an index event, not a semiconductor catalyst, and not a thesis. SMH rallied to $580.50 (**+1.31%** off the $573.00 screen level) on the AI/equipment-spend narrative; **buying a 1.3% gap-up on no dated catalyst is the opposite of the rulebook.** Rejected.
+- **The R:R identity proved in the pre-market holds at live marks, visibly:** the three R:R readings sort exactly by distance below the 52-week high (SMH -13.59% → 2.25; XOP -6.81% → 1.04; XLK -3.76% → 0.56). SMH's R:R *fell* from 2.46 to 2.25 purely because it rallied. **Clearing 2:1 still requires ≥12.3% below the 52-week high while rule 9 admits only names near theirs.** Owner decision 1(b) unchanged and unanswerable by this bot.
+
+### Position management — every rule checked, nothing triggered
+- **Cut at -7%:** cut line **$59.1064**; mark $63.33 is **7.15% above** it. Position **-0.35% price / +0.24% total return**. **Not triggered.**
+- **Tighten to 7% at +15%:** needs **$73.09**. **Tighten to 5% at +20%:** needs **$76.27**. **Neither triggered.**
+- **Stop within 3% of price:** trail is **5.96%** below the mark. **Compliant.**
+- **Stop moved down:** never. Order `ef0c1da0`: `stop_price` **$59.553**, `hwm` **$66.17**, `trail_percent` 10, `status: new`, GTC, expires 2026-11-16, `updated_at` still **2026-09-10T13:30:02.170843Z**. **Rules 4 and 7 intact.** Correctly un-ratcheted — today's $63.69 high is $2.48 short of the hwm. 7th completed session (on the corrected per-session count).
+- **Dividend does not touch the stop** — ordinary cash distributions do not adjust trailing stops. Confirmed, no action.
+- **No options. Never.**
+- **Thesis check (rule 12):** thesis re-established in today's pre-market and **stated as falsified over the full holding period**; this run adds the wire-dated conjunction above, which strengthens the falsification. Position carried because **neither written exit trigger fires and the exit is not self-authorizable** — carried under escalation, not inertia.
+
+### Decision
+**HOLD — no trades, no orders, no hand-set stop changes, nothing to cut, nothing to tighten.** XLE **-$67.59 (-0.35%)** on price, **+$46.49 (+0.24%)** including the $114.08 dividend receivable. Equity **$98,343.14**, day **-$336.00 (-0.34%, or -$221.92 / -0.22% ex-dividend)**, deployment **19.32%**, 1 of 6, week **0/3**, eighteenth session with zero fills. **Rule 14: NONE — no agreement on any wire; freshest dated transit count 4 (Reuters 9/18); neither exit trigger fires.**
+
+**The run's three answers:** **(a)** the XLE mark is **order-grade confirmed at $63.33** on a 2-cent RTH spread, vindicating the pre-market's $63.38 to within 5 cents; **(b)** the benchmark lead flip is **real and wider — -0.38 pts (-0.27 div-adj)**, ~0.95 pts of swing from Friday in one session, with the book's cash the entire cause; **(c)** **the ex-dividend does NOT explain XLE's drop — -0.59% is the dividend and -0.94% is incremental weakness**, on a day SPY is +0.63%.
+
+**And the run's own finding:** Reuters reported Sunday 9/20 that **Iran refuses to reopen the Strait**, and crude fell **2.88%** to **$149.42 — now 0.37% *below* the 9/9 pre-strike base.** The disruption premium is being repriced to zero **against** a wire-dated hardening of the disruption itself. Capture since entry: **+14.36% crude → +0.24% position, ~1.7%.**
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15)
+1. **Deployment floor vs. entry bar.** 19.32% deployed against a 75% floor, **$54,758.35 short**, ~44 sessions. Proven an identity, not a judgement. **(a)** lower the deployment mandate; **(b)** re-measure or relax the R:R leg; **(c)** authorize a benchmark-tracking core. **Decision 1(c)'s cost grew today: the lead widened to -0.38 pts on a +0.63% SPY session.** ~20 sessions unanswered, sixth review cycle.
+2. **Second energy leg — authorize or forbid.** Standing recommendation **FORBID**. Not binding today (XOP fails R:R at 1.04). ~21 sessions.
+3. **Gap risk on the only position.** Proposed trigger (c): a dated wire or official statement reporting the Hormuz arrangement signed, announced or in force → close XLE at the next open regardless of P&L. **Reuters 9/20 makes this *less* imminent and no less necessary** — the position still holds ~1.7% of the upside and 100% of the resolution downside. ~27 sessions.
+4. **Does the 20% single-position cap bind at entry only, or continuously?** Default in force: **(a) entry only.** Moot at 19.32%. ~22 sessions.
+5. **XLE: close, or hold on a defined review?** **Standing recommendation: CLOSE — restated and strengthened.** Over 24 sessions the position captured **~1.7%** of a **+14.36%** move in its own stated catalyst; it is 19.32% of the book; it carries full unhedged gap-down exposure to a resolution. Today adds that the premium is repricing away **against** a wire-dated refusal to reopen. Not self-authorizable — a discretionary thesis exit and a strategy call. **If the owner prefers to hold, the defined review stands:** *USO closing below **$146.03** while transits remain <40/day → the disruption premium has been repriced to zero and XLE exits at the next open.* USO **$149.42** — **2.27% away**, closer than at the pre-market.
+
+### Handoffs (rule 15)
+- **To the 9/21 midday run, by name:** (i) XLE's session drop is **-0.59% dividend + -0.94% real** — do not report it as all-dividend, and do not report the raw -1.52%; (ii) watch **USO against $146.03**, the defined-review level, now 2.27% away; (iii) re-measure the benchmark lead at midday — it has moved ~0.95 pts in one session.
+- **To the 9/21 daily-summary run, by name:** the 9/21 EOD snapshot. **Twelve of the last thirteen EOD snapshots were reconstructed by a later run rather than logged on the day** — log it on the day.
+- **Carried:** the rule 2 breach (~44 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
