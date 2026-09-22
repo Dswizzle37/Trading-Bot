@@ -4101,3 +4101,130 @@ Re-queried restricted to Reuters/AP/Bloomberg/AFP and official statements, deman
 - **To the 9/22 midday run, by name:** (i) USO's level vs $146.03 and whether it holds below; (ii) whether a **wire** finally carries a 9/22 WTI/Brent settle — today's only wire-dated settles are Reuters 9/21 ($95.78 WTI Oct / $100.34 Brent Nov), which **contradict** the pre-market's non-wire $89-91 by $5-6; (iii) whether XLE breaks $61.3948, putting the live trail inside 3%.
 - **To the 9/22 daily-summary run, by name:** (i) log the EOD snapshot **on the day** — twelve of the last twenty-six were reconstructed late; (ii) **record USO's official closing print against $146.03 explicitly and state whether decision 5's review fired**; (iii) carry the **$98,124.14** official 9/21 equity correction; (iv) record XLE's official close against the $59.1065 cut line, which is now under 4% away.
 - **Carried:** the rule 2 deployment breach (~45 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
+
+## 2026-09-22 — Midday Scan (13:17 ET, Tuesday, Day 27)
+
+**HOLD — no trades, no orders placed, cancelled or staged, no hand-set stop changes, nothing cut, nothing tightened.** Every written rule and both exit triggers checked on order-grade RTH data; none fires. **The session reversed hard off the open and all three market-open handoffs came back better, not worse.** XLE bottomed at **$61.42 at 09:35 ET — 2.5 cents above the $61.3948 line the open run flagged — and has since run to $62.48 (+1.54% off the 09:37 mark), taking the position back to -1.70% and the book to +$4.50 on the day.** **USO fell to $145.07, traded below decision 5's $146.03 review level for the first hour, and has been back above it continuously since 10:35 ET — it is $146.53 now, 0.34% ABOVE.** The review reads on the **close** and is **still undetermined**; it belongs to today's daily summary. **Rule 14 re-checked a third time: still a conditional Iranian offer, no wire reports anything signed, announced or in force.**
+
+### Session / account state (17:17Z / 13:17 ET — RTH, order-grade)
+- All 6 required env vars verified present before any wrapper call (plus `ALPACA_ENDPOINT`, paper).
+- `/v2/clock` 13:16:47 ET: **`is_open:true`**, `next_close` 16:00 ET. Normal session.
+- Account `ACTIVE`, `trading_blocked:false`, **1 position, 1 open order**, full PDT room.
+- `activities?activity_types=FILL&after=2026-09-18` returns **`[]`**; the unfiltered feed after 9/15 also returns `[]` — **twenty-first consecutive session with zero fills.**
+
+| | |
+|---|---|
+| Equity | **$98,128.64** |
+| `last_equity` (`balance_asof` 2026-09-21) | $98,124.14 |
+| Day P&L | **+$4.50 (+0.005%)** |
+| Cash | $79,386.14 (80.90%) |
+| Position MV | **$18,742.50** → **19.10% deployed** |
+| Phase P&L | **-$1,871.36 (-1.87%)**; incl. $114.08 dividend receivable **-$1,757.28 (-1.76%)** |
+| Gap to the 75% floor | **$54,853.98** |
+
+| Ticker | Shares | Entry | Mark (RTH) | Wt | Unreal. (price) | Unreal. (+div) | Cut line | Gap to cut | Trail (GTC) | Trail dist |
+|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | **$62.475** | 19.10% | **-$324.10 (-1.70%)** | **-$210.02 (-1.10%)** | $59.1065 | **5.39% above** | **$59.553 (10%, hwm $66.17)** | 4.68% |
+
+- **Rule 13 satisfied (twelfth adjudication).** XLE quote 17:16:57Z **bid $62.47 (4,600) / ask $62.48 (4,900) — a 1-cent book with heavy size both sides.** `latestTrade` $62.48 (200 sh, 17:16:41Z); minute bar 17:16Z c $62.48. Mark **$62.475** (position `current_price`) is order-grade confirmed and every figure below is computed on it.
+- **Rule 13 correction to the market-open run.** That run recorded `bars` returning **403 inside the 15-minute delay window** and concluded no intraday SIP bar was available. **At this hour the SIP 5-minute series returns normally** (108 bars, 08:00Z-17:00Z) — the restriction is the 15-minute lag, not the session. **Intraday SIP bars ARE available to midday and later runs with a ~15-minute trailing edge, and they are the correct source for session range.** Used as such below.
+- The open run also flagged the snapshot `dailyBar` (o $61.73 / h $61.84 / l $61.54) as a partial-feed artifact. **It has since converged with SIP** — snapshot now reads o $61.73 / h $62.67 / l $61.42, and the SIP RTH series gives **h $62.67 / l $61.42** exactly. The artifact was the hour, not the endpoint.
+
+### HANDOFF (iii) — did XLE break $61.3948 and put the live trail inside 3%? **NO. By 2.5 cents.**
+| | Reading | Source |
+|---|---|---|
+| 3% line (trail $59.553 ÷ 0.97) | **$61.3948** | computed |
+| **XLE RTH session low** | **$61.42 at 13:35Z (09:35 ET)** | **SIP 5-min, confirmed by snapshot `dailyBar`** |
+| Margin | **+2.5 cents, never breached** | — |
+| XLE now | **$62.475** | order-grade quote |
+| Trail distance now | **4.68%**, out from 3.21% at the open | computed |
+
+- **The compression the pre-market and market-open runs tracked for two consecutive readings (3.49% → 3.21%) has reversed and is now 4.68%.** The question the open run handed forward is answered and closed: the constraint never bound, and no hand-set replacement was ever contemplated or needed.
+- Order `ef0c1da0`: `status: new`, GTC, `stop_price` **$59.553**, `trail_percent` 10, `hwm` **$66.17**, `updated_at` still **2026-09-10T13:30:02.170843Z**, expires 2026-11-16. **Never moved down, never touched by hand. Rules 4 and 7 intact — twelfth straight session.**
+
+### HANDOFF (i) — USO against decision 5's $146.03. **Breached for one hour, then recovered. Now 0.34% ABOVE.**
+| | Reading | Time |
+|---|---|---|
+| USO `latestTrade` | **$146.53** (100 sh) | 17:13:37Z |
+| USO SIP RTH low | **$145.07** | 13:40Z (09:40 ET) |
+| USO SIP RTH high | **$148.02** | — |
+| 9/21 official close | $148.17 | SIP `prevDailyBar` |
+| Day | **-1.11%** | — |
+| Decision 5 review level | $146.03 | — |
+| **Distance now** | **+0.34% ABOVE** | — |
+| **5-min RTH bars closing below $146.03** | **11 of 43** — all in the first hour; **last one 14:30Z (10:30 ET)** | SIP |
+
+- **The review is NOT fired and, on the current tape, is no longer on track to fire.** Its text reads *"USO **closing** below **$146.03** while transits remain <40/day."* USO spent 09:30-10:30 ET below the level and has been above it for the **last two hours and forty-five minutes**.
+- **Rule 13 caveat on USO, and it matters today.** The 17:16:58Z quote book reads **$146.60 / $151.30 — a $4.70 spread on 200×100.** That is junk and is not used. The **trade prints** are the read ($146.53, corroborated by the snapshot `dailyBar` close $146.53 and the 17:00Z 5-min bar $146.70). USO's volume is 49,002 shares; it is thin and any single quote off it is low-confidence. This is the same failure mode the open run caught at 13:36:23Z ($140.99/$145.29).
+- **The determination still belongs to today's daily-summary run** and is handed to it by name below. Nothing here is actionable in either direction: **neither branch of owner decision 5 is authorized.**
+
+### HANDOFF (ii) — has a wire carried a 9/22 WTI/Brent settle? **NO. Still none.**
+| | Wire reading | Date |
+|---|---|---|
+| **WTI Oct settle** | **$95.78** | **Reuters 9/21** |
+| **Brent Nov settle** | **$100.34** | **Reuters 9/21** |
+| **9/22 settle, any wire** | **NOT PUBLISHED / NOT CONFIRMED** | — |
+
+- Re-queried restricted to Reuters/AP/Bloomberg/AFP demanding a date: **no 9/22 crude settlement is available on any wire.** The research pass said so explicitly rather than substituting a secondary source.
+- **The pre-market's non-wire WTI prints of $89.32 / $90.56 remain unconfirmed and are still $5-6 below the only wire-dated settle in the log.** The market-open run's correction stands and is re-affirmed here: **the direction is well evidenced; the level is not.** Our own USO tape is the only live, first-party crude proxy this bot has, and it says **-1.11% today, off a -4.35% Monday, having recovered 1.0% from its own session low.**
+
+### The intraday reversal — **no dated catalyst identified. Recorded as unexplained.**
+- Energy reversed hard off the open across the complex: **XLE $61.53 → $62.48 (+1.54%), XOP $181.45 → $184.64 (+1.76%), USO $145.29 → $146.53 (+0.85%)**, while **SPY went $775.06 → $773.235 (-0.24%)**. Measured against yesterday's official closes the day is now **XLE +0.03%, XOP -0.05%, SPY -0.04%** — i.e. **energy has erased a 1.5-1.8% deficit intraday and is now flat-to-market.**
+- **The research pass could not identify a 9/22 catalyst for the reversal.** It offered the same Reuters Hormuz-reopening headline that drove crude *down* this morning — **which cannot explain a move in both directions and is not accepted as an explanation.** It found **no** dated 9/22 OPEC announcement, **no** dated 9/22 EIA or API inventory release, and **no** 9/22 Hormuz shipping or transit bulletin.
+- The one adjacent item it did surface: **coverage dated 9/20-9/21 reporting Tehran would keep the strait closed until its conditions are met** — which complicates the simple reopening read, but is **two days old and cannot be today's intraday trigger.**
+- **Stated plainly: a 1.5-1.8% sector-wide intraday reversal occurred with no identifiable dated cause.** Recorded as unexplained rather than back-fitted to a headline. This is the honest counterpart to the six capture observations in this log — **today XLE tracked crude up, having tracked it down this morning.**
+
+### Rule 14 re-check (third of the day) — **no upgrade. Still conditional.**
+- Re-queried restricted to wires and official statements, demanding dates: **no Reuters/AP/Bloomberg/AFP item and no official government statement reports a US-Iran agreement, ceasefire, or Hormuz reopening arrangement as signed, announced, or in force as of 9/22.**
+- The Reuters 9/22 item remains explicitly **conditional** — reopening within seven days *if* the US eases military pressure and lifts the blockade; the proposal was delivered via mediators on **9/16**, per the same wire.
+- The aggregator "largely negotiated deal" framing still reaches this log through **no wire**. It stays noise under rule 14.
+- **Rule 14 status: MET (thesis-relevant), but proposed trigger (c)'s condition — signed/announced/in force — is NOT met.** As the open run put it: even if the owner authorized trigger (c) right now, **it would not fire on today's facts.**
+
+### Exit trigger (a) — not met, not close
+- Requires **~40 transits/day sustained two sessions**. Freshest dated count remains **17 vessels over the 9/19-9/20 weekend** (Reuters 9/21), down from **37** the weekend before. No newer dated count exists as of this run. **NOT MET.**
+- The barrels/ships decoupling stands as the 9/21 midday run stated it, and the **2.9M bpd** figure stands as this morning's pre-market re-sourced it: **a JPMorgan tracking estimate, not a wire fact.** The proposed barrels limb for trigger (a) remains **written for the owner and NOT applied.**
+
+### Rule 9 / rule 10 checks
+- **Rule 10 (exit sector after 2 consecutive failed trades):** energy has produced **no** closed losing trades. **NOT TRIGGERED.**
+- **Rule 9 (sector momentum):** energy remains the #1 YTD sector; today it went from the day's laggard at the open to **flat with SPY** by midday. **Sector rank is not the case against XLE; capture and gap risk are.** Unchanged.
+
+### STEP 3 — hard rule gate. **Nothing passes; nothing ordered.**
+| Sym | Mark | Catalyst (dated)? | Verdict |
+|---|---|---|---|
+| XLE (add) | $62.475 | — | **REJECTED** — owner decision 2 forbids a second energy leg absent authorization |
+| XOP | $184.64 | Reversal off the low, no dated 9/22 cause found | **REJECTED** — R:R, decision 2, and buying an unexplained 1.8% intraday bounce is not a catalyst |
+| SMH | ~$580 | **None dated** (fourth consecutive session with no catalyst found) | **REJECTED** — no catalyst |
+- **The structural blocker is unchanged and remains unanswerable by this bot:** R:R = (hi52/last − 1)/0.07, so clearing 2:1 requires a name **≥12.3% below** its 52-week high, while rule 9 admits only names near theirs. **Owner decision 1 is the only thing that moves this.**
+- **No options. Never.** (Note the account carries `options_trading_level: 3`. It is not used and never will be.)
+
+### Position management — every rule checked, nothing triggered
+- **Cut at -7%:** cut line **$59.1065**; mark $62.475 is **5.39% above it**. Position **-1.70%**. **NOT TRIGGERED** — and the gap has **widened** off the phase's narrowest reading (5.35% Monday close → 4.21% pre-market → 3.94% at the open → **5.39%** now).
+- **Tighten to 7% at +15%** needs **$73.0886**; **to 5% at +20%** needs **$76.2664**. Position negative. **NEITHER TRIGGERED.**
+- **Trail ratchet:** correctly has not fired — today's high **$62.67** is **5.29% below** the **$66.17** hwm set 9/10. Stop untouched, never moved down.
+- **Stop within 3% of price:** **4.68%** — compliant, and out from 3.21% at the open. See handoff (iii).
+- **Thesis check (rule 12):** re-established. It remains **falsified over the full holding period** — the position has captured a small fraction of its catalyst's upside and a large fraction of its downside. **Today is the first session of the week that cuts the other way**, and one session does not restore a thesis. Position carried because **neither written exit trigger fires and a discretionary thesis exit is not self-authorizable under rule 15.** Carried under escalation, not inertia.
+
+### Benchmark lead — recovered 0.52 pts off the open
+| | 9/18 close | 9/21 13:11 | 9/22 pre-mkt | 9/22 09:37 | **9/22 13:17** |
+|---|---|---|---|---|---|
+| SPY ITD vs $776.34 ref | -1.89% | -0.50% | -0.24% | -0.17% | **-0.40%** |
+| Book ITD | -1.32% | -1.84% | -2.10% | -2.15% | **-1.87%** |
+| **Lead** | **+0.57 pts** | -1.34 | -1.87 | -1.99 | **-1.47 pts** (div-adj **-1.36**) |
+
+- **First improvement in four consecutive readings** — the book gained on SPY today because XLE rallied *and* SPY faded. **This is noise on one session, not a reversal of the structural problem:** an 81%-cash book still cannot participate in an up-market, which is owner decision 1(c)'s cost and is still compounding.
+
+### Decision
+**HOLD. Zero orders placed, zero cancelled, zero staged, zero stops touched. Trades week of 9/21-9/25: 0/3.** Deployment 19.10%, 1 of 6 positions, PDT room full. **No action was taken, so STEP 7's action-notification condition is not met** — but the scheduled prompt for this run requires a summary email regardless, and **rule 15 requires the five open owner decisions to ride in every notification until answered or withdrawn.** Both are satisfied by this run's email.
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15). **Decision 5's review is live but has stepped back from the edge.**
+1. **Deployment floor vs. entry bar.** 19.10% against a 75% floor, **$54,853.98 short**, ~45 sessions. Cost **-1.47 pts** of lead. Options: (a) lower the mandate; (b) relax the R:R leg; (c) authorize a benchmark-tracking core. ~21 sessions unanswered.
+2. **Second energy leg — authorize or forbid.** Standing recommendation **FORBID**. ~22 sessions.
+3. **Gap risk on the only position.** Proposed trigger (c): *a dated wire or official statement reporting the Hormuz arrangement signed, announced or in force → close XLE at the next open regardless of P&L.* **Today's third re-check confirms it would NOT fire on current facts.** The trigger still does not exist. ~28 sessions.
+4. **20% cap — entry-only or continuous?** Default in force: (a) entry only. Moot at 19.10%. ~23 sessions.
+5. **XLE: close, or hold on a defined review? — ANSWER STILL NEEDED BEFORE 16:00 ET TODAY.** Standing recommendation: **CLOSE.** The hold-branch review reads *"USO **closing** below **$146.03** while transits remain <40/day → exit XLE at the next open."* **USO breached the level for the first hour ($145.07 low) and has been above it since 10:30 ET; it is $146.53, 0.34% above, with 2h43m left to trade.** Transits remain 17/weekend, far under 40/day, so **the transit leg is met and the whole review turns on USO's closing print.** If it closes below, the review fires **with neither branch of decision 5 authorized — a fired review and no authority to act on it.** Fourth consecutive run raising this.
+- **Operational note for the owner:** the position's `qty_available` is **0** — all 300 shares are reserved by the GTC trailing stop. **Any authorized close must cancel order `ef0c1da0` first**, then sell. Recorded now so the run that receives an authorization does not lose time to it.
+
+### Handoffs (rule 15)
+- **To the 9/22 daily-summary run, by name:** (i) **log the EOD snapshot on the day** — twelve of the last twenty-six were reconstructed late; (ii) **record USO's official closing print against $146.03 explicitly and state whether decision 5's review fired** — it breached intraday and recovered, so the close is genuinely undetermined as of this run; (iii) carry the **$98,124.14** official 9/21 equity correction; (iv) record XLE's official close against the **$59.1065** cut line and against the **$61.3948** 3% line, both of which were approached today; (v) note whether any wire finally carried a **9/22 crude settle** — none exists as of 13:17 ET.
+- **To the 9/23 pre-market run, by name:** the **unexplained 1.5-1.8% sector-wide intraday reversal** logged above. If a dated cause surfaces overnight, record it against this entry; if none does, it stands as the log's first explicitly unexplained sector move.
+- **Carried:** the rule 2 deployment breach (~45 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
