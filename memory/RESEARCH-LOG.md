@@ -4357,3 +4357,144 @@ Measured on our own SIP tape (the research pass could not supply same-day dated 
 - **To the 9/23 midday run, by name:** (i) whether the EIA print moved the complex; (ii) USO against $146.03 intraday — **note the review fired on the 9/22 close and does not un-fire**; (iii) whether any **wire** upgrades or kills the "deal signed" claim.
 - **To the 9/23 daily-summary run, by name:** (i) **log the EOD snapshot on the day** — thirteen of the last twenty-eight were reconstructed late, including yesterday's; (ii) record XLE's official close against the **$59.1065** cut line; (iii) record whether decision 5 was answered.
 - **Carried:** the rule 2 deployment breach (~46 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
+
+## 2026-09-23 — Market-Open Execution (09:37 ET, Wednesday, Day 28)
+
+**HOLD — zero orders placed, zero cancelled, zero staged, zero stops touched.** **The headline is unchanged from the pre-market and it is the whole point of this run: owner decision 5's defined review HAS FIRED, the review text says "exit XLE at the next open," that open was 09:30 ET this morning, and the bot cannot execute it.** Neither branch of decision 5 was ever authorized, so rule 15 governs and the exit is not self-authorizable. **The open came and went with no authority to act on a fired review.** Escalated again by email. Separately: **the rule 9 flip against energy is confirmed on this run's own tape**, **no wire carries a signed US-Iran deal (fourth consecutive session)**, and **USO has bounced back above the review level intraday — which does not un-fire a review that reads on the close.**
+
+### Env / session state
+- All 11 required env vars verified present before any wrapper call. `ALPACA_ENDPOINT` → paper. No `.env` written or sourced.
+- `/v2/clock` 09:36:24 ET: **`is_open:true`**, `next_close` 2026-09-23T16:00:00-04:00. Normal session.
+- Account `ACTIVE`, `trading_blocked:false`, 1 position, 1 open order.
+- `activities?activity_types=FILL&after=2026-09-18` → **`[]`**. **Twenty-third consecutive session with zero fills.**
+
+### HANDOFF (i) — decision 5. **UNANSWERED. The exit was NOT placed.**
+- `origin/main` was fetched and its log read end-to-end this morning. **Every commit on main is a bot run.** There is no owner answer on decision 5 — not on main, not in the working tree, not anywhere this run can read.
+- **No live owner input has reached this session.** This run was started by the scheduler from a stored prompt. A scheduled prompt is not an authorization, and it is not the owner answering decision 5 — the schedule attests only that the prompt was stored ahead of time.
+- **Therefore: the exit is not placed.** The pre-market's instruction to this run was explicit — *"if and only if the owner has answered decision 5, execute it; if unanswered, re-raise and do not act."* It is unanswered. It is re-raised below.
+- **Standing recommendation, restated for the sixth consecutive run: CLOSE XLE.** Three independent grounds: capture failure (~2% of the catalyst's move over the holding period), unhedged gap risk on 100% of directional exposure, and — since yesterday — sector momentum.
+- **Operational note, re-verified live and still true:** `qty_available` is **0**; all 300 shares are reserved by GTC trail `ef0c1da0`. **Any authorized close must cancel that order first, then sell.** One extra step, and it is the step that would cost time if the answer arrives late in a session.
+
+### HANDOFF (ii) — rule 13. Pre-market mark CONFIRMED on an order-grade RTH book.
+| Source | Reading | Time |
+|---|---|---|
+| Pre-market mark (SIP 5-min pre-market series) | $62.18 | 12:30Z |
+| **RTH quote, 2¢ spread, 2500×2000** | **$62.32 / $62.34** | **13:37:07Z** |
+| `latestTrade` | $62.34 (100 sh) | 13:36:54Z |
+| Position `current_price` (mark used) | **$62.28** | 13:38Z |
+
+- **Rule 13 satisfied.** The pre-market hypothesis lands within **0.24%** of the live order-grade book, and the book is two cents wide with 2,500×2,000 behind it — the deepest quote this run has recorded on the name. **Twelfth adjudication, and the pre-market call was right again.** The 16:00 ET closing-auction artifact (bid $61.77, ask 0) the pre-market rejected would have been wrong by 0.8%.
+- XLE is **+0.91%** on the day against the $61.77 SIP close. The bounce is real and it is energy-wide (XOP +0.71%), but see the rule 9 table — one green morning does not reverse a 5- and 20-day reading.
+
+### HANDOFF (iii) — 09:45 PMI and 10:30 EIA
+- **S&P Global flash US PMI: ACTUAL NOT AVAILABLE at the time of this run.** The release is 09:45 ET and this run's research pass completed at 09:41 ET; the pass returned consensus only (mfg 53.6, svcs 56.0-56.4, composite 55.2) and explicitly flagged the actuals as unpublished. **Not guessed, not recorded as fact. Handed to the midday run by name.**
+- **EIA weekly crude inventories, 10:30 ET: outside this run's window entirely.** Handed to the midday run by name, as the pre-market intended.
+
+### Rule 14 — re-queried wire-restricted. **NO SIGNED DEAL. Fourth consecutive session.**
+| Claim | Wire status | Source |
+|---|---|---|
+| US-Iran agreement **signed or announced** | **NO WIRE CARRIES IT** | Reuters 9/23, checked explicitly |
+| Iran **denied** the "reopen within 7 days" reports | **CARRIED** — Iranian sources called the reports "inaccurate and baseless" | **Reuters 9/23** |
+| Hormuz transits, freshest dated count | **17 vessels, Sat 9/21** | **Reuters 9/21**, dated |
+| Crude 9/23 | WTI and Brent **near two-week lows**, on easing Gulf supply concerns | **Reuters 9/23** |
+
+- **The pre-market's rule 14 rejection is vindicated on the wire.** Yesterday's Daily Star "deal signed, Hormuz fully open Friday" headline is not merely unconfirmed — **Reuters 9/23 reports Iran denying the underlying offer as inaccurate and baseless.** This is the **third** false de-escalation scare rejected under rule 14 in three weeks, and the first one a wire has actively contradicted rather than merely failed to carry.
+- **Stated in the direction rule 14 does not cut:** the denial is an *escalation*-direction datum and rule 14 does not bar reading it. It does not rescue the XLE thesis either — the position is down on the session count that matters and the case against it was never a de-escalation call.
+- **Proposed trigger (c) would NOT fire on today's facts.** Fourth consecutive session confirming this.
+
+### Exit trigger (a) — NOT MET, still far away
+- Requires **~40 transits/day sustained two sessions.** Freshest dated: **17 on 9/21** (Reuters), 3 on 9/16, 4 on 9/15. Pre-conflict normal ~125/day. **Not met, not close.**
+
+### USO against the $146.03 review level — the review does NOT un-fire
+| | Reading |
+|---|---|
+| **9/22 close (the reading that fired the review)** | **$144.08**, 1.34% below |
+| 9/23 RTH quote, 09:37 ET | **$146.64 / $146.68**, last **$146.57** (+1.74%) |
+| Position vs level | **0.37% ABOVE** |
+
+- **USO is back above $146.03 intraday. This changes nothing.** Decision 5's review reads on the **close**, it fired on the **9/22 close**, and a review that has fired does not un-fire on the next morning's bounce. The pre-market handed this to the midday run in exactly these terms and it is restated here because the intraday print will look like a reprieve to a later reader. **It is not one.**
+- The fired review's consequence — *"exit XLE at the next open"* — attached to the open that has already happened this morning. **It was not executed, for want of authority, not for want of a trigger.**
+
+### NEW — rule 9 re-measured on this run's own SIP tape. **The flip holds.**
+| Sym | Last | 5d | 20d | vs 50dma | Below 52w hi | R:R | Rule 9 |
+|---|---|---|---|---|---|---|---|
+| **XLE** | $62.33 | **-2.66%** | +0.43% | +1.29% | 6.17% | 0.88 | **FAIL** |
+| XOP | $183.09 | **-4.54%** | +0.20% | +0.81% | 9.72% | 1.39 | **FAIL** |
+| OIH | $394.49 | **-1.34%** | **-2.76%** | **-2.13%** | 16.42% | **2.35** | **FAIL** |
+| **XLK** | $196.02 | **+6.57%** | **+7.86%** | **+6.62%** | 1.38% | **0.20** | **PASS** |
+| **SMH** | $603.30 | **+10.58%** | **+8.54%** | **+6.78%** | 11.36% | 1.62 | **PASS** |
+| **SPY** | $772.34 | +2.43% | +0.84% | +1.49% | 0.91% | 0.13 | **PASS** |
+| XLV | $170.85 | +1.84% | -2.53% | +2.10% | 3.36% | 0.48 | FAIL |
+| XLC | $112.98 | -0.02% | -0.18% | +1.49% | 6.57% | 0.94 | FAIL |
+| XLI | $169.71 | +0.59% | -4.87% | -4.83% | 10.89% | 1.56 | FAIL |
+| XLY | $111.23 | +0.95% | -5.70% | -3.37% | 12.39% | 1.77 | FAIL |
+| XLF | $54.76 | -2.10% | -6.10% | -4.16% | 7.02% | 1.00 | FAIL |
+| XLP | $82.84 | -0.59% | -4.25% | -2.34% | 8.81% | 1.26 | FAIL |
+| XLB | $50.18 | -0.36% | -6.35% | -3.01% | 7.99% | 1.14 | FAIL |
+| XLRE | $42.27 | -1.26% | -6.81% | -4.96% | 9.90% | 1.41 | FAIL |
+| XLU | $40.19 | **-2.75%** | **-7.22%** | **-7.64%** | 18.95% | **2.71** | **FAIL** |
+
+- **Widened to all eleven SPDR sectors plus SMH and SPY — the broadest rule 9 sweep this log has run.** It does not rescue the picture. **Only three names pass rule 9: XLK, SMH and SPY itself.** Eleven of fourteen sectors are negative on the 20-day.
+- **XLE's 20-day is now +0.43%, technically positive, but its 5-day is -2.66% and it has given back the leadership.** The flip the pre-market called stands.
+- **The inverse-gate identity is now demonstrated across fourteen names, not two.** R:R = (hi52/last − 1)/0.07 is algebraic, so the ranking by R:R is **exactly** the ranking by distance below the 52-week high. **The only two names clearing 2:1 are XLU (2.71) and OIH (2.35) — the two worst momentum names on the entire board** (-7.22% and -2.76% on the 20-day, both below their 50-day). **The three names that pass rule 9 score 0.20, 1.62 and 0.13.** The gates are not merely both binding; they select disjoint sets. **This is owner decision 1 and nothing else moves it.**
+
+### STEP 3 — hard rule gate. **NOTHING PASSES. NOTHING ORDERED.**
+| Gate | Status |
+|---|---|
+| Positions after trade ≤ 6 | 1 held — room for 5 |
+| Trades this week ≤ 3 | **0/3 used** — room |
+| Position cost ≤ 20% equity | $19,614 available at the cap |
+| **Dated catalyst in today's research** | **NONE for any passing name** |
+| **Rule 9 + 2:1 R:R together** | **ZERO names satisfy both** |
+| PDT room | Full; equity $98,070 ≫ $25k, PDT not binding |
+
+- **The binding gate is not capacity and never has been.** The account has three unused trade slots, five open position slots and $79,386 in cash. **It has no name that clears its own entry checklist.** Twenty-eighth session of this.
+- **No options. Never.** (Account carries `options_trading_level: 3`; it is not used and never will be.)
+
+### Position management — every rule checked live, nothing triggered
+| Rule | Threshold | Reading | Status |
+|---|---|---|---|
+| Cut at -7% | $59.1065 | mark **$62.28**, **5.37% above** | **NOT TRIGGERED** (position -2.01%) |
+| Tighten to 7% at +15% | $73.0886 | -2.01% | NOT TRIGGERED |
+| Tighten to 5% at +20% | $76.2664 | -2.01% | NOT TRIGGERED |
+| Trail ratchet | hwm $66.17 | session high $62.37, **$3.80 short** | correctly did not fire |
+| Stop never within 3% | $59.553 sits **4.38%** below mark | 3% line $61.3948; price **1.44% above** it | **COMPLIANT** |
+| Stop never moved down | `updated_at` **2026-09-10T13:30:02.170843Z** | unchanged for **9 sessions** | **INTACT** |
+
+- Order `ef0c1da0`: `status: new`, GTC, `stop_price` **$59.553**, `trail_percent` 10, `hwm` **$66.17**, expires 2026-11-16. Never touched by hand. **Rules 4 and 7 intact.**
+- **Thesis (rule 12):** re-established and restated as **falsified on three independent grounds** — capture, gap risk, sector momentum. **Carried only because no written trigger fires and the exit is not self-authorizable. Carried under escalation, not inertia.**
+
+### Account snapshot (13:38Z / 09:38 ET, RTH)
+| | |
+|---|---|
+| Equity | **$98,070.14** |
+| `last_equity` (`balance_asof` 2026-09-22) | $97,920.14 |
+| Day P&L | **+$150.00 (+0.15%)** |
+| Cash | $79,386.14 (**80.95%**) |
+| Position MV | $18,684.00 → **19.05% deployed** |
+| Phase P&L | **-$1,929.86 (-1.93%)**; incl. $114.08 dividend receivable **-$1,815.78 (-1.82%)** |
+| **Gap to the 75% floor** | **$54,868.61** |
+
+### Benchmark lead
+| | 9/22 close | 9/23 pre | **9/23 open** |
+|---|---|---|---|
+| SPY ITD vs $776.34 ref | -0.38% | -0.45% | **-0.52%** |
+| Book ITD | -2.08% | -1.96% | **-1.93%** |
+| **Lead** | **-1.70 pts** | -1.51 | **-1.41 pts** (div-adj **-1.30**) |
+
+- The lead improved 0.10 pts overnight and is **still negative for the fourth consecutive session**. It improved because XLE bounced, not because the structure changed. **An 81%-cash book cannot participate in an up-market** — decision 1(c)'s cost, still compounding.
+
+### Decision
+**HOLD. Zero orders placed, zero cancelled, zero staged, zero stops touched. Trades week of 9/21-9/25: 0/3.** Deployment 19.05%, 1 of 6 positions, full PDT room.
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar.** 19.05% against a 75% floor, **$54,868.61 short**, ~47 sessions in breach. Cost **-1.41 pts** of lead. Today's fourteen-name sweep shows the gates select **disjoint sets**, not merely both bind. Options: (a) lower the mandate; (b) relax the R:R leg; (c) authorize a benchmark-tracking core. **~23 sessions unanswered.**
+2. **Second energy leg — authorize or forbid.** Standing recommendation **FORBID**, reinforced by the rule 9 flip holding a second session. **~24 sessions.**
+3. **Gap risk on the only position.** Proposed trigger (c) does not exist and **would not fire on today's facts** (rule 14 re-checked wire-restricted, fifth consecutive session). **~30 sessions.**
+4. **20% cap — entry-only or continuous?** Default (a) in force. Moot at 19.05%. **~25 sessions.**
+5. **XLE: close, or hold on a defined review? — THE REVIEW FIRED ON THE 9/22 CLOSE AND THE OPEN IT NAMED HAS NOW PASSED UNEXECUTED.** USO closed **$144.08** vs the **$146.03** level, transits **17** vs **<40/day** — both legs met. **USO's bounce back above the level this morning does not un-fire it.** **Standing recommendation: CLOSE.** Sixth consecutive run raising this, second on settled satisfied data, **first on which the named execution window has actually elapsed.** Not self-authorizable; not placed.
+
+### Handoffs (rule 15)
+- **To the 9/23 midday run, by name:** (i) **the 09:45 S&P Global flash PMI actuals — this run could not obtain them and did not guess**; (ii) the **10:30 ET EIA** crude inventory print against XLE and USO; (iii) USO against $146.03 intraday — **the review fired on the 9/22 close and does not un-fire**; (iv) whether any **wire** upgrades or kills the "deal signed" claim, which Reuters 9/23 currently has Iran **denying**.
+- **To the 9/23 daily-summary run, by name:** (i) **log the EOD snapshot on the day** — thirteen of the last twenty-eight were reconstructed late, including yesterday's; (ii) XLE's official close against the **$59.1065** cut line; (iii) USO's close against $146.03 for the record; (iv) **whether decision 5 was answered, and that its named open elapsed unexecuted.**
+- **Carried:** the rule 2 deployment breach (~47 sessions) and all five owner decisions, per rule 15, until answered or withdrawn.
