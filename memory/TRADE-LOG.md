@@ -294,3 +294,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **Row reconstructed by the 9/25 pre-market run** — the 9/24 daily-summary run never logged it, the account's **fifteenth persistence gap** (`origin/main` head on 9/25 was `842d493` "midday scan 2026-09-24"). That run had been handed five items by name; **all five are discharged in the 9/25 pre-market research entry**, including the two it could not have known: the **13:00 ET 7-year auction** cleared at a **5.085% high yield, 2.42 bid-to-cover, 0.7bp tail** (soft demand), and **the 12:15 ET reversal did NOT round-trip** — unlike the 9/22 precedent it **extended into the close**. Sourced from Alpaca `last_equity` **$98,166.14** (`balance_asof` 2026-09-24) and `portfolio/history` (`profit_loss` **+$69.00**), plus the SIP daily bar. Nothing inferred.
 
 **The session's material fact is not in the table: USO closed $153.09, +2.85% and at a phase high, while XLE closed +0.37% after giving back a +1.67% intraday gain.** Since the 8/18 entry the catalyst is **+17.17%** and the position **-1.70%** — an **18.87-point spread, the widest of the phase** — with XOP -0.70%, OIH -6.25% and SPY -0.04%. **Owner decision 5's third named open elapses 9/25 at 09:30 ET; five owner decisions remain unanswered.**
+
+### Sep 25 — EOD Snapshot (Day 30, Friday)
+**Portfolio:** $98,019.14 | **Cash:** $79,386.14 (81.00%) | **Day P&L:** -$147.00 (-0.15%) | **Phase P&L:** -$1,980.86 (-1.98%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.11 | -0.78% | -$433.60 (-2.27%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes — `activities?activity_types=FILL&after=2026-09-22` returns `[]`. XLE closed $62.11, down 0.78% off yesterday's $62.60, extending the slide off the 9/10 high. The trail did not ratchet (today's price stayed well below the $66.17 hwm); stop untouched by hand, never moved down, `updated_at` still 2026-09-10T13:30:02.170843Z. Deployment 19.01% ($18,633.00 of $98,019.14); cut line $59.553, 4.12% below today's price — the narrowest gap of the phase. Trades week of 9/21-9/25: 0/3 — final tally, the seventh consecutive week the account used no slot. Account `balance_asof` still reads 2026-09-24 at run time; today's equity/cash/position figures are Alpaca's live snapshot, not yet a finalized daily balance.
