@@ -307,3 +307,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **Row reconstructed by the 9/28 pre-market run** — the 9/25 daily-summary run never ran or never committed, the account's **sixteenth persistence gap** (`origin/main` head on 9/28 was `bc27c27` "weekly review 2026-09-25"; no daily-summary commit exists for 9/25). Sourced from `portfolio/history` (official 9/25 equity **$97,998.14**, `profit_loss` **-$168.00**, `balance_asof` 2026-09-25) and the SIP daily bar. Nothing inferred. **One thing distinguishes this gap from the fifteen before it: the 9/25 weekly review DID run and computed week-end equity on the SIP close as $97,998.14 / -$168.00 because official history had not yet posted. Official history has now posted and confirms both figures exactly.** The review's method was right; only the log row was missing.
 
 **The session's material fact is not in the table.** USO closed **$148.33**, **+1.58% ABOVE** owner decision 5's $146.03 review level — the third consecutive session above it, so the fired review's factual trigger was absent again. XLE closed 4.73% clear of the $59.1065 cut line. **Close-basis capture since the 8/18 entry: USO +13.52%, XLE -2.58%, XOP -2.08%, OIH -6.38%, SPY +0.51% — a 16.10-point spread**, narrower than 9/24's 18.87 only because crude fell. **Five owner decisions remained unanswered; decision 5's standing CLOSE recommendation stood at thirteen consecutive runs.**
+
+### Sep 28 — EOD Snapshot (Day 31, Monday)
+**Portfolio:** $98,022.14 | **Cash:** $79,386.14 (80.99%) | **Day P&L:** +$24.00 (+0.02%) | **Phase P&L:** -$1,977.86 (-1.98%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.12 | +0.12% | -$430.60 (-2.26%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes. XLE opened $62.775, ranged $61.84-$62.775, closed $62.12 (SIP daily bar) vs $62.04 prior. Trail did not ratchet (hwm $66.17 from 9/10); stop untouched, never moved down. Deployment 19.01%; cut line $59.1065, 4.85% below close. Trades this week (9/28-10/2): 0/3. Equity computed on SIP close: alpaca account/position still showed the stale $62.07 mark (equity $98,007.14, balance_asof 9/25), so $62.12 is used; official history had not posted 9/28 yet. Five owner decisions remain unanswered.
