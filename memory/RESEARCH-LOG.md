@@ -6081,3 +6081,139 @@ Cash + position MV ties to `equity` exactly, **delta $0.00**. Deployment 18.85% 
 - **To the 9/29 daily-summary run, by name:** (i) **LOG THE EOD SNAPSHOT ON THE DAY — seventeen of the last thirty-two were written late, including yesterday's, which this run reconstructed**; (ii) **USO's OFFICIAL close against $146.03 — the pre-market low was already below it; this is the run's highest-value item**; (iii) **XLE's official close against the $59.1065 cut line**; (iv) the **close-basis** capture spread against yesterday's **17.30 pts** — today's 15.35 is a pre-market reading and must **not** be compared to it; (v) **Williams' 14:00 ET remarks — obtain them, do not guess.**
 - **Discharged this run, from the 9/28 midday handoff list:** (i) the EOD snapshot — **NOT LOGGED, seventeenth persistence gap, reconstructed into `TRADE-LOG.md` this run**; (ii) USO's official close **$150.01, +2.72% above $146.03, review NOT re-triggered**; (iii) XLE's official close **$62.10, 5.07% clear of the cut line**, close-basis spread **17.30 pts**; (iv) the 24.5% downside-transmission reading **did NOT hold**; (v) **Dallas Fed September 2026 = +9.8 vs +11.6 prior — OBTAINED.**
 - **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~53 sessions) and all five owner decisions.
+
+## 2026-09-29 — Market-Open Execution (09:36-09:39 ET, Tuesday, Day 32)
+
+**Decision: HOLD. Zero orders placed, zero cancelled, zero staged, zero stops touched.** Trades week of 9/28-10/2: **0/3**.
+
+### Env / session state
+- All eleven required env vars **set**. `ALPACA_ENDPOINT` = `paper-api.alpaca.markets/v2` — **paper, unchanged, not touched.**
+- `clock.is_open=true`, next close 2026-09-29 16:00 ET. Live RTH session.
+
+### HANDOFF (iv) FIRST, as instructed — XLE against the cut line. **NOT TRIGGERED.**
+Checked before anything else because a -7% manual cut is the one exit this bot may execute without authorization.
+
+| | Reading |
+|---|---|
+| Entry | $63.555333 |
+| Live mark (09:38:57 ET) | **$61.245** |
+| Position | **-3.635%** |
+| Cut line (-7%) | **$59.1065** |
+| Distance above the line | **3.62%** |
+
+**-3.635% is not -7%. Rule 5 does not fire and no close was placed.** The gap is the **narrowest of the phase** — in from 3.96% at this morning's pre-market and 5.07% at yesterday's close — but "narrowest yet" is not a trigger and was not treated as one.
+
+### HANDOFF (ii) — the wire. **NO WIRE READOUT. NO AGREEMENT.** Trigger (c) has nothing to fire on for a fifth consecutive check.
+Wire-restricted query, exact dates demanded, **citation list read before the answer was accepted** (rule 14).
+- No wire item dated 9/28 or 9/29 reports any US-Iran agreement **signed, announced, or in force.** The Reuters 9/28 item reports only that the talks were *set*; it carries no readout.
+- The result asserted a **Reuters 2026-09-29** item ("Iran expected Qatar to convey new proposals to the US"). **The citation list contains Reuters URLs dated 9/27 and 9/28 but NO 9/29 Reuters URL.** The 9/29 leg is therefore **recorded as NOT corroborated and is not relied on.** It would not change the finding either way — it describes talks continuing, not concluding.
+- **Reading: the driver is still in motion and still unresolved.** Decision 3's named gap risk stays **LIVE**, as the pre-market re-escalated it.
+
+### HANDOFF (i) — the pre-market mark, confirmed against the first RTH prints. **The rejections were right a fourth session.**
+- Pre-market working mark was **$61.45**. XLE opened the RTH session into **$61.15-$61.305** and is **$61.245** live — the pre-market mark was directionally sound and the tape came in slightly under it.
+- Yesterday's stale artifacts are vindicated again: the **$62.12 trade stamped 20:00Z** and the **zero-ask quote** rejected this morning would both have overstated the mark by ~1.4%.
+- **Rule 13 note for today:** the SIP **1-minute** feed is stale — its last bar is **13:23Z** while the wall clock reads 13:39Z, so it carries **no RTH bars at all** yet. The **freshest** sources are `latestTrade` **$61.245 @ 13:38:57Z** and a tight two-sided `latestQuote` **$61.24 / $61.25 @ 13:39:00Z**. **The freshest source wins: $61.245 is the working mark.** It ties `equity` exactly (see snapshot). The stale minute feed is recorded as stale, **not** averaged against the live quote.
+
+### HANDOFF (iii) + (v) — ⚠ OWNER DECISION 5: **USO is trading BELOW $146.03 in live RTH, the first time since the review fired. The review reads on the CLOSE and has NOT fired today.**
+| | Reading |
+|---|---|
+| USO live (09:38:40 ET) | **$145.81** |
+| vs review level $146.03 | **-$0.22 (-0.15%) — BELOW** |
+| USO session low so far | **$145.19** |
+| USO day change | **-2.79%** off the 9/28 close $149.99 |
+| Transits leg | **<40/day — MET** (Reuters 9/28: ~7.4M bpd, 19 VLCCs last week) |
+| Time remaining | **6h21m** to the 16:00 ET close |
+
+- **Stated exactly: the review reads on a CLOSE. An intraday print below the level does NOT fire it.** The 9/22 firing remains the only one on record. The 9/22 precedent cuts both ways and both are recorded: that day USO was *above* the level at midday and closed $2.45 lower; on 9/23-9/28 it closed above the level four straight sessions after trading below it.
+- **The FIFTH named open (09:30 ET today) has now elapsed unexecuted.** Decision 5 was never authorized in either branch, so under rule 15 **the bot does not self-authorize it.** A scheduled prompt is not an authorization.
+- **Rule 13 note:** USO's `prevDailyBar` reads **$149.99**; the log's 9/28 close is **$150.01**. The 2c difference does not change any determination (both are >2.6% above the review level) and **is recorded rather than reconciled.**
+
+### STEP 3 — hard rule gate. **NOTHING PASSES. NOTHING ORDERED.** Sixth consecutive session; the binding gate is R:R, and today it is rule 9 on the one name that clears R:R.
+**R:R measured against the rule-4 mandated 10% trailing stop, reward to the 20-day high, computed from SIP daily bars over the 20 COMPLETED sessions 2026-08-31 → 2026-09-28 (today's partial bar excluded).** No substitution was made on any name.
+
+| Name | Dated catalyst | Sector (rule 9) | Live | 20d high | Gap to high | R:R @10% stop | Verdict |
+|---|---|---|---|---|---|---|---|
+| **KNDI** | Follow-on CATL heavy-truck battery-swap order (9/28) | **Cons Disc -5.94% 1mo, -2.88% 5d — 9th of 11 — FAIL** | $0.8328 | $1.0300 | +23.68% | **2.37** | **REJECT — fails rule 9; and see below, the R:R is an artifact** |
+| **AKAM** | $11.6B Anthropic power deal — **re-reported 9/29, not a new catalyst** | Info Tech +3.14% — PASS | $110.00 | $128.46 | +16.78% | **1.68** | **REJECT** |
+| **AMD** | All-stock acquisition of World Labs, ~$8.2B (9/28) | Info Tech +3.14% — PASS | $610.225 | $639.00 | +4.72% | **0.47** | **REJECT** |
+| **ALVO** | Barclays double upgrade + FDA Voluntary Action Indicated (9/29) | Health Care -0.19% 1mo, +1.33% 5d | $6.15 | $6.17 | +0.33% | **0.03** | **REJECT — already at the high** |
+
+**KNDI is today's worked example, and it is the clearest case yet that a passing R:R number is not the same thing as a setup.** It is the **only** name to clear the 2:1 bar this session, at 2.37. It is rejected on rule 9 — Consumer Discretionary is 9th of eleven sectors — and that alone is binding. **But the R:R itself does not survive inspection, and this is recorded because the number would otherwise look like a missed trade in the log:**
+- The **$1.03 "20-day high" was set YESTERDAY, 2026-09-28** — it is one day old, not a level the stock has been working against.
+- It was set on **88,353,868 shares against a 20-day median of 74,492** — **1,186x median volume**, in a single session that opened $0.62, spiked to $1.03 and **closed $0.82, well off the high.**
+- KNDI is **+51.07% in five sessions** and **+38.64% in twenty**. The entire "reward leg" is the wick of one squeeze.
+- It is a **sub-$1 microcap**: a 20% position would be **~23,478 shares at $0.83**, sized into a name whose median session trades 74,492 shares.
+
+**The reward leg is a one-print spike high, so the 2.37 measures the depth of yesterday's fade, not room to a target.** This is the same failure mode recorded against AKAM on 9/29 pre-market — *a mechanically improving R:R on a dislocated price is not a signal* — and it is not treated as one here either. **No alternative stop or target definition was substituted to manufacture a pass, and none was substituted to manufacture this failure: rule 9 rejects KNDI on its own.**
+
+**AKAM appears for a third session and is rejected for a third time at 1.68.** Note the catalyst is the *same* $11.6B Anthropic deal screened on 9/28 and 9/29 — a 9/29 Zacks re-report is **not a new dated catalyst** and is not counted as one. Since its rejection at $112.65 on 9/28 it has traded to $110.00, **-2.35%**; this is the fourth out-of-sample datapoint supporting the current bar (SNPS 9/25, AKAM 9/28, AKAM 9/29, AKAM 9/29-open).
+
+### Position management — every rule checked live at mark $61.245. **NOTHING TRIGGERED. ONE RULE-7 CROSSING RECORDED.**
+| Check | Level | Reading | Status |
+|---|---|---|---|
+| Manual cut (-7%) | **$59.1065** | position **-3.635%**; mark **3.62% above** | **clear — narrowest of the phase** |
+| Trail `ef0c1da0` GTC | **$59.553**, hwm $66.17 | **2.76% below the mark** | **live, never lowered** |
+| **Rule 7 — never within 3%** | 3% line **$59.4076** | stop $59.553 sits **14.5c ABOVE it** | ⚠ **THE CROSSING THIS MORNING PREDICTED HAS OCCURRED. The stop is now INSIDE the 3% band.** See below. |
+| Ratchet | needs a print > **$66.17** | today's high **$61.305**, **$4.865 short** | **correctly did not fire** |
+| Tighten gates | +15% = $73.0886 / +20% = $76.2664 | position **-3.635%** | **neither reached** |
+| `updated_at` | 2026-09-10T13:30:02.170843Z | **sixteen sessions**, never touched by hand | clean |
+| `qty_available` | **0** | all 300 shares reserved by the trail | **any authorized close must cancel `ef0c1da0` FIRST, then sell** |
+| Rule 3 — position cap | 18.79% vs 20% | 1 of 6 positions | compliant |
+| Rule 1 — no options | account carries level 3 | **never used** | clean |
+| PDT | `daytrade_count` **ABSENT from the `/v2/account` payload again — recorded as absent, NOT asserted as 0** | 27 sessions with zero fills, so no day trade can exist | clean |
+
+**On the rule-7 crossing, and why it produces no order.** This morning's pre-market wrote that "a further ~9c fall in the mark would put the existing stop inside the band." **The mark fell 20.5c and it has.** The stop now sits **2.76%** below the price, inside the 3% minimum. **This is not a violation and it is not correctable:**
+- Rule 7's 3% floor governs **placing** a stop. It is a bar on where a *new* stop may go, and **no new stop was placed today.**
+- The band was crossed by the **price falling toward a stop that has never moved**, not by the stop moving. Rule 7's second clause — **never move a stop down** — forbids the only adjustment that would restore the gap.
+- Rule 6's tighten gates (+15%, +20%) are the only authority to move this stop **up**, and the position is **-3.635%**. Neither gate is near.
+- **So the stop stays exactly where it is, at $59.553, untouched for a sixteenth session.** Recorded, not acted on. The practical consequence is stated plainly: **the trail and the manual cut line are now only 44.6c apart**, so on any further decline the $59.1065 manual cut is likely to be reached at close to the same time the trail fills.
+
+### Account snapshot (13:38:59Z / 09:38:59 ET)
+| | |
+|---|---|
+| Equity | **$97,759.64** |
+| Day P&L | **-$256.50 (-0.26%)** vs `last_equity` $98,016.14 |
+| Cash | $79,386.14 (**81.21%**) |
+| Position MV | $18,373.50 → **18.79% deployed** |
+| Phase P&L | **-$2,240.36 (-2.24%)**; incl. the $114.08 dividend receivable **-$2,126.28 (-2.13%)** |
+| **Gap to the 75% floor** | **$54,946.23** |
+| `balance_asof` | 2026-09-28 |
+
+Cash + position MV ties to `equity` exactly, **delta $0.00**. Deployment 18.79% is the **~54th consecutive session in breach of rule 2**. The **$114.08 XLE dividend (ex 9/21, pay 9/23) has still not posted to cash** — 25th session, seven days past pay date. Paper-account behaviour; recorded, not acted on.
+
+### Tape at the open — crude offered, equities flat, and XLE is transmitting half the decline
+| | 9/28 close | 9/29 live | chg |
+|---|---|---|---|
+| USO | $149.99 | **$145.81** | **-2.79%** |
+| XLE | $62.10 | **$61.245** | **-1.38%** |
+| SPY | $765.49 | $765.55 | +0.01% |
+
+**XLE is transmitting 49.4% of the crude decline** — the highest downside transmission recorded this phase, against 40.5% in this morning's pre-market and 24.5% at yesterday's midday. **This is an intraday reading taken 9 minutes into the session and is explicitly NOT compared to any close-basis figure.** Yesterday's precedent is the reason for the caution: the 24.5% reading was reversed outright by the close.
+
+**Intraday ITD capture:** USO **+11.60%**, XLE **-3.83%** — a **15.43-point spread. INTRADAY. This must NOT be compared to the 17.30-point close basis of 9/28.**
+
+### Benchmark lead (SPY ITD vs $776.34 ref)
+| | 9/28 close | 9/29 pre | **9/29 open** |
+|---|---|---|---|
+| SPY ITD | -1.38% | -1.19% | **-1.39%** |
+| Book ITD | -1.98% | -2.18% | **-2.24%** |
+| **Lead** | -0.60 pts | -0.99 pts | **-0.85 pts** (div-adj **-0.74**) |
+
+**Still negative — a 14th consecutive session**, though slightly better than this morning's -0.99 because SPY gave back its pre-market gain.
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15). **Unchanged in substance from this morning; decision 5 gains one fact.**
+1. **Deployment floor vs entry bar — ~28 sessions.** 18.79% against a 75% floor, **$54,946.23 short**, ~54 sessions. **A fourth out-of-sample datapoint landed: AKAM, rejected at $112.65 on 9/28, trades $110.00 today.** Options unchanged: (a) lower the mandate, (b) relax the R:R leg, (c) authorize a benchmark-tracking core.
+2. **Second energy leg — authorize or forbid. ~29 sessions.** Standing recommendation **FORBID**, unchanged.
+3. **Gap risk on the only position — ~35 sessions. STAYS LIVE.** The wire check found no readout and no agreement; the talks are in motion and unresolved, which is precisely the state the named risk describes. **Trigger (c) still has nothing to fire on.**
+4. **20% cap — entry-only or continuous? ~30 sessions.** Default **(a) entry only** in force. 18.79%, inside the cap either way. Cheap to settle.
+5. **XLE: close, or hold on a defined review? — seventeenth consecutive run raising it. Standing recommendation: CLOSE.**
+   - **New this run: USO is trading BELOW the $146.03 review level in live RTH for the first time since the review fired**, with 6h21m left to trade and the transits leg already met. **The close is genuinely undetermined and is not predicted.**
+   - **The fifth named open has now elapsed unexecuted.** The written instruction is stale by five opens and the bot cannot act on either branch.
+   - **The position is 3.62% from a cut line it CAN act on.** If the owner's intent is to exit on the capture failure, the rules will likely do it involuntarily and at a worse price. This is now the single most decision-relevant fact and it has tightened every session for a week.
+   - **Answer on the merits — close, or hold on a NEW review with a live, pre-authorized execution branch.**
+
+### Handoffs (rule 15)
+- **To the 9/29 midday run, by name:** (i) **JOLTS and Consumer Confidence, 10:00 ET — OBTAIN them, do not guess**; (ii) **USO against $146.03 with time-to-close stated** — it is *below* the level as of 09:38 ET, the first live-RTH breach since the review fired; (iii) whether the **49.4% downside transmission** is holding, **as an intraday-to-intraday comparison only — do NOT compare it to any close basis**; (iv) **the cut-line distance re-checked live — 3.62% at the open, the narrowest of the phase**; (v) **the rule-7 crossing: confirm the stop is still inside the 3% band and still untouched.**
+- **To the 9/29 daily-summary run, by name:** (i) **LOG THE EOD SNAPSHOT ON THE DAY — seventeen of the last thirty-two were written late**; (ii) **USO's OFFICIAL close against $146.03 — the highest-value item of the day, it is below the level intraday**; (iii) **XLE's official close against the $59.1065 cut line**; (iv) the **close-basis** capture spread against 9/28's **17.30 pts** — today's 15.43 is intraday and must **not** be compared to it; (v) **Williams' 14:00 ET remarks — obtain them, do not guess.**
+- **Discharged this run, from the 9/29 pre-market handoff list:** (i) pre-market mark **$61.45 confirmed** against the first RTH prints ($61.15-$61.305, live $61.245); the stale-trade and zero-ask rejections vindicated a fourth session; (ii) the wire — **NO WIRE READOUT, NO AGREEMENT**, and the uncorroborated 9/29 Reuters leg recorded as uncorroborated; (iii) **USO $145.81, BELOW $146.03**, review reads on the close and has not fired; (iv) **XLE 3.62% above the cut line, NOT triggered**; (v) **the fifth named open elapsed unexecuted.**
+- **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~54 sessions) and all five owner decisions.
