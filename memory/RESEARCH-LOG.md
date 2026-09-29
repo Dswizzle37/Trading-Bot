@@ -5910,3 +5910,174 @@ The entry thesis (Hormuz risk premium transmitting to US energy equities) did no
 ### Handoffs (rule 15)
 - **To the 9/28 daily-summary run, by name:** (i) **LOG THE EOD SNAPSHOT ON THE DAY — sixteen of the last thirty-one were written late, including Friday's**; (ii) **USO's OFFICIAL close against $146.03** — the session low was $0.83 away and the 9/22 precedent fired from a narrower margin; **this is the run's highest-value item**; (iii) **XLE's official close against the $59.1065 cut line** and the **close-basis** capture spread against Friday's **16.10 pts** — today's 15.40 is an intraday reading and must **not** be compared to it; (iv) **whether the 24.5% downside-transmission reading held into the close**, which determines whether the 9/25 asymmetry finding survives; (v) **the Dallas Fed September 2026 general business activity figure — NOT OBTAINED by this run; -8.7/-1.8 is September 2025 data and must be rejected on sight. August 2026 was +11.6. Obtain it or record it as unobtained; do not guess.**
 - **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~52 sessions) and all five owner decisions.
+
+## 2026-09-29 — Pre-Market Research (08:40 ET, Tuesday, Day 32)
+
+**Decision: HOLD. Zero orders placed, zero cancelled, zero staged, zero stops touched.** Trades week of 9/28-10/2: **0/3**.
+
+### Env / session state
+- All eleven required env vars **set**. `ALPACA_ENDPOINT` = `paper-api.alpaca.markets/v2` — **paper, unchanged, not touched.**
+- Market **closed** at run time (`clock.is_open=false`, next open 2026-09-29 09:30 ET). `/v2/calendar` confirms a full session today and each of 9/30, 10/1, 10/2 — no holiday this week.
+- `origin/main` head on entry `e4bc0e8` "midday scan 2026-09-28".
+
+### HEADLINE — the deal is back on the wire 48 hours after being rejected, and decision 3's gap risk RE-ESCALATES
+**Reuters, dated 2026-09-28: "US, Iran set to hold separate talks with mediators on Monday or Tuesday, official says."** Qatari mediators were to meet Iranian Foreign Minister **Abbas Araqchi in New York** and, separately, the US side, **Monday or Tuesday — i.e. possibly today**, in a fresh push to end the war. The talks were expected to focus on an **amended version of the seven-day proposal Iran presented the previous week at the UN General Assembly.**
+
+- **Rule 14's bar is cleared for recording**: named wire, exact date, quoted content, and the narrow query's citation list was read before the answer was accepted.
+- **Nothing is signed, announced or in force.** The wire-restricted check returned **NO AGREEMENT** for 9/28-9/29. **Proposed exit trigger (c) still has nothing to fire on — fourth consecutive check.** The article does not state Iran's Hormuz conditions or the US position, and **neither is supplied from a different article** — the substitution was offered by the model and refused.
+- **This is the third flip of the driver in five sessions:** talks live (Reuters 9/24, Bloomberg 9/25) → **rejected on the record by Trump** (Reuters 9/26, direct quote) → **talks resume with mediators** (Reuters 9/28). **Yesterday morning this run wrote that decision 3's named gap risk had gone DORMANT. It is live again, and that is reported as plainly as the de-escalation was.**
+
+### The tape agrees with the wire, and it is pointed the wrong way for this position
+| | 9/28 close | 9/29 pre-market | chg |
+|---|---|---|---|
+| USO | $150.01 | **$146.13** | **-2.59%** |
+| XLE | $62.10 | **$61.45** | **-1.05%** |
+| SPY | $765.61 | $767.115 | +0.20% |
+
+Crude offered, equities bid — the de-escalation trade, running in the opposite direction from yesterday morning's. **XLE transmitted 40.5% of the crude decline.**
+
+### ⚠ OWNER DECISION 5 — USO traded BELOW the $146.03 review level pre-market, the first time since the review fired on 9/22
+| | Reading |
+|---|---|
+| USO now (12:21Z) | **$146.13** — **+0.07% above** the level, **$0.10** away |
+| **USO pre-market low (11:59Z)** | **$145.96** — **$0.07 BELOW the level** |
+| USO pre-market high | $152.22 |
+| Transits leg | **<40/day — MET** (see below) |
+| Session ahead | full, 09:30-16:00 ET |
+
+- **The review reads on a CLOSE, so a pre-market print below the level does NOT fire it.** Stated exactly: **the review has not fired today**, and the 9/22 firing is the only one on record.
+- **The second leg is already met. Only the close is undetermined** — and the margin this morning is **$0.10**, against $1.13 at yesterday's midday and 0.34% at the 9/22 midday that then fired. **This is the narrowest approach to the level of the entire phase.**
+- **No order is placed, and the reason is rule 15, not judgement.** Neither branch of decision 5 was ever authorized; **four named opens (9/23, 9/24, 9/25, 9/28) have elapsed unexecuted and a fifth elapses at 09:30 ET today.** A scheduled prompt is not an authorization. The bot will not self-authorize a review it was never granted.
+
+### Hormuz flows — exit trigger (a) NOT MET, and the freshest wire figures are newer than yesterday's
+Wire-restricted, dates demanded, cross-check figures supplied (10 vessels 9/23; 7.4M bpd 9/27), citation list read. Answer: **NO NEWER COUNT** on a *daily* basis, but **Reuters 2026-09-28, "Mideast oil exports rebound in September as Saudi Arabia boosts shipments," carries three dated figures**, verified by a second narrow query against the named article:
+- Strait of Hormuz flows **"about 7.4 million bpd"** this month
+- **"19 very large crude carriers"** exited the strait last week (~2.7/day — **a weekly figure, not converted or presented as a daily count**)
+- Saudi Arabia **"on track to ship about 5.4 million bpd"**
+- A companion citation (aawsat, undated in the result set and therefore **not relied on**) reads "shipping traffic Strait Hormuz stays below 10/day average."
+
+**Trigger (a)'s ~40/day sustained two sessions is NOT MET and is not close.** The tension recorded on 9/28 stands unreconciled and is not smoothed over: a vessel *count* in single digits against a *flow* estimate recovering to 7.4M bpd. Both are stated as sourced; neither is adjusted to fit the other; **no order rests on either.**
+
+### HANDOFF DISCHARGED — Dallas Fed September 2026: **OBTAINED. +9.8, versus +11.6 prior.**
+The figure that defeated two runs yesterday (one `NO FIGURE`, one **false positive** recycling the September **2025** -8.7/-1.8 print) was obtained this morning by naming the 2025 contamination explicitly in the query and supplying the real August 2026 cross-check.
+- **September 2026 general business activity = +9.8**, prior **+11.6** — and **+11.6 is the cross-check this run supplied**, so the answer reproduced the known leg rather than inventing one.
+- Corroborated across four independently dated 9/28 sources (a Dow Jones newswire item `DN20260928004495`, fedpolicy.org 2026-09-28, investinglive giving "9.8 vs 11.6 prior", and a 2026-09-28 report of Texas factory output rising in September). **No 2025 figure appears in any accepted source.**
+- **Reading: a modest deceleration, still clearly expansionary.** Macro, read by no order.
+- **Method note: the narrow-query form is 4-for-6 on answer text and 6-for-6 when the citation list is read.** Yesterday the citations rescued a false negative and killed two false positives; today naming the known contamination plus supplying the cross-check converted a two-time failure into a clean answer. **Reading citations and supplying a cross-check are the load-bearing steps.**
+
+### Rule 13 — the mark was disputed again, and the freshest source won again
+- Snapshot `latestTrade` **$62.12 stamped 2026-09-28T20:00Z** — stale by a full session. `latestQuote` **bid $62.14 / ask $0.00**, same stamp — **a zero ask is junk and is rejected outright.**
+- **127 SIP one-minute bars exist for today**, 08:00Z ($62.26) through 12:18Z ($61.51), high $62.28, low $61.5003, volume 207,058 — a real pre-market tape.
+- Position `current_price` **$61.45** ties to `equity` at **delta $0.00** ($79,386.14 + $18,435.00 = $97,821.14).
+- **$61.45 is the working mark**; the live tape at $61.51 is 6c above it and both are fresh. The stamped-20:00 trade and the zero-ask quote are rejected, as on 9/25 and 9/28. **No order was sized off anything — none was placed.**
+
+### Market context
+- **WTI: DISPUTED and recorded as disputed, not averaged.** Two live sources on the same morning read **$91.56 (+0.19%, 12:39:17 on 2026-09-29)** and **$94.03 (2026-09-29 04:10 UTC)** — a **2.7% spread**. Brent **unavailable** and recorded as unavailable rather than guessed. **USO's own SIP tape is the instrument the written triggers name and is the figure relied on: $146.13, -2.59%.**
+- **No 2026-09-29 wire explains the crude decline.** The wire-restricted query returned **NO WIRE**. The 9/28 mediator-talks story is the obvious candidate and **is not asserted as the cause** — no wire connects them and none is inferred.
+- S&P futures: a single source gave **7,742.25 at 05:29 ET**; **not corroborated and not adopted.** **No VIX print could be verified this morning and none is guessed.** SPY's own pre-market tape reads **$767.115, +0.20%**.
+- **A 2025 contamination was caught in the futures result set** — a "Premarket primer **Monday** September 29" item, where 2026-09-29 is a **Tuesday**. Rejected on the weekday mismatch alone.
+- **Today's calendar (all ET):** Case-Shiller + FHFA house prices 09:00; **JOLTS job openings + Consumer Confidence 10:00**; Dallas Fed **services** survey 10:30; **Williams (NY Fed) 14:00**.
+- **ADP is DISPUTED and the primary source wins: ADP's own media center says the September 2026 report releases 2026-09-30 at 08:15 ET.** A third-party calendar listed it today. **Treated as Wednesday, not today.** Rest of week unchanged: **PCE + core PCE Wed 9/30 08:30**, ISM Mfg Thu 10/1, **nonfarm payrolls Fri 10/2 08:30**. No CPI this week.
+- **Earnings today:** KMX, UEC, AIR before the open; CCL. None held, none screened.
+- **Sector momentum (rule 9) — computed from SIP daily bars over 21 sessions (2026-08-27 → 2026-09-28), not taken from a third party.** The research source could not produce an eleven-sector table for 9/28 and **its partial figures (Comm Svcs +6.25%, Info Tech +5.97%) are from a different window and are NOT adopted**; the computed table is used and the discrepancy is recorded rather than reconciled:
+
+| Sector | ETF | 1mo % | 5d % | vs 20d high |
+|---|---|---|---|---|
+| **Info Tech** | XLK | **+3.14** | -0.16 | -1.22 |
+| Health Care | XLV | -0.19 | **+1.33** | -1.85 |
+| Comm Svcs | XLC | -0.21 | -3.11 | -3.83 |
+| **Energy** | **XLE** | **-0.31** | -0.58 | **-6.15** |
+| *S&P 500* | *SPY* | *-0.71* | *-1.02* | *-1.23* |
+| Cons Staples | XLP | -3.29 | +0.44 | -4.50 |
+| Industrials | XLI | -5.60 | -0.71 | -4.24 |
+| Cons Disc | XLY | -5.94 | -2.88 | -6.95 |
+| Financials | XLF | -6.38 | -3.06 | -7.53 |
+| Materials | XLB | -7.06 | -0.48 | -7.56 |
+| Real Estate | XLRE | -7.41 | -2.91 | -6.86 |
+| Utilities | XLU | -9.10 | -3.47 | -10.19 |
+
+**Info Tech is the only sector positive on the month. Health Care is the only one leading on five days (+1.33%). Energy is 4th of eleven at -0.31% — weak in absolute terms, middling in relative terms, and furthest of any sector from its own 20-day high at -6.15%.** Rule 10 (exit a sector after 2 consecutive failed trades) is **not triggered**: the account has one closed energy trade this phase.
+
+### STEP 3 — hard rule gate. **NOTHING PASSES. NOTHING ORDERED.** The binding gate is R:R, unchanged for a fifth session.
+All candidates carry dated 9/28 or 9/29 catalysts, so the catalyst gate is satisfied and R:R binds. **R:R is measured against the rule-4 mandated 10% trailing stop, reward to the 20-day high — the same method as every prior session, and no substitution was made on any name.**
+
+| Name | Dated catalyst | Sector (rule 9) | Live | 5d / 20d | 20d high | Gap to high | R:R @10% stop | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| **GRAL** | Positive FDA adcom vote on Galleri; Canaccord PT **$150 from $80** (9/28) | Health Care -0.19% 1mo, **+1.33% 5d** | $133.00 | **+22.84% / +65.79%** | $134.42 | **+1.07%** | **0.11** | **REJECT — already AT the high after +65.8% in 20 sessions; no room to the target at all** |
+| **LLY** | JPMorgan PT **$1,500 from $1,400**, guidance raise expected; Inluriyo FDA approval (9/28) | Health Care, as above | $1,190.00 | +1.71% / +0.87% | $1,197.79 | +0.65% | **0.07** | **REJECT** |
+| **ABBV** | FDA approval of JUVMO for Parkinson's (9/28) | Health Care, as above | $266.00 | +0.68% / +4.23% | $269.39 | +1.27% | **0.13** | **REJECT** |
+| **T** | Morgan Stanley Overweight, PT $28 from $27 (9/29) | Comm Svcs **-0.21% 1mo, -3.11% 5d** | $24.85 | -2.16% / -4.27% | $26.93 | +8.37% | **0.84** | **REJECT — fails rule 9 and R:R** |
+| **AKAM** | $11.6B Anthropic cloud agreement (9/28), carried from yesterday | **Info Tech +3.14% — PASS** | $109.99 | -7.17% / +1.41% | $128.46 | +16.79% | **1.68** | **REJECT** |
+| TEVA | FDA approval of DEGEVMA biosimilar (9/28) | Health Care | — | — | — | — | n/a | **REJECT — only 11 SIP daily bars available; no 20-day basis exists, so no R:R can be computed and none is estimated** |
+
+**AKAM is the day's worked example and it vindicates yesterday's refusal.** Yesterday this run rejected AKAM at R:R 1.40 on the mandated 10% stop, **disclosed and refused** a 7%-stop substitution that would have produced exactly 2.00, and wrote that the tape was saying the $11.6B catalyst was already in the price. **AKAM closed $108.99 yesterday, down 3.25% from the $112.65 pre-market mark at which it was rejected.** Its R:R today reads *better* (1.68) purely because the price fell while the 20-day high did not — **a mechanically improving R:R on a falling name is not a signal, and it is not treated as one.** This is the **third** out-of-sample datapoint supporting the current bar (SNPS 9/25, AKAM 9/28, AKAM 9/29) and it is recorded against the bot's own standing complaint about the deployment breach.
+
+**GRAL is the day's genuine near-miss and the reason it fails is worth stating.** It has the strongest catalyst of any name screened this phase — a positive FDA advisory-committee vote with a price target nearly doubled — and it is in the only sector leading on a five-day basis. **It fails because it is already at its 20-day high after a +65.8% twenty-session run: the reward leg is 1.07% and the mandated risk leg is 10%.** Buying it means buying the entire move with no measurable room to a target, which is the opposite of a 2:1 setup. **No alternative target definition was substituted to manufacture a pass.**
+
+### Position management — every rule checked live at mark $61.45, NOTHING TRIGGERED
+| Check | Level | Reading | Status |
+|---|---|---|---|
+| Manual cut (-7% from entry) | **$59.1065** | position **-3.31%**; mark **3.96% above the line** | **clear — NOT triggered, but the NARROWEST GAP OF THE PHASE** (in from 4.48% at yesterday's midday, 5.07% at yesterday's close) |
+| Trail `ef0c1da0` GTC | **$59.553**, hwm $66.17 | 3.09% below the mark | **live, never lowered** |
+| Rule 7 — never within 3% | 3% line **$59.6065** | stop $59.553 sits **5.4c below it** | **compliant — but no NEW stop could legally be placed at this level, and a further ~9c fall in the mark would put the existing stop inside the band** |
+| Ratchet | needs a print > **$66.17** | pre-market high **$62.28**, **$3.89 short** | **correctly did not fire** |
+| Tighten gates | +15% = $73.0886 / +20% = $76.2664 | position **-3.31%** | **neither reached** |
+| `updated_at` | 2026-09-10T13:30:02.170843Z | **fifteen sessions** on the log's running count, never touched by hand | clean |
+| `qty_available` | **0** | all 300 shares reserved by the trail | **any authorized close must cancel `ef0c1da0` FIRST, then sell** |
+| Rule 3 — position cap | 18.85% vs 20% | 1 of 6 positions | compliant |
+| Rule 1 — no options | account carries level 3 | **never used** | clean |
+| PDT | `daytrade_count` **absent from today's `/v2/account` payload** — recorded as absent, **not asserted as 0** | 25+ sessions with zero fills, so no day trade can exist | clean |
+
+### Account snapshot (12:35Z / 08:35 ET)
+| | |
+|---|---|
+| Equity | **$97,821.14** |
+| Day P&L | **-$195.00 (-0.20%)** vs `last_equity` $98,016.14 |
+| Cash | $79,386.14 (**81.15%**) |
+| Position MV | $18,435.00 → **18.85% deployed** |
+| Phase P&L | **-$2,178.86 (-2.18%)**; incl. the $114.08 dividend receivable **-$2,064.78 (-2.06%)** |
+| **Gap to the 75% floor** | **$54,930.85** |
+| Buying power | $369,162.56 (RegT $177,207.28) |
+
+Cash + position MV ties to `equity` exactly, **delta $0.00**. Deployment 18.85% is the **~53rd consecutive session in breach of rule 2**. `activities` after 2026-09-20 returns `[]` — **26th consecutive session with zero fills.** The **$114.08 XLE dividend (ex 9/21, pay 9/23) has still not posted to cash** — 24th session, six days past pay date. Paper-account behaviour; recorded, not acted on.
+
+### Benchmark lead (SPY ITD vs $776.34 ref)
+| | 9/28 pre | 9/28 midday | **9/28 close** | **9/29 pre** |
+|---|---|---|---|---|
+| SPY ITD | -1.01% | -0.98% | **-1.38%** | **-1.19%** |
+| Book ITD | -1.73% | -2.05% | **-1.98%** | **-2.18%** |
+| **Lead** | -0.72 pts | -1.07 pts | **-0.60 pts** | **-0.99 pts** (div-adj **-0.88**) |
+
+**Still negative — a 13th consecutive session.** Yesterday's close was the best reading since 9/24 (-0.60); this morning gives back most of it, because the index is up 0.20% while the position is down 1.05%.
+
+### Capture — the close-basis reading WIDENED, and yesterday's downside-transmission finding did NOT survive
+**9/28 close basis (the correct basis, discharging yesterday's handoff (iii)):** USO **+14.81%**, XLE **-2.49%**, XOP **-2.81%**, OIH **-7.30%**, SPY **-0.24%** — a **17.30-point spread, WIDER than Friday's 16.10** and the second-widest of the phase.
+
+**Handoff (iv) answered, and the answer goes against yesterday's finding.** Yesterday's midday scan found XLE transmitting only **24.5% of a crude decline** and reported it as cutting against the 9/25 asymmetry claim. **It did not hold into the close: crude recovered from -0.79% at midday to close +1.13% off Friday, while XLE closed +0.10% — an 8.7% capture of an upside move on the close basis.** The intraday decline the finding rested on was round-tripped by the catalyst, exactly as the 9/22 precedent warned. **The 9/25 asymmetry claim is neither confirmed nor refuted by yesterday's session; the day is recorded as supplying no usable reading on it.** This morning's 40.5% downside capture is a **pre-market** reading and is **not** compared to either.
+
+**Today's pre-market ITD marks:** USO +11.84%, XLE -3.51% — a **15.35-point spread, narrower only because crude fell**. **This is a pre-market reading and must NOT be compared to the 17.30 close basis.**
+
+### Risk factors for the day
+- **The driver has flipped three times in five sessions and it just flipped against the position.** 100% of the book's directional exposure sits in one energy name whose catalyst is a diplomatic process that produced a rejection on Saturday and resumed talks on Monday. **Mediator talks may occur today.** Any wire out of New York, Washington or Tehran moves this position intraday.
+- **The cut line is the closest it has ever been: 3.96%.** A single -4% session in XLE — the sector has printed -2.89% and -2.88% days inside the last seven sessions — puts the position at the manual cut, which **is** self-authorizable under rule 5 and would be executed.
+- **Decision 5's review level is $0.10 away on a close basis with a full session to trade.** The 9/22 precedent fired from a wider midday margin.
+- **JOLTS and Consumer Confidence at 10:00 ET, Williams at 14:00 ET, PCE tomorrow, payrolls Friday.** The book is 81% cash, so macro cuts both ways; the 19% that is invested is in the one sector most exposed to today's specific headline risk.
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15). **Decision 3 RE-ESCALATES; decision 5's ground 2 re-strengthens.**
+1. **Deployment floor vs entry bar — ~28 sessions.** 18.85% against a 75% floor, **$54,930.85 short**, ~53 sessions. **A third out-of-sample datapoint landed today supporting the CURRENT bar: AKAM, rejected yesterday at R:R 1.40, fell 3.25% on the day after its $11.6B headline.** Recorded against the bot's own complaint. Options unchanged: (a) lower the mandate, (b) relax the R:R leg, (c) authorize a benchmark-tracking core. **Note for (c): six of eleven sectors are down more than 5% on the month, so a broad core entered now would be entered into a weak tape — this is an argument about timing, not about the merits.**
+2. **Second energy leg — authorize or forbid. ~29 sessions.** Standing recommendation **FORBID**, unchanged and reinforced: XOP **-2.81%** and OIH **-7.30%** ITD on the 9/28 close basis, both still below their 8/18 levels, and energy sits furthest of any sector from its own 20-day high.
+3. **Gap risk on the only position — ~35 sessions. THE NAMED RISK IS LIVE AGAIN, 48 HOURS AFTER THIS RUN RECORDED IT DORMANT.** Reuters 9/28 has Qatari mediators meeting Araqchi in New York and the US side separately, **Monday or Tuesday**, on an amended Iranian proposal. **Proposed trigger (c) — a wire reporting the arrangement signed, announced or in force — still has nothing to fire on.** The three-flips-in-five-sessions record is the strongest argument yet for a **pre-authorized** trigger: the bot has now watched the driver reverse twice while holding an instruction it may not execute.
+4. **20% cap — entry-only or continuous? ~30 sessions.** Default **(a) entry only** in force. 18.85%, inside the cap either way. Cheap to settle.
+5. **XLE: close, or hold on a defined review? — sixteenth consecutive run raising it. Standing recommendation: CLOSE, and STRENGTHENED this morning after two sessions of weakening.**
+   - **Ground 1 (capture failure): INTACT and re-widened.** The close-basis spread went **16.10 → 17.30 pts**, and yesterday's two mitigating readings (44.8% pre-market upside capture, 24.5% downside transmission) **both failed to survive their own sessions** — the first round-tripped inside seven minutes, the second was reversed by crude recovering into the close. **The mitigation this bot reported in good faith on 9/28 did not hold, and that is reported with the same plainness.**
+   - **Ground 2 (unhedged gap risk): RE-ESCALATED.** It was materially de-escalated yesterday by the 9/26 rejection. Talks resumed on the wire 48 hours later.
+   - **Ground 3 (rule 9 sector flip): stays DROPPED.** Energy is 4th of eleven at -0.31% — weak, not a flip.
+   - **New this morning and the most decision-relevant fact: the position sits 3.96% above its manual cut line, the narrowest of the phase.** If the owner's intent is to exit this position on the capture failure, the rules will likely do it involuntarily and at a worse price. **A -7% manual cut is a rule-5 exit the bot executes without authorization; a decision-5 exit is one it cannot.**
+   - **The written instruction remains stale:** the review fired on the 9/22 close, **four named opens have elapsed**, USO has closed above $146.03 on four straight sessions, and **this morning it printed $145.96, below the level, for the first time since the review fired.** **Answer on the merits — close, or hold on a NEW review with a live, pre-authorized execution branch.**
+
+### Handoffs (rule 15)
+- **To the 9/29 market-open run, by name:** (i) **confirm the $61.45 pre-market mark against the first RTH quote** — the stamped-20:00 trade and the **zero-ask** quote were rejected again and this confirmation has now vindicated the rejection three sessions running; (ii) **re-check the wire for any readout of the Qatari mediator talks** — restricted to wires, dates demanded, citations read, **before anything else**; (iii) **USO against $146.03** — it printed $145.96 pre-market and the review reads on the close; (iv) **XLE against the $59.1065 cut line, now only 3.96% away — this is a rule-5 exit the bot MAY execute, so check it first and check it live**; (v) **decision 5 is unanswered and a FIFTH named open elapses at 09:30 ET.**
+- **To the 9/29 midday run, by name:** (i) **JOLTS and Consumer Confidence at 10:00 ET — obtain them, do not guess**; (ii) USO's standing versus $146.03 with time remaining stated; (iii) whether XLE's 40.5% pre-market downside capture is holding, **as a pre-market-to-intraday comparison only**; (iv) the cut-line distance re-checked live.
+- **To the 9/29 daily-summary run, by name:** (i) **LOG THE EOD SNAPSHOT ON THE DAY — seventeen of the last thirty-two were written late, including yesterday's, which this run reconstructed**; (ii) **USO's OFFICIAL close against $146.03 — the pre-market low was already below it; this is the run's highest-value item**; (iii) **XLE's official close against the $59.1065 cut line**; (iv) the **close-basis** capture spread against yesterday's **17.30 pts** — today's 15.35 is a pre-market reading and must **not** be compared to it; (v) **Williams' 14:00 ET remarks — obtain them, do not guess.**
+- **Discharged this run, from the 9/28 midday handoff list:** (i) the EOD snapshot — **NOT LOGGED, seventeenth persistence gap, reconstructed into `TRADE-LOG.md` this run**; (ii) USO's official close **$150.01, +2.72% above $146.03, review NOT re-triggered**; (iii) XLE's official close **$62.10, 5.07% clear of the cut line**, close-basis spread **17.30 pts**; (iv) the 24.5% downside-transmission reading **did NOT hold**; (v) **Dallas Fed September 2026 = +9.8 vs +11.6 prior — OBTAINED.**
+- **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~53 sessions) and all five owner decisions.
