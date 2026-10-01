@@ -7233,3 +7233,171 @@ Cash + position MV ties to `equity` exactly, **delta $0.00**. Deployment 18.93% 
 - **To the 10/1 midday scan, by name:** (i) **ISM Manufacturing PMI — NOT released at 09:53 ET (10:00 release); obtain it; prior **54.6**, consensus **55.2**, and S&P Global's 57.0 implies an upside surprise** (handoff (iv) carried a second time); (ii) **whether today's 59.2% transmission and the +0.41-pt XLE-over-SPY lead SURVIVE — this is handoff (viii)'s real test and it is the first time the SPY leg has been positive on an UP tape; three of the last four such readings died at their close**; (iii) **USO against $146.03 — $146.86 at 09:45, $0.83 above; a fourth firing needs a CLOSE below the level**; (iv) **whether XLE prints below $61.3948 again, re-entering the rule 7 band — record every crossing, do NOT move the stop**; (v) **XLE against the $59.1065 cut line, 4.36% of headroom at $61.80**; (vi) **the 9/30 WTI/Brent settle — FIFTH failure; if the midday cannot get it, recommend it be formally ABANDONED rather than handed forward a sixth time**; (vii) **the S&P Global 57.0 print is SINGLE-SOURCE (issuer + one aggregator) — ISM is the cross-check**; (viii) **confirm that owner decision 5's 10/1 named open stays unexecuted through the session — it is the seventh.**
 - **Discharged this run, from the 10/1 pre-market handoff list:** (i) **decision 5's named open CONFIRMED ELAPSED unexecuted on three independent checks, not self-authorized — the SEVENTH**; (ii) **the rule 7 band WAS CROSSED — XLE opened $61.16, below the $61.3948 threshold, and the low $61.045 went deeper; recorded, stop NOT moved, now reverted and 39.3c clear**; (iii) **jobless claims OBTAINED — they DID print despite the shutdown, 197,000, official DOL release dated 2026-10-01**; (iv) **ISM NOT released at 09:53 (release is 10:00 ET) — handed forward, not dropped; August prior 54.6 AND consensus 55.2 obtained**; (v) **9/30 WTI/Brent settle NOT obtained, FIFTH consecutive failure — the $89.38/$102.59 pair re-confirmed as 9/29 figures**; (vi) **XLE 4.36% above the $59.1065 cut line, NOT triggered**; (vii) **HEADLINE 2 RE-QUERIED WIRES-ONLY AND IT HELD — no 9/30 or 10/1 wire contradicts it, and a third reading was added (Hormuz flows ~13 mb/d at late-June highs, JPMorgan); one inference CORRECTED (the barrels are not only routing around the strait) with the decoupling conclusion reinforced**; (viii) **the XLE-over-SPY leg IS being tested on an up tape and reads +0.41 pts at 09:49 — unresolved until the close, handed to the midday.**
 - **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~59 sessions) and all five owner decisions.
+
+## 2026-10-01 — Midday Scan (13:12-13:25 ET, Thursday, Day 34)
+
+**Decision: HOLD. Zero orders placed, zero cancelled, zero stops touched.** Trades week of 9/28-10/2: **0/3**. No rule fired. All eight handoffs from the market-open run were worked; **six discharged, one abandoned on recommendation, one still live until 16:00 ET.** Two findings are genuinely new and they point opposite ways: **(1) ISM Manufacturing printed 54.5 — a MISS against 55.2 consensus and a fall from 54.6 — which DEMOLISHES the cross-check on yesterday's single-source S&P Global 57.0; equities fell on it. (2) XLE/USO transmission reads 78.6% at midday, the highest of the entire phase, with XLE +1.37 pts over a FALLING SPY.** The second is the first substantial counter-evidence to owner decision 5's ground 1 in the phase, and this run will not credit it before the close — but it says plainly what happens if it survives.
+
+### Env / session state
+- All **six** prompt-required env vars **set** (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `PERPLEXITY_API_KEY`, `RESEND_API_KEY`, `NOTIFY_TO`, `GH_TOKEN`); `ALPACA_ENDPOINT` also set. No `.env` file exists and none was created.
+- `ALPACA_ENDPOINT` = `paper-api.alpaca.markets/v2` — **paper, verified live this run, not touched.**
+- `clock.is_open=true`, `timestamp` 13:14:49 ET, `next_close` 2026-10-01 16:00 ET. Regular session, **2h45m to the close.**
+
+### ⚠ HANDOFF (i) — ISM MANUFACTURING PMI. **OBTAINED. 54.5 — A MISS, AND IT BREAKS HANDOFF (vii)'s CROSS-CHECK.**
+| Series | Sep 2026 actual | Prior (Aug) | Consensus | Read |
+|---|---|---|---|---|
+| **ISM Manufacturing PMI** | **54.5** | **54.6** | **55.2** | **0.7-pt miss; eased, did not accelerate** |
+| S&P Global US Mfg final (9/30 handoff) | **57.0** | 53.9 | — | **+3.1-pt jump — NOT corroborated** |
+
+- **Discharged on the second attempt at a figure two prior runs could not reach, and with the September-2025 contamination named explicitly in the query.** Returned as **54.5, published 2026-10-01**, with a **Reuters newsml item** plus **five independent outlets** (Anadolu, Seeking Alpha, ARC Web, TMGM, Tribune India) all carrying 54.5. **Six sources, one figure. Not single-source.**
+- **Handoff (vii) is DISCHARGED and its answer is NEGATIVE. The market-open run flagged S&P Global's 57.0 as single-source and named ISM as the real test. ISM failed it.** A 3.1-point jump to a 4-year-high-type reading is not consistent with the ISM easing 0.1 and missing consensus by 0.7. **The 57.0 is therefore recorded as UNCORROBORATED and should not be carried forward as evidence of a manufacturing upturn.** The run that flagged it was right to flag it.
+- **The tape agrees with ISM, not with S&P Global:** Bloomberg/Swissinfo 2026-10-01 — *"Stocks fall after manufacturing data as oil climbs."* **SPY was +0.08% at 09:49 ET and is -0.09% now**, having traded as low as $758.815. The manufacturing print is the identified cause of the fade.
+- **Bearing on owner decision 1 option (c), a benchmark-tracking core: the case is now WEAKER than this morning, not stronger.** The market-open run rested part of (c) on claims at 197,000 **and** S&P Global at 57.0. **One of those two legs is now uncorroborated and the other is unchanged.** Against it: the 10-year at its highest since 2002 and an active shutdown, both still standing.
+
+### ⚠ HANDOFF (ii) — THE TRANSMISSION TEST. **78.6% AT MIDDAY — THE HIGHEST OF THE PHASE. LIVE, UNRESOLVED, AND NOT CREDITED.**
+| Reading | 9/30 close | 10/1 open (09:49) | **10/1 midday (13:14)** |
+|---|---|---|---|
+| USO chg | +1.61% | +0.82% | **+1.634%** |
+| XLE chg | -0.07% | +0.49% | **+1.285%** |
+| SPY chg | -0.21% | +0.08% | **-0.087%** |
+| **XLE/USO transmission** | **-4.0%** | 59.2% | **78.6%** |
+| **XLE over SPY** | +0.14 pts | +0.41 pts | **+1.371 pts** |
+
+- **78.6% beats this morning's 59.2%, which itself was the phase record. XLE is capturing more than three-quarters of the crude move for the first time in the phase.**
+- **The test the market-open run handed forward has MUTATED, and that must be said rather than glossed.** The question was whether the XLE-over-SPY lead could hold **on an UP tape**. **SPY has since turned negative (-0.087%), so the up-tape condition no longer obtains** — the +1.371-pt lead is now partly the ordinary mechanism of a defensive-sector book on a down index day. **The clean version of the test did not get to run. What remains testable is survival to 16:00 ET, and that is handed forward.**
+- **It is still not credited, and the reason is the record, not pessimism: four of the last five mitigating intraday readings died at their own close, and yesterday's 36.1% — credited as the best in weeks — INVERTED to -4.0%.** 2h45m remain.
+- **Stated in advance, as the market-open run promised: if 78.6% transmission and a positive XLE-over-SPY close both survive today's 16:00 ET print, owner decision 5's ground 1 is genuinely weakened and this log will say so without hedging.** That is the first time in twenty-four runs that sentence has been written with a live reading behind it.
+
+### HANDOFF (iii) — USO AGAINST $146.03. **$2.01 ABOVE. THE KNIFE EDGE IS GONE; A FOURTH FIRING IS UNLIKELY BUT NOT DECIDED.**
+| | Level | Reading |
+|---|---|---|
+| Decision 5 review level | **$146.03** | — |
+| USO live (`latestTrade` 17:07:09Z) | **$148.04** | **+$2.01 / +1.376% ABOVE** |
+| Session range | **$145.815 - $149.53**, open $145.815 | low was the open; **$145.815 is BELOW the level** |
+| 9/30 close (fired the review a 3rd time) | $145.66 | 0.25% below |
+
+- **The review reads on the CLOSE.** USO opened at its session low $145.815 — **below $146.03** — and has since run $3.72 off that low. **Margin is now $2.01 on a session whose range is $3.72 wide: real margin, unlike yesterday's $0.17, but not immunity.**
+- **A fourth firing needs a close below $146.03. On this reading it would take a -1.36% move in the final 2h45m.** Recorded as unlikely, **not** as resolved.
+- **Rule 13 note:** USO `latestTrade` **$148.04 @ 17:07:09Z** against `latestQuote` **bid $148.18 / ask $148.24 @ 17:12:30Z** — the quote is **5 minutes fresher and 14c higher**, and the in-progress SIP bar reads **$148.1205**. **All three say the same thing to within 0.14%; the $148.04 trade print is used as the conservative figure for a test measured on a LOW side.** No determination in this run is feed-dependent.
+
+### HANDOFF (iv) — THE RULE 7 BAND. **NO RE-CROSSING. ZERO PRINTS BELOW $61.3948 SINCE 09:49 ET.**
+Checked on **203 complete 1-minute bars** from 13:49Z to 17:11Z.
+
+| Window | Low | vs $61.3948 threshold | Crossings |
+|---|---|---|---|
+| RTH open to 09:49 (recorded by the market-open run) | **$61.045** | **below — INSIDE the band** | the one already on the record |
+| **09:49 to 13:11 ET (this run)** | **$61.67** | **$0.275 ABOVE** | **ZERO** |
+
+- **The band crossing recorded this morning has not recurred and the margin has widened all session.** The stop now sits **4.394%** below the mark against the 3% floor — the most clearance since 9/25.
+- **The stop was not touched, as instructed. `updated_at` remains 2026-09-10T13:30:02.170843Z — 15 trading sessions (9/11-10/1) with no hand on it.**
+- **The structural point stands unchanged and is NOT softened by today's rally:** the hwm is $66.17, **6.2%** above the current mark. Any print below **$61.3948** — **1.4% below here** — puts the stop back inside the band, and rule 7 forbids the only cure. **Ground 4 of owner decision 5 survives a good day for the position.**
+
+### Position management — every rule checked live at mark $62.29. **NOTHING TRIGGERED.**
+| Check | Level | Reading | Status |
+|---|---|---|---|
+| Manual cut (-7%) | **$59.1065** | position **-1.991%**; mark **5.111% above** | **clear — most headroom since 9/25** |
+| Trail `ef0c1da0` GTC | **$59.553**, hwm $66.17 | **4.394% below the mark** | **live, never lowered** |
+| Rule 7 — never within 3% | 3% line **$60.4213** | stop sits **86.8c BELOW** it | **compliant, and no re-crossing all afternoon** |
+| Ratchet | needs a print > **$66.17** | session high **$62.485**, **$3.685 short** | **correctly did not fire** |
+| Tighten gates | +15% = $73.0886 / +20% = $76.2664 | position **-1.99%** | **neither reached** |
+| `updated_at` | 2026-09-10T13:30:02.170843Z | **15 trading sessions**, never touched by hand | clean |
+| `qty_available` | **0** | all 300 shares reserved by the trail | **any authorized close must cancel `ef0c1da0` FIRST, then sell** |
+| Rule 3 — position cap | 19.05% vs 20% | 1 of 6 positions | compliant |
+| Rule 4 — stop on every position | 1 of 1 covered | — | compliant |
+| Rule 1 — no options | — | **never used** | clean |
+| PDT | `daytrade_count` **ABSENT from the `/v2/account` payload for a 31st session — recorded as absent, NOT asserted as 0** | zero fills since 9/25 (`activities` = `[]`, both filtered and unfiltered) | clean |
+
+**Rule 13 — XLE mark, no dispute.** `latestTrade` **$62.295 @ 17:12:24Z**, `latestQuote` **bid $62.30 / ask $62.31 @ 17:12:30Z**, in-progress SIP bar **$62.285**, `/v2/positions` **$62.29**, account-implied **$62.29** ($18,687.00 / 300). **A 1-cent spread across four live prints seconds apart on a moving tape. The $62.29 account mark is used because it ties `equity` exactly (delta $0.00).**
+- **Prior closes re-verified on SIP daily bars before use** — XLE **$61.50**, USO **$145.66**, SPY **$762.63**, XOP **$179.33**, OIH **$378.37**. **All five match the market-open run exactly.** The snapshot `prevDailyBar` disagreed on four of five (XLE $61.48, USO $145.67, SPY $762.34, XOP $179.27, OIH $378.17) — **partial feed, discarded in favour of SIP, and XLE's $61.50 is independently confirmed by the position's own `lastday_price` and by `change_today` = 0.01285.**
+- **OIH is live again this run** — `latestTrade` $379.74 @ 17:09:07Z, three minutes old, against this morning's nine-minute-stale print. **Its +0.362% is reported without caveat.**
+
+### HANDOFF (vi) — THE 9/30 WTI/BRENT SETTLE. **`NO FIGURE`, SIXTH CONSECUTIVE FAILURE. FORMALLY RECOMMENDED FOR ABANDONMENT.**
+- Queried with the 9/29 pair ($89.38/$102.59) named as the known contaminant and 2025 data excluded. **Returned `NO FIGURE`.** Citations surfaced Reuters 9/30 items on oil *direction* but **no settlement print.**
+- **The market-open run's recommendation is adopted: this handoff is ABANDONED, not passed to a seventh run.** Six runs across four days have failed to reach an official daily settle through this tool. **Nothing in any run has ever depended on the figure** — crude is tracked through USO, which is live, consolidated and ties to the tape. **The item is closed. Recording it as abandoned is itself the rule 15 disposal; it is not being silently dropped.**
+
+### STEP 5 — thesis check. **`NO WIRE` on a deal — TWELFTH consecutive check.**
+Wire-restricted query (Reuters/AP/Bloomberg/AFP or official statements), exact dates demanded, citation list read before the answer was accepted (rule 14).
+- **No wire item dated 9/30 or 10/1 reports any US-Iran agreement, ceasefire, nuclear deal, sanctions deal or Hormuz deal signed, announced, or in force.** Proposed exit trigger **(c) does not fire, for a twelfth consecutive check.**
+- **Doha, latest wire status — unchanged in substance for a third day:** **Reuters 2026-09-30** (Iran received US feedback on the seven-day trust-building plan via Qatari mediators; **the dispute is sequencing, not components**) and **Reuters 2026-09-30** (proximity talks in New York, the first since the ceasefire unravelled; **US response received, nothing in force**). Against it, **Reuters 2026-09-30 "Trump denies offering Iran sanctions relief."**
+- **Thesis NOT broken. No position change contemplated under STEP 5.**
+
+### STEP 6 — intraday research: WHY ENERGY ROSE ON A DOWN TAPE. **There is an identified cause and it is NOT a new catalyst.**
+| Driver | Reading | Source |
+|---|---|---|
+| **EIA weekly crude** (wk ended 9/25) | **+922k BUILD → 427.3M bbl**, against an expected draw | **Reuters / EIA, 2026-09-30** — *the same print this log recorded yesterday* |
+| Gulf exports | **recovering more SLOWLY than hoped** | **Reuters 2026-10-01** |
+| Gulf exports incl. "dark" | **23.3 mb/d, near 2025 averages** | Reuters 2026-10-01 (Goldman) — **re-confirms HEADLINE 2 for a third day** |
+| US-Iran talks | **stalled** | Reuters 2026-10-01 |
+| OPEC+ | **expected to HOLD output steady for November** | wire-cited 2026-10-01 |
+
+- **The rally is the same supply-risk complex the position was bought on — stalled talks, OPEC+ restraint, slow export recovery. No new catalyst, and nothing that changes the thesis in either direction.** Recorded so the 78.6% transmission is not mistaken for a re-rating of XLE itself.
+- **The two Gulf-export readings openly CONTRADICT each other in the same day's wires, and both are reported rather than reconciled:** Reuters 10/1 frames exports as *recovering more slowly than hoped* (bullish crude, and it cuts AGAINST "the thesis is repairing itself"), while the Goldman 23.3 mb/d figure in the same reporting says flows are **near 2025 averages** (and cuts FOR it). **The decoupling conclusion — that transit COUNT is unplugged from supply IMPACT — rests on the volume readings and is unaffected either way, since neither figure is a vessel count.**
+- **A genuine source tension, logged not resolved:** **Reuters 2026-10-01's own headline is "Oil prices barely changed as investors assess US-Iran peace talks, Gulf exports"** — while USO is **+1.63%** and XOP **+2.01%** on live consolidated prints. The Reuters snapshot is very likely timed earlier in the session. **Per rule 13 the live prints govern this run's arithmetic; the headline is recorded as the discrepancy it is, not used.**
+
+### Account snapshot (17:14Z / 13:14 ET)
+| | |
+|---|---|
+| Equity | **$98,073.14** (mark $62.29) |
+| Official 9/30 close | **$97,836.14** (`balance_asof` 2026-09-30) |
+| Day P&L | **+$237.00 (+0.24%)** |
+| Cash | $79,386.14 (**80.95%**) |
+| Position MV | $18,687.00 → **19.05% deployed** |
+| Phase P&L | **-$1,926.86 (-1.93%)**; incl. the $114.08 dividend receivable **-$1,812.78 (-1.81%)** |
+| **Gap to the 75% floor** | **$54,867.85** |
+
+Cash + position MV ties to `equity` exactly, **delta $0.00**. Deployment 19.05% is the **~60th consecutive session in breach of rule 2**. The **$114.08 XLE dividend (ex 9/21, pay 9/23) has still not posted to cash** — **31st session**, twelve days past pay date; cash unchanged at $79,386.14 for a 31st consecutive read. Paper-account behaviour; recorded, not acted on.
+
+### Tape at midday
+| | 9/30 close (SIP) | **live (13:07-13:12)** | day chg | ITD vs 8/18 |
+|---|---|---|---|---|
+| USO | $145.66 | **$148.04** | **+1.63%** | **+13.30%** |
+| **XLE** | $61.50 | **$62.29** | **+1.29%** | **-2.18%** |
+| SPY | $762.63 | **$761.97** | **-0.09%** | -0.71% |
+| XOP | $179.33 | **$182.94** | **+2.01%** | -1.30% |
+| OIH | $378.37 | **$379.74** | **+0.36%** | **-9.69%** |
+
+- **XLE's session low $61.045 was the opening print; it has since traded to $62.485 and holds $62.29 — a $1.44 / 2.36% range off the low.** The high is NOT the open, for a second consecutive session.
+- **SPY round-tripped: $764.34 open, $765.34 high, $758.815 low, $761.97 now.** The low came after the ISM print.
+- **OIH remains the broken leg — +0.36% on a +1.63% crude day, and -9.69% ITD.** Offered to owner decision 2 as unchanged evidence to FORBID.
+
+### Capture since the 8/18 entry — **INTRADAY; must NOT be compared to the 14.90-pt close basis of 9/30**
+| | 8/18 ref | **live** | ITD |
+|---|---|---|---|
+| USO | $130.66 | $148.04 | **+13.30%** |
+| **XLE** | $63.68 | $62.29 | **-2.18%** |
+| XOP | $185.35 | $182.94 | -1.30% |
+| OIH | $420.49 | $379.74 | **-9.69%** |
+| SPY | $767.45 | $761.97 | -0.71% |
+
+**USO-XLE spread: 15.48 pts intraday, out from 15.35 at the open.** Not a like-for-like comparison with the 14.90-pt 9/30 close. **The spread WIDENED again on a day XLE gained 1.29%, because crude gained more — the same mechanism as every prior widening.** XLE's own ITD improved from -2.95% to **-2.18%, the best reading since 9/22**; **XOP at -1.30% has now overtaken XLE on an ITD basis**, which it had not since the entry.
+
+### Benchmark lead (SPY ITD vs $776.34 ref)
+| | 9/30 close | 10/1 open | **10/1 midday** |
+|---|---|---|---|
+| SPY ITD | -1.77% | -1.69% | **-1.85%** |
+| Book ITD | -2.16% | -2.07% | **-1.93%** |
+| **Lead** | -0.40 pts | -0.38 pts | **-0.076 pts** |
+| **Lead, div-adjusted** | -0.29 pts | -0.27 pts | **+0.038 pts** |
+
+- **On the dividend-adjusted basis the book is AHEAD of the benchmark for the first time in the phase: +0.038 pts.** On the unadjusted basis the deficit is **-0.076 pts**, the narrowest of the phase.
+- **It must be caveated and the caveat is the same one this log has applied every time it narrowed: SPY is DOWN 0.09% today.** Roughly half of the 0.30-pt narrowing since the open is the index falling, not the book rising. **An 81%-cash book mechanically gains ground on a falling index and loses it on a rising one, and the mechanism is symmetric.**
+- **What is NOT the cash mechanism, and is new: the position itself is up 1.29% against an index that is down.** That is a real 1.37-pt relative gain in the only asset the book holds. **It is the first session in the phase in which the lead narrowed partly on merit. The honest accounting is: part merit, part mechanism, and the mandate is still not being met by a book that is 81% cash.**
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — ~33 sessions.** 19.05% against a 75% floor, **$54,867.85 short**, ~60 sessions. Options: (a) lower the mandate, (b) relax the R:R leg, (c) authorize a benchmark-tracking core. **The evidence for (b) is unchanged from this morning and remains conclusive — the gate's two legs are DISJOINT across 32 names (25 pass momentum, 2 pass R:R, intersection EMPTY), and ARM (+23.33%, R:R 1.62) would be a buy at a 1.5 bar for a second consecutive session.** No new screen was run at midday; STEP 3 is a market-open step. **On (c) the case is now WEAKER than it was at 09:49: the S&P Global 57.0 that part-supported it is uncorroborated, ISM eased to 54.5 and missed, and equities fell on the print.**
+2. **Second energy leg — authorize or forbid. ~34 sessions.** Standing recommendation **FORBID**, unchanged. **OIH +0.36% on a +1.63% crude day and -9.69% ITD** — the weak leg is weak even on a good day. **XOP (+2.01%, -1.30% ITD) has now passed XLE on ITD, which is the strongest reading XOP has had in the phase and is recorded as the one fact that cuts against FORBID.**
+3. **Gap risk on the only position — ~40 sessions. STAYS LIVE.** **Twelfth `NO WIRE`.** Doha unchanged for a third day — **US feedback received, sequencing disputed, nothing in force** — against Reuters 9/30 having Trump deny sanctions relief, and Reuters 10/1 reporting talks **stalled**. **Talks in motion and unresolved on 19% of the book, unhedged.**
+4. **20% cap — entry-only or continuous? ~35 sessions.** Default **(a) entry only** in force. 19.05%, inside the cap either way. Cheap to settle.
+5. **XLE: close, or hold on a defined review? — twenty-fifth consecutive run raising it. Standing recommendation: CLOSE — but with the first real crack in ground 1 of the phase, stated honestly.**
+   - **Ground 1 (capture failure): INTACT ON THE SPREAD, UNDER GENUINE CHALLENGE ON THE RATE.** The USO-XLE spread **widened to 15.48 pts** and XLE is still **-2.18%** against crude **+13.30%** — eight weeks, catalyst up 13%, equity down 2%. **But transmission reads 78.6%, the phase record, and XLE is +1.37 pts over a falling SPY. If BOTH survive the 16:00 ET close, ground 1 is genuinely weakened and this log will say so.** Four of the last five such readings died at their close; **2h45m to go.**
+   - **Ground 2 (unhedged gap risk): LIVE**, per decision 3.
+   - **Ground 3 (rule 9 sector flip): stays DROPPED** on its own terms.
+   - **Ground 4 (rule mechanics): SURVIVES A GOOD DAY, and that is the point.** The band crossing did not recur (zero prints below $61.3948 since 09:49; post-09:49 low $61.67), **but the hwm is still 6.2% above the mark and the threshold is only 1.4% below here.** **A position whose mandated stop re-enters the forbidden band on any 1.4% dip, with rule 7 forbidding the only cure, is still a position the ruleset cannot manage.**
+   - **Involuntary-exit argument: 5.111% of headroom** to the $59.1065 cut line, out from 4.36% at the open and the widest since 9/25. **Improved materially today; a single -5.1% session still reaches it.**
+   - **The decisive ground is unchanged and today's wires neither confirm nor refute it:** volume through Hormuz at late-June highs with the vessel count at 10, so **exit trigger (a)'s ~40-vessels/day threshold cannot fire while the supply shock repairs itself.** Reuters 10/1's "exports recovering more slowly than hoped" is the first wire framing in a week that cuts against the repair reading, and it is **not** a vessel count either. **Answer on the merits — CLOSE, or replace the review with one the bot is pre-authorized to execute AND that is measured on something still connected to the thesis.** A transit-count review has fired three times, produced zero executions, and lost seven named opens.
+
+### Handoffs (rule 15)
+- **To the 10/1 daily-summary run, by name:** (i) **THE DECISIVE ONE — whether 78.6% transmission and the +1.371-pt XLE-over-SPY lead SURVIVE the 16:00 ET close. If both hold, owner decision 5's ground 1 is weakened and the entry must say so without hedging; if they die, that is the FIFTH of six such readings to die at its own close and the pattern should be named as settled.** Note the up-tape condition lapsed — SPY turned negative at midday, so the clean version of the test did not run; (ii) **USO against $146.03 on the CLOSE — $148.04 at 13:07, $2.01 above; a fourth firing needs a -1.36% move in the final 2h45m**; (iii) **confirm owner decision 5's 10/1 named open stayed unexecuted through the whole session — it is the seventh**; (iv) **whether XLE printed below $61.3948 after 13:11 ET, re-entering the rule 7 band — record every crossing, do NOT move the stop**; (v) **XLE against the $59.1065 cut line, 5.111% of headroom at $62.29**; (vi) **the official 10/1 close for XLE/USO/SPY/XOP/OIH on SIP daily bars, and the official `last_equity` / `portfolio/history` figures — the 9/30 daily-summary did not run, the NINETEENTH persistence gap, so file the 10/1 EOD row and do not assume a pre-market run will reconstruct it**; (vii) **ISM 54.5 vs S&P Global 57.0 — the contradiction is recorded; if any wire reconciles them, note it, but do NOT carry 57.0 forward as corroborated.**
+- **Discharged this run, from the market-open handoff list:** (i) **ISM OBTAINED — 54.5, a 0.7-pt MISS and a 0.1-pt fall, six independent sources**; (ii) **the transmission test WORKED but its up-tape condition LAPSED — 78.6% and +1.371 pts recorded, live, handed to the close**; (iii) **USO $2.01 ABOVE $146.03, knife edge gone, not resolved**; (iv) **rule 7 band — ZERO re-crossings on 203 minute bars since 09:49, stop NOT touched**; (v) **XLE 5.111% above the cut line, NOT triggered**; (vii) **the S&P Global 57.0 cross-check FAILED — ISM contradicts it; 57.0 is now UNCORROBORATED**; (viii) **decision 5's 10/1 named open confirmed STILL unexecuted at 13:14 ET on two independent checks (`activities FILL` and unfiltered both `[]`, position unchanged at 300 shares, trail `updated_at` unmoved).**
+- **ABANDONED this run, on the market-open run's own recommendation:** (vi) **the 9/30 WTI/Brent settle — `NO FIGURE` on a SIXTH consecutive attempt across four days. Formally closed, not handed to a seventh run. Nothing has ever depended on it.**
+- **Carried, per rule 15, until answered or withdrawn:** the rule 2 deployment breach (~60 sessions) and all five owner decisions.
