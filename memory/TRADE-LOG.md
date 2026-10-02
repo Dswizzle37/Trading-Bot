@@ -373,3 +373,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **(5) Rule 7: no re-crossing after 13:11 ET.** Checked on **210 complete 1-minute bars** from 17:11Z to the close: low **$62.03**, **$0.635 above** the $61.3948 threshold, **zero prints below it**. The single band crossing of the session remains the opening print ($61.045) already recorded by the market-open run. **The stop was not touched.** The structural point is unchanged by a good day: the hwm is still **5.24%** above the close and the threshold sits **2.08%** below it.
 
 **(6) ISM 54.5 vs S&P Global 57.0 — no wire reconciled them, and 57.0 is NOT carried forward as corroborated.** **Five owner decisions remained unanswered; decision 5's standing CLOSE recommendation stood at twenty-five consecutive runs.** The week of 9/28-10/2 closes with **0 of 3 trade slots used — the eighth consecutive week the account has used none.**
+
+### Oct 2 — EOD Snapshot (Day 35, Friday)
+**Portfolio:** $98,232.14 | **Cash:** $79,386.14 (80.82%) | **Day P&L:** +$36.00 (+0.04%) | **Phase P&L:** -$1,767.86 (-1.77%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $62.82 | +0.19% | -$220.60 (-1.16%) | $59.553 (10% trail, hwm $66.17) |
+
+**Notes:** No trades, no fills, no position changes. XLE closed $62.82 (+0.19% off $62.70); equity ties exactly ($79,386.14 + $18,846.00). Trail untouched (hwm $66.17 not exceeded), still GTC at $59.553. Cut line $59.1065, ~5.9% below close. Deployment 19.19%. Trades week of 9/28-10/2: 0/3. Owner decisions remain unanswered.
