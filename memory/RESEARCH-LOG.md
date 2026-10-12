@@ -10265,3 +10265,139 @@ Measured on verified 52-week SIP highs; gate as the log has always applied it �
 - **Discharged this run:** (i) **the 10/9 EOD row — RECONSTRUCTED AND FILED** from `last_equity` $98,910.14 and `portfolio/history` `profit_loss` -$48.00 plus the SIP daily bar, with the close-basis convention holding a **sixth** consecutive week and a **new** convention note on `portfolio/history` date labels running one session forward; (ii) **the hwm — verified on the order object, no ratchet on 10/9, and the "closest approach" overclaim REFUSED**; (iii) **USO's 10/9 close vs $146.03 — $148.20, second consecutive clean negative**; (iv) **the entry gate — re-measured across 22 names on verified 52w highs, and the disjoint-sets finding OVERTURNED**; (v) **rule 14 — bar CLEARED on two wires, fires nothing**; (vi) **SPR/G7 physical delivery — ZERO, 12th session**; (vii) **the SPY phase base — re-derived and corrected to $776.34**; (viii) **the weekly review for week ending 10/09 — confirmed FILED and PUSHED (`c654115`).**
 - **NOT discharged:** (i) **a timezone-anchored crude level** — the only figure obtained is stamped ~10 hours stale and the tape has moved the other way since; (ii) **a VIX level — REFUSED A THIRD CONSECUTIVE SESSION:** the query returned "15.53, October 12 at 9:00 a.m." with **no timezone and a clock AHEAD of this run's 08:43 ET**, and the source itself was flagged as untimestamped. **A dated prior close of 14.84 (10/9) was returned and is recorded as the freshest dated figure this log holds, single-sourced; VIX *now* is UNMEASURED**; (iii) **a 10-year yield — STRUCTURALLY UNOBTAINABLE TODAY, the bond market is closed**; (iv) **the transits population — owner's to name, and no wire-dated Iran/Hormuz development exists for 10/10-10/12**; (v) **whether MU's catalyst leg can be satisfied by anything other than an earnings date — a question for decision 1, not for the bot.**
 - **Owner decisions 1-5 remain unanswered, 47-54 sessions, and under rule 15 they stay in every notification until answered or withdrawn. Decision 5 reaches its FORTY-THIRD consecutive run.**
+
+## 2026-10-12 — Market-Open Execution (09:37-09:45 ET, Monday, Day 41)
+
+**Decision: HOLD. Zero orders placed, zero cancelled, zero staged, zero stops touched by hand.** Trades week of **10/12-10/16: 0/3 — allowance still fully intact.** No mechanical rule fired. Market **OPEN** (`clock` `is_open=true`, 09:37:55 ET; `calendar` confirms a full 09:30-16:00 session, `settlement_date` 2026-10-13).
+
+**THE HEADLINE, AND IT IS THE FIRST ONE IN 22 SESSIONS THAT IS AN EVENT RATHER THAN A MEASUREMENT: THE TRAILING STOP HAS RATCHETED. The first ratchet since 2026-09-10.** Verified on the order object `ef0c1da0`, not inferred: **`hwm` $66.17 → $66.25 → $66.27** and **`stop_price` $59.553 → $59.625 → $59.643**, `updated_at` **2026-09-10T13:30:02.170843Z → 2026-10-12T13:40:32.935605Z**. It was observed moving **twice inside this run's own eight minutes** and **it may ratchet further before the close — no final figure is claimed here.** `trail_percent` still **10**, `status` **new**, `time_in_force` **gtc**, `extended_hours` **false**, `expires_at` unchanged. **Arithmetic checked: $66.27 x 0.90 = $59.643 exactly.** The stop moved **UP $0.090** and **rule 7's "never move a stop down" is satisfied by construction** — the engine did this, not the bot. **Handoff (a) of the 10/12 pre-market run is discharged with a POSITIVE finding for the first time.**
+
+**WHY IT FIRED, AND THE PRE-MARKET RUN'S OWN REASONING IS WHAT MADE IT LEGIBLE.** That run recorded `extended_hours:false` and stated that **only an RTH print above $66.17** could move the trail, calling it "a fact about the order type, not a forecast." The RTH session opened **$65.85** and printed **$66.265** (SIP daily bar high) within six minutes. **Both halves of the prediction held: no pre-market print moved it, and the first RTH print above the hwm moved it immediately.**
+
+### ⚠ HANDOFF (b) DISCHARGED — **THE RULE-13 DISPUTE IS RESOLVED, AND AGAINST THE SCEPTICAL READING**
+- The pre-market run flagged a real dispute: the position mark **$65.7848** sat **above every SIP pre-market print** (tape high $65.684 across 60 bars), 12.56c above the freshest print, with the partial feed returning **zero** bars. It carried both figures rather than picking.
+- **The open settled it in favour of the mark, and then went past it.** XLE opened **$65.85** and has traded **$65.80-$66.265**. The disputed mark was not an artifact and was not stale — **it was early.** Intermediate confirmation also exists and is recorded: by 09:23 ET the SIP pre-market tape had itself reached **$65.81**, i.e. the tape caught up to the disputed level *before* the bell.
+- **Recorded as a loss for the sceptical reading.** Rule 13 says the freshest source wins and treats the outlier as a live hypothesis; **the outlier was right, and nothing was sized off it either way, so the cost was zero.**
+
+### Env / session state
+- **All ELEVEN task-required env vars verified set before any wrapper call** (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`, `ALPACA_DATA_ENDPOINT`, `PERPLEXITY_API_KEY`, `PERPLEXITY_MODEL`, `RESEND_API_KEY`, `NOTIFY_FROM`, `NOTIFY_TO`, `GH_TOKEN`, `GH_REPO`). **No missing variable; the alert-and-stop path was NOT taken.** *(The first check this run ran was itself buggy — it measured variable-NAME length via `${#v}` instead of value length — and was re-run correctly with `val="${!v}"` before any conclusion was drawn. Recorded because a verification step that passes for the wrong reason is worth nothing.)*
+- **No `.env` file exists and none was created.** `ALPACA_ENDPOINT` confirmed on **`paper-api.alpaca.markets/v2`** — **paper mode, unchanged and not touched.**
+- Perplexity returned on all **three** queries; **no `exit 3`, no WebSearch fallback used.**
+- `options_trading_level:3` on the account is **IGNORED** — rule 1 absolute. **No option was considered at any point.**
+- **⚠ SIP MINUTE BARS RUN ~15 MINUTES DELAYED ON THIS SUBSCRIPTION — stated because it changes what can be verified and how.** The `bars` 1Min SIP query returned **93 bars ending 13:23Z (09:23 ET)** with a `next_page_token`, i.e. **zero RTH bars**, while the clock read 09:38 ET. **The RTH ratchet therefore could NOT be confirmed from the minute tape, and was confirmed on two independent sources instead: the order object's own `hwm`/`updated_at`, and the SIP *daily* bar high ($66.265).** Both agree. **The snapshot endpoint returns a PARTIAL feed** (SPY `prevDailyBar` volume 705,445 against the SIP's 22,706,632) and was used only for live last-trade prints, never for a close.
+
+### Account snapshot (13:40Z / 09:40 ET, RTH — single simultaneous `account`+`positions` fetch)
+| | |
+|---|---|
+| Equity | **$99,261.14** |
+| Official 10/9 close | **$98,910.14** (`last_equity`, `balance_asof` 2026-10-09) |
+| **Change on the day** | **+$351.00 (+0.3549%)** — live mark, not a traded result |
+| Cash | $79,386.14 (**79.9771%**) |
+| Position MV | $19,875.00 → **20.0229% deployed** |
+| Phase P&L | **-$738.86 (-0.7389%)**; incl. the $114.08 dividend receivable **-0.6248%** |
+| **Gap to the 75% floor** | **$54,570.85** |
+
+- **Cash + position MV ties `equity` EXACTLY, delta $0.0000** ($79,386.14 + 300 x $66.25 = $99,261.14). Fetched in one call pair precisely so the tie is meaningful; an earlier pair taken three minutes before tied just as exactly at a $66.23 mark. **The marks move; the identity holds.**
+- **47th consecutive session in breach of rule 2.** `daytrade_count` **and** `pattern_day_trader` **both ABSENT from the `/v2/account` payload** (full key list re-verified this run) — **recorded as ABSENT, NOT asserted as 0.** Moot today: zero orders, so the PDT gate of STEP 3 was never reached.
+- **⚠ THE DEPLOYMENT BREACH IS NOW NARROWING FOR A REASON THAT DESERVES NO CREDIT.** 19.9103% pre-market → **20.0229%** now. **No capital was deployed. The position appreciated.** The only thing that has ever moved this number in the phase is XLE's price.
+
+### ⚠ NEW — **THE POSITION HAS CROSSED 20% OF EQUITY FOR THE FIRST TIME IN THE PHASE. THIS MAKES OWNER DECISION 4 LIVE RATHER THAN ABSTRACT.**
+| | |
+|---|---|
+| Position MV | **$19,875.00** |
+| 20% of equity | **$19,852.23** |
+| **Excess** | **+$22.77 (20.0229%)** |
+
+- **Under the default in force — decision 4 option (a), "20% cap is ENTRY-ONLY" — this is COMPLIANT and no action is authorized or taken.** The position was entered at ~19% and has appreciated past the line on price alone.
+- **Under option (b), "continuous," it would be a breach requiring a trim of ~1 share**, and **the bot cannot self-authorize that** — a trim is a trade (rule 8) and decision 4 has never been answered.
+- **Stated plainly because it has been a hypothetical for 49 sessions and stopped being one today:** the default has now been load-bearing for the first time. **The excess is $22.77 — materially trivial, and that is exactly why it is the right moment to answer the question rather than the wrong one.** A 1-share trim is not worth a trade; the next 5% of XLE upside would make the same question cost real money.
+
+### Position management — every rule checked at the **$66.25** mark. **NOTHING TRIGGERED. NO ACTION AUTHORIZED OR TAKEN.**
+| Check | Level | Reading | Status |
+|---|---|---|---|
+| Manual cut (-7%) | **$59.1065** | position **+4.2399%**; cut **10.7827% below** the mark | **clear — nowhere near** |
+| Trail `ef0c1da0` GTC | **$59.643**, hwm **$66.27** | mark **11.1111% above** the stop (at the $66.25 tie-mark) | **live, RATCHETED UP, never lowered** |
+| Rule 7 — never within 3% | 3% line **$64.2625** | stop sits **$4.6375 BELOW** it | **compliant** |
+| Rule 7 — never move down | $59.553 → **$59.643** | moved **UP $0.090** by the engine | **compliant by construction** |
+| **Ratchet** | needed an **RTH** print > **$66.17** | **FIRED — twice inside this run** | **see headline** |
+| Tighten gates | +15% = $73.0886 / +20% = $76.2664 | position **+4.2399%** | **neither reached** |
+| `updated_at` | **2026-10-12T13:40:32.935605Z** | **the 21-session freeze (9/11-10/9) ENDS today** | clean |
+| `qty_available` | **0** | all 300 shares reserved by the trail | **any authorized close must cancel `ef0c1da0` FIRST, then sell** |
+| Rule 3 — position cap | **20.0229%** vs 20% | 1 of 6 positions | **compliant under decision 4's default (a); see above** |
+| Rule 4 — stop on every position | 1 of 1 covered | — | compliant |
+| Rule 8 — trades this week | **0 of 3** (week of 10/12-10/16) | — | compliant |
+| Fills | `activities FILL after=2026-10-09` → **`[]`**; unfiltered after 10/9 → **`[]`** | two independent checks | **no fills a 35th session; position unchanged at 300** |
+| Dividend | $114.08 | `activities DIV after=2026-08-01` → `[]` | **48th session unposted** |
+
+### ⚠ HANDOFF (c) DISCHARGED — **USO vs $146.03: DISARMED A FOURTH CONSECUTIVE READING, AND AGAIN THE WIDEST YET**
+| | 10/8 close | 10/9 close | 10/12 pre-mkt | **10/12 RTH** |
+|---|---|---|---|---|
+| USO | $147.58 | $148.20 | $150.6348 | **$151.67** |
+| vs $146.03 | +1.0613% | +1.4860% | +3.1534% | **+$5.64 / +3.8622%** |
+| Price leg | 1st clean negative | 2nd clean negative | disarmed | **disarmed, WIDEST of the phase** |
+
+- Decision 5's review requires **USO *closing* below $146.03**. On the RTH tape USO has traded **$151.53-$151.88** today — **the session LOW is 3.7664% ABOVE the level.** Tally unchanged: **six firings, ten named opens, zero executions, two clean non-firings.**
+
+### Market conditions (STEP 4) — Perplexity, and a fourth consecutive crude refusal on timestamp
+- **Indices at the open, dated:** Dow **51,654.95 (+0.83%)**, S&P 500 **7,811.54 (+0.59%)**, Nasdaq **27,366.17 (+0.64%)**, Russell 2000 **2,806.98 (+0.46%)** — stamped **05:49 ET 10/12**, i.e. **pre-opening figures**, and labelled as such by the source. **Not used as session readings.** The SIP tape is used instead: **SPY $779.1633, +0.0762%** on the day.
+- **⚠ THE CRUDE FIGURE IS REFUSED ON TIMESTAMP FOR A FOURTH CONSECUTIVE SESSION, AND AGAIN IN THE DIRECTION THAT WOULD HURT THE POSITION.** The query returned **Brent $102.99 (-1.65%)** and **WTI $90.09 (-1.92%)** stamped **00:16 ET 10/12** — roughly **9.5 hours** before this run's clock. **The SIP tape says the opposite: USO $151.67, +2.3414% on the day, having traded $151.53-$151.88.** Per rule 13 the tape is used and the research figure is recorded as **superseded, not as a reading.** *(The pre-market run refused the same figures at a ~10-hour lag; this is the same stale quote aging further, not a second observation.)*
+- **Friday's sector tape, dated 10/9 16:00 ET: Energy was the WEAKEST major sector, -0.18%**, against Real Estate +1.88%, Consumer Discretionary +1.69%, Health Care +1.58%. **Recorded because it cuts against the position and against this log's own "energy leads the 10-day" framing.**
+- **Inventory data dated inside this week: API Wed 10/14, EIA Thu 10/15** — both landing alongside the IEA governing board 10/14-15.
+
+### Rule 14 — **THE BEARISH ITEM FROM THE PRE-MARKET IS WIRE-REPORTED VIOLATED WITHIN 24 HOURS. IT STILL FIRES NOTHING.**
+- The 10/12 pre-market logged the **Reuters/AP 10/11 "energy ceasefire"** as thesis-relevant and **bearish** (more Russian supply), rule 14's bar cleared on two wires with a date.
+- **A wires-only re-query today returns: NOT mutually confirmed, and reported VIOLATED.** **Reuters 2026-10-12** and **AP 2026-10-12** carry Ukrainian officials reporting continued Russian strikes on energy infrastructure **including a Kharkiv thermal power plant**; Zelenskyy was still awaiting details and **Russia had not commented.**
+- **So the bearish development weakened materially inside one session — and that is NOT used to authorize anything.** Rule 14 is a bar on acting, never an authorization, and it cuts one way only. **No rule fired. Decision 5 remains unanswered in both branches.** The honest statement is that the item logged against the position yesterday is worth less today, and the position was not traded on either reading.
+- **PHYSICAL DELIVERY REMAINS ZERO — 13th consecutive session, and now on a wire.** **Reuters 2026-10-12** reports only that IEA members should **accelerate volumes not yet delivered** and prioritize diesel; **no completed cargo loading or physical delivery is confirmed by any source.** **Ground 5 (policy attack) UNCHANGED and now wire-dated rather than trade-press-dated.**
+
+### Benchmark, cash drag, and the spread — both directions
+| | 10/9 close | 10/12 pre-mkt | **10/12 RTH** |
+|---|---|---|---|
+| SPY ITD (base **$776.34**) | +0.287% | +0.357% | **+0.3637%** |
+| Book ITD | -1.090% | -0.878% | **-0.7389%** |
+| **Lead** | -1.377 pts | -1.235 pts | **-1.1025 pts** |
+| Lead, div-adjusted | -1.263 pts | -1.121 pts | **-0.9884 pts** |
+
+- **The lead IMPROVED 0.2746 pts off the pre-market reading and 0.6746 pts off the 10/9 close, and for the GOOD reason this time: the book is up +0.3549% against SPY's +0.0762%.** The book is the whole of it — SPY contributed 0.0000 pts of the improvement, because SPY is nearly flat. **It is not the phase best and is not presented as one.**
+- **Cash drag is COSTING 1.4429 pts on the day** (fully deployed in XLE the book returns +1.7978%; it returned +0.3549% on 20.0229% deployment). **Rule 2's 47th-session breach hurts today.** It helped on 10/9 (+0.1968 pts) and hurt worst on 10/8 (-2.3940 pts); **the "costs us every day" framing stays withdrawn, and so does its mirror image.**
+- **THE UNCAPTURED SPREAD WIDENED A FOURTH CONSECUTIVE READING, to 12.0441 pts** (USO ITD **+16.0799%** vs XLE ITD **+4.0358%**, verified $130.66 / $63.68 bases). **But the reason inverted: both legs are UP today and USO is simply up more** (USO +2.3414%, XLE +1.7978%) — **unlike 10/9, when it widened on opposite signs.** Recorded as a materially better-quality widening than the last one, and still a widening. **The SPREAD leg of ground 1 SURVIVES; the RATE leg stays WITHDRAWN.**
+- **Transmission: XLE +1.7978% / USO +2.3414% = 76.78%** — positive, below 100%, **the eighth consecutive positive reading** and a counter-observation against the (withdrawn) rate leg.
+- **XOP ahead of XLE on ITD a 48th session: +5.3035% vs +4.0358% = 1.2677 pts** (base $185.35 verified). **XOP is also beating XLE on the day, +1.9110% vs +1.7978%.**
+
+### ⚠ ENTRY GATE (STEP 3) — **RE-MEASURED ON LIVE RTH MARKS. NO ENTRY AUTHORISABLE. MU's CASE GOT WEAKER, NOT STRONGER.**
+| Name | Pre-mkt | **Live RTH** | Day | 52w high | from high | 20d | 50d | **R:R** | Verdict |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **MU** | $1,029.00 | **$995.63** | **-3.26%** | $1,255.00 | -20.67% | +5.51% | +17.65% | **2.605:1** | **fails CATALYST — confirmed independently** |
+| **UNH** | $379.30 | **$376.365** | -0.78% | $461.62 | -18.47% | +0.06% | -10.01% | **2.265:1** | **fails rule 9 in substance** |
+
+- **⚠ BOTH R:R FIGURES "IMPROVED" AND THE IMPROVEMENT IS WORTHLESS. MU 2.196:1 → 2.605:1 and UNH 2.170:1 → 2.265:1 — ENTIRELY because both names FELL.** Reward is measured as distance to the 52-week high, so **a falling price mechanically flatters this gate.** This is the exact defect the pre-market run identified in decision 1's basis question, **and today it is visible inside a single session rather than across six.** **No entry is sized off it.**
+- **MU's CATALYST LEG IS CONFIRMED FAILED ON A SECOND, INDEPENDENT QUERY FRAMED TO FORCE THE ANSWER.** Micron's IR calendar lists **no scheduled event of any kind — earnings, investor day, analyst day or product launch — between 2026-10-12 and 2026-11-30.** Its next earnings date **has not been announced**. The only dated item in the window is the **2026-10-29 dividend payment**, which is not a catalyst. **The pre-market's disqualification holds on fresh evidence, not on restatement.**
+- **AND MU's MOMENTUM LEG IS NOW DETERIORATING TOO: -3.26% today**, on top of the pre-market finding that **semis lead the 20-day while rolling over short-term (SMH -4.32% on 5 days, worst of 15 measured).** **The name that "cleared three of four legs" on Friday's closes is, 70 minutes into Monday, down 3.26% with no catalyst and a weakening tape.** **That is reported as a vindication of the catalyst leg doing real work, not as a near-miss.**
+- **Rule 9 blocks a second energy leg a 19th session** — the complex was 2-of-3 negative on the 20-day at Friday's close (XOP -2.15%, OIH -7.61%) and XLE's own 20-day **flipped back negative, -0.09%.** **Standing recommendation on decision 2 stays FORBID.**
+- **CONCLUSION: NO ENTRY AUTHORISABLE. Zero of the three weekly trades used, and the gate's blocker is unchanged from the pre-market: MU satisfies three of four legs and the catalyst leg fails.** **Decision 1 remains the answerable question it became yesterday.**
+
+### Thesis check (STEP 5) — **INTACT. No thesis break, no discretionary cut considered, no mechanical rule fired.**
+- **Supporting, unchanged and still the strongest evidence the phase has:** Delta's wire-dated 10/9 Q3 — adjusted fuel expense $4.1bn (+62% y/y), Q4 jet fuel guided $4.25/gal vs $3.61, ~$6bn extra 2026 fuel cost. **The party paying the bill, on a wire, with a date.**
+- **The bearish side WEAKENED today:** the 10/11 energy ceasefire is **wire-reported violated and never mutually confirmed** (Reuters/AP 10/12), and **G7/IEA physical delivery is still ZERO on a Reuters 10/12 wire.** **Neither is used to authorize anything.**
+- **Against, and unchanged:** the IEA governing board meets **10/14-15** on release details, with **API 10/14 and EIA 10/15** inventories the same two days. **September CPI lands 08:30 ET tomorrow.**
+- **The counterweight that is the substance of decision 5 and got WORSE: the position has captured 4.0358% of this thesis while USO captured 16.0799% — the gap WIDENED a fourth consecutive reading to 12.0441 pts, and XOP has been ahead for 48 sessions and is ahead again today.** **Confirmation of the thesis is not the same as the instrument expressing it.**
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — ~48 sessions.** **20.0229%** against a 75% floor, **$54,570.85 short**, 47th session in breach. **Needed, unchanged: (a) define the R:R target basis; (b) say whether a full-allowance week is authorized.** **Today sharpened (a) from the other side: both gate candidates' R:R improved purely by falling, inside one session.** A basis that rewards a -3.26% day is the wrong basis, and that is now demonstrated rather than argued. **Week 0/3 with the full allowance intact.**
+2. **Second energy leg — authorize or forbid. ~49 sessions.** Standing recommendation **FORBID**; independently blocked by rule 9 a 19th session.
+3. **Gap risk on the only position — ~55 sessions.** **20.0229%** of the book, unhedged, **into CPI tomorrow 08:30 ET and the IEA meeting / API / EIA cluster 10/14-15 — all inside this week.**
+4. **20% cap — entry-only or continuous? ~50 sessions. AND THIS IS THE SESSION IT STOPPED BEING HYPOTHETICAL.** The position crossed the line today: **$19,875.00 vs a $19,852.23 cap, excess $22.77.** Default **(a) entry-only** in force, so **compliant and no action taken**; under **(b)** it is a breach needing a ~1-share trim the bot may not self-authorize. **Answer it while the stake is $22.77.**
+5. **XLE: close, or hold on a defined review? — FORTY-FOURTH consecutive run raising it.**
+   - **The machinery argument is unchanged and now at its weakest point ever: six firings, ten named opens, zero executions, and the price leg is now DISARMED BY 3.8622% — the widest of the phase, for a fourth consecutive reading.**
+   - **Ground 1: rate leg STAYS WITHDRAWN. SPREAD leg SURVIVES and WIDENED a fourth consecutive reading to 12.0441 pts** — though on a better-quality basis than 10/9 (both legs up, USO up more).
+   - **Ground 2 (unhedged gap risk): INTACT and sharpest yet — CPI is tomorrow morning, before any run can act.** **Ground 3: stays DROPPED.** **Ground 4 (rule mechanics): INTACT**, 10.7827% cut-line cushion, uncured because rule 7 forbids the only fix. **Ground 5 (policy attack): UNCHANGED, and upgraded to a WIRE source — physical delivery ZERO a 13th session on Reuters 10/12.**
+   - **NEW, AND IT IS THE FIRST THING IN 44 RUNS THAT ARGUES FOR THE HOLD BRANCH ON MECHANICS RATHER THAN ON THESIS: the trail ratcheted.** The stop has moved **UP $0.090** and the position is **+4.2399%**. **The instrument is finally doing something the hold branch predicted.** **It is NOT presented as an answer** — a 9c stop improvement does not settle a 12-point capture gap — **but 44 runs of this entry have had nothing on this side of the ledger, and today there is one item.**
+   - **THE VERDICT: unchanged. The bot may self-authorize NEITHER branch.** The defensible review remains the 10/2 formulation — measure XLE across the frontloaded G7 tranche, pre-authorize execution, **name the transit population**, determine it on the same tape it acts on, **with the IEA 10/14-15 meeting as the dated determination point — now TWO DAYS AWAY.** **A 45th run of silence is the one outcome worse than either answer.**
+
+### Handoffs (rule 15)
+- **⚠ TO THE 10/12 MIDDAY RUN, BY NAME:** (a) **re-verify `hwm`/`stop_price`/`updated_at` on `ef0c1da0` — the trail is RATCHETING LIVE and moved twice in this run's eight minutes; $66.27/$59.643 is a reading, NOT a final figure**; (b) **re-measure USO against $146.03** on the RTH tape; (c) **check whether the position is still above the 20% line** — it crossed today at a $22.77 excess and decision 4's default (a) is the only thing making it compliant.
+- **⚠ TO THE 10/12 DAILY-SUMMARY RUN, BY NAME AND IN TERMS: THE EOD ROW FOR 10/12 MUST BE FILED AND PUSHED, AND ITS STOP COLUMN MUST CARRY THE NEW TRAIL, NOT `$59.553 / hwm $66.17`. DAILY-SUMMARY HAS NOW FAILED FIVE CONSECUTIVE SESSIONS (10/5, 10/6, 10/7, 10/8, 10/9 — the 22nd, 23rd, 24th, 26th and 27th persistence gaps) and this handoff has been issued by name and ignored FIVE TIMES.** Use `bash scripts/gitpush.sh` and **report a non-zero exit as a failure in the notification.**
+- **⚠ TO THE 10/13 PRE-MARKET RUN, BY NAME: September CPI lands 08:30 ET, before your clock. Report it against its own verified prior — do NOT accept a handed-forward prior without re-checking it** (the 10/9 run was handed "3.9%" for a figure that was 4.6%). **The bond market reopens 10/13 and Fed releases delayed from today land then, so the 10-year is obtainable again — last dated figure 5.237% (10/9, no clock).**
+- **Discharged this run:** (i) **handoff (a) — the hwm, VERIFIED ON THE ORDER OBJECT AND RATCHETED, the first since 9/10**; (ii) **handoff (b) — the rule-13 dispute, RESOLVED ON THE RTH TAPE in favour of the live mark, with the sceptical reading recorded as the loser**; (iii) **handoff (c) — USO vs $146.03 on the RTH tape, disarmed by 3.8622%, widest of the phase**; (iv) **MU's catalyst leg — CONFIRMED FAILED on a second independent query, no scheduled event 10/12-11/30**; (v) **the energy ceasefire — wires-only re-query returns NOT mutually confirmed and VIOLATED, Reuters/AP 10/12**; (vi) **G7/IEA physical delivery — ZERO a 13th session, now WIRE-dated (Reuters 10/12)**.
+- **NOT discharged:** (i) **a timezone-anchored crude level — REFUSED A FOURTH CONSECUTIVE SESSION**, the only figure obtained is the same ~9.5-hour-stale quote the pre-market already refused, and the tape has moved the other way since; (ii) **a VIX level — NOT QUERIED THIS RUN** and therefore still unmeasured; the freshest dated figure this log holds remains the **10/9 close of 14.84, single-sourced**; (iii) **a 10-year yield — STRUCTURALLY UNOBTAINABLE TODAY, the bond market is closed for Columbus Day**; (iv) **the transits population — owner's to name, and no wire-dated Iran/Hormuz development exists for 10/10-10/12**; (v) **whether MU's catalyst leg can be satisfied by anything other than an earnings date — a question for decision 1, not for the bot.**
+- **Owner decisions 1-5 remain unanswered, 48-55 sessions, and under rule 15 they stay in every notification until answered or withdrawn. Decision 5 reaches its FORTY-FOURTH consecutive run.**
