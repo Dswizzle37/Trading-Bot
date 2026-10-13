@@ -10779,3 +10779,85 @@ Measured on verified 52-week SIP highs; gate as the log has always applied it �
 - **Discharged this run:** (i) **handoff (i) — the oil/XLE divergence RESOLVED: both prints survived, transmission NEGATIVE -1.5162**; (ii) **handoff (ii) — UNH's gate RE-MEASURED on live RTH tape and EXECUTED, with the target basis named in advance**; (iii) **handoff (iii) — the 20% line CROSSED and XLE is over it at 20.1349%**; (iv) **handoff (iv) — order `ef0c1da0` re-read, ratcheted a second consecutive session to hwm $66.68 / stop $60.012.**
 - **NOT discharged, carried:** (i) **a VIX level with a verifiable ET clock — fourth consecutive run, none obtained this run**; (ii) **a crude figure contemporaneous with the run's clock**; (iii) **the IEA Oil Market Report and OPEC monthly — board meets 10/14-15**; (iv) **the transits population — owner's to name**; (v) **a 20-day SECTOR ETF ranking — must not be re-cited without measurement.**
 - **Owner decisions 1-5 remain in every notification until answered or withdrawn. Decision 1(a) is answered PROVISIONALLY BY THIS RUN and the answer is overrulable; 1(b), 2, 3, 4 and 5 are unanswered at 50-57 sessions.**
+
+## 2026-10-13 — Midday Scan (13:11-13:25 ET, Tuesday, Day 42)
+
+**Decision: HOLD BOTH. Zero orders placed, zero cancelled, zero staged, zero stops touched.** Trades week of 10/12-10/16: **1/3** (UNH this morning). No mechanical rule fired. Market **OPEN** at run time (`clock` `is_open=true`, 13:11:14 ET, next close 16:00 ET, next open 10/14 09:30 ET).
+
+### ⚠ THE HEADLINE: RULE 3 IS IN LIVE BREACH ON THE CONTINUOUS READING FOR THE FIRST TIME IN THE PHASE, AND THE DEFAULT IN FORCE IS WHY NOTHING WAS SOLD.
+- **XLE is $20,052.00 = 20.2250% of $99,144.78 equity — $223.04 OVER the 20% cap.** Not a sizing error: the position was sized at 19.17% on 8/18 and **appreciated through the line**. UNH is **14.4875%**, clear by $5,465.34.
+- **Owner decision 4 ("20% cap — entry-only or continuous?") has default (a) ENTRY ONLY in force, so on the governing reading the position is COMPLIANT and no trim is authorized.** On reading (b) it is a breach requiring a **4-share sale** (296 shares = $19,784.64 = 19.9553%). **The sale is specified and not placed.**
+- **This is the escalation the 10/9 weekly review itself pre-committed to: "Decision 4 is cheap and it is now close enough to be live — flag it if XLE trades above $66.00." XLE is $66.84. The flag is raised on the review's own terms.**
+- **The 10/12 close crossed the cap both ways intraday and closed $34.83 UNDER it. Today it is $223.04 OVER at midday — 6.4x the margin, and the first reading where the two branches of decision 4 give materially different instructions on a live tape.** **Decision 4 is no longer the cheapest of the five to settle on cost; it is the only one currently binding on an order.**
+
+### ⚠ UNH HAS GIVEN BACK ITS ENTIRE EARNINGS GAP AND **NO WIRE EXPLAINS IT** — BUT AN OFFICIAL COMPANY SOURCE DOWNGRADES THE BEAT'S QUALITY
+- **The move:** SIP RTH **open $397.625, high $399.88, low $372.80**; last **$377.995** at 17:11:59Z. That is **-5.4727% from the high, -4.9368% from the open, and -0.0436% BELOW the 10/12 close of $378.16.** **A beat-and-raise round-tripped its whole gap and then some inside three hours.** The fill at $385.71 is **-2.0002%**.
+- **Wire-restricted query (rule 14 standard), asking specifically for a 10/13-dated negative item — call commentary, DOJ/SEC, CMS/Medicare Advantage action, downgrades, sector cause: Reuters, AP, Bloomberg and AFP return NONE on every branch.** The only Reuters item found describes the earnings and outlook **positively**. **There is no wire-confirmed negative catalyst, and that is stated as the finding rather than a gap in the search.**
+- **What DID qualify, and it cuts against the position: UNH's own Q3 remarks (official company statement, dated 2026-10-13) show the medical care ratio improvement to 88.4% from 89.9% includes $610 MILLION of FAVOURABLE PRIOR-PERIOD RESERVE DEVELOPMENT.** An official filing clears rule 14's bar where an aggregator would not. **The headline beat is intact; the durability of the margin improvement inside it is materially weaker than the headline, and the most defensible read of the tape is profit-taking on beat QUALITY, not on a news shock.**
+- **A non-wire source carries Medicare Advantage membership down ~935,000 since year-end. It is recorded as CONTEXT and REFUSED as confirmation** — it is not a permitted source and nothing is decided on it.
+- **The honest other half, recorded because it runs the bot's own way: UNH is the STRONGER half of its sector today. XLV is -1.2269% ($169.87 vs $171.98, session low $169.53 — near the low); UNH is -0.0436%. UNH BEATS ITS OWN SECTOR BY +1.1833 pts.** The fade is ugly in isolation and **relative strength on a red sector day is the opposite of distribution-specific weakness.** Both facts stand.
+- **Verdict: HOLD, and the reasoning is named so it can be falsified.** The thesis is a beat-and-raise; the beat and the raise both still exist, no wire contradicts them, and **rule 5's cut line $358.7103 was never approached — ZERO of 210 SIP RTH minute bars printed a low below it; the session low $372.80 stayed 3.9290% above.** **Published falsifier for the daily-summary run: if UNH CLOSES below $378.16 (the 10/12 close), the beat-and-raise failed to hold a single session's gain on its own catalyst, and that is a thesis-quality observation this log must record as negative rather than restate as patience.**
+
+### Env / session state
+- All **six** task-required env vars **verified set before any wrapper call** (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `PERPLEXITY_API_KEY`, `RESEND_API_KEY`, `NOTIFY_TO`, `GH_TOKEN`), plus `ALPACA_ENDPOINT`. **No missing variable; no alert-and-stop path taken.**
+- **No `.env` file exists and none was created.** `ALPACA_ENDPOINT` confirmed on `paper-api.alpaca.markets/v2` — **paper mode, unchanged and not touched.**
+- Perplexity returned; **no `exit 3`, no WebSearch fallback used.**
+- `options_trading_level:3` on the account is **IGNORED** — rule 1 absolute. **No option was considered at any point.**
+
+### Account snapshot (17:11Z / 13:11 ET, RTH)
+| | |
+|---|---|
+| Equity | **$99,144.78** |
+| Official 10/12 close | **$99,189.14** (`last_equity`, `balance_asof` 2026-10-12) |
+| **Change on the day** | **-$44.36 (-0.0447%)** |
+| Cash | $64,729.16 (**65.2875%**) |
+| Position MV | $34,415.62 → **34.7125% deployed** |
+| Phase P&L | **-$855.22 (-0.8552%)**; incl. the $114.08 dividend receivable **-0.7411%** |
+| **Gap to the 75% floor** | **$39,942.96** |
+
+- **Cash + position MV ties `equity` EXACTLY, delta $0.00** ($64,729.16 + 38 x $377.99 + 300 x $66.84 = $99,144.78). **The marks of record for the tie are $377.99 and $66.84**, both marginally behind the latest prints ($377.995; XLE's 16:59Z SIP bar closed $66.91) — **the tie governs, and the staleness is named rather than smoothed.**
+- **Day P&L decomposes exactly: UNH -$293.36 + XLE +$249.00 = -$44.36.** Nothing unexplained.
+- **RULE 2 BREACH, 41st CONSECUTIVE SESSION — AND THE COUNT IS `calendar`-VERIFIED BEFORE BEING WRITTEN, as the 10/9 review required.** `calendar 2026-08-17 → 2026-10-13` returns **41 dates**, and deployment has been under the 75% floor on every one. The review's corrected figure was 39 through 10/9; **40 (10/12), 41 (10/13)**. **No inflated count is carried forward for a third review in a row.**
+- **THE BREACH IS THE SMALLEST IT HAS EVER BEEN: 34.7125% against 19.9649% yesterday — the UNH entry closed 14.75 pts of a 55-pt gap in one legal trade.** **It is reduced, not cured; $39,942.96 and at least two more entries short of the floor, and it remains owner decision 1.**
+- `daytrade_count` and `pattern_day_trader` both **ABSENT from the `/v2/account` payload** (full key list verified) — **recorded as ABSENT, NOT asserted as 0.** Moot today: zero orders placed.
+- **RULE 13 — NO DISPUTE TO ADJUDICATE ON EITHER NAME.** UNH: `latestTrade` **$377.995** (17:11:59.84Z), quote **$377.80/$378.18**, position `current_price` **$377.99** — all inside 0.5c. XLE: position `current_price` **$66.84**, SIP 16:59Z bar close **$66.91** — 7c, and **$66.84 is the figure that ties equity**, so $66.84 is used.
+- **RULE 13 VINDICATED RETROSPECTIVELY, AND THE SIZE OF THE WIN IS NOW MEASURABLE.** The market-open run refused a market order into a **$20.94 / 5.666%** UNH spread and anchored a limit to the live trade tape. **That spread is now 38c / 0.1005% — it compressed 56-fold, confirming the wide book was a post-earnings transient and not a feed fault.** Against the $390.49 ask that a market order could have taken, the $385.71 fill saved **$4.78/share = $181.64**; the position would read **-3.20%** instead of -2.00%.
+- **FILL CONFIRMED ON THE ACTIVITIES FEED, AND THE STREAK IS BROKEN:** `activities FILL after=2026-10-09` returns **one** record — UNH 38 @ $385.71, 13:41:12.59Z, `order_status` filled, `leaves_qty` 0. **The 37-session no-fill streak ENDED today.**
+- Dividend $114.08: `activities DIV after=2026-08-01` → `[]`, **50th session unposted.**
+
+### Position management — every rule checked live. **NOTHING TRIGGERED. NO ACTION AUTHORIZED OR TAKEN.**
+| Check | UNH (38 @ $385.71) | XLE (300 @ $63.555333) |
+|---|---|---|
+| Mark | **$377.99** | **$66.84** |
+| Unrealized | **-$293.36 (-2.0002%)** | **+$985.40 (+5.1682%)** |
+| Manual cut (-7%) | **$358.7103** — mark **5.3761% above**; **0 of 210 SIP RTH bars** printed below; low $372.80 stayed **3.9290%** clear | **$59.1065** — mark **13.0841% above** | 
+| Trail order | **`5d48b1e5`** GTC, trail 10%, `stop_price` **$347.62491**, hwm **$386.2499**, status `new`, expires 2027-01-11 | **`ef0c1da0`** GTC, trail 10%, `stop_price` **$60.309**, hwm **$67.01**, status `new`, expires 2026-11-16 |
+| Mark above stop | **8.0345%** | **9.7711%** |
+| Rule 7 — never within 3% | 3% line **$358.3762**; stop sits **$10.75 BELOW** it; **0 of 210 bars** crossed | 3% line **$62.1742**; stop **$1.87 BELOW** it; **0 of 210 bars** crossed |
+| Rule 7 — never moved down | $346.0455 → $347.62491, **risen only** | $59.778 → $60.309, **risen only** |
+| Tighten gates (r6) | +15% **$443.5665** / +20% **$462.8520**; position **-2.00%** | +15% **$73.0886** / +20% **$76.2664**; position **+5.17%** |
+| Rule 3 — position cap | **14.4875%** — clear by $5,465.34 | **20.2250% — OVER BY $223.04, see headline** |
+| `qty_available` | **0** — all 38 reserved by `5d48b1e5` | **0** — all 300 reserved by `ef0c1da0` |
+
+- **Rule 4: 2 stops on 2 positions, both re-verified on the live order object this run. Compliant.**
+- **Rule 8: 1 of 3** for the week of 10/12-10/16. **Two slots remain and the week is young — the first non-zero allowance use in five weeks.**
+- **Positions 2 of 6. Rule 1: no options, and `options_trading_level:3` was ignored as always.**
+- **THE XLE TRAIL RATCHETED AGAIN TODAY — THE SECOND RATCHET IN 23 SESSIONS AND THE SECOND IN TWO DAYS.** The SIP RTH high **$67.01** took out the $66.42 hwm set yesterday, lifting `stop_price` $59.778 → **$60.309** (+$0.531), `updated_at` **2026-10-13T15:43:02.442146Z**. **`high > hwm` count in 210 RTH bars: 0 — the ratchet fired AT the high and nothing has exceeded it since.** **Stop untouched by hand; the move was the broker's, and it is reported as the broker's.**
+
+### Cross-checks owed to the record
+- **TRANSMISSION 128.35% — XLE +1.2574% on USO +0.9797%, THE POSITION OUTPACING ITS OWN DRIVER FOR ONLY THE SECOND TIME IN THE PHASE** (the first was 116.35% on 10/8), and an **eleventh consecutive positive reading. Ground 1's rate leg stays WITHDRAWN** — the bot does not un-withdraw a ground on evidence nobody pre-committed to. **The divergence the pre-market handed forward (USO bid -1.1256% while XLE printed +0.5908%) RESOLVED IN XLE's FAVOUR ON RTH TAPE: both legs are green and XLE is the stronger. Handoff discharged.**
+- **The uncaptured SPREAD NARROWED 0.1386 pts to 11.7911 pts** (USO ITD +16.7534% vs XLE ITD +4.9623%, verified $130.66 / $63.68 bases) — a second consecutive narrowing. **The SPREAD leg of ground 1 SURVIVES.**
+- **XOP ahead of XLE on ITD a 50th session: +7.1325% vs +4.9623% = 2.1701 pts**, and **XOP beat XLE on the day, +2.1976% vs +1.2574%** — the gap WIDENED 1.0083 pts today, the wrong direction for the instrument choice.
+- **OWNER DECISION 5's REVIEW CANNOT FIRE TODAY ON ANY REACHABLE PATH.** Its text requires **USO *closing* below $146.03**. USO is **$152.55 — $6.52 / 4.4648% ABOVE**, session low $149.92 never came within 2.6570% of it, and **the level is 4.27% below the current print with 2h49m to trade.** Tally: **six firings, ten named opens, zero executions, three clean non-firings** — and this would be a fourth. **Decision 5 reaches its 47th consecutive run unanswered.**
+- **BENCHMARK: THE LEAD IMPROVED 0.4105 pts TO -0.9666 pts** (-0.8525 div-adjusted for the unposted $114.08), off -1.3771 at the 10/12 close. **The book BEAT SPY by +0.0613 pts today** (-0.0447% vs -0.1060%) — SPY $777.205 vs $778.03, ITD +0.1114% on the corrected $776.34 base. **And the honest attribution: the book won today because cash drag HELPED on a falling tape. Fully deployed in XLE the book returns +1.2574%; it returned -0.0447% on 34.7125% deployment.** Rule 2's 41st-session breach **cost** the book 0.47 pts of the day's XLE gain and **bought** protection from a -0.106% index. **Both directions recorded, as always.**
+
+### ⚠ HANDOFFS TO THE 10/13 DAILY-SUMMARY RUN, BY NAME
+**(0) FILE AND PUSH THE 10/13 EOD ROW. DAILY-SUMMARY HAS FAILED SEVEN CONSECUTIVE SESSIONS (10/5-10/9, 10/12, and the 10/12 row had to be reconstructed by the 10/13 pre-market). THIS HANDOFF HAS NOW BEEN ISSUED AND IGNORED SIX TIMES. The row must carry: UNH 38 @ $385.71 with stop `$347.62491 / hwm $386.2499`, XLE 300 with stop `$60.309 / hwm $67.01`, and the first two-position EOD snapshot of the phase.**
+**(1) UNH's CLOSE AGAINST $378.16 — this run's published falsifier. Below it, the beat-and-raise did not hold one session, and the log records that as negative.**
+**(2) THE 20% CAP ON THE CLOSE. XLE is $223.04 OVER at midday. Report which branch of decision 4 the close lands in and do NOT trim — default (a) entry-only is in force. The authorized-but-unplaced action is a 4-share sale to 296.**
+**(3) USO's official SIP close against $146.03 — a fourth clean non-firing is live from 4.4648% above.**
+**(4) XLE's ratchet: hwm $67.01 was set at the SIP RTH high and nothing has exceeded it. Record any further ratchet and do NOT touch the stop.**
+**(5) CPI IS TOMORROW, 10/14 08:30 ET — September 2026, BLS-confirmed twice. Prior re-established at August headline 3.4% / core 2.4%; consensus ~3.6-3.7% headline, ~2.4-2.5% core. The book now carries TWO positions and 34.7% deployment into it, not one and 20%. Decision 3's unhedged gap risk is LARGER tonight than it has been all phase, and it is the one ahead of a dated macro print.**
+**(6) A VIX LEVEL WITH A VERIFIABLE ET CLOCK — fourth consecutive run owed. Today's 15.35 was stamped in the pre-market run's future and REFUSED.**
+**(7) The $114.08 dividend, 50th session unposted.**
+**(8) OWNER DECISIONS 1-5 REMAIN UNANSWERED, 50-57 sessions. Decision 4 is now BINDING ON AN ORDER rather than theoretical; decision 3 is LARGER than when it was raised; decision 1 is 14.75 pts less bad than yesterday and still the account's biggest single cost. Per rule 15 all five stay in every notification until answered or withdrawn.**
