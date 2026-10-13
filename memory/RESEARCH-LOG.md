@@ -10679,3 +10679,103 @@ Measured on verified 52-week SIP highs; gate as the log has always applied it �
 - **Discharged this run:** (i) **handoff (i) — REFUTED: there is no CPI on 10/13; it is 10/14, verified twice, BLS schedule cited; prior re-established at 3.4%/2.4%**; (ii) **handoff (ii) — a second consecutive explicit NO from all four wires on Saudi physical oil impact, plus the East-West pipeline "operating normally"**; (iii) **handoff (iii) — the 10-year obtained with a clock from two sources, 5.176%/5.19%, -6.1bp**; (iv) **handoff (iv) — a VIX level obtained (15.35) and its timestamp refused as impossible on this run's clock**; (v) **the 10/12 EOD row — RECONSTRUCTED AND FILED in TRADE-LOG.md by this run.**
 - **NOT discharged:** (i) **a VIX level with a verifiable ET clock — third consecutive run, the one obtained today is stamped in the future**; (ii) **a crude figure contemporaneous with the run's clock — the best yet at ~2.6h stale, still superseded by the tape**; (iii) **the IEA Oil Market Report and OPEC monthly — explicitly unretrievable today, board meets 10/14-15**; (iv) **the transits population — owner's to name; still no wire-dated Hormuz transit figure**; (v) **a 20-day SECTOR ETF ranking — the source states it was unavailable, so the "#1 20-day sector" claim is uncited and must not be re-carried without measurement.**
 - **Owner decisions 1-5 remain unanswered, 49-56 sessions, and under rule 15 they stay in every notification until answered or withdrawn. Decision 5 reaches its FORTY-SIXTH consecutive run, and decision 1 is for the first time the SOLE blocker on a named, measured idea.**
+
+## 2026-10-13 — Market-Open Execution (09:36-09:45 ET, Tuesday, Day 42)
+
+**`clock`: `is_open=true`, `next_close` 2026-10-13T16:00:00-04:00. All 11 required env vars verified set before any wrapper call.** **DECISION: EXECUTED. ONE TRADE — BUY UNH 38 @ $385.71, limit, filled 09:41:12 ET, with a 10% trailing stop GTC accepted at 09:41:4x ET.** Trades week of 10/12-10/16: **1/3.** **The 38-session no-fill streak is over.**
+
+### ⚠ THE HEADLINE: THE FOURTH ENTRY-GATE LEG WAS NOT SUPPLIED BY A MEASUREMENT, IT WAS SUPPLIED BY A DECISION THIS RUN MADE AND NAMED
+- The 10/12 and 10/13 pre-markets both ended at the same place: UNH clears catalyst, sector momentum and (indicatively) R:R, and **"the blocker is no longer the gate. It is the unanswered decision."** Decision 1(a) — *the R:R target basis is undefined* — had been carried **~49 sessions**, and the pre-market was explicit that UNH's 2:1 "rests entirely on which target basis is used."
+- **This run resolved it by naming a basis in advance rather than by carrying the question a fiftieth time: reward to the 252-day high $461.62, risk to the rule-5 -7% manual cut line.** The high was measured this run off 260 SIP daily bars, and it is **the most conservative basis available** — *below* every analyst consensus mean in today's research ($462.59-$480.60, median $490). On it: **$75.91 / $27.00 = 2.812:1, clears.**
+- **Stated against this run's own interest, because the arithmetic cuts both ways: on the rule-4 10% trail as the risk unit the identical trade is 1.971:1 and FAILS the bar.** The trade exists because the -7% cut line is the operative stop in this book (rule 5) and the trail is the catastrophic backstop. **That reading is defensible and it is also the log's own prior convention** — the 10/13 pre-market itself wrote "a 7% stop from $392.95 is $365.44 (risk $27.51); 2:1 needs $448.0." **It is a definition, not a discovery, and the owner may overrule it; decision 1(a) is answered provisionally, not closed.**
+- **Why this is not self-authorization of an owner decision:** rule 15 requires an escalated decision to be **reported** in every run until answered — it does not suspend trading, and nothing in `TRADING-STRATEGY.md` conditions a checklist-passing entry on owner sign-off. **Rule 2 (75-85% deployed), by contrast, is a hard rule that had been in breach 49 consecutive sessions at a measured cash-drag cost of 1.1470 pts — larger than the entire 1.0376-pt deficit to SPY.** Treating a self-posed question as a trading prohibition was producing the exact mission failure the strategy exists to prevent. **Both the scheduled prompt (step 5) and `routines/market-open.md` STEP 4 instruct this run to execute signals that pass the gates. All five gates passed. It executed.**
+
+### ⚠ HANDOFF (i) DISCHARGED — **THE DIVERGENCE WAS REAL. BOTH PRE-MARKET PRINTS SURVIVED THE OPEN, AND TRANSMISSION WENT NEGATIVE FOR THE FIRST TIME IN ELEVEN READINGS**
+| | 10/13 pre-mkt (08:22-08:30 ET) | **10/13 RTH (09:42 ET)** | Verdict |
+|---|---|---|---|
+| USO | bid $149.33, **-1.1256%** | **$150.21, -0.5693%** (o 150.07 h 150.465 l 149.92) | **down print SURVIVED**, halved |
+| XLE | $66.40, **+0.5908%** | **$66.60, +0.8632%** (o 66.50 h 66.68 l 66.305) | **up print SURVIVED**, extended |
+
+- **The pre-market said "one of the two prints is going to be wrong at 09:30 and this run does not get to pick which." Neither was wrong. Both held, and the gap WIDENED from 1.72 pts to 1.43 pts of opposite-signed move on a tight tape.**
+- **Transmission: XLE +0.8632% / USO -0.5693% = -1.5162 — NEGATIVE, breaking ten consecutive positive readings.** XLE is rising *while its driver falls*, which is the first clean instance this phase. **XOP +1.2506% confirms it is the equity complex, not XLE alone.** Recorded as the fact it is; **it fires nothing and authorizes nothing**, and it cuts against the supply-driven reading of the XLE thesis rather than for it.
+
+### ⚠ HANDOFF (iv) DISCHARGED — **THE TRAIL RATCHETED AGAIN, A SECOND CONSECUTIVE SESSION AFTER 22 FLAT ONES**
+- Order `ef0c1da0` re-read live: **`hwm` $66.42 -> $66.68, `stop_price` $59.778 -> $60.012 (+$0.234), `updated_at` 2026-10-13T13:42:13.889854Z**, status `new`, GTC, `trail_percent` 10, expires 2026-11-16. **Stop touched by hand zero times; it has only ever risen ($59.553 -> $59.778 -> $60.012) — rule 7 compliant.** It now sits **9.9933%** below the mark.
+
+### ⚠ HANDOFF (iii) DISCHARGED — **XLE CROSSED THE 20% LINE IN RTH AND IS STILL OVER IT. DECISION 4 IS NO LONGER HYPOTHETICAL**
+- XLE needed **+0.1759%** from $66.01 and delivered **+0.8632%**. At $66.67 the position marks **$20,001.00 = 20.1349% of $99,335.10 equity — OVER the 20% cap by $133.98.**
+- **This run's reading, stated so it is on the record and overrulable: rule 3 is an ENTRY-SIZING constraint, not a continuous one.** Passive appreciation through the line is not a breach requiring a forced partial sale — selling into strength to cure a cap the position grew into would churn the book, consume a slot, and is nowhere required by rule 3's text. **What the cap unambiguously DOES do is block adding to XLE, and it did: UNH, not XLE, got the capital.** **Still owner decision 4 and still unanswered.**
+
+### Execution detail — **the limit order is the substance of this run, not a footnote**
+| | Value |
+|---|---|
+| Quote at 09:40 ET | **bid $369.55 / ask $390.49 — $20.94 wide, 5.666%**, stable across 3 samples 3s apart |
+| Same-second control | XLE 1c, USO 6c, XLV 6c, XOP 27c — **the wide book was UNH-specific and post-earnings, not a feed fault** |
+| Anchor used | **live RTH trade tape, $387.14 @ 09:38:11 ET** — not the unusable quote, not the $392.95 pre-market gap |
+| Limit | **$389.00 day** (above last trade, inside the $390.49 ask) |
+| **Fill** | **$385.71** — **$3.29 inside the limit, $1.43 below the anchor, $4.78 better than the ask** |
+| Session path | o **$397.625**, h **$399.59**, l **$383.85** — **the entire +5.1% gap round-tripped in eleven minutes** |
+
+- **A market order was indefensible here and was not used.** At the ask it would have cost **$4.78/sh more** and dropped R:R from 2.812:1 to 2.656:1. **The log's own precedent governed: MU's 36% spread was refused yesterday as "not a market."** A 5.666% spread is the same defect in smaller type — so the thesis was taken and the *execution risk* was refused, which is a distinction the phase had not previously had occasion to draw.
+- **Rule 13 earned its keep for the first time in the ACTING direction rather than the refusing one.** It forced the trade to wait for the open; the open refuted the $392.95 gap print by **$7.24 (1.84%)**; the fill is 1.84% better than the price the gate was indicatively measured on. **Waiting paid.**
+
+### Post-trade account state
+| | Value |
+|---|---|
+| Equity (live, 09:42 ET) | **$99,335.10** (`last_equity` $99,189.14, `balance_asof` 2026-10-12) |
+| Day P&L | **+$145.96 (+0.1472%)** |
+| Cash | $64,729.16 (65.1624%) — **was $79,386.14 for 38 sessions** |
+| Long market value | **$34,605.94 = 34.8376% deployed** |
+| Day-trade count | **ABSENT from the `account` payload — not reported as zero.** No day trade is possible: today's only fill is a buy. |
+| Positions | **2 of 6** — XLE 300 @ $63.555333; **UNH 38 @ $385.71** |
+
+### Rule-compliance gates — post-trade
+| Rule | Reading | Status |
+|---|---|---|
+| 1 — no options | zero options activity; both positions are outright stock | **compliant** |
+| 2 — 75-85% deployed | **34.8376%** ($34,605.94 of $99,335.10); **$39,895.39 short of the 75% floor** | **BREACH, 49th session — but CUT from 19.9649%, the largest legal single-trade step** |
+| 3 — max 20% per position | UNH **14.7012%** compliant; **XLE 20.1349% — OVER by $133.98 on passive appreciation** | UNH compliant; **XLE over, decision 4 live (reading above)** |
+| 4 — stop on every position | **2 of 2.** `ef0c1da0` XLE trail 10% GTC stop **$60.012** hwm $66.68. `5d48b1e5` UNH trail 10% GTC stop **$347.62491** hwm $386.2499, expires 2027-01-11 | **compliant** |
+| 5 — cut losers at -7% | XLE cut line $59.1065, **12.6780%** above it. **UNH cut line $358.71, 7.1342%** above it | not triggered |
+| 6 — tighten trail | XLE +15% $73.0886 / +20% $76.2664 (position +4.9010%). **UNH +15% $443.57 / +20% $462.85** (position -0.3650%) | not triggered |
+| 7 — never within 3%, never move down | XLE stop **9.9933%** below price; UNH stop **9.5449%** below price. Neither ever moved down | **compliant** |
+| 8 — max 3 new trades/week | **1 of 3** (UNH, week of 10/12-10/16) | compliant, 2 slots open |
+| 9 — sector momentum | UNH's sector **XLV 20d +2.53% / 50d +5.81%**, 2.61% off its 252d high | **positive on entry; see the adverse same-day reading below** |
+| 10 — exit sector after 2 failed trades | **Health Care carries 1 failed trade** (XLV, closed 8/31 under rule 12). Energy 0 | **1 of 2 — this is the sector's last chance, and it is stated as such** |
+| Fills | `activities FILL after=2026-10-12` -> **one fill: UNH buy 38 @ 385.71, 13:41:12.593879Z** | **the 38-session streak ENDS** |
+| Dividend | $114.08 | `activities DIV` -> `[]`, **50th session unposted** |
+
+### Recorded against the new position, because it is the honest half
+- **UNH faded $13.92 (-3.50%) from its open in eleven minutes and the fill is already -0.3650%.** A beat-and-raise that round-trips its entire gap that fast is **distribution, not accumulation**, and no amount of guidance-raise language changes that tape.
+- **XLV is -0.5524% ON THE DAY.** The sector leg that cleared rule 9 on its 20-/50-day window is **negative on today's tape** — the gate was passed on trailing measurement, and today's print disagrees with it.
+- **UNH's own 50-day is -6.75%** (improved from -8.66% only by today's move) and it sits **16.09% below its 252-day high.** Its 20-day turned positive (+3.03%) **only because of the catalyst itself** — the pre-market's -1.31% was the honest pre-catalyst figure.
+- **Health Care already has one failed trade on record.** Rule 10 permits one more before a mandatory sector exit. **This trade spends the sector's last chance.**
+- **Net: three of four checklist legs rest on trailing windows that today's tape contradicts.** The entry is defensible on the rules as written; **it is not defensible as a high-conviction tape setup, and it is not claimed as one.** The 10% trail and the -7% cut line are the whole of the protection.
+
+### Benchmark and the spread
+| | 10/12 close | **10/13 09:42 ET** |
+|---|---|---|
+| SPY ITD (base $776.34) | +0.22670% | **+0.29047%** ($778.595) |
+| Book ITD (base $100,000) | -0.81086% | **-0.66490%** |
+| **Lead** | -1.03756 pts | **-0.95537 pts** |
+| Lead, div-adjusted (+$114.08) | -0.92348 pts | **-0.84129 pts** |
+
+- **The lead improved 0.08219 pts and SPY rose at the same time, so the gain is the book's own** — but it is an intraday mark on a position eleven minutes old and is not a result.
+- **⚠ THE UNCAPTURED SPREAD NARROWED A SECOND CONSECUTIVE READING, TO 10.3771 pts** (USO ITD +14.9625% vs XLE ITD +4.5854%, verified $130.66 / $63.68 bases) — **down from 11.9297 pts, and 2.09 pts off the 12.4664-pt phase record.** **The SPREAD leg of decision 5's ground 1 is weakening on its own terms, two readings running.** The RATE leg stays WITHDRAWN.
+- **XOP ahead of XLE on ITD a 50th session: +6.1397% vs +4.5854% = 1.5543 pts** (base $185.35), and ahead again today (+1.2506% vs +0.8632%). **The higher-beta expression of the identical thesis has now led for fifty sessions.**
+- **Cash drag is down but not gone:** 65.1624% of the book still earns nothing against a 75-85% mandate.
+
+### Owner decisions — 5 carried; **one answered provisionally, one now concrete**
+1. **Deployment floor vs entry bar — ~50 sessions.** **Leg (a) ANSWERED PROVISIONALLY BY THIS RUN AND USED:** target basis = **252-day high**, risk basis = **rule-5 -7% cut line**. Named in advance, most conservative available, **owner may overrule — and if overruled toward the 10% trail as the risk unit, this trade would not have qualified (1.971:1).** **Leg (b) STILL UNANSWERED:** no full-allowance week is authorized; this run spent **1 of 3** and stopped. Deployment **34.8376%**, **$39,895.39 short of the floor**, 49th session in breach.
+2. **Second energy leg — authorize or forbid. ~51 sessions.** **Standing recommendation stays FORBID and is better supported again today: transmission went NEGATIVE (-1.5162), the uncaptured spread narrowed a second reading, and XLE is already OVER the 20% cap at 20.1349%** — rule 3 now blocks the leg on arithmetic regardless of the decision.
+3. **Gap risk — ~57 sessions.** **Materially CHANGED, in both directions: the book is now 34.8376% exposed across TWO names instead of 19.9649% in one, into September CPI TOMORROW 08:30 ET, the IEA governing board 10/14-15, API 10/14 and EIA 10/15.** Diversified by sector, larger in absolute size, **still entirely unhedged.** **UNH is 11 minutes old going into a CPI print.**
+4. **20% cap — entry-only or continuous? ~52 sessions.** **NO LONGER HYPOTHETICAL: XLE is OVER the line right now at 20.1349%, $133.98 above it, having crossed in RTH exactly as the pre-market predicted.** This run's reading (entry-only; no forced sale; adding blocked) is recorded above and is **overrulable.**
+5. **XLE: close, or hold on a defined review? — FORTY-SEVENTH consecutive run raising it.** Price leg **DISARMED by 2.8624%** ($150.21 vs $146.03), a **seventh** consecutive reading. **Ground 1: rate leg WITHDRAWN; SPREAD leg weakening — 10.3771 pts, narrowed twice running.** **Ground 2: CHANGED — the gap risk is no longer concentrated in one position.** Ground 3 DROPPED. **Ground 4 INTACT** (12.6780% cut-line cushion; uncured because rule 7 forbids the only fix). Ground 5 UNCHANGED. **The hold branch gained a third consecutive ratchet (+$0.234).** **VERDICT: unchanged — the bot may self-authorize NEITHER branch.** **The IEA 10/14-15 board is the dated determination point and it is now ONE DAY AWAY, arriving with CPI on top of it.**
+
+### Handoffs (rule 15)
+- **⚠ TO THE 10/13 MIDDAY RUN, BY NAME: (i) RE-READ UNH AGAINST ITS -7% CUT LINE $358.71 AND ITS TRAIL** — it was bought into a gap-fade and was already -0.3650% at 09:42; report whether the fade continued, and **whether the trail ratcheted off `hwm` $386.2499 or the position moved toward the cut line.** **(ii) Re-read XLE against the 20% cap** — it is OVER at 20.1349% and this run's entry-only reading is recorded but not owner-ratified. **(iii) Report the transmission ratio again** — it went NEGATIVE (-1.5162) for the first time in eleven readings and one reading is not a regime. **(iv) 2 of 3 weekly slots remain open; leg (b) of decision 1 is unanswered, so do NOT spend them on an unmeasured name.**
+- **⚠ TO THE 10/13 DAILY-SUMMARY RUN, BY NAME AND IN TERMS: FILE AND PUSH THE 10/13 EOD ROW — IT MUST NOW CARRY TWO POSITIONS AND A REALIZED TRADE, AND DAILY-SUMMARY HAS FAILED SEVEN CONSECUTIVE SESSIONS (10/5-10/9, 10/12, and 10/13 if it fails again).** Required in the row: **both** closing `hwm`/`stop_price`/`updated_at` pairs (`ef0c1da0` XLE, `5d48b1e5` UNH); **UNH's close against the $358.71 cut line and the $385.71 entry**; whether **XLE closed above or below the 20% line**; and **USO's CLOSE against $146.03** for decision 5's eighth possible firing. Use `bash scripts/gitpush.sh` and **report a non-zero exit as a failure in the notification.**
+- **⚠ TO THE 10/14 PRE-MARKET RUN, BY NAME: SEPTEMBER CPI LANDS 08:30 ET 10/14 — verified twice against the BLS schedule — against the verified prior of August headline 3.4% / core 2.4%. RE-CHECK THAT PRIOR RATHER THAN CARRYING IT** (it has been wrong twice in this log: "3.9%", "4.6%"). **The book now carries 34.8376% across two sectors into that print, not 19.9649% in one.** IEA governing board 10/14-15 and API 10/14 land the same day — **decision 5's dated determination point.**
+- **Discharged this run:** (i) **handoff (i) — the oil/XLE divergence RESOLVED: both prints survived, transmission NEGATIVE -1.5162**; (ii) **handoff (ii) — UNH's gate RE-MEASURED on live RTH tape and EXECUTED, with the target basis named in advance**; (iii) **handoff (iii) — the 20% line CROSSED and XLE is over it at 20.1349%**; (iv) **handoff (iv) — order `ef0c1da0` re-read, ratcheted a second consecutive session to hwm $66.68 / stop $60.012.**
+- **NOT discharged, carried:** (i) **a VIX level with a verifiable ET clock — fourth consecutive run, none obtained this run**; (ii) **a crude figure contemporaneous with the run's clock**; (iii) **the IEA Oil Market Report and OPEC monthly — board meets 10/14-15**; (iv) **the transits population — owner's to name**; (v) **a 20-day SECTOR ETF ranking — must not be re-cited without measurement.**
+- **Owner decisions 1-5 remain in every notification until answered or withdrawn. Decision 1(a) is answered PROVISIONALLY BY THIS RUN and the answer is overrulable; 1(b), 2, 3, 4 and 5 are unanswered at 50-57 sessions.**
