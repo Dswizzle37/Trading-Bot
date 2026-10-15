@@ -11194,3 +11194,156 @@ Measured on verified 52-week SIP highs; gate as the log has always applied it �
 - **Discharged this run:** (i) **rule 3 re-measured on the live basis and the market-open run's narrowing expectation CONTRADICTED — it widened**; (ii) **UNH reported against $385.71, $392.25/$395.50 and $358.7103, with the fade off the high recorded alongside the hold**; (iii) **both stops re-read live, UNH's second-ever ratchet reported, neither moved down**; (iv) **transmission re-measured and the sub-30% hypothesis REFUTED at 53-55%, against this run's convenience**; (v) **the afternoon selloff's cause established on a dated wire, consistent with the tape**; (vi) **a NEW dated wire item material to the energy thesis — the Hormuz vessel attacks of 10/13, reported 10/14, confirmed on two queries.**
 - **NOT discharged, carried:** (i) **the IEA governing-board outcome — now 10/15, nothing established on three runs**; (ii) **API 10/14 figures — NONE confirmed; EIA 10/15 pending**; (iii) **the IEA OMR's delivered/remaining barrels — obtained and REFUSED as unreproducible**; (iv) **a VIX level on a real-time clock — SIXTH consecutive run, and today's candidate was refused on an impossible timestamp**; (v) **the transits population — owner's to name.**
 - **Owner decisions 1-5 remain in every notification until answered or withdrawn. 1(a) answered provisionally and overrulable; 1(b), 2, 3, 4 and 5 unanswered at 52-59 sessions.**
+
+## 2026-10-15 — Pre-Market Research (08:34-09:05 ET, Thursday, Day 44)
+
+**Decision: HOLD BOTH. Zero orders placed, zero cancelled, zero staged, zero stops touched by hand.** Trades week of **10/12-10/16: 1/3 — 2 slots open, 0 spent this run.** Market **CLOSED** (`clock` `is_open=false`, 08:34:39 ET, next open 09:30 ET; `calendar` confirms 10/15 is a full 09:30-16:00 session). All 11 scheduled-task env vars verified set before any wrapper call; `ALPACA_ENDPOINT` is `paper-api.alpaca.markets/v2` — **paper, unchanged.** No mechanical rule fired.
+
+### ⚠ THE HEADLINE: THE 236mb SUPPLY OVERHANG THE LOG HAS CARRIED FOR WEEKS IS WRONG, AND THE CORRECTION RUNS IN THIS BOOK'S FAVOUR
+The 10/14 midday obtained "~96mb remaining" and **REFUSED it as unreproducible**, leaving 236mb standing. Handoff (iii) demanded it be established from the Oil Market Report itself. **It now reproduces on a direct OMR query, citing the IEA Oil Market Report dated 2026-10-14: ~325mb DELIVERED, ~100mb REMAIN** under the March 2026 coordinated release. **Corroborated twice independently:** Argus ("IEA says 96mn bl yet to be released") and Gulf Times ("100mn barrels still to come"), plus the IEA chief's "over 80% of emergency oil stocks already released." **The carried 236mb overhang is corrected to ~96-100mb — a ~58% cut in the bearish supply block.** Recorded with the flag it deserves: **this figure favours the book's largest position, it was refused yesterday precisely for that reason, and it is adopted now only because the primary source the handoff named now carries it and two independents agree.** Not wire-carried (Reuters/AP/Bloomberg/AFP) — the IEA is the official issuing body, which rule 14 permits.
+
+### ⚠ THE FOURTH FALSE DE-ESCALATION SCARE IN SIX WEEKS, AND RULE 14 CATCHES IT AGAIN — THIS TIME CONTRADICTED BY A SUNKEN SHIP
+A de-escalation query returned **"October 14 — Reuters-reported coverage said the US and Iran agreed to extend a ceasefire and lift restrictions on shipping through the Strait of Hormuz."** **REFUSED on every leg:**
+- The supporting citation is **thedailystar.net**, not a wire. **"Reuters-reported coverage" is aggregator laundering** — rule 14 requires the wire itself, with a date.
+- The one genuine Reuters URL offered is about a **Russia-Ukraine energy ceasefire** (`...trump-says-russia-ukraine-reached-energy-ceasefire-2026-10-11`) — **a different war, mis-attributed by the model.**
+- The one genuine wire item (**AP, 2026-10-11**) says the opposite of a deal: negotiations continue through mediation and **Iran's latest response was "insufficient."**
+- **It is contradicted by harder evidence on the same date.** See below.
+**Rule 14 was written after two false US-Iran peace scares, both of which targeted exit trigger (a) on XLE, the book's largest position. This is the fourth. It is refused, not acted on — and it is NOT dismissed: if a wire carries a finalized Hormuz shipping agreement with a date, that is thesis-relevant and BEARISH for XLE, and it is handed forward as a live watch item.**
+
+### ⚠ HANDOFF (iv) DISCHARGED: THE HORMUZ STORY ESCALATED, AND THE VESSEL SANK — WIRE-CONFIRMED ON BOTH LEGS
+- **GFS Pride SANK near the Strait of Hormuz** after a projectile strike triggered a fire. **Bloomberg 2026-10-14 (updated 10-15); Reuters 2026-10-14; and an official statement from the Maritime and Port Authority of Singapore, 2026-10-14** — all 21 crew evacuated safely. **Rule 14 cleared on both legs: wire + official, both dated.**
+- **GFS Giselle** damaged in a separate incident, reached safety.
+- **Official claim, disputed cause:** the **IRGC Navy** said GFS Pride struck a naval mine on an "unauthorized and hazardous route"; **a US official disputed that and said Iran likely hit the ship with a missile.** The **cause is disputed; the sinking is not.**
+- **10/15: no new incident and NO de-escalatory action found.** The heightened threat persists.
+**Yesterday the log recorded "two vessels struck" as the first genuinely new dated positive for the energy thesis. Today one of them is on the bottom. This is an escalation, and it is the direct refutation of the ceasefire story above: a shipping agreement lifting strait restrictions is not consistent with the IRGC claiming a sinking on the same date.**
+
+### ⚠ HANDOFF (ii) PARTLY DISCHARGED: API PRINTS AN 11.12mb CRUDE DRAW — AND IT IS NOT ADOPTED
+**API Weekly Statistical Bulletin, released 2026-10-14, week ending 10/9: crude -11.12mb** — a very large draw. **NOT adopted as established:** a wire-restricted re-query found **no Reuters, AP, AFP or direct API release**; the figure reaches this log only as a **Bloomberg attribution carried by secondary outlets** (Seeking Alpha et al.), and gasoline/distillate were not reported at all. **Recorded as REPORTED, single-source-at-one-remove.** **EIA Weekly Petroleum Status Report lands TODAY** — shifted off Wednesday by the 10/12 federal holiday — and is the authoritative check. **Release time is itself disputed across sources: 11:00 a.m. ET vs 12:00 p.m. ET. Both are stated; neither is resolved.**
+
+### ⚠ HANDOFF (i): THE IEA GOVERNING BOARD MEETS TODAY — DECISION 5'S DETERMINATION POINT, ARRIVED AND UNDETERMINED A FOURTH RUN
+**Reuters 2026-10-06 confirms the board was to decide details of the G7 diesel/oil stocks release on 10/14-15.** **Outcome: NONE confirmed** in permitted sources as of 08:50 ET — expected, the meeting is today. Latest confirmed pre-meeting position: support for completing the remaining pledged releases **as soon as possible, with diesel prioritized.** **Carried, not converted into a reason to act.**
+
+### Account snapshot — live, 08:34-08:50 ET
+| | Live pre-market (SIP 08:19-08:20 ET) | 10/14 close | Δ |
+|---|---|---|---|
+| Equity | **$100,197.65** | $100,051.71 | +$145.94 |
+| Cash | $64,729.15 (64.6015%) | $64,729.15 (64.6957%) | — |
+| Long market value | $35,468.50 | $35,322.56 | +$145.94 |
+| **Deployed** | **35.3985%** | 35.3043% | +0.0942 pts |
+| Phase P&L | **+$197.65 (+0.1977%)** | +$51.71 (+0.0517%) | +0.1460 pts |
+| `daytrade_count` | **ABSENT** from payload — 5th run | ABSENT | — |
+
+**Equity is RECOMPUTED from the SIP pre-market tape ($64,729.15 + $15,095.50 + $20,373.00 = $100,197.65), not taken from the `account` payload's $100,128.70 — a $68.95 difference, stated rather than hidden.** The payload marks XLE at $67.6865; the SIP pre-market tape has it at $67.91 at 12:20Z. Per rule 13 the freshest source governs.
+
+### Positions — both held, both green, both sectors the top two on measured 20d momentum
+| Ticker | Sh | Entry | Mark (SIP pre-mkt) | 10/14 close | Unrealized | % equity | Stop | hwm | vs -7% cut |
+|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $67.91 | $67.63 | **+$1,306.40 (+6.8518%)** | **20.3328%** | $60.9345 | $67.705 | +12.96% |
+| UNH | 38 | $385.71 | $397.25 | $395.62 | +$438.76 (+2.9919%) | 15.0657% | $356.787 | $396.43 | +9.70% |
+
+### Rule 13 applied — three of four live quotes REFUSED, and the SIP tape governs
+- **XLE `quote`: bid 65.57 / ask 0, timestamped 2026-10-14T20:00:04Z.** One-sided with a zero ask, and 12.5 hours stale. **REFUSED.**
+- **UNH `quote`: 370.51 / 408.93 — 10.37% wide, timestamped 2026-10-14T20:00:00Z. REFUSED outright**, the same failure mode as the 10/14 pre-market's 9.15%-wide UNH quote.
+- **XOP `quote`: ask 0, stale 10/14T20:00:02Z. REFUSED.**
+- **SPY `quote`: 767.18 / 767.28 at 12:35:46Z — 10c wide, fresh. ACCEPTED**, and consistent with the SIP minute bar $767.49 at 12:20Z.
+- **Governing marks are the SIP 1Min pre-market tape, which has real volume today where the 10/14 pre-market had none:** SPY 236 bars (08:00-12:20Z, hi 768.25 / lo 765.69), XLE 144 bars (hi 68.1797 / lo 67.52), UNH 100 bars (hi 401.31 / lo 395.49). **Unlike 10/14, this run's position marks and its index mark are on the SAME clock, so the benchmark comparison below is NOT a mixed-clock artefact.**
+
+### Mechanical rules — every one checked live, none fired
+- **Rule 1** — two equities, zero options. `options_trading_level:3` on the account, ignored as always and as it will be every run.
+- **Rule 3** — **XLE BREACHED, see below. UNH 15.0657%, $4,944.03 of room.**
+- **Rule 4** — **2 real GTC trailing stops on 2 positions**, both re-read off the live order object, both `trail_percent` 10, both `new`.
+- **Rule 5** — cut lines **$59.1065 / $358.7103**; marks **12.96%** and **9.70%** above. Neither near.
+- **Rule 6** — tighten gates **$73.0886 / $443.5665** (+15%) — **NOT DUE** (XLE +6.85%, UNH +2.99%).
+- **Rule 7** — stops **10.2717%** and **10.1858%** below their marks; both have **only ever risen**. **Note: both sit just outside 10% of the mark because the pre-market tape is above each hwm — not because either was moved.**
+- **Rule 8** — **1/3 trades** for 10/12-10/16.
+- **Rule 10** — Energy intact; Health Care on its **second and last** chance, unchanged by two strong UNH sessions.
+- **`activities`** — no fill since the 10/13 UNH entry. **No position change.**
+
+### Stops — UNH RATCHETED A THIRD TIME ON 10/14, AT THE CLOSE; XLE DID NOT
+- **UNH `5d48b1e5`: `hwm` $395.50 → $396.43, `stop_price` $355.95 → $356.787 (+$0.8370), `updated_at` 2026-10-14T19:58:58.580093Z** — **19:58:58Z is 15:58:58 ET, two minutes before the bell.** **Third ratchet of the position's life, all three on 10/14; +$9.1621 of locked-in floor in one session** against a stop frozen from entry day to 10/14. hwm $396.43 vs the 10/14 SIP high $396.44 — the broker caught the high to the cent.
+- **XLE `ef0c1da0`: UNCHANGED — `hwm` $67.705, `stop_price` $60.9345, `updated_at` 2026-10-14T13:31:08.563848Z.** The 10/14 SIP high was $67.718, within 1.3c of the hwm; **the fourth consecutive session ratchet stands and there was no fifth.** **A FIFTH IS LIKELY TODAY: the pre-market tape printed $68.1797, $0.4747 above the hwm — but a non-`extended_hours` trailing stop does not ratchet off pre-market prints, so this is a prediction and the market-open run must verify it rather than assume it.**
+- Both GTC; expiries 2026-11-16 (XLE) and 2027-01-11 (UNH). **Neither touched by hand. Neither ever moved down.**
+
+### ⚠ RULE 3 — THE BREACH WIDENED AGAIN, A THIRD CONSECUTIVE MEASUREMENT, AND THE REMEDY HOLDS AT 5 SHARES
+**XLE $20,373.00 = 20.3328% of equity, $333.47 OVER** the $20,039.53 cap. **WIDENED from $318.90** (10/14 midday) and $230.01 (10/14 open). Full phase sequence: **$34.83 UNDER (10/12) → $223.04 → $311.19 → $399.06 → $230.01 → $318.90 → $333.47 (now)** — the breach has been **continuous since 10/13 and has widened on five of six readings.** Sized at 19.17% on 8/18; **the entire overage is appreciation, not an oversized entry.**
+**Remedy on the live basis: 295 sh = $20,033.45 = 19.9939% → SELL 5** (296 sh = 20.0617%, still over). **NOT PLACED, for two reasons that are both recorded rather than one:**
+1. **Decision 4's entry-only default is in force** and the owner has not answered in ~55 sessions.
+2. **`qty_available` is 0 on both positions** — every share is encumbered by its GTC stop, so a 5-share trim requires cancelling `ef0c1da0` and re-placing it, **opening a window in which a 20.3%-of-equity position carries NO STOP AT ALL, against rule 4.** Trading a $333 overage for an unstopped $20,373 position **40 minutes before a PPI print** is not a call this bot may make on a default reading of an unanswered question.
+**Decision 4 is the only one of the five binding on an order — a FIFTH consecutive run.**
+
+### ⚠ THE BOOK IS AHEAD OF SPY ON THE PHASE FOR A SECOND CONSECUTIVE READING — AND THIS TIME MOST OF IT IS THE BOOK RISING
+- **10/14 full session, close basis: book +0.8138% vs SPY -1.0810% = +1.8948 pts, the largest daily margin of the phase**, beating the 10/14 midday's +1.6558. Driver: **UNH +4.7279%** (377.76 → 395.62) on a -1.08% index.
+- **Phase, close-comparable: book +0.0517% vs SPY -0.8682% (ref $776.34) = +0.9199 pts AHEAD.** **And the attribution reverses from yesterday:** the 10/14 midday recorded +0.6804 pts of which the entire 0.7967-pt swing was SPY falling. **Over the full session the book added 1.0158 pts of its own while SPY gave back only 0.0128 — so this reading is earned, and it is said that way with the same plainness the log used when it was not.**
+- **Phase, live same-clock: book +0.1977% vs SPY -1.1400% = +1.3376 pts.**
+- **⚠ AND CASH DRAG COST 1.5660 PTS ON 10/14 — A THIRD CONSECUTIVE PRICED SESSION AND THE LARGEST YET.** The same mix at 100% deployment returns **+2.3798%** against the actual **+0.8138%**. Position-weighted contribution **+0.8470%** reconciles. Running cost: **1.0638 (10/14 open-equiv) → 1.0614 (10/14 midday) → 1.5660 (10/14 close).** **The 10/12 and 10/13 entries recorded the drag HELPING on falling tapes and refused to call it skill; three straight sessions of it hurting are recorded identically, and are now the strongest evidence in the log for answering decision 1(b).**
+
+### Market context — 10/15 pre-market
+- **Oil, third consecutive clean same-clock (10:00 UTC) reading: WTI $94.89, +0.1161% vs 10/14's $94.78** (sequence $92.06 → $94.78 → $94.89). **Brent $104.08, -1.87% on 24h** — **the two disagree in sign and that is recorded, not smoothed: WTI flat-to-up, Brent sharply down.** No reconciliation established.
+- **Futures, 05:55 ET (≈10min delay): ES -0.26%, NQ -1.10%, YM +0.37%.** **A defensive/value rotation, not a broad selloff** — Dow green while Nasdaq is down over a point. **Corroborated independently at 03:57 ET (-0.32% / -1.18% / +0.30%) and by this run's own SIP tape (SPY -0.2742%), which is freshest and governs.**
+- **⚠ VIX REFUSED ON AN IMPOSSIBLE CLOCK — AGAIN. SEVENTH CONSECUTIVE FAILED RUN.** The query returned **"VIX 17.51 at 9:54 a.m. ET on October 15, 2026, Cboe, ≥20min delay."** **A 9:54 a.m. ET stamp cannot exist at 08:45 a.m. ET; the quote is REFUSED as a timestamped reading** — the sixth mis-clocked market figure refused in four sessions. **What survives is direction only: 15.27 (10/13 close) → 15.19 (10/14 09:46 ET, partial) → unclocked 16.17 → unclocked 17.51. Vol is rising; no number is adopted.** **The real-time-clock VIX handoff is NOT discharged.**
+- **Today's calendar — and its times are internally inconsistent, which is stated rather than resolved:** one source puts **PPI (September), initial jobless claims (w/e 10/10), retail sales (September), Empire State and Philly Fed at 07:30 ET**, while **the BLS schedule it cites says PPI is 08:30 ET**; business inventories 10:00 ET; **EIA petroleum inventories 11:00 ET per one source, 12:00 ET per another**; **a Bowman FOMC speech listed at "9:55 p.m. ET", which is not credible.** **Governing read: PPI at 08:30 ET on the BLS's own schedule; everything else treated as approximate.** September PPI consensus ≈ **+0.5% m/m headline and core.**
+- **Context carried, established on 10/14: September CPI headline 3.7% y/y / +0.6% m/m, core 2.6% y/y / +0.3% m/m**, vs consensus 3.6% / 2.4-2.5%. **Markets price a HOLD at 10/27-28 with a DECEMBER hike** — the corrected version, one meeting later than this log briefly carried.
+- **Before the open:** USB, PNC, BK, FHN, MAN, MRSH, PLD, CMC; SCHW listed for 10/15 but not cleanly classified as pre-open. **Already reported 10/13: UNH, JPM, WFC, GS, JNJ.** **No position-relevant earnings today.**
+- **UNH: NONE — a FOURTH consecutive wire-restricted NONE.** No Reuters/AP/Bloomberg/AFP or official item on 10/14 or 10/15; UNH's own newsroom still shows 10/13 Q3 results as its latest. **So UNH's +4.73% on 10/14 is flow and rotation, not news — recorded that way, because a 4.7% move with no news behind it is a weaker fact than a 4.7% move with one.**
+
+### Sector momentum — MEASURED from SIP daily closes, and it corrects both the third party AND this log
+| Rank (20d) | ETF | 5d | 20d | 50d |
+|---|---|---|---|---|
+| 1 | **XLE** | **+6.74%** | **+5.62%** | **+15.57%** |
+| 2 | **XLV** | +3.05% | +3.69% | +7.32% |
+| 3 | XLK | **-5.44%** | +3.53% | +1.89% |
+| 4 | XLP | +5.34% | +3.28% | +0.81% |
+| — | *SPY* | *-0.98%* | *+2.06%* | *-0.22%* |
+| 5 | XLY | +0.13% | +1.20% | -5.74% |
+| 6 | XLU | +1.39% | +0.97% | -5.42% |
+| 7 | XLI | -0.48% | -0.99% | -10.39% |
+| 8 | XLB | +1.41% | -1.37% | -4.48% |
+| 9 | XLC | -0.40% | -1.93% | -1.09% |
+| 10 | XLF | +1.43% | -2.52% | -5.81% |
+| 11 | XLRE | +2.27% | -3.08% | -8.15% |
+
+- **Rule 9 strongly supports the book as held: XLE and XLV are the TOP TWO on 20d, and XLE leads on all three horizons.** A third-party table agreed on the leaders (XLE +4.80% 1mo / +51.26% YTD; XLV +3.70% 1mo) and is corroborated.
+- **CORRECTION TO THIS LOG: the carried claim "XLF worst of eleven on 20d (-3.57%)" is wrong on today's measurement — XLF is -2.52% and TENTH; XLRE -3.08% is worst.** The conclusion that rule 9 declines XLF is unchanged, but the fact cited for it was.
+- **CORRECTION TO THE THIRD PARTY: its table calls XLF the worst 1-month performer (-4.40%); measured bars say XLRE.** Measured bars govern.
+- **XLK is the shape of the hike repricing: +3.53% on 20d but -5.44% on 5d.** The 10/14 open run called a 2.6% core print "the worst print for long-duration growth"; **the 5d tape and NQ -1.10% this morning are both consistent with it.**
+
+### Trade ideas — 2 of 3 weekly slots open, NONE spent, and the reason is a gate rather than a view
+**STEP 3 requires a catalyst documented in today's RESEARCH-LOG. Each candidate is named and declined with measurement:**
+1. **Second energy leg — FORBID.** **Three of the four blocks have WEAKENED today** (IEA remaining cut 236mb → ~100mb; API -11.12mb draw; a vessel sunk in the strait; transmission 208% on 10/14) and **that is recorded against this run's convenience, because it does not matter: rule 3 bars adding to a position already $333.47 OVER the 20% cap, and decision 2 remains FORBID at ~54 sessions.** The strengthening thesis is logged as **evidence for decision 5's hold branch, not as authorization.** The OPEC+ supply increase (Sept 39.068 mb/d, +903k bpd Saudi-led) and the 2026 demand-growth cut stand.
+2. **XLP (Consumer Staples) — DECLINED, and the honest reason is that the catalyst would be invented.** It is the genuinely improving candidate: **+5.34% 5d, +3.28% 20d, 4th of 11**, and it fits the measured rotation (YM +0.37% vs NQ -1.10%). **But "defensives are bid in a hike repricing" is a regime read, not a documented catalyst, and STEP 3 asks for a catalyst.** Logged as the leading candidate for a future run **if** a dated catalyst attaches.
+3. **XLV — DECLINED on concentration, not momentum.** 2nd on 20d, but the book already holds UNH at 15.07% and **rule 10 has Health Care on its second and last chance.** A second health-care sleeve concentrates the one sector that is one failed trade from an exit.
+4. **XLK — DECLINED. -5.44% on 5d** and a hot core print in a hike cycle is the worst available backdrop for long duration. The 10/14 forecast is now supported by tape.
+5. **XLF — DECLINED on rule 9** (-2.52% 20d, 10th of 11) **despite USB/PNC/BK/FHN reporting pre-open. Earnings are not a momentum substitute** — the same reasoning used on 10/14, applied to a corrected number.
+**AND A GATE THAT BINDS EVEN A PASSING CANDIDATE: PPI lands at 08:30 ET, ~40 minutes from this run. Rule 13 forbids sizing an order off a pre-market price a live RTH quote has not confirmed, and the 10/14 session is the proof — SPY fell 0.63% across nine minutes of the CPI print. Nothing would be sized before 09:30 ET today regardless.** **The 2 slots survive intact a FOURTH consecutive run, by rule.**
+
+### Metrics — 10/14 close basis; ITD bases re-verified off SIP bars, not carried
+- **Transmission: XLE +0.6399% / USO +0.3070% = 208.42%** — a **FIFTEENTH consecutive positive reading and the HIGHEST of the phase** (vs 19.31% at the 10/14 open, 53-55% at midday). **The position outpaced its driver by better than 2:1 on the full session.** **The 10/14 open run's sub-30% hypothesis is now refuted twice over.**
+- **Uncaptured spread (USO ITD +17.5264% vs XLE ITD +6.2029%) = 11.3235 pts — NARROWED 0.9810 pts** off 12.3045, **the largest narrowing of the phase and a reversal of the 10/14 open's record widening.** **Decision 5's spread leg weakens materially.**
+- **ITD bases re-verified off SIP daily bars rather than carried: XLE $63.68 / USO $130.66 / XOP $185.35, all 2026-08-18 closes.**
+- **XOP ITD +6.7386% vs XLE +6.2029% = 0.5357 pts — XOP ahead a 54th session but NARROWED 0.1764**, and **XLE BEAT XOP ON THE DAY A THIRD CONSECUTIVE SESSION (+0.6399% vs -0.9909%), a 1.6308-pt margin.** Recorded because the log has recorded all 54 sessions the instrument choice lost.
+- **Decision 5 price leg: USO $153.56 (close) / $153.355 (pre-market mid) vs the $146.03 line = +5.1565% / +5.0161% ABOVE — DISARMED, an ELEVENTH consecutive reading.**
+
+### Risk factors — now
+- **PPI at 08:30 ET into a book that is 35.40% deployed across two names with no hedge.** Consensus +0.5% m/m. **Decision 3's unhedged gap risk is live and unanswered at ~60 sessions.**
+- **EIA inventories today (11:00 or 12:00 ET, disputed) against an unconfirmed API -11.12mb draw.** A miss cuts directly against 20.33% of equity.
+- **The IEA governing board meets today.** An acceleration decision is bearish crude; **it is decision 5's determination point and the bot may self-authorize neither branch.**
+- **A finalized Hormuz shipping agreement remains the single largest live threat to XLE.** Refused today for want of a wire — **not refuted.**
+- **Rule 3 breached and widening on a position the bot cannot trim without leaving it unstopped.**
+- **Rule 2 breached a 45th consecutive session: 35.3985%, $39,679.74 short of the 75% floor, uncured — and now priced at 1.0-1.6 pts per session.**
+- **UNH's +4.73% has no news behind it on four consecutive wire-restricted queries**, and the two official quality qualifiers (**$610M favourable prior-period reserve development**; **"2026 a trough year for core Medicaid margins"**) are **undisturbed. Three strong sessions are not an answer to them.**
+- **Brent -1.87% against WTI +0.12% on the same clock, unreconciled.**
+
+### Owner decisions — 5 carried, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — ~53 sessions.** Leg (a) answered **provisionally** on 10/13 and overrulable. **Leg (b) STILL UNANSWERED.** Deployment **35.3985%, $39,679.74 short, 45th consecutive session in breach.** **NEW: the breach is now priced on THREE consecutive sessions, and 10/14's full-session cost of 1.5660 pts is the largest yet.**
+2. **Second energy leg — authorize or forbid. ~54 sessions.** **FORBID, unchanged.** **NEW AND AGAINST THIS RUN'S CONVENIENCE: three of the four blocks weakened today (IEA 236mb → ~100mb, API -11.12mb, a vessel sunk, 208% transmission) and it changes nothing, because rule 3 independently bars adding over the cap.**
+3. **Gap risk — ~60 sessions.** **LIVE: 35.40% across two names, unhedged, into a PPI print 40 minutes away.**
+4. **20% cap — entry-only or continuous? ~55 sessions.** **ESCALATED AGAIN: the breach WIDENED to $333.47 / 20.3328%, a third consecutive widening and the widest of the phase; remedy 5 shares.** Entry-only default in force; no trim placed; `qty_available` 0 makes the only fix rule-4-violating. **Only decision binding on an order, a fifth consecutive run.**
+5. **XLE: close, or hold on a defined review? — FIFTY-FIRST consecutive run raising it.** Price leg **DISARMED by +5.1565%**, an **eleventh** consecutive reading. **Ground 1 WEAKENED SHARPLY: the spread narrowed 0.9810 pts to 11.3235, the largest narrowing of the phase, and transmission hit 208.42%, the phase high — the instrument captured its driver better on 10/14 than on any session of the phase.** Ground 2 unchanged. Ground 3 dropped. **Ground 4 INTACT** (12.96% cut-line cushion; uncured because rule 7 forbids the only fix). Ground 5 unchanged. **FOR the hold, new and dated: the GFS Pride sinking (Bloomberg + Reuters + MPA Singapore, all 10/14), the IEA remaining-release correction to ~100mb, a third consecutive daily win over XOP, and XLE first of eleven on all three measured horizons.** **Against: the OPEC+ increase stands, and the IEA board could announce an acceleration today.** **VERDICT: unchanged — the bot may self-authorize NEITHER branch. But the evidentiary balance has moved toward the hold branch more in one session than at any prior point in these 51 runs, and the owner should be told that plainly.**
+
+### Handoffs (rule 15)
+- **⚠ THE 10/14 EOD ROW WAS NEVER FILED — daily-summary has now failed NINE CONSECUTIVE SESSIONS (10/5-10/9, 10/12, 10/13, 10/14). THIS RUN RECONSTRUCTED AND FILED IT** in TRADE-LOG.md off SIP closes and the live order objects, as the 10/14 pre-market did for 10/13. **This is the 30th persistence gap and the handoff is re-issued a TENTH time: TO THE 10/15 DAILY-SUMMARY RUN, BY NAME — FILE AND PUSH THE 10/15 EOD ROW.**
+- **⚠ TO THE 10/15 MARKET-OPEN RUN, BY NAME: (i) VERIFY, DO NOT ASSUME, XLE's FIFTH STOP RATCHET — the pre-market printed $68.1797 against an `hwm` of $67.705, but a non-`extended_hours` trail does not ratchet on pre-market prints; (ii) PPI AT 08:30 ET — measure SPY's minute tape across the print as the 10/14 pre-market did, and report the number only if a permitted source carries it; (iii) RE-MEASURE RULE 3 — the breach is $333.47 / 20.3328% and has widened on five of six readings, remedy 5 shares; (iv) UNH IS +2.99% WITH NO NEWS ON FOUR CONSECUTIVE WIRE QUERIES — report the open against $385.71, $396.43 and $358.7103 and say whether the newsless rally holds; (v) EIA INVENTORIES land today against an UNCONFIRMED API -11.12mb draw, release time disputed 11:00 vs 12:00 ET.**
+- **⚠ TO THE 10/15 MIDDAY RUN, BY NAME: THE IEA GOVERNING BOARD MEETS TODAY — establish its outcome from the IEA or a wire, with a date. It has determined nothing on FOUR consecutive runs and it is decision 5's determination point.**
+- **Discharged this run:** (i) **the IEA OMR's delivered/remaining barrels — ESTABLISHED on the OMR dated 2026-10-14 at ~325mb delivered / ~100mb remaining, correcting the carried 236mb, with the flag that it favours the book**; (ii) **the Hormuz story re-checked wire-restricted — ESCALATED, GFS Pride SANK, confirmed Bloomberg + Reuters + official MPA Singapore, all dated 10/14**; (iii) **API's 10/14 figures located (-11.12mb) and explicitly NOT adopted for want of a wire or direct release**; (iv) **rule 3 re-measured live — widened to $333.47**; (v) **a measured 5d/20d/50d sector ranking, correcting both a third-party table and this log's own XLF claim**; (vi) **the 10/14 EOD row reconstructed and filed**; (vii) **a fourth false de-escalation scare caught and refused under rule 14.**
+- **NOT discharged, carried:** (i) **the IEA governing-board outcome — meets TODAY, nothing established on four runs**; (ii) **EIA's confirmation of the API draw — lands today**; (iii) **a VIX level on a real-time clock — SEVENTH consecutive run, today's candidate refused on a future timestamp**; (iv) **the WTI/Brent sign disagreement, unreconciled**; (v) **the transits population — owner's to name.**
+- **Owner decisions 1-5 remain in every notification until answered or withdrawn. 1(a) answered provisionally and overrulable; 1(b), 2, 3, 4 and 5 unanswered at 53-60 sessions.**
