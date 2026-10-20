@@ -12611,3 +12611,123 @@ Live marks against SIP daily closes:
 - **⚠ TO THE 10/20 DAILY-SUMMARY RUN, BY NAME AND CARRIED FORWARD UNCHANGED FROM THE PRE-MARKET: the 10/19 daily-summary NEVER RAN. You owe BOTH the 10/19 and the 10/20 EOD snapshots, or an explicit statement that 10/19's is abandoned. Do not file one and silently drop the other.** **This run does NOT back-fill 10/19 — the gap is reported, not papered over.**
 - **Weekly review: week ending 2026-10-16 was filed (WEEKLY-REVIEW.md line 701). Next due Friday 2026-10-23. Nothing owed to that class this run.**
 - **Persistence (rule 12): this run files to BOTH TRADE-LOG and RESEARCH-LOG and pushes via `scripts/gitpush.sh` in the same run.**
+
+## Oct 20 — Midday Afternoon Addendum (Day 47, Tuesday, 13:08-13:25 ET)
+
+### Account snapshot (13:08 ET)
+**Equity** $101,051.85 | **Cash** $64,729.15 (64.0554%) | **Deployed** 35.9446% | **Day** +$521.26 (+0.5185%) | **Phase** +$1,051.85 (+1.0519%)
+- **XLE** 300 @ $63.5553 -> **$67.635** (-0.2430% day, **+6.4190%** ITD, +$1,223.90), stop **$61.6545** (hwm $68.505), **20.0793%** of equity
+- **UNH** 38 @ $385.71 -> **$421.90** (+3.6920% day, **+9.3830%** ITD, +$1,375.22), stop **$380.1600** (hwm **$422.40**), 15.8653% of equity
+
+### Rule 13 — all five quotes ACCEPTED, and USO is usable for the first time today
+| Symbol | Bid | Ask | Width | Verdict |
+|---|---|---|---|---|
+| UNH | $421.61 | $422.31 | 0.1659% | ACCEPT |
+| XLE | $67.62 | $67.63 | 0.0148% | ACCEPT |
+| SPY | $768.48 | $768.67 | 0.0247% | ACCEPT |
+| USO | $160.30 | $160.33 | 0.0187% | ACCEPT |
+| XOP | $199.18 | $199.28 | 0.0502% | ACCEPT |
+
+**Handoff (viii) DISCHARGED: USO was REFUSED at 1.9472% wide at the open and is 0.0187% now — a 104-fold repair**, so every USO figure below is mid-based rather than the indicative last-trade figures the open run was restricted to. Same transient open-auction pattern seen at 83-fold (10/19) and 70-fold (10/16) — **an expected artifact, no longer a finding.** **Handoff (vi) honoured: all intraday extremes below are `snapshot.dailyBar`; no minute bars were used.**
+
+### ⚠ THE FINDING OF THE SESSION — A SIGNED, DATED, BEARISH-FOR-ENERGY POLICY SHOCK THAT FIVE PRIOR RUNS MISSED
+Asked why energy equities were falling while crude held a five-month high, the research path returned a qualifying item immediately; a second query was run specifically to settle "signed" vs "proposed" under rule 14, because the distinction changes what the fact is worth.
+
+**CONFIRMED (official statement + two wires, all dated):**
+- **White House presidential action, 2026-10-16** — *"Implementing the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026"* — the President waived specified sanctions and restrictions under the Graham Act.
+- **Reuters 2026-10-17** — *"Trump signed an executive order on Friday waiving key sanctions and tariffs under the law known as the Graham Act."*
+- **Reuters 2026-10-20** — *"An executive order issued by Trump on Friday night waived key Russia-related US sanctions and tariffs, including duties on the country's goods and penalties for buying its oil and gas."*
+- Mechanism: **Russian diesel cargoes returning to traditional destinations, export ban lifted** — supply-positive, forward-earnings-negative for energy equities.
+
+**NOT CONFIRMED, and recorded as such:**
+- **Reuters 2026-10-18** — Rubio says Trump may take up to **60 days** to weigh Russia sanctions; the order **initiates a 60-day review**, does not specify the waiver's duration, and **no final policy decision has been announced.** **"Signed, under review" is NOT upgraded to "permanent."**
+
+**Two-sided context on the same tape, both dated:** **Reuters 2026-10-20** carries Houthi claims of attacks on Aramco's Yanbu site and the Shaybah oilfield (crude-supportive); **the IEA's 2026-10-14 Oil Market Report** projects 2026 supply down 5.8 mb/d to 100.7 mb/d with **balances in deficit through end-2026** and constrained middle distillates well into 2027 (crude-supportive), before a 7.7 mb/d 2027 rebound.
+
+**⚠ A CORRECTION AGAINST THIS LOG's OWN RESEARCH RECORD.** The 10/19 pre-market, open and midday and the 10/20 pre-market and open all returned an explicit **NONE** for dated energy-equity catalysts; the 10/20 open declared the drought **BROKEN by a BULLISH item only.** **A signed presidential action dated 10/16, on two wires by 10/17, was available to every one of those runs.** The queries asked about **M&A, earnings, refining margins, buybacks and OPEC** — **the miss is a scope failure in the question, not a sourcing failure in the tool**, and is filed that way.
+
+**⚠ IT RESOLVES THE PUZZLE AND MAKES IT WORSE.** The 10/20 open framed the evidence as having turned from *"a high with no cause"* into *"a cause with no high"* and called that the clearest input decision 5 had received in 61 runs. **That framing rested on a board with the bullish causes counted and the bearish one missing.** With the waiver on it, XLE failing $68.51 twice and surrendering a gap-up open is **not an unexplained refusal to respond — it is a vehicle discounting a supply-side policy shock its driver's spot price has not yet discounted.** **Better understood, and worse for the hold.**
+
+### ⚠ STEP 5 CONSIDERED EXPLICITLY AND DECLINED — BROKEN vs WEAKENED
+STEP 5 permits cutting a position whose thesis broke intraday even above the -7% line. **Verdict: WEAKENED, not BROKEN.**
+- **FOR the thesis surviving:** Energy **1st of 11 on the 50-day (+17.91%, 11.89-pt margin)**; crude at a **five-month high** on a dated wire; **IEA 10/14 still forecasts deficit through end-2026**; the waiver is **under a 60-day review, not settled policy**; position **+6.4190%** with a real GTC stop **8.8423%** below that has only ever risen.
+- **AGAINST:** the shock is **signed and dated**, it is **supply-positive at the margin on a multi-month horizon**, and it explains three sessions of unexplained relative weakness.
+- **No mechanical trigger met:** rule 5 cushion **+14.4291%**; rule 6 gates not due; rule 10 clean; **decision 5's own review requires USO to CLOSE below $146.03 and USO is $160.315, +9.7822% above — a 24th consecutive disarmed reading.**
+- **DECLINED because cutting would self-authorize the close branch of owner decision 5**, which 61 prior runs declined to self-authorize and which rule 15 forbids. **Escalated at maximum prominence; not executed.**
+
+### ⚠ UNH — +3.6920% ON A +0.2576% TAPE, CAUSE = EXPLICIT NONE
+A wire-restricted query for any dated 10/19 or 10/20 analyst action, guidance, regulatory or Medicare Advantage development returned **NONE**. **UNH reported 10/13 and does not report this week — handoff (v) honoured, not re-raised.** **So the book holds one position that is "a high with no cause" (UNH) and one that is "a cause with no high" (XLE).** **The health-care sleeve has carried the entire book a third consecutive session: +$570.76 of a +$521.26 day = 109.5%; XLE contributed -$49.50.** **An unexplained 3.69% gain in the name carrying the whole book is filed as a RISK, not as performance.**
+
+### Handoffs (ii), (iii), (iv) — all discharged on the numbers the handoffs named
+- **(iii) UNH RATCHETED AGAIN, a third and fourth time today.** `5d48b1e5`: **hwm $415.50 -> $422.40**, **stop $373.9500 -> $380.1600**, `updated_at` **2026-10-20T16:49:36Z**. **$6.21/share of further floor locked; $7.452/share across all of today's ratchets.** **Identity exact: $422.40 x 0.90 = $380.1600.** **One observation NOT explained away: `hwm` $422.40 sits $0.055 ABOVE the SIP `dailyBar` high $422.345** — the order tracks Alpaca's execution feed, not the consolidated daily bar. **Recorded as a feed difference to watch, not asserted as an error.**
+- **(ii) XLE DID NOT RATCHET a 9th time.** `ef0c1da0`: **hwm $68.505, stop $61.6545, updated_at 2026-10-19T13:55:49Z — all unchanged.** **RTH high $68.475 is exactly $0.030 short of the hwm.** The $68.74 pre-market print was disregarded as the handoff instructed.
+- **(iv) XLE FAILED BOTH LEGS.** **(a) Hold $67.80? NO — $67.635, 0.2434% below, red on the day.** **(b) Third run at $68.51? NO — never traded above the $68.475 printed in the opening minutes.** **And it got worse after the open run filed: session low is now $66.835 vs the $67.77 then recorded — a further $0.935 / 1.380% down, to -1.4233% on the day, before recovering.** **Range $66.835-$68.475 on a gap-up $68.36 open. Third consecutive session printing the high early and trading the lower half of the range.**
+
+### Gate checks — nothing triggered
+- **Rule 1** — two equities, zero options. ABSOLUTE AND CLEAN.
+- **Rule 2** — **35.9446%, $39,466.19 short of the $75,788.89 floor. BREACHED, UNCURED. Count HELD at 46** (same session as the 10/20 pre-market and open; third run of that session).
+- **Rule 3** — **XLE 20.0793%, $80.13 OVER the $20,210.37 cap. BREACHED, 10th consecutive reading.** UNH 15.8653%, clear.
+- **Rule 4** — 2 real GTC trailing stops on 2 positions, `trail_percent` 10, `status:new`, `filled_qty:0`, expiries 2027-01-11 / 2026-11-16.
+- **Rule 5** — cut lines **$358.7103 / $59.1065**; marks **+17.6158% / +14.4291%** above; session lows $408.605 / $66.835 are **13.9095% / 13.0756%** clear. Nothing close.
+- **Rule 6** — gates +15% **$443.5665 / $73.0886**, +20% **$462.8520 / $76.2664**. **NOT DUE** (UNH +9.3830%, XLE +6.4190%).
+- **Rule 7** — stops **9.8933% / 8.8423%** below their marks, clear of the 3% lines **$409.2430 / $65.6060**; **both exactly 90.0000% of hwm; both have only ever risen.**
+- **Rule 8** — **0/3 for the week of 10/19-10/23. 3 SLOTS LIVE, expiring Friday.**
+- **Rule 9/10** — Energy 1st of 11 on the 50-day (+17.91%), Health Care 2nd (+6.02%). **CARRIED from the pre-market's SIP measurement, NOT re-measured** — computed off 10/19 closes, unchanged. No 2-failed-trade exit live; **Health Care carries 1 failed trade (XLV, 8/31) — UNH is the sector's second and last chance.**
+- **2 of 6 positions.** `qty_available` **0 on both.** `daytrade_count` and `pattern_day_trader` **ABSENT** from the payload a 14th consecutive run — **recorded as ABSENT, not asserted as 0** (full key list verified). **Dividend $114.08 still unposted.**
+
+### ⚠ Rule 3 — remedy SELL 2, the smallest of the sequence; the bar is still four-deep and the third leg is WIDENING
+**Remedy walked SELL 5 (pre-market) -> SELL 4 (10/19 close basis) -> SELL 3 (open) -> SELL 2 (now), tracking XLE's price down all day.** Cross-checked on the accepted mid $67.625 against mid-derived equity $101,051.13: cap $20,210.23, **remedy SELL 2**, resulting weight **19.9426%** — **the two bases agree, which the open run's did not.**
+Bars, each recomputed live:
+1. **Decision 4's entry-only default**, unanswered ~60 sessions.
+2. **`qty_available` 0** — a trim must first cancel `ef0c1da0`, leaving **20.08% of equity unstopped** against rule 4.
+3. **Rule 7** — a fresh 10% trail off $67.625 is **$60.8625, $0.7920 BELOW** the locked $61.6545 -> **moves the stop DOWN.** **⚠ This gap was $0.5535 at the open and is $0.7920 now: every hour XLE declines makes the cancel-and-replace a LARGER rule-7 violation.**
+4. **Rule 6** — floor-preserving trail **8.8288%**; sub-10% authorized only at **+15%** (XLE **+6.4190%**).
+**No compliant remedy exists. The owner is choosing which of four rules yields, and the cost of the choice is rising.**
+
+### Trade ideas — ZERO screened, ZERO recommended; handoff (vii) obeyed
+The handoff said 3 slots are live, no candidate clears 2:1, and **"do not manufacture one."** **Nothing new was screened and nothing recommended.** The pre-market's 15-name health-care sweep stands: **MCK 0.064:1, ABBV 0.441:1, TMO 0.518:1 fail BECAUSE they lead the sector; ISRG clears at 5.629:1 only by owning a 28.27% drawdown as "reward," has no dated catalyst, reports 10/22.** **A second energy leg stays FORBIDDEN under decision 2 — and today's waiver finding is the first new fact in the phase arguing against one on the MERITS rather than on the decision's authority.**
+
+### Basis ties — exact on all three legs; the $1.50 artifact did not recur
+- `cash` + `long_market_value` = $64,729.15 + $36,322.70 = **$101,051.85 = `equity` EXACTLY ($0.0000).**
+- Position `market_value` sum = **$36,322.70 = `long_market_value` EXACTLY ($0.0000).**
+- Intraday P&L sum **+$570.76 - $49.50 = +$521.26** vs the `equity`-`last_equity` delta **+$521.26 — EXACT ($0.0000).**
+**The half-cent-per-share XLE discrepancy the open run recorded as $1.50 did NOT recur, confirming the 10/19 diagnosis that it is transient and read-order dependent. Resolved for this read only; not declared permanently fixed.**
+
+### ⚠ Benchmark — lead NARROWED 0.2000 pts off the morning's phase best, and the book ROSE while it narrowed
+**Book +1.0519% vs SPY -1.0002%** (phase ref $776.34, accepted mid $768.575) **= +2.0521 pts AHEAD**, against the **+2.2521** phase best set at this morning's open.
+**Decomposition, and it is unflattering: the book added 0.2017 pts of its own (+0.8502% -> +1.0519%); SPY added 0.4017 pts more than that (-1.4691% -> -1.0002%). SPY rallied $3.64 off the open-run read and simply outran the book.**
+**On the day the book still wins: +0.5185% vs SPY +0.2576% = +0.2609 pts ahead.**
+**⚠ CASH DRAG COST 0.9753 PTS — fourth-largest of the phase and the THIRD CONSECUTIVE priced session of it hurting.** Same mix at 100% deployment returns **+1.4938%** vs the actual **+0.5185%**. Running: **1.0638 -> 1.0614 -> 1.5660 -> 0.5546 -> 0.5451 -> 0.1811 -> 0.1883 -> 0.3191 -> (-0.5208) -> 0.1202 -> (-0.0754) -> (-0.4793) -> (-0.4448) -> (-0.9753).** **The cost roughly DOUBLED in one session, and the three largest readings of the phase are all inside the last four runs — every one of them because the book ROSE.**
+
+### Decision 5 — spread, price and transmission legs on the first confirmed USO mids of the session
+- **Price leg DISARMED a 24th consecutive reading: USO $160.315 vs $146.03 = +9.7822% ABOVE.**
+- **Spread leg: USO ITD +22.6963% vs XLE ITD +6.1950%** (verified 8/18 closes $130.66 / $63.68) **= 16.5013 pts uncaptured**, in from 16.6359 at the 10/19 close — **narrowing for the bad reason: USO fell further than XLE.**
+- **XOP ahead of XLE on ITD: +7.4885% vs +6.1950% = 1.2935 pts** (base $185.35).
+- **Transmission today +73.75%** (XLE -0.2430% / USO -0.3295%) — **positive, and the honest note is that XLE OUTPERFORMED its own driver on the one day the log found a reason to doubt it.**
+
+### Risk factors — today
+- **⚠ A SIGNED, DATED, WIRE-CONFIRMED SUPPLY-POSITIVE POLICY SHOCK ON THE BOOK's LARGEST POSITION, FOUR SESSIONS OLD AND SURFACED ONLY NOW.** The single most important risk item of the phase to date, and it is a thesis risk rather than a rule trigger.
+- **⚠ UNH +3.6920% WITH AN EXPLICIT NONE FOR A CAUSE**, carrying 109.5% of the day's P&L. Unexplained strength in the name holding up the book.
+- **⚠ RULE 3 IN BREACH AT 20.0793%, $80.13 OVER, 10th consecutive reading, FOUR bars, no compliant remedy, and the rule-7 bar WIDENING as XLE falls.**
+- **⚠ RULE 2 — 35.9446%, $39,466.19 short of the $75,788.89 floor. Count HELD at 46.** Cash drag cost 0.9753 pts today.
+- **Decision 3's gap risk: 35.94% across two names, unhedged, trigger (c) never authorized.** No scheduled single-name binary event before Friday (UNH reported 10/13; ISRG 10/22 is not held).
+- **The book owns zero technology into Meta, IBM, TXN, LRCX and Tesla earnings this week.** Not costing the benchmark lead on today's read.
+- **No VIX on a verifiable real-time clock, a 6th consecutive session** (Cboe's standing 20-minute delay disclosure). **FOMC blackout live since 10/17 ahead of 10/27-28 — no Fed speak can move the tape this week.**
+
+### Owner decisions — 6 carried, 0 answered, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — ~58 sessions.** Leg (a) answered provisionally 10/13; **leg (b) UNANSWERED.** **35.9446%, $39,466.19 short, 46th session.** **Cash drag has cost 0.4793, 0.4448 and 0.9753 pts on three consecutive sessions — the cost roughly doubled today and the three largest readings of the phase are all inside the last four runs.** **3 slots expire Friday.**
+2. **Second energy leg — authorize or forbid. ~60 sessions. FORBID, unchanged — and for the first time EASIER to hold rather than harder**, because today's waiver finding argues against a second energy leg on the merits, where every prior run had to lean on the decision's authority.
+3. **Gap risk — ~65 sessions. LIVE** at 35.94% unhedged across two names. No scheduled binary event before Friday.
+4. **20% cap — entry-only or continuous? ~60 sessions. BINDING ON AN ORDER a 10th consecutive run.** **$80.13 over, remedy SELL 2 — the smallest remedy of the sequence — against the WIDEST rule-7 bar of the sequence ($0.7920).** **The two move in opposite directions and both arguments get stronger each session.**
+5. **XLE: close, or hold on a defined review? — SIXTY-SECOND consecutive run raising it.** Price leg **DISARMED by +9.7822%**, a **24th** reading. Tally unchanged: **six firings, twelve named opens, ZERO executions.**
+   - **FOR the hold:** Energy **1st of 11 by 11.89 pts**, **+6.4190%**, **14.43% clear of its cut line**, a stop that has only ever risen, **crude at a five-month high**, **IEA 10/14 deficit through end-2026**, a dated refining-margin catalyst on ~40% of the fund, and **XLE OUTPERFORMED its own driver today (+73.75% transmission on a down day).**
+   - **AGAINST, and it is heavier than at any prior raising:** **a SIGNED, DATED, WIRE-CONFIRMED supply-positive policy shock (EO 2026-10-16, Reuters 10/17 and 10/20) that no prior run surfaced, that is bearish for energy equities' forward earnings, and that EXPLAINS three sessions of unexplained relative weakness.** Plus **a third failed session at $68.51**, a new session low $66.835, **16.50 pts of its own driver uncaptured**, **XOP ahead by 1.29 pts**, and **rule 3's breach sitting on THIS position.**
+   - **⚠ THE SHAPE CHANGED AGAIN, AND THIS TIME THE MISSING PIECE WAS THE BEARISH ONE.** The 10/20 open called it *"a cause with no high."* **It is now "a bullish cause, a bearish cause, and no high" — and the bearish cause is the one the market appears to be trading.** **This is the heaviest single input decision 5 has received in sixty-two runs.**
+   - **VERDICT: the bot may self-authorize NEITHER branch and did not. A 62nd run of silence remains the one outcome worse than either answer.**
+6. **RULE 14's SOURCE CHECK — verify by URL DOMAIN rather than by the tool's label? FIFTH run.** **⚠ NEW EVIDENCE, AND IT ARGUES FOR A SCOPE RULE RATHER THAN A SOURCE RULE: today's miss was not an aggregator problem at all.** Five consecutive runs returned a correct NONE to the question they asked (**M&A, earnings, refining margins, buybacks, OPEC**) while a signed presidential action sat outside that list. **Rule 14 governs whether a source may be BELIEVED; it says nothing about whether the question was wide enough.** **Proposed addition handed to the owner, NOT self-authorized: energy-sector research queries must include sanctions, tariffs and export-policy actions by name.**
+
+### Handoffs (rule 15)
+- **⚠ TO THE 10/20 DAILY-SUMMARY RUN, BY NAME, AND CARRIED FORWARD UNCHANGED FROM THE PRE-MARKET AND THE OPEN: the 10/19 daily-summary NEVER RAN. You owe BOTH the 10/19 and the 10/20 EOD snapshots, or an explicit statement that 10/19's is abandoned. Do not file one and silently drop the other.** **This run does NOT back-fill 10/19 — the gap is reported, not papered over.** Daily-summary has now failed eleven consecutive sessions.
+- **⚠ TO THE 10/20 DAILY-SUMMARY AND THE 10/21 PRE-MARKET, BY NAME:** (i) **the Russia sanctions-waiver finding is NEW and is the heaviest input decision 5 has received — carry it at the top, do not let it decay into a footnote**; (ii) **re-run the energy query with sanctions/tariffs/export policy named explicitly, and report whether anything else four sessions old is sitting outside the old query's scope**; (iii) **the 60-day review ends ~2026-12-15 — there is no nearer scheduled determination point, so do not expect resolution this week**; (iv) **XLE's hwm $68.505 still needs an RTH print above it for a 9th ratchet; today's high was $68.475, $0.030 short, for the second session running**; (v) **UNH's hwm is $422.40 / stop $380.1600 after four ratchets today — check whether the hwm/`dailyBar` $0.055 difference recurs, and report it as a feed difference, not an error**; (vi) **rule 3's remedy is SELL 2 and its rule-7 bar is $0.7920 and widening — publish both numbers live, they move in opposite directions**; (vii) **UNH's +3.69% has NO dated cause — re-query it once; if a second run returns NONE, record the gain as unexplained rather than quietly accepting it**; (viii) **3 trade slots expire Friday 10/23 unused for a third consecutive week; do not manufacture a candidate to spend them.**
+- **Weekly review: week ending 2026-10-16 was filed (WEEKLY-REVIEW.md line 701). Next due Friday 2026-10-23. Nothing owed to that class this run.**
+- **Persistence (rule 12): this run files to BOTH TRADE-LOG and RESEARCH-LOG and pushes via `scripts/gitpush.sh` in the same run.**
