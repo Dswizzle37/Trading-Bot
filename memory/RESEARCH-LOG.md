@@ -13377,3 +13377,122 @@ The open logged **ELV -1.3674%** on a ~48% EPS beat with a raised guide, and **U
 - **Persistence (rule 12): this run files to BOTH RESEARCH-LOG and TRADE-LOG and pushes via `scripts/gitpush.sh` in the same run.**
 
 ### DECISION: HOLD BOTH. ZERO ORDERS.
+
+---
+
+## 2026-10-22 — Midday Scan (Day 49, Thursday, 13:08-13:30 ET)
+
+**Account:** equity **$101,044.65** (cash + `long_market_value` ties to the cent, $0.0000) | **cash $64,729.15** (12th session unchanged; `activities after=2026-10-22` returns ZERO) | **deployed 35.9401%** | **positions 2/6** | **`daytrade_count` ABSENT a 16th run — recorded, not worked around.** **Equity DRIFTED DOWN from the open run's $101,074.59 as XLE receded; not a gain.**
+
+**Rule 13 — no dispute this run, a first in five sessions.** All four quotes ACCEPTED at 17:08:39Z: **XLE $67.31/$67.32 (0.0149%), UNH $424.32/$424.74 (0.0989%), SPY $762.35/$762.38 (0.0039%), USO $162.30/$162.36 (0.0370%).** Every mark and high struck off `bars?feed=sip`; `snapshot` not consulted.
+
+### ⚠ FINDING 1 — RULE 3's BREACH IS CURED AFTER 15 BREACHED READINGS, AND THE REMEDY WALKED TO ZERO
+- **XLE $20,175.00 = 19.9664%, $33.93 UNDER the $20,208.93 cap. SELL 0.**
+- Walk completed: **SELL 5 (09:41) -> SELL 4 (09:48) -> SELL 3 (09:50) -> SELL 0 (13:08).** The open run's finding was the oscillation; it resolved **by price decay, not by an order** — XLE -1.3350%.
+- **Third phase instance of a rule-3 cure delivered by the position losing value. Not a success.**
+- **⚠ CURE IS RAZOR-THIN: $33.93. Un-cures at XLE $67.3631 (+0.1682%) with UNH flat.**
+- **Decision 4 binds NO order at this read — first since the 10/16 pre-market, breaking a 15-run streak.** The question is undisturbed; it has no live order to bind.
+
+### ⚠ FINDING 2 — NO 11th XLE RATCHET; A UNH RATCHET FIRED INSTEAD
+- **XLE high STILL $68.78** (09:30:28 bell print, never retested); mark $67.25 = **-2.2244% off its own high.** `ef0c1da0` unchanged.
+- **`5d48b1e5` RATCHETED: hwm $422.40 -> $426.3999, stop $380.16 -> $383.75991 (+$3.59991), `updated_at` 2026-10-22T15:27:09Z = 11:27:09 ET** — first UNH ratchet since 10/20, on a +1.8590% session.
+- **Identity exact on both: $426.3999 x 0.90 = $383.75991; $68.78 x 0.90 = $61.9020.** Both stops have only ever risen.
+
+### ⚠ FINDING 3 — RULE 7's BAR, TIMESTAMPED; THE IDENTITY HOLDS A THIRD TIME
+- **XLE bar $1.3770 at 13:08**, vs **$0.6750 (09:50)** and **$0.3150 (09:41)**. Reproduces **0.9 x ($68.78 - $67.25) = $1.3770** exactly.
+- **Monotonic reopening all session as XLE receded — confirms the open run's correction that the condition is instantaneous (zero only AT a new high), not persistent.**
+- **UNH bar $1.4849 = 0.9 x ($426.3999 - $424.75)** — same identity on the second name. Moot on both; nothing asks for a replacement.
+
+### ⚠ FINDING 4 — TRANSMISSION: THE FAVOURABLE MORNING READING WAS THE NOISE
+- **Full session: XLE -1.3350% vs USO +1.6395% = -81.43% transmission.** The open run could not say which of **+14.77% (09:41)** or **zero-to-negative (09:50)** was noise. **It was the +14.77%.**
+- **SIXTH instance of "crude rises, XLE ignores it" — and the first where XLE fell outright by more than crude rose.**
+- **Uncaptured spread: USO ITD +24.3074% vs XLE ITD +5.7082% (both off 8/18 SIP closes $130.66 / $63.68) = 18.5992 pts — WIDEST of the phase, +0.9468 pts from the open run's 17.6524.**
+- **XOP ITD +5.9887% vs XLE +5.7082% = 0.2805 pts** — XOP ahead a 56th session but the **thinnest margin of the phase.**
+
+### ⚠ FINDING 5 — A THIRD FALSE US-IRAN DE-ESCALATION SCARE, AND THE TOOL NAMED A WIRE THAT HAS NO URL
+- Query 1 (wire-and-date restricted) returned: **"US-Iran ceasefire talks: YES — October 22, 2026. Reuters reported that Tehran had received a US ceasefire proposal."**
+- **Its own citations contain ZERO reuters.com URLs** — they are **thedailystar.net (expressly relaying *Axios*)** and **businessday.ng**.
+- Query 2, restricted to **reuters.com, apnews.com, bloomberg.com, afp.com, state.gov, whitehouse.gov, defense.gov**, returned verbatim: **"NO QUALIFYING WIRE URL FOUND."**
+- **⚠ THE LABEL SAID REUTERS; THE DOMAIN TEST SAYS AXIOS-VIA-AGGREGATOR.** This story **would fire XLE exit trigger (a) on 19.97% of equity.** **Rule 14 bars acting. NOT ADOPTED.** Third such scare in the phase; rule 14 was written after the second.
+- **⚠ THE TAPE REFUTES IT INDEPENDENTLY:** the aggregator headline reads *"Oil slips below $90 on fresh US-Iran ceasefire talks"* while **USO is +1.6395% on a 0.0370% spread and WTI ~$99.20. Crude ROSE.** Two independent methods, same verdict.
+
+### ⚠ FINDING 6 — THE WIRE-GRADE NEWS IS ESCALATION, AND ITS GRADE IS STATED NOT LAUNDERED
+- **AP, dated 2026-10-22: Iranian state television said SEVEN oil tankers were struck or hit naval mines in the Strait of Hormuz overnight** — 4 allegedly targeted while transferring oil, 3 immobilised by mines; plus an Iranian threat to target US bases if the US permits transits elsewhere in the strait.
+- **⚠ AP EXPRESSLY DECLINES TO VERIFY: "If verified, it would be the largest single-day number of vessels damaged" since the war began; no casualties or vessel flags given.** Correct grade: **wire-carried but wire-UNVERIFIED, relaying Iranian state media / IRGC navy.** Stronger than the 10/21 UKMTO item alone; weaker than confirmation.
+- **Bloomberg (10/21, upd. 10/22): Iran urges US to lift blockade "as threats grow"** — deadlock, not ceasefire. **Reuters (10/18): Iran urges US to accept *Iran's* Hormuz proposal** — an Iranian offer, four days stale, not a US ceasefire proposal.
+- **Supports the XLE hold, asks for no action -> logged, not traded on. Rule 14's bar is one-directional and is not invoked to dismiss it.**
+
+### ⚠ FINDING 7 — LEI BEAT, AND IT IS THE FIRST NON-NEGATIVE LEI PRINT IN THE LOG
+- **Conference Board US LEI, September 2026: 99.6 (2016=100), UNCHANGED from August = 0.0% m/m. Released 2026-10-22 10:00 ET. Forecast -0.2%. A 0.2-pt beat.**
+- Pairs with **194k initial claims** (6k under consensus, three-month low): **two growth-constructive surprises in one session, mildly hawkish into the 10/27-28 FOMC.** FOMC blackout live since 10/17.
+
+### ⚠ FINDING 8 — THE TECH ROUT EXTENDED AND DEEPENED
+10/21 SIP close -> 13:08 ET, against the open run's 09:50 readings:
+- **META -7.1912%** (was -6.4930%) | **LRCX -11.3569%** (was -10.2949%) | **NVDA -4.3700%** | **TSLA -2.4144%** (was -2.4698%) | **MSFT -1.6305%** | **IBM -1.1592%** (RECOVERED from -2.9587%) | **AAPL +0.5552%** | **CSX +7.1591%** (was +6.2293%)
+- **XLK -3.3362% on the day; 4th of eleven at -2.0635% on the 52-day window, 1.0253 pts BEHIND SPY — a second consecutive session below the index.**
+- **The book's zero-tech position is paying (XLV +0.7712% vs XLK -3.3362%) — and this run repeats its predecessors' judgement rather than claiming the win: same concentration that cost ~0.55 pts on 10/21, sign reversed. NOT SKILL.**
+
+### ⚠ FINDING 9 — VLO IS DOWN 4% ON ITS OWN BEAT DAY; THE REJECTION IS PAID FOR TWICE
+- **VLO -4.0229%** (gapped +0.6411%, then gave up 4.66 pts intraday).
+- Pre-market called it *"the first candidate that passes every test the bot applies"*; the open run corrected that to **0.77:1 R:R vs the 2:1 gate** and an **11.12% quote vs rule 13**. **The tape has now paid the correction.**
+- **Recorded because this log has consistently recorded the rejected names that went UP.** VLO's reported refining numbers remain the strongest new fact for the XLE thesis, unchanged by its share price.
+
+### Sector momentum — 52 SIP closes to this session (window 2026-08-11..2026-10-22), rule 9
+| # | ETF | 52-day | vs SPY |
+|---|---|---|---|
+| 1 | **XLE** | **+10.4792%** | **+11.5174** |
+| 2 | **XLV** | **+7.3269%** | **+8.3652** |
+| 3 | XLP | +5.5674% | +6.6056 |
+| 4 | XLK | -2.0635% | -1.0253 |
+| 5 | XLF | -2.2405% | -1.2023 |
+| 6 | XLU | -2.3951% | -1.3569 |
+| 7 | XLC | -3.5230% | -2.4848 |
+| 8 | XLB | -3.5781% | -2.5399 |
+| 9 | XLY | -3.5810% | -2.5428 |
+| 10 | XLRE | -4.0381% | -2.9999 |
+| 11 | XLI | **-10.7162%** | -9.6780 |
+| — | SPY | -1.0382% | — |
+
+**Both held sleeves beat the index. Rule 9 positive on both legs; rule 10 silent** (Health Care still carries 1 failed trade, XLV 8/31).
+
+### ⚠ BENCHMARK — NEW PHASE BEST, THIRD CONSECUTIVE WIDENING, WORSE ATTRIBUTION THAN THE OPEN
+- **Book +1.0447% vs SPY -1.7750% (ref $776.34, last $762.56) = +2.8196 pts AHEAD.**
+- Sequence: **+2.2521 -> +2.0521 -> +1.7446 -> +1.7309 -> +1.1800 -> +1.4418 -> +2.3395 -> +2.8196.**
+- **⚠ NOT SKILL, AND MORE EXTREME THAN AT THE OPEN: on the day SPY -1.3621% vs book +0.0213% — the index fell SIXTY-FOUR TIMES further than the book rose (16.7x at the open run). The lead is manufactured by 64% cash during an index selloff — the mirror image of the rule-2 breach, not a vindication of it.**
+- **⚠ CASH DRAG BILLED A SECOND CONSECUTIVE SESSION: mix at 100% deployment +0.0846% (55.5548% XLE at -1.3350%, 44.4452% UNH at +1.8590%) vs actual +0.0213% -> drag COST 0.0633 pts.** Running: **... -> (-0.0811) -> (+0.1046) -> (+0.3340) -> (+0.0509) -> (-0.0922) -> (-0.0633).** **Both billing sessions are sessions the book made money; every helpful reading came on a session it lost.**
+
+### ⚠ RULE 2 — 48th SESSION UNDER THE FLOOR, COUNT HELD NOT ADVANCED
+- **35.9401%, $39,467.99 short of the $75,783.49 floor, UNCURED.**
+- **`calendar 2026-08-17 2026-10-22` returns 48 trading dates inclusive, and this is the THIRD run of that same session** (pre-market, open, midday). **Incrementing would re-commit the once-per-RUN error the 10/16 pre-market caught and corrected down by four. Honoured by NOT incrementing.**
+
+### Risk factors — today
+- **⚠ THE UNCAPTURED SPREAD IS AT ITS PHASE WIDEST (18.5992 pts) AND IT WIDENED ON THE WORST MECHANISM: crude +1.64%, XLE -1.34%, transmission -81.43%.**
+- **⚠ RULE 3's CURE HAS $33.93 OF MARGIN — it un-cures on a +0.1682% XLE move with UNH flat.**
+- **⚠ A HEADLINE THAT WOULD FIRE AN EXIT TRIGGER ON 19.97% OF EQUITY WAS MIS-ATTRIBUTED TO REUTERS BY THE RESEARCH TOOL ITSELF. Caught by domain, not by label.**
+- **The wire-grade escalation item (AP, 7 tankers) is wire-UNVERIFIED and rests on Iranian state media. It supports the hold; it is not confirmation.**
+- **UNH's forward case still rests on one dated print (10/13) and analyst action whose dates conflict three ways.** Today's +1.8590% and a new in-trade high are constructive but are one session.
+- **Decision 3's gap risk: 35.94% across two names, unhedged, trigger (c) never authorized.**
+- **⚠ `daytrade_count` and `pattern_day_trader` ABSENT a 16th consecutive run.** Recorded as ABSENT, NOT asserted as 0; no day trade contemplated.
+
+### Owner decisions — 6 carried, 0 answered, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — ~63 sessions. Leg (b) UNANSWERED.** 35.9401%, 48th session. **NOT TESTED this run — midday is not the entry seat; no screen was run and 3 slots are reported, not spent.** Slots expire TOMORROW, a fourth consecutive week.
+2. **Second energy leg — ~65 sessions. FORBID, unchanged, UNTESTED** (no second leg contemplated). **⚠ Its withdrawn price tag is further discounted: VLO, the name that carried it, is -4.02% on its own beat day.**
+3. **Gap risk — ~70 sessions. LIVE** at 35.94% unhedged across two names.
+4. **20% cap — entry-only or continuous? ~65 sessions. ⚠ BINDS NO ORDER AT THIS READ — the first such reading since the 10/16 pre-market, breaking a 15-run streak, because rule 3's breach CURED at $33.93 under the cap.** Reported as a change in circumstance, **not** a resolution: finding 1 shows the remedy walked SELL 5 -> 4 -> 3 -> 0 in three and a half hours, which sharpens rather than retires the open run's point that a continuous reading implies near-continuous trading against rule 11.
+5. **XLE: close, or hold on a defined review? — SIXTY-EIGHTH consecutive run raising it.** Price leg **DISARMED a 30th reading: USO $162.42 vs $146.03 = +11.2238% ABOVE.** Tally unchanged: **six firings, twelve named opens, ZERO executions.**
+   - **FOR the hold:** sector 1st by 11.5174 pts, +5.8130% from entry, 13.7778% clear of its cut line, a stop that has only ever risen, the EIA draw on a below-average base, VLO's reported refining numbers, **and the escalation side gained wire material this session (AP 7-tanker, Bloomberg deadlock) while the de-escalation side failed the domain test outright.**
+   - **AGAINST:** uncaptured spread **18.5992 pts, phase widest, widened on crude's strength**, **-81.43% transmission**, XOP still ahead, the waiver in force to ~12/16.
+   - **VERDICT: the bot may self-authorize NEITHER branch and did not.**
+6. **Rule 14's source check — verify by URL DOMAIN rather than by the tool's label? ELEVENTH run.** **⚠ LEG (a) GETS ITS DECISIVE CASE, AND IT IS THE EXACT CASE THE RULE WAS WRITTEN FOR: the tool reported "Reuters" for a US-Iran ceasefire story with ZERO reuters.com URLs, on a headline that would have fired an exit trigger on the account's largest position. The domain test caught it in one query; the label test would have passed it.** Joined to the 10/22 open run's finding that the same failure appears in **price** data, leg (a) now has failures in both news and quotes. **Leg (b) untested.** **Handed over, not adopted — the bot does not amend rule 14 on its own.**
+
+### Handoffs (rule 15)
+- **⚠ ALL SEVEN HANDOFFS FROM THE 10/22 OPEN RUN ((i)-(vii)) ARE DISCHARGED IN THIS ENTRY. Nothing dropped.**
+- **⚠ TO THE 10/22 EOD / DAILY-SUMMARY RUN, BY NAME:** (i) **report whether XLE takes out $68.78 by the close for an 11th ratchet, and whether rule 3's cure SURVIVES the close — margin $33.93, un-cures at XLE $67.3631 (+0.1682%) with UNH flat**; (ii) **report closing transmission and whether 18.5992 pts is a new CLOSING record for the uncaptured spread**; (iii) **re-run the ceasefire story against the seven wire domains — if a genuine Reuters/AP/Bloomberg/AFP item dated 10/22 or later appears, the de-escalation leg becomes LIVE on XLE exit trigger (a) and this run's refusal must be reversed**; (iv) **report whether AP or any wire INDEPENDENTLY VERIFIES the seven-tanker claim it expressly declined to verify**; (v) **report whether the tech rout extends into the close and whether XLK's 1.0253-pt deficit to SPY widens**; (vi) **file the 10/22 EOD snapshot.**
+- **Daily-summary has failed THIRTEEN consecutive sessions and is owed the 10/22 EOD snapshot — a FOURTEENTH failure if it does not file.**
+- **⚠ WEEKLY REVIEW DUE TOMORROW, Friday 2026-10-23, covering 10/19-10/23; last filed week ending 10/16 (WEEKLY-REVIEW.md line 701). No lapse to make up. Handed to tomorrow's review run by name and date.**
+- **⚠ TO THE OWNER, NOT A HANDOFF: the one-line `snapshot` feed fix in `scripts/alpaca.sh` is STILL RECOMMENDED AND STILL NOT APPLIED, a third consecutive session.** This run adds no new confirmation because it took every mark from `bars` and never consulted `snapshot` — **which is itself the workaround the fix would retire.**
+- **All six owner decisions carry forward into every subsequent run's notification until answered or withdrawn.**
+- **Persistence (rule 12): this run files to BOTH RESEARCH-LOG and TRADE-LOG and pushes via `scripts/gitpush.sh` in the same run.**
+
+### DECISION: HOLD BOTH. ZERO ORDERS.
+**(1)** No cut — rule 5 cushions **+18.4103% / +13.7778%**, and both session LOWS clear their cut lines (UNH $417.13 = +16.2860%, XLE $66.285 = +12.1468%). **(2)** No stop tightened — rule 6's +15% gates not due (+10.1220% / +5.8130%); the only stop changes this session were the orders' own automatic ratchets. **(3)** No rule-3 trim — **the breach is CURED, SELL 0, and decision 4 binds no order for the first time in fifteen runs.** **(4)** No exit on thesis — **the one story that would fire a trigger is a wire-attribution failure refuted by both the domain test and the crude tape, and the session's wire-grade news is escalation, which supports the hold.**
