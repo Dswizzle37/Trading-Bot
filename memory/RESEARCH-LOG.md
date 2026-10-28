@@ -14609,3 +14609,109 @@ Entered 10/13 on the Q3 2026 beat-and-raise — revenue $112.69bn, adjusted EPS 
 **(3)** **No rule-3 trim.** Breach $437.50, remedy SELL 7 a 16th reading, **but `qty_available` is 0, a trim unstops 20.43% of equity against rule 4, a replacement trail prices DOWN to $61.8077 against rule 7, and holding $62.8740 needs 8.4473% which rule 6 gates at +15% while XLE is at +8.0558%. Decision 4 is the owner's and the routine's own text specifies a cost basis on which XLE is compliant.**
 **(4)** **No cut, no stop tightened, no stop touched by hand, no hedge.** Rule 5 cushions **+16.1890% / +13.4342%**; rule 6's gates not due; rule 7 clear both; no ratchet fired. **The hedge is priceable for the first time in five runs and was NOT placed — trigger (c) is unauthorized and that is not self-grantable, into FOMC or otherwise.** Rule 10 clean on both sectors.
 **⚠ THE THREE FACTS THAT CUT AGAINST THIS HOLD ARE FILED FIRST-CLASS AND NOT NETTED AWAY: a Reuters-dated draft agreement to END THE WAR is a higher-grade de-escalation item than any of the eleven prior scares; UNH's whole peer group was sold on good numbers, which is the first sector-level case against that sleeve; and the lead is down to +1.4713 pts, 59.73% of its peak surrendered, while 64% of the book sits in cash through FOMC day.**
+
+## Oct 28 — Market-Open Execution (Day 53, Wednesday, 09:43-09:52 ET)
+
+**Market OPEN** (`clock` `is_open:true`, timestamp 2026-10-28T09:43:27-04:00, next close 16:00 ET). **Equity $100,930.45 | Cash $64,729.15 | Deployed 35.87% | Phase +$930.45 (+0.9305%).** `daytrade_count` **ABSENT** from the `account` response for a second consecutive run — PDT state not readable, recorded as not obtainable. **PDT does not bind regardless: equity $100,930 is 4.04x the $25,000 threshold and the order below is a buy-to-hold, not a day trade.**
+
+| Ticker | Shares | Entry | Live mark | Day | Unrealized P&L | Stop (hwm) | % equity |
+|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $68.305 (mid, 0.0146% wide) | **-0.015%** | +$1,424.91 (+7.4726%) | $62.8740 (10% trail, hwm $69.86) | **20.2910%** |
+| UNH | 38 | $385.71 | $413.590 (mid, 0.1790% wide) | **+0.78%** | +$1,059.44 (+7.2281%) | $383.8950 (10% trail, hwm $426.55) | 15.5724% |
+
+**Both position quotes ACCEPTED on width this run** (0.0146% / 0.1790%, `t` 13:44:01-13:44:02Z) — a change from the pre-market, which rejected both on width (5.40% / 10.98%) and fell back to bars. **SIP 1-minute bars stop at 13:29Z (pre-open) and were NOT used for marks; the live quotes supersede them per rule 13.**
+
+### FINDING 1 — ⚠ EXIT TRIGGER (a) IS NOT MET, AND THE GOVERNING COUNT IS NO LONGER 19 DAYS STALE — HANDOFF (ii) DISCHARGED
+- Trigger (a) fires on Hormuz transits **RECOVERING to ~40/day sustained two sessions**. Counts retrieved for **2026-10-28**: **~2 visible commodity vessels/day** on the latest reported day (Kpler data) and **10 visible transits Wednesday against a 10-day average of ~15**. Pre-war baseline **~125/day**.
+- **The count is 2-10 against a 40 trigger. Trigger (a) is not met by a factor of 4-20x, and the Strait remains severely disrupted.** The pre-market's governing count was 19 days stale (10/07); it is now same-day.
+- **⚠ SOURCE GRADE STATED PLAINLY, NOT GLOSSED: the carriers are `rmb.reuters.com` (a republishing subdomain this book has rejected twice) and `thedailystar.net` (a republisher, not a wire). Under rule 14 these do NOT clear the bar.** It does not change the decision and here is why: **rule 14 is a bar on ACTING. These items point AWAY from the trigger, so the hold they support requires no action and needs no clearance.** The wire-cleared item that *does* clear the bar — **Bloomberg 2026-10-28, US tells ships to avoid Hormuz** — points the same direction. **Both source tiers agree; no action is taken on the ungraded ones.**
+- **No ceasefire or deal is SIGNED or AGREED as of 10/28.** Reuters 10/28 reports Qatari mediators **presented** Iran a draft (7-day confidence-building sequence, Tehran yet to respond; timeline not begun). **Presented ≠ agreed.** A separate 10/19-dated two-week US-Iran truce report surfaced via a republisher only and is **NOT adopted** — republisher sourcing, and it is superseded by the 10/28 record treating the war as ongoing.
+
+### FINDING 2 — ⚠ THE FIRST-PARTY RTH TAPE CONFIRMS THE PRE-MARKET'S ESCALATION READ; HANDOFF (i) DISCHARGED — **BUT XLE DOES *NOT* FOLLOW USO, AND THAT IS NEW**
+- **USO +1.8608%** on a first-party `latestTrade` ($166.67 at 13:44:07Z vs prev close $163.625). The pre-market's +1.8060% pre-market read is **CONFIRMED in RTH, not refuted** — handoff (i) asked exactly this and the answer is yes.
+- **⚠ BUT XLE IS FLAT: `latestTrade` $68.22 vs prev close $68.23 = -0.0147%.** Handoff (i)'s second half asked whether XLE follows USO. **It does not.** Oil up 1.86%, the energy equity sleeve unchanged.
+- **This divergence is filed as a NEGATIVE for the XLE sleeve and is NOT netted against finding 1.** XLE also **fell 2.1% on 10/27 while XLK rose 1.7%** — energy equities sold on a day crude held. **The disruption thesis is intact on the commodity; the equity proxy has stopped paying for it on a 2-session read.** That is the mechanism the carried structural objection to trigger (a) predicted: the trigger counts vessels while the position reprices on something else.
+
+### ⚠ FINDING 3 — THE CANDIDATE SCREEN PRODUCED A **QUALIFYING ENTRY**, THE FIRST IN 15 SESSIONS: GEHC, AND THE DECIDING EVIDENCE IS THE TAPE
+- **Catalyst VERIFIED FIRST-PARTY — this is the change from the pre-market, which rejected GEHC as "catalyst NOT established."** GE HealthCare reported **Q3 2026 on 2026-10-28** (Businesswire release `businesswire.com/news/home/20261028662941/en/` + **8-K on sec.gov**, `data/1932393/000193239326000058/gehc-20261022.htm`): **adj EPS $1.34 vs $1.20 consensus (+$0.14, +11.67%); revenue $5.513bn vs $5.35bn consensus (+$163m); FY26 adj EPS guidance RAISED to $4.95-$5.05 from $4.85-$4.95** (midpoint $4.90 -> $5.00). **Beat AND raise, company-issued, dated today.**
+- **Negative-news sweep run specifically** (FDA recall, warning letter, DOJ/SEC action, guidance cut, litigation, executive departure, dated 10/27-10/28): **NONE IDENTIFIED.** Reuters' GEHC page carries the tariff/profit-warning item as *earlier* coverage, not 10/27-10/28.
+- **⚠ THE TAPE IS THE REASON THIS ONE PASSES WHERE ELV AND HCA FAILED, AND IT IS A DIRECT COMPARISON ON THE SAME TEST:**
+
+| Name | Catalyst | Open | Live | **Move FROM THE OPEN** | Verdict |
+|---|---|---|---|---|---|
+| **GEHC** | 10/28 beat + **raise**, first-party | $76.00 | **$75.61** | **-0.5132%** | **HOLDING the gap — catalyst BOUGHT** |
+| HCA (10/27) | beat + guidance to upper half | $480.55 | $449.915 cl | **-6.3752%** | faded — catalyst SOLD |
+| ELV (10/27) | beat + FY raise to >=$29 | — | $421.45 | **-2.2998% on day** | catalyst SOLD |
+
+- **GEHC is -0.51% from its open against HCA's -6.38%. That is a 5.86-pt difference on the identical test, and it is why the managed-care de-rating of pre-market finding 5 is NOT read across to it: GEHC is imaging/medtech, a DIFFERENT sub-industry from managed care, and the tape says so independently of the taxonomy.**
+- **⚠ EVERY OTHER PRE-MARKET GAP FADED, AND ALL BUT GEHC ARE UNTRADEABLE ON SPREAD — measured live, not asserted:** APH **+6.51% -> +2.91%** (width **3.352%**), MAS **+7.76% -> +3.61%** (width **6.230%**), PPG **+5.78% -> +2.35%** (width **5.578%**), UCTT **+14.49% -> +7.05%** (width **16.291%**, untradeable). **GEHC is the only name of the five whose gap held AND whose book is usable.** Energy alternatives screened and rejected: COP +0.47% (clean 0.161% book, **no company catalyst**), EOG -0.00% (width 8.601%), SLB -1.47%.
+- Handoff (vii) **honoured**: ELV / HCA / CNC **not re-screened** — no new catalyst for any of the three.
+
+### R:R — STATED ON **BOTH** BASES AS HANDOFF (iv) REQUIRED, AND THE SPLIT IS REPORTED AGAINST THIS RUN'S OWN INTEREST
+Entry basis **$76.00 limit** (see execution note). Risk unit = **rule-5 -7% manual cut line** ($5.32/sh), the operative stop in this book; the rule-4 10% trail is the catastrophic backstop. **This is the UNH 10/13 convention, not a new one.**
+
+| Reward basis | Level | Reward | Risk | R:R | Verdict |
+|---|---|---|---|---|---|
+| **252-day high, CLOSE basis** (used) | **$88.16** | $12.16 | $5.32 | **2.2857:1** | **PASSES** |
+| 252-day high, intraday | $89.77 | $13.77 | $5.32 | 2.5883:1 | passes |
+| **Analyst mean, post-earnings** | **$82.70** | $6.70 | $5.32 | **1.2594:1** | **FAILS** |
+| 252-day high close / **10% trail as risk** | $88.16 | $12.16 | $7.60 | **1.6000:1** | **FAILS** |
+
+- **⚠ THE VERDICT TURNS ON OWNER DECISION 1 LEG (a), WHICH IS PROVISIONALLY ANSWERED (252-day high) AND EXPLICITLY OVERRULABLE. On analyst consensus this trade FAILS 2:1 at 1.2594:1 and that is stated, not buried.** The 252-day-high basis is the one **named in advance on the UNH 10/13 entry and never overruled** — it is this book's operating basis, and the alternative to using it is that no entry is placeable at all, which is the 53-session rule-2 breach. **The conservative CLOSE basis ($88.16) is used rather than the intraday high, and the consensus mean did RISE post-earnings from ~$78 to $82.70.**
+- **The consensus failure is answered with SIZE, not with a louder argument — see gate checks.**
+
+### GATE CHECKS — all five from `routines/market-open.md` STEP 3, verified live BEFORE the order
+1. **Positions after trade: 3 <= 6** ✓
+2. **Trades this week: 0 used -> this is trade 1/3** for the week of 2026-10-26..10-30 ✓
+3. **Position cost $10,032.00 = 9.9395% of $100,930.45 equity <= 20%** ✓ — **deliberately HALF the cap**
+4. **Catalyst documented in today's RESEARCH-LOG** ✓ — **and the honest version: the 08:47 pre-market listed GEHC among names "rejected as unverified, NOT screened on merit." This run verified it first-party (Businesswire + 8-K). The rejection was for want of sourcing and the sourcing now exists; no gate was loosened.**
+5. **PDT: `daytrade_count` not obtainable, but equity is 4.04x the $25k threshold and this is a buy-to-hold** ✓
+- **Rule 1 (NO OPTIONS):** a common stock, bought outright ✓
+
+### WHY 132 SHARES AND NOT THE 20% ALLOWANCE — the cautions are priced into size
+- **The trade is defensible on this book's operating basis and FAILS on consensus.** A 9.94% sleeve is the honest expression of that split: it takes the trade without betting the cap on an unanswered decision.
+- **FOMC decision 2:00 pm ET today + Warsh presser 2:30 pm**, then **MSFT + GOOGL after the close**. Entering 4h12m ahead of a statement-risk event argues for restraint, not for standing aside on a verified catalyst.
+- **Health care goes to ~25.5% across two names (UNH 15.57% + GEHC 9.94%)**, and **rule 10 already counts 1 failed health-care trade (XLV, 8/31) — the UNH entry recorded this as "the sector's second and last chance."** A third sleeve in a sector on its last chance is sized down, not up.
+- **Still cures only part of rule 2:** deployment **35.87% -> 45.81%**, **$29,392 short of the $75,698 floor.** The breach is **reduced, not cured**, and remains owner decision 1. Two trade slots and three position slots survive.
+
+### RULE CHECKS (live RTH)
+- **Rule 2 — BREACHED, 53rd consecutive session**, 35.87% pre-trade / **45.81% post-trade**; **$29,392 short of the floor.** **First material step in 15 sessions and the fifth consecutive unused week is now BROKEN.**
+- **Rule 3 — market-value breach LIVE at $304.09** (XLE 20.2910% of equity vs $20,186.09 cap); **remedy walks to SELL 5, the 17th reading. Cost basis $19,066.60 = 18.8907% — COMPLIANT**, and STEP 3 gates on cost. **NOT CURED, NOT PLACED: `qty_available` is 0 on both names (all 300 XLE encumbered by `ef0c1da0`), so a trim must first cancel the stop and leave 20.29% of equity unstopped against rule 4; a replacement 10% trail prices to $61.4745, DOWN from $62.8740, against rule 7's absolute "never"; holding $62.8740 needs a 7.95% trail, which rule 6 authorizes only at +15% while XLE is at +7.47%. Decision 4 is the owner's — handoff (iii) honoured.**
+- **Rule 4 — COMPLIANT and will remain so.** Both existing positions carry a real GTC 10% trailing stop (`status:new`, untouched); **a third is placed on GEHC immediately after fill.**
+- **Rule 5 — clear all.** Cushions to the -7% cut line: **XLE +13.4716%** ($59.1064), **UNH +13.2691%** ($358.7103).
+- **Rule 6 — not due.** XLE +7.4726% (+9.92% at hwm), UNH +7.2281% (+10.59% at hwm). Neither has touched +15%.
+- **Rule 7 — clear all.** Stops sit **7.9511%** (XLE) and **7.1797%** (UNH) below the live marks, both outside 3%. **No stop lowered, no ratchet fired, no stop touched by hand.**
+- **Rule 8 — 1 new trade this week after this order (1/3).**
+- **Rule 9 — carried from this morning's fresh 55-day recompute** (SIP closes 2026-08-11 -> 2026-10-27): **XLE 1st +11.9481%, XLV 2nd +6.6484%**, XLP +2.9047%, XLK +1.8271%, SPY -0.1168%. **Both held sleeves and the new GEHC sleeve sit in sectors that beat the index — rule 9 positive on all three legs.** ⚠ **But GEHC's own 55-day is only +3.9312%, weaker than its sector; and XLE gave back 2.9037 pts of sector lead in one session, with finding 2 showing the equity sleeve no longer tracking crude. Both are recorded as negatives.**
+- **Rule 10 — silent but narrowing.** Energy 0 failed trades; **health care 1 (XLV, 8/31) — two consecutive required, and this entry is the sector's second and last chance.**
+- **Position-sum tie:** pre-trade position `market_value`s $36,174.52 vs `account` `long_market_value` $36,174.52 — **exact tie, second consecutive run clean.**
+
+### BENCHMARK — WIDENED, FIRST TIME IN SEVEN READINGS, AND **NOT** CALLED A TURN
+- **Book +0.9305% vs SPY -0.6999%** (phase ref $776.34, accepted mid **$770.905** on a **0.0688%** spread) = **+1.6304 pts AHEAD.**
+- Sequence: +3.6532 -> +3.5242 -> +3.0072 -> +2.9097 -> +2.5629 -> +2.1626 -> +2.1817 -> +1.6572 -> +1.4713 -> **+1.6304.**
+- **WIDENED +0.1591 pts.** ⚠ **Handoff (v) asked explicitly whether a widening holds for two readings before a turn is called. This is reading ONE. NO TURN IS CALLED.** The mechanism is the index, not the book: SPY gave back its pre-market +0.2533% to -0.6999% while the book's own mix is roughly flat. **A one-reading widening driven by the benchmark falling is not the book winning.**
+
+### Owner decisions — 6 carried, 0 answered, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar — leg (b) UNANSWERED, ~68 sessions.** ⚠ **MATERIALLY CHANGED: leg (a)'s provisional answer went from load-bearing to LOAD-CARRYING — a real 132-share order was placed on it this run, and the same trade FAILS 2:1 on consensus (1.2594:1). The owner's unsigned basis is now in the book at 9.94% of equity.** 53rd session under the floor pre-trade; **45.81% post-trade, $29,392 still short.** Still needed: **sign the R:R target basis, and say whether a full-allowance week is authorized.**
+3. **Hedge trigger (c) — never authorized.** **VIX 17.52 (Cboe close dated 10/27) still the governing level; the hedge remains PRICEABLE and was NOT placed. FOMC is 4h12m away with 45.81% directional exposure post-trade — up from 35.87%, which makes this decision costlier, not cheaper.** The blocker is the authorization, not the data.
+4. **20% cap — entry-only (cost) or continuous (market value)? ~70 sessions.** Market value **20.2910%** (breach **$304.09**, remedy SELL 5, **17th reading**) vs cost **18.8907%** (compliant). **Every cure path still breaches rule 4, 6 or 7. The owner must say which rule yields.**
+5. **XLE: close, or hold on a defined review? — 79th consecutive run.** **FOR:** sector 1st (+11.9481%, 12.06 pts clear of SPY); +7.4726% from entry; 13.47% clear of its cut line; twelve ratchets, zero lowered; **trigger (a) not met by 4-20x on a SAME-DAY count (finding 1)**; no deal signed; **USO +1.8608% confirmed in RTH.** **AGAINST:** **XLE flat while USO +1.86%, and -2.1% on 10/27 against XLK +1.7% — the equity sleeve has stopped tracking its own thesis on a 2-session read (finding 2)**; 2.9037 pts of sector lead gone in one session; rule 3 breach live a 17th reading with every cure path blocked; the 10/28 Reuters draft-deal item remains the highest-grade de-escalation item yet seen. **Neither branch self-authorizable.**
+6. **Rule 14's source check — adopt domain + substance + metadata-date + BASIS? 18th run.** ⚠ **A FOURTH SESSION, A FOURTH NON-CANONICAL HOST: `rmb.reuters.com` returned AGAIN as the carrier for the Hormuz transit count — the very number that governs exit trigger (a). Four sessions, `www-pp.afp.com` / `uat.apnews.com` / hex-injected `reuters.com` / `rmb.reuters.com`, each carrying trigger-(a)-relevant material. The registrable domain passed in all four.** This run handled it by noting that the ungraded sources pointed AWAY from action and so required no clearance — **that reasoning works only in one direction and will NOT work the day such a source points toward a trigger.**
+- **All six carry forward into every subsequent run's notification until answered or withdrawn.**
+
+### Tooling / handoffs to the next run (MIDDAY, 13:08 ET)
+- (i) **THE MIDDAY RUN READS BEFORE THE FOMC DECISION. The 2:00 pm statement and the 2:30 pm Warsh presser will NOT be in its data. State that explicitly rather than implying a post-FOMC read.** Post-FOMC is the daily-summary run's.
+- (ii) **NEW TOP ITEM — GEHC is a live 9.94% sleeve entered today at $76.00 limit. Verify on the midday read: (1) the 10% trailing stop `status:new` and its hwm/stop_price; (2) whether GEHC held its open ($76.00) or began an HCA-style fade from it — the entry rests on it HOLDING; (3) its position `market_value` against the 20% cap.**
+- (iii) **Finding 2 is the item to re-measure and it cuts at XLE: does XLE still refuse to follow USO on a third session?** Two sessions of divergence is a read; three with crude up is the strongest numeric case decision 5 has ever had on the AGAINST side.
+- (iv) **Do NOT place the rule-3 trim.** Breach $304.09, remedy SELL 5 a 17th reading; decision 4 unanswered, all three cure paths blocked.
+- (v) **Lead is +1.6304 pts and WIDENED for the first time in seven readings. Report the next reading against this number. A turn requires TWO consecutive widenings — this is one, and it came from SPY falling, not the book rising.**
+- (vi) **The 8:30 ET advance trade-in-goods and inventories actuals were still NOT obtained this run** (consensus trade -$132.6bn). **Retrieve at midday or record as MISSED — do not treat the consensus as the print.** Carried from 10/28 pre-market handoff (vi), undischarged.
+- (vii) **Do NOT re-screen ELV / HCA / CNC / APH / MAS / PPG / UCTT absent a NEW catalyst.** All seven are screened and rejected for 10/28 on tape or spread; a second day of drift is not a catalyst.
+- **Weekly review: week ending 2026-10-23 filed (WEEKLY-REVIEW.md line 803). Next due Friday 2026-10-30 — carry finding 2 (XLE/USO decoupling) and the GEHC entry into it. Nothing owed to that class.**
+
+### DECISION: **BUY GEHC 132 @ $76.00 limit day + 10% trailing stop GTC. HOLD XLE AND UNH. NO TRIM, NO HEDGE, NO STOP TOUCHED.**
+**(1)** **ONE NEW ENTRY — GEHC 132 shares, 9.94% of equity, the first entry in 15 sessions.** Catalyst **verified first-party** (Businesswire + 8-K, 10/28): beat **and** raise. **The tape is the deciding evidence: -0.51% from its open where HCA faded -6.38% and ELV sold -2.30% on the same test.** Only one of five pre-market gaps that both held AND has a usable book. R:R **2.2857:1 on the 252-day close high, 1.2594:1 on consensus — the split is reported and answered with HALF the size cap.** All five STEP 3 gates passed live; no gate loosened.
+**(2)** **No exit on XLE thesis.** **Exit trigger (a) is not met by 4-20x on a same-day transit count (2-10 vs ~40), and no ceasefire or deal is SIGNED — presented is not agreed (finding 1).** **But finding 2 is filed first-class against the hold, not netted away: XLE is flat while USO is +1.86% in RTH, and fell 2.1% on 10/27 against XLK +1.7%. The commodity thesis holds; the equity proxy has stopped paying for it.** Decision 5 unanswered — neither branch self-authorizable.
+**(3)** **No rule-3 trim.** Breach $304.09, remedy SELL 5 a 17th reading; `qty_available` 0, a trim unstops 20.29% against rule 4, a replacement trail prices DOWN to $61.4745 against rule 7, and holding $62.8740 needs 7.95% which rule 6 gates at +15%. Decision 4 is the owner's.
+**(4)** **No cut, no stop tightened, no stop touched by hand, no hedge.** Rule 5 cushions +13.47% / +13.27%; rule 6 gates not due; rule 7 clear all. **The hedge is priceable and was NOT placed — trigger (c) is unauthorized and is not self-grantable, into FOMC or otherwise, and post-trade exposure is HIGHER at 45.81%.**
+**⚠ THE THREE FACTS THAT CUT AGAINST THIS RUN, FILED FIRST-CLASS: GEHC's 2:1 pass depends on an owner basis that has never been signed and the trade FAILS on consensus; XLE has decoupled from the crude thesis that justifies holding it; and the benchmark lead "widened" only because SPY fell, which is not the book winning. The entry is sized at half the cap precisely because the first of these is true.**
