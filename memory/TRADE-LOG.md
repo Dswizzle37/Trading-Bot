@@ -1785,3 +1785,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **Benchmark: book +0.9338% vs SPY -0.6221% (phase ref $776.34, accepted mid $771.51 on a 0.0052% spread) = +1.5559 pts AHEAD — NARROWED from +1.6749 at the open, so this morning's widening is NOT confirmed and NO TURN IS CALLED.** A turn needs two consecutive widenings; this is a reversal after one. **And it narrowed on the worse of the two mechanisms: SPY ROSE (-0.6999% → -0.6221%) while the book FELL (+0.9748% → +0.9338%) — both legs moved against the lead.** Sequence: **... +2.1817, +1.6572, +1.6749, +1.5559.**
 
 **⚠ ALL SIX OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15); they stay in every notification until answered or withdrawn. TWO are materially changed by this run: decision 5 — the AGAINST side reached its strongest numeric state of the phase on a test named in advance (third decoupling session, first with crude UP, phase-worst 20.98-pt spread); decision 4 — the breach GREW to $451.75 / SELL 7 on an 18th reading purely because the position rose, which is the clearest demonstration yet that a market-value reading of the cap self-worsens with success while every cure path stays blocked.** Decision 1's leg (a) basis is now carrying the live GEHC sleeve; decision 3's hedge went unplaced into an FOMC the run could not see past.
+
+### Oct 28 — EOD Snapshot (Day 53, Wednesday)
+**Portfolio:** $100,711.49 | **Cash:** $54,640.39 (54.25%) | **Day P&L:** -$75.48 (-0.0749%) | **Phase P&L:** +$711.49 (+0.7115%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $68.45 | +0.35% | +$1,468.40 (+7.70%) | $62.874 (10% trail, hwm $69.86) |
+| UNH | 38 | $385.71 | $408.35 | -0.50% | +$860.32 (+5.87%) | $383.895 (10% trail, hwm $426.55) |
+| GEHC | 132 | $76.43 | $75.90 | +6.74% (gap) | -$69.96 (-0.69%) | $69.4619 (10% trail, hwm $77.18) |
+**Notes:** One entry today (GEHC 132 @ $76.43, trade 1/3 this week), no exits, no realized P&L. All stops live GTC 10% trails, none touched. Deployed 45.75%, still under rule 2 floor; XLE rule-3 cap breach and owner decisions 1-6 unchanged and unanswered.
