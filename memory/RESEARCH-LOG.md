@@ -14715,3 +14715,74 @@ Entry basis **$76.00 limit** (see execution note). Risk unit = **rule-5 -7% manu
 **(3)** **No rule-3 trim.** Breach $304.09, remedy SELL 5 a 17th reading; `qty_available` 0, a trim unstops 20.29% against rule 4, a replacement trail prices DOWN to $61.4745 against rule 7, and holding $62.8740 needs 7.95% which rule 6 gates at +15%. Decision 4 is the owner's.
 **(4)** **No cut, no stop tightened, no stop touched by hand, no hedge.** Rule 5 cushions +13.47% / +13.27%; rule 6 gates not due; rule 7 clear all. **The hedge is priceable and was NOT placed — trigger (c) is unauthorized and is not self-grantable, into FOMC or otherwise, and post-trade exposure is HIGHER at 45.81%.**
 **⚠ THE THREE FACTS THAT CUT AGAINST THIS RUN, FILED FIRST-CLASS: GEHC's 2:1 pass depends on an owner basis that has never been signed and the trade FAILS on consensus; XLE has decoupled from the crude thesis that justifies holding it; and the benchmark lead "widened" only because SPY fell, which is not the book winning. The entry is sized at half the cap precisely because the first of these is true.**
+
+---
+
+## 2026-10-28 — AFTERNOON ADDENDUM (Midday Scan, 13:07-13:12 ET) — **read BEFORE the 2:00 pm FOMC decision**
+
+**⚠ SCOPE STATED FIRST, per this morning's handoff (i): this run's data ends at 13:12 ET. The FOMC statement (2:00 pm) and the Warsh presser (2:30 pm) are NOT in it. Nothing below is a post-FOMC view.**
+
+### Finding 1 — the crude rally has a dated cause and it is ESCALATION, not noise
+~3% intraday move in WTI/Brent on 10/28 attributed to a **Houthi ballistic-missile strike on Saudi Arabia's Ras Tanura refinery**, the kingdom's largest, reported **10/28**; Brent reported above **$116**, a fresh high. Graded honestly: **dated and plausible, but not verified first-party on a canonical wire domain this run.** Under rule 14 that grading is sufficient for its only use here — material **FOR** a hold already in place — and insufficient for any action. It is not used to size, enter or exit anything.
+
+### Finding 2 — rule 14's bar FAILED a TWELFTH time; exit trigger (a) NOT met
+A query restricted to Reuters/AP/Bloomberg/AFP for **10/27-10/28** returns **no signed ceasefire, truce or deal** involving Iran and Hormuz and **no report of transits restored to normal**. Reporting instead has the **IRGC still declaring the strait shut** and commercial traffic severely disrupted; this morning's Qatari draft remains **presented, not agreed**. One item referencing an *earlier* interim US-Iran deal does not establish restoration and is not treated as if it did. **Exit trigger (a) is NOT met and is not marginal.**
+
+### Finding 3 — **THE HANDOFF (iii) TEST CAME BACK AGAINST XLE, ON AN UP DAY FOR CRUDE**
+The test was named in advance this morning: does XLE refuse to follow USO a **third** session, **with crude up**? It does.
+- **USO +3.0161%** on the day (first-party trade **$168.56** vs $163.625 prev close) against **XLE +0.8208%** ($68.79 vs $68.23) = **27.21% upside capture**.
+- 8/18 SIP-close basis (XLE $63.68, USO $130.66, XOP $185.35): **XLE ITD +8.0245%, USO ITD +29.0066% → 20.9821 pts uncaptured, a PHASE WORST, widened 2.9801 pts from 18.0020 at the open — and widened for the bad reason.**
+- **XOP ITD +8.4381% = ahead of XLE by 0.4136 pts, a SEVENTH consecutive reading against XLE** (narrowed from 0.5754).
+**Three sessions is a pattern, not a read. The commodity thesis was RE-CONFIRMED by a dated attack today and the sleeve bought to express it captured barely a quarter of the move: the thesis is working, the vehicle is not.** Filed first-class against the hold, not netted away. **Decision 5 — neither branch self-authorizable.**
+
+### Finding 4 — GEHC sleeve verified on all three sub-questions of handoff (ii)
+Stop `13dd3b34` live: `trailing_stop`, 10%, `status:new`, `tif:gtc`, to 2027-01-26, **ratcheted once since entry ($68.832 → $69.4619 as hwm went $76.48 → $77.1799), never lowered.** The name **did not fade HCA-style** (-6.3752% there) but **is not holding its official open either**: **-1.4394%** from the `dailyBar` open $77.195 after trading **above** it to $77.77; day low $74.86; now $76.085, **-2.1744% off the high** and **-0.4780% from the $76.43 fill**. **Still +7.0866% from the $71.05 prev close — the gap is holding; it is not extending.** `market_value` **$10,040.58 = 9.9477%**, inside both the 20% cap and the half-size design.
+
+### Finding 5 — **HANDOFF (vi) DISCHARGED: the 8:30 ET actuals, first-party, and the consensus was WRONG the costly way**
+September advance **goods trade deficit $134.9bn ACTUAL** vs the **-$132.6bn consensus** the pre-market carried — **$2.3bn WIDER**. Advance **wholesale inventories $1,011.5bn (+0.6% m/m)**; advance **retail inventories $885.3bn (+0.3% m/m)**. Source `census.gov/econ/indicators/2026/advance_report2608.pdf`. **The standing instruction not to treat the consensus as the print was correct, and it missed in the direction that SUBTRACTS from Q3 GDP — which prints tomorrow 8:30 ET.** Two sessions of carry closed.
+
+### Finding 6 — **A RULE-13-CLASS ERROR ARRIVED THROUGH THE RESEARCH CHANNEL AND WAS REJECTED**
+Research returned **"VIX close 17.50, dated 2026-10-28."** That cannot exist: `clock` puts this read at **13:07 ET with the session open**. A 17.31 print attributed to **1:24 pm ET** is ~17 minutes **in the future** of this run's own clock. **Neither is adopted.** Governing dated level stays the **Cboe 10/27 close, 17.52**; the defensible reading is **VIX flat in the 17s, no vol event**. Recorded because it is the same failure mode rule 13 exists for, taking a different route in.
+
+### Finding 7 — decision 6's defect recurs a FIFTH session
+**`rmb.reuters.com` returned AGAIN** in this run's citations — five sessions, five non-canonical hosts (`www-pp.afp.com`, `uat.apnews.com`, hex-injected `reuters.com`, `rmb.reuters.com` ×2). **Not cleared and not needed: the ungraded sources pointed AWAY from action and the wire-grade negative was obtainable without them.** This morning's warning stands verbatim — **that reasoning works in one direction only and will NOT work the day such a host points toward a trigger.**
+
+### RULE CHECKS (live RTH, quotes accepted on width 17:08:18-17:08:22Z)
+Widths: XLE 0.0291%, UNH 0.0487%, GEHC 0.3026%, SPY 0.0052%, XOP 0.0597%, XLV 0.0111% — all accepted. **USO FAILED at 2.7679%; its mid $170.885 was REJECTED and every USO number is struck off the live trade $168.56, which sits on the bid. Using the mid would have overstated crude by 1.38%.**
+- **Rule 5 — no cut owed:** XLE 14.0829% clear of $59.1064, UNH 12.7008% clear of $358.7103, GEHC 6.5542% clear of $71.0799.
+- **Rule 6 — no tighten owed, none placed:** +15% gate unreached (XLE +8.2440%, UNH +6.5300%, GEHC -0.4780%).
+- **Rule 7 clear on all three:** stops 8.6068% / 6.5717% / 8.6816% below marks, all outside 3%; **no stop lowered, none touched by hand.**
+- **Rule 4 compliant:** three real GTC 10% trails, all `status:new`.
+- **Rule 3 breach GREW to $451.75** (XLE 20.4476% vs the $20,186.75 cap), remedy **SELL 7**, **18th reading** — larger than this morning's $292.51 *because the position rose*. Not placed: `qty_available` 0 on all three names, so a trim unstops 20.45% against rule 4; a replacement 10% trail prices to **$61.9110, DOWN** from $62.8740 against rule 7's absolute "never"; holding $62.8740 needs an **8.61%** trail, which rule 6 gates at +15%. **All three cure paths breach a rule. Decision 4 is the owner's.**
+- **Rule 2 breach persists:** **45.8646%** deployed, **$29,407 short** of the $75,700 floor, **54th session** under it. Reduced by the GEHC entry, not cured.
+- **Rule 8:** trade **1/3** used this week (GEHC); two slots survive, neither used. **Rule 10:** health care 25.4174% across two names against one prior failed HC trade (XLV 8/31) — count unchanged at 1. **Rule 1:** no options, none contemplated.
+
+### BENCHMARK — **NARROWED; this morning's widening is NOT confirmed and NO TURN IS CALLED**
+Book **+0.9338%** vs SPY **-0.6221%** (phase ref $776.34, accepted mid $771.51 on a 0.0052% spread) = **+1.5559 pts AHEAD**, from +1.6749 at the open. A turn needs **two** consecutive widenings; this is a reversal after one. **It narrowed on the worse mechanism: SPY ROSE while the book FELL — both legs moved against the lead.** Sequence: ... **+2.1817, +1.6572, +1.6749, +1.5559.**
+
+### Owner decisions — 6 carried, 0 answered, none self-authorizable (rule 15)
+1. **Deployment floor vs entry bar.** 54th session under the floor; **45.8646%, $29,407 short.** Leg (a)'s unsigned R:R basis is now **carrying the live 132-share GEHC sleeve** at 9.95% of equity, a trade that **FAILS 2:1 on analyst consensus**. Still needed: **sign the target basis, and say whether a full-allowance week is authorized.**
+2. **Second energy leg — FORBID untested this run** (none contemplated; finding 3 argues against adding energy exposure, not for it).
+3. **Hedge trigger (c) — never authorized.** **45.8646% directional exposure went into a 2:00 pm FOMC unhedged, 48 minutes after this read, because the authorization does not exist.** VIX flat in the 17s (governing dated level 17.52, Cboe 10/27 — see finding 6). **The blocker is the authorization, not the data.**
+4. **20% cap — entry cost or continuous market value?** ⚠ **MATERIALLY CHANGED: the breach GREW to $451.75 / SELL 7 on an 18th reading purely because XLE rose. A market-value reading self-worsens with success while every cure path stays blocked — the sharpest demonstration yet. Market value 20.4476% vs cost 18.8907% (compliant). The owner must say which rule yields.**
+5. **XLE: close, or hold on a defined review? — 80th consecutive run.** ⚠ **MATERIALLY CHANGED — the AGAINST side is at its phase strongest, on the test this morning named in advance.** **FOR:** price leg **DISARMED a 40th reading** (USO $168.56 vs $146.03 = **+15.4283%**); **a NEW dated escalation (Ras Tanura strike, 10/28) is the named cause of the ~3% rally**; **rule 14's bar failed a 12th time, no signed deal on any wire, IRGC still declaring Hormuz shut, the Qatari draft only *presented***; trigger (a) **not met**; +8.2440% from entry; 14.0829% clear of its cut line; twelve ratchets, zero lowered. **AGAINST:** **20.9821 pts uncaptured, a PHASE WORST, widened on crude's strength**; **27.21% capture on an UP day — third consecutive decoupling session, first with crude up**; **XOP ahead a 7th reading**; rule 3's breach at its largest with every cure blocked; Russia waiver to ~12/16. **Neither branch self-authorizable; the bot authorized neither. Tally unchanged — six firings, twelve named opens, ZERO executions.**
+6. **Rule 14's source check — adopt domain + substance + metadata-date + BASIS? 19th run.** ⚠ **FIFTH session, fifth non-canonical host (finding 7).** Handled again by noting the ungraded sources pointed away from action — **a one-directional defence that will fail the day one points toward a trigger.**
+- **All six carry forward into every subsequent run's notification until answered or withdrawn.**
+
+### Tooling / handoffs to the next run (DAILY SUMMARY, after the close)
+- (i) **THE FOMC STATEMENT AND WARSH PRESSER ARE YOURS, NOT THIS RUN'S.** Read the 2:00 pm decision and the 2:30 pm presser against the 45.8646% unhedged book this run carried into them, and say plainly what the exposure cost or earned.
+- (ii) **GEHC day-two is the top item:** it held its gap but gave back 2.17% from the high and sits -1.44% under its official open. **Report the close against the $76.43 fill, the $71.0799 cut line and the ratchet state of `13dd3b34`.**
+- (iii) **Finding 3 is the item that has crossed from read to pattern.** Three decoupling sessions, the third with crude UP and 27.21% capture, 20.9821 pts uncaptured at a phase worst. **Carry it into Friday's weekly review as the lead item on decision 5.**
+- (iv) **Do NOT place the rule-3 trim.** Breach $451.75, remedy SELL 7, 18th reading; all three cure paths blocked; decision 4 unanswered.
+- (v) **Benchmark: +1.5559 pts, NARROWED. Report the next reading against this number — and note the open's widening did NOT survive one session.**
+- (vi) **XOM and CVX, the two largest XLE constituents, report FRIDAY 10/30.** Q3 advance GDP + September PCE print **tomorrow 8:30 ET** — and finding 5 shows the goods deficit came in $2.3bn WIDER than consensus, which subtracts from it. ECB tomorrow, BoJ Friday.
+- (vii) **Do NOT re-screen ELV / HCA / CNC / APH / MAS / PPG / UCTT absent a NEW catalyst.** Carried from this morning, honoured this run — no screening was done.
+- (viii) **The 1 x 10% feed fix in `scripts/alpaca.sh` (`&feed=${2:-sip}` on `snapshot`) is NINTH-session-recommended and still unmade.** Not changed from a scan seat.
+- **Weekly review: week ending 2026-10-23 filed. Next due Friday 2026-10-30 — carry finding 3 (XLE/USO decoupling, now a three-session pattern) and the GEHC entry into it. Nothing owed to that class.**
+
+### DECISION: **NO ACTION. HOLD XLE, UNH, GEHC. NO CUT, NO TIGHTEN, NO TRIM, NO HEDGE, NO STOP TOUCHED BY HAND, ZERO ORDERS.**
+**(1)** **No cut (rule 5):** nothing within reach of its line — cushions 14.08% / 12.70% / 6.55%. **No thesis broke intraday:** XLE's was re-confirmed by a dated attack, UNH is unchanged, GEHC's beat-and-raise was verified first-party this morning and the gap is holding.
+**(2)** **No tighten (rule 6):** the +15% gate is unreached on all three. GEHC's trail ratcheted **on its own**, which is the mechanism working, not an action.
+**(3)** **No rule-3 trim:** breach $451.75 / SELL 7, every cure path breaches rule 4, 6 or 7. **Decision 4.**
+**(4)** **No hedge:** trigger (c) unauthorized and not self-grantable — **not into an FOMC this run could not see past, and the exposure is 45.8646%.**
+**⚠ THE FACT THAT CUTS HARDEST AGAINST THIS RUN'S OWN HOLD, FILED FIRST-CLASS: crude rallied ~3% on a fresh dated attack and XLE captured 27% of it — a third straight session of decoupling, the first on an up day, at a phase-worst 20.98 pts uncaptured. The hold is correct on the RULES and increasingly hard to defend on the VEHICLE, and only the owner can resolve that.**
