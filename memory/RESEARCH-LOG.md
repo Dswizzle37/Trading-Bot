@@ -15697,3 +15697,93 @@ No rule trigger is met on any sleeve: no cut owed (closest clearance 9.3253%), n
 - **⚠ TO THE OWNER — the two prior tooling items, both proved, both unapplied, neither self-applied from this seat:** (1) the one-line `snapshot` feed fix in `scripts/alpaca.sh` (`&feed=${2:-sip}`), **recommended a 14th consecutive session**; (2) **rule 13's quote test should be a WIDTH check against `latestTrade`, not a timestamp check — this run adopted that method and it is what caught USO's and EL's frozen quotes and saved a 3.38% mis-size on EL.** **Item (2) has now paid for itself twice and is still unapplied.**
 - **⚠ ALL SEVEN OWNER DECISIONS CARRY, ZERO ANSWERED, none self-authorizable (rule 15), and they stay in every notification until answered or withdrawn. THREE moved today.** **Decision 1 — upgraded from a mechanism to an arithmetic impossibility with a stated threshold (entry <= 83.33% of the 252-day high), demonstrated by two names failing the same gate by unrelated routes.** **Decision 5 — the spread hit a new phase best 14.3159 pts while the XOP edge gave back a third, and a new adverse supply item landed (US eased Russian fuel-export sanctions, Reuters 10/26-10/27).** **Decision 6 — rule 13 caught two frozen quotes and refuted the pre-market's own $113 EL read; the pre-market's seven-name "basis error" batch is confirmed as a real catch.** **Decisions 2, 3, 4 and 7 unchanged in kind: 2 untested; 3 worse (no VIX an 8th run, midterms TOMORROW, 45.82% unhedged); 4 narrower in dollars only ($391.83, remedy SELL 6, same one-sentence question); 7 untouched and still blocking decision 5's mechanism.**
 - **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+## 2026-11-02 — Afternoon Addendum (Midday Scan, 12:45-12:55 ET, market OPEN)
+
+**Deliverable filed in-run. ZERO orders placed, cancelled, modified or staged. No stop touched by hand.** All six required env vars verified set before any wrapper call. `ALPACA_ENDPOINT` verified `paper-api.alpaca.markets/v2` — paper, unchanged.
+
+### ISM Manufacturing — handoff (i) DISCHARGED: 55.5, and it did NOT drive the energy slide
+- **Actual October ISM Manufacturing PMI 55.5**, **+1.0 pt** from September's **54.5**, **10th consecutive month of expansion**, released **10:00 ET 11/02**. Production gauge **best since late 2021**; new orders the highest in the series' recent range.
+- Sources: ISM's own release text (PRNewswire, carried `finance.yahoo.com`, 11/02) and **Reuters 11/02** "US manufacturing picks up in October; input prices stay high" — two independent carriers of the same first-party number.
+- **⚠ THE "BEAT CONSENSUS 54.5" FRAMING IS REJECTED, NOT ADOPTED.** 54.5 is the **prior September reading**; this account's own pre-market recorded explicitly that **no reliable consensus forecast was obtainable**. Logged as **actual 55.5 vs prior 54.5**, consensus leg **unverified**.
+- **The handoff's question answered directly: ISM NEITHER amplified nor reversed the energy fall.** ISM is demand-positive, **SPY is +0.2045%** on the day, and energy's decline is a separately-dated supply/diplomatic story. **No read-across to XLE, UNH or GEHC.**
+- Secondary, dated, not acted on: **Reuters 11/02** notes global factory activity solid but strained by **rising energy costs**; **French** manufacturing back in contraction.
+
+### Energy complex — handoff (ii) DISCHARGED, re-struck live, nothing inherited
+| Symbol | Day move (live, accepted book) |
+|---|---|
+| USO | **-6.2537%** |
+| XOP | **-3.8477%** |
+| XLE | **-2.9000%** |
+| SPY | **+0.2045%** |
+
+- **Named driver, dated 11/02, wire-grade:** oil fell ~6% on **US-Iran detente expectations ahead of the 11/03 midterms**. **Reuters 11/02** — talks between **Iranian and Qatari** officials on a deal to end the war raised hopes Middle East supply disruptions could ease. **AFP 11/02** — **WTI ~$97.49 (-6.4%)**, **Brent ~$106.60 (-6.0%)**.
+- **⚠ CRUDE LEVEL DISAGREEMENT RECORDED AND NOT RESOLVED: AP 11/02 carried Brent -4.2% at $108.68**, an earlier intraday strike than AFP's. **The DIRECTION is unanimous across Reuters, AFP and AP; NO single crude level is adopted.** Nothing was sized off any of them.
+
+### Rule 13 — every book graded live off `snapshot`; handoff (iii) honoured, no minute bars touched
+- **ACCEPTED on mid:** SPY **0.0026%** (tightest of the phase), XLV 0.0109%, XLP 0.0111%, XLE 0.0147%, XOP 0.0357%, **GEHC 0.1758% — PASSES for the first time in four sessions** after three consecutive width rejections.
+- **REJECTED on width, mark taken off `latestTrade`:** **USO 6.1327%**, **EL 5.7538%**.
+- **UNH 0.8420% borderline** — mark taken off the live trade $396.95 vs a mid of $396.6700, a **0.0706%** difference. Immaterial either way; recorded for method, not effect.
+
+### ⚠ EL — handoff (vi) DISCHARGED WITH A NUMBER, AND THE RESEARCH CHANNEL MIS-PRICED IT BY 6%
+- **First-party 252-day bars (251 SIP daily, 2025-11-03 -> 2026-11-02) CONFIRM the pre-market's threshold exactly:** intraday high **$121.635** (2026-02-03) / 1.20 = **$101.3625**; highest **close $119.61** (2026-02-04) / 1.20 = **$99.6750**. The handed-forward $101.37 was right.
+- **EL live $106.6400** (trade 17:47:26Z). **R:R 1.4061** (intraday-high basis) / **1.2162** (close basis) — **both FAIL 2:1.** EL is at **87.67%** of its 252-day high against the required **83.33%**: **$5.28 / 5.21% above the entry threshold.**
+- **Sector leg PASSES** — XLP **3rd of 12** (+6.8721%) and the day's **second-best** sector (+1.1965%). **One failing leg, the same leg, decision 1's arithmetic verbatim. No entry. No gate loosened.**
+- **⚠ FIFTH CONSECUTIVE SESSION OF RESEARCH PRICE MIS-STATEMENT.** Research returned **"$113.00 at 7:26 AM ET"** and **"$112.28 at 8:40 AM ET"** — **both pre-market stamps, both wrong: EL is $106.64 against a $109.23 prior close, i.e. -2.3711% today.** Taking either would have sized an order **5.96% above the live tape** and breached **rule 13's second clause** outright. **The width-check-against-`latestTrade` method caught it; that recommendation has now paid for itself a THIRD time and is still unapplied.**
+
+### ⚠ Rule 14 — bar FAILED a 21st time, on a restricted re-query demanding dates
+- Explicit **NONE FOUND** on each leg: (a) a **signed or announced** ceasefire, truce or armistice; (b) a **signed** nuclear deal; (c) Hormuz **officially reopened** or transits **restored to pre-war levels**.
+- **Reuters 11/02** — contacts **continuing**, **NO BREAKTHROUGH**; reopening Hormuz is part of a **PROPOSED** plan, not an accomplished one. **AP 11/02** — a **conditional TWO-DAY** plan to reopen the strait and resume nuclear talks, conditions attached, negotiations ongoing.
+- **That is talks-progress, NOT a signed deal. EXIT TRIGGER (a) DOES NOT FIRE; no exit owed, none taken** — while the tape priced the de-escalation anyway, costing the sleeve 2.90% against 20.2779% of equity.
+- **This is the case rule 14 was written for on 9/07, arriving live: the market is trading a headline the wires do not support, and the rule bars the bot from trading it too.** It barred nothing else this run.
+
+### ⚠ DECISION 5 — spread off its phase best by a hair; the XOP edge MORE THAN DOUBLED
+Phase basis (8/18 SIP closes: XLE $63.68, USO $130.66, XOP $185.35).
+| Reading | XLE ITD | USO ITD | **Uncaptured spread** | XOP ITD | **XOP edge** |
+|---|---|---|---|---|---|
+| 10/30 official closes | +9.9560% | +29.2132% | 19.2572 pts | +9.9326% | +0.0235 pts |
+| 11/02 pre-market | +8.8411% | +24.9043% | 16.0633 pts | +8.0658% | +0.7753 pts |
+| 11/02 live RTH (open seat) | +7.4199% | +21.7358% | **14.3159 pts** | +6.9409% | +0.4790 pts |
+| **11/02 midday** | **+6.7368%** | **+21.1541%** | **14.4173 pts** | **+5.7027%** | **+1.0341 pts** |
+
+- **Spread WIDENED only 0.1014 pts off the phase best** — the mildest move this number has made in weeks, still **6.57 pts inside the phase worst (20.9821)**.
+- **XOP edge recovered the third it gave back this morning and then some: +0.4790 -> +1.0341**, because **XLE (-2.9000%) again fell LESS than XOP (-3.8477%)**. On this session's own move XLE is once again the better vehicle — reversing the pre-market's caveat.
+- **XLE captured 46.4% of crude's fall.** The eleven weeks of under-capture that cost this account its upside has now cushioned a decline on the **fourth consecutive read**.
+- **Tally: six firings, twelve named opens, ZERO executions; non-actionable for 88 runs. Neither branch self-authorizable, neither taken.**
+
+### ⚠ VOL — DECISION 3 UNPRICED A 9th RUN, AND THE MIDTERMS ARE TOMORROW
+- Research returned an explicit **NO CURRENT INTRADAY VIX QUOTE OBTAINABLE**.
+- **`cboe.com` was AGAIN FUTURE-STAMPED — 4:17 PM ET today, ~3h30m ahead of this run's `clock` (12:45 ET) — the FOURTH instance of this identical failure mode in four weeks.** Rejected on its face.
+- A **18.93 at 9:25 AM ET** figure (`marketwatch.com`) is **PRE-OPEN** — the bell is 09:30 — and non-canonical. **Not an RTH level, not adopted.**
+- **Only datum: the dated 10/30 close of 19.42, recorded as a PRIOR CLOSE. 19.41, 20.19, 17.20 and 19.42 all remain un-inherited as levels.** Tape sign mildly **risk-ON** (SPY +0.2045%).
+- **Hedge unpriced and unplaced a 9th run; 45.7026% of equity enters the 11/03 midterms unhedged. Trigger (c) has never been authorized and is not self-grantable.**
+
+### Benchmark — handoff (x) DISCHARGED: widened, and the SPY leg drove it
+- **Book +0.6317% vs SPY -2.4570% (phase ref SPY $776.34 / equity $100,000.00) = +3.0888 pts AHEAD.**
+- Sequence: **+3.6455 -> +3.8707 -> +3.8745 (phase best) -> +3.2138 -> +2.9653 -> +3.0888.** **The two-session narrowing streak is BROKEN and the reading is back above +3.0.**
+- **⚠ WIDENED ON THE WORSE MECHANISM, SAID PLAINLY: BOTH legs fell and SPY fell more.** Of the +0.1235-pt move, the **SPY leg contributed -0.3426 pts** and the **book leg -0.2192**. **The lead grew because the benchmark lost more, not because the book gained — the account is down $586.77 on the session.**
+
+### Decision — **HOLD. ZERO ORDERS. NO STOP TOUCHED BY HAND.**
+No rule trigger met on any sleeve: **no cut owed** (closest clearance UNH 9.5855%), **no tighten due** (closest gate XLE 7.98 pts away), **no stop moved by hand**. **The rule-3 trim is specified and NOT placed (decision 4, handoff (iv) explicit). The hedge is unpriced and NOT placed (decision 3). No entry — EL fails the 2:1 leg alone (decision 1).** The only state change this session is **GEHC's automatic 18th stop increase**. **Patience > activity (rule 11).**
+
+### Handoffs to the next run (DAILY SUMMARY / EOD, 2026-11-02)
+- (i) **⚠ READ THE DST ITEM BELOW FIRST — IT AFFECTS YOU DIRECTLY TODAY.** If you fire at **15:15 ET** you are **45 minutes BEFORE the 16:00 close and your numbers are NOT final. Say so explicitly and do not label pre-close marks as a close.**
+- (ii) **⚠ TOP ITEM — UNH's STOP IS 3.2376% BELOW THE MARK, 0.2376 pts OUTSIDE RULE 7's 3% LINE, the tightest reading of the phase.** UNH -2.4501% today; its stop has not moved since 2026-10-22 (hwm $426.55), so the gap closes from the price side only. **No rule breached, no action owed, nothing placed.** But **a further ~0.25% fall puts it inside 3%, and NO rule-clean replacement exists then**: a 10% re-place prices BELOW the current stop, and every tighter trail needs rule 6's +15% gate, **12.14 pts away**. A touch exits at $383.895, **+0.4528% above entry**. **Re-measure and report; do NOT touch it by hand.**
+- (iii) **GEHC ratcheted itself to stop $72.3060 / hwm $80.3400 (+$1.5300) at 15:23:12Z — the 18th increase, zero decreases.** New operative levels: **XLE $70.1510+, GEHC $80.3400+, UNH $426.55+.** Report any further change; **do NOT touch a stop by hand.**
+- (iv) **DO NOT PLACE THE RULE-3 TRIM.** Breach **$279.66**, remedy **SELL 4** (keep 296), **28th reading, FOURTH consecutive shrink** ($762.30 -> $555.88 -> $391.83 -> $279.66) purely because XLE fell. Decision 4 unanswered. `qty_available` is **0** on all three names.
+- (v) **⚠ DECISION 1 HAS ITS FIRST DATA POINT IN THE OTHER DIRECTION: cash drag posted a +0.4903-pt CREDIT, the first in seven sessions** (book mix at 100% deployment returns -1.0700% vs the actual -0.5797%). **The 54.30% cash saved roughly half of today's loss.** Carry the measurement, not a conclusion — **it sharpens the question, it does not answer it.** EL still confirms the impossibility framing: **entry must be <= 83.33% of the 252-day high; EL is at 87.67%.**
+- (vi) **EL re-priced live at $106.6400, down -2.3711% on the day, and it is now only 5.21% above its entry threshold** ($101.3625 intraday basis / $99.6750 close basis, both verified first-party this run). **Re-price it again. If it falls to $101.36 or below it clears 2:1 at a 10% stop and the sector leg already passes (XLP 3rd of 12).** This is the closest the account has come to a rule-clean entry in weeks.
+- (vii) **⚠ RESEARCH MIS-STATED EL's PRICE BY 5.96% on pre-market stamps — a FIFTH consecutive session of price mis-statement.** Grade every number off **`snapshot` + a width check against `latestTrade`** and inherit nothing (rule 13).
+- (viii) **VOL: no level a 9th run. Do NOT inherit 19.41, 20.19, 17.20 or the 10/30 close of 19.42.** `cboe.com` was **future-stamped a fourth time**; the 18.93 figure is **pre-open**. **MIDTERMS ARE TOMORROW and 45.70% of equity is unhedged.** Decision 3 is not self-grantable.
+- (ix) **Benchmark +3.0888 pts; the narrowing streak broke but on the worse mechanism (SPY leg -0.3426 vs book -0.2192).** Phase best +3.8745. **Re-strike and name the leg.**
+- (x) **Rule 9 recomputed fresh from 59 SIP bars: XLE 1st +11.4827%, XLV 2nd +9.6720%, XLP 3rd +6.8721%, SPY 9th -1.7559%, XLC last -9.4006%. Positive on all three sleeves.** Today's partial bar is included and labelled an intraday read.
+- (xi) **Rule 8: 0/3 trades used for the NEW week of 11/02-11/06 — all three slots live.** Six consecutive weeks have now expired unused.
+- (xii) **Do NOT re-screen** MA, CTS, LLY, EBAY, CROX, NCLH, CAT, Carrier, ELV, HCA, CNC, APH, MAS, PPG, UCTT, PERI, INO, XOM, CVX, GEV, REGN without a NEW dated catalyst. **EL is the exception — re-price it per (vi).**
+
+### Handoffs issued under rule 15
+- **✅ THE WEEKLY REVIEW FOR THE WEEK ENDING 2026-10-30 IS FILED AND THIS ITEM IS DISCHARGED.** Verified first-party: `WEEKLY-REVIEW.md` line **920**, Open Positions and Adjustments sections intact, file 1042 lines. **Flagged at-risk by nine consecutive runs and handed forward twice by name and date; it comes OFF the carry list.** Next review covers the week ending **2026-11-06**.
+- **⚠ TO TONIGHT'S DAILY-SUMMARY RUN, BY NAME: `TRADE-LOG.md` STILL HAS NO 10/30 EOD ENTRY AND NO 11/02 MARKET-OPEN ENTRY.** Last entries before today's midday are **Oct 30 Market-Open** (line 1865) and **Oct 30 Midday** (line 1906). **daily-summary has failed 21 consecutive sessions; 10/26-10/30 have no closing record from any seat.** Today's market-open record exists in **`RESEARCH-LOG.md` only** — a direct consequence of the DST defect below. **File tonight's EOD, state that 10/26-10/30 remain unreconstructed, and note the 18th stop increase (GEHC $70.776 -> $72.306).**
+- **⚠ TO THE OWNER — THE DST TRIGGER DEFECT, AND ITS DEADLINE WAS TODAY.** Carried from the pre-market and **now demonstrated rather than predicted**: this midday run was scheduled for **17:05 UTC** and fired at **17:44 UTC**, and **`market-open` fired before the bell today, which is why its record is in RESEARCH-LOG with no TRADE-LOG entry.** **`daily-summary` fires 15:15 ET — 45 minutes BEFORE the close — and `weekly-review` fires 15:30 ET Friday.** All five triggers need re-entering **one hour later**, or re-saving with a named `America/Los_Angeles` zone. **Not self-applied: the triggers live outside this repo and a scheduled run does not re-time its own schedule.**
+- **⚠ TO THE OWNER — the two standing tooling items, both proved, neither self-applied from this seat:** (1) the one-line `snapshot` feed fix in `scripts/alpaca.sh` (`&feed=${2:-sip}`), **recommended a 15th consecutive session**; (2) **rule 13's quote test should be a WIDTH check against `latestTrade`, not a timestamp check — it caught EL's 5.96% pre-market mis-price today and has now paid for itself a THIRD time.** Still unapplied.
+- **⚠ ALL SEVEN OWNER DECISIONS CARRY, ZERO ANSWERED, none self-authorizable (rule 15), and they stay in every notification until answered or withdrawn. THREE moved today and ONE moved in the account's favour.** **Decision 1 — first cash-drag CREDIT in seven sessions (+0.4903 pts); the cash that cost six sessions of upside saved half of today's loss, and EL re-confirms the 83.33% threshold failing on the target basis alone.** **Decision 3 — WORSE, on a deadline: no level a 9th run, a fourth future-stamped `cboe.com` print, 45.70% of equity into tomorrow's midterms unhedged.** **Decision 5 — spread 0.1014 off its phase best while the XOP edge MORE THAN DOUBLED to +1.0341; XLE captured 46.4% of crude's 6% fall.** **Decision 4 shrank a fourth consecutive time ($279.66 / SELL 4), cure paths re-verified blocked. Decisions 2 and 7 untouched: 2 untested; 7 still undefined, though trigger (a) moved further from firing on either basis.**
+- **Persistence (rule 12): this entry and the TRADE-LOG entry commit and push via `scripts/gitpush.sh` in this run.**
