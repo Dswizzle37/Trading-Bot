@@ -15408,3 +15408,147 @@ The channel reported **"VIX 17.20, up 1.7%" for 10/30. 17.20 is the 10/29 CLOSE*
 - (viii) **Capture: re-strike XLE vs USO at the close on ACCEPTED books and say whether 0.8304x and the 21.6242-pt phase-worst spread hold, or whether the open's 1.5716x reasserts.** Do not average the two — report the close on its own and name the basis.
 - (ix) **Do NOT re-screen** MA, CTS, LLY, EBAY, CROX, NCLH, CAT, Carrier, ELV, HCA, CNC, APH, MAS, PPG or UCTT **without a NEW dated catalyst** — list carried unchanged from the open's handoff (viii).
 - (x) **Rule 13 grades are timestamp-specific and this run proved it on its own data: USO went 3.0820% -> 0.0291% in 90 seconds. RE-GRADE every book at the close; inherit no grade from this run.**
+
+---
+
+## Nov 02 — Pre-Market Research (Day 56, Monday, 07:45-08:05 ET) — **ZERO ORDERS. The XLE thesis is being repriced BY THE TAPE on a story rule 14 forbids acting on, and decision 1's second leg just went from anecdote to a 7-name arithmetic contradiction.**
+
+**Market CLOSED, `clock` 07:52 ET, next open 09:30 ET.** Full week 11/02-11/06, no holiday. Every pre-market book below is thin and graded as such (rule 13); **no order is sized off any of it and none was placed.**
+
+### Account snapshot — 2026-11-02 pre-market (live)
+| Field | Value |
+|---|---|
+| Equity | **$100,945.62** |
+| Previous close (official) | **$101,218.48** |
+| Pre-market change | **-$272.86 (-0.2696%)** |
+| Cash | $54,640.38 (**54.1285%**) |
+| Long market value | $46,305.24 (**45.8715% deployed**) |
+| Buying power | $348,216.19 (reg-T $155,586) |
+| Positions | 3 — XLE, UNH, GEHC |
+| `daytrade_count` / `pattern_day_trader` | **BOTH ABSENT — 10th consecutive run** |
+| Trade slots, week of 11/02 | **0 / 3 used (fresh)** |
+
+**⚠ HANDOFF DISCHARGED — THE WEEKLY REVIEW'S WEEK-END EQUITY IS CONFIRMED TO THE CENT, NOT ABSORBED.** The 10/30 review used **$101,218.48** on SIP closes and flagged Alpaca's live after-hours **$101,117.44** as a $101.04 unexplained difference. Official `portfolio/history` has now posted: the Friday 10/30 close is **$101,218.48** — identical to the review's figure. The $101.04 was an after-hours mark artifact. **The review's stats table stands; no restatement is owed.** (The series labels this value 10/31 — the endpoint stamps roll to the next UTC day; 10/24 likewise carries the 10/23 close of $101,415.57, which also matches the review's week-start.)
+
+### Market context — 2026-11-02 pre-market
+- **⚠ CRUDE IS BREAKING AND IT IS ENERGY-SPECIFIC ON A RISK-ON TAPE.** First-party SIP, 12:32Z/07:32 ET, against official 10/30 closes: **USO $168.83 -> $163.20 = -3.3347%**, **XLE $70.02 -> $69.31 = -1.0140%**, **XOP $203.76 -> $200.30 = -1.6981%** — while **SPY $755.72 -> $758.7314 = +0.3985%.** The index is up and the energy complex is down hard.
+- **Driver, and it is the one story that matters to this book: Iran-Qatar mediated talks, reported in a third consecutive day, raising expectations that the Strait of Hormuz reopens.** `reuters.com/business/energy/oil-slips-more-than-1-talks-continue-ending-iran-war-2026-11-01/` (canonical, date in path); `bloomberg.com/news/articles/2026-11-01/...` reports oil lower on Trump giving diplomacy more time before deciding on resumed strikes after the midterms.
+- **⚠ RULE 14'S BAR FAILED A 19th TIME, AND THIS IS THE FIRST TIME THE FAILURE HAS BEEN EXPENSIVE RATHER THAN ACADEMIC.** A query restricted to wires and official statements returned **explicit "NONE FOUND" on all three legs: no signed ceasefire, no truce, no nuclear deal; and NO report that Hormuz transits are RESTORED to pre-war levels.** Reuters states attacks and disruptions are **still occurring** and any reopening is **conditional and not completed**. **Exit trigger (a) does NOT fire, no exit is owed, and none was taken.** What is new is that **the market is pricing the de-escalation ahead of the wire, against 20.5507% of equity.** Rule 14 cuts one way only — it bars acting, and it is doing exactly that here.
+- **OPEC+ is NOT the driver and that was checked rather than assumed.** OPEC+ **kept December targets UNCHANGED** at its 11/01 online meeting (`bloomberg.com/news/articles/2026-11-01/opec-leaves-oil-output-targets-unchanged-for-december`; `reuters.com/business/energy/opec-set-keep-oil-output-targets-steady-sources-say-2026-11-01/` — both canonical, both dated in path). Next full meeting **11/29** for 2027 quotas. Steady supply, so the break is the Hormuz trade, not a quota story.
+- **Futures (sign adopted, corroborated first-party):** S&P futures **7,654.75, +40.75 (+0.535%) at 05:33 ET**; Nasdaq **28,772.75, +238.75**; FactSet cross-check at **06:15 ET** 7,654.00/+40.00 and 28,775.25/+241.25. Both stamps are in this run's **past** and were checked against `clock` before adoption. **My own SPY tape (+0.3985%) agrees in sign and magnitude.**
+- **⚠ VIX: NO LEVEL OBTAINABLE A SEVENTH CONSECUTIVE RUN — and this run returned no quote at all rather than a bad one.** Research stated plainly that the results "do not provide a current CBOE VIX quote." **Nothing is adopted; 19.41, 20.19 and 17.20 remain un-inherited.** The sign is risk-ON today (futures up, SPY tape up), reversing Friday's risk-off. **Decision 3: the hedge is unpriced and unplaced a 7th run.**
+- **Releases this week:** **ISM Manufacturing (Oct) TODAY 10:00 ET**; **⚠ US MIDTERM ELECTIONS TUESDAY 11/03**; JOLTS 11/03 10:00; ADP 11/04 08:15; **jobs report 11/06 08:30 ET**. **No CPI and no FOMC this week.**
+- **Earnings:** 116 S&P 500 names report 11/02-11/06, busiest Thursday 11/05. Apple Monday, AMD 11/03, FANG (energy) this week; Friday pre-open includes Humana, KKR, Constellation Energy, Charter.
+
+### ⚠ UNH — the first analytic task, as the weekly review ordered by name: a dated candidate cause EXISTS after three runs of "NONE FOUND", and it is NOT wire-grade
+Three prior runs recorded UNH's reversal as **unexplained** (5.78 pts behind its own sector in that sector's best week, no new high in five sessions). A dated 10/29-11/02 company sweep now returns items, all **10/29**:
+- Large employers — **Aramark, Kraft Heinz, Whirlpool** — reportedly sued UnitedHealth alleging improper/fraudulent claims payments.
+- **Fairview Health Services** reportedly sued UnitedHealthcare over false advertising on its **2027 Medicare Advantage** plans.
+- **Wells Fargo cut its PT $526 -> $487**; **Morgan Stanley RAISED to $531 and kept Overweight.**
+- 10/30: a more restrictive first-line Medicare Advantage coverage policy for **AMVUTTRA** (effective 10/01).
+- 11/02: Mark Cuban alleged AI audits found insurer overcharging including UNH — **no filing, no government action. Noise.**
+
+**⚠ A WIRE-RESTRICTED RE-QUERY RETURNED "NONE FOUND" ON BOTH LAWSUITS.** Neither Reuters, AP nor Bloomberg carries the employer suit or the Fairview suit; the only UNH litigation the wires show is unrelated shareholder cases. The items came from `fiscal.ai`, `idc.chase.com` and Yahoo — **non-wire aggregators.**
+**STATUS: NOT "broken" and no longer "unexplained" — it is UNEXPLAINED-WITH-A-NON-WIRE-CANDIDATE-CAUSE, and that is a weaker claim than it looks.** No SEC filing, **no guidance change** (2026 outlook still >=$19.50 GAAP / $20.50 adjusted EPS), **no DOJ action**, **no rating downgrade**, no CMS payment-policy change. **The thesis is intact. UNH sits 11.7303% clear of its cut line on a stop that has never been lowered, and it is -0.1155% pre-market — it is not where today's damage is. No cut is owed and none was taken.**
+
+### ⚠ DECISION 1, LEG (b) — THIS IS THE RUN'S MOST CONSEQUENTIAL FINDING, AND IT UPGRADES THE QUESTION FROM A TENSION TO A CONTRADICTION
+The weekly review wrote: *"The owner must say which of rule 9 and the 2:1 target basis yields."* **It does not have to be a judgement call — the two are arithmetically incompatible, and here is the measurement on seven names, computed on official 10/30 SIP closes against true 252-session highs:**
+
+| Name | Close | 252d high | Upside to target | **R:R @10% stop** | R:R @7% stop | 1M momentum |
+|---|---|---|---|---|---|---|
+| **REGN** | $927.89 | $935.35 | **+0.80%** | **0.08** | 0.11 | +26.28% |
+| **XLE** *(1st of 11 on rule 9)* | $70.02 | $70.15 | **+0.19%** | **0.02** | 0.03 | +11.67% |
+| **XLP** *(2nd)* | $89.42 | $90.38 | +1.07% | 0.11 | 0.15 | +11.32% |
+| **XLV** *(3rd)* | $184.87 | $187.99 | +1.69% | 0.17 | 0.24 | +11.23% |
+| GPN | $96.84 | $101.32 | +4.63% | 0.46 | 0.66 | +20.61% |
+| UNH *(held)* | $406.97 | $461.62 | +13.43% | 1.34 | 1.92 | +11.44% |
+| GEHC *(held)* | $76.57 | $89.77 | +17.24% | **1.72** | **2.46** | +19.68% |
+
+**NOT ONE NAME CLEARS 2:1 AT RULE 4's MANDATED 10% STOP — including both names the account already owns and the sector ETFs of the top THREE momentum sectors.** Only GEHC clears it at all, and only at a 7% stop.
+**The mechanism, stated so it can be answered rather than re-litigated: rule 9 selects sectors that are AT their 252-session highs, and a 252-session-high target then leaves 0-2% of upside by construction. The stronger the momentum, the smaller the measured R:R. XLE is 1st of 11 and scores 0.02.** The week's single best dated catalyst in the entire market — **REGN** — scores **0.08**.
+**This is the same mechanism that cost GEHC 6.98 of last week's 7.17 points, now measured across seven names instead of inferred from one fill.** Leg (a)'s provisional "target = the 252-day high" answer, given 10/13, is what produces it. **Deployment therefore stays at 45.8715%, $29,403.97 short of the $75,709.21 floor, a 61st session in breach, with 3 of 3 fresh trade slots and no rule-clean way to use one. Decision 1, and it is not self-answerable.**
+
+### Trade ideas — 3 screened, **ZERO enterable, and each fails a DIFFERENT leg of the entry checklist**
+1. **REGN — the strongest dated catalyst available, and it fails on R:R.** Catalyst **CONFIRMED FIRST-PARTY**: `investor.regeneron.com` Q3 release **10/30** — revenue **+36% to $5.12B** vs ~$4.56B est, non-GAAP EPS **$20.07** vs ~$16.19 est, driven by Dupixent/Sanofi collaboration revenue **+68% to $2.72B** on a development-balance repayment, plus EYLEA HD and Libtayo. Tape-confirmed **+13.33% on 10/30** (my own bars: $818.77 -> $927.89), 252d high **$935.35 set on the catalyst day itself**. Sector: **XLV 3rd of 11, positive.** Hypothetical entry ~$927 (pre-market $927.00 on **188 shares / 27 trades**, 12:00Z — thin AND ~55 min stale; rule 13 forbids sizing off it). Stop 10% trail -> ~$834.30. **Target $935.35 = R:R 0.08:1. FAILS the 2:1 leg by a factor of 24.** Secondary objection: it would take health care to **~40% of equity on three names.** **NOT ENTERABLE.**
+2. **GEHC add — the only name that clears 2:1 at any stop, and it fails on catalyst.** R:R **2.46 at a 7% stop**, 17.24% upside to its $89.77 high, held at 10.0230% with **$10,071.32 of headroom** to the rule-3 cap. **No new dated catalyst since the 10/28 entry.** **FAILS the "specific catalyst?" leg. NOT ENTERABLE.**
+3. **UNH add — and the only new dated information on it today is adverse.** R:R **1.92 at a 7% stop** (still under 2:1), 13.43% upside, **$4,746.68 of headroom** to the cap. Today's only new dated items are the 10/29 lawsuits and the Wells Fargo cut — **non-wire and adverse. FAILS on both R:R and catalyst quality. NOT ENTERABLE.**
+
+**That three ideas fail three different legs is itself the finding: this is not a dry spell in candidates, it is a checklist that the current rule set cannot satisfy simultaneously.** Not re-screened, per the standing handoff: MA, CTS, LLY, EBAY, CROX, NCLH, CAT, Carrier, ELV, HCA, CNC, APH, MAS, PPG, UCTT — no new dated catalyst for any. **PERI (+31% pre-market on an 11/02 Affle cash bid at $11.70) is merger-arb, not a swing trade. INO (+224% on a 10/30 FDA accelerated approval for VOCERYQ) is a speculative micro-cap. Both rejected on fit, not on catalyst.**
+
+### Rule checks — 2026-11-02 pre-market (all live)
+- **Rule 1:** no options, ever. None held, none contemplated. **The account shows `options_trading_level: 3` — capability is not permission, and it has never been used.**
+- **Rule 2:** **BREACHED — 45.8715% deployed, $29,403.97 short of the $75,709.21 floor, 61st session under it.** **⚠ Cash drag posted its FIRST CREDIT IN SEVEN READINGS, +0.3162 pts** (own-mix at 100% deployment **-0.5858%** vs actual **-0.2696%**) — cash cushioned a down pre-market, breaking six consecutive debits. **Reported in full because the six debits were: this is decision 1's "both ways" evidence arriving a second week running, with the sign flipped.**
+- **Rule 3:** **BREACHED on market value — XLE $20,745.00 = 20.5507% against the $20,189.12 cap, $555.88 over, a 26th reading.** Remedy **SELL 9** (291 sh = $20,122.65 = 19.9341%). **NOT PLACED — decision 4 is the owner's and a trim is not self-authorizable.** **⚠ The breach SHRANK from Friday's $762.30 phase record to $555.88, purely because XLE fell** — the same mechanism that grew it for 25 readings, running backwards. **Cost basis $19,066.60 = 18.8880% remains COMPLIANT**, and `routines/market-open.md` STEP 3 states the gate on cost.
+- **Rule 4:** **COMPLIANT on all three sleeves** — real GTC 10% trailing stops, all `status:new`, expiries 2027-01-28 (XLE) / 2027-01-11 (UNH) / 2027-01-26 (GEHC), nearest **70 days out**, none touched by hand.
+- **Rule 5:** **no cut owed.** Clearance to the -7% lines: **XLE 14.5243%** ($59.1065), **UNH 11.7303%** ($358.7103), **GEHC 7.2669%** ($71.0799 — closest of the three).
+- **Rule 6:** **not due, none placed.** XLE **+8.8028%** (+15% at $73.0886, **5.70% away**), UNH +5.3589% ($443.5665), GEHC +0.2878% ($87.8945).
+- **Rule 7:** **clear on all three, nothing moved by hand.** Stops sit **8.6972%** (XLE), **5.5330%** (UNH), **8.1566%** (GEHC) below their marks — all outside 3%. **Sixteen stop increases this phase, ZERO decreases.** Operative ratchet levels unchanged: XLE **$70.1510+**, GEHC **$78.22+**, UNH **$426.55+**.
+- **Rule 8:** **0 / 3 trades used**, week of 11/02-11/06. Pre-market is not the entry seat. **A seventh consecutive week of unused slots is in play and decision 1 is why.**
+- **Rule 9 — FRESH RECOMPUTE on official 10/30 SIP closes, 21-session window:** **XLE +11.675% (1st)**, XLP +11.316% (2nd), **XLV +11.233% (3rd)**, XLU +9.451%, XLB +8.653%, XLRE +6.121%, XLY +6.038%, XLF +5.705%, XLI -0.735%, **SPY -1.082%**, XLC -9.132%, XLK -9.251% (12th). **POSITIVE on both held sectors.** **⚠ Stated against today's tape: XLE leads the 21-session window and is simultaneously the worst major sector pre-market. The window has not yet seen today.**
+- **Rule 10:** health care **25.3208%** across UNH + GEHC against one prior health-care failure (XLV, 8/31). **Count unchanged at 1 — no new failure.**
+- **⚠ SECTOR EXPOSURE LINE — added as the weekly review instructed:** **health care 25.3208% (2 names) | energy 20.5507% (1 name) | cash 54.1285%.** 100% of directional exposure sits in two sectors, both of which the account is already at or near a cap in, and **the energy sleeve is the one taking today's hit.**
+- **Rule 11:** patience > activity. **Zero orders this run.**
+- **Rule 12:** all three sleeves carry a recorded, re-establishable thesis; this run's reading is persisted in the same run (STEP 6).
+- **Rule 13:** every book re-graded live and **nothing was inherited.** XLE's $69.31 (202 sh) and UNH's $406.50 (270 sh) are thin; **GEHC has ONE pre-market bar all session (513 sh, 12:19Z)**; **XOP's last print is 12:02Z — ~50 min stale at read time**; REGN's is ~55 min stale. **The disputed-price rule bit today in the direction it was written for: USO -3.3347% is the freshest and largest signal in the book and it is treated as a LIVE HYPOTHESIS, not an artifact — and no order is sized off any of it.**
+- **Rule 14:** **bar FAILED a 19th time — "NONE FOUND" on a signed ceasefire/truce/deal AND on transits restored to pre-war levels, while crude falls on the expectation of exactly that.**
+- **Rule 15:** **⚠ the 10/30 EOD / daily-summary run DID NOT FILE — see handoffs.** The weekly review for the week ending 2026-10-30 **IS filed** (`WEEKLY-REVIEW.md` line 920, commit `90595cb`) and **discharges the rule-15 handoff that seven runs carried.**
+- **PDT:** `daytrade_count` **and** `pattern_day_trader` both **ABSENT** a **10th** consecutive run — state not obtainable, recorded as such; no day trade placed or contemplated and equity is **4.04x** the $25,000 threshold.
+
+### ⚠ DECISION 5 — THE INSTRUMENT LEG IMPROVED ON BOTH COMPARATORS, AND FOR THE FIRST TIME THE REASON IS THAT XLE FELL LESS
+Phase basis (8/18 SIP closes: XLE $63.68, USO $130.66, XOP $185.35).
+| Reading | XLE ITD | USO ITD | **Uncaptured spread** | XOP ITD | **XOP edge** |
+|---|---|---|---|---|---|
+| 10/30 official closes | +9.9560% | +29.2132% | **19.2572 pts** | +9.9326% | **+0.0235 pts** |
+| **11/02 pre-market** | **+8.8411%** | **+24.9043%** | **16.0633 pts** | **+8.0658%** | **+0.7753 pts** |
+
+- **The spread NARROWED 3.1939 pts to a PHASE BEST of 16.0633** — 5.56 pts inside the phase worst — and the **XOP edge WIDENED from a coin-flip +0.0235 to +0.7753 pts.**
+- **⚠ AND THE MECHANISM IS SAID PLAINLY, BECAUSE IT IS THE OPPOSITE OF EVERY PRIOR IMPROVEMENT: both legs FELL, and XLE fell LESS — -1.0140% against USO's -3.3347% and XOP's -1.6981%. The vehicle that under-captured eleven weeks of crude upside is under-capturing this downside too, and today that asymmetry PAID.** That is the first genuinely favourable thing the capture analysis has produced, and it arrived on a down day rather than an up one.
+- **FOR the hold:** XLE **+8.8028%**, 1st of 11 on the rule-9 window, 14.5243% clear of its cut line, stop at 2027-01-28 expiry and never lowered, **rule 14's de-escalation bar failed a 19th time with an explicit NONE FOUND on both legs.**
+- **AGAINST:** **crude is repricing on the de-escalation expectation ahead of any wire, against 20.5507% of equity**, and the **10/16 Russia waiver remains IN FORCE** — re-checked this run: **unchanged and pending review, no repeal, no extension, no modification** (`state.gov` spokesman releases **10/17** and **10/22**, first-party; `reuters.com/.../rubio-says-trump-take-up-60-days-weigh-russia-sanctions-2026-10-18/`), window running to **~2026-12-16**.
+- **THE VERDICT IS UNCHANGED AND SO IS THE PROBLEM: neither branch is self-authorizable and neither was taken. Tally: six firings, twelve named opens, ZERO executions, and the review mechanism has now been non-actionable for 86 runs.** Today is the first session on which the *downside* of the thesis has arrived through price rather than through a confirmable headline — which is precisely the case the review was supposed to govern, and it cannot, because **decision 7 leaves its trigger population undefined.**
+
+### ⚠ DATA QUALITY — FIFTH CONSECUTIVE SESSION OF RESEARCH BASIS ERRORS, AND THE LARGEST BATCH OF THE PHASE: SEVEN NAMES, EVERY ONE OFF BY A FULL SESSION
+Research returned, explicitly labelled **"on November 2, 2026"**, a list of the day's biggest movers — **on a day the market has not opened.** Checked against first-party SIP daily bars:
+
+| Name | Research claim ("Nov 2") | **Actual: Fri 10/30 session** |
+|---|---|---|
+| REGN | +13.33% | **+13.33%** ($818.77 -> $927.89) |
+| GPN | +12.97% | **+12.97%** ($85.72 -> $96.84) |
+| GDDY | +10.72% | **+10.72%** ($105.89 -> $117.24) |
+| INTC | -28.58% | **-28.58%** ($92.07 -> $65.76) |
+| DDOG | -11.50% | **-11.50%** ($265.84 -> $235.27) |
+| QCOM | -11.12% | **-11.12%** ($185.41 -> $164.79) |
+| AMD | -10.88% | **-10.88%** ($566.42 -> $504.80) |
+
+**All seven match the FRIDAY move to the hundredth of a percent.** Source: `hdfcsky.com` snapshots stamped *"at 12 PM"* and *"at 3:30 PM"* — a **non-US-session timezone** on a non-canonical host. Three further errors in the same run:
+1. The Reuters URL cited for *"declines exceeding 4%"* is slugged **`oil-slips-more-than-1-...-2026-11-01`** — the citation's own headline contradicts the claim it was cited for.
+2. **Brent $108.64** would be **-6.4%** off the 10/30 settle, **inconsistent with USO's own -3.3347%**. **REJECTED — no Brent level adopted.** **WTI $99.71 is -3.54% off the logged $103.37 and IS tape-consistent, so the WTI figure and the direction are adopted** on first-party corroboration, not on the citation.
+3. An **AP** claim (*"Hormuz reopens within two days if US conditions are met"*) has **no `apnews.com` citation anywhere in that query's result set** — unsupported attribution to a wire, which is the exact failure mode rule 14 exists to catch.
+`rmb.reuters.com` appeared again — a **seventh** session of non-canonical hosts carrying material, and again the run did not need to clear them. **Decision 6 strengthened: five catches in five sessions, every one by first-party tape or this run's own `clock`, and today's catch needed the BASIS leg — domain and metadata-date would both have passed `hdfcsky.com`'s own internally-consistent numbers.**
+
+### Benchmark — 2026-11-02 pre-market
+- **Book +0.9456% vs SPY -2.2682%** (phase ref SPY $776.34 / equity $100,000.00) **= +3.2138 pts AHEAD.**
+- **⚠ NARROWED for the first time in four readings**, from the phase-best +3.8745. Sequence: **+3.4684 (prov.), +3.6455, +3.8707, +3.8745, +3.2138.**
+- **The mechanism is the inverse of Friday's and is reported as such: SPY ROSE (+0.3985%) while the book FELL (-0.2696%). Friday's lead grew because the benchmark lost more; today's shrank because the benchmark gained while the book did not.** The +3.8745 remains the phase best and today's reading is pre-market and thin — **re-strike at the open before treating the narrowing as real.**
+
+### Decision — **HOLD. ZERO ORDERS.**
+No rule trigger is met on any sleeve: no cut owed (closest clearance 7.2669%), no tighten due (closest gate 5.70% away), no stop inside 3%, no stop moved. **The rule-3 trim is specified and NOT placed (decision 4). The hedge is unpriced and NOT placed (decision 3). No entry: three ideas screened, zero rule-clean (decision 1).** Pre-market is not the entry seat — the open is. **Patience > activity (rule 11).**
+
+### Handoffs to the next run (MARKET-OPEN, 2026-11-02)
+- (i) **⚠ TOP ITEM — RE-STRIKE THE ENERGY COMPLEX ON LIVE RTH BOOKS THE MOMENT THEY EXIST.** Pre-market says **USO -3.3347%, XLE -1.0140%, XOP -1.6981% against SPY +0.3985%.** **Confirm or refute every one on RTH prints; inherit NO grade from this run (rule 13).** State whether XLE's underperformance of crude persists into the session, and **whether the 16.0633-pt phase-best spread and the +0.7753 XOP edge hold.**
+- (ii) **⚠ RULE 14 — RE-QUERY THE WIRES BEFORE ANYTHING ELSE, RESTRICTED AND DEMANDING A DATE.** Today's bar failed with an explicit **NONE FOUND** on a signed deal and on restored transits. **If a wire carries a signed ceasefire or deal, or Hormuz transits restored, that is a materially different session and exit trigger (a) must be re-read against decision 7's undefined population — which the bot cannot resolve. Escalate rather than act.** A talks-progress headline is **not** a signed deal.
+- (iii) **DO NOT PLACE THE RULE-3 TRIM.** Breach **$555.88**, remedy **SELL 9** (291 sh), 26th reading, **shrunk from Friday's $762.30 record because XLE fell.** Decision 4 unanswered; a trim is not self-authorizable. `qty_available` is **0** on all three names, so any trim must cancel a stop first.
+- (iv) **⚠ DECISION 1 LEADS, AND IT NOW HAS ARITHMETIC RATHER THAN AN ANECDOTE — carry the seven-name R:R table verbatim into the notification.** Not one name clears 2:1 at rule 4's 10% stop; **XLE, 1st of 11 on rule 9, scores 0.02; REGN, the market's best dated catalyst, scores 0.08.** **If a rule-clean entry presents on RTH prices, take it; if the only blocker is the 252-day-high target basis, say so explicitly and DO NOT self-authorize an alternative basis.** 3 of 3 slots are live.
+- (v) **REGN is the one name worth re-pricing at the open** — catalyst is first-party and confirmed (`investor.regeneron.com`, 10/30 Q3: revenue +36% to $5.12B, non-GAAP EPS $20.07), sector XLV 3rd of 11. **It fails R:R at 0.08:1 because its 252d high ($935.35) was set on the catalyst day. Re-check on RTH, and if it still fails, record it as decision 1 evidence rather than re-screening it tomorrow.** Health care would reach ~40% on three names — size accordingly if the owner ever unblocks it.
+- (vi) **UNH: status is UNEXPLAINED-WITH-A-NON-WIRE-CANDIDATE-CAUSE, not broken and no longer simply unexplained.** The 10/29 employer and Fairview suits are **absent from Reuters/AP/Bloomberg**. **Re-run the wire-restricted query at the open** — if a wire picks either suit up, that is new thesis-relevant information on 15.2978% of equity. **No rule trigger is met; do not cut without one.**
+- (vii) **⚠ VOL: no level adopted a 7th run; research returned NO quote at all. Do NOT inherit 19.41, 20.19 or 17.20.** Re-read from `cboe.com` and **check the structured timestamp against `clock` before adopting.** The sign flipped to risk-ON today. Decision 3 is not self-grantable.
+- (viii) **Benchmark: +3.2138 pts, NARROWED for the first time in four readings, and on the inverse mechanism (SPY up, book down). Re-strike at the open, say whether the narrowing survives RTH, and name WHICH LEG drove it.** Phase best is +3.8745.
+- (ix) **Operative ratchet levels: XLE $70.1510+, GEHC $78.22+, UNH $426.55+. Report any new `stop_price`; do NOT touch a stop by hand.** Sixteen increases, zero decreases.
+- (x) **ISM Manufacturing lands 10:00 ET — INSIDE the open run's window. ⚠ And US MIDTERM ELECTIONS are TOMORROW, 11/03.** The weekend carried 45.8715% unhedged; the midterms will be carried the same way unless decision 3 is answered today.
+- (xi) **Do NOT re-screen** MA, CTS, LLY, EBAY, CROX, NCLH, CAT, Carrier, ELV, HCA, CNC, APH, MAS, PPG, UCTT, **and now PERI and INO** without a NEW dated catalyst.
+
+### Handoffs issued under rule 15
+- **⚠ TO THE 11/02 DAILY-SUMMARY / EOD RUN, BY NAME:** **the 10/30 EOD snapshot was NEVER FILED.** `git log` carries `pre-market`, `market-open`, `midday scan` and `weekly review` for 10/30 and **no daily-summary commit** — **daily-summary has now failed TWENTY consecutive sessions, and 10/26-10/30 have no closing record from any seat.** File tonight's EOD **and** state plainly that the 10/26-10/30 closes remain unreconstructed. The weekly review already answered two of the questions handed to that run (the week-end equity reconciles exactly — see above — and **no 17th stop increase landed**, XLE's 10/30 high WAS $70.1510), so **the outstanding items are the four missing closes and today's own close.**
+- **⚠ TO THE OWNER — TWO TOOLING ITEMS, BOTH PROVED, BOTH UNAPPLIED, NEITHER SELF-APPLIED FROM THIS SEAT:** (1) the one-line `snapshot` feed fix in `scripts/alpaca.sh` (`&feed=${2:-sip}`), **recommended a 13th consecutive session** — this run routed around it again by using `bars ... sip` for every price, which is why nothing here is IEX-contaminated; (2) rule 13's quote test should be a **WIDTH check against `latestTrade`**, not a timestamp check. **These are shared live-trading tools and a research seat does not edit them unseen.**
+- **⚠ ALL SEVEN OWNER DECISIONS CARRY, ZERO ANSWERED, none self-authorizable (rule 15), and they stay in every notification until answered or withdrawn.** **THREE moved today.** **Decision 1 — leg (b) is now a measured contradiction across seven names rather than a single-trade inference, and cash posted its first CREDIT in seven readings on the same day, so both halves moved at once.** **Decision 5 — the instrument leg improved on BOTH comparators to a phase-best 16.0633-pt spread, for the first time because XLE fell LESS, while the thesis's downside began arriving through price on a story rule 14 bars acting on.** **Decision 6 — a fifth consecutive catch, the largest batch yet (seven names, a full session off), and the first one that needed the BASIS leg because domain and metadata-date would both have passed.** **Decisions 2, 3, 4 and 7 are unchanged in kind: 2 untested (no second energy leg contemplated), 3 worse (no VIX quote at all, 7th run, midterms tomorrow), 4 narrower in dollars only ($555.88 vs $762.30, same one-sentence question), 7 untouched and still blocking decision 5's mechanism.**
+- **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
