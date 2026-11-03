@@ -2062,3 +2062,12 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **⚠ 45.72% of equity enters tonight's election results unhedged (decision 3, not self-grantable). AMD reports after the close. All seven owner decisions carry, zero answered.**
 
 **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+### Nov 03 — EOD Snapshot (Day 57, Tuesday)
+**Portfolio:** $100,626.95 | **Cash:** $54,640.38 (54.3%) | **Day P&L:** +$94.25 (+0.09%) | **Phase P&L:** +$626.95 (+0.63%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| XLE | 300 | $63.56 | $66.875 | -0.56% | +$995.90 (+5.22%) | $63.14 trail 10% |
+| UNH | 38 | $385.71 | $402.685 | +0.56% | +$645.05 (+4.40%) | $383.90 trail 10% |
+| GEHC | 132 | $76.43 | $80.47 | +1.16% | +$533.28 (+5.29%) | $72.73 trail 10% |
+**Notes:** No trades, 0/3 weekly slots used. All stops intact. Rule 2 (deployment) still under floor, ~45.7% deployed.
