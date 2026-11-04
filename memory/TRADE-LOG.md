@@ -2062,3 +2062,63 @@ No positions yet. Bot launches tomorrow. (Paper trading account.)
 **⚠ 45.72% of equity enters tonight's election results unhedged (decision 3, not self-grantable). AMD reports after the close. All seven owner decisions carry, zero answered.**
 
 **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+## 2026-11-04 — Market-Open Execution (Day 58, Wednesday, fired 08:36 ET / RTH work 09:30-09:35 ET) — **ZERO ORDERS**
+
+**No trade placed, cancelled, modified or staged. No stop touched by hand. `activities FILL 2026-11-04` = `[]`. 3 open orders, all stops, count unchanged.** Run fired **08:36 ET, 54 min pre-bell** (DST defect, 6th consecutive session) and **waited for the 09:30:02 ET open** rather than sizing off pre-market prints (rule 13). Endpoint verified `paper-api.alpaca.markets/v2` — **paper, untouched.**
+
+**Account:** equity **$100,264.14**, `last_equity` $100,660.22, **day -$396.08 (-0.3935%)**; cash $54,640.38 (54.4964%); long MV $45,623.76 (**45.5036% deployed**); unrealized **+$1,808.42**.
+
+### Open positions — all three with a live, re-checked thesis (rule 12)
+| Ticker | Qty | Entry | Mark | Day | Unreal. | Stop (GTC trail 10%) | hwm | Gap to stop | Clear of -7% | % equity | Sector / rule 9 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| XLE | 300 | $63.5553 | $65.4800 | -1.8000% | **+$577.40 (+3.0283%)** | $63.1359 `7ed2ad20` exp 2027-01-28 | $70.1510 | **3.5799%** | 10.0283% | **19.5922%** | Energy, **8th** |
+| UNH | 38 | $385.71 | $394.5189 | -2.4530% | **+$334.74 (+2.2838%)** | $383.8950 `5d48b1e5` exp 2027-01-11 | $426.55 | **2.6929%** | 9.2838% | 14.9522% | Health care, **1st** |
+| GEHC | 132 | $76.43 | $83.2200 | +3.1740% | **+$896.28 (+8.8839%)** | **$75.1500** `13dd3b34` exp 2027-01-26 | **$83.5000** | 9.6972% | 15.8839% | 10.9561% | Health care, **1st** |
+
+**All three stops real, GTC, `trailing_stop`, `trail_percent` 10, `status:new`, full size covered (300/300, 38/38, 132/132). 0.9 x hwm = stop_price exact on all three. TWENTY increases this phase, ZERO decreases.**
+
+### ⚠ 20th STOP INCREASE — GEHC, AUTOMATIC, TEN SECONDS AFTER THE BELL
+**`hwm` $80.8100 -> $83.5000; `stop_price` $72.7290 -> $75.1500, a rise of $2.4210.** `updated_at` **2026-11-04T14:30:12Z (09:30:12 ET)**. Arithmetic verified: 0.9 x $83.50 = $75.15 exactly. **The morning handoff predicted $73.9080 off the $82.12 pre-market basis — the actual RTH print was $83.50, so the increase came in $1.2420 LARGER than forecast.** **Alpaca's trailing mechanism working as designed on RTH prints only — NO STOP TOUCHED BY HAND.** XLE and UNH `hwm`/`updated_at` unchanged; neither printed a new high. **New operative levels: GEHC $83.5000+, XLE $70.1510+, UNH $426.55+.**
+
+### ⚠ RULE 7 BREACHED ON UNH — STOP INSIDE THE 3% LINE ON RTH PRINTS, AND NO IN-RULES REMEDY EXISTS
+**UNH mark $394.5189 vs the 3% line at $395.7680 — INSIDE by $1.2491; gap to stop 2.6929%.** The morning handoff said -0.19% would do it; **UNH fell -2.4530%.** On 11/03 it traded inside pre-market only and the RTH low $397.32 never went through — **today is the first genuine RTH occurrence.**
+**No remedy is available inside the rules:** restoring clearance requires moving the stop **DOWN** (rule 7 forbids it absolutely); `qty_available` is **0**; cancelling and re-placing a 10% trail re-prices it off the current mark, which both lowers the stop and discards 43 days of accumulated trail. **Measured, reported, NOTHING TOUCHED, nothing owed.**
+⚠ **This is a CONSTRAINT CONFLICT IN THE RULEBOOK, not an action trigger: rule 4 mandates a 10% trail, rule 7 mandates 3% clearance, and any position that falls ~7.5%+ from its hwm while the trail holds satisfies the first and violates the second NECESSARILY.** **XLE is $0.3914 (-0.60%) from joining it.** Escalated to the owner.
+
+### Why no trade — every rule checked, no trigger met
+- **Rule 2 — BREACHED: 45.5036% vs the 75-85% band, short of the floor by $29,574.34 (29.4964 pts). 65th consecutive session.** Decision 1, unanswered.
+- **Rule 3 — COMPLIANT on all three, THIRD consecutive reading, most room yet.** XLE **19.5922%** vs the $20,052.83 cap, **inside by $408.83**, re-breaches at **$66.8428 (+2.0812%)** — against $120.64 yesterday and $13.11 on 11/03. **The cure widened again, and this time the position moved more than the denominator: XLE -$1.20/share against equity -$396.08.** Cost basis 19.0164%. **SELL 1 moot, not retired, not placed, not self-authorizable.**
+- **Rule 4 — all three stops verified order-by-order.**
+- **Rule 5 — NO CUT OWED.** All three positive; closest clearance **UNH +9.2838 pts**.
+- **Rule 6 — NO TIGHTEN DUE.** Closest gate **GEHC 6.1161 pts** below +15% (in from 7.5553, nearest in the book a second session); XLE 11.9717, UNH 12.7162.
+- **Rule 7 — ⚠ BREACHED ON UNH (above). XLE 3.5799% outside by only $0.3914. GEHC 9.6972%. No stop moved down, ever.**
+- **Rule 8 — 0/3 slots used**, week of 11/02-11/06, confirmed first-party. Seventh consecutive unused week in play.
+- **Rule 9 — both held sectors POSITIVE and top-eight, NOT breached.** XLV **1st** and strengthening (+9.9480 -> +12.0810); **XLE held 8th a fourth reading but momentum HALVED AGAIN (+5.0906 -> +2.8054).** *(21 sessions, 10/05 -> live 09:33 ET; all 11 books accepted on width.)*
+- **Rule 10 — health care 25.9083%** (UNH + GEHC) against **one** prior health-care failure (XLV, 8/31). Count unchanged.
+- **Rule 1 — no options, none contemplated.** `options_trading_level 3`, **zero options positions.**
+- **Rule 13 — bound TWICE: the run waited 54 min for the bell, and four of six live books were REJECTED ON WIDTH** (PFE 10.4954%, UNH 8.8221%, RVTY 6.6614%, GEHC 4.2786%); XLE 0.0458% and SPY 0.1402% accepted. Position marks and daily SIP bars used instead.
+- **Rule 14 — 26th consecutive failure of the de-escalation bar.** Legs (a)(b)(c) **NONE FOUND / NO** on November-dated wires (Reuters 11/02 Iranians left Doha, no breakthrough; Reuters 11/03 sides far apart and combat not ruled out; AP 11/02 Hormuz reopening only *proposed*, two-day, conditional; **no measured transit or crude-flow figure obtainable at all**). Leg **(d) YES and wire-grade** (AP 11/02, US strikes in the Strait). **Exit trigger (a) does not fire.**
+- **PDT — `daytrade_count` and `pattern_day_trader` both ABSENT a 15th consecutive run.** No day trade placed or contemplated.
+
+### ⚠ THE ENTRY THAT FAILED, AND WHY IT MATTERS MORE THAN THE USUAL MISS
+**PFE cleared the catalyst gate emphatically — the first clean pass in six sessions — and the R:R gate killed it.** Q3 reported 11/03: **adj EPS $0.87 vs $0.73 (+19.2%)**, **revenue $16.58bn vs $15.87bn (+4.5%)**, **FY revenue guidance midpoint $61.5bn -> $63.0bn (+$1.5bn)**, **FY adj EPS midpoint $2.90 -> $3.00**, confirmed on a second query against Pfizer's own release and CNBC, both dated 11/03. **Sector health care, XLV 1st (+12.0810%). This is the GEHC standard met in full in the account's strongest sector. R:R at a 10% stop: 0.3533, against the 2.0 minimum. NOT ENTERABLE.** RVTY likewise: beat both lines, EPS guidance raised $5.35 -> $5.425 midpoint, **but revenue guidance moved to a single "approximately $2.86bn" figure so no new midpoint is computable** (the MLM defect), and **R:R 0.5053. NOT ENTERABLE on arithmetic regardless.**
+⚠ **THE MECHANISM: the two gates are ANTI-CORRELATED.** The R:R gate on a 252d-high target needs entry **<= 83.33% of that high**. **PFE trades at 96.59% of its $31.06 high — 3.41% below it, needing to be 16.67% below.** **A beat-and-raise has by construction already rallied toward its high; that is what the catalyst does to the price.** The gates select disjoint populations. **This explains the 65-session rule-2 breach and the 7-session unused-trade-week run better than any market condition, and it predicts indefinite zero entries.** **Decision 1 must re-scope or withdraw one of: the 2:1 minimum, the 10% stop, or the 252d-high target basis.** *(Do not re-screen without PFE <= $25.8833 or RVTY <= $143.1167.)*
+
+### Theses re-checked live — all three INTACT
+- **XLE** — Hormuz/Iran supply premium. Rule 14 failed a 26th time; escalation wire-dated 11/02. **INTACT by the letter.** ⚠ **But the risk has CHANGED SHAPE: crude ROSE today (WTI ~$96.535 from ~$95.14; Brent ~$104.04 from ~$102.04) while XLE FELL -1.80%.** Yesterday the sleeve deflated *with* the barrel; today it fell *against* it. **The likely mechanism is the wire-confirmed Democratic sweep repricing US energy equities on POLICY — which is not the risk this position was underwritten on.** Leading thesis risk; nothing owed above $63.1359.
+- **GEHC** — Q3 beat-and-raise (10/28). **NONE FOUND dated 11/03-11/04 for guidance change, FDA action, recall, warning letter, lawsuit, investigation or corporate action. INTACT, and the analyst tape IMPROVED: RBC to $90.00 from $80.00, Outperform (11/03), relieving the UBS $80.00 headwind logged yesterday** (UBS confirmed Neutral, PT $80.00 from $73.00, 11/03). GEHC $83.22 is now above the UBS target and 7.5% below RBC's. Not a trigger; the trail at $75.15 is the operative control.
+- **UNH** — 10/13 guidance of 2026 adj EPS >= $20.50. **NONE FOUND dated 11/03-11/04 for any guidance change, any NEW DOJ/CMS enforcement action, subpoena or lawsuit FILED, any named-firm downgrade or PT cut, or any index/rating change.** Only dated items are reaffirmations (TD Cowen 10/15, UBS 10/13). **INTACT.** ⚠ **The de-rating risk named yesterday is now in the tape: -2.4530% today after -1.47% after-hours, and it is the sole reason the book is down on the day.** Next catalyst: **late-November Medicare Advantage technical rule.**
+
+### Market context
+**VIX 19.08 (-8.09%) — via Perplexity a second consecutive session and BELOW 20 for the first time this phase. ADP October private payrolls +86,000 (08:15 ET), inside the 65-90k consensus. SPY $763.5450 live, +1.22% on the 11/03 close. 10-year 4.936%. Oil higher on both benchmarks.** ⚠ **Undischarged and handed to midday: September trade balance (08:30 ET, had not printed), S&P Global Services PMI (09:45 ET, fcst 57.9), ISM Services (10:00 ET, fcst 54.8).**
+
+### Benchmark — THE EDGE NARROWED SHARPLY AND SPY DID IT
+**Book +0.2641% vs SPY -1.6481% (ref SPY $776.34 -> $763.5450) = +1.9123 pts AHEAD, DOWN -1.4534 pts from +3.3657.** **Naming the leg: SPY drove 81.5%** — the SPY leg improved +1.1844 pts against the book while the book leg contributed -0.2691 pts. **Largest single-session loss of edge this phase, and the mirror of yesterday's symmetry: when both legs fall together the edge holds; when SPY rallies alone it goes.** The book did not break — **it did not participate. 45.5% deployed cannot track a +1.22% index day, which is the rule-2 breach stated in benchmark terms for the first time.**
+
+### ⚠ Rule 15 — THE EOD CLASS HAS NEVER FILED, NOT ONCE
+**Verified first-party with `git log --all`: of the repository's 50 commits, ZERO are from the EOD / daily-summary class — not merely missing for 10/30, 11/02 and 11/03 as yesterday reported, but ABSENT FROM THE ENTIRE HISTORY under any subject (`daily`, `eod`, `close`, `end-of-day` all return nothing).** **No session has ever had a closing record from that seat.** Consistent with a routine that fires at 15:15 ET, finds the session still open, and exits without filing — i.e. **the same DST defect, with a real cost this time.** **Handed to the EOD class by name; escalated to the owner.**
+
+**⚠ ALL SEVEN OWNER DECISIONS CARRY, ZERO ANSWERED. New this run: (1) the rule 4 / rule 7 contradiction, now LIVE on UNH with XLE $0.39 away; (2) decision 1 has a mechanism — the catalyst and R:R gates are anti-correlated and predict indefinite zero entries; (3) XLE is being repriced on energy POLICY, not the Hormuz premium; (4) the benchmark edge fell 1.4534 pts in one session with 45.5% deployment named as the cause.**
+
+**Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
