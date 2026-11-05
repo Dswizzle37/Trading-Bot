@@ -2258,3 +2258,11 @@ The defect was logged 11/04 as "peaks in the 10-15% band round-trip to flat." **
 **Benchmark: book -0.0406% vs SPY -4.6230% (phase ref $776.34, live trade $740.45 on an ACCEPTED 0.0297% book) = +4.5824 pts AHEAD — MORE THAN DOUBLED from +2.2461 at this morning's open.** The leg is named as rule 15 requires: **the entire move is SPY's.** The book went slightly *down* today (-0.4966%) and gained 2.3363 pts of benchmark lead anyway. Sequence: ... +1.6749, +1.5559, +1.6859, +2.2461, **+4.5824**. ⚠ **The phase's headline number is now overwhelmingly a function of the account being 73.6048% in cash during a selloff — it is a cash-weighting artefact, not alpha, and the weekly review must say so in those words.**
 
 **⚠ ALL OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15); they stay in every notification until answered or withdrawn.** **Decision 1 received its first genuine counter-evidence today** (see above) and the honest reading is that it is *better specified*, not withdrawn: the 2:1/10%/252d-high interaction still produced 69 sessions of breach and 8 unused trade weeks, and one lucky session does not repair it. ⚠ **Decision 3 is materially re-scoped by the VIX roughly doubling off its floor: 26.3952% unhedged at VIX ~23.28, rather than 26.9332% at VIX 16.61.** **Decision 6 earns an 11th consecutive catch on three faults this run** (the re-served 16.83/10:31 VIX stamp; research understating SPY by ~1.0-1.4 pts; the `snapshot` prevDailyBar giving SPY's 11/04 close as $766.73 against the SIP 1Day bar's **$766.81**, a $0.08 error, which is the unfixed `feed=sip` defect in its **24th** session).
+
+### Nov 05 — EOD Snapshot (Day 59, Thursday)
+**Portfolio:** $99,594.43 | **Cash:** $73,574.95 (73.87%) | **Day P&L:** -$863.88 (-0.86%) | **Phase P&L:** -$405.57 (-0.41%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| UNH | 38 | $385.71 | $396.06 | -3.25% | +$393.30 (+2.68%) | $383.895 (10% trail, hwm $426.55) |
+| GEHC | 132 | $76.43 | $83.10 | -3.16% | +$880.44 (+8.73%) | $78.804 (10% trail, hwm $87.56) |
+**Notes:** AI-led risk-off day. No trades (0 fills today, verified via activities). Both GTC trailing stops intact, none touched. Still 26% deployed (rule 2 breach persists). Trades this week: 0/3.
