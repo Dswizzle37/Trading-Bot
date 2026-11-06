@@ -16941,3 +16941,55 @@ Marks are `position.current_price` against `lastday_price`, both of which reconc
   - **Decision 1 — the sharpest evidence yet, and it cuts both ways.** A -8% XLK session flipped AMD/EPAM/APH from R:R failures to passes **and rule 9 rejected all three** — the two gates are anti-correlated **by construction**. **But the decision is also partly answered by this run's own output: TPR and MCD clear both gates because their catalysts were idiosyncratic, not sector-wide.** The fix may be a catalyst-type filter rather than a gate change.
   - **Decision 3 — re-scoped a second time in three sessions: 25.9010% unhedged at VIX 28.18, against ~23.28 yesterday and 16.61 on Tuesday.**
   - **Decision 6 — a 12th consecutive catch, four faults this run**, including a futures table that was internally impossible and a third instance in two sessions of undated archive material served as same-day news.
+
+## 2026-11-06 — MARKET-OPEN ADDENDUM (Day 60, Friday, fired 08:36 ET / RTH work 09:30-09:36 ET, market OPEN) — **TWO FILLS. THE CONDITIONAL ENTRY FIRED: TPR 148 @ $133.49, MCD 72 @ $270.20, BOTH WITH 10% GTC TRAILS PLACED IN THE SAME RUN. RULE 2 HALVED, 25.8506% → 65.3779% DEPLOYED. THE JOBS PRINT WAS HOT (+165k vs +65k) AND THE TAPE ABSORBED IT. ⚠ THE PRE-MARKET'S MCD GATE WAS $0.575 TOO LOOSE — IT USED THE INTRADAY 252-DAY HIGH AGAINST THE HOUSE CLOSE BASIS — AND WAS CORRECTED BEFORE SIZING.**
+
+### The 08:30 release — resolved, and it did not break the tape
+| Field | Consensus | **Actual** |
+|---|---|---|
+| Nonfarm payrolls | +65,000 | ⚠ **+165,000** |
+| September (revised) | +29,000 | **+60,000** |
+| Unemployment rate | 4.2% | **4.1%** |
+| Average hourly earnings | +0.3% m/m / +2.9% y/y | ⚠ **NOT OBTAINED — recorded as missing, not estimated** |
+Source: Reuters, dated 2026-11-06, "strong October jobs report sends yields higher." ⚠ **The figures were NOT retrievable at 08:36 ET, six minutes after release** — the first query returned the BLS schedule page and said so explicitly. Obtained on a 09:00 ET re-query. **Indexing lag on scheduled releases now binds any run firing before 09:00 ET.**
+
+**A +165k print into a >65%-priced December HIKE is the adverse macro case the pre-market named, and the equity tape did not trade it that way.** SPY printed **$735.39 / $735.80 / $735.52 / $735.82** across four live RTH samples (books 0.0109% / 0.0095% / 0.0082% / 0.0054%, all ACCEPTED) = **+0.3261% to +0.3852%** vs the $733.00 SIP 1Day close, **$16.82 (2.3394%) clear of the $719.00 abort line, a gap-up that drifted further up — not a gap-and-reverse.** Rates took the print; equities did not. **Condition 1 passed on its own stated terms.**
+
+### Gate re-strike on live RTH prints — the gap ran the account's way for once
+| | TPR | MCD |
+|---|---|---|
+| 11/05 close | $134.17 | $278.04 |
+| First RTH print | **$131.09** (09:30:32) | **$271.41** (09:30:40) |
+| Further samples | $132.19, $132.19 | $271.11, $271.305, $270.20 |
+| Opening move | **-2.2957%** | **-2.3845%** |
+| Gate (**close** basis) | $137.3167 ✓ | ⚠ **$284.2167** (corrected from $284.7917) ✓ |
+| **Fill** | **$133.49** (09:34:50) | **$270.20** (09:34:31) |
+| Slippage vs last sample | ⚠ **+$1.30 (+0.9834%)** | $0.00 |
+| Target (252d close high) | $164.78 | $341.06 |
+| **R:R at fill** | **2.3440:1** | **2.6225:1** |
+| Stop (10% GTC trail) | $120.1230 (`bddb11b5`) | $243.5310 (`1a224b95`) |
+
+⚠ **THE MCD GATE CORRECTION, RECORDED BECAUSE IT WENT AGAINST THIS DESK'S INTEREST.** The pre-market's $284.7917 is $341.75/1.2, and **$341.75 is MCD's 252-day INTRADAY high (2026-03-02)**. The house basis — set on the GEHC and UNH entries, named "the more conservative of the two," and applied to TPR on 11/05 at a cost of $0.0166 — is the **252-day CLOSE high, $341.06 (2026-02-27), giving $284.2167.** Verified first-party off 252 SIP 1Day bars. **TPR's $137.3167 was confirmed correct.** The correction changed no verdict (MCD cleared both by ~4.5%) but **a desk that tightens a gate by $0.0166 one session and loosens another by $0.5750 the next without saying so is self-authorizing, which rule 15 forbids.**
+
+⚠ **RULE 13, 12th OCCURRENCE, CUTTING THE OPPOSITE WAY FROM YESTERDAY.** All four single-name quote books failed the width test and were rejected (TPR 11.7161%, MCD 9.9765%, UNH 7.3239%, GEHC 11.0701%); only SPY's was ever accepted. Both pre-market indications were **stale 11/05 21:00 stamps**: TPR mid $134.80 (10.79% wide), MCD mid $277.90 (8.30% wide). **MCD's stale mid was 2.90% above its actual fill.** Yesterday the gap destroyed a qualifying TPR trade (+14.7% open, R:R → 1.4813); **today the same mechanism created two by opening both names down ~2.3%.** ⚠ **Two of the phase's three entry decisions in two sessions were settled by an overnight gap, not by the research — logged identically on the day the luck ran favourably.**
+
+### Market context at the open
+- **SPY +0.3111%** vs 11/05 close; **phase: -5.2889%** off the $776.34 reference.
+- ⚠ **XLY WAS THE LAGGARD AND BOTH NEW SLEEVES ARE IN IT: XLY -0.6545% while SPY was +0.3111%**, with TPR **-1.2894%** and MCD **-2.6794%** against their 11/05 closes. **Both positions were red or flat within an hour of purchase, in the weakest major sector of the session.** Rule 9 is satisfied on the 20-day horizon (**XLY +5.3084% 20d / +1.2392% 5d**, first-party) — **the one-day lag does not breach it, and it is recorded rather than smoothed over.**
+- **Volatility eased modestly off the 28.18 close, on the proxy only: VIXY $21.36 → $20.87 (-2.2941%), UVXY $23.5650 → $22.83 (-3.1180%).** ⚠ **No VIX point estimate is asserted — there is still no first-party source (tooling item 6).**
+- **Both inherited theses INTACT.** Perplexity returned **no company-specific news dated 11/05 or 11/06 for UNH or GEHC.** TPR: **Barclays raised its target $185 → $195 (11/06)**. MCD: **thirteen analyst target raises dated 11/05** following Q3 (Citi → $315, KeyBanc → $307, Deutsche → $306, BTIG → $305, Wells Fargo/RBC/JPMorgan et al.), with **Freedom Broker cutting to Hold and HSBC trimming $356 → $352** — recorded in both directions.
+
+### ⚠ What this run changed about the book's risk, stated plainly
+- **Rule 2 breach is halved but NOT cured: 65.3779% deployed, $9,550.40 / 9.6221 pts short of the $74,440.88 floor, a 70th consecutive session.** The remaining gap is **closeable by a single 5th position of ~$9,550 (~9.6% of equity)** inside rules 3, 8 and the 20% cap — **the first time in 70 sessions that has been true.**
+- ⚠ **The +4.5434-pt benchmark lead (narrowed from +5.2499) was overwhelmingly a 74%-cash artefact, and this run deliberately spent most of that artefact to comply with rule 2. The lead should be expected to compress from here; that is the intended trade-off, not a deterioration.**
+- ⚠ **Decision 3 is re-scoped by this run's own action: 65.3779% directional and unhedged into a weekend**, against 25.9010% at the pre-market read.
+- ⚠ **NEW DECISION 7 — NO SECTOR CONCENTRATION CAP EXISTS.** The book is now **39.3768% consumer discretionary** and **25.9956% health care**. Nothing in the rulebook stopped two independently-screened names from doubling into one sector in one session: rule 3 caps positions, rule 10 counts failures, rule 9 checks momentum. **No rule was broken and none would have been.** Either add a cap (~30-35%) or state in writing that sector concentration is governed only by rules 9 and 10.
+- ⚠ **The rule 4-vs-6 defect is now on FOUR OF FOUR sleeves.** TPR must reach **$148.3222** and MCD **$300.2222** for their own stops to break even; both were opened into the defect knowingly under pre-market condition 6, accepted because targets sit +23.43% and +26.23% away. **UNH remains the live victim: stop $383.8950, $1.8150 below entry, gap 2.3532% — inside rule 7's 3% line, suppressed by price, not cured, no in-rules remedy.**
+
+### ⚠ Research faults — decision 6, 13th consecutive catch, four faults
+1. ⚠ **The pre-market's own MCD gate used the looser INTRADAY 252-day high** — $0.5750 over-loose. **First fault of the phase located in this desk's prior output rather than the research tool's.**
+2. ⚠ **`snapshot` served the ENTIRE 11/05 SESSION as `dailyBar` and 11/04 as `prevDailyBar` at the bell** (TPR dailyBar o=143.75/c=134.12, prevDailyBar c=125.28) — **a full one-day roll-over lag. Any run trusting `dailyBar` at the open reads yesterday as today.** The familiar $0.08 `feed=sip` discrepancy also recurred (SPY 11/04 close $766.73 vs SIP 1Day $766.81) in its **26th session** — but the roll-over is materially worse than what has been logged for 26 sessions.
+3. ⚠ **SIP 1Min and 5Min feeds returned NO RTH bars at all** for TPR/MCD/SPY as late as 09:35 ET; at 09:00 ET the 5Min feed's newest bar was stamped **07:55 ET — a 65-minute lag vs the "~15 min" on record.** All marks and sizing came off `latestTrade`.
+4. ⚠ **The jobs report was unretrievable six minutes after release** (see above); **average hourly earnings never obtained.**
+- **Perplexity STRICTLY SERIAL: 3/3 calls, ZERO 429s. Running total 60/60 serial vs 2/10 parallel.**
+- ⚠ **The DST trigger defect fired a 12th consecutive session** — this routine is scheduled at 08:36 ET, 54 minutes before the open, forcing every market-open run to wait for the bell before it may size anything.
