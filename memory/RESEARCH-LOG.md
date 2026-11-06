@@ -16993,3 +16993,83 @@ Source: Reuters, dated 2026-11-06, "strong October jobs report sends yields high
 4. ⚠ **The jobs report was unretrievable six minutes after release** (see above); **average hourly earnings never obtained.**
 - **Perplexity STRICTLY SERIAL: 3/3 calls, ZERO 429s. Running total 60/60 serial vs 2/10 parallel.**
 - ⚠ **The DST trigger defect fired a 12th consecutive session** — this routine is scheduled at 08:36 ET, 54 minutes before the open, forcing every market-open run to wait for the bell before it may size anything.
+
+## 2026-11-06 — MIDDAY ADDENDUM (Day 60, Friday, fired 12:08 ET, market OPEN) — **NO ACTION OWED, NONE TAKEN. ALL FOUR SLEEVES GREEN AND THE PHASE TURNED POSITIVE (+$73.43). BOTH THESES INTACT. ⚠ THE RESEARCH TOOL REPORTED "NO NEWS" FOR ALL FOUR HOLDINGS ON DATED ITEMS IT HAD SERVED THE SAME MORNING. ⚠ A FULL PARKED-LIST R:R SCREEN WAS RUN FIRST-PARTY AND THE ONE NAME THAT PASSES EVERY GATE — ADM — PASSES ONLY BECAUSE THE TAPE SOLD ITS BEAT-AND-RAISE -6.59%.**
+
+### Market context at 12:08-12:12 ET, first-party where it exists
+| | Value | Basis |
+|---|---|---|
+| SPY | **$739.68** (freshest `latestTrade` 17:12:18Z) | quote book 0.0054% — **ACCEPTED** |
+| SPY vs 11/05 SIP close $733.00 | **+0.9113%** | SIP 1Day |
+| SPY vs phase ref $776.34 | **-4.7222%** | — |
+| 10-year Treasury | **~4.87%**, up after the jobs print | Perplexity, dated 2026-11-06 — **no first-party source** |
+| December Fed hike odds | **~78%, up from ~70%** | Perplexity, dated 2026-11-06 — **no first-party source** |
+| Volatility proxy | **VIXY $20.01 (-5.7022% d/d), UVXY $21.45 (-9.1487%)** | SIP 1Day — ⚠ **no VIX point estimate asserted** |
+
+**The AI/semiconductor washout is bouncing, and it is the session's whole story.** First-party: **XLK +1.8598% today after -7.8603% over five days and -16.7924% over twenty.** Research (dated 11/06, multiple wires) puts the Philadelphia Semiconductor Index **+4-6% today after -12% on 11/05**, with Nvidia ~+6%, AMD ~+8%, Intel ~+6%, Micron ~+8-10%. ⚠ **Recorded as a partial retracement and nothing more — a one-day +1.86% in XLK against -16.79% over a month is dip-buying, not a resolution of the AI-spending and regulatory concerns that caused the selloff.** **The book holds no technology and this does not bind it.**
+
+**Sector momentum, all first-party off SIP 1Day bars (rule 9 source of record):**
+| Sector | 1d | 5d | 20d |
+|---|---|---|---|
+| XLV (health care — UNH, GEHC) | +0.0595% | +0.0811% | **+8.3192%** ✓ |
+| XLP (staples) | -0.9041% | +1.1239% | **+8.3843%** ✓ |
+| XLB (materials) | +0.1242% | -0.6542% | **+5.9984%** ✓ |
+| XLF (financials) | -0.0087% | +1.7431% | +5.0521% ✓ |
+| **XLY (disc. — TPR, MCD)** | ⚠ **+0.5694%** | +2.5393% | **+4.8382%** ✓ |
+| XLU (utilities) | -0.1386% | -0.4375% | +4.4192% ✓ |
+| XLI (industrials) | +0.4124% | -2.5448% | **-3.6100%** ✗ |
+| XLE (energy) | +0.8032% | -11.2753% | -4.5406% ✗ |
+| XLC (comms) | +0.8099% | +5.2903% | -4.7065% ✗ |
+| XLK (technology) | +1.8598% | -7.8603% | **-16.7924%** ✗ |
+⚠ **XLY's opening lag REVERSED: -0.6545% at 09:36 → +0.5694% now.** Both sectors the book holds satisfy rule 9 on every horizon.
+
+### Thesis check (STEP 5) — **BOTH INHERITED AND BOTH NEW THESES INTACT; NOTHING BROKE INTRADAY**
+- ⚠ **Perplexity returned NO company-specific news dated 11/05 or 11/06 for TPR, MCD, UNH or GEHC.** See fault 2 — **this is NOT taken as evidence of no news**, because the same tool served dated items for two of these names five hours ago.
+- **No sleeve shows a price action suggesting a broken thesis.** The one-day moves (MCD -0.4087%, TPR -0.2609%, UNH +0.0164%, GEHC -0.9313%) are all inside ordinary noise, and **all four are positive against entry.** GEHC is the weakest on the day and is still **+8.5568%** on the hold.
+- **No position was cut on thesis grounds. No STEP 6 sharp-move investigation was triggered — nothing in the book moved sharply in either direction.**
+
+### ⚠ HANDOFF (iv) DISCHARGED — THE RULE-2 GAP NOW HAS A NUMBER AND A CANDIDATE, AND THE CANDIDATE IS NOT PRE-AUTHORIZED
+**The number: $9,345.67, or 9.3388 pts, or ≈9.34% of equity. 132 shares of a $70.78 stock takes deployment to 74.9973% — one ordinary 5th position inside rules 3, 8 and the 20% cap.**
+
+**The screen.** Research was asked for 11/02-11/06 beat-and-raise names in **staples, financials, materials or utilities only** — health care, consumer discretionary, technology and energy excluded deliberately, so that a 5th position would **add a third sector and reduce** the decision-7 concentration rather than deepen it. It returned **ETR** (utilities, 11/02 beat, guidance narrowed upward) and flagged **ADM** and **MLM** as unconfirmed.
+- **ETR — REJECTED on R:R, first-party.** Price **$110.85**, 252-day close high **$117.91** (2026-04-30) → gate **$98.2583**. The price is **12.8% ABOVE its own gate**; upside to target is **+6.37%** against a 10% stop = **0.64:1**. Not a trade.
+- **MLM — REJECTED on catalyst, first-party re-query.** It **MISSED** consensus EPS: **$5.47 adj vs $5.71** (dated 11/04). The first screen called it "unconfirmed"; the confirmation is a miss.
+- **ADM — PASSES EVERY GATE, AND IS HANDED FORWARD UNAUTHORIZED.** Beat **and** raised, dated **2026-11-03**, sourced to **ADM's own investor-relations release**: **adj EPS $1.77 vs $1.63 consensus**, **FY26 adj-EPS guidance raised $5.15-5.60 → $5.50-5.80**. Sector staples, **XLP +8.3843% 20d** ✓. Struck first-party off **252 SIP 1Day bars (2025-11-05 → 2026-11-05)**: 252-day **CLOSE** high **$88.09 (2026-04-30)**, intraday high checked, **house CLOSE basis applied** → gate **$73.4083**, target **$88.09**. At the **$70.78** midday mark it **clears the gate by $2.6283 (3.7133%)** and gives **+24.4561% upside / 10% stop = R:R 2.4456:1** ✓. Rule 10: staples **0 prior failures**.
+
+⚠ **AND THE FACT THE RESEARCH NEVER MENTIONED, FOUND FIRST-PARTY, WHICH IS WHY THIS IS A HANDOFF AND NOT A PRE-AUTHORIZATION: ADM FELL -6.59% ON ITS OWN EARNINGS DAY.** SIP 1Day: **11/02 close $75.77 → 11/03 close $70.60, intraday low $69.39**, on **7.16m shares against 3.75m the prior day**. It has not recovered: **$70.78 now, -6.5861% below the pre-print close.** The revenue line explains it — **$22.335bn against $22.67bn consensus, a $335m MISS.** **A beat-and-raise the tape sold ~7% is not a momentum catalyst, and ADM clears the 2:1 R:R gate ONLY because of that selloff.** That is decision 1's pathology precisely, in the one name that survived the screen.
+
+**Why no order was placed.** ⚠ **The midday routine has no entry step** — its steps are read / pull / cut / tighten / thesis-check / optional research / notify / persist. **The account's established process pre-authorizes entries in the pre-market under named conditions and executes them at the open, which is what happened at 09:34 ET today.** Placing a 5th position off a single midday screen — on a name whose catalyst required a second query to confirm, whose price reaction contradicts the catalyst, and into a weekend with decision 3 unanswered — **would be a larger self-authorization than the $0.5750 MCD gate basis this desk corrected itself for this morning. Rule 11 applies and rule 15 forbids it.** **Consequence stated plainly: the third slot of week 11/02-11/06 expires unused at 16:00 ET and the 9.3388-pt breach carries into the weekend.**
+
+### ⚠ THE FULL PARKED-LIST R:R SCREEN — RUN FIRST-PARTY, AND IT IS DECISION 1'S CLEAREST SINGLE TABLE YET
+Eighteen parked names struck against the house gate (252-day **close** high / 1.2) off SIP 1Day bars, 11/06 marks:
+| Passes R:R | R:R | high ÷ price | verdict |
+|---|---|---|---|
+| CAT | **9.01:1** | ⚠ **1.90x** | **broken chart — the UCTT pattern, struck** |
+| CMI | **5.89:1** | ⚠ 1.59x | broken chart |
+| IP | **4.31:1** | 1.43x | ⚠ materials ✓ rule 9, but no 11/02-11/06 catalyst |
+| CPB | 3.74:1 | 1.37x | staples ✓ rule 9, no dated catalyst |
+| MLM | 3.53:1 | 1.35x | ⚠ **REJECTED — EPS miss 11/04** |
+| TAP | 3.40:1 | 1.34x | staples ✓ rule 9, no dated catalyst |
+| LYB | 3.36:1 | 1.34x | materials ✓ rule 9, no dated catalyst |
+| DOW | 3.14:1 | 1.31x | materials ✓ rule 9, no dated catalyst |
+| **ADM** | **2.45:1** | **1.24x** | ⚠ **catalyst ✓, rule 9 ✓, R:R ✓ — see above** |
+| **Fails R:R** | R:R | | |
+| PEG 1.97:1 · PH 1.72:1 · TSN 1.50:1 · PPG 0.67:1 · KMB 0.61:1 · SO 0.74:1 · DUK 0.41:1 · APD 0.34:1 · **MA 0.21:1** | | | **every intact-momentum name fails** |
+⚠ **The anti-correlation is now demonstrated across eighteen names in one pass: the R:R gate passes names in proportion to how far they have fallen, and fails every name whose chart is intact. Nine of eighteen pass, and the pass list is ranked almost perfectly by degree of damage.** **CAT at 9.01:1 is the reductio — a 252-day high 1.90x the price is not a target.** **This is the strongest single piece of evidence decision 1 has produced and the weekly review should carry the table.**
+
+### ⚠ Research faults caught this run — decision 6, 14th consecutive catch, five faults
+1. ⚠ **THE S&P'S OPEN WAS OVERSTATED BY ~0.75 pts.** Research: "the S&P 500 was higher in early trading, **up about 1% at the open**." First-party SIP: **SPY opened $734.82 against the $733.00 close = +0.2483%.** The index is ~+0.91% **now, at midday** — the figure was attached to the wrong moment. **The run's own `clock`-stamped first-party prints were used throughout.**
+2. ⚠ **"NO NEWS" WAS RETURNED FOR ALL FOUR HOLDINGS ON ITEMS THE SAME TOOL HAD ALREADY SERVED, DATED, FIVE HOURS EARLIER.** This run got "no company-specific news dated November 5 or 6" for TPR, MCD, UNH and GEHC. **The 09:36 ET market-open run obtained, from this same tool this same morning, a dated Barclays TPR target raise ($185 → $195, 11/06) and thirteen dated MCD analyst target raises (11/05).** ⚠ **Retrieval is non-deterministic and a "no news" answer is therefore NOT evidence of no news — it cannot be used to clear a thesis check on its own.** This is a new and more serious failure mode than the recycled-undated-material fault logged on 11/05-11/06, because it fails in the opposite direction: **the tool now omits dated material it has already proved it can find.**
+3. ⚠ **THE CANDIDATE SCREEN COULD NOT ANSWER ITS OWN QUESTION ON ADM** — it returned "the available result does not state whether ADM beat consensus." A **name-specific re-query returned the beat with ADM's own IR release as the source.** **Single-pass sector screens under-retrieve; any name that survives one must be confirmed by a dedicated query before it is treated as a catalyst.**
+4. ⚠ **AND THAT SCREEN OMITTED THE DISQUALIFYING FACT: ADM's -6.59% earnings-day selloff.** Research presented the beat and the guidance raise in a table and said nothing about the price reaction or the revenue miss; **both were found first-party.** ⚠ **A "beat-and-raise" screen that does not report the tape's verdict on the beat is actively misleading, and this is the second consecutive session a screen has handed this desk a name that first-party data disqualified.**
+5. ⚠ **`snapshot` prevDailyBar GAVE SPY'S 11/05 CLOSE AS $733.43 AGAINST THE SIP 1Day BAR'S $733.00 — the unfixed `feed=sip` defect in its 27th session, and at $0.43 this is FIVE TIMES the usual $0.08 discrepancy.** `dailyBar` also gave **$739.33** against the SIP 1Day **$738.86** and `latestTrade` **$739.68**. **No roll-over lag today — `dailyBar` was correctly stamped 11/06, unlike at this morning's bell.** **Nothing in this run was struck off `snapshot`.**
+- ⚠ **RULE 13, 13th OCCURRENCE — THREE OF FOUR POSITION BOOKS REJECTED ON WIDTH AND EVERY MARK CAME OFF `latestTrade`:** **MCD 10.2951%** (bid $262.58 / ask $291.08 — a $28.50 spread), **UNH 7.6022%** ($380.00 / $410.03), **GEHC 2.4875%** ($80.99 / $83.03), all REJECTED; **TPR 0.2767%** and **ADM 0.1694%** and **SPY 0.0054%** ACCEPTED. ⚠ **MCD's mid would have marked it at $276.83 against a $276.90 trade — immaterial today, but a $28.50 book on a $277 stock at midday on a liquid Dow name is worth recording in its own right.**
+- **Perplexity run STRICTLY SERIAL: 3/3 calls, ZERO 429s. Running total 63/63 serial vs 2/10 parallel. Do not parallelize.**
+
+### Risk factors into the close and the weekend
+- ⚠ **65.6612% of the book is directional and unhedged across a weekend, against 25.9010% at yesterday's close — decision 3 is live and this was the last run before the bell that could have changed it.**
+- ⚠ **39.7130% in XLY alone (decision 7, no cap exists).** It reversed favourably today; it can reverse the other way just as fast.
+- **The AI bounce is one day against -16.79% in twenty. Policy risk — regulation, data-centre moratoria — is not priced away by a dip-buy.**
+- **A ~78%-priced December HIKE on a +165k payroll print and a ~4.87% 10-year.** The book's two staples-adjacent and health-care sleeves are the rate-sensitive ones.
+- ⚠ **Three of four stops are loss-mandated if they fill (TPR -9.2584%, MCD -7.3087%, UNH -0.4706%), and UNH is 17 cents of price from re-entering a rule-7 breach.**
+- **Volatility eased hard today (VIXY -5.7022%, UVXY -9.1487%) but is +22.76% / +31.43% over twenty days.** Easing into a weekend after a correction week is not the same as calm.
