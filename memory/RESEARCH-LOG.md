@@ -16802,3 +16802,142 @@ A 10% trail off a peak of +X% protects `(1+X) x 0.9 - 1`. Break-even therefore r
   - **Decision 3 — MATERIALLY RE-SCOPED BY THE VOL SPIKE: 26.3952% unhedged at VIX ~23.28, against 26.9332% at VIX 16.61 twenty-four hours ago.** The question is no longer hypothetical.
   - ⚠ **Decision on the rule 4-vs-6 geometry defect — NOW THE MOST CONCRETE OF ALL OF THEM, because it has a proven execution (XLE, -$131.61) and a named live victim (UNH, stop below entry).** Lower rule 6's first gate to roughly **+11%**, or narrow rule 4's trail, or accept in writing that positions peaking under +11.1111% are expected to stop out at a loss.
   - **Decision 6 — an 11th consecutive catch, three faults this run** (SPY understated by ~1.0-1.4 pts; the 16.83/10:31 VIX stamp re-served a second day; `snapshot` off $0.08 on the benchmark denominator). **The practice is working; the tooling is unfixed.**
+
+## 2026-11-06 — PRE-MARKET RESEARCH: **HOLD AT THE READ / CONDITIONAL ENTRY PRE-AUTHORIZED FOR THE BELL** (Day 60, Friday; 0/3 weekly slots used; market CLOSED at the read, next open 09:30 ET) — **ZERO ORDERS. THE 11/05 SELLOFF WAS ~1 pt DEEPER AT THE CLOSE THAN THE MIDDAY RUN RECORDED: SPY -4.4089%, XLK -8.0000%, SMH -11.2122%, AND SPY CLOSED $0.29 OFF ITS LOW. VIX IS PINNED AT 28.18 ON A DATED WIRE STAMP, +69.66% IN ONE SESSION. ⚠ UNH IS 1.2133% ABOVE A STOP THAT SITS BELOW ITS ENTRY — THE RULE 4-vs-6 DEFECT IS NOW A LIVE, SAME-DAY LOSS RISK ON 14.87% OF EQUITY, AND THERE IS NO IN-RULES REMEDY. ⚠ TPR HAS FALLEN BACK INSIDE THE GATE IT BLEW THROUGH AT YESTERDAY'S BELL ($134.17 vs ≤$137.3167, R:R 2.2826) AND MCD JOINS IT AT 2.2918 — TWO FULLY-QUALIFYING CANDIDATES FOR THE FIRST TIME THIS PHASE. HANDOFF (iv) DISCHARGED AND IT CUTS THE OTHER WAY: AMD/EPAM/APH NOW PASS R:R AND ALL THREE FAIL RULE 9 ON A -17.90% 20-DAY XLK.**
+
+### Account snapshot — 2026-11-06 07:43 ET (pre-market, market CLOSED)
+| Field | Value |
+|---|---|
+| Equity (pre-market mark) | **$99,292.81** |
+| `last_equity` (11/05 official close) | **$99,667.31** |
+| Cash | $73,574.95 (74.0984%) |
+| Long market value | $25,717.86 |
+| Buying power / RegT | $366,309.81 / $172,867.76 |
+| Positions | 2 (UNH, GEHC) |
+| Open orders | 2 (both GTC 10% trailing stops, `status:new`) |
+| `daytrade_count` | ⚠ **ABSENT — 20th consecutive run** |
+
+**The 11/05 EOD mark in TRADE-LOG ($99,594.43) was a near-close estimate, not the official close.** First-party reconciliation: `cash 73,574.95 + 38 × 395.72 + 132 × 83.75 = 99,667.31` = `last_equity` exactly. **The official 11/05 close is $99,667.31 and the phase P&L is -$332.69 (-0.3327%), not -$405.57.** Corrected here rather than carried.
+
+### Market context — 2026-11-06
+- ⚠ **THE 11/05 SELLOFF WAS DEEPER AT THE BELL THAN THE MIDDAY RUN FILED.** First-party SIP 1Day: **SPY $766.81 → $733.00 = -4.4089%**, against the -3.4376% intraday figure the midday addendum recorded. **SPY's session low was $732.71 — it closed $0.29 (0.0396%) off the low.** A selloff that closes on its low is distribution, not a flush that found a bid.
+- **Cause, per dated wires: an AI/data-centre POLICY shock, not an earnings shock.** The 11/03 Democratic sweep of both chambers (already logged 11/04) repriced AI/data-centre regulation risk — power, water, grid, and a data-centre moratorium floated by the Texas governor-elect. Chip stocks took their second-largest one-day decline on record; the Nasdaq's deepest drop in 19 months; ~$3tn of S&P market value erased. Kospi -8.8% (circuit breaker), Samsung and SK Hynix each -6%+, Taiwan's worst day in over a year. **QCOM missed Q4 smartphone-chip sales, adding a company-specific leg.**
+- **Sector tape, 11/05 close vs 11/04 close, built first-party (research again produced no ranking):**
+
+| Rank | Sector | 11/05 | 20d | | Rank | Sector | 11/05 | 20d |
+|---|---|---|---|---|---|---|---|---|
+| 1 | XLC | **-0.5907%** | -6.90% | | 7 | XLB | -2.9128% | +6.21% |
+| 2 | XLU | -0.7108% | +5.43% | | 8 | XLE | -2.9754% | -5.53% |
+| 3 | XLP | -0.7505% | **+9.39%** | | 9 | XLY | -3.8339% | +5.31% |
+| 4 | XLRE | -1.8174% | +8.45% | | 10 | XLI | -4.1249% | -3.52% |
+| 5 | **XLV** | **-2.5045%** | **+9.96%** | | 11 | **XLK** | **-8.0000%** | **-17.90%** |
+| 6 | XLF | -2.8716% | +6.03% | | ref | SMH | **-11.2122%** | — |
+
+  **XLV is 5th on the day and #1 of 11 on 20-day momentum (+9.96%). Rule 9 on the book's own sector is clean and has been for the whole hold.** XLK is last on both horizons (-8.00% day, -17.90% 20d, -13.97% 5d) — **this matters below.**
+- ⚠ **VIX PINNED AT 28.18 ON A DATED WIRE STAMP (11/05 15:15:01 CST) — +69.66% OFF THE 16.61 CLOSE OF TWO SESSIONS AGO, AND ABOVE THE ~23.28 THIS DESK ACCEPTED INTRADAY.** Accepted because it is dated, timestamped and directionally corroborated by the first-party volatility tape: **VIXY $16.39 → $21.36 (+30.3233%), UVXY $16.23 → $23.5650 (+45.1941%)**. The intraday ~23.28 was not wrong — **the tape kept deepening into the close, exactly as it did on SPY.** No stale 16.83/10:31 re-serve this run; that fault did not recur.
+- **US futures, 05:00-07:30 ET: ES +0.4% to +0.57%, NQ +1.33% to +1.4%.** A dip-buy bounce in the names that were liquidated. ⚠ **Reported alongside "Dow E-mini -475 (-0.92%)" — REJECTED, see faults.**
+- **Oil: Brent ~$109.86 (+3.7%), WTI ~$101.41 (+3.5%)**, with a conflicting earlier intraday snapshot (Brent $110.11 +1.2%, WTI $99.00 +1.2%) in the same answer. ⚠ **Recorded as unresolved rather than averaged.** Crude is up on Hormuz tanker attacks and supply-disruption risk while Qatari mediators returned to Tehran (11/06); Iran has not answered the Vance letter. **Rule 14: no de-escalation headline is wire-confirmed with a date, nothing is acted on, and the account holds no energy. Not engaged.**
+- ⚠ **A DECEMBER RATE *HIKE* IS NOW >65% PRICED (Reuters, 11/06).** Higher crude is reviving the inflation leg. This is the macro regime the book is underwriting and it is the opposite of the cut that was priced a month ago.
+
+### Today's releases — **the jobs report is the whole session**
+| Time ET | Release | Consensus | Prior |
+|---|---|---|---|
+| **08:30** | **October Employment Situation (BLS)** | **NFP +65k**, u/e **4.2%**, private **+64k** | Sept **+29k**, u/e 4.2% |
+| 10:00 | UMich consumer sentiment, prelim Nov | 48.0 | 48.0 |
+| 12:45 | NY Fed Staff Nowcast | — | — |
+
+**Everything in this entry is provisional against 08:30.** A hot print against a >65% December-hike probability is the adverse case for both the book and the candidates.
+
+### Position review — rule-by-rule, pre-market marks (rule 13: NOT a sizing basis)
+Marks are `position.current_price` against `lastday_price`, both of which reconcile to the SIP 1Day closes (UNH $395.72 ✓, GEHC $83.75 ✓). `snapshot.latestQuote` was unusable on both names (UNH ask $0.00; GEHC book 10.16% wide) — **the rule-13 width test fails on both sleeves for the 2nd consecutive run.**
+
+| | UNH | GEHC |
+|---|---|---|
+| Shares / entry | 38 @ $385.71 | 132 @ $76.43 |
+| Pre-market mark | $388.61 (**-1.7970%** today) | $82.9597 (**-0.9440%** today) |
+| Market value / % equity | $14,767.18 / **14.8724%** | $10,950.68 / **11.0287%** |
+| Unrealized | **+0.7519%** | **+8.5434%** |
+| Stop (GTC 10% trail) | **$383.8950** (hwm $426.55) | **$78.8040** (hwm $87.56) |
+| Gap to stop | ⚠ **1.2133%** | 5.0093% |
+| Stop protects vs entry | ⚠ **-0.4706%** | +3.1061% |
+| Rule 5 cut line / clear by | $358.7103 / **7.6940%** | $71.0799 / **14.3200%** |
+| Rule 6 gate (+15%) / short by | $443.5665 / **$54.9565** | $87.8945 / **$4.9348** |
+
+**Rule 1** — no options, none contemplated, compliant. **Rule 3** — 2 ≤ 6 positions, both far inside the 20% cap, compliant. **Rule 4** — both real GTC 10% trailing stops, `status:new`, compliant. **Rule 5** — **no cut owed on either sleeve.** **Rule 6** — **no tighten owed**; GEHC's gate is the live one at $87.8945 and it is $4.9348 away, wider than yesterday because the name sold off. **Rule 7** — ⚠ **see below; nothing was moved by hand this run.** **Rule 8** — **0/3 slots used, verified first-party.** **Rule 9** — XLV #1 of 11 on 20-day momentum; clean. **Rule 10** — health care 25.9010% across both names, 1 prior health-care failure (XLV, 8/31), count unchanged at 1 of 2. **Rule 11** — patience held and was again rewarded. **Rule 14** — not engaged. **PDT** — `daytrade_count` absent a 20th run; does not bind (equity 3.97× the $25,000 threshold, no day trade placed or contemplated).
+
+### ⚠⚠ UNH — THE RULE 4-vs-6 DEFECT IS NO LONGER A STANDING ARITHMETIC COMPLAINT. IT IS A SAME-DAY LOSS RISK ON 14.87% OF EQUITY.
+- **UNH's pre-market mark is $388.61. Its stop is $383.8950. The gap is 1.2133%** — inside rule 7's 3% line, which the 11/05 session had cured and the overnight has re-opened. **A 1.22% adverse move at the bell stops the position out.**
+- **That stop-out books a LOSS: $383.8950 is $1.8150 BELOW the $385.71 entry (-0.4706%).** UNH has been green for its entire hold and peaked at **+10.5883%** (hwm $426.55) — inside the loss-mandated sub-band, because break-even on a 10% trail requires a peak of **+11.1111%** and rule 6 cannot tighten until **+15%**.
+- ⚠ **THERE IS NO IN-RULES REMEDY AND THIS RUN DID NOT INVENT ONE.** Rule 7 forbids moving the stop down. Rule 6 forbids tightening below +15%. Raising the stop by hand would place it inside the 3% line. **Rule 5's cut is 7.6940% away and will not fire first.** The only lever is the owner decision below, which is unanswered.
+- **XLE already executed this exact geometry on 11/04: peak +10.3785% → realized -0.6903% (-$131.61).** ⚠ **UNH is the second instance and it is one adverse open from resolving the same way.**
+- **GEHC is not at risk at this mark** (5.0093% of cushion, stop protects +3.1061%), but it is in the token-gain sub-band and gave back 5.10 pts from its peak this week.
+
+### Thesis check — both sleeves PASS, with one caveat recorded rather than buried
+- **GEHC: no company-specific news for 11/05 or 11/06.** Research was asked directly and answered none. **Thesis intact; the -2.40% on 11/05 and the -0.94% pre-market are market beta.**
+- **UNH: no NEW company-specific news, and one item is REJECTED as recycled.** Research returned "Nov. 5: reports covered UnitedHealth's Q3 2026 results… higher full-year adjusted EPS guidance." ⚠ **UNH's Q3 was reported in mid-October; this is commentary re-surfaced undated as same-day news and is NOT treated as a new catalyst.** The two genuine 11/05 items are **Sen. Warren renewing criticism of the completed $3.3bn Amedisys acquisition**, and generic utilization/margin commentary. **Neither moves the thesis** — UNH fell -3.3364% on 11/05 against SPY -4.4089%, i.e. it **outperformed by 1.07 pts** on the worst tape of the phase.
+- ⚠ **THE STRUCTURAL CAVEAT, RESTATED BECAUSE IT IS THE BOOK'S LARGEST POSITION:** the Democratic sweep hands congressional committees subpoena and investigative authority over premiums, prior authorization, executive compensation, vertical integration and PBM/Optum economics. **Divided government (Trump retains the veto) makes sweeping legislation unlikely, so this is an oversight-and-headline risk, not a near-term earnings risk.** It is not a thesis break and does not fire an exit. **It is logged as the reason UNH's left tail is fatter than its chart implies, and the weekly review should weigh it against the fact that UNH's only in-rules exit currently books a loss.**
+
+### ⚠ TWO FULLY-QUALIFYING CANDIDATES — THE FIRST TIME THIS PHASE THAT THE CATALYST LEG AND THE R:R LEG HAVE OVERLAPPED ON MORE THAN ONE NAME
+**TPR — the candidate lost at yesterday's bell has come back inside its gate.**
+- **Catalyst: a beat-and-raise, already verified against Tapestry's own 11/05 Form 8-K by yesterday's market-open run** — FY27 adj EPS guidance **$8.25-$8.35** from $7.80-$7.90; FY27 revenue **$8.5-8.6bn** from $8.4-8.5bn; Q1 adj EPS **$1.82** vs $1.56 consensus; Q1 revenue **$1.894bn** vs ~$1.85bn. **Corroboration requirement already discharged; the name was never the problem, the price was.**
+- ⚠ **The price problem has resolved itself. TPR opened $143.75 on 11/05 against a $137.3167 gate, ran to $144.23, and closed $134.17 — $3.15 INSIDE the gate.** Pre-market last trade $134.12.
+- **Relative strength is the strongest on the tape: +7.0705% on a day SPY fell -4.4089% — 11.48 pts of outperformance.**
+- **Rule 9: XLY is +5.31% on 20 days and +1.24% on 5 days — positive, 7th of 11.** Not a leading sector; **not a failing one either**, and the same read cleared TPR on 11/05.
+- **Levels: entry ≤ $137.3167 | stop 10% below fill (≈$120.75 at $134.17) | target $164.80 (252-day high) | R:R 2.2826:1 | 20% sizing ≈ 148 shares ≈ $19,857.**
+
+**MCD — a second name clears, on a 11/04 catalyst that held through the selloff.**
+- **Catalyst: Q3 adj EPS $3.57 vs $3.38 expected (11/04); global comps +1.5% vs +1.3% expected**, on revenue of $7.16bn that MISSED the $7.29bn estimate (US comps -0.2%). **The beat is EPS-and-comps, not topline — recorded as the weaker catalyst of the two.** Gross openings guided to ~2,500 from ~2,600; ~2,100 net retained.
+- **MCD rose +6.5295% on 11/04 and gave back only -0.7779% on 11/05 — it held 92% of an earnings gap through a -4.41% tape.**
+- **Levels: entry ≤ $284.7917 | stop 10% below fill (≈$250.24 at $278.04) | target $341.75 (252-day high) | R:R 2.2918:1 | 20% sizing ≈ 71 shares ≈ $19,741.**
+
+**Handoff (iv) from 11/05 is DISCHARGED, and it discharges AGAINST taking the tech names.** The selloff did exactly what the handoff predicted to the R:R gate — and rule 9 now blocks every name it unlocked:
+
+| Name | 11/05 close | % of 252d high | R:R at 10% stop | Rule 9 (XLK, 20d **-17.90%**, 5d **-13.97%**, **11th of 11**) | Verdict |
+|---|---|---|---|---|---|
+| AMD | $404.40 | 61.41% | **6.28:1** | ✗ | **REJECTED on rule 9** |
+| EPAM | $165.70 | 74.46% | **3.43:1** | ✗ | **REJECTED on rule 9** |
+| APH | $71.64 | 79.66% | **2.55:1** | ✗ | **REJECTED on rule 9** |
+| UCTT | $37.20 | **25.79%** | n/m | ✗ | **REJECTED — a 252-day high 3.9× the price is not a target, it is a broken chart** |
+
+⚠ **This is the cleanest evidence decision 1 has produced in either direction.** The anti-correlation is real — **a one-day -8% sector move flipped three names from R:R failures to R:R passes** — but it does not deliver a tradeable name, because the same move that opens the R:R gate slams the momentum gate. **The two gates are not merely anti-correlated, they are anti-correlated BY CONSTRUCTION, and loosening one without the other will not produce trades.** TPR and MCD clear only because their moves were **idiosyncratic (earnings) rather than sector-wide**.
+
+### Decision — **HOLD at the read; CONDITIONAL ENTRY pre-authorized for the market-open run**
+**No order is placed by this run, and rule 13 forbids sizing anything off these pre-market prints.** But a 70th consecutive session of rule-2 breach and a certain 8th unused trade week are not a neutral outcome, and for the first time the phase has two names clearing catalyst, rule 9 and R:R at once. **The market-open run is therefore pre-authorized to place BOTH, subject to every condition below being true on live RTH prints:**
+1. **The 08:30 jobs report does not break the tape.** Abort both if SPY opens below **$719.00** (-1.91%, a second consecutive distribution day) or if the open is a gap-and-reverse.
+2. **TPR: buy ≈148 shares ONLY at a live RTH print ≤ $137.3167.** Above that the R:R falls under 2:1 and the trade does not exist. **This is the exact gate that was blown through yesterday — do not round it.**
+3. **MCD: buy ≈71 shares ONLY at a live RTH print ≤ $284.7917.**
+4. **Place the GTC 10% trailing stop in the same run as the fill (rule 4), and persist the thesis in the same run (rule 12).**
+5. **Both fills together take deployment from 25.9010% to ≈65.6% — still under the 75% floor, but the largest single-session repair available inside the rulebook.** 2 of 3 weekly slots used; the third stays unused.
+6. ⚠ **If TPR's stop-loss geometry is written, note that a 10% trail from $134.17 has the SAME +11.1111% defect as UNH. It is accepted knowingly here because the entry is 18.6% below the target, not because the defect is fixed.**
+
+**If any condition fails, the correct outcome is HOLD and an 8th unused trade week. Patience > activity.**
+
+### Risk factors for 2026-11-06
+- ⚠ **08:30 jobs report into a >65%-priced December HIKE.** A hot print is the adverse case for everything in this entry.
+- ⚠ **VIX 28.18 with 25.9010% of the book unhedged** — decision 3's premise has now inverted twice in three sessions (16.61 → ~23.28 → 28.18).
+- ⚠ **UNH 1.2133% from a stop-out that books a loss, with no in-rules remedy.**
+- **SPY closed $0.29 off its low; the futures bounce is a dip-buy in the liquidated names, not confirmation the AI trade has bottomed.** Policy risk (regulation, moratoria) is not priced away in one overnight.
+- **Crude +3.5-3.7% with Hormuz tanker attacks live** — the inflation leg that is driving the hike probability.
+- **Friday**: weekend gap risk on 100% of directional exposure, and on anything added today.
+
+### ⚠ Research faults caught this run — decision 6, 12th consecutive catch, four faults
+1. ⚠ **AN INTERNALLY IMPOSSIBLE FUTURES TABLE.** "Dow E-mini **-475 (-0.92%)**" was served in the same table as "Nasdaq-100 **+355.75 (+1.33%)**" and "ES **+0.57%**". **A -0.92% Dow cannot coexist with a +1.33% NQ and a +0.57% ES on a dip-buy bounce in the exact names that were liquidated.** Rejected on substance; **no first-party futures source exists**, so the ES/NQ figures are carried as indicative only and nothing is sized off them.
+2. ⚠ **`snapshot` prevDailyBar gave SPY's 11/04 close as $766.73 against the SIP 1Day bar's $766.81 — the unfixed `feed=sip` defect in its 25th session**, again in the benchmark denominator.
+3. ⚠ **TWO CONFLICTING OIL SNAPSHOTS IN ONE ANSWER** (WTI $101.41 +3.5% vs WTI $99.00 +1.2%). **Recorded as unresolved, not averaged** — the account holds no energy, so it does not bind.
+4. ⚠ **A MID-OCTOBER UNH EARNINGS ITEM SURFACED UNDATED AS 11/05 NEWS.** Rejected as recycled; see the thesis check. **This is the same failure mode as the 11/05 stale-session fault — the tool keeps presenting undated archive material as same-day news, and that is now 3 occurrences in 2 sessions.**
+- **No VIX fault this run** — the 16.83/10:31 re-serve did not recur, and a dated, timestamped 28.18 was obtained on the first query.
+
+### Handoffs to the next run (MARKET-OPEN, 2026-11-06)
+- ⚠ **(i) THE CONDITIONAL ENTRY ABOVE IS THE RUN'S PRIMARY WORK.** Verify all 6 conditions on live RTH prints. **TPR ≤ $137.3167, MCD ≤ $284.7917, both hard.** Rule 13 earned its keep an 11th time on this exact name yesterday — **the pre-market $136.00 indication was 5.70% low and would have bought a 1.46:1 trade as a 2.12:1.** Do not repeat it.
+- ⚠ **(ii) UNH IS THE URGENT WATCH, NOT THE CANDIDATES. Mark the gap to $383.8950 in the first minute.** The stop is live and GTC; it will fill itself without this run's help, at **-0.4706% vs entry**. **No in-rules action exists — do not move it, do not tighten it, do not cancel it.** Record the outcome either way; if it fills, rule 12 requires the close logged and pushed in the same run.
+- **(iii) GEHC's tighten gate is $87.8945 and it is $4.9348 away** — materially further than yesterday. If it is reached, **cancel `13dd3b34` FIRST** (`qty_available` is 0, so a new stop rejects while the old one holds the shares), then place a 7% trail.
+- **(iv) PERPLEXITY RUN STRICTLY SERIAL AGAIN: 8/8 calls, ZERO 429s. Running total 57/57 serial vs 2/10 parallel. Do not parallelize.**
+- **(v) PARKED NAMES** — unchanged from 11/05 except: **TPR and MCD promoted to live candidates** (above); **AMD, EPAM, APH rejected on rule 9 and parked pending an XLK momentum turn**; **UCTT struck from the list** (252d high 3.9× price; the gate is meaningless). **CTVA and DD remain corporate-action contaminated.** Remainder: PFE ≤ $25.8833, RVTY ≤ $143.1167, EL ≤ $101.36, CI, CAH, BDX, TAP, VTRS, KMB, RL, APD, DUK, SO, COP, TRGP, CMI, PH, MA, CTS, LLY, EBAY, CROX, NCLH, CAT, Carrier, ELV, HCA, CNC, MAS, PPG, PERI, INO, XOM, CVX, GEV, REGN, DOW, LYB, SYK, IP, ISRG, ZTS, TSN, CPB, IDXX, PEG, PODD.
+- ⚠ **(vi) TO THE WEEKLY-REVIEW CLASS — THE REVIEW IS TODAY, 15:30 ET, AND RULE 15 REQUIRES IT TO COVER EVERY WEEK SINCE THE LAST FILED ONE.** It must carry: **three closed trades, three losses (-$1,678.11 realized, 0 for 3)**; **the rule 4-vs-6 defect as the exact +11.1111% loss-mandated threshold, with UNH a live victim 1.2133% from executing it**; **a 70-session rule-2 breach, $48,751.75 / 49.0990 pts under floor**; **an 8th unused trade week unless (i) fires**; **the corrected phase P&L of -$332.69 (-0.3327%), not -$405.57**; and ⚠ **the fact that the +5.2499-pt benchmark lead is a 74.0984%-cash artefact and must be labelled as such, not as alpha.** **The DST trigger defect has fired 11 consecutive sessions.**
+- ⚠ **(vii) TO THE EOD / DAILY-SUMMARY CLASS, BY NAME — EIGHT SESSIONS MISSING AND THE CLASS HAS STILL NEVER FILED A COMMIT IN THE REPOSITORY'S HISTORY.** No daily-summary commit exists for 10/30, 11/02, 11/03, 11/04, 11/05. **File tonight's EOD** and record: closing equity against today's $99,292.81 pre-market mark; the jobs-report reaction; whether UNH held $383.8950; whether anything was bought under (i) and at what fill; the VIX close against 28.18; and whether XLK found a bid or made a second distribution day.
+- ⚠ **(viii) TO THE OWNER — SIX TOOLING ITEMS, ALL PROVED, NONE SELF-APPLIED:** (1) the one-line `snapshot` feed fix in `scripts/alpaca.sh` (`&feed=${2:-sip}`) — **25th session**; (2) rule 13's quote test should be a **WIDTH** check, not a timestamp check — **it decided both position marks again this run**; (3) `scripts/perplexity.sh` needs 429 retry/backoff; (4) the SIP minute feed runs ~15 min behind — a rejected book must fall back to the 1Day bar; (5) **no `trades` subcommand** and `trades/latest` 403s outside the wrapper — add `trades` with `feed=sip`; (6) **VIX has no first-party source**; today it came clean on one query, but **VIXY/UVXY percentage moves should be adopted as the standing first-party volatility proxy** regardless.
+- ⚠ **ALL OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15); they stay in every notification until answered or withdrawn.**
+  - ⚠ **Decision on the rule 4-vs-6 geometry defect — NOW THE MOST URGENT OF ALL OF THEM.** It has a proven execution (XLE, -$131.61) and **a live victim 1.2133% from the trigger on 14.87% of equity**. Lower rule 6's first gate to roughly **+11%**, or narrow rule 4's trail, or accept in writing that positions peaking under +11.1111% are expected to stop out at a loss.
+  - **Decision 1 — the sharpest evidence yet, and it cuts both ways.** A -8% XLK session flipped AMD/EPAM/APH from R:R failures to passes **and rule 9 rejected all three** — the two gates are anti-correlated **by construction**. **But the decision is also partly answered by this run's own output: TPR and MCD clear both gates because their catalysts were idiosyncratic, not sector-wide.** The fix may be a catalyst-type filter rather than a gate change.
+  - **Decision 3 — re-scoped a second time in three sessions: 25.9010% unhedged at VIX 28.18, against ~23.28 yesterday and 16.61 on Tuesday.**
+  - **Decision 6 — a 12th consecutive catch, four faults this run**, including a futures table that was internally impossible and a third instance in two sessions of undated archive material served as same-day news.
