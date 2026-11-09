@@ -2639,3 +2639,14 @@ Research attributes today's rally substantially to **"Trump said he had no plans
   - ⚠ **Decision 3 — 75.2566% directional and unhedged into an 08:30 ET CPI print with a December hike ~77% priced.**
   - ⚠ **Decision 7 — XLY 39.8095% of equity, 52.8984% of the book, uncapped; rule 16 DRAFTED and UNENACTED.**
   - ⚠ **Decision 6 — 17th consecutive catch. Three faults this run, TWO of them the tool's and ONE arguably the rulebook's:** research could not explain a +2.25% SPY day and served a +0.31% level against it; it contradicted its own earlier CLX consensus figure; **and rule 3 was found to punish a working position.**
+
+### Nov 09 — EOD Snapshot (Day 61, Monday)
+**Portfolio:** $101,508.34 | **Cash:** $24,906.79 (24.54%) | **Day P&L:** +$1,728.62 (+1.73%) | **Phase P&L:** +$1,508.34 (+1.51%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CLX | 93 | $101.69 | $105.15 | +5.19% | +$321.72 (+3.40%) | $94.77 |
+| GEHC | 132 | $76.43 | $84.41 | +2.46% | +$1,053.36 (+10.44%) | $78.80 |
+| MCD | 72 | $270.20 | $282.74 | +2.25% | +$902.88 (+4.64%) | $254.93 |
+| TPR | 148 | $133.49 | $136.615 | +2.87% | +$462.50 (+2.34%) | $123.02 |
+| UNH | 38 | $385.71 | $397.48 | +0.84% | +$447.20 (+3.05%) | $383.90 |
+**Notes:** One entry today (CLX 93 @ $101.69, 10% GTC trail placed). No exits. All five green, 5 real GTC trails verified. Deployed 75.46% (inside band). MCD 20.05% of equity (rule 3 breach persists, per decision 8 not cured); TPR 19.92%. Trades this week: 3 (TPR, MCD, CLX). CPI 08:30 ET tomorrow.
