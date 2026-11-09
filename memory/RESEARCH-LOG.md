@@ -17223,3 +17223,40 @@ Friday's 18-name parked-list screen concluded the catalyst and R:R gates are "an
   - ⚠ **Decision 3 — 65.6163% directional and unhedged, rising to ~75% if CLX fills, one session before CPI.**
   - ⚠ **Decision 7 — 39.69% XLY, uncapped; rule 16 (30% sector cap, entry-only, no forced sale) remains DRAFTED and UNENACTED.** CLX would be the first entry to reduce it.
   - **Decision 6 — a 15th consecutive catch, four faults this run, one of them this desk's own (rule 9 at the name level).**
+
+---
+
+### 2026-11-09 — MARKET-OPEN ADDENDUM (RTH, 09:30-09:36 ET) — **CLX FILLED 93 @ $101.690646; RULE 2 CURED AFTER 74 SESSIONS. ⚠ RESEARCH FOUND THE ONE ADVERSE FACT THE PRE-MARKET NEVER CHECKED ON ITS OWN PRE-AUTHORIZED NAME.**
+
+**Three Perplexity calls, STRICTLY SERIAL. Zero 429s. One transport failure on the first attempt (`curl` non-zero, no HTTP body), retried serially and succeeded — logged because `perplexity.sh` still has no retry/backoff. Running total 75/75 serial vs 2/10 parallel.**
+
+#### Query 1 — CLX overnight / veto-4 check (adverse dated wire?)
+- **No recall, SEC operational filing, guidance change or product issue dated 11/06-11/09.** The 11/07 filings in circulation are **ownership disclosures** (Sumitomo Mitsui Trust -75.8%, Canvas Wealth Advisors +) — not adverse operational items.
+- **The $1.25 quarterly dividend is payable 11/13.** Not adverse; noted because it lands inside the holding period.
+- **Pre-market indication $100.45 (+0.49%) on 5,720 shares, stamped 07:48:25 with no time zone.** ⚠ **BARRED FROM SIZING BY RULE 13** — and the live 09:30:01 print came in at **$100.41**, four cents away, so the bar cost nothing and protected nothing. **Recorded honestly: rule 13 was neutral this session, not protective.**
+- **Veto 4 does NOT fire.**
+
+#### ⚠ Query 1 + 2 — THE FINDING, AND IT IS A FAULT AGAINST THIS DESK
+**Every named sell-side target on CLX sits BELOW the fill.** Consensus **$93.79 = -7.7693% vs $101.690646**; JPMorgan **$86**; Wells Fargo **$90**; Morgan Stanley **$94**; Deutsche Bank **$95** (cut from $98, **date not obtainable**); UBS **$96**. **The $127.16 target this position is held against is 35.6% above consensus.**
+- ⚠ **Friday rejected MOS partly because "Mizuho LOWERED its PT to $20 from $22 — $2.36 BELOW the close." The 11/09 pre-market then pre-authorized CLX without running that same check on it.** A test applied only to the name you reject is not a test. **Decision 6, 16th consecutive catch, and the fault is ours.**
+- **Query 2 was spent specifically trying to date the Jefferies Buy→Hold / $125→$98 cut — the one genuinely bearish item in circulation — and FAILED to produce a dated source.** Jefferies appears only as a participant on the 11/02 earnings call. ⚠ **Under rule 14's standard an undated item is noise, so it is recorded as unverified and was not treated as a veto.**
+- **What the dated post-print flow actually shows is the OPPOSITE direction:** **UBS PT $91→$96 on 11/03 (Neutral, 07:46 ET)**, **Morgan Stanley PT $87→$94 on 11/04 (Equal Weight)**, **Wall Street Zen upgrade Sell→Hold on 11/07.** The pre-earnings bearish actions (**Citigroup $97→$90 on 10/14**, **Zacks Strong Sell on 10/29**) are dated **before** the 11/02 beat and are superseded by it.
+- **The trade was taken on that reading:** a **59.8% EPS beat** with **PT raises** behind it is not MOS's **EPS miss** with a **PT cut**; targets below price after a **+19.28% 20-day run** describe a stock that has outrun the sell-side, which is a headwind on *upside*, not a repudiation of the *catalyst*; and the house R:R basis has always been the 252-day close high, never sell-side fair value. ⚠ **It is nonetheless the strongest argument against the position and it is now a fourth qualification on the record alongside the pre-market's three.**
+
+#### Query 3 — market conditions and holdings
+- **Futures higher pre-bell: S&P +0.47%, Nasdaq 100 +0.33%, Dow +0.71%, Russell 2000 +0.78%.** ⚠ **Two sources disagreed on the S&P futures level (7,453 at the pre-market read vs 7,412.2 here, +0.69% vs +0.42%).** Nothing was struck off either — **SPY's own live print on an ACCEPTED 0.0054% book governed the benchmark.**
+- **Nvidia -4.3% pre-market; its board investigation of its own CEO is unquantifiable and the book holds no technology.**
+- ⚠ **TOMORROW 08:30 ET — OCTOBER CPI, THE LIVE RISK TO THE POSITION BOUGHT TODAY.** Headline **+0.2% to +0.3% m/m** (FactSet **+0.24%**, Bloomberg **~+0.29%**), core **~+0.2%** (range +0.21% to +0.3%); headline **~3.9% y/y**, core **~2.8% y/y**. September was **+0.6% / +0.3%**, so cooling is the base case, with moderation expected in used cars, apparel and household furnishings. ⚠ **ING looks for +0.3% on BOTH, which would keep a December HIKE — priced near 80% — on track.** **A hot print hits rate-sensitive defensives hardest and CLX is a staples name.**
+- **Staples outlook returned as "mixed to cautious" and explicitly conditional on CPI** — bond-sensitive valuations under pressure if yields rise.
+- ⚠ **NO DATED NEWS RETURNED FOR UNH, GEHC, TPR OR MCD (11/07-11/09). Per standing house practice this is NOT evidence of no news** — Friday proved retrieval is non-deterministic by returning "no news" for items the same tool had served, dated, five hours earlier. **All four theses are carried as UNVERIFIED-INTACT, not checked-and-clear.** No sleeve has a rule trigger pending, so nothing turned on it.
+
+#### First-party strikes this run (nothing carried from the pre-market unverified)
+- **CLX off 255 SIP 1Day bars: close $99.96, 252d CLOSE high $127.16 (2026-02-27) → gate $105.9667, 20d +19.2840%, 5d +13.5909%.** All four pre-market figures **confirmed exactly**.
+- **Four-session tape verified bar by bar: +4.34% / +5.71% / +0.54% / +0.26%, zero give-back.** ⚠ **The pre-market omitted that 11/06 opened $96.74 and dipped to $96.19 before closing $99.96 at the top of the run** — the close held, but the session was not one-way.
+- **Sectors off the same bars: XLV +8.1904% (1st), XLP +7.9708% (2nd), XLY +4.1914% (6th).** CLX beats its own sector by **11.3132 pts** → rule 9 passes at **both** levels, a first for an entry this phase.
+- ⚠ **Rule 13, 15th occurrence: CLX's book was $95.81 / $104.11 = 8.3033% wide and REJECTED.** The mid would have read **$99.96** and under-sized the order. **Sizing came off `latestTrade` $100.41 at 14:30:01.022Z.** SPY / VIXY / UVXY books ACCEPTED at **0.0054% / 0.1017% / 0.0961%**.
+- ⚠ **`snapshot` feed defect, 29th session:** CLX `dailyBar` $99.91 vs SIP $99.96; `prevDailyBar` $99.675 vs $99.70; SPY `prevDailyBar` $735.40 vs SIP $735.29. **No gate, target, R:R or momentum figure in this run came off `snapshot`.**
+- **Vol proxy on accepted books: VIXY $19.6450 (-6.5858%), UVXY $20.8200 (-9.6746%).** Easing hard, still +20%+ over 20 days, one session before CPI.
+
+#### Execution record
+**Order `dae18701` buy 93 CLX market/day, submitted 09:31:01 ET, filled 09:33:34-09:35:54 in four tranches (48 → 49 → 87 → 93), `filled_avg_price` $101.690646, cost $9,457.23 (9.4358% of equity).** ⚠ **Slippage +$1.2806 (+1.2754%) against the sizing print; the $102.00 ceiling held by $0.3094 (0.3042%).** **Stop `441a7ba8` — sell 93, trailing_stop, `trail_percent:"10"`, GTC, `status:new`, hwm $101.525, stop $91.3725 — placed 09:36:00 ET, six seconds after the fill confirmed.** `orders open` then returned **exactly 5**, all 10% GTC trails, all `status:new`. **Deployment 65.7265% → 75.1498%: the 74-session rule-2 breach is over.** ⚠ **The ceiling, not rule 13, is what kept this trade inside its own terms — and the fill is already -0.1629% with the trail anchored BELOW the average fill, so the sleeve is the worst-protected on the book at -10.1466% on day zero.**
