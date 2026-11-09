@@ -17260,3 +17260,33 @@ Friday's 18-name parked-list screen concluded the catalyst and R:R gates are "an
 
 #### Execution record
 **Order `dae18701` buy 93 CLX market/day, submitted 09:31:01 ET, filled 09:33:34-09:35:54 in four tranches (48 → 49 → 87 → 93), `filled_avg_price` $101.690646, cost $9,457.23 (9.4358% of equity).** ⚠ **Slippage +$1.2806 (+1.2754%) against the sizing print; the $102.00 ceiling held by $0.3094 (0.3042%).** **Stop `441a7ba8` — sell 93, trailing_stop, `trail_percent:"10"`, GTC, `status:new`, hwm $101.525, stop $91.3725 — placed 09:36:00 ET, six seconds after the fill confirmed.** `orders open` then returned **exactly 5**, all 10% GTC trails, all `status:new`. **Deployment 65.7265% → 75.1498%: the 74-session rule-2 breach is over.** ⚠ **The ceiling, not rule 13, is what kept this trade inside its own terms — and the fill is already -0.1629% with the trail anchored BELOW the average fill, so the sleeve is the worst-protected on the book at -10.1466% on day zero.**
+
+---
+
+## 2026-11-09 — AFTERNOON ADDENDUM (Midday Scan, Day 61, Monday, 12:08-12:14 ET, market OPEN) — **ZERO ORDERS. ⚠ A NEW RULE 3 BREACH FOUND ON MCD (20.1472%) AND DELIBERATELY NOT CURED, BECAUSE THE ONLY REMEDY STRIPS A REAL GTC TRAIL OFF 20% OF THE BOOK THE SESSION BEFORE A CPI PRINT TO RECOVER $148.21. ⚠ HANDOFF (i) DISCHARGED FAVOURABLY — CLX's hwm RATCHETED $1.8844 PAST ITS OWN FILL. ⚠ RESEARCH COULD NOT EXPLAIN A +2.2488% SPY DAY AND SERVED A +0.31% LEVEL AGAINST IT; THE BENCHMARK WAS STRUCK FIRST-PARTY AND THE LEAD FELL A SECOND TIME TO +3.8179 pts. ⚠ THE IRAN DE-ESCALATION STORY IS BACK WITH NO WIRE — RULE 14 LOGGED AS NOT ENGAGED, BECAUSE THE BOOK HOLDS ZERO ENERGY.**
+
+### Query 1 — what is driving the tape, and the CPI setup (serial call 1 of 2)
+**Attributed cause: falling crude and Treasury yields after Trump said he had no plans for imminent attacks on Iran and that talks were continuing; crude reportedly −4%.** Secondary: **Constellation Energy earnings beat with FY26 EPS guidance above consensus.**
+- ⚠ **THE EXPLANATION DOES NOT COVER THE MOVE AND THE TOOL SAID SO ITSELF:** it cited a source showing the S&P 500 **+0.31%** early session and stated plainly that the available report "does not establish a single catalyst sufficient to explain a more than 2% S&P 500 move." **First-party SIP: SPY $751.825 vs the verified $735.29 close = +2.2488%.** **The level was discarded; the benchmark was struck off SIP bars.** *(Source: schwab.com market update.)*
+- ⚠ **RULE 14 APPLIES TO THE ATTRIBUTED CAUSE AND BARS IT AS A BASIS FOR ACTION.** A de-escalation / talks-continuing story needs **Reuters/AP/Bloomberg/AFP or an official government statement, with a date.** **A broker market update is not a wire. None was produced.** This is the **third such scare in this account's history** and the two prior ones were both contradicted by Reuters within days. ⚠ **The rule has nothing to bite on here: the account has held ZERO energy since XLE stopped out 11/04, so no exit trigger can fire. Logged as NOT ENGAGED, not as passed.**
+
+**October CPI — tomorrow, Tuesday 2026-11-10, 08:30 ET:**
+- **Headline +0.3% m/m, +3.7% y/y. Core +0.2% m/m, +2.5% y/y.** Cleveland Fed nowcast **~3.74%** headline y/y; one private forecast **3.78–3.83%**.
+- ⚠ **CONSENSUS FIRMED HAWKISH SINCE THIS MORNING'S READ.** The pre-market logged a **+0.2% to +0.3%** range with **ING the hawkish outlier at +0.3%**. **Consensus has now settled ON that number.** *(nowflation.com/calendar, kiplinger.com)*
+- **December FOMC (Dec 8–9): HIKE 76.5–78.9%, no change 21–23%, CUT 1–3%.** **The base case is a quarter-point HIKE, not a cut.** *(defirate.com, polymarkettrader.com, predictionmarketspicks.com)*
+- ⚠ **This lands one session after a staples entry, with staples the rate-sensitive defensive sleeve and the book 75.2566% directional and unhedged.**
+
+### Query 2 — thesis check on all five holdings (serial call 2 of 2)
+- **CLX — dated item found, and it does NOT explain the move.** The only 11/09 item is a **13F disclosure (Alps Advisors, 65,625 shares)** — backward-looking, and research itself said it "does not explain a 3.6% intraday gain." ⚠ **CLX's +3.5810% today is UNEXPLAINED. Fifth consecutive up-session off the 11/02 beat (+4.34 / +5.71 / +0.54 / +0.26 / +3.58), still zero give-back.**
+- ⚠ **RESEARCH CONTRADICTED THIS DESK'S OWN EARLIER FIGURE:** CLX Q1 EPS **$1.55 vs $1.07 consensus (+44.9%)** here, against the pre-market's **$1.55 vs $0.97 (+59.8%)**, same tool, same day. **Both are large beats, so the thesis survives on either base — but the base is now disputed and the weekly review must settle it.**
+- **GEHC / MCD / TPR / UNH — no dated news found.** ⚠ **The tool explicitly qualified this: "no dated news found means none was found in the available results — not that no event occurred."** Per the 11/06 non-determinism finding, **all four are carried as UNVERIFIED-INTACT, not checked-and-clear.**
+- **No thesis broke. No sleeve is cut under step 5.**
+
+### First-party reads that overrode or were not available from research
+- **SPY: `latestTrade` $751.825, book $751.73/$751.80 = 0.0093% wide, ACCEPTED.** 11/06 SIP close **$735.29** re-verified off 6 daily SIP bars.
+- **CLX: `latestTrade` $103.565, book $103.57/$103.66 = 0.0869% wide, ACCEPTED** — ⚠ **the first clean CLX book after Friday's 8.3033% rejection.** dailyBar h $103.575 = the trail's hwm exactly, confirming the ratchet tracks the real tape. Session range $100.41–$103.575 on open $100.49.
+- ⚠ **SNAPSHOT FEED DEFECT, 30th SESSION, TWO SYMBOLS:** SPY `prevDailyBar` **$735.40** vs SIP **$735.29**; CLX `prevDailyBar` **$99.91** vs the position's `lastday_price` **$99.96**. **Nothing was struck off snapshot.** The one-line fix (`&feed=${2:-sip}`) remains unapplied.
+- **VIX: no first-party source; no vol proxy pulled this run** — nothing was owed off it, and the market-open reads (VIXY $19.6450, UVXY $20.8200) stand as the last first-party marks.
+
+### Perplexity discipline
+**2/2 calls, STRICTLY SERIAL, zero 429s, zero transport failures. Running total 77/77 serial vs 2/10 parallel. The serial rule continues to hold perfectly and must not be relaxed.**
