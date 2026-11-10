@@ -2848,3 +2848,14 @@ TPR, same session, same position, nothing touched:
   - ⚠ **Decision 3 — 75.4820% directional and unhedged. The hot CPI has now LANDED and the book held (+0.2576% vs SPY -0.8184%). The exposure was SURVIVED, not hedged, and the defensive tilt is what did it.** December hike 84-100% priced.
   - ⚠ **Decision 7 — XLY $40,398.76 = 39.7682% of equity and 52.6858% of the book, uncapped; rule 16 DRAFTED and UNENACTED.** ⚠ **Note which way the data cut today: XLY -0.4173% underperformed XLP (+0.3191%) and XLE (+0.2987%) but beat XLK (-2.0014%) and SPY (-0.8184%). The concentration is in a sector that is 2nd of 11 on 20 days and beat the index today.**
   - ⚠ **Decision 6 — 20th consecutive catch** (11/09 sector tape served as today, leader and laggard inverted). ✓ **Counter-evidence: the CLX query closed a six-run open question with dated, internally consistent sourcing and volunteered its own negative.** **The actionable finding is the fault line, not the fault: dated single-name = reliable; aggregated tape = not.**
+
+### Nov 10 — EOD Snapshot (Day 62, Tuesday)
+**Portfolio:** $101,729.11 | **Cash:** $24,906.78 (24.48%) | **Day P&L:** +$404.48 (+0.40%) | **Phase P&L:** +$1,729.11 (+1.73%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| MCD | 72 | $270.20 | $282.175 | +0.26% | +$862.20 (+4.43%) | $255.177 (10% trail, hwm $283.53) |
+| TPR | 148 | $133.49 | $135.325 | -0.55% | +$271.58 (+1.38%) | $123.687 (10% trail, hwm $137.43) |
+| UNH | 38 | $385.71 | $403.08 | +1.37% | +$660.06 (+4.50%) | $383.895 (10% trail, hwm $426.55) |
+| GEHC | 132 | $76.43 | $83.66 | -0.44% | +$954.36 (+9.46%) | $78.804 (10% trail, hwm $87.56) |
+| CLX | 93 | $101.69 | $108.79 | +3.09% | +$660.24 (+6.98%) | $98.847 (10% trail, hwm $109.83 NEW) |
+**Notes:** Marks taken 15:15 ET (run fired 45 min pre-close); Day P&L vs `last_equity` $101,324.63. Hot-CPI day: book +0.40% vs SPY -0.52% ($748.80 vs $752.72), phase lead ~+5.28 pts (book +1.73% vs SPY -3.55% from $776.34). No trades (0 fills today, verified via activities); zero realized P&L. All 5 GTC 10% trails live, none touched; CLX hwm ratcheted to $109.83. Deployed 75.52% (in band, cushion ~$525). MCD 19.97% / TPR 19.69% of equity — both under the 20% cap at this mark. GEHC $83.66 < $87.8945 tighten gate (not crossed); UNH $403.08 > $395.768 (held). Trades this week: 1/3.
