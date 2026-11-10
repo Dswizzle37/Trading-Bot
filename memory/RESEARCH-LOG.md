@@ -17515,3 +17515,67 @@ No dated 11/10 items for CLX, GEHC, MCD, TPR, UNH. ⚠ **Carried as UNVERIFIED-I
   - ⚠ **Decision 3 — 75.4783% directional and unhedged THROUGH a hot CPI print**, December hike ~85% priced. **The print has now landed and the book held (+0.2424% vs SPY -0.6909%) — the exposure was survived, not hedged.**
   - ⚠ **Decision 7 — XLY $40,680.02 = 40.0511% of equity and 53.0618% of the book, uncapped; rule 16 DRAFTED and UNENACTED.** XLY is 2nd of 11 on 20-day momentum, so the concentration is in a leading sector.
   - ⚠ **Decision 6 — 19th consecutive catch, and the worst fault yet: the consensus served as the print, twice, in a plausible format, with a self-contradiction two minutes apart.** ✓ **Counter-evidence logged honestly: query 4 produced the correct Reuters-dated figures, and the 11/09 pre-market's LOW gates verified first-party to the decimal.**
+
+## 2026-11-10 — MIDDAY ADDENDUM (Day 62, Tuesday, 12:07 ET, market OPEN) — **ZERO ORDERS. ✓ CLX's SIX-RUN "CAUSALLY UNEXPLAINED" FLAG IS RETIRED: THE 11/02 BEAT ($1.55 vs $1.07) PLUS TWO DATED SELL-SIDE ACTIONS. ⚠ AND THE SAME SOURCES PUT CLX +8.45% ABOVE ITS HIGHEST NAMED TARGET. ⚠ RESEARCH SERVED THE 11/09 SECTOR TAPE AS TODAY'S WITH LEADER AND LAGGARD INVERTED — 20th DECISION-6 CATCH, AND THE FAULT LINE IS NOW CLEAR: DATED SINGLE-NAME GOOD, AGGREGATED TAPE BAD.**
+
+### Account snapshot — live RTH 12:07 ET
+| | Live RTH (this read) | 11/09 official close (governing until EOD files) |
+|---|---|---|
+| Equity | **$101,585.61** | $101,324.63 |
+| Long market value | **$76,678.83** | $76,417.85 |
+| Cash | **$24,906.78** | $24,906.78 |
+| Deployed | **75.4820%** | 75.4188% |
+| Positions | **5** of 6 | 5 |
+| Day P/L | **+$260.98 (+0.2576%)** | — |
+| Daytrade count | **field absent a 27th run**; non-binding at 4.06x $25k | — |
+
+- **Rule 2 IN BAND a fifth consecutive session, $489.62 above the floor — a cushion that GREW from $485.79 at 09:34** because the book rose while SPY fell. Handoff (i)'s live risk eased rather than worsened.
+- **`orders open` returns exactly 5, all `trailing_stop`, `trail_percent:"10"`, GTC, `status:new`, each stop exactly 0.9 x hwm. Zero decreases. Nothing touched by hand.**
+- **Two automatic stop increases since the open read: CLX hwm $105.93 -> $108.56 (stop $95.3370 -> $97.7040) at 16:12:17Z, and TPR hwm $137.07 -> $137.43 (stop $123.3630 -> $123.6870) at 14:32:38Z.**
+
+### Market context — every sector and index level struck FIRST-PARTY off SIP 1Day bars
+| Sector / index | 11/09 close | Live 11/10 | Today |
+|---|---:|---:|---:|
+| XLP | $90.89 | $91.18 | **+0.3191%** |
+| XLE | $61.94 | $62.125 | **+0.2987%** |
+| XLV | $188.33 | $188.03 | -0.1593% |
+| XLY | $121.01 | $120.505 | -0.4173% |
+| **XLK** | $170.88 | $167.46 | **-2.0014%** |
+| **SPY** | **$752.69** | **$746.53** | **-0.8184%** |
+
+- **The post-CPI tape is a tech-led selloff, not a broad one.** XLK -2.00% does roughly all the index damage; the two defensive sectors the book actually holds are flat-to-up.
+- **Research-only levels, used as context and sized off nothing: VIX 20.96 (+1.04 pts, +5.37%), 10-year 4.94% (+~7bp), December FOMC hike 84-100% priced (CME FedWatch 89% 25bp + 11% 50bp).** ⚠ **VIX remains unverifiable first-party (tooling item 6).**
+- **Wire-dated corroboration of the session (11/10): AP "US stocks fall after worse-than-expected report on inflation" (S&P -0.7%), Bloomberg live CPI coverage ("a jumbo Fed rate hike now in play"), Yahoo/Reuters-syndicated (Dow -0.2%, S&P -0.6%).** **All consistent with the first-party SPY -0.8184%.**
+
+### ⚠ DECISION 6 — 20th CONSECUTIVE CATCH, AND THE MOST USEFUL ONE YET BECAUSE IT ISOLATES THE FAULT LINE
+- **Research returned as "Tuesday November 10": "Industrials strongest +4.2%, Consumer Discretionary +3.7%, Info Tech +3.0%; Energy was the only sector reported lower, down 0.3%; the other 10 sectors finished higher."**
+- ⚠ **THAT IS THE 11/09 SESSION — the +2.3664% SPY rally day — SERVED AS TODAY. And its single claim about direction is EXACTLY INVERTED: Energy is a LEADER today (+0.2987%) and TECH is the laggard (-2.0014%).** **Identical fault class to yesterday's XLY sign-and-date inversion, one session later, same tool.** **STRUCK in full.**
+- ✓ **THE COUNTER-EVIDENCE IS JUST AS IMPORTANT AND IT IS NOW A PATTERN ACROSS FOUR RUNS. The CLX single-name query was the tool's best work of the phase:** dated, sourced, internally consistent, and it **volunteered the explicit negative** ("no evidence of a new M&A report or sector-flow catalyst") that closed a six-run open question.
+- ⚠ **THE ACTIONABLE FINDING IS THE FAULT LINE, NOT THE FAULT: DATED SINGLE-NAME HISTORY = RELIABLE. AGGREGATED MARKET-TAPE = SERVES THE PRIOR SESSION AS TODAY** (sectors today; XLY sign+date 11/10 pre-market; CPI consensus-as-print 11/10 open). **Route tape questions to first-party bars ALWAYS; route single-name history to research and demand dates.** Promoted to tooling item (9).
+
+### ✓ CLX — THE SIX-RUN OPEN QUESTION IS CLOSED, AND IT COMES WITH A WARNING
+- **Cause of the +25.11% 20-day run and the seventh consecutive up-session: the 2026-11-02 Q1 FY2027 earnings release.** **Adjusted EPS $1.55 vs $1.07 expected; revenue $1.91bn vs $1.88bn expected; outlook updated.**
+- **Confirming dated sell-side actions:** **Evercore ISI 11/02** — upgrade **Underperform -> In Line, PT $99**, citing earnings-reset risk already discounted and incoming CEO **Fabian Garcia**'s turnaround record. **Morgan Stanley 11/04** — PT **$87 -> $94**, Equal Weight maintained. **WallStreetZen 11/07** — Sell -> Hold.
+- **Explicitly NOT the cause: the 11/10 Beutel Goodman ~2.01m-share disclosure is a retrospective Q3 13F-type filing.** Same shape as the 11/10 M Holdings item the pre-market already struck.
+- ⚠ **THE WARNING: CLX AT $107.37 TRADES $8.37 (+8.4545%) ABOVE ITS HIGHEST NAMED TARGET ($99) AND +14.22% ABOVE MORGAN STANLEY'S $94.** **Thesis INTACT and now VERIFIED; the UPSIDE case is endorsed by nobody.** **This confirms the 11/09 sell-side-target fault on dated sources rather than by inference: CLX was entered above every dated target and has run 8.5% further above them since.**
+- **No rule triggers on any of this.** Rule 5 is 12.59 pts away; the trail locks **$97.7040**, now only **-3.9204%** below the $101.690645 entry (improved from -6.2480% this morning). **No rule in the book uses an analyst target as an exit — which is precisely the gap handed to Friday as review item (h).**
+- ✓ **WEEKLY-REVIEW ITEM (e) IS CLOSABLE: the CLX consensus-EPS contradiction resolves to $1.07** (not $0.97) against a **$1.55** actual — a **+44.9%** beat.
+
+### Theses — one VERIFIED, four UNVERIFIED-INTACT
+- **CLX — VERIFIED (above). GEHC / MCD / TPR / UNH — no dated 11/10 items found; research said so explicitly when asked by name.** ⚠ **Carried as UNVERIFIED-INTACT, not checked-and-clear**, per the 11/06 non-determinism proof. **No thesis broke and no sleeve has a rule trigger pending, so nothing turned on it.**
+
+### Rule reads — no trigger met on any of the eleven
+**Rule 5:** all five GREEN, weakest TPR **+1.5880%**, 8.5880 pts clear. ⚠ **TPR's cut line $124.1457 now sits $0.4587 ABOVE its trail $123.6870 — rules 5 and 6 are inverted on that sleeve and the trail can never execute.** **Rule 6:** nearest gate GEHC **$87.8945, short $4.2845**, and it moved AWAY today (-0.500%). **Rule 7:** clear on all five, tightest UNH **4.3920%** (line $395.7680, headroom $5.7620). **Rule 3:** MCD **20.0112%, over by $11.36 — NOT cured by hand** per handoff (ii); TPR **19.7570%**, under by $246.84. **Rule 8:** 1/3 weekly slots used. **Rule 14:** not engaged — zero energy held.
+
+### Trade ideas — NONE. No midday screen run and that is deliberate
+**The pre-market's 47-name first-party screen produced six mechanical passes and ZERO entry-checklist passes; the market-open run rejected LOW outright on the "pending ≠ delivered" ruling and on R:R 0.889:1 struck off consensus. Nothing at midday changes either determination.** **Rule 2 is in band, so there is no deployment pressure, and a confirmed hot-CPI tech-led selloff is not a tape to force a first entry into.** **2 of 3 weekly slots unused is rule 11 working.**
+
+### Benchmark
+- **Book +1.5856% ($100,000 -> $101,585.61 live) vs SPY -3.8398% ($776.34 on 2026-08-14 -> $746.53 live) = +5.4254 pts AHEAD, live-vs-live. Governing close-basis lead stays +4.3710 pts until the EOD files.**
+- ✓ **THE BOOK BEAT SPY BY 1.0760 pts TODAY ON A CONFIRMED HOT-CPI SELLOFF, AND THE FIRST-PARTY SECTOR TAPE SAYS WHY: it holds XLP (+0.3191%) and XLV (-0.1593%) and holds ZERO XLK (-2.0014%).** **The defensive concentration logged as decision 7's risk is what paid today.**
+
+### Perplexity discipline
+**3/3 calls, STRICTLY SERIAL, zero 429s, zero transport failures. Running total 91/91 serial vs 2/10 parallel. Do not parallelize.**
+
+### Handoffs
+**Full handoff list — EOD by name (three sessions owed), the rule-3 no-hand-cure bar, GEHC's cancel-first order of operations, UNH's untouchable stop, the seven weekly-review items including new item (h), the tooling list, and all six unanswered owner decisions — is recorded in the matching `memory/TRADE-LOG.md` midday entry for 2026-11-10 and is not duplicated here.**
