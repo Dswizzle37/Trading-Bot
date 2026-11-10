@@ -2639,3 +2639,108 @@ Research attributes today's rally substantially to **"Trump said he had no plans
   - ⚠ **Decision 3 — 75.2566% directional and unhedged into an 08:30 ET CPI print with a December hike ~77% priced.**
   - ⚠ **Decision 7 — XLY 39.8095% of equity, 52.8984% of the book, uncapped; rule 16 DRAFTED and UNENACTED.**
   - ⚠ **Decision 6 — 17th consecutive catch. Three faults this run, TWO of them the tool's and ONE arguably the rulebook's:** research could not explain a +2.25% SPY day and served a +0.31% level against it; it contradicted its own earlier CLX consensus figure; **and rule 3 was found to punish a working position.**
+
+## 2026-11-10 — Market-Open Execution (Day 62, Tuesday, fired 08:36 ET / RTH work 09:30-09:34 ET) — **ZERO ORDERS. ⚠ THE CPI PRINT CAME IN HOT (+0.4% / +0.3% m/m, BOTH 0.1 pt ABOVE CONSENSUS, REUTERS-DATED) AND THE PRE-MARKET'S REFUSAL TO PRE-AUTHORIZE ANYTHING IS VINDICATED IN FULL. ⚠ RESEARCH SERVED THE CONSENSUS BACK AS THE PRINT TWICE AND ONLY A THIRD QUERY, AN HOUR AFTER RELEASE AND EXPLICITLY DEMANDING A WIRE, PRODUCED THE ACTUAL NUMBER. ⚠ BLS OMITTED EVERY y/y FIGURE — WEEKLY-REVIEW ITEM (f) IS DISSOLVED, NOT ANSWERED. ⚠ DECISION 1's MECHANISM IS NAMED AND QUANTIFIED: THE SCREEN'S TARGET BASIS SITS SYSTEMATICALLY ABOVE SELL-SIDE CONSENSUS, SO EVERY R:R IT PRINTS IS OVERSTATED. ⚠ RULE 3 FLIPPED STATE THREE TIMES IN FOUR MINUTES ON TPR.**
+
+**No trade placed, cancelled, modified or staged. No stop touched by hand. `activities FILL 2026-11-10` = `[]`. 5 open orders, all stops, count unchanged.** Run fired **08:36 ET, 54 min pre-bell** (DST defect, **12th consecutive session**, tooling item 7) and **waited for the 09:30:18 ET open** rather than sizing off pre-market prints (rule 13). Endpoint verified `paper-api.alpaca.markets/v2` — **paper, untouched.**
+
+**Account (09:34 ET live RTH):** equity **$101,570.28**, `last_equity` $101,324.63, **day +$245.65 (+0.2424%)**; cash $24,906.78 (24.5217%); long MV $76,663.50 (**75.4783% deployed**); unrealized **+$3,249.61**.
+
+### Open positions — live RTH marks
+| Ticker | Qty | Entry | Mark | Day | Unreal. | Stop (GTC trail 10%) | hwm | Rule 7 gap | Clear of -7% | % equity | Rule 9 sector |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.690646 | $104.8900 | -0.606% | **+$297.54 (+3.1460%)** | $95.3370 `441a7ba8` exp 2027-02-05 | $105.93 | 9.0866% | 10.1460% | 9.6040% | XLP, **3rd** |
+| GEHC | 132 | $76.43 | $83.4850 | -0.649% | **+$931.26 (+9.2310%)** | $78.8040 `13dd3b34` exp 2027-01-26 | $87.56 | 5.6070% | 16.2310% | 10.8497% | XLV, **1st** |
+| MCD | 72 | $270.20 | $282.8650 | +0.506% | **+$911.88 (+4.6870%)** | $254.9340 `1a224b95` exp 2027-02-04 | $283.26 | 9.8759% | 11.6870% | **20.0514%** | XLY, **2nd** |
+| TPR | 148 | $133.49 | $137.2550 | +0.871% | **+$557.22 (+2.8200%)** | **$123.3630** `bddb11b5` exp 2027-02-04 | **$137.07** | 10.1156% | 9.8200% | **19.9997%** | XLY, **2nd** |
+| UNH | 38 | $385.71 | $400.2288 | +0.656% | **+$551.71 (+3.7640%)** | $383.8950 `5d48b1e5` exp 2027-01-11 | $426.55 | **4.0824%** | 10.7640% | 14.9736% | XLV, **1st** |
+
+**All five stops real, GTC, `trailing_stop`, `trail_percent` 10, `status:new`, full size covered (93/93, 132/132, 72/72, 148/148, 38/38). 0.9 x hwm = stop_price EXACT on all five. ZERO decreases this phase.**
+
+### STOP INCREASE — TPR, AUTOMATIC, ELEVEN SECONDS AFTER THE BELL
+**`hwm` $136.69 -> $137.07; `stop_price` $123.0210 -> $123.3630, a rise of $0.3420.** `updated_at` **2026-11-10T14:30:11Z (09:30:11 ET)**. Arithmetic verified: 0.9 x $137.07 = $123.363 exactly. **TPR printed a new high at the open; Alpaca's trailing mechanism working as designed on RTH prints. NO STOP TOUCHED BY HAND.** CLX / GEHC / MCD / UNH `hwm` and `updated_at` all unchanged — none printed a new high. **New operative levels: TPR $137.07+, CLX $105.93+, MCD $283.26+, GEHC $87.56+, UNH $426.55+.**
+
+### ⚠ OCTOBER CPI — HOT ON BOTH LINES, AND THE PRE-MARKET'S CALL IS VINDICATED
+- **Actual: headline +0.4% m/m SA, core +0.3% m/m SA. Consensus was +0.3% / +0.2%. BOTH 0.1 pt HOTTER.** Wire-dated: **Reuters 2026-11-10** ("Hot October inflation report rattles markets"; "US consumer prices rise above expectations"), corroborated by AP-syndicated and USA Today items of the same date.
+- **Market reaction: stocks fell at the open.** Nasdaq futures ~-1.4%, S&P futures ~-0.8% pre-bell. **SPY $747.49 live vs the $752.69 close = -0.6909%.** 10-year yields rose. December hike ~83-85% priced.
+- ✓ **THE PRE-MARKET STAGED NOTHING FOR THE BELL AND THAT WAS THE RIGHT CALL ON THE MERITS, NOT MERELY ON PROCESS.** Handoff (ii)'s bar on pre-authorizing across an 08:30 print prevented an entry that would have filled into a confirmed hot-CPI selloff. **The last two pre-markets pre-authorized and both filled well; this one declined and the decline is what paid.**
+- ⚠ **BLS OMITTED THE 12-MONTH FIGURES ENTIRELY.** The 2025 government shutdown prevented collection of parts of October-2025 prices, so no y/y is calculable for October 2026. Corroborated on two dated sources.
+  - ✓ **THIS DISSOLVES WEEKLY-REVIEW ITEM (f) RATHER THAN ANSWERING IT.** Three runs served two different y/y pairs (+3.9%/+2.8% on the 11/09 pre-market and the 11/10 pre-market; +3.7%/+2.5% on the 11/09 midday). **Neither was ever a print and neither could have been — both were forecasts of a number BLS did not publish.** The review grades all three against "no y/y exists."
+
+### ⚠ DECISION 6 — THE MOST SERIOUS RESEARCH FAULT OF THE PHASE: THE FORECAST WAS SERVED AS THE PRINT, TWICE
+- **Query 1 (08:42 ET, 12 min after release):** returned "not available in the accessible release results" for all four CPI lines — correct and honest.
+- **Query 2 (08:44 ET):** returned **"+0.3% / +0.2% retained"** as the released figures, cited to `bls.gov/schedule` pages. ⚠ **THESE ARE THE CONSENSUS NUMBERS, NOT THE PRINT. The actual print was +0.4% / +0.3%.**
+- **Query 3 (08:46 ET):** stated the sources "do not establish that the October CPI release had occurred by 8:45 a.m. ET" — **directly contradicting query 2 two minutes earlier, in the same run.**
+- **Query 4 (09:33 ET, explicitly demanding a wire):** produced the correct figures on Reuters.
+- ⚠ **THE LESSON IS NOT "RESEARCH IS UNRELIABLE" — IT IS SPECIFIC AND ACTIONABLE: A FRESHLY-RELEASED DATA POINT MUST BE DEMANDED ON A NAMED WIRE WITH A DATE, OR NOT USED.** A query that does not name the wire requirement will be answered off the pre-release schedule page with the forecast, and the forecast is indistinguishable in format from the print. **This run acted on no price while the figure was unconfirmed, so nothing was lost — but the interim write-up DID carry "+0.3%/+0.2%, in line" for ~50 minutes before correction.** **19th consecutive catch, and the first where the tool's error was a plausible number rather than an obvious sign/date inversion.**
+
+### ⚠ DECISION 1 — THE MECHANISM IS NOW NAMED AND QUANTIFIED, NOT MERELY REPRODUCED
+Prior runs showed the screen's top scores are its most broken names (LULU 9.184:1 at 52% of its own high). **This run finds WHY: the target basis is a stale 252-day CLOSE high, and it sits systematically ABOVE forward sell-side consensus — so every R:R the screen prints is overstated.** Both names that survived to the catalyst leg fail 2:1 once R:R is struck off consensus:
+
+| Name | close 11/09 | screen target (date) | R:R screen | consensus target (date, n) | screen vs cons | **R:R on consensus** |
+|---|---:|---:|---:|---:|---:|---:|
+| **LOW** | $232.10 | $287.39 (2026-02-13) | **2.3822** | **$252.73** (11/09-10, 35-37 analysts) | **+13.71%** | **0.889 — FAIL** |
+| **AZO** | $3,251.27 | $3,967.95 (2025-11-26) | **2.204** | **$3,665.61** (11/10, 23 analysts) | **+8.25%** | **1.274 — FAIL** |
+
+- **PROPOSED FIX, FOR THE OWNER: strike R:R off the LOWER of (252-day close high, dated sell-side consensus target).** This **subsumes** both patches decision 1 has been asking for — the missing ceiling on R:R and the missing floor on proximity-to-high — because a name at 52% of its high will have a consensus target far below that high. **One change retires the whole defect class.**
+- ✓ **AND IT GENERALISES THE CLX LESSON INSTEAD OF LEAVING IT AS A ONE-OFF.** On 11/09 CLX was bought with every dated target BELOW the fill (consensus $93.79, -7.77%). The sell-side test added afterwards only asks "is consensus above the price." **That test is necessary but NOT SUFFICIENT: LOW passes it (consensus $252.73 is +8.89% above the $232.10 close) and still fails R:R outright at 0.889:1.** The binding question is not whether consensus is above the price but **whether the target the R:R rests on is one the sell side endorses.**
+- ⚠ **AZO RESEARCH CONTRADICTION ACROSS RUNS:** the 11/09 pre-market recorded AZO's 2026-09-22 print as "slightly BELOW consensus"; today's dated figure says **BEAT, $56.05 vs $53.89 (+4.0% surprise)**. **AZO is rejected either way** — next print 2026-12-08, ~a month out, no delivered catalyst.
+- **CPB / LULU / NKE / PEP consensus targets NOT OBTAINABLE this run** (research returned nothing usable); the table is complete only for the two names that reached the catalyst leg.
+
+### ⚠ LOW — REJECTED. HANDOFF (i) DISCHARGED WITH AN EXPLICIT RULING
+Gates re-struck **FIRST-PARTY off 252 SIP 1Day bars**; the pre-market's figures verify **exactly**: close $232.10, 252d CLOSE high **$287.39 (2026-02-13)**, ceiling $239.4917, room +$7.3917 (**+3.1847%**), R:R **2.3822**, 20d **+25.0741%**, **80.76%** of high. Three independent grounds, any one sufficient:
+1. ⚠ **THE CATALYST LEG FAILS, AND NO DELIVERED CATALYST EXISTS AT ALL.** Research cannot name a single dated event behind the **+7.5% 11/04 session** or the **+25.07% 20-day run** — the cause is unidentified, exactly as with CLX. Last print **2026-08-19: adj EPS $4.40 vs $4.22 BEAT, revenue $25.96bn vs $26.13bn MISS** — three months stale. The only named catalyst is **earnings 2026-11-18 BMO, PENDING, 6 sessions out.**
+   - **EXPLICIT RULING, WHICH THE PRE-MARKET ASKED FOR AND DID NOT MAKE: A PENDING BINARY PRINT IS NOT A CATALYST UNDER THE ENTRY CHECKLIST. PENDING ≠ DELIVERED.** A print 6 sessions out is **event RISK**, and a gap-down through a 10% stop is this desk's documented failure mode. The checklist asks for a catalyst that has *happened* and that the tape can be measured against — which is precisely the CLX standard (six confirming sessions) and the GEHC standard (a beat-and-raise).
+2. ⚠ **R:R FAILS ON THE ONLY TARGET BASIS THE SELL SIDE ENDORSES: 0.889:1** (see Decision 1 above).
+3. **No deployment pressure.** Rule 2 in band; 2 of 3 weekly slots unused is **rule 11 working, not a miss.**
+- **Dated item found and logged for what it is:** **JPMorgan raised LOW's PT to $275 from $252 on 2026-11-09** on improved Q3 same-store-sales estimates and channel checks. It **post-dates** the 11/04 move so it explains nothing, and **an analyst PT raise is not a company catalyst.**
+- ⚠ **AND THE PRICE LEG COULD NOT BE STRUCK LIVE ANYWAY** — see rule 13 below. **It did not matter: both disqualifying grounds are price-independent.**
+
+### Why no trade — every rule checked, no trigger met
+- **Rule 1 — no options, none contemplated.** `options_trading_level 3`, **zero options positions**; `positions` returns 5 equities only.
+- **Rule 2 — IN BAND a fourth consecutive session at 75.4783%**, but only **0.4783 pts ($485.79) above the floor**. ⚠ **A -0.63% book session re-breaches it with no order placed.** On a confirmed hot-CPI day that is a live risk — handed to midday.
+- ⚠ **Rule 3 — MCD IN LIVE BREACH AT 20.0514% ($52.22 over the $20,314.06 cap). TPR CURED ITSELF BY $0.32.** **NEITHER TOUCHED BY HAND, per handoff (vi) and decision 8.** See the state-flip note below.
+- **Rule 4 — 5 of 6 positions; all five stops verified order-by-order (above).**
+- **Rule 5 — NO CUT OWED.** All five sleeves green; weakest **TPR +2.8200%**, clear of the -7% line by 9.8200 pts.
+- **Rule 6 — NO TIGHTEN DUE.** Nearest gate **GEHC at +9.2310% vs the +15% gate $87.8945 — short $4.01 (needs +5.28% from $83.4850).** ⚠ **If it crosses, CANCEL `13dd3b34` FIRST** — `qty_available` is 0, so a new stop rejects while the old one holds the shares. Never the other order.
+- **Rule 7 — CLEAR ON ALL FIVE, no stop moved down ever.** **UNH tightest at 4.0824%**, re-breach line **$395.7680**, headroom **$4.4608** — **materially better than the 3.4518% the pre-market recorded on the close basis**, because UNH is +0.656% on a down tape. **`5d48b1e5` NOT touched, 16th session.**
+- **Rule 8 — 1 of 3 slots used**, week 11/09-11/13, **verified first-party off `activities FILL`** (CLX, one order, 4 partial fills 11/09 14:33-14:35 UTC). **2 slots remain.**
+- **Rule 9 — PASSES AT SECTOR LEVEL ON ALL FIVE SIMULTANEOUSLY** a second session (XLV 1st, XLY 2nd, XLP 3rd on 20 days, per the pre-market's 11-sector first-party rebuild). ⚠ **UNH remains the one name LAGGING its own sector (-4.45 pts).**
+- **Rule 10 — XLV 25.8233% (GEHC+UNH), XLY 40.0511% (MCD+TPR), XLP 9.6040% (CLX).** No sector has two consecutive failed trades; count unchanged.
+- ⚠ **Rule 11 — INVOKED AS THE OPERATIVE REASON, NOT AS CONSOLATION. Zero candidates clear the entry checklist on a confirmed hot-CPI day with a December hike ~85% priced. Not trading is the position.**
+- **Rule 12 — this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+- ⚠ **Rule 13 — BOUND TWICE AND THE 17th OCCURRENCE IS A NEW FAILURE MODE** (below).
+- **Rule 14 — NOT ENGAGED.** The book holds **zero energy**, so no exit trigger can fire regardless of the Iran wire. The 11/09-upd-11/10 Reuters pause/talks story is unchanged and remains *pause*, not *deal*.
+- **PDT — `daytrade_count` and `pattern_day_trader` both ABSENT a 26th consecutive run.** No day trade placed or contemplated; non-binding at 4.06x the $25k threshold.
+
+### ⚠ RULE 3 FLIPPED STATE THREE TIMES IN FOUR MINUTES — DECISION 8 IS NOW SETTLED ON THE EVIDENCE, IT ONLY NEEDS A RULING
+TPR, same session, same position, nothing touched:
+| Read | TPR % of equity | vs 20% cap |
+|---|---:|---:|
+| 09:30:18 ET | **20.0144%** | **+$14.55 OVER** |
+| 09:32:01 ET | **20.0027%** | **+$2.78 OVER** |
+| 09:34 ET | **19.9997%** | **-$0.32 UNDER** |
+
+- ⚠ **A CONSTRAINT THAT ENTERS AND LEAVES BREACH THREE TIMES IN FOUR MINUTES ON SUB-DOLLAR NOISE IS NOT FUNCTIONING AS A RISK CONTROL.** The 11/09 midday found MCD at 20.1472% and declined to cure for $148.21; the 11/10 pre-market found it cured by $1.25; this run finds **MCD over by $52.22 and TPR under by $0.32, simultaneously, on the same tape.**
+- **The only in-rules remedy remains unavailable and would be perverse: `qty_available` is 0 on both, so trimming one share requires CANCELLING a real GTC trail off a 20%-of-book position to recover $52.** **NOT DONE. Handoff (vi) is explicit and is obeyed.**
+- **Decision 8 asked whether the cap binds CONTINUOUSLY or AT ENTRY ONLY. The evidence now answers the empirical half:** on a continuous reading the cap is breached and cured by noise several times a session and its remedy destroys more risk control than it restores; on an at-entry reading **both positions were compliant when bought (MCD 19.21%, TPR 19.75% at cost)** and nothing is owed. **Only the ruling is missing.**
+
+### Benchmark — a new phase high for the lead, and the book leg earned it on a down tape
+- **Book +1.5703% (phase start $100,000 -> $101,570.28 live) vs SPY -3.7162% (phase ref $776.34 on 2026-08-14 -> $747.49 live) = +5.2864 pts AHEAD.** Sequence: ... +4.4288, +3.8179, +4.3710 (11/09 close basis), **+5.2864 live** — **a new phase high, past the prior +5.2304 peak.**
+- ✓ **BOTH LEGS ARE LIVE RTH MARKS, SO THIS FIGURE IS COMPARABLE** — unlike the pre-open read the 11/10 pre-market correctly discarded, where SPY had no first-party mark. **SPY's book is 0.0080% wide and 2 seconds old; it is the cleanest quote of the run.**
+- ⚠ **BUT IT IS AN INTRADAY READ FOUR MINUTES INTO A HOT-CPI SESSION AND IS NOT THE GOVERNING BASIS. The governing figure remains the 11/09 official close at +4.3710 pts** until the EOD class files.
+- **Naming the leg honestly: the book is +$245.65 (+0.2424%) while SPY is -0.6909%.** The book **outperformed by 0.9333 pts on the session so far**, and it did so **on composition, not on cash alone** — MCD +0.506%, TPR +0.871%, UNH +0.656% are all UP on a down tape. **A defensive XLP/XLV/XLY book with 24.52% cash is the right shape for a hot inflation print, and today is the first session this phase where that was tested and held.**
+
+### Theses re-checked — all five carried as UNVERIFIED-INTACT
+**No dated 11/10 news found for CLX, GEHC, MCD, TPR or UNH.** ⚠ **Carried as UNVERIFIED-INTACT, NOT checked-and-clear**, per the 11/06 non-determinism proof — and that caveat carries extra weight this run, given the tool served a forecast as a print twice in the same session. **No thesis broke and no sleeve has a rule trigger pending, so nothing turned on it.** **CLX's +25.11% 20-day move and LOW's +25.07% both remain causally unexplained by research.**
+
+### ⚠ Rule 13 — 17th OCCURRENCE, AND IT PROVES TOOLING ITEM (2) BY SUPPLYING THE OPPOSITE FAILURE MODE
+- **At 09:30 ET the quote books are FRESH (timestamps 14:30:19-14:30:41Z, seconds old) and GROSSLY WIDE: LOW $215.65/$239.93 = 10.6589%; GEHC $78.81/$88.00 = 11.0185%; UNH $392.50/$419.71 = 6.7002%. SPY $747.20/$748.09 = 0.1190% — ACCEPTED, and at 09:32 it tightened to 0.0080%.**
+- ⚠ **YESTERDAY'S PRE-OPEN READ WAS WIDE *AND* STALE (16:00 ET residuals, three with `ap`=0). TODAY'S IS FRESH *AND* WIDE.** **The two failure modes are INDEPENDENT, and each appears alone.** **Tooling item (2) is therefore proved, not merely proposed: the test must be a WIDTH check AND a STALENESS check, because neither subsumes the other.**
+- ⚠ **AND THE PRE-OPEN FALLBACK FAILS AT THE BELL.** Tooling item (4) says a rejected book falls back to the SIP daily bar. **At 09:31 ET the SIP 1Min feed had returned ZERO RTH bars and lagged ~15 minutes** (latest SPY bar 14:16:00Z against a 14:31:09Z wall clock; latest LOW bar 13:55:00Z, pre-market). **So one minute after the open there is NO usable first-party mark for a name not already held** — the `positions` endpoint's `current_price` covers holdings only.
+- **CONSEQUENCE, STATED PLAINLY: LOW COULD NOT BE PRICED ON ANY USABLE LIVE SOURCE THIS RUN.** It did not change the outcome — both disqualifying grounds are price-independent — **but had LOW been otherwise enterable, rule 13 would have barred the entry a second consecutive session, and that is now a structural bar on acting at the open, not an occasional data accident.**
+- **`snapshot` was NOT called this run, so the 31st-session feed defect (tooling item 1) was not exercised and nothing was struck off it.**
+
+**⚠ ALL OWNER DECISIONS CARRY, ZERO ANSWERED (rule 15). New or materially sharpened this run: (1) Decision 1's mechanism is named and a single subsuming fix is proposed — strike R:R off the LOWER of the 252d close high and dated consensus; (2) Decision 8 is empirically settled and needs only a ruling, after rule 3 flipped state three times in four minutes; (3) Decision 6 produced its most dangerous fault yet — the consensus served as the print, twice, in a plausible format; (4) tooling item (2) is proved by the opposite failure mode and tooling item (4)'s fallback is shown to fail at the bell.**
+
+**Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
