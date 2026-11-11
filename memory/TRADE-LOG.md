@@ -2909,3 +2909,107 @@ TPR, same session, same position, nothing touched:
 - ⚠ **(v) EOD 2026-11-11 — OWED TONIGHT. Class has filed twice ever. Record the close vs $101,644.94, deployment vs the 75% FLOOR, whether the -1.81 pt give-back held, MCD/TPR vs the cap, GEHC vs $87.8945, UNH vs $395.7680, whether TPR closed below water, and that the bond market was shut for Veterans Day.**
 - **(vi) Perplexity 3/3 serial. Running total 105/105 serial vs 2/10 parallel. Do not parallelize.**
 - ⚠ **ALL OWNER DECISIONS REMAIN UNANSWERED (rule 4-vs-6 geometry, 1, 3, 6, 7, 8) and none is self-authorizable. Full detail in RESEARCH-LOG.**
+
+## 2026-11-11 — Midday Scan (Day 63, Wednesday, 12:07 ET, market OPEN, closes 16:00 ET) — **ZERO ORDERS. ⚠ HANDOFF (i) DISCHARGED AND IT IS THE RUN'S HEADLINE: RULE 2's FLOOR CUSHION IS DOWN TO $267.41 (-0.3566% OF BOOK) FROM $961.42 AT 09:36 — 72% OF IT GONE IN 2.5 HOURS, NOT BREACHED, NO CURE ATTEMPTED. ⚠ EQUITY IS BELOW PHASE START FOR THE FIRST TIME: $99,894.53 (-0.1055%). ⚠ THE -1.81 pt GIVE-BACK WIDENED TO -3.0809 pts, THE WORST SESSION RELATIVE RESULT OF THE PHASE, AND THE PHASE LEAD HAS COLLAPSED +5.0481 -> +1.9851. ✓ FIRST-PARTY TAPE NAMES THE CAUSE EXACTLY AND THE 20-DAY TABLE SAYS IT IS COUNTER-TREND: XLK IS +4.0140% AND 1st OF ELEVEN TODAY WHILE DEAD LAST (-7.7404%) ON 20 DAYS. ✓ CLX's -3.67% OUTLIER RESEARCHED — CLEAN DATED NEGATIVE.**
+
+**No trade placed, cancelled, modified or staged. No stop touched by hand. 5 open orders, all stops, count unchanged. Zero fills today (`activities FILL 2026-11-11` = `[]`). Endpoint `paper-api.alpaca.markets/v2` — paper, untouched. Trades this week: 1/3 (week 11/09-11/13), verified first-party.**
+
+### Account — live RTH, 12:07 ET (market OPEN, marks confirmable)
+**Portfolio:** $99,894.53 | **Cash:** $24,906.78 (24.9331%) | **Deployed:** 75.0669% (in band, 8th session) | **Day P&L:** -$1,750.41 (-1.7221%) vs `last_equity` $101,644.94 | **Phase P&L:** **-$105.47 (-0.1055%)**
+
+| Ticker | Shares | Entry | Live 12:07 | Day Chg | Unrealized P&L | Stop | hwm | Clearance |
+|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.690645 | $102.6900 | **-3.67%** | +$92.94 (+0.9827%) | $98.8470 `441a7ba8` | $109.83 | 3.7423% |
+| GEHC | 132 | $76.43 | $82.5000 | -1.38% | +$801.24 (+7.9419%) | $78.8040 `13dd3b34` | $87.56 | 4.4800% |
+| MCD | 72 | $270.20 | $276.3600 | -2.06% | +$443.52 (+2.2798%) | $255.17655 `1a224b95` | $283.5295 | 7.6652% |
+| TPR | 148 | $133.49 | $131.8300 | -2.80% | **-$245.68 (-1.2435%)** | $123.6870 `bddb11b5` | $137.43 | 6.1769% |
+| UNH | 38 | $385.71 | $398.3900 | -1.66% | +$481.84 (+3.2874%) | $383.8950 `5d48b1e5` | $426.55 | 3.6384% |
+
+**Unrealized total +$1,573.86. All five stops real, GTC, `trailing_stop`, `trail_percent` 10, `status:new`, full size (93/93, 132/132, 72/72, 148/148, 38/38). 0.9 x hwm = stop_price EXACT on all five, verified to 5dp. ZERO increases this run (every sleeve traded down again, so no trail could ratchet), ZERO decreases, nothing by hand.**
+
+### Step 3 — CUT LOSERS: NONE OWED
+- **Only TPR is below water (-1.2435%). Its -7% line is $124.1457 and it trades $131.83 — 5.829% / $7.68 clear.** No other sleeve is negative. **No position is within 5.8 pts of rule 5.**
+
+### Step 4 — TIGHTEN TRAILS: NONE OWED
+- **Nearest +15% gate is GEHC at $87.8945; it trades $82.5000, short $5.3945 (needs +6.539%). The gate has moved AWAY for a 4th consecutive session** (was short $4.2845 on 11/10, $5.08 at the open). No sleeve is within 6.5% of any tighten gate. **Nothing cancelled, nothing replaced.**
+
+### ⚠ Step 5 — HANDOFF (i): RULE 2's FLOOR IS THE LIVE RISK AND THE CUSHION IS NEARLY SPENT
+- **Cash is fixed at $24,906.78, so the 75% floor binds where MV = 3 x cash = $74,720.34. MV is $74,987.75. Headroom = $267.41 = a further -0.3566% book decline.**
+- ⚠ **Trajectory this session: -2.63% of headroom pre-market, -1.2703% ($961.42) at 09:36, **-0.3566% ($267.41) now.** 72.2% of the morning's remaining cushion is gone in 2 hours 31 minutes, and the book is still falling.**
+- ✓ **NOT BREACHED. NO PRE-EMPTIVE BUY MADE, AND NONE SHOULD BE — handoff (i) instructed exactly this and it is followed to the letter.** Review item **(j)** stands unchanged: the breach is curable in SIZE (**$9,922.60** deployable under the 85% ceiling) but NOT in PRACTICE, because the only instrument that cures it is a new entry, and **zero of 81 screened names passed the entry checklist this morning.** A rising tape has only worsened those R:R verdicts since.
+- ⚠ **ESCALATED, NOT SELF-RESOLVED. If the EOD run finds the floor breached, the correct action is to log it and escalate — not to buy a checklist-failing name.**
+
+### Step 5 — THESIS CHECK: NO THESIS BROKE. FIVE SLEEVES CARRIED.
+- ✓ **CLX — THE RUN'S ONE RESEARCH CALL, AND IT RETURNED A CLEAN DATED NEGATIVE.** CLX fell **-3.67% against XLP's -0.4614%**, underperforming its own sector by **3.21 pts** — the sharpest unexplained move in the book, which is exactly the step-6 trigger. **Asked for anything dated 11/10 or 11/11: "No dated items found."** The only dated item is a **Schedule 13G accepted 15:08:26 on 11/10** (an ownership disclosure) plus **11/10-11/11 MarketBeat write-ups of Q3 13F filings — retrospective ownership, not operating news.** Research **volunteered the explicit negative and correctly re-dated the analyst actions it surfaced to 11/03 (Goldman, JPMorgan), 11/04 (Morgan Stanley) and 10/16 (Barclays)** rather than passing them off as today's.
+  - **Conclusion: the 11/02 beat thesis is INTACT and unchallenged. CLX's drop is a defensive-rotation unwind of a seven-session, +25%-in-20-days run in a crowded staples name on an AI-risk-on tape — mean reversion, not news.** **No rule triggers: rule 5 is 7.905% away, the trail locks $98.8470 (-2.7958% vs the $101.690645 entry), clearance 3.7423%.**
+  - ⚠ **Review item (h) is NOT relieved by the fall: CLX at $102.69 is still $3.69 (+3.73%) above the highest dated target in existence ($99, Evercore 11/02), with the two freshest rated actions a SELL ($74, Goldman 11/03) and an UNDERWEIGHT ($86, JPMorgan 11/03). The gap has narrowed from +5.61% at 09:36 — by the price falling, not by any target rising. "No firm has raised a CLX target above $105 since 11/02" still stands.**
+- **GEHC / MCD / TPR / UNH — no dated 11/11 items sought and none found; all four fell LESS than CLX and all four moves are fully accounted for by the sector tape below. Carried as UNVERIFIED-INTACT, not checked-and-clear**, per the 11/06 non-determinism proof. **No thesis broke and no sleeve has a rule trigger pending, so nothing turned on it.**
+
+### ✓ FIRST-PARTY SECTOR TAPE — THE CAUSE IS NAMED EXACTLY, AND THE 20-DAY TABLE SAYS IT IS COUNTER-TREND
+**All figures SIP 1Day bars, 11/10 close -> live 11/11. No research tape figure used or requested — decision 6's standing rule.**
+
+| Sector | 11/10 close | Live 12:07 | Today | Rank | 20-day | 20d rank |
+|---|---:|---:|---:|---:|---:|---:|
+| **XLK** | $168.91 | $175.69 | **+4.0140%** | **1** | **-7.7404%** | **11 (LAST)** |
+| XLI | $168.73 | $170.97 | +1.3246% | 2 | +2.3497% | 8 |
+| XLE | $62.21 | $62.99 | +1.2619% | 3 | -6.8535% | 10 |
+| XLC | $107.76 | $108.58 | +0.7563% | 4 | -2.0258% | 9 |
+| XLB | $52.85 | $52.98 | +0.2554% | 5 | +6.6740% | 5 |
+| XLF | $58.29 | $58.37 | +0.1287% | 6 | +7.0525% | 4 |
+| XLU | $43.73 | $43.70 | -0.0777% | 7 | +4.7363% | 7 |
+| **XLY** | $121.05 | $120.74 | **-0.2561%** | 8 | **+8.2870%** | **1** |
+| XLRE | $44.58 | $44.42 | -0.3477% | 9 | +7.0740% | 3 |
+| **XLP** | $91.03 | $90.61 | **-0.4614%** | 10 | **+5.2870%** | **6** |
+| **XLV** | $188.88 | $187.48 | **-0.7412%** | **11 (LAST)** | **+7.7719%** | **2** |
+| *SPY* | *$749.92* | *$760.11* | *+1.3588%* | — | *-1.2331%* | — |
+
+- ⚠ **THE BOOK HOLDS THE 8th, 10th AND 11th OF ELEVEN TODAY AND HOLDS ZERO XLK, WHICH IS 1st AT +4.0140%. That single fact is the whole -3.0809 pt result; nothing else needs explaining.** All three book sectors are **negative on a day the index is +1.3588%** — a pure rotation, not a drawdown.
+- ✓ **AND THE 20-DAY COLUMN IS THE HONEST COUNTERWEIGHT: XLK IS THE WORST 20-DAY SECTOR OF ELEVEN (-7.7404%) AND TODAY IS A BOUNCE IN IT. XLK must repeat today roughly twice more just to reach flat on 20 days.** **The two sectors beating the book today (XLK, XLE) are 11th and 10th on 20 days. The book's XLY and XLV are 1st and 2nd.** **This is counter-trend mean reversion against a 20-day read that has not moved — it is not evidence the momentum thesis broke, and it would be dishonest to log it as either vindication or refutation on one session.**
+- ⚠ **BUT ONE REAL 20-DAY CHANGE, LOGGED AGAINST INTEREST: XLP HAS SLIPPED FROM 3rd TO 6th OF ELEVEN (+5.2870%), OVERTAKEN BY XLRE (+7.0740%), XLF (+7.0525%) AND XLB (+6.6740%). The book's sectors are no longer "1/2/3 of eleven" as logged on 11/10 and at the open — they are 1st, 2nd and 6th.** **Rule 9 still passes (all three positive, two of them the top two), but the claim has to be restated and this run restates it.**
+
+### Step 6 — Intraday research
+- **ONE Perplexity call, on CLX only, strictly serial.** Routed per the 11/10-11/11 fault line: **dated single-name -> research; tape -> first-party bars, always.** The call behaved as that rule predicts — dated, correctly re-dated the older items, and volunteered its own negative. **No tape question was put to research this run, so decision 6 has no 21st catch to report: the fault was designed around rather than tripped over.**
+
+### Rule reads — all fifteen checked on live RTH prints, NO TRIGGER MET
+- **Rule 1** no options; `positions` returns 5 `us_equity` only, verified on the field.
+- **Rule 2** 75.0669%, in band an 8th session — ⚠ **but on $267.41 of cushion (see above).**
+- **Rule 3** cap $19,978.906 (and the cap TIGHTENED $138.80 today because equity fell). **MCD 19.9189%, under by $80.99. TPR 19.5314%, under by $468.07.** Both compliant; **neither cured, trimmed or touched by hand.** ⚠ **MCD's margin is $80.99 on a 72-share sleeve = $1.125/share: a -0.41% MCD move with equity flat re-breaches it. 5th state flip in three sessions, still on price drift alone — decision 8 evidence, not a reason to act.**
+- **Rule 4** five live, real, GTC, 10% trails; 0.9 x hwm exact on all five; zero changes.
+- **Rule 5** no cut owed; weakest (TPR) is 5.829% clear.
+- **Rule 6** no tighten owed; nearest gate 6.539% away and widening.
+- **Rule 7** clear on all five; **tightest UNH 3.6384%.** ⚠ **UNH's re-breach line is $395.7680 and headroom has narrowed to $2.622 — from $9.3520 on 11/10 and $5.4020 at the open. Third consecutive narrowing. Do NOT touch `5d48b1e5`.**
+- **Rule 8** 1/3 slots used. **No new trade considered at midday, and none was owed:** the 07:43 screen produced 17 mechanical passes and ZERO entry-checklist passes across 81 names, and a tape **+1.3588%** since only worsens every R:R denominator. **ZTS and LLY remain unreachable.**
+- **Rule 9** 20-day table recomputed first-party this run; **book sectors 1st, 2nd and 6th of eleven — RESTATED DOWNWARD from 1/2/3.** Passes.
+- **Rule 10** no sector at 2 consecutive failed trades.
+- **Rule 11** HOLD. **2 of 3 slots deliberately unspent into a counter-trend melt-up is patience working.**
+- **Rule 12** this entry and the RESEARCH-LOG addendum are committed and pushed in this same run.
+- **Rule 13** no order sized off any price this run; **every mark first-party SIP. The `quote` book was not consulted for any determination** (19th-occurrence defect logged at the open stands unexamined, deliberately — nothing turned on it).
+- **Rule 14** not engaged. The book holds zero energy, so no de-escalation headline can fire an exit trigger. **XLE's +1.2619% today is noted as tape only.**
+- **Rule 15** the EOD deliverable is handed forward BY NAME below; all owner decisions carried; **the midday notification is sent despite "action taken = none", because the floor cushion is a material change the owner must see.**
+- ⚠ **TPR's rules 4/5 inversion persists unchanged: the cut line $124.1457 sits $0.4587 ABOVE the trail $123.6870, so the trail can never execute on that sleeve. TPR is still the weakest holding, so it remains the live test case.**
+
+### Benchmark
+- **Live-vs-live: book -0.1055% ($100,000 -> $99,894.53) vs SPY -2.0906% ($776.34 ref 2026-08-14 -> $760.11) = +1.9851 pts.**
+- ⚠ **-3.0630 pts below the governing +5.0481 close-basis lead. GOVERNING BASIS REMAINS +5.0481 UNTIL THE EOD FILES.** Sequence: +5.2304, +4.4288, +3.8179, +4.3710, +5.0481 (close), +3.2459 (live 09:36), **+1.9851 (live 12:07).**
+- ⚠ **Today: book -1.7221% vs SPY +1.3588% = -3.0809 pts. The worst single-session relative result of the phase, and it WIDENED from -1.8114 pts at 09:36 — the afternoon has cost another -1.2695 pts on top of the open.**
+- ⚠ **Equity is BELOW the $100,000 phase start for the first time in the phase (-$105.47). The lead over SPY is now carried entirely by SPY's -2.09% decline, not by any book gain.** That is a materially weaker position than a +5 pt lead built on a +1.7% book, and it should be stated that way.
+- ⚠ **Decision 7's concentration is now measured three sessions running: +1.0760 pts (11/10 hot CPI), -1.8114 pts (11/11 open), -3.0809 pts (11/11 midday). It has paid once and cost twice, and the cost is accelerating.**
+
+### Perplexity discipline
+**1/1 calls, STRICTLY SERIAL, zero 429s, zero transport failures. Running total 106/106 serial vs 2/10 parallel. Do not parallelize.**
+
+### Handoffs to the next run (EOD / daily-summary 2026-11-11)
+- ⚠ **(i) TO THE EOD CLASS, BY NAME — OWED TONIGHT, AND 11/06 + 11/09 ARE STILL UNFILED. THE CLASS HAS FILED TWICE EVER. THIS IS A RULE 15 ITEM.** Record: **closing equity vs $101,644.94 prior close and vs the $100,000 phase start (live now $99,894.53, BELOW it)**; ⚠ **DEPLOYMENT VS THE 75% FLOOR — cushion is $267.41, so state plainly whether it breached, and if it did, DO NOT BUY TO CURE (item (j)); log and escalate**; **MCD's close vs the cap (margin $80.99, i.e. $1.125/share)**; **TPR's close vs the cap (under by $468.07) and whether TPR closed below water a 2nd session**; **whether GEHC crossed $87.8945** (short $5.3945 — if it did, cancel `13dd3b34` FIRST); ⚠ **whether UNH held $395.7680 (headroom $2.622, narrowing three sessions)**; **CLX's close vs the $109.83 hwm and vs the $99 Evercore target**; **the SPY close vs $749.92 and the lead vs +5.0481 pts (governing) / +1.9851 (live)**; **and that the full-session relative result is the phase's worst (-3.0809 pts live at midday).**
+- ⚠ **(ii) TO EVERY SUBSEQUENT RUN — MCD AND TPR SIT $80.99 AND $468.07 UNDER THE RULE-3 CAP. Re-read both weights and DO NOT cure either by hand** until the owner rules on decision 8. **Do not cancel `1a224b95` or `bddb11b5` to trim a winner.**
+- ⚠ **(iii) GEHC's rule-6 gate is $87.8945, short $5.3945 (needs +6.539%), widening a 4th session. CANCEL `13dd3b34` FIRST** (`qty_available` null/0), then place the 7% trail. **Never the other order.**
+- ⚠ **(iv) UNH — rule-7 re-breach line $395.7680, headroom $2.622 and NARROWING for a third session (was $9.3520, then $5.4020). Do NOT touch `5d48b1e5`.** It sits **$1.8150 BELOW** the $385.71 entry after a +10.5883% peak; **no in-rules remedy exists.**
+- ⚠ **(v) TO THE WEEKLY REVIEW, FRIDAY 2026-11-13 — EIGHT ITEMS.** The three standing ones; **(d)** continuous-vs-at-entry rule 3 — now gradeable on **five** state flips in three sessions; **(e) CARRIED a 4th run — the CLX consensus-EPS denominator ($1.07 vs $0.97) is still unsourced to the primary 8-K. Settle it on the release, not an aggregator**; **(f) DISSOLVED**; **(g)** grade the "pending != delivered" catalyst ruling; **(h) HARDENED AND NARROWED — CLX is +3.73% above its highest dated target (was +5.61% at the open), narrowed by the price falling, not by a target rising. Decide whether a sleeve trading above every dated target is thesis-relevant at all, and what rule governs it**; ⚠ **(j) NEW, ESCALATED — rule 2's floor can mandate a buy the entry checklist forbids. The cushion fell to $267.41 today. This is the week's most urgent structural item and it is now twice-evidenced in one session.**
+- **(vi) PERPLEXITY STRICTLY SERIAL. 1/1 this run. Running total 106/106 serial vs 2/10 parallel.**
+- ⚠ **(vii) TO THE OWNER — TOOLING, NONE SELF-APPLIED.** ✓ **(9) FURTHER VALIDATED, 2nd consecutive run: dated single-name research is reliable (today's CLX negative was clean and self-dated); aggregated tape is not. Routing rule confirmed — tape to first-party bars ALWAYS. This run avoided the fault by routing rather than by catching it, which is the first time that has happened.** **(1)** the one-line `snapshot` feed fix — **34th session**, not exercised. **(2)** rule 13's test needs WIDTH *and* STALENESS — proved. **(3)** `scripts/perplexity.sh` needs retry/backoff. **(4)** the SIP-daily-bar fallback is broken at the bell. **(6)** VIX still has no first-party source. **(7)** the market-open routine fires 54 min pre-bell — **13th session**.
+- ⚠ **ALL OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15); they stay in every notification until answered or withdrawn.**
+  - ⚠ **Rule 4-vs-6 geometry defect — STILL THE MOST URGENT, AND WORSENED TO FOUR OF FIVE SLEEVES TODAY** (CLX -2.7958%, MCD -5.6499%, TPR -7.3436%, UNH -0.4706% below entry; **only GEHC is profit-locked, at +3.1061%**). Lower rule 6's first gate to ~**+11%**, narrow rule 4's trail, or accept in writing that positions peaking under +11.1111% are expected to stop out at a loss. **Proven execution: XLE, -$131.61.** ⚠ **On TPR the defect has inverted rules 5 and 6 outright — cut line $0.4587 ABOVE the trail.**
+  - ⚠ **Decision 8 — continuous or at-entry? EMPIRICALLY SETTLED, RULING STILL MISSING.** Five flips in three sessions on price drift alone.
+  - ⚠ **Decision 1 — MECHANISM NAMED, SINGLE FIX PROPOSED: strike R:R off the LOWER of the 252d close high and dated sell-side consensus.** **CLX supplies the held-position analogue (item (h)).**
+  - ⚠ **Decision 3 — 75.0669% directional and unhedged, and TODAY IS THE COST SIDE: an unhedged defensive book gave back -3.08 pts to a +1.36% index in one session.** The exposure has now been measured in both directions on consecutive days.
+  - ⚠ **Decision 7 — XLY $39,408.76 = 39.4504% of equity and 52.5536% of the book, uncapped; rule 16 DRAFTED and UNENACTED.** ⚠ **Three-session scorecard: +1.0760, -1.8114, -3.0809 pts. It has cost more than it paid, and 20-day momentum still ranks XLY 1st of eleven — the two facts are both true and the owner must weigh them.**
+  - ⚠ **Decision 6 — NO 21st CATCH THIS RUN, and that is the finding: the routing rule worked.** Tape went to first-party bars, single-name went to research, and both behaved as predicted.

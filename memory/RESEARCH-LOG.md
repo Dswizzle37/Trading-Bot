@@ -17893,3 +17893,48 @@ Struck first-party off `snapshot` latestTrade against 11/10 SIP closes. **Resear
   - ⚠ **Decision 6 — 22nd run: 3 clean, 0 catches, but the unreliable category was NOT exercised. No inference drawn.**
 
 **Persistence (rule 12): this addendum commits and pushes via `scripts/gitpush.sh` in this run.**
+
+### Afternoon Addendum — 2026-11-11 Midday Scan (12:07 ET, market OPEN)
+
+**One Perplexity call, strictly serial (1/1; running total 106/106 serial vs 2/10 parallel). No tape question was put to research — tape routed to first-party SIP bars per the standing decision-6 rule.**
+
+#### Query — CLX, the book's one unexplained mover
+**Asked:** any news, analyst action, downgrade, PT change, SEC filing, guidance update or company announcement for Clorox **dated 2026-11-10 or 2026-11-11 specifically**, with exact dates, and an explicit "no dated items found" if none — prompted because **CLX fell -3.67% while XLP fell only -0.4614%, a 3.21 pt single-name underperformance against its own sector.**
+
+**Returned — a clean dated negative:**
+- **"No dated Clorox company news, guidance update, or analyst action was found for November 10 or November 11, 2026."**
+- **11/10 — Schedule 13G**, accepted 15:08:26, beneficial-ownership disclosure (SEC EDGAR, CIK 21076). An ownership filing, not operating news.
+- **11/10 and 11/11 — MarketBeat write-ups of Q3 Form 13F filings** (International Assets Investment Management sold; Equity Investment Corp. acquired; Beutel Goodman new shares). **Retrospective ownership disclosures. These explain nothing about today's price** — the same class of item the 11/10 run already struck for exactly this reason.
+- ✓ **Research correctly RE-DATED the analyst actions appearing in those 11/10-11/11 articles to their real dates — Goldman Sachs and JPMorgan 11/03, Morgan Stanley 11/04, Barclays 10/16 — rather than presenting them as current.** This is the specific failure mode that has been caught twenty times on tape questions, and here it did not occur.
+
+**Assessment:** the **11/02 Q1 FY2027 beat thesis is INTACT and unchallenged.** CLX's fall is a **defensive-rotation unwind of a seven-session, +25%-in-20-days run in a crowded staples name on an AI-risk-on tape — mean reversion without news.** No rule triggers (rule 5 is 7.905% away; trail locks $98.8470; clearance 3.7423%). **Review item (h) narrows but does not relieve: CLX at $102.69 is still +3.73% above the highest dated target in existence ($99, Evercore 11/02), down from +5.61% at the open — narrowed by the price falling, not by any target rising. The two freshest rated actions remain a SELL ($74) and an UNDERWEIGHT ($86).**
+
+#### First-party sector tape (SIP 1Day, 11/10 close -> live 12:07) — the cause of the day, and the counterweight
+**Today's rank, with the 20-day read beside it:**
+| | Today | 20-day |
+|---|---|---|
+| **XLK** | **+4.0140% (1st)** | **-7.7404% (11th, LAST)** |
+| XLI | +1.3246% (2nd) | +2.3497% (8th) |
+| XLE | +1.2619% (3rd) | -6.8535% (10th) |
+| XLC | +0.7563% (4th) | -2.0258% (9th) |
+| XLB | +0.2554% (5th) | +6.6740% (5th) |
+| XLF | +0.1287% (6th) | +7.0525% (4th) |
+| XLU | -0.0777% (7th) | +4.7363% (7th) |
+| **XLY** | **-0.2561% (8th)** | **+8.2870% (1st)** |
+| XLRE | -0.3477% (9th) | +7.0740% (3rd) |
+| **XLP** | **-0.4614% (10th)** | **+5.2870% (6th)** |
+| **XLV** | **-0.7412% (11th, LAST)** | **+7.7719% (2nd)** |
+| *SPY* | *+1.3588%* | *-1.2331%* |
+
+- ⚠ **The book holds the 8th, 10th and 11th of eleven today and holds ZERO XLK, which is 1st at +4.0140%. That one fact is the entire -3.0809 pt relative result.** All three book sectors are **negative on a +1.36% index day** — a rotation, not a drawdown.
+- ✓ **The honest counterweight: XLK is the WORST 20-day sector of eleven and today is a bounce inside it. The two sectors beating the book today are 11th and 10th on 20 days; the book's XLY and XLV are 1st and 2nd.** One counter-trend session is neither vindication nor refutation of a 20-day momentum thesis, and is logged as neither.
+- ⚠ **One real 20-day change, against interest: XLP has slipped 3rd -> 6th of eleven (+5.2870%), overtaken by XLRE, XLF and XLB. The book's sectors are no longer "1/2/3 of eleven" as logged on 11/10 — they are 1st, 2nd and 6th.** Rule 9 still passes; the claim is restated.
+
+#### ⚠ Rule 2's floor — the run's material finding
+- **Cash fixed $24,906.78 -> floor binds at MV = 3 x cash = $74,720.34. MV is $74,987.75. Headroom $267.41 = a further -0.3566% book decline.**
+- **Session trajectory of the headroom: -2.63% (pre-market) -> -1.2703% / $961.42 (09:36) -> -0.3566% / $267.41 (12:07). 72.2% of the morning's cushion spent in 2h31m, book still falling.**
+- ✓ **NOT breached. No pre-emptive buy made, per the open's handoff (i).** Item **(j)** stands: curable in SIZE ($9,922.60 deployable under the 85% ceiling), **not curable in PRACTICE** — the only cure is a new entry and **zero of 81 screened names passed the entry checklist this morning**, verdicts a +1.36% tape only worsens. **Escalated to the owner and to Friday's review; not self-resolved.**
+
+#### Benchmark note
+- **Book -0.1055% ($99,894.53) vs SPY -2.0906% ($760.11 vs the $776.34 ref) = +1.9851 pts live.** Governing close-basis lead remains **+5.0481** until the EOD files.
+- ⚠ **Equity is below the $100,000 phase start for the first time in the phase. The lead over SPY is now carried entirely by SPY's decline, not by any book gain — a materially weaker position than the same lead built on a rising book, and it is recorded as such.**
