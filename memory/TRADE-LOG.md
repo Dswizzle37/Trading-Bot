@@ -3013,3 +3013,14 @@ TPR, same session, same position, nothing touched:
   - ⚠ **Decision 3 — 75.0669% directional and unhedged, and TODAY IS THE COST SIDE: an unhedged defensive book gave back -3.08 pts to a +1.36% index in one session.** The exposure has now been measured in both directions on consecutive days.
   - ⚠ **Decision 7 — XLY $39,408.76 = 39.4504% of equity and 52.5536% of the book, uncapped; rule 16 DRAFTED and UNENACTED.** ⚠ **Three-session scorecard: +1.0760, -1.8114, -3.0809 pts. It has cost more than it paid, and 20-day momentum still ranks XLY 1st of eleven — the two facts are both true and the owner must weigh them.**
   - ⚠ **Decision 6 — NO 21st CATCH THIS RUN, and that is the finding: the routing rule worked.** Tape went to first-party bars, single-name went to research, and both behaved as predicted.
+
+### Nov 11 — EOD Snapshot (Day 63, Wednesday)
+**Portfolio:** $100,439.35 | **Cash:** $24,906.78 (24.80%) | **Day P&L:** -$1,205.59 (-1.19%) | **Phase P&L:** +$439.35 (+0.44%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| MCD | 72 | $270.20 | $277.00 | -1.83% | +$489.60 (+2.52%) | $255.177 (10% trail, hwm $283.53) |
+| TPR | 148 | $133.49 | $133.175 | -1.80% | -$46.62 (-0.24%) | $123.687 (10% trail, hwm $137.43) |
+| UNH | 38 | $385.71 | $401.49 | -0.90% | +$599.64 (+4.09%) | $383.895 (10% trail, hwm $426.55) |
+| GEHC | 132 | $76.43 | $82.74 | -1.09% | +$832.92 (+8.26%) | $78.804 (10% trail, hwm $87.56) |
+| CLX | 93 | $101.69 | $104.305 | -2.15% | +$243.14 (+2.57%) | $98.847 (10% trail, hwm $109.83) |
+**Notes:** Marks taken 15:15 ET (run fired 45 min pre-close); Day P&L vs `last_equity` $101,644.94. AI-led rotation day: book -1.19% vs SPY +1.39% ($760.37 vs $749.92) = -2.58 pts, phase's worst relative session. Phase: book +0.44% vs SPY -2.06% (from $776.34) = lead ~+2.50 pts (down from +5.05). Equity back above $100k start (midday dip below recovered). No trades (last fill 11/09, verified via activities); zero realized P&L. All 5 GTC 10% trails live, none touched. Deployed 75.20% — in band, floor cushion ~$203 (not breached; do NOT buy to cure, item (j)). MCD 19.86% / TPR 19.62% of equity — both under 20% cap. TPR below entry. GEHC $82.74 < $87.8945 tighten gate (not crossed); UNH $401.49 > $395.768 (held, headroom $5.72). CLX $104.31 vs $109.83 hwm. 11/06 + 11/09 EOD still unfiled. Trades this week: 1/3.
