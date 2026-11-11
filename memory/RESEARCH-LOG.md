@@ -17579,3 +17579,168 @@ No dated 11/10 items for CLX, GEHC, MCD, TPR, UNH. ⚠ **Carried as UNVERIFIED-I
 
 ### Handoffs
 **Full handoff list — EOD by name (three sessions owed), the rule-3 no-hand-cure bar, GEHC's cancel-first order of operations, UNH's untouchable stop, the seven weekly-review items including new item (h), the tooling list, and all six unanswered owner decisions — is recorded in the matching `memory/TRADE-LOG.md` midday entry for 2026-11-10 and is not duplicated here.**
+
+## 2026-11-11 — Pre-Market Research (Day 63, Wednesday, 07:43 ET, market CLOSED — opens 09:30 ET) — **ZERO ORDERS, HOLD. ⚠ NO RULE TRIGGER MET ON EITHER PRICE BASIS: ALL FIVE SLEEVES GREEN, WEAKEST +1.0937%, NEAREST TIGHTEN GATE $4.69 AWAY. ✓ MCD's SIX-RUN RULE-3 BREACH CURED ITSELF ON PRICE DRIFT WITH NO HAND ACTION — DECISION 8's STRONGEST EVIDENCE YET. ✓ DECISION 1's PROPOSED FIX VALIDATED ON 6 OF 6 SCREEN LEADERS, ALL OF WHICH FAIL R:R ON DATED CONSENSUS. ⚠ NEW: RULE 2's CEILING, NOT RULE 3's CAP, BINDS A 6th POSITION — MAX NEW ENTRY IS $9,779.83, NOT $20,169.26. ⚠ VETERANS DAY — BOND MARKET CLOSED, EQUITIES OPEN. ⚠ RULE 13's 18th OCCURRENCE AND THE WORST QUOTE BOOK OF THE PHASE: 944 MIN STALE *AND* 10.5% WIDE *AND* NULL ASKS ON 3 OF 5.**
+
+**No trade placed, cancelled, modified or staged. No stop touched by hand. 5 open orders, all stops, count unchanged. Zero fills since the 11/09 CLX entry (`activities FILL` returns `[]`). Endpoint verified `paper-api.alpaca.markets/v2` — paper, untouched.**
+
+### Account snapshot — two bases, because the pre-market marks are not confirmable
+| | Pre-market 07:43 ET (unconfirmable) | **Official 11/10 close (GOVERNING)** |
+|---|---|---|
+| Equity | $100,846.30 | **$101,644.94** |
+| Long market value | $75,939.52 | **$76,738.16** |
+| Cash | $24,906.78 (24.6978%) | $24,906.78 (24.5038%) |
+| Deployed | 75.3022% | **75.4963%** |
+| Unrealized | +$2,525.63 | **+$3,324.27** |
+| Positions | 5 of 6 | 5 of 6 |
+| Day P/L | -$798.64 (-0.7857%) | +$320.31 (+0.3160%) |
+| Daytrade count | **field absent a 28th run**; non-binding at 4.03x $25k | — |
+
+- ✓ **THE FIRST-PARTY SIP DAILY BARS RECONCILE TO `last_equity` TO THE PENNY.** 93x$106.60 + 132x$83.65 + 72x$282.17 + 148x$135.62 + 38x$405.12 = **$76,738.16**, + cash $24,906.78 = **$101,644.94 = `last_equity` exactly.** The close basis is independently verified and is the one every determination below rests on.
+- ⚠ **The 11/10 EOD entry logged marks taken 15:15 ET, not the close. Corrections for the record: SPY closed $749.92, not $748.80; CLX closed $106.60, not $108.79** (it ratcheted its hwm to $109.83 intraday and then faded -2.94% into the bell). **UNH closed $405.12, not $403.08.** The EOD entry said so plainly about its own timing; recording the actual closes here so the weekly review has them.
+
+### Open positions — official 11/10 closes
+| Ticker | Qty | Entry | Close | Pre-mkt | Unreal. | Stop (GTC trail 10%) | hwm | Rule 7 gap | Clear of -7% | % equity | Rule 9 sector |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.690645 | $106.60 | **$104.00 (-2.44%)** | +$456.57 (+4.8277%) | **$98.8470** `441a7ba8` exp 2027-02-05 | **$109.83** | 7.2730% | 11.8277% | 9.7534% | XLP, **2nd** |
+| GEHC | 132 | $76.43 | $83.65 | $83.20 (-0.54%) | +$953.04 (+9.4466%) | $78.8040 `13dd3b34` exp 2027-01-26 | $87.56 | 5.7932% | 16.4466% | 10.8631% | XLV, **1st** |
+| MCD | 72 | $270.20 | $282.17 | $278.00 (-1.48%) | +$861.84 (+4.4301%) | **$255.17655** `1a224b95` exp 2027-02-04 | **$283.5295** | 9.5664% | 11.4301% | **19.9875%** | XLY, **3rd** |
+| TPR | 148 | $133.49 | $135.62 | $134.95 (-0.49%) | +$315.24 (+1.5956%) | $123.6870 `bddb11b5` exp 2027-02-04 | $137.43 | 8.7988% | 8.5956% | 19.7469% | XLY, **3rd** |
+| UNH | 38 | $385.71 | $405.12 | $402.54 (-0.64%) | +$737.58 (+5.0323%) | $383.8950 `5d48b1e5` exp 2027-01-11 | $426.55 | 5.2392% | 12.0323% | 15.1454% | XLV, **1st** |
+
+**All five stops real, GTC, `trailing_stop`, `trail_percent` 10, `status:new`, full size covered (93/93, 132/132, 72/72, 148/148, 38/38). 0.9 x hwm = stop_price EXACT on all five. ZERO decreases. NOTHING TOUCHED BY HAND.**
+
+### STOP INCREASES — TWO, BOTH AUTOMATIC, BOTH SINCE THE 11/10 MIDDAY READ
+- **CLX: `hwm` $108.56 -> $109.83; `stop_price` $97.7040 -> $98.8470, a rise of $1.1430.** `updated_at` **2026-11-10T17:52:18Z (12:52 ET)**. 0.9 x $109.83 = $98.847 exact. **Third CLX increase in two sessions.** ✓ **The trail now sits only -2.7964% below the $101.690645 entry, improved from -6.2480% on 11/10 morning — the single biggest improvement to the rule 4-vs-6 geometry defect this phase.**
+- **MCD: `hwm` $283.26 -> $283.5295; `stop_price` $254.9340 -> $255.17655, a rise of $0.2426.** `updated_at` **2026-11-10T17:42:50Z (12:42 ET)**. 0.9 x $283.5295 = $255.176550 exact.
+- **GEHC / TPR / UNH `hwm` and `updated_at` unchanged.** New operative levels: **CLX $109.83+, MCD $283.5295+, TPR $137.43+, GEHC $87.56+, UNH $426.55+.**
+
+### ⚠ RULE 13 — 18th OCCURRENCE, AND THE WORST BOOK OF THE PHASE: BOTH FAILURE MODES *PLUS* A THIRD
+| Sym | bid | ask | mid | width | quote ts (UTC) | age |
+|---|---:|---:|---:|---:|---|---:|
+| CLX | $99.0600 | **$0.0000** | — | — | 2026-11-10T21:00:01 | **944 min** |
+| GEHC | $78.8100 | $87.6800 | $83.2450 | **10.655%** | 2026-11-10T21:00:00 | **944 min** |
+| MCD | $266.9600 | $296.6300 | $281.7950 | **10.529%** | 2026-11-10T21:00:00 | **944 min** |
+| TPR | $129.5900 | **$0.0000** | — | — | 2026-11-10T21:00:01 | **944 min** |
+| UNH | $386.0900 | **$0.0000** | — | — | 2026-11-10T21:00:02 | **944 min** |
+| SPY | $725.4600 | $770.3800 | $747.9200 | **6.006%** | 2026-11-10T21:00:00 | **944 min** |
+
+- ⚠ **Every quote is the 16:00 ET closing-auction snapshot, 15.7 HOURS OLD. Tooling item (2) asked for a width *AND* staleness test; this book fails both at once and adds a third mode — a NULL ASK on three of five names, which silently produces a nonsense mid of half the bid if anyone divides without checking.** Nothing was sized off any of it.
+- **The pre-market position marks (CLX $104.00, MCD $278.00, GEHC $83.20, TPR $134.95, UNH $402.54) come from Alpaca's last-trade field and CANNOT be corroborated against any live book.** Per rule 13, no order may be sized off them, and none was. **Both bases were carried through every rule read below and they agree on every verdict**, so nothing turned on the ambiguity.
+
+### Market context — index and sector levels struck FIRST-PARTY off SIP 1Day bars (11/10 closes)
+| Sector / index | Close | 1d | 5d | **20d** | 60d |
+|---|---:|---:|---:|---:|---:|
+| **XLV** | $188.88 | +0.292% | +2.641% | **+11.329% (1st)** | +13.068% |
+| **XLP** | $91.03 | +0.154% | +2.338% | **+8.124% (2nd)** | +7.499% |
+| **XLY** | $121.05 | +0.033% | +3.171% | **+7.734% (3rd)** | +3.683% |
+| XLRE | $44.58 | -0.134% | +2.084% | +6.574% | -0.558% |
+| XLF | $58.29 | +0.517% | +1.923% | +6.330% | +1.233% |
+| XLB | $52.85 | -0.170% | +0.494% | +6.295% | +1.168% |
+| XLU | $43.73 | -0.137% | +0.714% | +4.442% | -1.019% |
+| XLI | $168.73 | -0.095% | -1.512% | +0.036% | -9.441% |
+| XLC | $107.76 | +0.373% | +6.230% | -4.026% | -2.761% |
+| XLE | $62.21 | +0.436% | **-6.704%** | **-7.426% (10th)** | -0.591% |
+| **XLK** | $168.91 | -1.153% | -4.306% | **-13.944% (11th)** | -11.249% |
+| *SPY* | *$749.92* | *-0.368%* | *-0.587%* | *-3.610%* | *-2.944%* |
+
+- ✓ **RULE 9 CONFIRMED CLEAN: the book's three sectors are ranked 1, 2 and 3 of eleven on 20-day momentum, and it holds ZERO of the two worst (XLK -13.944%, XLE -7.426%).**
+- **Research-only levels, used as context and sized off nothing: VIX 18.60 at 08:43 ET 11/11, prior close 19.46** — a -0.86 pt decline, i.e. vol *selling* after the hot print. ⚠ **VIX remains unverifiable first-party (tooling item 6).**
+- **Futures, 05:44 ET 11/11 (Markets Insider — NOT a wire, flagged as such): S&P 500 +0.78% (7,602.75), Nasdaq-100 +1.78% (28,330.50), Dow -0.04% (52,295.00).** ⚠ **A 1.82-pt Nasdaq-over-Dow spread is the signature of a narrow AI-led bounce, not a broad risk-on tape.**
+- **Oil, Reuters wire 11/11 0119 GMT: WTI $86.53 (+$0.49), Brent $92.20 (+$0.71). WTI settled $86.04 on 11/10. Crude is at a two-month low; Brent fell ~7% across the week's first two sessions.** ✓ **This reconciles with XLE -6.704% on 5 days.** Book holds zero energy.
+- ⚠ **VETERANS DAY: the US BOND MARKET IS CLOSED; NYSE and Nasdaq are OPEN** (Alpaca `clock` confirms the equity session, `next_open` 09:30 ET / `next_close` 16:00 ET). **No BLS release (next: PPI 11/13); no BEA release (next: 11/25); no identifiable BMO earnings.**
+  - ⚠ **THIS MATTERS MORE THAN A CALENDAR NOTE. The day's dominant catalyst is a rate repricing, and the cash Treasury market where that repricing happens is SHUT. The yield signal cannot transmit today and returns Thursday, into a PPI print on Friday.** Equity liquidity is thinner than normal with no data to trade against. **One more reason not to force a first entry.**
+- **Rate path (dated): a 25bp December hike is now effectively fully priced, up from 84% the prior day. Fed Governor Waller said 11/10 a 50bp move could be warranted if inflation stays elevated; Bloomberg reported Dallas Fed's Logan backs at least two more quarter-point hikes. Futures price additional hikes in January and possibly April, with three fully priced by mid-2027.** The 11/11 futures bounce is attributed to AI-infrastructure results (CoreWeave), not to any softening in the rate path.
+
+### ⚠ RULE 2 — A NEW AND BINDING FINDING: ITS CEILING, NOT RULE 3's CAP, GOVERNS A 6th POSITION
+- **IN BAND a sixth consecutive session: 75.4963% (close) / 75.3022% (pre-market).**
+- ⚠ **A buy converts cash to market value and leaves EQUITY UNCHANGED. So the largest 6th position the account can open is 0.85 x $100,846.30 - $75,939.52 = **$9,779.83**, i.e. **9.698% of equity** — a HALF-SIZE position.** **Rule 3's 20% cap ($20,169.26) is slack by $10,389.43 and is not the operative constraint.** **The account cannot open a full-size sixth position without breaching rule 2's ceiling.** ⚠ **NEW — handed to Friday as review item (i). No prior entry has stated this, and every "5 of 6 positions, room for one more" line in the log implies a freedom the arithmetic does not grant.**
+- ⚠ **CORRECTION TO THE 11/10 PRE-MARKET AND MIDDAY ENTRIES — THE FLOOR SENSITIVITY WAS WRONG BY 2.5-4x, IN THE DIRECTION OF FALSE ALARM.** Both framed the floor as a dollar cushion against fixed equity and concluded **"a -0.63% book session re-breaches."** **Cash is fixed, so the floor binds where MV = 3 x cash = $74,720.34.** From the 11/10 close MV that needs a **-2.6295%** book decline ($2,017.82); from the pre-market MV, **-1.6055%** ($1,219.18). **The deployment percentages logged were correct; the sensitivity was not, and it made the floor read as a live risk for two consecutive runs when it was not one.** No order ever turned on it.
+
+### Rule reads — ALL ELEVEN CHECKED ON BOTH BASES, NO TRIGGER MET ON EITHER
+- **Rule 1 — no options, none contemplated.** `positions` returns 5 equities only.
+- **Rule 2 — in band both bases (above).**
+- ✓ **Rule 3 — MCD's BREACH HAS CURED ITSELF, AND THIS IS THE CLEANEST EVIDENCE DECISION 8 WILL EVER GET.** Cap $20,328.99 (close) / $20,169.26 (pre-market). **MCD 19.9875% — UNDER by $12.75. TPR 19.7469% — UNDER by $257.23. Both under on both bases.** ⚠ **MCD was flagged in breach across six runs (peak +$52.22 over), the flag was carried by hand-cure refusals on 11/09 and 11/10, and it has now resolved to compliant WITHOUT ANY ORDER BEING PLACED — purely on price. That is five state flips in three sessions, every one driven by price and none by a trade.** **The refusal to cancel a real GTC trail on 20% of the book to recover $11-52 is now vindicated by outcome, not just by argument.** Decision 8 still needs the owner's ruling and is NOT self-authorizable.
+- **Rule 4 — all five trails live, real, GTC, 10%, exact. Two automatic increases, zero decreases, nothing by hand.**
+- **Rule 5 — NO CUT OWED AND NOT CLOSE. All five GREEN on both bases. Weakest TPR +1.5956% (close) / +1.0937% (pre-market), 8.09 pts clear of its cut line.** Cut lines: CLX $94.5723, GEHC $71.0799, MCD $251.2860, TPR $124.1457, UNH $358.7103.
+  - ⚠ **TPR's rules 4/5 inversion PERSISTS, unchanged: its cut line $124.1457 sits $0.4587 ABOVE its trail $123.6870, so the manual -7% cut fires first and the GTC trail can never execute on that sleeve.** The other four are normal (trail fires first by $4.27 / $7.72 / $3.89 / $25.18).
+- **Rule 6 — NO TIGHTEN OWED.** Nearest gate is **GEHC $87.8945, short $4.2445 (close) / $4.6945 (pre-market)** — and it moved **FURTHER AWAY** again. Then CLX $116.9442 (short $10.34), DPZ-style distances on the rest: MCD $310.73 (-$28.56), TPR $153.5135 (-$17.89), UNH $443.5665 (-$38.45). ⚠ **If GEHC crosses $87.8945: CANCEL `13dd3b34` FIRST** — `qty_available` is **0** on all five positions, so a new stop is rejected while the old one holds the shares. **Never the other order.**
+- **Rule 7 — CLEAR ON ALL FIVE, both bases.** ⚠ **The tightest sleeve has CHANGED HANDS: CLX is now tightest at 4.9548% on the pre-market mark (7.2730% on the close), because its hwm ratcheted to $109.83 while the price fell -2.44%.** UNH, tightest for sixteen sessions, is now second at 4.6318%/5.2392%. **No stop needs moving; rule 7 governs placement, not maintenance, and nothing was placed.**
+- **Rule 8 — 1 of 3 weekly slots used (week 11/09-11/13).** 2 unused.
+- ✓ **Rule 9 — all three book sectors rank 1/2/3 of eleven on 20 days; zero exposure to the two worst.**
+- **Rule 10 — XLE exited 11/04 and not re-entered; it is 10th of 11 on 20 days, which the exit anticipated.**
+- **Rule 11 — HOLD. 2 of 3 slots unused into a narrow AI-led bounce with the bond market shut is patience working.**
+- **Rule 12 — this entry is committed and pushed via `scripts/gitpush.sh` in this same run.**
+- **Rule 13 — 18th occurrence (above). No order sized off any price. All marks first-party SIP.**
+- **Rule 14 — not engaged.** The book holds zero energy, so no de-escalation headline can fire an exit trigger. **Oil's two-month low is a price move on a dated Reuters wire, not a de-escalation claim.**
+- **Rule 15 — deliverables handed forward by name below; ✓ one standing item DISCHARGED and two recovered (below).**
+
+### ⚠ THE SCREEN — 81 NAMES, 17 MECHANICAL PASSES, **ZERO ENTRY-CHECKLIST PASSES**, AND DECISION 1 VALIDATED 6 FOR 6
+First-party 252-bar SIP history on an 81-name XLV/XLP/XLY universe; 80 returned clean 11/10 bars (**K** returned only 27 and was excluded — insufficient history, not a failure). Mechanical gates (20d > 0, screen R:R >= 2.0, ADV > 500k, < 95% of 252d close high) produced **17 passes**. The six highest-momentum of them were then tested against **dated sell-side consensus**, which is decision 1's proposed fix:
+
+| Name | px | 252d close high | **dated consensus (n)** | R:R screen | **R:R consensus** | Catalyst leg | Verdict |
+|---|---:|---:|---:|---:|---:|---|---|
+| **LOW** | $231.87 | $287.39 | **$252.73** (36) | 2.394 | **0.900** | ⚠ FAIL — 11/18 BMO still PENDING | **REJECT** |
+| **CPB** | $22.59 | $31.66 (2025-11-21) | **$19.88** (20) | 4.015 | **-1.200** | ⚠ FAIL — no CPB-specific event | **REJECT** |
+| **ZTS** | $82.46 | $131.10 | **$89.69** (16) | 5.899 | **0.877** | ✓ PASS — 11/05 beat | **REJECT on R:R** |
+| **LEN** | $86.66 | $133.13 | **$78.87** (18) | 5.362 | **-0.899** | ⚠ FAIL — 9/16 MISS | **REJECT** |
+| **DPZ** | $330.06 | $438.42 | **$380.87** (n/d) | 3.283 | **1.539** | ⚠ FAIL — no dated Nov event | **REJECT** |
+| **LLY** | $1,432.29 | $1,432.29 **(= today)** | **$1,453.40** (29) | 0.000 | **0.147** | ✓ PASS — 10/29 beat $7.48 vs $5.71 | **REJECT on R:R** |
+
+- ✓ **DECISION 1 IS VALIDATED, AND THE MAGNITUDE OF THE DEFECT IS LARGER THAN THE 11/10 ENTRY ESTIMATED. On two of six names the stale 252-day close high does not merely overstate the target — it inverts the sign of the trade.** **CPB screens R:R 4.015 while the sell side's dated average sits 12.0% BELOW the market price. LEN screens 5.362 while consensus sits 9.0% BELOW, with a rating split of 11 Sell / 7 Hold / ZERO Buy.** The screen was recommending two names the street expects to fall.
+- ⚠ **CPB's catalyst leg fails on the honest negative the tool volunteered: the +19.21% 20-day move is read-through from KRAFT HEINZ's 11/04 report, and contemporaneous coverage says Campbell's had "no news of its own." Its own last print (9/03) guided FY27 organic sales DOWN 2-4% and cut the dividend 36%.** A beaten-down name bouncing on a peer's number is not a catalyst.
+- ⚠ **ZTS is the closest miss and the most instructive. Its catalyst is real and dated (11/05: EPS $1.75 vs $1.51, revenue $2.39bn vs $2.30bn) — but it is a MIXED beat (revenue -1.3% y/y, dermatology -16%), and the consensus figure itself is disputed across providers: $88.36 / $89.69 / $101.25.** **On the two-provider cluster at $88-90 it fails at 0.877; on the $101.25 outlier it would PASS at 2.278. A verdict that flips on which aggregator you believe is not a pass.** Taking the lower, per decision 1's own "LOWER of" construction, it fails. **This is review item (e)'s fault class — a disputed consensus number — appearing on a prospective name rather than a held one.**
+- ✓ **I TESTED MY OWN OBJECTION TO DECISION 1's FIX AND IT DID NOT SURVIVE.** The "LOWER of (252d high, consensus)" construction must by arithmetic score any name AT a new high as R:R 0.000, which would mechanically reject exactly the momentum leaders rule 9 points at. **LLY is that case — at its 252d high, +22.78% on 20 days, with a dated 10/29 beat.** ⚠ **But consensus has caught up to it: $1,453.40 vs $1,432.29 is +1.47%, so R:R on consensus alone is 0.147 and the two constructions AGREE to reject.** **The blind spot is real in principle and changed NOT ONE verdict today. It is logged as a caveat, not as a finding, and it is not a reason to prefer either construction.**
+- **Why the other 11 mechanical passes were not researched: all carry 20-day momentum below ZTS's +10.98% and sit in the same beaten-down-bounce shape as CPB (WHR 32.7% of its high, BSX 42.6%, LVS 58.7%, NKE 57.1%). The marginal query was better spent confirming the leaders than ranking the tail.**
+- ⚠ **LOW IS REJECTED A SECOND CONSECUTIVE SESSION ON THE SAME TWO GROUNDS, and it screens #1 on momentum (+22.85%) for the third run running.** Its 11/18 BMO print is now **5 sessions out** and the **"PENDING != DELIVERED"** ruling holds. **A name that keeps topping the screen and keeps failing the checklist is the screen working, not the checklist being too strict.**
+
+### Theses — ONE VERIFIED, FOUR UNVERIFIED-INTACT, AND A THIRD PASSIVE-STAKE FILING STRUCK
+- ✓ **CLX — VERIFIED, unchanged: the 11/02 Q1 FY2027 beat.** ⚠ **A new 11/10 item was offered and is STRUCK: an Invesco SEC Schedule 13G reporting ~6.29m shares (5.2%).** **A 13G is a retrospective passive-ownership disclosure, not a catalyst** — the **third** filing of exactly this shape struck in three sessions (Beutel Goodman 11/10, M Holdings 11/10, Invesco 11/10). **The pattern is now established well enough to be a standing rule of thumb: 13D/13G/13F-type filings are never the cause of a move that preceded them.**
+  - ⚠ **CLX at $104.00 pre-market still trades +5.05% above its HIGHEST named sell-side target ($99, Evercore 11/02) and +10.64% above Morgan Stanley's $94** — narrowed from +8.45% on 11/10 purely because the stock fell. **Thesis intact and verified; the upside case remains endorsed by nobody. Review item (h) stands.**
+  - ⚠ **CLX is also now the book's most stretched sleeve against its own trail: -5.31% off the $109.83 hwm and the tightest rule-7 gap at 4.95%.** No rule triggers. Worth the next run's first look.
+- **GEHC / MCD / TPR / UNH — NO DATED 11/10 OR 11/11 ITEMS FOUND; research returned an explicit per-ticker "none found" when asked by name.** **Carried as UNVERIFIED-INTACT, not checked-and-clear**, per the 11/06 non-determinism proof.
+
+### ⚠ DECISION 6 — 21st RUN, AND THE FIRST GENUINELY SPLIT VERDICT OF THE PHASE
+- ✗ **ONE CATCH, ON OIL, AND FIRST-PARTY DATA IS WHAT CAUGHT IT.** The first oil query returned **WTI $87.35 / Brent $93.52** "as of 11/11 05:44 a.m. EST" and admitted no wire supported it. ⚠ **That could not be reconciled with XLE -6.704% over 5 days — falling energy equities do not coexist with rising crude — so it was re-queried demanding a wire.** **The Reuters wire (11/11, 0119 GMT) gives WTI $86.53 and Brent $92.20, with WTI settling $86.04 on 11/10 and crude at a two-month LOW.** **The unsourced figures ran $0.82 and $1.32 high and, worse, implied the wrong DIRECTION.** ✓ **This is the first time the first-party sector tape caught a research error rather than the reverse — tooling item (9) working in the opposite direction from how it was written.**
+- ✓ **THREE CLEAN RESULTS, AND ONE OF THEM BREAKS A 20-RUN STREAK.** **(a) The aggregated-tape question came back CORRECTLY DATED for the first time in the phase**: "S&P 500 fell 0.4%, Dow 0.3%, Nasdaq 0.7% on Tuesday, November 10" — matching first-party SPY **-0.368%** and correctly labelled as the PRIOR session, not as today. **Tooling item (9)'s claim that aggregated-tape questions always serve the prior session as today now has a counter-example and must be softened: the fault is frequent, not universal.** **(b) The calendar query VOLUNTEERED the Veterans Day bond-market closure, which no query asked for and which materially shapes the session.** **(c) Two queries returned explicit per-item "none found" / "not found" across 10 of 11 tickers rather than fabricating** — including declining to invent consensus figures for five of six names in one query.
+- **Net: 1 catch, 3 clean, on 11 calls. The fault line holds in shape — dated single-name research is reliable, aggregated and real-time market data is not — but "always" is now wrong, and the honest statement is that real-time PRICE levels (oil, VIX) are the weakest category, not tape direction.**
+
+### Trade ideas — **NONE ACTIONABLE. DECISION: HOLD.**
+**Three ideas were worked to a full checklist and all three failed; the screen's own top name failed for the second straight session.** Per the routine's requirement to state ideas with catalyst/entry/stop/target, the strongest two are recorded with the reason each is NOT actionable:
+1. **ZTS — closest to a pass, and still a fail.** Catalyst ✓ (11/05 beat, dated). Sector ✓ (XLV, 1st of 11). Entry would be ~$82.46, stop $74.21 (-10%), target $89.69 consensus. ⚠ **R:R 0.877 — fails 2:1, and the consensus input is disputed across three providers. REJECT.**
+2. **LLY — catalyst ✓ (10/29 beat $7.48 vs $5.71, +31%), sector ✓ (XLV), momentum ✓ (+22.78% 20d).** Entry ~$1,432.29, stop $1,289.06, target $1,453.40. ⚠ **R:R 0.147 — consensus is only +1.47% above the price. REJECT.** ⚠ **Note it would ALSO be capped at 6 shares ($8,593.74) by rule 2's ceiling — a 8.52% position, not a conviction-sized one.**
+3. **No third idea is worth recording.** CPB, LEN and DPZ fail on catalyst AND on sign-inverted or sub-2:1 R:R.
+- **Rule 2 is in band on both bases, so there is NO deployment pressure. Rule 8 leaves 2 slots unused. Rule 11 says patience > activity. The tape is a narrow AI-led bounce (NDX +1.78% vs Dow -0.04%) with the bond market SHUT and no data to trade against, into PPI on Friday. There is no in-rules reason to enter and several not to.**
+
+### Benchmark — NEW PHASE HIGH ON THE GOVERNING BASIS
+- ✓ **Governing close basis: book $100,000 -> $101,644.94 = +1.6449%; SPY $776.34 (2026-08-14 ref) -> $749.92 (11/10 close) = -3.4031%. LEAD = +5.0481 pts, a new phase high, up from +4.3710.** Sequence: +5.2304, +4.4288, +3.8179, +4.3710, **+5.0481**.
+- **Pre-market is NOT comparable and no live lead is claimed: the book's marks are unconfirmable last-trade prints and SPY has no usable first-party pre-market mark (its quote book is 944 min stale and 6.006% wide).** The 11/10 close basis governs until the EOD files.
+- ⚠ **THE DAY'S REAL RISK IS THAT THIS REVERSES. The book beat SPY by 1.08 pts on the hot-CPI session precisely because it holds XLP/XLV and zero XLK. A narrow AI-led bounce is the mirror image of that trade** — and the pre-market marks already show it: **the book is -0.7857% while S&P futures are +0.78%, a 1.57-pt adverse spread.** **Decision 7's concentration, which paid on 11/10, is the exposure that hurts today.** Nothing to do about it in rules; recorded so the outcome is not read as a surprise.
+
+### ✓ RULE 15 — ONE ITEM DISCHARGED, TWO RECOVERED FROM FIRST-PARTY DATA
+- ✓ **THE EOD CLASS FILED FOR 11/10** (commit `a23d52c`). **Handoff (i) from the 11/10 midday is DISCHARGED.** The class has now filed twice ever (`e42a41e` 11/05, `a23d52c` 11/10).
+- ✓ **THE TWO MISSING EOD CLOSES ARE RECOVERED, so the weekly review no longer has to treat them as lost: session 11/06 closed $99,779.72 (+$112.41, +0.113%) and session 11/09 closed $101,324.63 (+$1,544.91, +1.548%).** Struck off `account/portfolio/history` (1M/1D). **The intraday detail for those sessions is genuinely unrecoverable, but the closing equity — the only figure the benchmark needs — is not.**
+- ⚠ **TOOLING ITEM (10), NEW AND IMPORTANT: `account/portfolio/history` STAMPS EACH SESSION ONE BUSINESS DAY FORWARD.** The row dated **2026-11-11 is the 11/10 session's close** ($101,644.94 = `last_equity`, reconciled to first-party bars to the penny) and the row dated **2026-11-10 is the 11/09 close** ($101,324.63, which this log has cited as the 11/09 close for three runs). **Verified against two independent anchors.** ⚠ **Anyone reading this endpoint naively is off by one session, and the phase low in the window — $99,667.31 — belongs to session 11/05, not 11/06.** **Note it before any future run uses `history` for week- or phase-boundary equity.**
+
+### Perplexity discipline
+**11/11 calls, STRICTLY SERIAL, zero 429s, zero transport failures. Running total 102/102 serial vs 2/10 parallel. Do not parallelize.**
+
+### Handoffs to the next run (MARKET-OPEN 2026-11-11, then MIDDAY, then EOD)
+- ⚠ **(i) TO MARKET-OPEN, FIRST LOOK — CLX. It fell -2.44% pre-market, sits -5.31% below its new $109.83 hwm, and now carries the book's TIGHTEST rule-7 gap (4.95% on the pre-market mark).** It is also **+5.05% above its highest named sell-side target.** **No rule triggers and the trail at $98.8470 is only -2.7964% below entry, the best geometry in the book. Re-read it on a live RTH quote before anything else.**
+- ⚠ **(ii) TO EVERY SUBSEQUENT RUN — RULE 3 IS CURRENTLY COMPLIANT ON BOTH SLEEVES (MCD under by $12.75, TPR under by $257.23) AFTER SIX RUNS OF FLAGGED BREACH THAT RESOLVED ON PRICE ALONE. Re-read both weights, and STILL DO NOT CURE EITHER BY HAND** if they flip back. **Do not cancel `1a224b95` or `bddb11b5` to trim a winner.** Decision 8 remains unruled.
+- ⚠ **(iii) GEHC's rule-6 gate is $87.8945, short $4.2445 on the close (needs +5.0742%), and it has moved AWAY two sessions running. If it crosses, CANCEL `13dd3b34` FIRST** (`qty_available` 0), then place the 7% trail. **Never the other order.**
+- ⚠ **(iv) UNH — rule-7 re-breach line $395.7680; it closed $405.12, headroom $9.3520, materially improved. Do NOT touch `5d48b1e5`.** It still sits **$1.8150 BELOW** the $385.71 entry after a +10.5883% peak; **no in-rules remedy exists.**
+- ⚠ **(v) TO MARKET-OPEN AND MIDDAY — RULE 13 WILL BITE AGAIN. The pre-market book was 944 min stale, 10.5% wide, and NULL-ASKED on three of five names. The prescribed SIP 1Min fallback is known broken at the bell (tooling item 4). Do not size anything off a pre-market or first-minute price; wait for a confirmed RTH quote, and check for a ZERO ASK before computing any mid.**
+- ⚠ **(vi) TO THE EOD CLASS, BY NAME, 2026-11-11 — FILE TONIGHT.** Record: closing equity vs **$101,644.94** prior close; **whether the defensive book gave back its CPI-day outperformance on an AI-led bounce (the pre-market spread was -1.57 pts adverse)**; **MCD's and TPR's closes vs 20% of equity (both currently UNDER, by $12.75 and $257.23)**; **whether GEHC crossed $87.8945**; **whether UNH held $395.7680**; **CLX's close vs its $109.83 hwm and whether the -2.44% pre-market weakness held into the session**; **the SPY close vs $749.92 and the lead vs the new governing +5.0481 pts**; **deployment vs the 75% floor (breach needs a -2.63% book session) and vs the 85% ceiling**; **and that the bond market was closed for Veterans Day while equities traded.**
+- ⚠ **(vii) TO THE WEEKLY REVIEW, FRIDAY 2026-11-13 — NINE ITEMS NOW; ONE IS NEW AND TWO ARE NEWLY GRADEABLE.** The three standing ones; **(d)** whether rule 3 binds continuously or at entry only — ⚠ **now gradeable on FIVE state flips in three sessions AND on a six-run breach that cured itself with no action**; **(e) CARRIED — the CLX consensus-EPS contradiction ($1.07 vs $0.97); settle it on the primary release. ⚠ Note the same fault class hit a PROSPECTIVE name this run: ZTS's consensus target is $88.36 / $89.69 / $101.25 across three providers, and its entire verdict flips on which you pick**; **(f) DISSOLVED**; **(g)** grade the "pending != delivered" ruling, now applied to LOW twice; **(h) CARRIED — CLX trades above every dated target while held, and no rule governs it**; ⚠ **(i) NEW — RULE 2's CEILING CAPS ANY 6th POSITION AT $9,779.83 (9.70% of equity), so rule 3's 20% cap is unreachable for a new entry and every "room for one more position" line in this log overstates the available freedom. Decide whether a half-size 6th position is wanted at all, or whether the band should be re-cut.**
+- **(viii) PERPLEXITY STRICTLY SERIAL. 11/11 this run. Running total 102/102 serial vs 2/10 parallel.**
+- ⚠ **(ix) TO THE OWNER — TOOLING ITEMS, NONE SELF-APPLIED.** ⚠ **(10) NEW — `account/portfolio/history` stamps sessions ONE DAY FORWARD; verified on two anchors. Off-by-one risk on every week/phase boundary.** **(9) MUST BE SOFTENED: aggregated-tape questions came back correctly dated this run, breaking a 20-run streak, so the fault is frequent but NOT universal. The weakest category is real-time PRICE data (oil, VIX), where an unsourced figure implied the wrong direction and only a demanded wire fixed it.** **(2) PROVED AGAIN AND EXTENDED — the test needs width AND staleness AND a null-ask guard; three of five quotes had a ZERO ASK this run.** **(1)** the one-line `snapshot` feed fix — **34th session**, not exercised. **(3)** `scripts/perplexity.sh` needs retry/backoff. **(4)** the SIP-daily-bar fallback is broken at the bell. **(6)** VIX has no first-party source — today's 18.60 is research-only. **(7)** the market-open routine fires ~54 min pre-bell — **13th session**; move it to ~09:31 ET.
+- ⚠ **ALL OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15); they stay in every notification until answered or withdrawn.**
+  - ⚠ **Rule 4-vs-6 geometry defect — STILL THE MOST URGENT, but MATERIALLY IMPROVED: now THREE of five sleeves sit below entry** (MCD -5.5601%, TPR -7.3436%, UNH -0.4706%; **CLX improved to -2.7964% from -3.9204%**, GEHC profit-locked at +3.1061%). Lower rule 6's first gate to ~**+11%**, narrow rule 4's trail, or accept in writing that positions peaking under +11.1111% are expected to stop out at a loss. **Proven execution: XLE, -$131.61.** ⚠ **The TPR inversion persists: its -7% cut line sits $0.4587 ABOVE its trail, so the trail can never execute on that sleeve.**
+  - ⚠ **Decision 8 — continuous or at-entry? NOW SETTLED BY OUTCOME, NOT JUST BY ARGUMENT. MCD's six-run breach cured itself on price with no order placed.** Five state flips in three sessions. **Ruling still missing.**
+  - ⚠ **Decision 1 — VALIDATED 6 OF 6 THIS RUN, and on two names the stale-high basis INVERTS THE SIGN of the trade (CPB consensus -12.0% below price, LEN -9.0% below with zero Buy ratings).** **Adopt: strike R:R off dated sell-side consensus.** My own objection — that the "LOWER of" form must reject leaders at new highs — was tested on LLY and changed no verdict; it is a caveat, not a blocker.
+  - ⚠ **Decision 3 — 75.4963% directional and unhedged into a rate path that now prices a near-certain December 25bp hike, a floated 50bp, and three hikes by mid-2027.** The hot print was survived, not hedged.
+  - ⚠ **Decision 7 — XLY $40,388.00 = 39.7345% of equity and 52.6304% of the book, uncapped; rule 16 DRAFTED and UNENACTED.** ⚠ **Note which way it cuts today: the defensive tilt that won on 11/10 is the wrong side of an AI-led bounce, and the pre-market spread is already -1.57 pts adverse.**
+  - ⚠ **Decision 6 — 21st run, FIRST SPLIT VERDICT: one catch (oil, wrong direction, unsourced) against three clean results including the first correctly-dated aggregated-tape answer of the phase.**
+
+**Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
