@@ -3209,3 +3209,58 @@ TPR, same session, same position, nothing touched:
 - ⚠ **(viii) TO THE WEEKLY REVIEW, FRIDAY 2026-11-13 — OCTOBER PPI PRINTS 08:30 THE SAME MORNING.** The three standing items; **(d)** continuous-vs-at-entry rule 3 — now gradeable on **eight** flips in five sessions; **(e) CARRIED A 7th RUN — the CLX consensus-EPS denominator ($1.07 vs $0.97) is still unsourced to the primary 8-K**; **(g)** grade "pending ≠ delivered"; **(h)** grade CLX as a rumour-premium question — **unwired and undenied for a third check, the harder case**; **(j)** rule 2's floor vs the entry checklist. ⚠ **ADD, AND IT SHARPENS THE WHOLE DECISION-7 QUESTION: 11/12 produced a +1.1559 pt gain at 09:33 and +0.1186 pts at 12:09 on one sector's intraday round trip. The review should rule on WHICH READ OF A SESSION COUNTS — the open, the midday or the close — because the concentration scorecard's sign and size depend on the answer, and this session is the proof.**
 - **(ix) Perplexity 3/3 serial. Running total 129/129 serial vs 2/10 parallel. DO NOT PARALLELIZE.**
 - ⚠ **(x) ALL OWNER DECISIONS REMAIN UNANSWERED and none is self-authorizable (rule 15): the rule 4-vs-6 geometry defect (STILL THE MOST URGENT — four of five sleeves lock stops BELOW entry), decisions 1, 3, 6, 7, 8, and rule 16 drafted-and-unenacted. They stay in every notification until answered or withdrawn.** Tooling, none self-applied: **(1)** the one-line `snapshot` feed fix — **37th session**, not exercised (snapshots were clean this run, prev-closes matched the 11/11 first-party table exactly); **(3)** `scripts/perplexity.sh` needs retry/backoff; **(4)** the SIP-daily-bar fallback is broken at the bell; **(6)** VIX still has no first-party source; **(7)** the market-open routine fires 54 min pre-bell — **14th session**; **(10)** `daytrade_count`/`pattern_day_trader` absent from the paper `account` response, **3rd run** (verified absent, not zero, on the field this run).
+
+## 2026-11-13 — Market-Open Execution (Day 65, Friday, fired 10:01 ET / RTH work 10:01-10:12 ET, market OPEN) — **ZERO ORDERS, HOLD. ✓ NO RULE TRIGGER MET ON ANY OF THE FIFTEEN TESTS, ALL READS ON LIVE RTH LATEST-TRADE PRINTS. ✓ HANDOFF (i) DISCHARGED FROM THE PRIMARY SOURCE AND COOLER THAN CONSENSUS: OCTOBER PPI +0.3% m/m vs +0.4%, +6.5% y/y vs +6.6%, BLS RELEASE 11/13 — THE CONSENSUS WAS NOT SERVED BACK AS THE PRINT. ✓ HANDOFF (ii) DISCHARGED FAVOURABLY — GEHC's RULE-7 GAP WIDENED 4.1314% → 4.4568%. ⚠ THE TAPE IGNORED THE COOLER PRINT: SPY -0.5811% FROM A HIGHER OPEN WHILE THE BOOK IS -0.0101%, +0.5710 pts, AND THE GOVERNING LEAD IMPROVES TO +3.5249. ⚠ CLX UNWIRED AND UNDENIED A 5th CHECK. ⚠ THE ROUTINE FIRED 86 MIN LATE — 31 MIN AFTER THE BELL — SO NO RUN READ THE OPEN LIVE.**
+
+### Orders this run
+**NONE. No entry, no trim, no cut, no tighten, no hedge, no stop cancelled, no stop re-placed, nothing touched by hand.**
+
+### Account
+| Field | Value |
+|---|---|
+| Equity (live RTH 10:02 ET) | **$100,487.60** |
+| 11/12 close (`last_equity`) | $100,497.80 |
+| Session | **-$10.20, -0.0101%** |
+| Cash | $24,906.78 |
+| Long market value | $75,580.48 |
+| Deployed (rule 2) | **75.2137%** — in band |
+| Rule 2 floor cushion (4x) | **$859.12** (from $895.94) |
+| Rule 2 ceiling room, 6th position | **$9,833.98** (binds before rule 3's $20,097.52) |
+| Positions / weekly slots | **5 of 6** / **1 of 3** used (CLX 11/09, week 11/09-11/13) |
+| `daytrade_count` | **absent from paper `account` response — 5th run** |
+
+### Positions and rule tests — NO TRIGGER
+| Sym | Qty | Entry | Last | Wt% | P&L% | Cut -7% | To cut | Trail (GTC) | Order | R7 gap | Tighten +15% | Short by |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.6906 | $108.50 | 10.0415 | +6.6962 | $94.5723 | -12.8366% | $98.8470 | `441a7ba8` | 8.8968% | $116.9442 | $8.44 |
+| GEHC | 132 | $76.4300 | $82.48 | 10.8345 | +7.9157 | $71.0799 | -13.8217% | $78.8040 | `13dd3b34` | **4.4568%** | $87.8945 | $5.41 |
+| MCD | 72 | $270.2000 | $274.64 | 19.6781 | +1.6432 | $251.2860 | -8.5035% | $255.1765 | `1a224b95` | 7.0869% | $310.7300 | $36.09 |
+| TPR | 148 | $133.4900 | $131.665 | 19.3919 | **-1.3671** | $124.1457 | -5.7109% | $123.6870 | `bddb11b5` | 6.0593% | $153.5135 | $21.85 |
+| UNH | 38 | $385.7100 | $403.74 | 15.2677 | +4.6745 | $358.7103 | -11.1531% | $383.8950 | `5d48b1e5` | 4.9153% | $443.5665 | $39.83 |
+
+- ✓ **Rule 4 — all five sleeves carry a real GTC trailing stop, `trail_percent` 10, `status` new, expiries 2027-01-11 → 2027-02-05. hwm: CLX $109.83, GEHC $87.56, MCD $283.5295, TPR $137.43, UNH $426.55. None ratcheted this run.**
+- ✓ **Rule 5 — no cut owed. TPR the only red at -1.3671%, needs a further -5.7109%.**
+- ✓ **Rule 6 — no tighten owed. GEHC nearest on price (short $5.41) and on hwm (short $0.3345).**
+- ✓ **Rule 7 — all five clear 3%. GEHC tightest at 4.4568% and IMPROVING; headroom $1.2388 above the $81.2412 re-breach line.**
+- ✓ **Rule 3 — MCD $323.44 under the 20% cap ($4.4922/share), TPR $611.10 under ($4.1291/share). 4th consecutive compliant reading, no hand action.**
+- ✓ **Rule 9 — book sectors XLY (1st), XLV (2nd), XLP (6th) of eleven on the 11/12 20-day table. Zero XLK (11th, -8.1505%), zero XLE (9th).**
+- ✓ **Rule 8 — 1 of 3 weekly slots used; 2 unused and NOT filled, per rule 11.**
+
+### Why no trade
+- **Nothing was pre-authorized for the bell: the pre-market's October-PPI bar barred staging an entry off a pre-print price, and that bar was correct in form even though the print came in cooler.**
+- **The pre-market's 80-name screen produced 23 names clearing momentum AND headroom AND not already held, and ALL 23 failed the entry checklist for one reason — no reliable dated price target, so R:R is unestablishable, so "min 2:1" cannot be satisfied. ⚠ A cooler PPI does not supply a missing denominator. No screen was re-run and no 24th idea was manufactured (rule 11).**
+- **LOW and HD stay rejected: LOW's $275 target is unsourced and its $190 unattributable, and both fail "pending ≠ delivered" until they report (LOW 11/18, HD 11/17).**
+- **Rule 2 is in band with an $859.12 cushion — no deployment mandate forcing a 6th name.**
+- ⚠ **Concentration unchanged and unanswered: MCD 19.6781% + TPR 19.3919% = 39.0700% of equity in XLY (owner decision 7).**
+
+### Benchmark
+- **Session: book -0.0101% vs SPY -0.5811% ($757.16 → $752.76) = **+0.5710 pts**. ⚠ A LIVE 10:02 ET READ, NOT BOOKED — 11/12 ran +1.1559 at the open to +0.2727 at the close.**
+- **Governing (phase): book +0.4876% vs SPY -3.0373% ($776.34 → $752.76) = **+3.5249 pts**, improving on +2.9735.**
+- ⚠ **Decision 7 scorecard, closes only: +1.0760, -1.8114, -3.0809, +0.2727 = net **-3.5436 pts** over four closes. Unchanged by today's live read.**
+
+### Carried forward
+- ⚠ **WEEKLY REVIEW OWED TODAY (Friday 2026-11-13) and 11/06 + 11/09 + 11/12 EOD ALL UNFILED — 3rd consecutive EOD miss, rule 15.**
+- ⚠ **All owner decisions unanswered: the rule 4-vs-6 geometry defect (most urgent — TPR, MCD, CLX, UNH all lock stops BELOW entry), decisions 1, 3, 6, 7, 8, rule 16 drafted-and-unenacted.**
+- ⚠ **Rule 13's 21st occurrence — quotes fresh to 0.00 min and 1.0-10.3% wide (SPY control 0.031%). All reads struck off latest-trade prints; no mid used for any rule test.**
+- ⚠ **Decision 6's 27th catch — research listed four dated CLX items and returned "no dated item" for CLX three minutes later. A "no news" answer is not evidence of absence.**
+- ⚠ **Tooling (7) restated: the routine fired 86 min LATE today after 15 sessions of firing 54 min EARLY. The offset is unpredictable in both directions.**
