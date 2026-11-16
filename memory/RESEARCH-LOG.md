@@ -18724,3 +18724,71 @@ A first-party screen was run over **80 liquid large caps across the six rule-9-p
 - **(x) new:** rule 9 was graded on **two named windows** this run (1-day: 1st/2nd/7th; 20-day: 1st/2nd/4th) and **passes on both**. Decision 9 is **not** resolved by that.
 - **(viii) standing:** 11/06 + 11/09 + 11/12 + 11/13 EODs all still unfiled.
 - **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+---
+
+## 2026-11-16 — MIDDAY ADDENDUM (Day 66, Monday, locked read 12:07:35-12:10 ET, market OPEN) — **ZERO ORDERS, HOLD. ✓ THE HEADLINE IS A RULE THIS DESK CAN NARROW: THE OPEN'S 4.9-10.8% QUOTE SPREADS COLLAPSED TO 0.054% (MCD), 0.372% (UNH) AND 1.024% (TPR) BY MIDDAY, WITH THE SPY CONTROL TIGHTENING 0.187% → 0.005% ALONGSIDE — SO RULE 13's WIDTH WAS AN OPENING-AUCTION ARTIFACT ON THREE SLEEVES, AND 23 PRIOR OCCURRENCES WERE LOGGED WITHOUT EVER RE-READING THE SAME BOOK MID-SESSION TO TEST IT. ⚠ THE RESIDUE IS THE SIGNAL: CLX ALONE **WIDENED**, 8.261% → 10.408% AT 0.4 MIN FRESH, WHICH IS NAME-SPECIFIC ILLIQUIDITY AND EXACTLY WHAT AN UNDENIED RUMOUR PREMIUM LOOKS LIKE. ✓ THE BOOK'S LEAD WIDENED +1.5645 → +1.7076 pts **BECAUSE THE MARKET GOT WORSE, NOT BECAUSE THE BOOK GOT BETTER** — IT GAVE BACK $266.38 WHILE SPY FELL FURTHER. ⚠ CLX UNWIRED **AND** UNDENIED A 9th CONSECUTIVE CHECK, ALL THREE NEGATIVES STATED SEPARATELY. ⚠ XLY FELL 7th → 9th OF ELEVEN, BELOW SPY, WITH 38.9676% OF EQUITY IN IT AND A THREE-PRINT TUESDAY 15 HOURS OUT. ⚠ RULE 2's FLOOR CUSHION $451.26 → $384.67.**
+
+### What research was asked and what it actually returned
+- **Two queries, both wires-only with aggregators excluded by name, both demanding the publication date for every claim.**
+- ✓ **Query 1 (CLX, three separate questions) — CLEAN AND FULLY RESPONSIVE. All three answered individually and explicitly NO, each with the searched date range stated.** 4th consecutive run the routed behaviour has held.
+- **Query 2 (market conditions, five parts) — PARTIALLY RESPONSIVE, AND IT DECLINED RATHER THAN INVENTED ON THREE OF THEM.** It would not supply a sector leadership breakdown, would not fix a midday 10-year level from a wire, and would not re-confirm the retail-sales date and time. ✓ **Declining is the correct behaviour and is logged as such — this is the 11/10 consensus-as-print failure NOT repeated, a 4th run running.**
+
+### The macro picture — what is dated, what is not
+- ⚠ **REUTERS, DATED 2026-11-16 — RE-CONFIRMED AND STRONGER THAN THE OPEN'S READ: markets are FULLY pricing a December rate HIKE, with ~8% odds on a 50bp move, after hotter inflation, stronger employment data and hawkish Fed commentary. Higher Treasury yields are pressuring equities, with investors also awaiting Nvidia's earnings, the October FOMC minutes and retail sales.** Dated wire → **rule 14 SATISFIED**. **It fires no exit trigger on any sleeve.**
+- ⚠ **FOMC MINUTES: date re-confirmed WED 2026-11-18 by Reuters 11/16 — but the wire carried NO TIME. The 14:00 ET this desk is working to rests on the pre-market's federalreserve.gov read, not on this wire.** Stated so the next run does not mistake it for wire-confirmed.
+- ⚠ **OCTOBER RETAIL SALES: the wire would place it only "in the week of 11/16" and could NOT re-confirm the date or the time.** The AP 11/16 item (Tue 11/17 08:30 ET, consensus **+0.2%** vs **+0.8%** in September) **stands unrevised but is now effectively SINGLE-SOURCED.** Take the print from **census.gov**.
+- ⚠ **10-YEAR TREASURY YIELD — REFUSED UNDER RULE 14, 2nd RUN RUNNING.** A **non-permitted** source (sedaily, relaying Bloomberg) put the yield **above 5.00% on 11/16**. **Logged as unsourced and NOT used in any calculation or thesis.** Directionally consistent with the carried, still-unverified 11/13 item of **5.172%**. **The carried item remains CARRIED. The yield is still the most important number this desk cannot source first-party — 42nd session for tooling item (6)'s class of problem.**
+- ⚠ **DECISION 6's 30th CATCH — two items, neither used.** (a) In answer to the CLX denial question, research offered a Clorox **dividend** press release "updated November 16"; **it is not a denial and not a response to speculation, and it was not written into the thesis.** (b) Its citation list for a 2026 session included a **stale Economic Times article headlined "S&P 500 opens above 5000 mark after revised inflation data"** — vintage material for an index now at 744. **Neither claim was used. The substantive answers themselves were clean.**
+- **ZERO dated wire items in the last 24 hours on CLX, GEHC, MCD, TPR or UNH — each returned an explicit NO.** No sleeve has a thesis-relevant development to test.
+
+### The tape — first-party Alpaca `snapshot`, latest-trade vs prior daily close, 12:07 ET
+| Rank | Sector, 1-day live | | Rank | Sector, 1-day live | |
+|---|---|---|---|---|---|
+| 1 | **XLP +0.3032** ← *book* | | 7 | XLC -1.0074 | |
+| 2 | **XLV -0.0053** ← *book* | | 8 | XLI -1.1110 | |
+| 3 | XLU -0.0908 | | 9 | **XLY -1.1626** ← *book* | |
+| 4 | XLRE -0.2366 | | — | *SPY -1.2522* | |
+| 5 | XLF -0.5028 | | 10 | XLE -1.4323 | |
+| 6 | XLB -0.6704 | | 11 | **XLK -2.3204** | |
+
+- ✓ **The book owns the 1st and 2nd sectors of eleven and zero of the 11th. Book +0.4554% vs SPY -1.2522% = +1.7076 pts, up from +1.5645 at 09:33.**
+- ⚠ **BUT THE MECHANISM IS NOT A SECOND LEG UP, AND IT IS NAMED SO NO LATER RUN MISREADS IT: equity fell $101,432.17 → $101,165.79 (-$266.38) while SPY fell $747.60 → $744.825. The lead widened on the market deteriorating faster than the book. Defensive outperformance in a down tape, not absolute progress.**
+- ⚠ **XLY FELL 7th → 9th AND IS NOW BELOW SPY. MCD + TPR = 38.9676% of equity sit in it.** The book's defensive concentration is paying in **XLP/XLV** and **losing** in its largest single sector exposure — **and Tuesday's three prints read directly across to exactly that sleeve pair.** ⚠ **This is the weakest structural fact on the book today and it worsened since the bell.**
+- **LMV basis $75,800.42 → $76,259.01 = +0.6050%; equity basis = +0.4554%.** ⚠ **A 0.1496 pt divergence on one session; the equity basis governs and the difference joins the reconciliation handoff.**
+- **Phase, live intraday: book +1.1658% vs SPY -4.0594% = +5.2252 pts. ⚠ NOT filed as the lead. GOVERNING lead stays +3.5500 pts on the settled basis.**
+
+### ✓ RULE 13 — 24th OCCURRENCE, AND THE FIRST ONE THAT NARROWS THE RULE
+| Symbol | Bid | Ask | Spread | Age | vs 09:33 |
+|---|---|---|---|---|---|
+| CLX | $105.02 | $116.55 | **10.408%** | 0.4 min | ⚠ **WIDENED from 8.261%** |
+| GEHC | $80.13 | $83.54 | 4.167% | 1.0 min | narrowed from 4.913% |
+| MCD | $275.28 | $275.43 | **0.054%** | 0.0 min | ✓ from 10.830% |
+| TPR | $131.11 | $132.46 | **1.024%** | 0.3 min | ✓ from 6.196% |
+| UNH | $410.47 | $412.00 | **0.372%** | 0.1 min | ✓ from 10.145% |
+| *SPY (control)* | *$744.51* | *$744.55* | *0.005%* | *0.0 min* | *from 0.187%* |
+
+- ✓ **THE TEST NO PRIOR OCCURRENCE RAN: re-read the same book 2.5 hours later. Three of five sleeves went from 6-11% wide to 0.054-1.024%, and the control tightened with them. The open's width was an OPENING-AUCTION / FEED artifact on MCD, TPR and UNH — not a standing property of those names.**
+- ⚠ **CLX IS THE EXCEPTION AND THAT IS EVIDENCE, NOT NOISE: it WIDENED to 10.408% at 0.4 min fresh — a 2,082x spread ratio against the SPY control at the same instant. Name-specific illiquidity in an undenied, unwired rumour premium.** It corroborates handoff (ii) from an independent direction: **the market itself cannot price CLX.**
+- **Rule 13's price discipline was obeyed in full regardless — every figure is a latest-trade print or a first-party `positions`/`account` read, no mid, no research-supplied price.** Latest-trade vs Alpaca marks agree inside 0.11% on all five.
+- ⚠ **RECOMMENDATION TO THE OWNER (new handoff xi): narrow rule 13 rather than restate it. Keep the price discipline; replace "the feed is wide on single names" with a timing test — re-read any wide book 30+ minutes after the bell before calling it a feed fault.** Not self-applied.
+
+### Trade ideas — **NONE ACTIONABLE. DECISION: HOLD. Zero orders. 7th consecutive zero-order session.**
+1. ⚠ **ICE / CME — WATCH, NOT AUTHORIZED, and the case got stronger again without the gate moving.** A tape **fully** pricing a December hike is the rate-volatility regime the exchanges monetize, and ICE/CME remains the only candidate this phase that would both hedge the book's dominant risk **and** cut an XLY concentration that just fell to 9th of eleven. **Still a reject: ICE needs a dated primary-source target ≥$214.21 or an entry ≤$157.71; CME has no dated target at all, so "min 2:1" cannot be tested.** Decision 1's mechanism, 8th consecutive session as the binding reason.
+2. **No second idea offered, no screen re-run to find a softer one.** Rule 11.
+3. **Rule 8 has 3 of 3 slots open and rule 2 is in band — no deployment mandate, and none was invented.**
+
+### Risk factors from here — ranked, re-struck on the midday tape
+1. ⚠ **TUESDAY 11/17 IS A THREE-PRINT MORNING INTO THE BOOK'S WEAKEST SECTOR — HD EARNINGS PRE-OPEN, OCTOBER RETAIL SALES 08:30 ET (now single-sourced), BLS IMPORT/EXPORT PRICES 08:30 ET — ALL READING ACROSS TO MCD + TPR = 38.9676% OF EQUITY IN AN XLY THAT JUST FELL TO 9th OF ELEVEN.** ⚠ **Promoted to #1 this run.** A weak HD print or soft retail sales is the most likely single-day source of a rule-2 floor breach.
+2. ⚠ **FOMC MINUTES WED 11/18 (Reuters-dated, time from federalreserve.gov) INTO A TAPE FULLY PRICING A DECEMBER HIKE.** Four of five sleeves are rate-sensitive defensives. Lands after the midday run fires.
+3. ⚠ **CLX — 10.0923% of equity on an unwired, undenied rumour premium, 9th check, AND the only sleeve whose quote widened intraday (10.408%).** Trail 9.0204% below the mark — **tightened from 9.7601% with no hand action, which shrinks but does not remove the gap a denial would jump.** No in-rules remedy.
+4. ⚠ **RULE 2's FLOOR CUSHION $384.67 (0.3802% of book), giving back after four improving reads.** A **-0.5044%** LMV afternoon breaches it. **Standing instruction reaffirmed — log and report a breach, do NOT force a checklist-failing trade to defend the floor.**
+5. ⚠ **TPR — cut-before-trail defect LIVE** (cut $124.1457 **above** trail $123.6870, gap $0.4587), only red sleeve, 6.2344% clear.
+6. ⚠ **The rule 4-vs-6 geometry defect sits on FOUR of five sleeves. 80% of the book can only exit red through its own stop. GEHC alone is protected above entry. Most urgent owner decision, 4th consecutive week.**
+
+### Handoffs — **identical to the TRADE-LOG entry for this run; see items (i)-(xii) there.** Newly owed:
+- **(xi) NEW:** narrow rule 13 to a timing test — this run disproved the blanket version on three of five sleeves.
+- **(viii) CORRECTED:** the owed daily-class count is **FOUR** (11/06, 11/09, 11/12, 11/13 EODs), not five — the market-open entry said "five" and named four; the 11/13 weekly review **was** filed (`56ba306`).
+- **(ix) EXTENDED:** add the **0.1496 pt** LMV-vs-equity session divergence to the reconciliation list.
+- **(v) WEAKENED:** retail sales is now single-sourced on AP 11/16; the midday wire could not re-confirm date or time.
+- **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
