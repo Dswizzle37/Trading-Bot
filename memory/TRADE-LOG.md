@@ -3696,3 +3696,154 @@ TPR, same session, same position, nothing touched:
 - ⚠ **UNH mark $393.110 (-4.590% on the session, a new session low on this run's reads). Gap to the $383.895 stop narrowed 2.852% → 2.344%.** The breach is **deepening, not reverting.** Still no permitted action; still green (+1.918% on entry). Nothing cancelled, nothing replaced, nothing cut.
 - ✓ **The secondary hazard has cleared and the opening-auction read is confirmed: UNH's spread collapsed 8.413% → 1.020% in six minutes, and the bid is $390.06 — now ABOVE the $383.895 stop.** ✓ **This is a second independent confirmation of the 11/16 midday's narrowing of rule 13 — the 8.4% book at 09:35 was an opening artifact, not UNH illiquidity.** The stop is no longer reachable by quote noise.
 - **Equity $100,231.80, session -0.9694%, deployment 75.1508% — still in band, cushion thinning.** All four other sleeves' gaps: CLX 8.045%, GEHC 4.462%, MCD 7.121%, TPR 6.679%. ⚠ **GEHC is now the 2nd-tightest at 4.462% and narrowing.**
+
+---
+
+## 2026-11-17 — Midday Scan (Day 67, Tuesday, locked read 12:07:13-12:10:47 ET, market OPEN, closes 16:00 ET) — **ZERO ORDERS, HOLD. ✓ HANDOFF (i) DISCHARGED FAVOURABLY AND THE PHASE'S FIRST RULE-7 BREACH **SELF-CURED**: UNH RECOVERED $393.11 → $398.55 AND THE GAP WENT 2.852% (LOW 2.701%) → **3.677%**, OUTSIDE THE FLOOR, WITH NO HAND ACTION — THE SAME MECHANISM THAT CREATED IT REVERSED IT, WHICH IS THE EXISTENCE PROOF THAT "LOGGED-NOT-CURED" WAS THE RIGHT DEFAULT. ✓ **THE RUN'S HEADLINE IS HANDOFF (ii): CMS "CRUSH" IS NOW RULE-14 SATISFIED — NOT BY A WIRE BUT BY THE *OFFICIAL GOVERNMENT STATEMENT* LIMB (cms.gov PRESS RELEASE + FACT SHEET, CMS-6098-P, 11/16, FACT SHEET UPDATED 11/17), VERBATIM-VERIFIED, ~$90B OVER 10 YEARS — AND IT DOES **NOT** BREAK THE UNH THESIS: A *PROPOSED* RULE WITH A 10-YEAR HORIZON THAT DOES NOT NAME UNH DOES NOT INVALIDATE A Q3 BEAT-AND-RAISE. HOLD, THESIS-RELEVANT, NOT A TRIGGER.** ✓ REUTERS 11/17 INDEPENDENTLY PUTS **HEALTHCARE LEADING SECTOR LOSSES** — WIRE CORROBORATION OF THE XLV CHANNEL. ✓ **HANDOFF (iv) DISCHARGED VERBATIM AND THE MORNING'S REFUSAL IS VINDICATED, NOT OVERTURNED: RETAIL SALES $748.2bn, +0.2% (**±0.4%**), +6.8% y/y — THE MARGIN OF ERROR IS TWICE THE CHANGE, SO THE HEADLINE IS STATISTICALLY INDISTINGUISHABLE FROM FLAT.** ✓ **THE LOSING OPEN REVERSED: -0.5886 pts BEHIND AT 09:37 → +0.2871 pts AHEAD.** ⚠ **RULE 3's BINDING SLEEVE TIGHTENED SHARPLY — MCD IS +0.933% FROM THE 20% CAP (was +2.905% pre-market) AND IS THE BOOK'S ONLY GREEN SLEEVE ON A -1.02% TAPE.** ⚠ **RULE 13's 27th OCCURRENCE RETIRES ITS OWN NARRATIVE: 2h37m AFTER THE BELL FOUR OF FIVE SLEEVES ARE 6.1-10.8% WIDE AGAINST A 0.007% SPY CONTROL, CLX's POLARITY FLIPPED A SECOND TIME IN THREE READS, AND THIS RUN NAMES THE STRUCTURAL CAUSE 26 PRIOR OCCURRENCES MISSED — `snapshot` RETURNS IEX-ONLY QUOTES.** ⚠ CLX UNWIRED **AND** UNDENIED A 12th CHECK.**
+
+### Step 1 — MEMORY READ AND RULE ROLL-CALL (15/15 tested; every figure off first-party `account`/`positions`/`orders` or a latest-trade print)
+- **Rule 1 — OBEYED. No options.** 5/5 `us_equity`, zero option orders. ⚠ `options_approved_level` **3**, `options_buying_power` $62,689.49 — a live permission this desk does not act on. Named, **not self-remediated** (carried).
+- **Rule 2 — IN BAND, 75.1948% deployed** ($75,549.90 positions LMV / $100,472.20 equity; `account` LMV $75,565.42 = 75.2103%). Cushion **$829.56** against the $74,720.34 floor (= 3 × $24,906.78 cash); breach at **LMV -1.0980%**. ✓ **The 11/17 pre-market's 4x correction is applied, not the naive figure.** ⚠ **Thinner than the pre-market (-1.2239%), WIDER than the open (-1.0037%).** No cure attempted. ✓ **The ceiling is unreachable by price: LMV would have to rise +86.8148%.**
+- ⚠ **Rule 3 — OBEYED ON ALL FIVE, BUT THE BINDING SLEEVE TIGHTENED SHARPLY. See the dedicated section.** MCD **19.8488%**, TPR **19.2792%**. ⚠ **Neither cured by hand** (handoff (ix) obeyed; decision 8 unanswered).
+- **Rule 4 — OBEYED. 5/5 live GTC 10% trailing stops, verified against `orders` at both reads.** `441a7ba8` CLX, `13dd3b34` GEHC, `1a224b95` MCD, `bddb11b5` TPR, `5d48b1e5` UNH — all `status new`, `tif gtc`, `trail_percent 10`. **Nothing placed, cancelled or replaced. `qty_available` 0 on all five — every share encumbered.**
+- **Rule 5 — NO CUT OWED.** TPR is the only red sleeve at **-1.869%** and needs a further **-5.145%** to reach $124.1457. ⚠ **It deteriorated from -0.798% at the open — the largest adverse move of the session on the book.**
+- **Rule 6 — NO TIGHTEN OWED.** Nearest gate is GEHC's +15% at **$87.8945** against **$82.880** — **$5.01 / 5.967% away.**
+- ✓ **Rule 7 — NO LONGER BREACHED. UNH's gap is 3.677%, outside the 3% floor. See handoff (i) below.** All five are 3.677-8.487% clear.
+- **Rule 8 — 0 of 3 weekly slots used.** `activities FILL` since 11/14 returns **`[]`**; `activities` since 11/16 returns **`[]`**. Week of 11/16 is clean.
+- ⚠ **Rule 9 — THE 1-DAY INVERSION PARTLY REVERTED, WINDOW NAMED AS REQUIRED (decision 9 unresolved).** **XLV 11th → 9th of eleven, XLP 6th → 4th, XLY 4th → 5th.** On the 1-day window XLP is now **above** SPY and XLV below it — so rule 9 is split across the book's own sectors rather than uniformly against it. 1-month and YTD windows (pre-market, research-sourced) still rank XLP and XLV as leaders.
+- **Rule 10 — NOT TRIGGERED.** One closed trade this phase (XLE, 11/04); no sector carries two failures.
+- **Rule 11 — OBEYED. Zero orders, 10th consecutive zero-order session.** No candidate screened and none sought. Rule 8 has 3 slots open; **no deployment mandate exists and none was invented.** ⚠ **A specific reason not to add today even had one qualified: NVDA reports after the close (~16:20 ET) and the FOMC minutes land tomorrow 14:00 ET.** Judgment, not a rule.
+- **Rule 12 — this entry and the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run.**
+- ⚠ **Rule 13 — ENGAGED, 27th occurrence, and this run NARROWS IT STRUCTURALLY. See the quote-book section.**
+- **Rule 14 — ENGAGED ON SIX STORIES. Two NEWLY SATISFIED (CMS CRUSH via the official-statement limb; retail sales verbatim), one SATISFIED (tape cause, Reuters/Bloomberg 11/17), one STILL NOT SATISFIED (CLX, 12th), two NEGATIVE-AND-STATED (GEHC, MCD, TPR all clean).**
+- ⚠ **Rule 15 — PARTIAL BREACH, STANDING.** 11/06 + 11/09 + 11/12 + 11/13 + 11/16 EODs unfiled — **five** — plus the **11/13 weekly review**. Handed forward again by name and date. All owner decisions carried into this run's notification.
+
+### Step 2 — EXECUTE: **NOTHING TO EXECUTE**
+- **The 11/17 market-open staged nothing and pre-authorized nothing.** Zero conditional instructions except the handoffs discharged below.
+- ⚠ **ICE / CME remain WATCH, NOT AUTHORIZED** — ICE's gate is ≤$157.71 and CME still has no dated target, so "min 2:1" cannot be tested. Decision 1's mechanism, **11th consecutive session as the binding reason.**
+
+### Step 3 — CUT LOSERS: **NONE OWED**
+- **TPR is the only negative sleeve, -1.869%**, and is **5.145%** clear of its $124.1457 cut line. ⚠ **It widened from -0.798% at the open; the cut line is now 5.1% away rather than 6.6%.**
+- ⚠ **TPR's cut-before-trail defect is STILL LIVE AND THE TWO LEVELS CONVERGED** (cut $124.1457 **above** trail $123.6870, gap $0.4587; cut is 5.145% below the mark, trail 5.579%). **If TPR trades toward $124.15, rule 5 fires BEFORE rule 4 — act on rule 5 and log that the trail was pre-empted.** Carried.
+- **UNH is -3.270% on the session and +3.329% on entry — not a cut trigger, 10.0% clear of its cut line.**
+
+### Step 4 — TIGHTEN TRAILS: **NONE OWED**
+- **GEHC remains nearest to rule 6 at $5.01 / 5.967% from the $87.8945 gate**, and is the book's best sleeve at **+8.439%**.
+- **Nothing cancelled, nothing replaced. `13dd3b34` was not touched.**
+- ✓ **NOT ONE `hwm` RATCHETED TODAY — all five are unchanged from 11/16, and the `updated_at` stamps prove it:** CLX $110.98 (2026-11-16T14:30:02), GEHC $87.56 (**2026-11-04**), MCD $283.5295 (2026-11-10), TPR $137.43 (2026-11-10), UNH $426.55 (**2026-10-22**). **No sleeve has printed a new high since 11/16; UNH's stop has been static for 26 days.**
+
+### Step 5 — THESIS CHECK: **NO THESIS BROKE INTRADAY. NO POSITION CUT.**
+- ✓ **The one thesis-relevant item of the day is CMS CRUSH on UNH, and it is tested against the actual entry thesis rather than against the price.** The 10/13 entry thesis is **the Q3 beat-and-raise**: adjusted EPS **$4.69 vs $4.14** consensus, revenue **$112.69bn**, **FY26 adjusted EPS guidance raised to at least $20.50** from $19.50-$20.00, with XLV positive on rule 9. ⚠ **CRUSH is a *proposed* rule (CMS-6098-P) with a 10-year savings horizon across Medicare, Medicaid, CHIP and the Marketplace, and it does not name UnitedHealth Group.** ✓ **It therefore does not invalidate a reported quarter or a raised full-year guide. The thesis stands. HOLD.**
+- ⚠ **BUT IT IS NOW THESIS-RELEVANT AND THE READ-ACROSS IS REAL AND SHOULD BE CARRIED: the fact sheet proposes a new 42 CFR § 422.222(a) requiring every provider and supplier billing Medicare Advantage to be enrolled in Original Medicare in approved status (PACE excepted), plus expanded managed-care program-integrity reporting.** UNH is the largest MA insurer. **This is a medium-term compliance and margin headwind to the book's largest-by-scrutiny sleeve, and the two standing quality qualifiers on this position ($610M favourable prior-period reserve development; "2026 a trough year for core Medicaid margins") sit in the same place the rule does.** ✓ **Logged as a carried risk, NOT as a trigger.**
+- ✓ **GEHC, MCD, TPR: explicit, separately-stated NEGATIVES on all branches** — no Reuters/AP/Bloomberg/AFP item dated 11/16-11/17, no company release, no SEC filing dated 11/16-11/17 for any of the three.
+- ⚠ **MCD IS UP +0.976% ON A -1.09% TAPE AND NO DATED ITEM EXPLAINS IT.** Stated plainly rather than attributed. **It is the book's only green sleeve and the sole reason rule 3 tightened today** (see below).
+
+### ✓ HANDOFF (i) DISCHARGED FAVOURABLY — THE RULE-7 BREACH SELF-CURED, AND THE MECHANISM IS THE POINT
+| | 09:37 open read | 09:41 confirmation | **12:07-12:10 midday** |
+|---|---|---|---|
+| UNH mark | $395.165 | $393.110 | **$398.549** |
+| Session move | -4.091% | -4.590% | **-3.270%** |
+| Live GTC trail `5d48b1e5` | $383.895 | $383.895 | **$383.895 (untouched)** |
+| **Gap to stop** | ⚠ **2.852%** (low 2.701%) | ⚠ **2.344%** | ✓ **3.677% — OUTSIDE THE FLOOR** |
+| Position P&L | +2.451% | +1.918% | **+3.329%** |
+
+- ✓ **THE BREACH IS CURED AND NOTHING WAS DONE TO CURE IT.** The handoff's instructions were followed exactly: `5d48b1e5` was **not** cancelled, **not** replaced, **not** widened, and a green sleeve was **not** cut to fix a stop-geometry problem.
+- ✓ **AND THAT IS THE SUBSTANTIVE ANSWER TO HANDOFF (xii): the breach was created by price falling into a stop that can only ratchet up, and it was cured by price rising away from the same static stop. Option (a) — rule 7 is a placement-only test, a price-driven breach is logged-not-cured — is the branch that worked, on the first live instance.**
+- ⚠ **THE RECOMMENDATION IS NOT WITHDRAWN, FOR ONE REASON STATED PLAINLY: this instance reverted in 2.5 hours; the next one may not.** Had UNH kept falling, the gap would have reached 0% and the stop would have filled — which is the *correct* outcome, not a defect, and **the owner should say so explicitly** so no future run tries to intervene. **Decision pending, 5th consecutive week, now with a resolved live instance attached rather than an open one.**
+- ✓ **The secondary quote-noise hazard stayed clear: UNH's bid is $398.02 against the $383.895 stop, spread 0.246%.** It was $378.81 / 8.413% wide at 09:35. **Confirmed opening-auction artifact, not UNH illiquidity.**
+
+### ✓ HANDOFF (ii) DISCHARGED — THE RUN'S HEADLINE: CMS "CRUSH" IS RULE-14 SATISFIED ON THE OFFICIAL-STATEMENT LIMB
+| Item | Finding | Provenance | Verdict |
+|---|---|---|---|
+| Reuters / AP / Bloomberg / AFP, 11/16-11/17 | **"NO WIRE DATED 11/16-11/17"** — stated explicitly | — | ⚠ **wire limb NOT satisfied** |
+| **Official CMS press release** | **"CMS CRUSH Proposed Rule Aims to Reap Nearly $90 Billion for Taxpayers in Savings by Targeting Fraud Across Medicare, Medicaid/CHIP, and the Marketplace"**, dated **2026-11-16** | `cms.gov/newsroom/press-releases/cms-crush-proposed-rule-aims-reap-nearly-90-billion-taxpayers-savings-targeting-fraud-across` | ✓ **SATISFIED** |
+| **Official CMS fact sheet** | **CMS-6098-P**, "Comprehensive Regulations to Uncover Suspicious Healthcare (CRUSH) Proposed Rule", dated **11/16**, updated **11/17** | `cms.gov/newsroom/fact-sheets/comprehensive-regulations-uncover-suspicious-healthcare-crush-proposed-rule-cms-6098-p` | ✓ **SATISFIED** |
+| HHS press room | corroborating item, dated **11/16** | `hhs.gov/press-room/cms-crush-rule-targets-healthcare-fraud-saves-90-billion.html` | ✓ corroboration |
+
+- ✓ **VERBATIM VERIFICATION SUCCEEDED, which is the test the morning's retail-sales read failed.** The release's own sentence came back: *"The Centers for Medicare & Medicaid Services (CMS) today issued a proposed rule that could save taxpayers nearly $90 billion over the next 10 years and would strengthen program integrity (PI) oversight and the agency's ability to prevent, identify, and address fraud, waste, and abuse across Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the Health Insurance Marketplace."*
+- ✓ **RULE 14 IS SATISFIED BY ITS SECOND LIMB, AND THIS IS THE FIRST TIME THIS DESK HAS USED IT.** Rule 14 requires *"a wire service (Reuters/AP/Bloomberg/AFP) **or an official government statement** … with a date."* **There is no wire. There IS a dated official government statement — two of them, with a rule number and a CFR citation.** ⚠ **The morning correctly refused the trade-press (Becker's Payer) version; the official source was reachable all along by cited-URL provenance (decision 10) and no prior run asked for it.**
+- ⚠ **THE MORNING'S "ONLY CANDIDATE MECHANISM" IS NOW A CONFIRMED FACT, AND IT EXPLAINS WHAT NEEDED EXPLAINING:** XLV finished **11th of eleven** at the open on a day with no other health-care news, and UNH fell -4.6% with no dated cause on three consecutive checks. **CRUSH, announced 11/16, is that cause.**
+- ✓ **AND IT IS NOW WIRE-CORROBORATED FROM THE OTHER DIRECTION: a Reuters item dated 11/17 identifies HEALTHCARE as leading sector losses.** Two independent channels, same conclusion.
+- ✓ **RULE 14 WAS APPLIED THE WAY IT CUTS — ONE DIRECTION ONLY. Satisfaction licenses *logging*, not *acting*. Step 5 above tests it against the entry thesis and it fails to break it. No exit trigger fired and none was invented.**
+
+### ✓ HANDOFF (iv) DISCHARGED — RETAIL SALES VERIFIED VERBATIM, AND THE MORNING'S REFUSAL WAS *RIGHT*, NOT WRONG
+> *"Advance estimates of U.S. retail and food services sales for October 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were **$748.2 billion, up 0.2 percent (±0.4 percent)** from the previous month, and **up 6.8 percent (±0.5 percent)** from October 2025."*
+
+- ✓ **Provenance: citations resolve to `census.gov/retail/marts/www/marts_current.pdf` and `census.gov/retail/sales.html` (decision 10). Ex-autos $611.2bn. Control group not stated in the retrieved excerpt — recorded as not obtained, not guessed.**
+- ⚠ **THE MARGIN OF ERROR IS THE FINDING, AND IT IS WHY THE MORNING'S REFUSAL WAS CORRECT RATHER THAN MERELY CAUTIOUS: ±0.4% is TWICE the +0.2% change. The October headline is statistically indistinguishable from flat, and it is also indistinguishable from the +0.8% prior.** A run that had filed "+0.2%, cooler than +0.8%, bearish for consumer discretionary" would have read a signal out of noise. ✓ **No read-across to MCD + TPR is drawn, and none was drawn this morning either.**
+- ✓ **The number the morning refused turned out to be the right number. It was still right to refuse it** — it arrived only on a third query after two "NOT YET AVAILABLE" answers, matched consensus to the decimal, and failed verbatim re-verification. **A correct figure obtained by a broken method is not evidence. That distinction is worth keeping.**
+
+### ⚠ RULE 3 — THE BINDING SLEEVE TIGHTENED SHARPLY AND MCD IS NOW ONE 1% MOVE FROM THE CAP
+| Sleeve | % equity | **Correct 20% breach price** | Distance | vs 11/17 pre-market |
+|---|---|---|---|---|
+| ⚠ **MCD** | **19.8488%** | **$279.5629** | ⚠ **+0.933%** | **TIGHTENED from +2.905%** |
+| TPR | 19.2792% | $136.9703 | +4.653% | LOOSENED from +2.733% |
+| UNH | 15.0802% | $561.2192 | +40.755% | — |
+| GEHC | 10.8973% | $169.5226 | +104.380% | — |
+| CLX | 10.0894% | $242.7948 | +122.748% | — |
+
+- **Computed on the pre-market's corrected formula** — solving `q·P / (cash + other_LMV + q·P) = 0.20`, not the naive `0.20 × equity` — **and verified by substitution: at $279.5629 MCD is 20.0000% of a $100,642.65 equity.**
+- ⚠ **THE MECHANISM IS WORTH NAMING BECAUSE IT IS COUNTER-INTUITIVE: MCD did not get big, the book got small.** MCD is **+0.976%** while the other four sleeves are -0.096% to -3.270%, so **both halves of the ratio moved against the cap at once.** TPR loosened for the mirror-image reason.
+- ⚠ **A further +0.94% on MCD breaches rule 3 with no order placed by anyone.** ✓ **NOT cured by hand** — handoff (ix) is explicit and decision 8 is unanswered. ⚠ **And the mechanical obstacle is unchanged: `qty_available` is 0, so any trim must first cancel `1a224b95`, leaving a ~19.8%-of-equity sleeve briefly unstopped against rule 4.** **Handed forward as the sharpest rule-3 read of the phase.**
+
+### The tape — first-party, 12:07-12:10 ET, and the losing open REVERSED
+| Rank | Sector, 1-day live | | Rank | Sector, 1-day live | |
+|---|---|---|---|---|---|
+| 1 | XLB **+0.1166** | | 6 | XLRE -0.5423 | |
+| 2 | XLE -0.0942 | | 7 | XLU -0.6343 | |
+| 3 | XLI -0.3017 | | 8 | XLC -0.6646 | |
+| 4 | **XLP -0.4156** ← *book* | | 9 | ⚠ **XLV -0.9792** ← *book* | |
+| 5 | **XLY -0.4741** ← *book* | | — | *SPY -1.0189* | |
+| | | | 10 | XLF -1.3922 | |
+| | | | 11 | XLK -1.6335 | |
+
+- ✓ **THE OPEN'S VERDICT IS REVERSED: the book is -0.7318% against SPY -1.0189% = +0.2871 pts, from -0.5886 pts behind at 09:37.** ⚠ **Said honestly: the swing is mostly SPY deteriorating (-0.2297% → -1.0189%), not the book recovering. Equity fell $740.71 on the session and still gained 0.88 pts of relative ground.**
+- ✓ **The defensive inversion partly reverted: XLV 11th → 9th, XLP 6th → 4th and now ABOVE SPY.** ⚠ **But XLV is still below SPY and 9th of eleven, with the CRUSH rule now the dated cause — so rule 9 is SPLIT across the book's own sectors on the 1-day window rather than uniformly against it.** Window named, per decision 9.
+- ⚠ **UNH is still the session's largest sleeve move at -3.270% on 15.08% of equity ≈ -0.49 pts of the -0.73% book move — two thirds of the loss in one name, now with a dated regulatory cause.**
+- **Cause, wire-sourced and dated 11/17:** renewed AI/technology selling on data-centre spending doubts (Reuters 11/17), tightened US AI-chip export restrictions to China (Reuters 11/17), de-risking ahead of NVDA's after-close print (Reuters 11/17), and Nvidia leadership upheaval spilling into the AI complex (Bloomberg 11/16, updated 11/17). ✓ **Healthcare named as a leading sector loser (Reuters 11/17).**
+- ✓ **RESEARCH DECLINED TO CONFIRM THE PREMISE IT WAS HANDED, AND THAT IS RECORDED AS A CREDIT: asked about "SPY -1.0% with technology and financials weakest", it answered that the cited Reuters morning update showed the S&P 500 -0.39% with healthcare leading losses, and that it could NOT verify a 1.0% decline or that financials were weakest at 12:15 ET.** **The first-party tape governs the price (SPY -1.0189%, XLF 10th, XLK 11th); the wire governs the cause. Neither was allowed to overwrite the other, and the refusal to rubber-stamp a fed-in number is the behaviour decision 6 exists to produce.**
+
+### Benchmark
+| Basis | Book | SPY | Lead |
+|---|---|---|---|
+| **GOVERNING, settled** | `last_equity` $101,212.91 = **+1.2129%** | $740.04 vs $776.34 = **-4.6758%** | ✓ **+5.8887 pts** |
+| Session, live | **-0.7318%** | **-1.0189%** | **+0.2871 pts** |
+| Phase, live intraday — **NOT filed as the lead** | equity $100,472.20 = **+0.4722%** | $732.50 = **-5.6470%** | *+6.1192 pts* |
+
+- ✓ **HANDOFF (xi)'s NEW ITEM IS RESOLVED AND THE OPEN RUN'S FIGURE IS THE OUTLIER: this run's `snapshot prevDailyBar` returns SPY 11/16 close = $740.04, independently agreeing with the 11/17 pre-market.** The market-open run's SIP daily close of **$739.95** stands alone, 2:1 against. ✓ **Recommend $740.04 as of record; the governing lead is +5.8887 pts, NOT +5.9003.** The remaining reconciliation items are unchanged and still owed to the weekly review.
+
+### ⚠ RULE 13 — 27th OCCURRENCE, AND IT RETIRES ITS OWN NARRATIVE TWICE OVER
+| Symbol | Bid | Ask | Spread | Age | vs 11/17 open (09:35) |
+|---|---|---|---|---|---|
+| ⚠ **CLX** | $102.76 | $114.44 | ⚠ **10.755%** | 0.1 min | ⚠ **BLEW OUT from 0.587%** |
+| MCD | $262.78 | $292.27 | ⚠ **10.626%** | 0.2 min | ~flat vs 10.834% |
+| TPR | $130.82 | $139.40 | ⚠ **6.350%** | 0.1 min | narrowed from 6.780% |
+| GEHC | $79.29 | $84.32 | ⚠ **6.149%** | 0.0 min | narrowed from 11.513% |
+| ✓ **UNH** | $398.02 | $399.00 | ✓ **0.246%** | 0.1 min | ✓ **COLLAPSED from 8.413%** |
+| *SPY (control)* | *$732.47* | *$732.52* | *0.007%* | *0.0 min* | *narrowed from 0.004%* |
+
+- ⚠ **FINDING 1 — THE 11/16 "OPENING-AUCTION ARTIFACT" NARROWING DOES NOT SURVIVE THIS READ.** These quotes are **2h37m after the bell**, far outside the 30-minute window handoff (v) specified, and **four of five sleeves are still 6.1-10.8% wide against a 0.007% SPY control.** Handoff (v) asked specifically for GEHC (11.513%) and MCD (10.834%): **GEHC narrowed to 6.149%, MCD did not narrow at all.** **Width persists past the auction on four of five names.**
+- ⚠ **FINDING 2 — CLX's POLARITY FLIPPED A SECOND TIME IN THREE READS: 10.408% (11/16 midday) → 0.587% (11/17 open) → 10.755% (now).** ✓ **A signal that changes sign twice in three consecutive reads is not a signal. The illiquidity-corroboration argument for the CLX rumour premium is RETIRED, not merely weakened — no future run should cite it in either direction.** The premium itself rests on the wire checks and is untouched by this.
+- ✓ **FINDING 3, AND IT IS THE ONE THAT MATTERS — 26 PRIOR OCCURRENCES NEVER NAMED A CAUSE, AND THE CAUSE IS THIS DESK'S OWN 46-SESSION TOOLING BUG.** The `snapshot` and `quote` paths return **IEX-only** data: the same SPY payload that produced the 0.007% control reports a **daily volume of 1,152,527 shares** — roughly 2% of SPY's real volume — and every quote carries `ax`/`bx` = **"V"** (IEX). **On a partial tape, liquid ETFs still show tight books because IEX alone quotes them deeply; single names do not.** ⚠ **So rule 13's "wide single-name books" are substantially a FEED artifact of the missing `feed=sip` parameter — tooling item (1), the one-line `snapshot` fix, now in its 46th session.** **Rule 13's price-freshness discipline is UNAFFECTED and stays in force; what is narrowed is the inference from spread WIDTH to market illiquidity.**
+- **Every figure in this entry is struck off latest-trade prints or first-party `positions`/`account`/`orders` reads. No mid appears anywhere. No research-supplied price appears in any calculation.**
+
+### ⚠ HANDOFF (iii) — CLX: 12th CONSECUTIVE UNWIRED-AND-UNDENIED, ALL THREE ANSWERED SEPARATELY
+- ⚠ **Re-run under rule 14 in both directions, aggregators excluded by name** (Betaville, Seeking Alpha, Benzinga, Zacks, StockTwits, X/Twitter, TipRanks, Investing.com, Motley Fool, TradingView). **All three negative and separately stated:** **(1)** no Reuters/AP/Bloomberg/AFP item dated 11/14-11/17 confirming takeover/acquisition/buyout/merger/bid interest; **(2)** no Clorox release, statement or 8-K dated 11/14-11/17 — latest 8-K is **11/02**; **(3)** no Clorox SEC filing dated 11/14-11/17 — most recent is a **Schedule 13G, 11/10**, latest substantive report a **10-Q, 11/02**. ✓ **Research again stated explicitly that page-update dates of 11/15-11/17 were NOT treated as filing or publication dates.**
+- ⚠ **"No dated item" is NOT a denial and was not read as one. The premium is intact and undenied for a 12th check.**
+- **The sleeve is +7.330%, 10.0894% of equity, -0.930% on the session, trail gap 8.487%** (hwm held $110.98, `updated_at` 11/16). ⚠ **A denial still gaps straight through an 8.5% trail. No in-rules remedy exists and none was invented.** ✓ **Do NOT re-cite the spread as corroboration — see rule 13 finding 2.**
+
+### Handoffs issued by this run (rule 15)
+- ✓ **(i) TO THE 11/17 EOD — THE RULE-7 BREACH ON UNH IS CURED (3.677%), NOT CURED BY HAND.** Re-read it at the close. **If it re-enters the 3% band, log and escalate; do NOT cancel, replace or widen `5d48b1e5`, and do NOT cut a green sleeve for a stop-geometry problem.** The 09:37→12:10 round trip is the precedent.
+- ⚠ **(ii) CMS "CRUSH" (CMS-6098-P) IS NOW RULE-14 SATISFIED AND CARRIED AS A UNH RISK, NOT A TRIGGER.** The thesis — Q3 beat-and-raise, FY26 guide ≥$20.50 — **does not break on a proposed rule.** **Next runs: watch for (a) a UNH company statement or 8-K responding to it, (b) a Federal Register publication date and comment deadline, (c) any wire quantifying MA-specific impact.** ⚠ **Any of those three could make it thesis-breaking; the announcement alone does not.**
+- ⚠ **(iii) MCD IS +0.933% FROM THE RULE-3 20% CAP — THE TIGHTEST RULE-3 READ OF THE PHASE.** Breach price **$279.5629**. **Do NOT cure by hand** (handoff (ix), decision 8 unanswered), and note `qty_available` 0 means any trim unstops the sleeve. ⚠ **If MCD breaches, log it as a breach and escalate — do not trim.**
+- ⚠ **(iv) CLX — UNWIRED, UNDENIED, 12th CHECK, 10.0894% OF EQUITY, TRAIL GAP 8.487%.** Re-check **in both directions**; do **not** read "no dated item" as a denial. ✓ **AND DO NOT CITE THE SPREAD AS EVIDENCE EITHER WAY — the signal flipped sign twice in three reads and is retired.**
+- ⚠ **(v) TPR DETERIORATED -0.798% → -1.869% AND THE CUT-BEFORE-TRAIL DEFECT IS LIVE AND CONVERGING** (cut $124.1457, 5.145% below the mark; trail $123.6870, 5.579% below). **If TPR trades toward $124.15, rule 5 fires BEFORE rule 4 — act on rule 5 and log that the trail was pre-empted.**
+- ⚠ **(vi) TO THE 11/17 EOD — NVDA REPORTS AFTER YOU FIRE (~16:20 ET, call 17:00 ET), COLETTE KRESS INTERIM CEO.** You will not see it. **Hand it to the 11/18 pre-market by name and pre-authorize nothing.**
+- ⚠ **(vii) TO THE 11/18 MIDDAY AND EOD — FOMC MINUTES WED 11/18 14:00 ET, after the midday fires, into a 5.13% 10-year (AP 11/17) and import prices +3.6% y/y.** Four of five sleeves are rate-sensitive. ⚠ **federalreserve.gov is UNREACHABLE here — use cited-URL provenance (decision 10) and say so.** ✓ **This run proves the method works on a .gov source: CRUSH was obtained from cms.gov press-release and fact-sheet URLs with verbatim verification. Do the same for the minutes.**
+- ⚠ **(viii) DO NOT CURE MCD's OR TPR's RULE-3 MARGIN BY HAND.** Do not cancel `1a224b95` or `bddb11b5` to trim a winner until the owner rules on decision 8.
+- ⚠ **(ix) FIVE DAILY-CLASS FILINGS AND ONE WEEKLY REVIEW REMAIN OWED — 11/06, 11/09, 11/12, 11/13 AND 11/16 EODs, PLUS THE 11/13 WEEKLY REVIEW.** Handed forward again by name and date. **They do not lapse** (rule 15). **The next weekly review covers every week since the last filed one.**
+- ✓ **(x) TO THE NEXT WEEKLY REVIEW — ONE RECONCILIATION ITEM IS RESOLVED, THE REST STAND.** ✓ **RESOLVED: the SPY 11/16 close is $740.04** — the pre-market and this run's `prevDailyBar` agree, 2:1 against the open run's $739.95; **governing lead +5.8887 pts.** Still owed: the **$35.74** equity difference, the **$0.16** SPY close spread, the **$116.54** LMV-vs-latest-trade difference, the **0.1496 pt** LMV-vs-equity basis divergence, and **new this run: a $15.52 difference between `account.long_market_value` ($75,565.42) and the sum of `positions` market values ($75,549.90)** — a 0.0155 pt deployment difference, the same class as the others.
+- ⚠ **(xi) RULE 9 IS NOW SPLIT ACROSS THE BOOK'S OWN SECTORS ON THE 1-DAY WINDOW — XLP 4th and above SPY, XLV 9th and below it, XLY 5th.** Not a uniform verdict either way. **Any run grading rule 9 must still name its window in the same sentence** (decision 9 unresolved).
+- ⚠ **(xii) TOOLING, NONE SELF-APPLIED (shared live-trading scripts):** (1) ⚠ **ESCALATED WITH A CAUSE ATTACHED — the one-line `snapshot`/`quote` `feed=sip` fix is now in its 46th session, and this run shows it has been silently manufacturing rule 13's evidence for 27 occurrences.** This is no longer a convenience item; **it corrupts an analytical rule.** (3) `scripts/perplexity.sh` needs 429 retry/backoff; (4) `bars feed=sip` returned zero RTH bars at the 11/17 open while `feed=iex` worked — **same root cause as (1)**; (6) VIX still has no first-party source — **45th session**; (10) `daytrade_count`/`pattern_day_trader` absent from `account` — **12th run**, PDT headroom unverifiable first-party; (11) no `trades` subcommand. ⚠ **Network policy confirmed: `bls.gov`, `census.gov`, `federalreserve.gov`, `ir.homedepot.com` and `reuters.com` all http=000** — ✓ **but decision 10's cited-URL provenance worked on cms.gov and census.gov content this run, twice, with verbatim verification. The method is proven; the direct fetch remains impossible.**
+- **All owner decisions (1, 6, 7, 8, 9, 10 and the rule 4-vs-6 geometry defect — now with a RESOLVED live rule-7 instance rather than an open one) carry forward into this run's notification and every subsequent run's, until answered or withdrawn (rule 15).**
+- **Persistence (rule 12): this entry and the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run.**
