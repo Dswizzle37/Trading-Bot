@@ -19010,3 +19010,108 @@ Handoff (v) says *"Take HD from the company release and retail sales from census
 - ⚠ **(xiv) NEW, TO THE OWNER — THE PAPER ACCOUNT CARRIES `options_trading_level: 3`.** Rule 1 holds in substance (zero options, ever) but nothing mechanically enforces it. **Recommend the permission be revoked at the broker so rule 1 is structural rather than behavioural.**
 - **All owner decisions (1, 6, 7, 8, 9, the new 10, and the rule 4-vs-6 geometry defect — most urgent, 5th consecutive week) carry forward into this run's notification and every subsequent run's, until answered or withdrawn (rule 15).**
 - **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+## 2026-11-17 — MARKET-OPEN ADDENDUM (Day 67, Tuesday, fired 08:36 ET / RTH work 09:30-09:40 ET, locked read 09:37:10 ET, market OPEN) — **ZERO ORDERS, HOLD. ⚠ THE PHASE'S FIRST LIVE RULE-7 BREACH, ARISING WITH NO HAND ACTION: UNH FELL -4.091% INTO A BROKER-RATCHETED STOP AND CLOSED THE GAP TO 2.852% (LOW 2.701%), INSIDE THE 3% FLOOR — AND EVERY AVAILABLE RESPONSE IS BARRED BY ANOTHER RULE. ⚠ THE PRE-MARKET'S #2 RISK LANDED IN FULL: XLV IS 11th OF ELEVEN, XLP 6th, BOOK -0.5886 pts BEHIND SPY — FIRST LOSING OPEN IN FOUR SESSIONS, AND ~0.61 OF THE 0.82 pt LOSS IS UNH ALONE. ✓ IMPORT/EXPORT PRICES VERIFIED VERBATIM AND HOT (IMPORT +1.1% m/m, +3.6% y/y). ⚠ RETAIL SALES CAME BACK AT EXACTLY CONSENSUS AFTER TWO "NOT YET AVAILABLE" ANSWERS AND FAILED VERBATIM RE-VERIFICATION — REFUSED AS THE PRINT. ✓ THE 10-YEAR YIELD IS FINALLY WIRE-SOURCED: AP 11/17, 5.13%. ⚠ CLX UNWIRED AND UNDENIED, 11th CHECK, AND ITS SPREAD SIGNAL FLIPPED TO TIGHTEST OF FIVE.**
+
+### Account — first-party `account` / `positions`, locked 09:37:10 ET (14:37:10Z)
+| Field | Value |
+|---|---|
+| Equity | **$100,384.68** |
+| `last_equity` (11/16 settled) | $101,212.91 |
+| Session move | ⚠ **-0.8183%** |
+| Cash | $24,906.78 |
+| Long market value | $75,477.90 |
+| Deployment | **75.1887%** — in band |
+| Rule 2 cushion | **$189.39**; floor breaches at **LMV -1.0037%** (LMV floor = 3 × cash = $74,720.34) |
+| Positions / open orders | **5 / 5** — one 10% GTC trailing stop per sleeve, 5/5 coverage, all `status new` |
+| Total unrealized | **+$2,068.00** |
+| `daytrade_count` / `pattern_day_trader` | ⚠ **ABSENT — 11th run.** PDT headroom unverifiable first-party |
+
+| Sleeve | Qty | Entry | Mark | Unreal. | % equity | Session | Stop | Gap | hwm | R6 gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.6906 | $109.180 | **+7.365%** | 10.1148% | -0.899% | $99.882 | 8.516% | $110.98 | $116.944 |
+| GEHC | 132 | $76.43 | $82.865 | **+8.419%** | 10.8963% | -0.115% | $78.804 | 4.901% | $87.56 | **$87.895 (-$5.03)** |
+| MCD | 72 | $270.20 | $274.650 | +1.647% | 19.6990% | -0.007% | $255.177 | 7.090% | $283.53 | $310.730 |
+| TPR | 148 | $133.49 | $132.425 | **-0.798%** | 19.5238% | -0.395% | $123.687 | 6.598% | $137.43 | $153.513 |
+| **UNH** | 38 | $385.71 | $395.165 | +2.451% | 14.9587% | ⚠ **-4.091%** | $383.895 | ⚠ **2.852%** | $426.55 | $443.566 |
+
+### ⚠ THE RUN'S HEADLINE — RULE 7 BREACHED BY PRICE ACTION, AND THE RULEBOOK HAS NO BRANCH FOR IT
+- ⚠ **UNH's trail `5d48b1e5` sits $383.895 against a $395.165 mark — a 2.852% gap, inside rule 7's 3% floor. The low read was 2.701% at 09:35.** The trail was **4.317%** clear at the pre-market read six hours earlier.
+- ⚠ **No run did anything. The stop has only ever ratcheted UP (hwm $426.55, broker-driven). The breach was manufactured entirely by price falling toward it.**
+- ⚠ **AND EVERY RESPONSE IS BARRED:** rule 7 forbids *placing* a stop within 3%; **"never move a stop down"** forbids widening the gap; rule 6's +15%/+20% gates are the only sanctioned stop moves and sit **$48.40** away; rule 5's cut line is **9.23%** below and UNH is **green (+2.451%)**. **There is no in-rules action.**
+- ✓ **Handled per the standing instruction for this class — logged, escalated, no remedy invented. Nothing cancelled, nothing replaced, nothing cut.**
+- ⚠ **Secondary hazard, named and not acted on: at 09:35 UNH's bid printed $378.81 — BELOW the stop — against a $412.08 ask (8.413% wide).** The latest **trade** was $394.55 and the order remains `new`, so nothing triggered. **But a 2.85% stop under an opening book that wide is reachable by quote noise rather than by a real move.**
+- ⚠ **This converts the rule 4-vs-6 geometry defect from a theoretical escalation (5 weeks) into a live instance. New owner decision in handoff (xii) of the TRADE-LOG entry.**
+
+### ✓ HANDOFF (i) DISCHARGED — IT SPLIT, AND THE SPLIT IS THE LESSON
+| 08:30 ET print | Result | Verdict |
+|---|---|---|
+| **Import price index, Oct** | ⚠ **+1.1% m/m, +3.6% y/y** | ✓ **VERIFIED VERBATIM** (BLS, cited `ximpim_11172026.htm`) |
+| **Export price index, Oct** | **+1.1% m/m, +1.2% y/y** | ✓ **VERIFIED VERBATIM** |
+| **Advance retail sales, Oct** | ⚠ **"+0.2%" = CONSENSUS EXACTLY** | ⚠ **UNVERIFIED — REFUSED AS THE PRINT** |
+| Retail sales ex-autos / control | NOT AVAILABLE | — |
+| Industrial production (09:15) | NOT AVAILABLE | — |
+
+- ✓ **The import/export read survived adversarial re-verification.** A verbatim query returned the release's opening sentences with **distinct y/y figures and distinct prior months** (Sept import +1.1%, export +2.4%) — so the matching +1.1% m/m is coincidence, not duplication. ⚠ **Import prices +3.6% y/y on a second consecutive +1.1% month is inflation-hawkish and reads across to four of five rate-sensitive sleeves. No trigger fires.**
+- ⚠ **Retail sales reproduced the 11/10 CPI failure signature exactly and was refused on that basis.** Queries at 08:38 and 08:39 ET returned **"NOT YET AVAILABLE"** and *explicitly excluded* +0.2% as a forecast. A 09:31 query returned **+0.2%** — consensus to the decimal. A verbatim re-query **could not verify** the Census headline sentence. ✓ **Not filed as the print; no read-across to MCD + TPR drawn from it.**
+- ⚠ **`bls.gov` and `census.gov` both http=000 — `bls.gov` is a NEW host tested this run.** The pre-market's network-policy finding is **confirmed and widened**; cited-URL provenance (decision 10) is the only workable standard and is what both verdicts rest on.
+
+### ✓ THE 10-YEAR TREASURY YIELD — OBTAINED, AFTER THREE RUNS OF "UNOBTAINABLE FIRST-PARTY"
+- ✓ **AP, dated 2026-11-17: 10-year at 5.13%, down from 5.15% late Friday.** A second 11/17 item: **5.12%**. **Rule 14 satisfied.**
+- ✓ **It vindicates the carried figures: the unverified 11/13 item of 5.172% and the 11/16 non-permitted "above 5.00%" were both directionally right. They can be replaced rather than carried.**
+- ✓ **Independent corroboration from an unexpected direction: MCD filed a 424B2 dated 11/17 for $600M of 5.6% notes due 2036. A 5.6% 10-year IG corporate coupon is consistent with a 5.13% Treasury.** Logged as corroboration, not as a yield quote.
+
+### ⚠ THE CONCENTRATION CALL INVERTED — AND ONE SLEEVE IS MOST OF IT
+| Rank | Sector | 1-day | | Rank | Sector | 1-day |
+|---|---|---|---|---|---|---|
+| 1 | XLE | +0.6830 | | 6 | **XLP** ← *book* | ⚠ **-0.2160** |
+| 2 | XLI | +0.2535 | | — | *SPY* | *-0.2297* |
+| 3 | XLB | +0.1749 | | 7 | XLK | -0.2671 |
+| 4 | **XLY** ← *book* | ✓ **+0.0931** | | 8 | XLRE | -0.3503 |
+| 5 | XLC | -0.0468 | | 9 | XLU | -0.6573 |
+| | | | | 10 | XLF | -0.6875 |
+| | | | | 11 | ⚠ **XLV** ← *book* | ⚠ **-0.7372** |
+
+- ⚠ **Book -0.8183% vs SPY -0.2297% = -0.5886 pts. First losing open in four sessions.** XLV went 2nd → **last**; XLP 1st → **6th, below SPY**.
+- ⚠ **But the cause is NOT a broad defensive unwind: UNH alone (-4.091% on 14.9587% of equity) is ≈ -0.61 of the -0.82 pt move.** Stated plainly so no later run reads this as the XLP/XLV thesis breaking.
+- ✓ **XLY — the leg rule 9 has been weakest on — is the only book sector above water (4th of eleven), the exact inverse of yesterday.** MCD -0.007% and TPR -0.395% are near-flat: ✓ **the HD comps beat did not transfer as a negative, as the pre-market predicted.**
+- ⚠ **Basis caveat: IEX RTH 1Min closes against SIP daily closes, because SIP returned ZERO RTH bars.** Mixed-feed; directionally sound, not struck to the basis point.
+- **GOVERNING phase lead, settled: +5.9003 pts** (book +1.2129%; SPY $739.95 vs $776.34 = -4.6874%). ⚠ **Pre-market filed +5.8887 off a $740.04 SPY close — a $0.09 difference, joining the reconciliation list.** **Live intraday +5.2911 pts, NOT filed.**
+
+### ⚠ UNH — 3rd CONSECUTIVE CHECK, NO DATED CAUSE, AND ONE CANDIDATE MECHANISM RULE 14 BARS USING
+- ⚠ **All three questions answered separately and negatively:** no Reuters/AP/Bloomberg/AFP item dated 11/16-11/17; no UnitedHealth release or 8-K since **11/09**; no DOJ/CMS action dated 11/16-11/17 (only CMS enforcement on file against UNH is dated **2026-05-01**).
+- ⚠ **FIRST PLAUSIBLE DATED MECHANISM IN THREE CHECKS — AND IT IS NOT A WIRE: a CMS anti-fraud rule proposal styled "CRUSH", proposed 11/16, targeting ~$90B in savings** via tighter provider screening, expanded Medicare Advantage fraud reporting, more Medicaid oversight and more authority over ACA marketplace brokers. ⚠ **Trade-press sourced (Becker's Payer); no wire, no reachable CMS statement.** ✓ **Logged as a candidate, NOT written into the thesis, NOT used to explain the price.** It is the only thing that would explain **XLV finishing 11th on a day with no other health-care news** — which is precisely why it needs a wire. **Handed to the midday to wire-confirm.**
+- ✓ **Rule 14 applied one-directionally: the absence of a wire did NOT dismiss the price.** The price fires no trigger — UNH is **+2.451%**, **9.23%** clear of its cut line — **but it produced the rule-7 breach above.**
+
+### ⚠ CLX — 11th UNWIRED-AND-UNDENIED CHECK, AND ITS SPREAD SIGNAL REVERSED
+- ⚠ **Three separate negatives, aggregators excluded by name: (1)** no wire dated 11/14-11/17 confirming takeover/bid interest; **(2)** no Clorox statement or 8-K dated 11/14-11/17 — latest **11/02**; **(3)** no SEC filing dated 11/14-11/17 — filings on file **11/02, 11/05, 11/10**. ✓ **Research stated explicitly that it treated no page-update timestamp as a publication date** — the exact fault that contaminated the 11/16 checks, not repeated.
+- ⚠ **"No dated item" is NOT a denial.** The premium is intact and undenied for an **11th** check. Sleeve **+7.365%**, **10.1148%** of equity, trail **8.516%** below the mark. ⚠ **A denial still gaps through it. No remedy invented.**
+- ⚠ **AND YESTERDAY'S CORROBORATION DID NOT PERSIST: CLX was the sole sleeve that WIDENED into the 11/16 midday (10.408%, read as name-specific illiquidity). Today CLX is the TIGHTEST of five at 0.587% while the other four are 6.8-11.5% wide.** ✓ **The premium itself is unaffected — it rests on the wire checks, not the spread — but the illiquidity signal should not be re-cited without re-testing.**
+
+### ⚠ RULE 13 — 26th OCCURRENCE, AND NO FIGURE IN THIS ENTRY COMES FROM THIS TABLE
+| Symbol | Bid | Ask | Spread | Age |
+|---|---|---|---|---|
+| **CLX** | $108.74 | $109.38 | ✓ **0.587%** | 0.0 min |
+| GEHC | $77.60 | $87.08 | ⚠ **11.513%** | 0.0 min |
+| MCD | $257.19 | $286.65 | ⚠ **10.834%** | 0.0 min |
+| TPR | $123.97 | $132.67 | ⚠ 6.780% | 0.0 min |
+| UNH | $378.81 | $412.08 | ⚠ **8.413%** | 0.0 min |
+| *SPY (control)* | *$737.87* | *$737.90* | *0.004%* | *0.0 min* |
+
+- ✓ **These reads are 7 minutes after the bell — inside the opening-auction window the 11/16 midday identified. Per that run's handoff (xi), a wide book must be re-read 30+ min after the bell before being called name-specific. This run does NOT call any of them name-specific, and uses none of them in any calculation.** Marks come from `positions` and latest-trade prints only.
+
+### The tape — dated wires, 11/17
+- ⚠ **Reuters / AP / Bloomberg, all 11/17: renewed AI/chip selling, tightening US AI-chip export restrictions, and an Nvidia leadership crisis ahead of tonight's print.** ✓ **The 11/12 ouster story has RESOLVED: Colette Kress is interim CEO.** NVDA fell **4.1%** in the prior session, the index's heaviest drag. **The book holds zero XLK** — it cannot be hit directly and cannot participate in a relief rally.
+- ⚠ **December 9 FOMC: ~90% odds of 25bp, ~10% larger, effectively no hold — but NO qualifying wire carried a CME FedWatch figure dated 11/17.** Logged **non-wire**; consistent with, not an upgrade on, Reuters 11/16.
+- ⚠ **No wire reported the market's *reaction* to the 08:30 prints** — Reuters' 11/17 item only previewed them. **Not invented.**
+- ⚠ **FOMC minutes Wed 11/18 14:00 ET.** federalreserve.gov unreachable; the time rests on cited-URL provenance, **not** a first-party fetch.
+
+### Decision — **HOLD. ZERO ORDERS. 9th CONSECUTIVE ZERO-ORDER SESSION.**
+- **Nothing was staged by the pre-market and nothing was pre-authorized. No rule trigger was met on any of the fifteen tests** — except rule 7, which is **breached with no permitted response** and is therefore reported, not traded.
+- **Rule 8 has 3 of 3 slots open and rule 2 is in band at 75.1887%. No deployment mandate exists and none was invented** (rule 11).
+- ⚠ **ICE / CME remain WATCH, NOT AUTHORIZED** — ICE's gate is ≤$157.71; CME has no dated target so "min 2:1" cannot be tested. **Decision 1's mechanism, 10th consecutive session as the binding reason.**
+
+### ⚠ CONFIRMATION RE-READ 09:41:19 ET
+- ⚠ **UNH $393.110, -4.590% (new session low on this run's reads). Rule-7 gap narrowed 2.852% → 2.344% — the breach is DEEPENING.** Still no permitted action; sleeve still green (+1.918%). Nothing cancelled, replaced or cut.
+- ✓ **Quote-noise hazard CLEARED: UNH's spread collapsed 8.413% → 1.020% in six minutes and the bid ($390.06) is back ABOVE the stop.** ✓ **Second independent confirmation of the 11/16 midday's rule-13 narrowing — the 8.4% book at 09:35 was an opening-auction artifact, not UNH illiquidity.**
+- **Equity $100,231.80, session -0.9694%, deployment 75.1508% (in band).** Gaps: CLX 8.045%, GEHC **4.462% (2nd-tightest, narrowing)**, MCD 7.121%, TPR 6.679%.
