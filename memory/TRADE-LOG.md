@@ -3847,3 +3847,197 @@ TPR, same session, same position, nothing touched:
 - ⚠ **(xii) TOOLING, NONE SELF-APPLIED (shared live-trading scripts):** (1) ⚠ **ESCALATED WITH A CAUSE ATTACHED — the one-line `snapshot`/`quote` `feed=sip` fix is now in its 46th session, and this run shows it has been silently manufacturing rule 13's evidence for 27 occurrences.** This is no longer a convenience item; **it corrupts an analytical rule.** (3) `scripts/perplexity.sh` needs 429 retry/backoff; (4) `bars feed=sip` returned zero RTH bars at the 11/17 open while `feed=iex` worked — **same root cause as (1)**; (6) VIX still has no first-party source — **45th session**; (10) `daytrade_count`/`pattern_day_trader` absent from `account` — **12th run**, PDT headroom unverifiable first-party; (11) no `trades` subcommand. ⚠ **Network policy confirmed: `bls.gov`, `census.gov`, `federalreserve.gov`, `ir.homedepot.com` and `reuters.com` all http=000** — ✓ **but decision 10's cited-URL provenance worked on cms.gov and census.gov content this run, twice, with verbatim verification. The method is proven; the direct fetch remains impossible.**
 - **All owner decisions (1, 6, 7, 8, 9, 10 and the rule 4-vs-6 geometry defect — now with a RESOLVED live rule-7 instance rather than an open one) carry forward into this run's notification and every subsequent run's, until answered or withdrawn (rule 15).**
 - **Persistence (rule 12): this entry and the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run.**
+
+---
+
+## 2026-11-18 — Market-Open Execution (Day 68, Wednesday, fired 08:36 ET / RTH work 09:31-09:40 ET, locked read 09:36-09:40 ET, market OPEN) — **⚠ ONE EXECUTION, AND NO HAND PLACED IT: THE PHASE'S FIRST STOP-OUT. UNH's OWN GTC TRAILING STOP `5d48b1e5` TRIGGERED AT 09:32:56 AND FILLED 38/38 BY 09:34:26 ET AT $384.42921 — REALIZED **-$48.67 (-0.3321%)**. ✓ THE DOUBLE RULE-7 BREACH THE PRE-MARKET COULD NOT CURE WAS RESOLVED BY THE STOP DOING ITS JOB, WHICH IS EXACTLY WHAT THE 11/17 MIDDAY SAID WOULD BE THE *CORRECT* OUTCOME — NOT A DEFECT. ⚠ BUT THE EXIT TRADED ONE BREACH FOR A BIGGER ONE: RULE 2's FLOOR WENT FROM A 0.13-POINT MISS TO **59.9650% vs 75%, A 15.04-POINT BREACH THAT IS NOW UNCURABLE BY PRICE** — WITH CASH AT $39,515.09 IT NEEDS **+100.29% IN LMV** TO SELF-CURE, SO ONLY A **$14,839.77 PURCHASE** FIXES IT. DECLINED FOR NAMED REASONS 4.5 HOURS AHEAD OF FOMC MINUTES. ⚠ NEW OWNER DECISION 12, AND IT IS THE SHARPEST RULE QUESTION OF THE PHASE: **RULE 10 MAY NOW BE TRIGGERED IN HEALTH CARE — XLV -2.4749% (8/31) AND UNH -0.3321% (TODAY) ARE TWO CONSECUTIVE CLOSED LOSSES, AND THE RULE'S REMEDY WOULD BE TO CLOSE GEHC, THE BOOK'S BEST SLEEVE (+7.9157%) AND THE ONLY ONE WHOSE STOP SITS ABOVE ENTRY.** NOT CLOSED — THE CAUTIOUS HALF APPLIED INSTEAD. ⚠ MCD RE-BREACHED RULE 3 (20.1094%). ⚠ TPR IS **0.7311% FROM ITS RULE-5 CUT** AND THE CUT STILL FIRES $0.4587 **BEFORE** ITS TRAIL.**
+
+### Step 1 — THE ONE EXECUTION OF THE DAY, AND THIS RUN DID NOT PLACE IT
+| Field | Value |
+|---|---|
+| Order | `5d48b1e5-37eb-4fca-8746-bd006b7fdfee` — **pre-existing 10% GTC trailing stop, submitted 10/22** |
+| Symbol / side / qty | **UNH / sell / 38 (filled 38, `status: filled`)** |
+| Trigger | `stop_price` **$383.895** (hwm $426.55, trail 10%) |
+| Triggered at | **2026-11-18T14:32:56Z = 09:32:56 ET** |
+| Filled at | **2026-11-18T14:34:26Z = 09:34:26 ET** |
+| Fill sequence (first-party `activities FILL`) | **25 @ $384.38 → 4 @ $384.46 → 4 @ $384.53 → 5 @ $384.57** |
+| `filled_avg_price` | **$384.42921** — ✓ verified against the four fills, avg = $384.42921 to the cent |
+| Entry (10/13) | $385.71 |
+| **Realized P&L** | ⚠ **-$48.67 = -0.3321%** (proceeds $14,608.31 vs cost $14,656.98) |
+| ✓ Slippage | **the fill BEAT the stop by +0.1392%** ($384.42921 vs $383.895) |
+
+- ✓ **NO ORDER WAS PLACED, CANCELLED, MODIFIED OR WIDENED BY THIS RUN. The exit was the broker executing an order placed 27 days ago.** Handoff (i) said *"do NOT cancel, replace or widen any of the five stops"* — **it was obeyed, and the stop then did the only thing it was ever there to do.**
+- ✓ **THE PRE-MARKET CALLED THIS 100 MINUTES AHEAD AND NAMED THE SLEEVE: handoff (iv) — *"UNH IS THE BOOK'S MOST FRAGILE SLEEVE ON EVERY MEASURE — rule-7 gap 1.4846%, stop 0.4706% BELOW entry, 14.9421% of equity."*** **It read $384.80 at 09:31 (gap 0.2352%, the tightest of the phase), printed a $383.325 low, and the stop filled.**
+- ⚠ **AND THE "STOP BELOW ENTRY" GEOMETRY DEFECT COLLECTED ITS FIRST ACTUAL BILL. UNH's stop sat 0.4706% BELOW its entry, so a sleeve that was +1.029% as recently as 11/17's close exited at a LOSS.** ✓ **This is the live, realized instance of the rule 4-vs-6 geometry defect that has been the most urgent owner decision for six weeks. It is no longer hypothetical: it cost -$48.67 on this one sleeve, and it is still live on CLX (-1.7786%), MCD (-5.5601%) and TPR (-7.3436%).**
+
+### Step 2 — Account state, first-party, after the fill
+| Field | Pre-market (07:42 ET) | **This run (09:40 ET)** |
+|---|---|---|
+| `last_equity` (11/17 settled) | $99,101.56 | $99,101.56 |
+| Equity — **valued at live SIP prints** | $98,733.48 (after-hours marks) | **$98,701.27** |
+| Cash | $24,906.78 | ⚠ **$39,515.09** (+$14,608.31 from the UNH fill) |
+| Long market value | $74,194.78 | **$59,186.18** |
+| Positions | **5** | ⚠ **4** — CLX, GEHC, MCD, TPR |
+| Open orders | 5 (5/5 stop coverage) | ✓ **4 (4/4 coverage)** |
+| `daytrade_count` / `pattern_day_trader` | absent | ⚠ **STILL ABSENT — 14th run.** PDT headroom unverifiable first-party |
+| Rule 8 headroom | 3 of 3 | ✓ **3 of 3 — the UNH exit is not a new trade** |
+
+- ⚠ **Broker equity reads $98,687.63 / LMV $59,172.54 — $13.64 below the SIP-valued figure. Per handoff (vii) the book is valued at `bars … feed=sip`, so $98,701.27 governs, and the $13.64 is recorded as a feed difference, NOT re-opened as a reconciliation item.**
+- ✓ **The UNH exit was not a day trade** — bought 10/13, sold 11/18. **No PDT consumption.**
+
+### Step 3 — Rule-by-rule gate table, all four remaining sleeves, live SIP prints 09:40 ET
+| Sleeve | Qty | Entry | **Live** | % equity | Rule 3 breach px | Rule 7 gap | Rule 5 cut px | To cut | P/L | Stop vs entry |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ⚠ **MCD** | 72 | $270.2000 | **$275.67** | ⚠ **20.1094%** | **$273.7952** ⚠ **BREACHED by 0.680%** | 7.4341% | $251.2860 | -8.8454% | **+2.0244%** | ⚠ -5.5601% |
+| ⚠ **TPR** | 148 | $133.4900 | **$125.06** | 18.7524% | $135.4601 (+8.316%) | ⚠ **1.0979%** | **$124.1457** | ⚠ **-0.7311%** | ⚠ **-6.3151%** | ⚠ **-7.3436%** |
+| **GEHC** | 132 | $76.4300 | **$82.48** | 11.0306% | $166.3142 (+101.642%) | 4.4568% | $71.0799 | -13.8217% | ✓ **+7.9157%** | ✓ **+3.1061%** |
+| **CLX** | 93 | $101.6906 | **$106.90** | 10.0725% | $238.6010 (+123.200%) | 6.5650% | $94.5723 | -11.5320% | **+5.1227%** | ⚠ -1.7786% |
+
+- ✓ **Rule 4: 4/4 coverage, every stop a real 10% GTC trailing order, NONE touched by hand** — `441a7ba8` CLX, `13dd3b34` GEHC, `1a224b95` MCD, `bddb11b5` TPR. ⚠ **NOT ONE `hwm` RATCHETED: CLX $110.98 (11/16), GEHC $87.56 (11/04), MCD $283.5295 (11/10), TPR $137.43 (11/10). No sleeve has printed a new high in two sessions.**
+- ✓ **Rule 6: no tighten gate armed.** Nearest is GEHC at **+7.9157%** of the required +15% — gate price **$87.8945**, **+6.5646%** away.
+- ⚠ **MCD RE-BREACHED RULE 3 WITHIN THE HOUR, AND THE BASIS-FLIP HANDOFF (i) WARNED OF IS NOW DOCUMENTED THREE WAYS ON ONE MORNING: 20.0391% (11/17 SIP close) → 19.9519% (after-hours marks) → 19.9835% (09:32 live) → ⚠ 20.1094% (09:40 live).** **The sleeve crossed the cap twice in eight minutes on nothing but a $2.25 move.** ✓ **No number was inherited and none was cured by hand** (handoffs iii + viii; `qty_available` 0 means any trim unstops a 20%-of-equity sleeve against rule 4; decision 8 unanswered).
+
+### Step 4 — ⚠ THE RUN'S STRUCTURAL FINDING: THE EXIT TRADED A 0.13-POINT BREACH FOR A 15.04-POINT ONE, AND THIS ONE CANNOT SELF-CURE
+| | Pre-market 07:42 ET | **This run 09:40 ET** |
+|---|---|---|
+| Deployment | ⚠ 74.8674% | ⚠ **59.9650%** |
+| Breach vs 75% floor | **0.1326 pts** ($525.56 of LMV) | ⚠ **15.0350 pts** ($14,839.77 of LMV) |
+| **Cure by price alone** | +0.7084% of LMV | ⚠ **+100.29% of LMV — UNREACHABLE** |
+| **Cure by purchase** | $525.56 (0.53% of equity) | **$14,839.77 (15.0350% of equity)** |
+
+- ⚠ **THIS IS A DIFFERENT KIND OF BREACH FROM YESTERDAY'S AND THE DIFFERENCE IS THE POINT. The 11/18 pre-market breach was a rounding-margin miss that a single good session would erase. This one is structural: with cash at $39,515.09, LMV would have to DOUBLE for the book to be 75% deployed. No price path gets there. Only a purchase does.** ✓ **Stated plainly so no later run waits for it to self-cure the way UNH's rule-7 breach did on 11/17.**
+- ⚠ **AND IT SHARPENS DECISION 11 RATHER THAN ANSWERING IT.** The pre-market asked whether rule 2's floor is a hard same-day constraint or a tolerance band, and read a 0.13-point miss as a band. ⚠ **A 15.04-point miss is not a rounding question.** **Decision 11 now carries a magnitude that makes it unavoidable, and it is the gating input to every subsequent run's buy/no-buy call.**
+
+### Step 5 — THE BUY WAS WORKED PROPERLY AND DECLINED. ZERO HAND ORDERS.
+⚠ **Rule 2 now argues for a purchase far more loudly than it did at 07:42, so the ideas were re-worked from scratch on live prints rather than inherited.**
+
+| Candidate | Catalyst | Rule 9 (1-month) | Verdict |
+|---|---|---|---|
+| **TGT** | ✓ beat-and-**raise**, dated company release 11/18 | XLY 3rd of 11 | ⚠ **REJECTED — concentration.** MCD + TPR are already **38.86% of equity** inside XLY; a third XLY name takes it to ~54%, and there is **no sector cap in the rulebook to stop it** (decision 7, uncapped, 7th week) |
+| **TJX** | ✓ comps **+4%** vs its own +2-3% guide | XLY 3rd of 11 | ⚠ **REJECTED — same sector, same objection** |
+| **NVDA** | ✓ genuine beat-and-raise, Q4 guide ~$130bn | ⚠ **XLK 11th of 11, -11.015%** | ⚠ **REJECTED — rule 9 bars the sector; rule 11 bars chasing a +1.05% day after a gap** |
+| **Any health-care name** | — | XLV 1st of 11 | ⚠ **BARRED BY THIS RUN'S OWN RULE-10 READ — see Step 6** |
+
+- ⚠ **AND THE BINDING OBJECTION IS THE CLOCK, STATED WITHOUT HEDGING: FOMC MINUTES LAND AT 14:00 ET, WILLIAMS AT 14:30, A 20-YEAR AUCTION AT 13:00, KASHKARI AT 16:15 — AND **100% OF THIS BOOK'S EQUITY IS IN RATE-SENSITIVE SECTORS** into a 96.7%-priced December **hike** and a 5.10% 10-year.** **Deploying 15% of equity into a brand-new position 4h20m before the dominant event of the week, unattended, to satisfy a deployment band, is the "bad trade wearing a compliance justification" the pre-market named. It was declined again, on a breach 113x larger.**
+- ⚠ **THE STRUCTURAL BLOCKER IS ALSO UNCHANGED AND IT IS NOT A JUDGMENT CALL: no primary-source dated price target is obtainable in this environment (decision 1), so NO candidate has an establishable 2:1 R:R — which the Entry Checklist requires. Every candidate fails the checklist on that line alone, before concentration or the calendar are reached.**
+- ✓ **Rule 8: 0 of 3 new trades used. Rule 3: 4 of 5-6 slots used — TWO slots open. Rule 11: patience > activity. HOLD.**
+
+### Step 6 — ⚠ NEW OWNER DECISION 12 — RULE 10 MAY BE TRIGGERED IN HEALTH CARE, AND ITS REMEDY WOULD BE TO SELL THE BOOK'S BEST SLEEVE
+**Rule 10: "Exit a sector after 2 consecutive failed trades."** **The closed health-care trade history, first-party from `orders` and `activities`:**
+
+| # | Trade | Opened | Closed | Result |
+|---|---|---|---|---|
+| 1 | **XLV 108 sh** @ $174.375648 → $170.06 | 8/24 | 8/31 | ⚠ **LOSS -$466.09 (-2.4749%)** |
+| 2 | **UNH 38 sh** @ $385.71 → $384.42921 | 10/13 | **11/18 (today)** | ⚠ **LOSS -$48.67 (-0.3321%)** |
+| — | **GEHC 132 sh** @ $76.43 | 10/28 | ⚠ **STILL OPEN** | ✓ **+7.9157%** |
+
+- ⚠ **ON CLOSED TRADES THAT IS TWO CONSECUTIVE FAILURES IN HEALTH CARE, WITH NO WINNING CLOSED HEALTH-CARE TRADE BETWEEN THEM. Read literally, rule 10 fires and the remedy is to exit the sector — which means closing GEHC: the book's BEST sleeve at +7.9157%, and the ONLY one of four whose stop sits ABOVE its entry (+3.1061%), i.e. the only sleeve that can currently exit green through its own stop.**
+- ⚠ **GEHC WAS NOT CLOSED, AND THE REASONING IS STATED RATHER THAN ASSUMED, BECAUSE THE RULE IS GENUINELY AMBIGUOUS ON FOUR POINTS:**
+  - **(a)** Does rule 10 count **closed** trades only? GEHC was opened **between** the two losses (10/28, after 8/31, before 11/18) and is winning — so the "consecutive" run is only unbroken if open positions are excluded from the count.
+  - **(b)** Does "exit a sector" mean **close existing positions**, or **stop opening new ones**? The rulebook does not say, and the two readings differ by a $10,872 sale of a winner.
+  - **(c)** Is a **-0.3321%** stop-out a "failed trade"? It is a loss arithmetically, but it is a **stop-geometry** exit on a thesis that never broke — the 11/17 midday tested the UNH thesis against CRUSH explicitly and it **held**.
+  - **(d)** Is **XLV-the-ETF** the same "sector" as **a single health-care stock** for counting purposes?
+- ✓ **SO THE CAUTIOUS HALF OF RULE 10 WAS APPLIED IMMEDIATELY AND THE IRREVERSIBLE HALF WAS NOT: NO NEW HEALTH-CARE POSITION MAY BE OPENED UNTIL THE OWNER RULES.** **That is free — it forecloses nothing and it honours the rule's evident purpose (stop feeding a sector that has failed twice).** ⚠ **Selling a +7.9157% position unattended on a contested reading of an ambiguous rule is NOT free and was not done.** **Escalated as decision 12.**
+- ⚠ **NOTE THE INTERACTION, BECAUSE IT IS WHY THIS MATTERS TODAY AND NOT NEXT WEEK: health care is XLV, **1st of eleven on the 1-month window**, and it is the one sector where this book has room (GEHC alone, 11.03% of equity). **Decision 12 therefore removes the only uncongested sector from the rule-2 cure set** — XLY is 38.86% concentrated, XLK is 11th of eleven, and health care is now self-barred. **Decisions 11 and 12 are coupled and should be answered together.**
+
+### Step 7 — THESIS CHECK ON THE REMAINING FOUR: NO THESIS BROKE. NO POSITION CUT BY HAND.
+- ⚠ **TPR IS THE URGENT ONE AND IT DETERIORATED AGAIN: -5.701% (09:32) → **-6.3151%** (09:40), which is **0.7311% from the rule-5 manual cut** at $124.1457.** ⚠ **AND THE CUT-BEFORE-TRAIL DEFECT IS NOW ALL BUT ARMED: the cut sits $0.4587 ABOVE the trail ($123.687), so rule 5 fires FIRST and the trailing stop is pre-empted.** **Distance to the defect firing has collapsed 5.145% (11/17 midday) → 2.278% (11/18 pre-market) → **0.7311%** (now).**
+- ✓ **AND TPR STILL HAS NO COMPANY CAUSE — RE-CHECKED THIS RUN, ALL FIVE CATEGORIES NEGATIVE AND SEPARATELY STATED:** no analyst downgrade, no price-target cut, no guidance change, no company statement, no SEC filing dated 11/17-11/18. ✓ **Research added that the dated wires discuss broad technology-led selling and do not identify Tapestry at all.** **The most recent guidance action remains an INCREASE (FY27 revenue $8.5-8.6bn).** ⚠ **So rule 5 is about to cut a position whose thesis is intact and whose guidance was raised — logged now, before it fires, so the midday run does not have to decide that under time pressure.**
+- ✓ **MCD, GEHC, CLX: no thesis-breaking item.** GEHC is +0.782% on the session and the book's best sleeve; MCD -0.054%; CLX +0.187%.
+- ✓ **UNH's EXIT WAS NOT A THESIS EXIT AND IS NOT RECORDED AS ONE.** The 10/13 thesis — **Q3 beat-and-raise, adj EPS $4.69 vs $4.14, FY26 guide raised to ≥$20.50** — was tested against CRUSH on 11/17 and **held**. **The position was closed by stop geometry, not by a broken thesis.** ⚠ **That distinction is the whole of decision 12(c).**
+
+### Step 8 — ⚠ HANDOFF (iii) RE-CHECKED: CRUSH PUBLISHES TOMORROW AND BOTH OPEN WATCH ITEMS ARE STILL NEGATIVE
+| Watch item | Result, 11/18 |
+|---|---|
+| **(a)** UNH company statement, release or 8-K responding to CMS-6098-P | ⚠ **NO DATED ITEM** — explicit negative, 11/17-11/18 |
+| **(b)** Wire (Reuters/AP/Bloomberg/AFP) quantifying the MA-specific impact | ⚠ **NO DATED ITEM** — explicit negative |
+| Federal Register publication | ✓ **Still dated 11/19 (doc 2026-23461, comments due 1/19/27)** |
+
+- ✓ **AND RESEARCH POLICED THE SOURCE QUALITY ITSELF, UNPROMPTED: it noted that a 11/18 market article attributing UNH's 11/17 fall to "renewed regulatory scrutiny" is market commentary, NOT a dated qualifying item, and declined to count it.** ✓ **Decision 6's 35th run; it refused to upgrade commentary into evidence.**
+- ⚠ **THE IRONY IS WORTH RECORDING: the desk spent three runs establishing CRUSH under rule 14, carried it correctly as a risk rather than a trigger, confirmed the thesis held — and then lost the position anyway, to a stop set on 10/22 from a $426.55 high, one day before the rule publishes.** ✓ **Rule 14 was applied correctly throughout. It was never the binding constraint. Stop geometry was.**
+
+### Step 9 — The tape, first-party SIP, 09:40 ET — and the pre-market's ranked risk #4 landed
+| Rank | Sector, 1-day live | | Rank | Sector, 1-day live |
+|---:|---|---|---:|---|
+| **1** | ⚠ **XLK +1.0535** | | 7 | ⚠ **XLV -0.4427** ← *book* |
+| **2** | ✓ **XLY +0.4782** ← *book* | | 8 | XLF -0.4654 |
+| — | *SPY +0.2649* | | 9 | XLRE -0.4818 |
+| 3 | XLC +0.0143 | | 10 | ⚠ **XLP -0.6178** ← *book* |
+| 4 | XLI -0.0819 | | 11 | XLB -1.2589 |
+| 5 | XLU -0.2418 | | | |
+| 6 | XLE -0.4104 | | | |
+
+- ⚠ **THE PRE-MARKET's RISK #4 ARRIVED EXACTLY AS WRITTEN — "THE AI RELIEF RALLY IS A COST TO THIS BOOK, NOT A RISK TO IT." XLK is 1st of eleven at +1.0535% and the book owns ZERO technology.** ✓ **Cause is wire-sourced and dated: Reuters 11/18 — "AI stocks rally as Nvidia outlook calms demand fears."**
+- ✓ **RESEARCH REFUSED TO RUBBER-STAMP THE PREMISE THIS RUN FED IT, AND THAT IS RECORDED AS A CREDIT: asked to confirm that staples and health care were lagging, it answered that the dated 11/18 wires do NOT document that specific sector-ranking claim and declined to assert it.** ✓ **The first-party SIP tape governs the ranking (XLV 7th, XLP 10th); the wire governs the cause. Neither was allowed to overwrite the other — decision 6's 36th catch, again in the form of a refusal rather than an error.**
+- ⚠ **Rule 9 remains SPLIT BY WINDOW, and the window is named per decision 9: on the 1-month window the book's sectors are XLV 1st, XLP 2nd, XLY 3rd; on today's 1-day window they are 7th, 10th and 2nd. Decision 9 unresolved.**
+
+### Step 10 — ✓ OCTOBER HOUSING STARTS OBTAINED FROM THE PRIMARY RELEASE — AND THE MARGIN OF ERROR EATS THE HEADLINE AGAIN
+| Metric | Print | Margin of error |
+|---|---|---|
+| Housing starts, SAAR | **1.309mn, +9.9% m/m** (vs revised September) | ⚠ **±16.8%** |
+| Starts, y/y | **+2.8%** | ⚠ **±16.5%** |
+| Building permits, SAAR | **1.295mn, -7.4% m/m, -8.7% y/y** | **not stated in the retrieved release** |
+
+- **Provenance: citations resolve to `census.gov/construction/nrc/pdf/newresconst_202610.pdf` — the October release PDF (decision 10 cited-URL provenance).** ⚠ **Research stated explicitly that it could not return the complete verbatim headline SENTENCE, only the underlying figures — recorded as a partial verbatim, not a full one.**
+- ⚠ **AND THE LESSON FROM 11/17's RETAIL SALES REPEATS, LARGER: ±16.8% is nearly TWICE the +9.9% change. A +9.9% jump in starts with a ±16.8% error band is statistically indistinguishable from flat AND from a decline.** ✓ **No read-across is drawn from it, to rates or to anything else. The one unambiguous line is permits: -7.4% m/m and -8.7% y/y, both negative, direction not in doubt even without a stated band.**
+- ✓ **This also closes the pre-market's own gap honestly: the 08:30 print it flagged as "NOT seen" was obtained, and the first two queries of this run returned explicit NOT AVAILABLE before the third reached the release.**
+
+### Step 11 — ⚠ CLX: 14th CONSECUTIVE UNWIRED-AND-UNDENIED, ALL THREE ANSWERED SEPARATELY
+- **Re-run in both directions with aggregators excluded by name** (Betaville, Seeking Alpha, Benzinga, Zacks, StockTwits, X/Twitter, TipRanks, Investing.com, Motley Fool, TradingView). **Results, separately stated:** **(1)** no Reuters/AP/Bloomberg/AFP item dated 11/14-11/18 confirming **or denying** takeover/acquisition/buyout/merger/bid interest; **(2)** the only dated Clorox item is **product news — "Clorox Purell ProCare Unveils Healthcare Surface Innovations … at ISSA 2026", 11/17**; **(3)** no Clorox SEC filing dated 11/14-11/18 — latest is the **8-K of 11/02** (accession 0000021076-26-000044).
+- ✓ **RESEARCH POLICED THE DATE FAULT ITSELF FOR A FOURTH CONSECUTIVE RUN, UNPROMPTED: it stated that "the November 18 date shown on the website reflects an update/refresh, not the release date."**
+- ⚠ **"No dated item" is NOT a denial and was not read as one. The premium is intact and undenied on a 14th check**, on **10.0725% of equity** with a **6.5650% trail gap.** ⚠ **A denial still gaps straight through a 6.6% trail; no in-rules remedy exists and none was invented.** ✓ **The spread signal stays retired — not cited in either direction.**
+
+### Step 12 — Rule 13, 29th occurrence: the IEX-only feed artifact is confirmed AND a usable SIP path is found
+| Symbol | IEX bid | IEX ask | Spread | SIP live |
+|---|---|---|---|---|
+| ⚠ **CLX** | $102.33 | $111.07 | ⚠ **8.54%** | $106.90 |
+| ⚠ **GEHC** | $76.57 | $86.12 | ⚠ **12.47%** | $82.48 |
+| ⚠ **MCD** | $259.14 | $275.84 | ⚠ **6.44%** | $275.67 |
+| ⚠ **TPR** | $118.24 | $127.39 | ⚠ **7.72%** | $125.06 |
+| *SPY (control)* | *$734.49* | *$734.60* | *0.015%* | *$732.73* |
+
+- ✓ **THE 11/17 MIDDAY's DIAGNOSIS IS CONFIRMED: every quote carries `bx`/`ax` = "V" (IEX). Four single names are 6.4-12.5% wide against a 0.015% SPY control — a partial-tape artifact, not illiquidity.** ⚠ **Tooling item (1), the one-line `feed=sip` fix, is now in its 47th session.**
+- ✓ **AND THIS RUN FOUND A WORKAROUND THAT NEEDS NO SCRIPT CHANGE, WHICH IS WORTH MORE THAN THE COMPLAINT: `bars SYM 1Day <today> 5 sip` returns a PARTIAL daily bar whose close is the live consolidated SIP price.** **Every price in this entry comes from it.** ⚠ **`bars … 1Min … sip` STILL returns zero RTH bars (tooling item 4 reproduced exactly), so the 1Day partial bar is the only working first-party SIP live path. RECORD IT AND USE IT.**
+- ⚠ **It also caught a bad `snapshot` field: TPR's `prevDailyBar.c` came back **$132.975** against a true 11/17 SIP close of **$127.04** — a 4.67% error that would have put TPR's session move at -5.4% instead of -1.56%. `snapshot` prev-closes are NOT trustworthy; daily SIP bars are.**
+- **Every figure in this entry is struck off SIP daily bars or first-party `account`/`positions`/`orders`/`activities` reads. No mid appears anywhere. No research-supplied price appears in any calculation.**
+
+### Benchmark
+| Basis | Book | SPY | Lead |
+|---|---|---|---|
+| **GOVERNING, settled (8/14 → 11/17)** | `last_equity` $99,101.56 = **-0.8984%** | $776.34 → $732.44 = **-5.6547%** | ✓ **+4.7563 pts** |
+| Session, live | $98,701.27 vs $99,101.56 = **-0.4039%** | **+0.0396%** | ⚠ **-0.4435 pts** |
+| Phase, live intraday — **NOT filed as the lead** | **-1.2987%** | **-5.6174%** | *+4.3187 pts* |
+
+- ⚠ **The book is behind on the session for a second consecutive day, and the reason is now structural rather than directional: 40.04% of it is in cash and cannot participate in anything.**
+
+### Rules gate summary
+| # | Rule | Status |
+|---|---|---|
+| 1 | No options | ✓ **PASS** — 4/4 `us_equity`, zero option orders ever, none placed |
+| 2 | 75-85% deployed | ⚠ **BREACH — 59.9650%**, 15.0350 pts below the floor. ⚠ **UNCURABLE BY PRICE; needs a $14,839.77 purchase.** **Logged, NOT cured. Decision 11 escalated.** |
+| 3 | 5-6 positions, max 20% each | ⚠ **BREACH — MCD 20.1094%** (re-breached within the hour). ✓ **4 positions, two slots open.** **Logged, NOT cured** |
+| 4 | 10% GTC trailing stop on every position | ✓ **PASS — 4/4 coverage**, none touched by hand, no `hwm` ratcheted |
+| 5 | Cut losers at -7% | ✓ **PASS — but TPR is -6.3151%, 0.7311% from firing**, and the cut **pre-empts the trail by $0.4587** |
+| 6 | Tighten trail at +15% / +20% | ✓ **PASS** — no gate armed; nearest GEHC +7.9157% of +15% |
+| 7 | Stop never within 3% of price | ⚠ **BREACH — TPR 1.0979%.** ✓ **UNH's breach RESOLVED — by the stop firing, not by hand.** **Logged, NOT cured** |
+| 8 | Max 3 new trades/week | ✓ **PASS — 0 of 3 used.** The UNH exit was a pre-existing stop, not a new trade |
+| 9 | Follow sector momentum | ⚠ **SPLIT BY WINDOW** — 1-month: XLV 1st, XLP 2nd, XLY 3rd. 1-day: XLV 7th, XLP 10th, XLY 2nd. Window named per decision 9 |
+| 10 | Exit a sector after 2 failed trades | ⚠ **POSSIBLY TRIGGERED in health care** (XLV -2.4749%, UNH -0.3321%). ⚠ **NEW DECISION 12.** ✓ **Cautious half applied: no new health-care entries. GEHC NOT closed** |
+| 11 | Patience > activity | ✓ **PASS** — four candidates worked, all four declined with named reasons |
+| 12 | No trade complete until persisted | ✓ **This entry + the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run** |
+| 13 | Freshness beats consensus | ✓ **APPLIED — 29th occurrence.** IEX artifact confirmed, SIP workaround found, bad `snapshot` prev-close caught. **No order sized off any price** |
+| 14 | A headline needs a wire | ✓ **APPLIED** — CRUSH watch items (a) and (b) both explicit negatives; commentary refused as evidence; **no exit trigger fired by any headline** |
+| 15 | Unfinished work is reported | ⚠ **SIX owed EOD filings + one weekly review carried forward by name and date; all owner decisions carried** |
+
+### Handoffs issued by this run (rule 15)
+- ⚠ **(i) TO THE 11/18 MIDDAY, FIRST AND BEFORE ANYTHING ELSE — TPR IS 0.7311% FROM ITS RULE-5 MANUAL CUT ($124.1457) AND THE CUT FIRES $0.4587 BEFORE ITS OWN TRAIL.** **If TPR is at or below $124.1457, rule 5 has fired: act on it and log that the trail was pre-empted.** ✓ **No company cause exists — all five categories re-checked negative this run, and guidance was RAISED.** ⚠ **Do not widen or cancel `bddb11b5` to avoid the cut.**
+- ⚠ **(ii) DECISIONS 11 AND 12 ARE COUPLED AND BOTH ARE NEW OR NEWLY-SHARPENED. 11: is rule 2's 75% floor hard or a band — now at a 15.04-point miss that cannot self-cure? 12: does rule 10 fire in health care on two closed losses, and does "exit a sector" mean close GEHC (+7.9157%) or merely stop buying?** ⚠ **Until 12 is answered, health care — the 1st-ranked sector on the 1-month window and the only uncongested one — is self-barred, which removes it from decision 11's cure set.** **Carry both in every notification until answered or withdrawn.**
+- ⚠ **(iii) THE MINUTES (14:00), WILLIAMS (14:30) AND KASHKARI (16:15) ALL LAND AFTER THE MIDDAY FIRES, AND THE BOOK IS NOW 40.04% CASH INTO THEM.** ⚠ **federalreserve.gov is UNREACHABLE (http=000) — use decision 10's cited-URL provenance and demand verbatim text.** **The EOD must read the minutes' EFFECT on the book, not the minutes' prose.**
+- ⚠ **(iv) TO THE 11/19 PRE-MARKET BY NAME — CMS-6098-P PUBLISHES IN THE FEDERAL REGISTER THAT DAY (doc 2026-23461, comments due 1/19/27).** ⚠ **THE BOOK NO LONGER HOLDS UNH, so this is now a read-across question for GEHC only — and GEHC's own status depends on decision 12.** **Watch items (a) and (b) remain open and both were negative today.**
+- ⚠ **(v) THE RULE 4-vs-6 STOP GEOMETRY DEFECT HAS NOW COST REAL MONEY AND IS NO LONGER HYPOTHETICAL — UNH exited at -0.3321% because its stop sat 0.4706% BELOW its entry.** **It is still live on three of four remaining sleeves: CLX -1.7786%, MCD -5.5601%, TPR -7.3436% stop-vs-entry. GEHC alone (+3.1061%) can exit green through its own stop.** ⚠ **Most urgent owner decision, 7th consecutive week, now with a realized loss attached.**
+- ⚠ **(vi) MCD CROSSED RULE 3's CAP TWICE IN EIGHT MINUTES (19.9835% → 20.1094%) ON A $2.25 MOVE.** **Re-grade on live prints every run; inherit no number.** **Do NOT cure by hand** — `qty_available` 0, decision 8 unanswered, handoffs (iii)+(viii) stand.
+- ⚠ **(vii) CLX — UNWIRED, UNDENIED, 14th CHECK, 10.0725% OF EQUITY, TRAIL GAP 6.5650%.** **Re-check in both directions; "no dated item" is NOT a denial.** ✓ **Do NOT cite the spread as evidence either way — retired.**
+- ✓ **(viii) TOOLING — A WORKAROUND FOUND, NOT A COMPLAINT FILED: use `bars SYM 1Day <today> 5 sip` and read the PARTIAL bar's close as the live consolidated SIP price.** ⚠ **`bars … 1Min … sip` returns zero RTH bars (item 4) and `snapshot`/`quote` are IEX-only (item 1, 47th session) with an untrustworthy `prevDailyBar` — TPR's came back 4.67% wrong.** **None self-applied; the scripts are shared live-trading code.** **Still open: (3) perplexity 429 retry/backoff; (6) no first-party VIX — 47th session; (10) `daytrade_count` absent — 14th run; (11) no `trades` subcommand.**
+- ⚠ **(ix) SIX DAILY-CLASS FILINGS AND ONE WEEKLY REVIEW REMAIN OWED — 11/06, 11/09, 11/12, 11/13, 11/16 AND 11/17 EODs, PLUS THE 11/13 WEEKLY REVIEW.** **They do not lapse (rule 15); the next weekly review covers every week since the last filed one.** ⚠ **The next weekly review is due FRIDAY 11/20, and it now has a realized trade and a rule-10 question to adjudicate.**
+- **All owner decisions (1, 6, 7, 8, 9, 10, 11, **12 — new**, and the rule 4-vs-6 geometry defect, now with a REALIZED loss attached) carry forward into this run's notification and every subsequent run's, until answered or withdrawn (rule 15).**
+- **Persistence (rule 12): this entry and the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run.**

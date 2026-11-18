@@ -19401,3 +19401,62 @@ Handoff (ii) named three things that could make CRUSH thesis-breaking. **All thr
 - ⚠ **(ix) TOOLING, NONE SELF-APPLIED (shared live-trading scripts):** (1) ⚠ **THE `feed=sip` FIX FOR `snapshot`/`quote` IS NOW IN ITS 47th SESSION — and this run shows it was also manufacturing the ENTIRE equity-reconciliation backlog, on top of 27 rule-13 occurrences.** It corrupts an analytical rule **and** the book's valuation. **Highest-value one-line change available.** (3) `scripts/perplexity.sh` needs 429 retry/backoff; (6) VIX still has no first-party source — **46th session**; (10) `daytrade_count`/`pattern_day_trader` absent from `account` — **13th run**; (11) no `trades` subcommand. ⚠ **Network policy unchanged: `bls.gov`, `census.gov`, `federalreserve.gov`, `reuters.com` all http=000** — ✓ **decision 10's cited-URL provenance delivered `federalreserve.gov` and `nvidianews.nvidia.com` content again this run.**
 - ⚠ **(x) ALL OWNER DECISIONS CARRY FORWARD INTO EVERY SUBSEQUENT RUN'S NOTIFICATION UNTIL ANSWERED OR WITHDRAWN (rule 15): 1 (no dated target → no establishable R:R, the binding reason nothing is bought — 7th consecutive session), 6 (research verification, 34th run), 7 (NO SECTOR CONCENTRATION CAP EXISTS — 38.01% of equity in XLY, and it is why today's two best catalysts were rejected), 8 (does rule 3's 20% cap bind CONTINUOUSLY or AT ENTRY — now with a LIVE breach, not a hypothetical), 9 (name rule 9's momentum window — ✓ largely settled in the book's favour this run on the 1-month window), 10 (cited-URL provenance as rule-14 evidence — proven on .gov three runs running), ⚠ NEW 11 (is rule 2's 75% floor a HARD constraint requiring a same-day cure, or a target band? — LIVE, breached today, and the desk chose the band reading), and the rule 4-vs-6 geometry defect (85.44% of LMV can only exit red through its own stop — MOST URGENT, 6th consecutive week).**
 - **Persistence (rule 12): this entry commits and pushes via `scripts/gitpush.sh` in this run.**
+
+---
+
+## 2026-11-18 — MARKET-OPEN ADDENDUM (Day 68, Wednesday, fired 08:36 ET / RTH work 09:31-09:40 ET, locked read 09:36-09:40 ET, market OPEN) — **⚠ ONE EXECUTION AND NO HAND PLACED IT: UNH's OWN 10% GTC TRAILING STOP `5d48b1e5` (SUBMITTED 10/22) TRIGGERED 09:32:56 AND FILLED 38/38 BY 09:34:26 ET AT $384.42921 — REALIZED **-$48.67 (-0.3321%)**, THE PHASE'S FIRST STOP-OUT. ✓ THE PRE-MARKET NAMED THE SLEEVE 100 MINUTES AHEAD (HANDOFF (iv): "MOST FRAGILE ON EVERY MEASURE") AND THE DOUBLE RULE-7 BREACH IT COULD NOT CURE WAS RESOLVED BY THE STOP DOING ITS JOB — THE OUTCOME THE 11/17 MIDDAY PRE-RULED **CORRECT, NOT A DEFECT**. ⚠ BUT THE EXIT TRADED A 0.13-POINT BREACH FOR A 15.04-POINT ONE: DEPLOYMENT 74.8674% → **59.9650%**, AND UNLIKE EVERY PRIOR RULE-2 BREACH THIS ONE IS **UNCURABLE BY PRICE** — AT $39,515.09 CASH, LMV MUST RISE **+100.29%** TO REACH 75%, SO ONLY A **$14,839.77 PURCHASE** FIXES IT. DECLINED 4H20M AHEAD OF FOMC MINUTES. ⚠ NEW DECISION 12: **RULE 10 MAY BE TRIGGERED IN HEALTH CARE (XLV -2.4749% 8/31, UNH -0.3321% TODAY = TWO CONSECUTIVE CLOSED LOSSES) AND ITS LITERAL REMEDY IS TO CLOSE GEHC — THE BOOK'S BEST SLEEVE (+7.9157%) AND THE ONLY ONE WHOSE STOP SITS ABOVE ENTRY.** NOT CLOSED; CAUTIOUS HALF APPLIED (NO NEW HEALTH-CARE ENTRIES). ✓ OCTOBER HOUSING STARTS OBTAINED FROM THE PRIMARY RELEASE AND THE **±16.8% MARGIN OF ERROR NEARLY TWICE THE +9.9% CHANGE** — SAME LESSON AS 11/17's RETAIL SALES, LARGER. ✓ RULE 13's 29th: IEX-ONLY FEED CONFIRMED **AND A WORKING SIP PATH FOUND** (`bars 1Day` PARTIAL BAR). ⚠ CLX UNWIRED **AND** UNDENIED A 14th CHECK.**
+
+### Research performed this run — four queries, and the refusals outnumbered the answers
+| # | Query | Result |
+|---|---|---|
+| 1 | October housing starts / permits, verbatim | ⚠ **"NOT AVAILABLE"** — Census pages still showed the September report at 08:40 ET |
+| 1b | Pre-market futures 08:30-08:40 ET, timestamped | ⚠ **"NOT AVAILABLE"** — explicitly refused to supply a stale or untimestamped quote |
+| 2 | Housing starts, re-ask after the open | ✓ **OBTAINED** — 1.309mn SAAR, **+9.9% m/m (±16.8%)**, +2.8% y/y (±16.5%); permits 1.295mn, **-7.4% m/m, -8.7% y/y** |
+| 3 | Open-tape cause, dated wire only | ✓ **OBTAINED** — Reuters 11/18: *"AI stocks rally as Nvidia outlook calms demand fears"* |
+| 3b | "Are staples and health care lagging?" | ✓ **REFUSED** — *"NO DATED ITEM … does not verify that specific sector-ranking claim"* |
+| 4 | UNH: 8-K/statement + wire quantifying MA impact (handoff iii a + b) | ⚠ **BOTH "NO DATED ITEM"**, separately stated |
+| 5 | UNH: any dated cause for today's -1.2% | ⚠ **NO DATED ITEM in all four categories** (wire, statement, filing, analyst action) |
+| 6 | TPR: downgrade / target cut / guidance / statement / filing, 11/17-11/18 | ⚠ **ALL FIVE "NO DATED ITEM"**, separately stated |
+| 7 | CLX three-part check, aggregators excluded by name | ⚠ **14th consecutive unwired-and-undenied** |
+
+- ✓ **DECISION 6, 36th RUN — AND THE PATTERN HELD IN THE DESK'S OWN DISFAVOUR TWICE: research refused to confirm a sector-ranking premise THIS RUN FED IT, and refused to let a 11/18 market article attributing UNH's fall to "renewed regulatory scrutiny" count as a dated item, calling it market commentary.** ✓ **Four separate "NOT AVAILABLE"/"NO DATED ITEM" answers arrived unprompted rather than being discovered by re-asking.**
+- ✓ **Provenance (decision 10): housing starts citations resolve to `census.gov/construction/nrc/pdf/newresconst_202610.pdf`; the tape item to `reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/`.** ⚠ **The housing verbatim is PARTIAL — research returned the figures but stated it could not return the complete headline sentence. Recorded as partial, not full.**
+
+### ⚠ The one number that matters: rule 2's breach changed KIND, not just size
+| | Pre-market 07:42 | **09:40 post-exit** |
+|---|---|---|
+| Deployment | 74.8674% | ⚠ **59.9650%** |
+| Miss vs 75% floor | 0.1326 pts | ⚠ **15.0350 pts** |
+| **Self-cure by price** | +0.7084% of LMV | ⚠ **+100.29% — IMPOSSIBLE** |
+| Cure by purchase | $525.56 | **$14,839.77 (15.0350% of equity)** |
+
+- ⚠ **Every prior rule-2 breach in this phase was a margin that a good session would erase. This one is structural: with 40.04% of equity in cash, no price path reaches 75%.** ✓ **Said plainly so no later run waits for a self-cure the way UNH's rule-7 breach self-cured on 11/17.**
+- ⚠ **AND THE CURE SET IS EMPTY FOR NAMED REASONS, NOT BY DEFAULT: XLY holds 38.86% of equity already (TGT and TJX both rejected on concentration, decision 7 uncapped); XLK is 11th of eleven on the 1-month window (NVDA rejected on rule 9 + the chase); health care is 1st of eleven but SELF-BARRED by this run's own rule-10 read (decision 12).** ⚠ **And no candidate has an establishable 2:1 R:R, because no primary-source dated price target is obtainable in this environment (decision 1) — so every candidate fails the Entry Checklist on that line before anything else is reached.**
+- ⚠ **FOMC MINUTES 14:00 ET, WILLIAMS 14:30, KASHKARI 16:15, 20-YEAR AUCTION 13:00, 96.7%-PRICED DECEMBER HIKE, 5.10% 10-YEAR — AND 100% OF THE DEPLOYED BOOK IS RATE-SENSITIVE.** **Deploying 15% of equity unattended into that, to satisfy a band, was declined for the second consecutive run.**
+
+### Live SIP tape, 09:40 ET — the pre-market's ranked risk #4 arrived exactly as written
+| Rank | Sector | 1-day | | Rank | Sector | 1-day |
+|---:|---|---:|---|---:|---|---:|
+| **1** | ⚠ **XLK** | **+1.0535%** | | 7 | ⚠ **XLV** ← *book* | **-0.4427%** |
+| **2** | ✓ **XLY** ← *book* | **+0.4782%** | | 8 | XLF | -0.4654% |
+| — | *SPY* | *+0.2649%* | | 9 | XLRE | -0.4818% |
+| 3 | XLC | +0.0143% | | 10 | ⚠ **XLP** ← *book* | **-0.6178%** |
+| 4 | XLI | -0.0819% | | 11 | XLB | -1.2589% |
+| 5 | XLU | -0.2418% | | | | |
+| 6 | XLE | -0.4104% | | | | |
+
+- ⚠ **"THE AI RELIEF RALLY IS A COST TO THIS BOOK, NOT A RISK TO IT" — the pre-market's words, and XLK is 1st of eleven while the book owns zero technology.** **Only XLK and XLY are above SPY; XLC's +0.0143% is below it.**
+- ⚠ **Rule 9 stays SPLIT BY WINDOW and the window is named (decision 9): 1-month — XLV 1st, XLP 2nd, XLY 3rd; 1-day — XLV 7th, XLP 10th, XLY 2nd.**
+
+### Rule 13 — 29th occurrence, and this run delivers a workaround instead of another complaint
+- ⚠ **IEX-only confirmed on every quote (`bx`/`ax` = "V"): CLX 8.54%, GEHC 12.47%, MCD 6.44%, TPR 7.72% wide against a 0.015% SPY control.** **Tooling item (1), the one-line `feed=sip` fix, 47th session.**
+- ✓ **WORKAROUND, NO SCRIPT CHANGE NEEDED: `bars SYM 1Day <today> 5 sip` returns a PARTIAL daily bar whose close IS the live consolidated SIP price. Every price in this run came from it.** ⚠ **`bars … 1Min … sip` still returns ZERO RTH bars — tooling item (4) reproduced exactly — so the 1Day partial bar is the only working first-party SIP live path.**
+- ⚠ **AND IT CAUGHT A BAD FIELD: `snapshot` returned TPR `prevDailyBar.c` = $132.975 against a true 11/17 SIP close of $127.04 — a 4.67% error that would have reported TPR's session move as -5.4% instead of -1.56%. `snapshot` prev-closes are not trustworthy.**
+
+### Carried risks and owner decisions — unchanged except where stated
+- ⚠ **CRUSH (CMS-6098-P) publishes in the Federal Register 11/19 (doc 2026-23461, comments due 1/19/27).** ✓ **The book no longer holds UNH, so it is now a GEHC read-across question only — and GEHC's own status depends on decision 12.** **Watch items (a) UNH statement/8-K and (b) a wire quantifying MA impact were BOTH explicit negatives again today.**
+- ⚠ **TPR: -6.3151%, 0.7311% from the rule-5 manual cut at $124.1457, and the cut fires $0.4587 BEFORE its trail ($123.687).** ✓ **No company cause on any of five categories; guidance most recently RAISED (FY27 revenue $8.5-8.6bn).** **The midday run must read this first.**
+- ⚠ **MCD re-breached rule 3 within the hour — 19.9835% (09:32) → 20.1094% (09:40) on a $2.25 move. Logged, not cured.**
+- ⚠ **CLX: unwired and undenied, 14th check, 10.0725% of equity, trail gap 6.5650%. "No dated item" is not a denial. Spread signal stays retired.**
+- ⚠ **Decisions 1, 6, 7, 8, 9, 10, 11, 12 (new) and the rule 4-vs-6 geometry defect — the last now carrying a REALIZED -$48.67 — all carry forward per rule 15.**
+- ⚠ **Six EOD filings (11/06, 11/09, 11/12, 11/13, 11/16, 11/17) and the 11/13 weekly review remain owed. Next weekly review due Friday 11/20 and it now has a realized trade and a rule-10 adjudication waiting.**
