@@ -19460,3 +19460,86 @@ Handoff (ii) named three things that could make CRUSH thesis-breaking. **All thr
 - ⚠ **CLX: unwired and undenied, 14th check, 10.0725% of equity, trail gap 6.5650%. "No dated item" is not a denial. Spread signal stays retired.**
 - ⚠ **Decisions 1, 6, 7, 8, 9, 10, 11, 12 (new) and the rule 4-vs-6 geometry defect — the last now carrying a REALIZED -$48.67 — all carry forward per rule 15.**
 - ⚠ **Six EOD filings (11/06, 11/09, 11/12, 11/13, 11/16, 11/17) and the 11/13 weekly review remain owed. Next weekly review due Friday 11/20 and it now has a realized trade and a rule-10 adjudication waiting.**
+
+## 2026-11-18 — MIDDAY ADDENDUM (Day 68, Wednesday, locked read 12:06:55-12:16 ET, market OPEN) — **⚠ ZERO ORDERS BY HAND, AND A SECOND SLEEVE GONE BEFORE THIS RUN FIRED: TPR's TRAILING STOP `bddb11b5` FILLED 148/148 AT $123.40 AT 09:49:42 ET — REALIZED **-$1,493.32 (-7.5586%)**. ⚠ THE RESEARCH HEADLINE IS DECISION 6's 37th CATCH AND IT IS A DATE FAULT WITH REAL CONSEQUENCE: RESEARCH ASSERTED GEHC "ISSUED ITS THIRD-QUARTER 2026 RESULTS ON NOV 17" — WHICH WOULD HAVE BEEN A BRAND-NEW THESIS-GRADE CATALYST FOR THE SLEEVE DECISION 12 ASKS WHETHER TO CLOSE. IT WAS QUARANTINED ON FIRST READ BECAUSE IT CONTRADICTED FIRST-PARTY HISTORY (GEHC WAS BOUGHT 10/28), RE-QUERIED, AND CORRECTED TO **OCTOBER 28, 2026** FROM GEHC's OWN RELEASE AND ITS 8-K. NEVER REACHED A GATE COMPUTATION. ✓ THE SAME ANSWER'S OTHER CLAIM SURVIVED AND IS USED: FDA 510(k) CLEARANCE FOR CRITICAL CARE SUITE 3.0, **GEHC's OWN PRESS RELEASE, 11/17** — THE DATED COMPANY CAUSE FOR GEHC +1.9489% WHILE XLV IS 10th OF ELEVEN AT -1.3442%, A 3.29-POINT DIVERGENCE OTHERWISE UNEXPLAINED. ✓ RESEARCH NAMED THE PRIMARY SOURCE WHEN ASKED TO DISTINGUISH IT FROM THE AGGREGATOR THAT FIRST CARRIED IT. ✓ XLE's -3.0619% (LAST OF ELEVEN) IS WIRE-DATED: REUTERS 11/18, API CRUDE +5.28mn bbl. ✓ RESEARCH RETURNED EXPLICIT **NOT AVAILABLE** THREE TIMES RATHER THAN ESTIMATING. ⚠ CLX UNWIRED **AND** UNDENIED A 15th CHECK, BOTH LIMBS ANSWERED SEPARATELY. ⚠ THE 14:00 MINUTES LAND 1h44m AFTER THIS RUN'S LOCKED READ AND THE BOOK ENTERS THEM **58.56% CASH**.**
+
+### Queries run this addendum — 3 Perplexity calls, all returned
+| # | Query | Outcome |
+|---|---|---|
+| 1 | XLE -3% cause (dated wire) + ANY dated GEHC company item 11/17-11/18 | ✓ both answered; ⚠ **one date fault embedded** |
+| 2 | **Re-verification**: GEHC Q3 2026 report date / Critical Care Suite 3.0 clearance + source type / CLX wire check both limbs | ✓ **fault corrected**; clearance confirmed primary; CLX negative both ways |
+| 3 | Today's tape drivers / FOMC minutes release time + afternoon speakers / 10-year + Dec hike odds | ✓ answered; ⚠ **3× NOT AVAILABLE returned honestly** |
+
+### ⚠ DECISION 6's 37th CATCH — THE FAULT, WHY IT MATTERED, AND HOW IT WAS CAUGHT
+| | First answer (query 1) | Re-query (query 2) |
+|---|---|---|
+| GEHC Q3 2026 results | ⚠ **"issued its third-quarter 2026 results on Nov. 17"**, cited to a gehealthcare.com newsroom URL and a bellinghamherald.com article | ✓ **"October 28, 2026, not November 17"** — gehealthcare.com release, the investor-relations earnings-date announcement, **and the SEC 8-K** |
+
+- ⚠ **WHY THIS ONE WAS DANGEROUS RATHER THAN MERELY WRONG: GEHC is the sleeve decision 12 asks whether to CLOSE. A Q3 report dated the previous day would have been a fresh, thesis-grade catalyst arguing hard against closing it — exactly the kind of claim a desk under time pressure accepts because it is convenient.**
+- ✓ **IT WAS CAUGHT BY A FIRST-PARTY CONTRADICTION, NOT BY SUSPICION: the account's own `activities` show GEHC bought 10/28 — the actual release date. A "new" 11/17 earnings report that coincided with a 10/28 entry made no sense, so it was quarantined and re-queried before use.** **Method worth repeating: cross-check every research date against first-party fill history.**
+- ⚠ **THIS IS THE SAME FAILURE MODE AS THE 11/13 "CORE PPI" FAULT AND THE 11/17 RETAIL-SALES FAULT — research attaching a *recent* date to a *real but older* release.** **37 catches, and the overwhelming majority are date faults. Re-query remains the only reliable detector.**
+
+### ✓ GEHC — THE DIVERGENCE IS EXPLAINED BY A PRIMARY SOURCE
+| Item | Finding |
+|---|---|
+| **FDA 510(k) clearance, Critical Care Suite 3.0** | ✓ **CONFIRMED, 11/17** — on-device AI detecting feeding tubes on X-ray, adult + paediatric |
+| **Source type** | ✓ **GE HealthCare's OWN press release** (gehealthcare.com newsroom). An MT Newswires item also carried it 11/17, attributed to GEHC |
+| Analyst action 11/17-11/18 | ✓ **NONE found** — no upgrade, no price-target change |
+| SEC filing 11/17-11/18 | ✓ **NONE** — latest listed is the **11/05 Form 8-K** |
+| **Tape** | ✓ **GEHC +1.9489% vs XLV -1.3442% — a 3.2931-point divergence** |
+
+- ✓ **THE SLEEVE IS THE BOOK'S BEST AT +9.1652% (up from +7.9157% at 09:40) AND IT IS OUTPERFORMING A SECTOR RANKED 10th OF ELEVEN ON A DATED COMPANY CATALYST.** ⚠ **Recorded because decision 12's literal remedy is to sell it. The owner should know that the sleeve rule 10 would force out is the one with the freshest positive primary-source catalyst in the book.**
+- ✓ **Rule 14 is not engaged here — this is a company press release, not a headline firing an exit trigger, and it cuts in the HOLD direction.**
+
+### ✓ XLE — LAST OF ELEVEN, AND THE CAUSE IS DATED AND WIRE-SOURCED
+| Item | Reading | Source |
+|---|---|---|
+| **XLE 1-day** | ⚠ **-3.0619% — 11th of 11** | ✓ first-party SIP partial bar |
+| Brent / WTI | **$92.53 (-0.7%) / $84.77 (-1.4%)** | ✓ **Reuters 11/18** |
+| **US inventories, wk ended 11/13 (API)** | ⚠ **crude +5.28mn bbl, gasoline +5.12mn, distillates +0.351mn** | ✓ **Reuters 11/18** |
+| Offsetting factor | US-Iran conflict + Strait of Hormuz disruption **limited but did not offset** the decline | ✓ Reuters 11/18; corroborated by Bloomberg 11/17-18 |
+| New OPEC action 11/17-18 | ✓ **Explicitly NOT identified** as a cause | ✓ Reuters/Bloomberg |
+
+- ✓ **Rule 14 satisfied. The book holds no energy, so this is context, not a trigger.** ⚠ **It does, however, rank XLE last of eleven — removing energy from rule 2's cure set on rule 9 grounds, on top of XLE already being a closed loss (11/04, -0.6903%).**
+
+### ⚠ CLX — 15th CONSECUTIVE UNWIRED-AND-UNDENIED, BOTH LIMBS STATED SEPARATELY
+**Aggregators excluded by name in the query: Betaville, Seeking Alpha, Benzinga, Zacks, StockTwits, X/Twitter, TipRanks, Investing.com, Motley Fool, TradingView.**
+- **(1) CONFIRMATION:** ⚠ **NO WIRE ITEM** — no Reuters/AP/Bloomberg/AFP story dated 11/14-11/18 confirming takeover, acquisition, buyout, merger or bid interest.
+- **(2) DENIAL:** ⚠ **NO WIRE ITEM EITHER** — research stated separately that no qualifying wire denial was identified.
+- ⚠ **"No wire item" is NOT a denial and was not read as one.** The premium is intact and undenied on a **15th** check, on **10.2503% of equity**, with an **8.1587%** trail gap. ⚠ **A denial still gaps through an 8.2% trail; no in-rules remedy exists and none was invented.** ✓ **The spread signal stays retired — not cited in either direction.**
+
+### Market context — dated, and sourced
+| Item | Reading | Source / date |
+|---|---|---|
+| **October FOMC minutes** | ⚠ **14:00 ET TODAY — confirmed NOT yet released as of ~12:15 ET** | ✓ federalreserve.gov calendar, 11/18 |
+| **Dec 9 FOMC** | ⚠ **98% for a 25bp HIKE** (96.7% on 11/17), 2% for 50bp | Morningstar/Tradeweb, 11/18 |
+| **10-year Treasury** | **5.088%**, -1.4bp (a second 11/18 source rounds to 5.10%) | Tradeweb via Morningstar, 11/18 |
+| **Williams** | **Another increase may be needed to combat inflation** | ✓ **Reuters 11/18** |
+| **NVDA Q4 guide** | **~$130bn ±3% vs ~$125.25bn consensus** — eased AI-demand fears, lifted AI-linked shares | ✓ **Reuters 11/18** |
+| Other 11/18 drivers | **Anthropic IPO pricing** watched as an AI-sentiment test; **TGT earnings** due | Reuters 11/18 |
+| **SPY 1-day** | **$730.6327 vs $732.44 = -0.2468%** | ✓ first-party SIP partial bar |
+| Afternoon Fed speakers | ⚠ **NOT AVAILABLE** — the dated calendar result gave only **Waller 09:10 ET**; Williams 14:30 / Kashkari 16:15 carried from the open run **UNVERIFIED** | research returned NOT AVAILABLE |
+| Dated AP / Bloomberg wire for today's tape | ⚠ **NOT AVAILABLE** — only Reuters 11/18 identified | research returned NOT AVAILABLE |
+| Intraday timestamp on the 98% hike-odds print | ⚠ **NOT AVAILABLE** | research returned NOT AVAILABLE |
+| **VIX** | ⚠ **no first-party source — 48th session** | — |
+
+- ✓ **THREE EXPLICIT NOT-AVAILABLEs IN ONE ANSWER, ALL WHERE AN ESTIMATE WOULD HAVE PASSED UNNOTICED.** ✓ **Decision 6's pattern holds from the other side: the research is reliable about what it does not know and unreliable about dates. Carry both halves of that finding.**
+- ⚠ **AND THE OPEN RUN'S SECTOR CALL DECAYED WITHIN 2.5 HOURS, WHICH IS LOGGED AS A CAUTION RATHER THAN BURIED: XLK was 1st of eleven (+1.0535%) at 09:40 and is 7th (-0.1470%), BELOW SPY, at 12:10. The Reuters-sourced CAUSE (NVDA's guide) was correct; the 09:40 RANKING it produced was not durable.** **A sector ranking struck in the first ten minutes is not the session's verdict and should not be carried as one.**
+
+### ⚠ THE EXPOSURE PICTURE INVERTED TODAY AND IT CHANGES WHAT THE AFTERNOON MEANS
+| | 07:42 pre-market | **12:06 midday** |
+|---|---|---|
+| Deployed | 74.8674% | ⚠ **41.4467%** |
+| Cash | $24,906.78 | ⚠ **$57,778.29 (58.5563%)** |
+| Positions | 5 | **3** |
+| Exposure into the 14:00 minutes | ⚠ **100% of equity in rate-sensitive sectors** | ✓ **41.45% of equity exposed to anything at all** |
+
+- ⚠ **THE OPEN RUN WARNED THE BOOK WAS OVER-EXPOSED TO THE MINUTES. AFTER TWO STOP-OUTS IT IS **UNDER**-EXPOSED.** ✓ **Rule 2's breach and the event risk cancel for exactly one afternoon — and that is the honest reason declining a $33,107.75 buy costs little TODAY, as distinct from the rule-based reasons (decision 1's 2:1 R:R bar, rule 10's new XLY counter, rule 9 on XLV/XLE/XLK, rule 11).** ⚠ **It will NOT keep cancelling. Tomorrow the same breach exists without an event to excuse it.**
+
+### Rule 13 — 30th occurrence: handoff (viii)'s SIP path used for every price, and VALIDATED
+- ✓ **`bars SYM 1Day 2026-11-16 5 sip` partial bar = live consolidated SIP price. Every price in this addendum and in the TRADE-LOG entry comes from it** — three sleeves, SPY, and all eleven sector ETFs. **No `quote`, no `snapshot`, no mid, no research-supplied price in any calculation.**
+- ✓ **AND IT WAS CROSS-CHECKED RATHER THAN TRUSTED: the broker's `positions.current_price` matched the SIP partial bars to the cent on all three sleeves (CLX $108.7550, GEHC $83.4350, MCD $274.5650), so `market_value` and the SIP valuation reconcile exactly.** ⚠ **Conclusion that corrects a carried belief: during RTH the broker's marks are NOT stale. The 11/18 pre-market's rule-13 inversion was an after-hours artifact only, and should not be generalised to intraday runs.**
+- ⚠ **Open tooling: (1) `feed=sip` default — 48th session; (3) perplexity 429 retry/backoff; (6) no first-party VIX — 48th session; (10) `daytrade_count` absent — 14th run; (11) no `trades` subcommand.** **None self-applied; the scripts are shared live-trading code.**
+
+### Handoffs — see the 11/18 Midday Scan entry in TRADE-LOG.md, items (i)-(xii)
+⚠ **Research-specific carry-forwards:** **(a)** cross-check every research-supplied DATE against first-party `activities`/`orders` history — that is what caught fault 37; **(b)** the 14:00 minutes need decision 10's cited-URL provenance and verbatim text, as federalreserve.gov returns http=000 directly; **(c)** Williams 14:30 / Kashkari 16:15 are UNVERIFIED and must be re-confirmed or dropped by the EOD; **(d)** CLX's 16th check must again answer confirmation and denial **separately**; **(e)** CMS-6098-P publishes in the Federal Register 11/19 (doc 2026-23461) — now a GEHC read-across only.
