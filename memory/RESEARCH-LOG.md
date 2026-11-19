@@ -19758,3 +19758,73 @@ Four independent reasons, any one sufficient:
 3. ✓ **No rule trigger fired on any held sleeve: rules 4, 5, 6, 7 and now 3 all PASS, 3 of 3.**
 4. ✓ **Rule 11: patience > activity. Rule 8 is at 0 of 3 and two slots are open — declining is the rule working.**
 - ⚠ **BUT THIS RUN DECLINES TO CALL THAT A GOOD OUTCOME. Rule 2's floor has been breached for 70+ sessions, the breach is now 33.9358 pts, it widened today with no hand action, and the cash drag cost 1.6101 pts of benchmark lead in a single session. The owner's answer on the target basis is the only thing that converts "correctly declined" into "able to act."**
+
+## 2026-11-19 — MIDDAY ADDENDUM (Day 69, Thursday, fired 12:06 ET, locked read 12:09:28 ET, market OPEN) — **NO TRADE. ⚠ THE SESSION'S WHOLE STORY IS A REVERSAL: THE AI-LED OPEN THAT PUT SPY +1.0778% AND XLK 1st AT +2.4052% UNWOUND COMPLETELY BY MIDDAY — SPY -1.4366%, XLK -1.2026%, A -2.4876% ROUND TRIP IN UNDER THREE HOURS. ✓ AP DATES THE CAUSE: INVESTORS SELLING THE EARLY AI RALLY WHILE AWAITING ANTHROPIC'S FIRST NASDAQ TRADE, WITH NON-AI STOCKS WEAK THROUGHOUT. ✓ GEHC CARRIES A DATED FIRST-PARTY POSITIVE CATALYST TODAY (PHASE 2 MANGACICLANOL MET ITS PRIMARY ENDPOINT → PHASE 3 LUMINA) AND DECISION 6's DATE FAULT DID NOT REPEAT. ⚠ CLX IS UNWIRED AND UNDENIED A 18th TIME.**
+
+### Market context — dated and sourced
+| Item | Reading | Source / date |
+|---|---|---|
+| **The intraday reversal** | ✓ **S&P 500 opened ~+1.3%, was -0.3% by 10:45 ET. Cause: investors SELLING the early AI-driven rally while awaiting Anthropic's IPO debut; most non-AI stocks weak** | ✓ **AP, 11/19 — WIRE-DATED** |
+| Corroborating level | **S&P 500 ~7,275, -0.67%, ~1.9% below its intraday peak** | ⚠ contemporaneous report, 11/19 — secondary |
+| Reuters / Bloomberg on the reversal | ⚠ **NOT AVAILABLE in the retrieved results — stated as such, not substituted** | research |
+| **SPY, first-party SIP** | **$730.20 → $719.71 = -1.4366%** (open read was $738.07 = +1.0778%) | ✓ first-party SIP |
+
+- ✓ **THE WIRE BAR (RULE 14) IS MET BY AP AND THE CAUSE IS LOGGED, BUT NOTE WHAT IT IS *NOT*: it is not a macro repricing of this morning's Philly Fed collapse (6.3 vs 20.1 expected) or the soft claims print. The tape went up on an IPO and came down on the same IPO. ⚠ The macro deterioration logged at the open was never what moved the tape in either direction, and this entry does NOT retro-fit it as a cause.**
+- ✓✓ **THE MARKET-OPEN RUN'S REFUSAL TO CHASE XLK IS VINDICATED INSIDE THE SAME SESSION. It wrote that XLK's +2.4052% was "the same counter-trend bounce pattern logged on 11/11… It is NOT read as a momentum signal," noting XLK was simultaneously LAST on the month at -11.3325%. The bounce reversed in under three hours.** **Second successful advance call of this pattern. Promoted to the 11/20 weekly review as a candidate written rule.**
+
+### Rule 9 — 1-day sector ranking, live SIP (11/18 → 11/19 midday)
+| Rank | 1-day | | Note |
+|---:|---|---|---|
+| 1 | XLE -0.6282 | | best of eleven on a down tape |
+| 2 | ⚠ XLK -1.2026 | | **was 1st at +2.4052% at 09:31 — a -3.52 pt reversal** |
+| 3 | XLC -1.2787 | | |
+| — | *SPY -1.4366* | | *benchmark* |
+| 4 | XLRE -1.6735 | | |
+| 5 | XLU -1.7061 | | |
+| 6 | ⚠ **XLP -1.7657** | | ← **BOOK (CLX)** |
+| 7 | XLF -1.8345 | | |
+| 8 | XLB -1.9520 | | |
+| 9 | XLI -1.9555 | | |
+| 10 | ⚠ **XLV -1.9816** | | ← **BOOK (GEHC)** |
+| 11 | ⚠ **XLY -2.0386 — LAST OF ELEVEN** | | ← **BOOK (MCD)** |
+
+- ⚠ **ALL THREE BOOK SECTORS FINISHED BELOW SPY ON THE DAY — THE FIRST TIME THIS PHASE. XLY, 1st on the month and the sole ground on which TJX's sector leg passed this morning, is LAST on the day.** ✓ **And the book still beat SPY by +0.6707 pts. The gap is attributable ENTIRELY to 59.03% cash, not to sector selection, and is filed that way rather than as a stock-picking result.**
+
+### ✓ Thesis check — NO THESIS BROKE, NOTHING CUT BY HAND, ZERO ORDERS
+| Sleeve | Session | vs own sector | Dated item today | Verdict |
+|---|---|---|---|---|
+| **GEHC** | -2.1400% | -0.1584 pts vs XLV | ✓ **POSITIVE, FIRST-PARTY, 11/19** | ✓ **THESIS STRENGTHENED — HOLD** |
+| **MCD** | ✓ **-1.2500%** | ✓ **+0.7886 pts vs XLY — best relative sleeve** | NOT AVAILABLE | ✓ **NO BREAK — HOLD** |
+| **CLX** | ⚠ -2.7030% | ⚠ **-0.9373 pts vs XLP — 2nd consecutive day of sector underperformance** | ⚠ **NOT AVAILABLE, BOTH LIMBS** | ⚠ **NO TRIGGER — HOLD** |
+
+- ✓ **GEHC — A FOURTH CONSECUTIVE SESSION OF DATED FIRST-PARTY CATALYSTS, AND THIS ONE IS CLINICAL RATHER THAN COMMERCIAL: GE HealthCare company release 11/19 — Phase 2 results for mangaciclanol, an investigational MRI contrast agent, MET the primary diagnostic-preference endpoint; the 0.1 mmol/kg dose was selected; the programme advances to the Phase 3 LUMINA trial.** ⚠ **Research explicitly stated the available results do NOT establish this release as the cause of the -2.14% decline, and this entry does not claim it did. The decline tracks XLV (-1.9816%) to within 0.16 pts — it is sector and tape, not company.** ⚠ **Still the sleeve decision 12's literal remedy would close.**
+- ✓✓ **DECISION 6's 40th CHECK IS CLEAN, AND THE FIX IS NOW IDENTIFIED RATHER THAN JUST THE FAULT. The 37th and 39th catches were both research asserting GEHC "reported Q3 2026 results" on 11/18 (true date: 10/28). This run's query EXPRESSLY EXCLUDED the 10/28 release by date, and research complied — it also correctly date-separated a Photonova Spectra item as 11/16, "not November 19, despite being updated on November 19," and correctly reported GEHC's SEC filings as running only through 11/05 with insider filings 11/18.** ✓ **NAMING THE EXCLUDED DATE IN THE QUERY PREVENTED THE FAULT. Recommended as standing practice for every GEHC query.**
+- ⚠ **CLX — 18th CONSECUTIVE UNWIRED-AND-UNDENIED, BOTH LIMBS PUT SEPARATELY AND BOTH RETURNED "NOT AVAILABLE." (1) CONFIRMATION — no Reuters/AP/Bloomberg/AFP item and no Clorox statement 11/18-11/19 on a European approach at ~$125-130; the dated CLX items are its 11/18 annual meeting and routine disclosures. (2) DENIAL — stated separately as NOT AVAILABLE; research explicitly confirmed it did not treat absence of confirmation as denial.** ⚠ **THE PRICE LIMB STRENGTHENS FOR A SECOND DAY: CLX underperformed XLP by 0.9373 pts today after 1.18 pts yesterday — two consecutive sessions of its own sector beating it. A deflating rumour premium (origin 11/11, excluded sources only, now 7 sessions old) remains the better hypothesis, and remains UNESTABLISHED.** ✓ **No trigger fired, nothing cut, spread signal stays retired.**
+
+### ✓ Handoff (i) re-tested on live prints — TJX FAILS ITS OWN ARITHMETIC, AS THE OPEN RUN PREDICTED
+| | At the open | **Midday live** |
+|---|---|---|
+| TJX | $139.21 (-0.7769%) | ⚠ **$140.74 (+0.3136%)** |
+| R:R, close-high basis $168.41 | ✓ 2.0976:1 | ⚠ **1.9660:1 — FAILS 2:1** |
+| R:R, intraday-high basis $170.00 | ✓ 2.2118:1 | ✓ 2.0790:1 |
+
+- ✓ **THE MARKET-OPEN RUN WROTE: "If it gaps up, the R:R leg fails on its own and the question is moot." IT GAPPED UP AND THE LEG FAILED. Handoff (i) is DISCHARGED AND CLOSED on the branch named in advance.**
+- ⚠ **TJX OUTPERFORMED THE TAPE BY 1.75 pts TODAY (+0.3136% vs SPY -1.4366%) — the declined candidate was directionally right this session. Filed because the ledger should not record only the vindicating half.** ✓ **The decline still stands on its other two grounds (XLY to 39.64% of equity with rule 10's counter at 1 of 2; rule 9's window split), and the contested ground — self-applying unratified remedy (c) — simply was not needed.**
+
+### Risk factors carried into the afternoon, ranked
+1. ⚠ **GEHC's TRAIL GAP AT 3.7450% — tightest of the phase, 0.7450 pts from rule 7's band, on 11.0414% of equity. A further -0.75% on GEHC and its own stop sits inside the 3% line. No remedy exists in the rules (rule 7 bars moving a stop down) and none was invented.**
+2. ⚠ **RULE 2's 34.0316-pt BREACH WIDENED A THIRD CONSECUTIVE READ with zero hand action, and today's only live candidate self-eliminated. The binding constraint reverts from "the unratified basis" to "no candidate qualifies" — but ONLY for today.**
+3. ⚠ **MCD at 19.9064% CLIMBING TOWARD THE 20% CAP ON FALLING EQUITY, not on a rising position. If equity falls another ~0.47% with MCD flat, rule 3 breaches with `qty_available` at 0 and decision 8 unanswered.**
+4. ⚠ **THE RULE-5 SCHEDULE DEFECT COVERS 12:16-15:55 ET. Benign today (all sleeves green, nearest cut 7.69% away) but structural.**
+5. ⚠ **CLX's 18th unwired-and-undenied check with a second consecutive day of sector underperformance — a denial would gap through a 5.2892% trail.**
+
+### Rule 13 — 33rd occurrence
+- ✓ **Every price in this entry comes from `bars SYM 1Day 2026-11-18 5 sip` partial bars (handoff xi's validated path). No `quote`, no `snapshot`, no mid, no research-supplied price in any calculation.** ⚠ **Research returned S&P levels (~7,275, -0.67%) that DISAGREE with first-party SPY (-1.4366%); the first-party SIP print governs and the research level is logged as context only, not used.**
+- ✓ **Broker marks and SIP agreed intra-RTH on 3 of 3 sleeves for a FOURTH consecutive session. The 11/18 finding — broker marks accurate intra-RTH, stale after hours — is now treated as ESTABLISHED.**
+- ✓ **TOOLING: all 3 research queries were serialized with backoff per handoff (xiii) and ALL 3 SUCCEEDED ON THE FIRST ATTEMPT — no 429 this run.** ⚠ **Open: (1) `feed=sip` default — 51st session; (3) perplexity 429 retry/backoff; (6) no first-party VIX — 51st session; (10) `daytrade_count` null — 17th run; (11) no `trades` subcommand.**
+
+### Decision — **HOLD / NO TRADE. Zero orders. All three stops left untouched.**
+1. ✓ **NO RULE TRIGGER FIRED ON ANY SLEEVE — rules 3, 4, 5, 6 and 7 all PASS, 3 of 3. All three positions are green. No cut owed, no tighten armed.**
+2. ✓ **NO THESIS BROKE — GEHC's strengthened on a dated first-party clinical result; MCD's is intact and it was the day's best relative sleeve; CLX's rumour is unwired AND undenied an 18th time, which under rule 14 bars acting in either direction.**
+3. ✓ **THE ONLY LIVE CANDIDATE SELF-ELIMINATED on the R:R leg at $140.74 — no owner ruling was needed.**
+4. ⚠ **RULE 2 REMAINS IN A 34.0316-pt BREACH AND THIS RUN DOES NOT CALL THAT ACCEPTABLE. The book beat SPY today because of the cash it should not be holding. That is a favourable outcome from a rule violation, which is the most dangerous kind of result to record — and it is recorded as such, not as vindication.**
