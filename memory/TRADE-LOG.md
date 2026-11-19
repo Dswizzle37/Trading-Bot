@@ -4463,3 +4463,13 @@ TPR, same session, same position, nothing touched:
 - ✓ **(xi) TOOLING — the serialized-with-backoff research path was used for all 3 queries and ALL 3 SUCCEEDED ON THE FIRST ATTEMPT; no 429 fired this run.** ⚠ **Still open: (1) `feed=sip` default — 51st session; (3) perplexity 429 retry/backoff — no fire this run but the hand-rolled retry remains necessary; (6) no first-party VIX — 51st session; (10) `daytrade_count` null — 17th run; (11) no `trades` subcommand.** **None self-applied; the scripts are shared live-trading code.**
 - **All owner decisions (1, 6, 7, 8, 9, 10, 11, 12, the rule 4-vs-6 geometry defect, the rule-5 schedule defect, and — RANKED FIRST — the target-basis remedy (a)/(b)/(c)) carry forward into this run's notification and every subsequent run's, until answered or withdrawn (rule 15).**
 - **Persistence (rule 12): this entry and the RESEARCH-LOG addendum commit and push via `scripts/gitpush.sh` in this run.**
+
+### Nov 19 — EOD Snapshot (Day 69, Thursday)
+**Portfolio:** $97,899.51 | **Cash:** $57,777.60 (59.0%) | **Day P&L:** -$731.64 (-0.74%) | **Phase P&L:** -$2,100.49 (-2.10%)
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|---|---|---|---|---|---|---|
+| CLX | 93 | $101.69 | $104.99 | -3.14% | +$306.84 (+3.25%) | $99.88 trail 10% (gap 4.87%) |
+| GEHC | 132 | $76.43 | $81.68 | -2.37% | +$693.00 (+6.87%) | $78.80 trail 10% (gap 3.53%) |
+| MCD | 72 | $270.20 | $271.89 | -0.78% | +$121.68 (+0.63%) | $255.18 trail 10% (gap 6.15%) |
+
+**Notes:** Snapshot taken 15:16 ET (pre-close marks). No trades today; realized P&L $0. 0/3 new trades this week. Book -0.74% vs SPY -1.85% (+1.11 pts); phase -2.10% vs SPY -7.68% (live, +5.58 pts). Deployed 41.0% — rule 2 breach persists. GEHC trail gap 3.53%, nearest to the 3% band. All 3 GTC trailing stops live.
