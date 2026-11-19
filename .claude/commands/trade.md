@@ -10,7 +10,7 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask.
 2. For BUY, validate:
    - Total positions after fill <= 6
    - Trades this week + 1 <= 3
-   - SHARES * P <= 20% of equity
+   - SHARES * P <= 20% of equity (or the notional in a dated owner exception for that symbol in memory/TRADING-STRATEGY.md "Owner Exceptions")
    - SHARES * P <= available cash
    - daytrade_count < 3
    - Catalyst documented (ask for thesis if not in today's RESEARCH-LOG)

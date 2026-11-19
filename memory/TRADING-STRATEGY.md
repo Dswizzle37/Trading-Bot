@@ -30,6 +30,9 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 
 15. **Scheduled analysis is work, and unfinished work is reported, not silently dropped.** A scheduled run that cannot produce its assigned deliverable must say so explicitly in its notification and hand the deliverable forward to the next run of the same class by name and date. A weekly review that does not run does not lapse — the next review covers every week since the last filed one. Any decision routed to the owner stays in every subsequent run's notification until it is answered or withdrawn. *(Added 2026-09-18 after the 9/11 weekly review never ran and the 9/18 review was flagged as at-risk by seven consecutive runs, stranding four owner decisions for 17-24 sessions — including an unhedged gap risk on 100% of the book's directional exposure.)*
 
+## Owner Exceptions
+- **2026-11-19 — ANT (Anthropic, Nasdaq IPO 11/19, priced $83):** owner explicitly approved a single buy of **up to $35,000 notional** (~35.7% of ~$98k equity), overriding rule 3's 20% cap **for this one ANT entry only**. All other rules still apply: rule 8 slot (1 of 3), 10% trailing stop GTC immediately after fill (rule 4), -7% manual cut (rule 5), no adds above $35k. Limit order only until ANT's opening cross prints. Cap reverts to 20% for every other symbol and any later ANT add.
+
 ## Entry Checklist
 - Specific catalyst?
 - Sector in momentum?
