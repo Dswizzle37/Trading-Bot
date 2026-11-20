@@ -20088,3 +20088,58 @@ Four independent reasons, any one sufficient:
 4. ✓ **NO STOP CHANGES — rule 6's gates unarmed, rule 7 bars moving a stop down, and GEHC's gap improved to 4.2304% unaided.**
 5. ✓✓ **THE BOOK IS +0.4608% vs SPY -0.4764% WITH XLP 1st AND XLV 2nd OF ELEVEN AND +1.6015 pts OF SELECTION ALPHA — THE PHASE'S FIRST SELECTION-DRIVEN WIN. ⚠ AND 58.71% CASH COST 0.6605 pts OF IT. BOTH HALVES ARE THE FINDING.**
 6. ✓ **RULE 11 GOVERNS THE RESIDUAL: VIX above 30, a seventh down session in prospect, a consumer-sentiment print 26 minutes out on 30.26% of equity, and the week closing 0 of 3 trades. Patience > activity.**
+
+---
+
+## 2026-11-20 — MIDDAY ADDENDUM (Day 70, Friday, fired 12:07 ET, locked read 12:09:35 ET, market OPEN) — **NO TRADE. ⚠⚠ THE SESSION'S STORY IS THAT THE MORNING'S MILD DECLINE BECAME A FULL AI-COMPLEX DISLOCATION: SPY -0.4764% → **-1.7588%**, XLK **LAST OF ELEVEN AT -5.0400%**, A **6.96 pt SECTOR DISPERSION** THAT SPY's HEADLINE NUMBER BADLY UNDERSTATES. ✓ THE DATED PROXIMATE CAUSE IS ANTHROPIC'S POST-IPO BREAK (+17% DEBUT 11/19 → ~-11% ON 11/20) WITH NVIDIA LOWER AND A SEVENTH STRAIGHT GLOBAL DOWN SESSION. ⚠⚠ AND THE MORE IMPORTANT LIMB IS RATES: TRADERS ARE NOW PRICING A FED **HIKE**, WITH GOLDMAN REPORTED TO EXPECT DECEMBER **AND** MARCH INCREASES — WHICH RESOLVES THE 11/19 PRE-MARKET'S "INCOHERENT 98% → 90%" COMPLAINT IN THE HAWKISH DIRECTION AND IS COHERENT WITH THE OCTOBER MINUTES. ✓✓ HANDOFF (viii) DISCHARGED BENIGNLY: MICHIGAN FINAL **51.5** (prelim 51.0, Oct 48.0), YEAR-AHEAD INFLATION EXPECTATIONS **3.7%** (-1.0 pt vs OCT FINAL), AND BOTH CONSUMER SLEEVES ROSE **THROUGH** THE 10:00 ET PRINT. ⚠ ALL NARRATIVE IN THIS ADDENDUM IS **SECONDARY-SOURCED** BECAUSE `perplexity.sh` IS STILL 401 — THE DIRECTION IS FIRST-PARTY AND BEYOND DISPUTE, THE STORY IS NOT FILED AS ESTABLISHED. ⚠ NEW TOOLING ITEM (15): THE UMICH SURVEY DOMAIN DOES NOT RESOLVE FROM THIS SANDBOX.**
+
+### Tooling — ⚠ THE RESEARCH WRAPPER IS STILL DEAD, AND IT WAS RE-TESTED RATHER THAN ASSUMED
+- ⚠⚠ **`perplexity.sh` RETURNS HTTP 401 AGAIN THIS RUN ON A ONE-WORD CONTROL QUERY ("test"). This is the same signature the market-open run diagnosed, not the 402-on-long-prompts of 11/19. The credential is rejected upstream. TOOLING ITEM (13), OWNER ACTION, NO RUN CAN ROTATE IT.**
+- ✓ **THE RUN CORRECTLY DID NOT STOP: the routine's stop-and-alert condition is an UNSET variable and `PERPLEXITY_API_KEY` is set. All six required vars verified set before any wrapper call. The wrapper's own documented WebSearch fallback was used.**
+- ⚠ **AND THE FALLBACK'S WEAKNESS SHOWED AGAIN, PRECISELY: a dated query for the 11/20 session returned results mixing Thursday's close (Nasdaq -2.25% to 23,879.2; Dow -1,101 / -2.19% to 49,097, below 50,000 first time since June) with Friday's intraday, and gave Nvidia as both "-3.7%" and "-39% from peak" without separating them. A first search for the session cause returned **nothing dated 11/20 at all**. The figures above are reported as the outlets gave them and are NOT filed as established.**
+- ⚠ **NEW TOOLING ITEM (15): `www.sca.isr.umich.edu` DOES NOT RESOLVE from the routine sandbox — outside the session's allowed network domains. The primary source for a recurring scheduled macro print therefore cannot be read first-party. OWNER MAY WISH TO ALLOW IT.**
+- ⚠ **Still open: (1) `feed=sip` default — 54th session; (3) perplexity 429 retry/backoff; (10) `daytrade_count` null — 20th run; (11) no `trades` subcommand; (12) perplexity 402 on long prompts; (13) perplexity 401 — credential rejected; (14) `bars 1Min` stale at the open — `snapshot.latestTrade` used throughout this run and it worked; (15) NEW — umich domain unreachable.** **None self-applied; the scripts are shared live-trading code.**
+
+### Macro — the 10:00 ET print, ✓ OBTAINED AND ⚠ SOURCED HONESTLY
+| Item | Final Nov 2026 | Prelim Nov | Oct final |
+|---|---|---|---|
+| Headline sentiment | ✓ **51.5** (3-month high, ~+7% m/m) | 51.0 | 48.0 |
+| Expectations | **52.9** (revised UP) | 50.9 | — |
+| Current conditions | ⚠ **49.4** (revised DOWN) | 51.0 | — |
+| Year-ahead inflation exp. | ✓✓ **3.7%** | 4.3% | 4.7% (i.e. -1.0 pt) |
+| 5-year inflation exp. | ✓ **3.3%** | 3.5% | — |
+
+- ✓ **Attributed to post-election gains by survey director Joanne Hsu. A touch under a reported 51.6 Bloomberg median — so a beat on the revision, a hair's miss on consensus.**
+- ⚠ **THE INTERNAL SPLIT IS THE READ, NOT THE HEADLINE: expectations revised UP 2.0 pts while current conditions revised DOWN 1.6 pts. Consumers feel no better **now**; they expect better **later**. For two consumer sleeves that is a weaker signal than the headline suggests, and it is filed that way.**
+- ⚠ **AND THE INFLATION-EXPECTATIONS DROP CUTS AGAINST THE RATE LIMB OF TODAY'S SELLOFF: a full point off year-ahead expectations is the opposite of what a market pricing a December hike is worried about. The two facts were returned by the same fallback in the same hour and NEITHER IS WIRE-CONFIRMED. No position was moved on either.**
+- ✓✓ **OUTCOME ON THE BOOK — THIS IS WHAT HANDOFF (viii) ASKED FOR: the print landed on 30.2865% of equity (MCD 20.2203% XLY + CLX 10.0662% XLP) inside the rule-5 dead zone with no run alive, and **both sleeves rose through it** — MCD +1.384%, CLX +1.400%. Nearest -7% cut 9.37% away. The flagged window closed at zero cost.**
+
+### First-party tape read (SIP, `snapshot.latestTrade`, 12:09:35 ET) — ✓ THE PART THAT IS BEYOND DISPUTE
+| Sector | Day % | | Sector | Day % |
+|---|---|---|---|---|
+| ✓✓ **XLP** | **+1.924** | | XLB | -0.566 |
+| ✓✓ **XLV** | **+0.935** | | XLC | -0.681 |
+| XLU | +0.732 | | ⚠ **XLY** | **-1.148** |
+| XLE | +0.443 | | XLI | -1.618 |
+| XLRE | +0.396 | | ⚠⚠ **XLK** | ⚠⚠ **-5.040** |
+| XLF | -0.234 | | **SPY** | **-1.759** |
+
+- ⚠⚠ **6.96 pts between best and worst sector in one session — the widest of the phase. This is a rotation, not a liquidation: five of eleven sectors are GREEN while the index is down 1.76%.**
+- ✓✓ **THE BOOK OWNS 1st AND 2nd. Both reads of the day agree (open: XLP 1st, XLV 2nd; midday: unchanged). Position-weighted +0.9286% vs SPY -1.7588% = +2.6874 pts of selection alpha, UP from +1.6015 at the open — the finding strengthened intraday rather than decaying.**
+- ⚠ **VIXY +4.5080% (prev settle 22.85 → 24.08 live). Fourth consecutive expansion; 11/13 $17.94 → today ~$24.08 is +34.2% in six sessions. ⚠ STATED PRECISELY AGAIN: VIXY IS A SHORT-TERM VIX-FUTURES ETF, NOT THE INDEX — its LEVEL is never reported as a VIX quote; its CHANGES are first-party and usable. No VIX index level was obtainable this run (tooling item 13).**
+- ✓ **MCD +1.384% vs XLY -1.148% = outperforming its own sector by 2.53 pts, THROUGH this morning's dated Citigroup downgrade (Neutral, PT $315 → $301, 11/20). The sleeve over rule 3's cap is the one behaving best relative to its sector.**
+- ⚠ **GEHC -0.324% is the book's only red sleeve and the one whose trail gap re-tightened (4.2304% → 3.4797%). ⚠ ITS QUOTE IS ALSO WIDE AND UNRELIABLE AT THE READ (bid 80.93 / ask 85.66) — the 4.73-point spread is an artifact; `latestTrade` $81.645 was used per rule 13 and the quote mid was discarded. No GEHC-specific dated news was found; XLV 2nd of eleven argues the move is idiosyncratic drift, not sector.**
+
+### CLX rule-14 check — ⚠ 21st CONSECUTIVE UNWIRED **AND** UNDENIED, WITH A NEW ORIGIN DETAIL
+- ⚠ **(1) CONFIRMATION — NOT AVAILABLE. No Reuters/AP/Bloomberg/AFP item and no Clorox statement. The trail now has a named origin: a **Betaville "uncooked" alert** claiming an **unidentified European company** approached Clorox at **$125-130/share, mainly cash with the remainder in stock**, market cap cited at $12.9bn; a GuruFocus write-up dates the share reaction to **11/11** (+2.4%).**
+- ⚠ **(2) DENIAL — NOT AVAILABLE, STATED SEPARATELY. The prior spokesperson "declined comment", which is not a denial. Nothing has changed.**
+- ✓ **ABSENCE READ AS DENIAL IN NEITHER DIRECTION. Rule 14's bar is on ACTING, and nothing was acted on.**
+- ✓✓ **AND THE TAPE NOW ARGUES THE RULE'S CASE QUANTITATIVELY: CLX trades **$106.44, i.e. 14.8-18.1% BELOW the rumoured $125-130 range**. A market that believed a mostly-cash approach would not price it 15%+ wide 9 sessions later. ✓ CLX's +1.400% today is XLP's 1st-place session, not the rumour — and the only Clorox deal confirmed by a primary source remains Clorox as **buyer** (GOJO/Purell, $2.25bn cash, company IR, Jan 2026), which is unrelated.**
+
+### What this changes for the book — **NOTHING, AND THE REASONS ARE RULE-CITED**
+1. ✓ **No cut owed (rule 5): three green sleeves, nearest trigger 9.37% away.**
+2. ✓ **No stop change available (rules 6, 7): no gate armed, GEHC nearest at +6.8232%; rule 7 bars moving a stop down. GEHC's tightening is a reporting duty, not an action.**
+3. ✓ **No thesis broke (STEP 5): the book's two sectors rank 1-2; MCD beat its sector through a downgrade; CLX moved with XLP.**
+4. ⚠⚠ **No buy (rule 2 breached 33.7542 pts, $33,193.12 short): the open proved the cure has no in-rules instrument and this run ran no new screen. ⚠ THE TARGET-BASIS REMEDY IS THE WEEKLY REVIEW'S CALL TODAY, NOT A MIDDAY'S TO SELF-APPLY.**
+5. ⚠⚠ **No trim (rule 3 breached at MCD 20.2203%): `qty_available` 0, cure requires cancelling a rule-4 stop = decision 8, unanswered.** ✓ **It did not widen — handoff (iii) answered.**
+6. ⚠⚠ **THE AGENDA ITEM THAT OUTRANKS EVERY LINE ABOVE: THE 11/20 WEEKLY REVIEW IS DUE TODAY AND IS ~3h50m FROM THE BELL, WITH THE 11/13 REVIEW AND SEVEN EOD FILINGS STILL OWED (rule 15).**
