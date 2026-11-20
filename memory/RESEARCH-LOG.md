@@ -20014,3 +20014,77 @@ Four independent reasons, any one sufficient:
 4. ⚠ **TJX REOPENED on corrected arithmetic ($140.34, not $138.67) and was DECLINED on sector concentration (XLY → ~40% of equity with its largest sleeve already over the cap) and rule 10's live XLY counter — grounds needing no owner ruling.**
 5. ⚠ **RULE 2 REMAINS IN A 33.9856-pt BREACH ON THE WEEK'S LAST SESSION AND THE CURE SCAN FOUND ZERO QUALIFYING NAMES — for a structural reason now identified and named, not for want of looking.**
 6. ✓ **RULE 11 GOVERNS THE RESIDUAL: VIX 29.95, futures negative, a seventh down session in prospect, and the week closing 0 of 3 trades. Patience > activity.**
+
+## 2026-11-20 — MARKET-OPEN ADDENDUM (Day 70, Friday, fired 08:36 ET / RTH work 09:31-09:34 ET, locked read 09:33:30 ET, market OPEN) — **ZERO ORDERS, HOLD. ⚠⚠ THE RESEARCH HEADLINE IS THAT THE RESEARCH WRAPPER IS DEAD: `perplexity.sh` RETURNS HTTP 401 ON EVERY CALL INCLUDING A ONE-WORD CONTROL QUERY, WHICH DISTINGUISHES IT FROM YESTERDAY'S NEW 402-ON-LONG-PROMPTS (WHERE THE SAME CONTROL SUCCEEDED AND BILLED $0.00377). THE CREDENTIAL IS REJECTED UPSTREAM AND NO RUN CAN ROTATE IT — OWNER ACTION, TOOLING ITEM (13). ✓ THE RUN DID NOT STOP: THE WRAPPER'S OWN DOCUMENTED WebSearch FALLBACK WAS USED AND CORROBORATED THE PRE-MARKET ON EVERY LIMB.** ✓✓ **THE ANALYTICAL HEADLINE IS A PROOF HANDED TO TODAY'S WEEKLY REVIEW: RULE 2's BREACH IS UNCURABLE INSIDE THE RULEBOOK. RULE 4's FIXED 10% RISK MAKES THE 2:1 LEG ARITHMETICALLY IDENTICAL TO "SIT ≥20% BELOW YOUR OWN 30-DAY CLOSE-HIGH", AND 0 OF 44 LEADING-SECTOR NAMES DO; corr(momentum, R:R) = -0.7370.** ✓✓ **AND THE TAPE VINDICATED THE BOOK'S POSTURE ON SELECTION FOR THE FIRST TIME IN 70 DAYS: XLP 1st AND XLV 2nd OF ELEVEN, SPY -0.4764%, XLK LAST AT -2.1217%, +1.6015 pts OF POSITION-LEVEL ALPHA, PHASE LEAD A NEW HIGH AT +6.6277 pts. ⚠ CASH COST 0.6605 pts OF IT.**
+
+### Research path — ⚠ PRIMARY DOWN, FALLBACK USED, AND THE DIAGNOSIS IS STATED
+- ⚠⚠ **`perplexity.sh` → HTTP 401 on all calls. DIAGNOSED RATHER THAN ASSUMED, in the same manner as yesterday's 402: a minimal control query ("test") ALSO returned 401. Yesterday that control SUCCEEDED, which proved the 402 was prompt-length-driven; today it FAILS, which proves the fault is the credential, not the prompt. Key shape verified present and well-formed (`pplx-` prefix, 53 chars, no whitespace). The agent proxy is NOT implicated — every Alpaca HTTPS call in this run succeeded through the same proxy in the same seconds.**
+- ✓ **STOPPING WAS CORRECTLY DECLINED: the routine's stop-and-alert condition is an UNSET variable and `PERPLEXITY_API_KEY` IS set. All eleven required variables verified set at 08:36 ET; `ALPACA_ENDPOINT` confirmed as `paper-api.alpaca.markets/v2`.**
+- ⚠ **THE FALLBACK'S QUALITY COST IS LOGGED, NOT GLOSSED: WebSearch is not citation-disciplined the way the research system prompt forces. Its MCD query returned an undated "$239.31, -4.4% on Investor Day" item and an undated "52-week lows" item, both flatly contradicted by first-party SIP ($272.40 settled, $276.445 live). ✓ BOTH QUARANTINED AND UNUSED. Rule 13's first limb did the work that the missing citation discipline would have.**
+
+### Market context — ✓ FALLBACK CORROBORATES THE PRE-MARKET, WITH SHARPER NUMBERS
+| | Level | Change | Source / date |
+|---|---|---|---|
+| **S&P 500, 11/19 close** | **7,175.83** | ⚠ **-2.02%, SIXTH straight decline** | CNBC, 11/19 |
+| **S&P 500 futures** | — | ⚠ **~-1%** (pre-08:00 ET) | CNBC live, 11/20 |
+| **Nasdaq 100 futures** | — | ⚠⚠ **~-1.9%** (pre-08:00 ET) | CNBC live, 11/20 |
+| **VIX** | ⚠⚠ **30.99** | ⚠ **highest since March** | CNBC, 11/20 |
+| **VIXY (FIRST-PARTY PROXY)** | **$23.28 live** | ⚠ **+12.1569% on 11/19; +27.5362% over 5 sessions** | `bars VIXY 1Day sip` |
+| **SPY (first-party SIP, live 09:33)** | **$712.43** | ⚠ **-0.4764%** | `snapshot SPY` |
+
+- ✓ **THE PRE-MARKET'S READ IS CONFIRMED AND SLIGHTLY WORSENED: it had futures -0.68%/-1.53% at 05:14 ET and VIX 29.95; by 08:00 ET futures were ~-1%/~-1.9% and VIX printed 30.99. The direction of the drift was correctly called.**
+- ⚠ **THE CAUSE IS THE SAME ONE AND IT IS NOW BROADER: a global chip/AI selloff into the US open, with Anthropic down 7-9% pre-market after its volatile IPO debut. ⚠ RULE 14 NOTE: this is aggregated coverage, not a single wire item, and is logged as context. It fires no trigger — the book holds ZERO AI/semiconductor exposure, which is precisely why XLK's -2.1217% is someone else's problem this morning.**
+- ✓✓ **TOOLING ITEM 6 PARTIALLY RETIRED AFTER 52 SESSIONS: `bars VIXY|VXX|UVXY ... sip` all return data, so a FIRST-PARTY volatility series exists after all. VIXY 11/13 $17.94 → 11/19 $22.88 = +27.5362%. ⚠ STATED PRECISELY SO IT IS NEVER MISQUOTED: VIXY IS A SHORT-TERM VIX-FUTURES ETF, NOT THE INDEX — its LEVEL is not comparable to a VIX quote and must never be reported as "VIX"; its CHANGES are first-party and usable. On 11/19 it confirms research's VIX direction and a LARGER magnitude (+12.16% vs +5.31%).** ✓ **RECOMMEND ALL FUTURE RUNS TAKE THE VOL REGIME FIRST-PARTY FROM VIXY AND CITE A RESEARCH VIX LEVEL ONLY AS SECONDARY.**
+
+### ✓ Thesis checks — NO THESIS BROKE, NOTHING CUT, ZERO ORDERS
+| Sleeve | Dated item | Verdict |
+|---|---|---|
+| **CLX** | ⚠ **NOT AVAILABLE, BOTH LIMBS — 20th** | ⚠ **NO TRIGGER — HOLD** |
+| **GEHC** | ✓ **nothing new 11/20; 11/19 catalysts intact** | ✓ **HOLD** |
+| **MCD** | ⚠ **Citi downgrade 11/20 (carried from pre-market)** | ⚠ **NO BREAK — HOLD** |
+
+- ⚠ **CLX — 20th CONSECUTIVE UNWIRED-AND-UNDENIED, BOTH LIMBS PUT SEPARATELY VIA THE FALLBACK. (1) CONFIRMATION: **NOT AVAILABLE** — no Reuters/AP/Bloomberg/AFP item and no Clorox statement; the trail runs back to 11/11-12 unconfirmed chatter, with Newsquawk expressly flagging it unverified and Benzinga citing a NY Post report of a rejected offer from an unnamed packaged-goods rival (Church & Dwight, P&G, Jarden and Unilever floated as candidates by the source, none confirmed). (2) DENIAL: **NOT AVAILABLE**, stated separately — a Clorox spokesperson DECLINED COMMENT on the rumour, which is not a denial. ✓ ABSENCE READ AS DENIAL IN NEITHER DIRECTION, for a 20th time. Under rule 14 this bars acting on the rumour AND bars treating it as dead.**
+- ✓ **AND TODAY CLX HAS A BETTER EXPLANATION THAN THE RUMOUR: XLP is 1st of eleven at +1.7241% and CLX is +1.1337% — the sleeve is UNDERPERFORMING its own sector this morning, which is the third consecutive session of sector underperformance and is consistent with the deflating-rumour-premium hypothesis rather than with the rumour driving the price. ⚠ The hypothesis strengthens again on price while remaining unestablished on news.**
+- ✓ **GEHC — no dated item 11/20. The 11/19 first-party catalysts (FDA 510(k) clearance for Critical Care Suite 3.0; Phase 2 mangaciclanol meeting its primary endpoint → Phase 3 LUMINA) stand and are NOT double-counted as new. ✓ DECISION 6's DATE-EXCLUSION FIX HELD A THIRD CONSECUTIVE SESSION — the query barred the 10/28 Q3 release and no stale Q3 item was served back as new. GEHC is +0.4578% while XLV is 2nd of eleven at +1.3072%, so the sleeve LAGS its sector today after leading it for several sessions.**
+- ⚠ **MCD — the Citi downgrade to Neutral, PT $315 → $301 (11/20), is carried from the pre-market and is NOT re-litigated. ⚠ It is notable that MCD is the book's BEST sleeve this morning at +1.4849% on the day the downgrade printed, and that this is what pushed it deeper into rule 3's breach. No rule trigger fires on an analyst action.**
+
+### Today's calendar — ⚠ THE ONE RISK IS 26 MINUTES AFTER THIS RUN'S LOCKED READ
+- ⚠⚠ **10:00 ET — U. MICHIGAN CONSUMER SENTIMENT, NOVEMBER FINAL. IT LANDS ON 30.26% OF EQUITY (MCD 20.2244% XLY + CLX 10.0318% XLP), 26 MINUTES AFTER THIS RUN'S LOCKED READ, AND INSIDE THE RULE-5 DEAD ZONE (~09:40-12:06 ET) WHEN NO RUN IS ALIVE.** ✓ Benign on current marks — nearest -7% cut is CLX at 12.25% away — but the structural exposure is filed and handed to the midday.
+- ✓ **NO CPI, PPI, jobs report or PCE today. Next PCE 11/25 08:30 ET.** Fed speakers: Waller 08:25, Cook 12:15; Baker Hughes rig count 13:00.
+- ✓ **NO HOLDING REPORTS EARNINGS TODAY.** BJ and BKE both beat pre-open — a mildly supportive consumer read-across to MCD/CLX, logged as such and NOT as a catalyst.
+
+### Rule 13 — 35th occurrence, and a NEW variant that changed this run's output
+- ⚠⚠ **`bars SYM 1Min <today>` RETURNED PRE-MARKET AND OVERNIGHT BARS AS ITS LAST BAR AT 09:31 ET — MCD 3.4 HOURS STALE, SPY STALE TO THE PRIOR EVENING, CLX AND GEHC 23-27 MINUTES STALE — WHILE `snapshot` RETURNED `latestTrade` **0.0-2.5 MINUTES FRESH** ON THE SAME NAMES IN THE SAME SECOND. ✓ THE FIRST GATE PASS OF THIS RUN WAS COMPUTED OFF THE STALE SOURCE, CAUGHT BY THE AGE CHECK, **DISCARDED AND REDONE**. NEW TOOLING ITEM (14): AT THE OPEN, USE `snapshot.latestTrade`, NOT `bars 1Min`.**
+- ⚠ **OPENING QUOTES ARE AGAIN UNUSABLY WIDE AND WERE AGAIN REFUSED: CLX 3.7%, GEHC 8.0%, MCD **11.4%** (bid $260.97 / ask $290.61) against a **0.01%** SPY control. ✓ No mid, no quote, no snapshot-derived midpoint entered any gate — `latestTrade` only. This is the 11/16 opening-auction artifact for a third time, and the 11/16 midday's finding (that it collapses by noon) predicts it will resolve.**
+- ⚠ **BROKER MARKS RAN $132.71 RICHER THAN FRESH-SIP LMV ($98,548.85 vs $98,416.14 equity). ✓ THE CONSERVATIVE RECOMPUTED BASIS WAS USED FOR EVERY GATE, AND MCD's RULE-3 BREACH WAS VERIFIED TO HOLD ON **BOTH** BASES (20.2244% / 20.1971%) so the finding does not depend on the choice.**
+- ✓ **ALL ELEVEN SECTOR 1-MONTH RETURNS WERE RECOMPUTED FIRST-PARTY FROM `bars ... sip` WITHOUT REFERENCE TO THE PRE-MARKET'S TABLE AND REPRODUCED IT TO FOUR DECIMALS — an independent confirmation that the pre-market's quarantine of research's sector block (XLE +38.5% claimed vs -10.4164% actual; XLK +15.3% vs -13.3466%) was correct. SECTOR RANKINGS ARE NOW FIRST-PARTY AS STANDING PRACTICE.**
+- ✓ **AND THE DESK AUDITED ITSELF: this run's first rule-2 cure computation divided the shortfall by 0.25 and returned $132,690.18. A purchase moves cash into LMV and leaves equity unchanged, so the cure is `0.75 × equity − LMV` = **$33,173.56**. Caught before it reached a decision, corrected, and validated against the pre-market's independently-derived $33,289.60 on settled figures, which it reproduces to the cent.**
+
+### ⚠⚠ THE STRUCTURAL PROOF — handed to the 11/20 weekly review as its ranking agenda item
+**Rule 4 mandates a 10% trailing stop, so risk per share is exactly 0.10P. Therefore:**
+
+> **R:R = (Target − P) / 0.10P = (distance below target in %) / 10 ⟹ clearing 2:1 REQUIRES sitting ≥20% below the target basis.**
+
+**On the conservative 30-day close-high basis, nothing is buyable unless it is ≥20% below its own 30-day close-high.**
+
+| Basket (four leading sectors: XLU 1st, XLP 2nd, XLRE 3rd, XLF 5th) | Result |
+|---|---|
+| Names screened | **44** |
+| Names ≥20% below own 30-day close-high (i.e. able to clear 2:1) | ⚠⚠ **0 of 44** |
+| Deepest in the entire basket | **PM, 13.329%** (R:R 1.3329:1) — ⚠ **and PM fails momentum at -6.738%** |
+| Best R:R among POSITIVE-momentum names | **CCI, 1.2512:1** |
+| Mean distance below own high — positive momentum (n=30) | **4.058%** |
+| Mean distance below own high — negative momentum (n=14) | **8.158%** |
+| **corr(1-month momentum %, R:R)** | ⚠⚠ **-0.7370** |
+
+- ⚠⚠ **THIS IS NOT "no candidate was found today." IT IS A GEOMETRIC IMPOSSIBILITY GIVEN THE RULES AS WRITTEN. A sector leader on a -6.9% month leads *because* it sits near its own high, which collapses the distance to target and fails R:R. A name with 20% of headroom has, by construction, already fallen ~20% and fails rule 9. The two legs are jointly unsatisfiable in this tape, and the correlation of -0.7370 measures exactly that.**
+- ⚠⚠ **IT ALSO EXPLAINS THE FIVE-FOR-FIVE LOSS RECORD MECHANICALLY: the only names that EVER clear the checklist are ones that have already collapsed (yesterday's VST at -17.41% on the month cleared at 2.5767:1). **THE CHECKLIST AS WRITTEN SELECTS FALLING KNIVES.** Rule 9 then correctly refuses them, so nothing is bought — and when something was bought in the past, it was bought on exactly that adverse selection.**
+- ⚠ **THE WEEKLY REVIEW HAS ONLY THREE COHERENT OUTCOMES AND THE DESK CANNOT CHOOSE AMONG THEM: (a) rule on the target basis, (b) relax or restate the 2:1 leg so it is compatible with a fixed 10% risk, or (c) accept that rule 2's 75% floor is dead letter in a defensive tape. ⚠ CARRIED IN EVERY SUBSEQUENT RUN'S NOTIFICATION UNTIL ANSWERED (rule 15).**
+
+### Decision — **HOLD / NO TRADE. Zero orders. All three stops untouched. Nothing cancelled.**
+1. ⚠⚠ **NO BUY — rule 2's $33,173.56 cure has no qualifying instrument, proven above rather than asserted. TJX additionally declined on grounds needing no owner ruling (XLY → ~40% of book with its largest sleeve already over rule 3's cap; rule 10's XLY counter live at 1 of 2).**
+2. ⚠⚠ **NO TRIM despite rule 3's breach — the only cure requires cancelling a rule-4 stop, which is decision 8. Cautious half applied, breach escalated not absorbed.**
+3. ✓ **NO SELL — no rule-5 cut owed, no thesis broke, rule 10's XLV remedy stays at the cautious half pending decision 12.**
+4. ✓ **NO STOP CHANGES — rule 6's gates unarmed, rule 7 bars moving a stop down, and GEHC's gap improved to 4.2304% unaided.**
+5. ✓✓ **THE BOOK IS +0.4608% vs SPY -0.4764% WITH XLP 1st AND XLV 2nd OF ELEVEN AND +1.6015 pts OF SELECTION ALPHA — THE PHASE'S FIRST SELECTION-DRIVEN WIN. ⚠ AND 58.71% CASH COST 0.6605 pts OF IT. BOTH HALVES ARE THE FINDING.**
+6. ✓ **RULE 11 GOVERNS THE RESIDUAL: VIX above 30, a seventh down session in prospect, a consumer-sentiment print 26 minutes out on 30.26% of equity, and the week closing 0 of 3 trades. Patience > activity.**
