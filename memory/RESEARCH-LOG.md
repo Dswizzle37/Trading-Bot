@@ -20793,3 +20793,69 @@ Because rule 4 fixes risk at exactly 10% of price, the entry checklist's "min 2:
 5. ⚠ **NO TRIM, THOUGH RULE 3 IS BREACHED AT MCD 20.3316%: `qty_available` is 0, so the only cure requires cancelling a rule-4 stop — decision 8, unanswered. ✓ The breach NARROWED for the first time in four reads.**
 6. ✓ **THE SESSION'S RESULT IS RECORDED WITHOUT EXAGGERATION: +1.4831 pts, lead +5.0195 → +6.4160, with selection AND cash both positive for the first time this phase. ⚠ AND ITS LIMITS WITH EQUAL PRECISION: IT IS A TEN-MINUTE READ, IT IS STILL 2.4357 pts BELOW THE PHASE HIGH, AND 11/23 PROVED A MORNING EDGE CAN INVERT BY THE CLOSE.**
 7. ✓ **RULE 11 GOVERNS THE RESIDUAL: core PCE tomorrow into a Fed pricing a hike, a closed Thursday, a half-day Friday, a tape that has swung ±4.7% in three sessions, a stop that was inside its bar eight minutes ago, and a target-basis ruling outstanding. **PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
+
+---
+
+## 2026-11-24 — MIDDAY ADDENDUM (Day 72, Tuesday, fired 13:07 ET, locked read 13:08:43 ET, market OPEN) — **NO TRADE, NOTHING STAGED. ✓✓ THE RESEARCH HEADLINE IS A ROOT-CAUSE DIAGNOSIS EIGHT SESSIONS OVERDUE: `perplexity.sh`'s HTTP 401 IS **`insufficient_quota`** — "You exceeded your current quota, add credits at console.perplexity.ai/project/billing". THE KEY IS VALID AND THE WRAPPER IS CORRECT; THE ACCOUNT IS OUT OF CREDIT. ONE OWNER ACTION FIXES IT. ✓✓ THE MARKET FINDING IS THAT THE 11/23 MELT-UP WAS NOT A REGIME CHANGE AND THE TAPE PROVED IT TODAY: **XLK GAVE BACK -3.2755% AND SITS 12th OF TWELVE AT -16.9666% ON 20 DAYS — WORSE THAN THE -12.8918% READ TAKEN AT THE TOP OF ITS TWO-DAY +8.8% RIP.** CHASING IT WOULD HAVE BEEN A RULE-9 VIOLATION THAT ALSO LOST MONEY. ✓✓ AND THE BOOK'S THREE SLEEVES ARE THE TOP THREE SECTORS ON **BOTH** BASES — XLP 1st / XLV 2nd / XLY 3rd on 20 days AND 1st / 2nd / 3rd intraday — THE FIRST UNSPLIT RULE-9 READING IN THREE SESSIONS. ⚠ THE FALLBACK DATE-CONFIRMED **NOTHING** TO TODAY ON ANY SLEEVE OR ON THE MACRO CALENDAR, AN EIGHTH CONSECUTIVE DEGRADED SESSION, AND CLX IS **UNWIRED AND UNDENIED A 25th CHECK** — THIS TIME ON AN UNDATED BETAVILLE TAKEOVER RUMOUR REFUSED ON BOTH OF RULE 14's LIMBS.**
+
+### Research path — ⚠⚠ DEGRADED, AND NOW DIAGNOSED
+| Attempt | Result |
+|---|---|
+| `bash scripts/perplexity.sh "..."` | ⚠ **HTTP 401 — EIGHTH CONSECUTIVE SESSION** |
+| Response body read (first time in eight sessions) | ⚠⚠ **`{"type":"insufficient_quota","code":401,"message":"You exceeded your current quota, add credits at https://console.perplexity.ai/project/billing"}`** |
+| `PERPLEXITY_API_KEY` present? | ✓ **YES — set, 53 chars. NOT the failure.** |
+| `scripts/perplexity.sh` correct? | ✓ **YES — no code change needed. Do not "fix" the wrapper.** |
+| Fallback used | WebSearch × 4 (CLX, GEHC, MCD, macro) |
+| Items date-confirmed to 2026-11-24 | ⚠⚠ **ZERO, ON ALL FOUR QUERIES** |
+
+- ⚠⚠ **THE CONSEQUENCE IS NAMED RATHER THAN THE COUNT ALONE: RULE 14's BAR CANNOT BE *MET* BY THIS PATH, ONLY *FAILED*. The desk holds 41.5057% of equity on carried theses it cannot currently refresh, and two specific items are stuck behind it — the CLX rumour (25 checks, 10.04% of equity) and MCD's 11/17 8-K, whose subject the fallback could not retrieve at all (20.45% of equity).**
+
+### Sleeve research (STEP 6) — ⚠ NOTHING DATED, NOTHING BROKEN
+| Sleeve | What the fallback returned | Dated to today? | Verdict |
+|---|---|---|---|
+| **CLX** | 11/02 Q1 FY27 results + updated outlook (carried); Sept quarterly dividend $1.25 (carried); consensus "Hold", PT ~$97 (undated); ⚠ **an UNDATED, UNWIRED Betaville takeover rumour**; conflicting marks ~$95-$104 | ⚠ **NO — 25th CONSECUTIVE FAILURE** | ⚠ **HOLD. The rumour is refused on BOTH rule-14 limbs: no wire service carries it, and it has no date. It is noise, not thesis-relevant.** ⚠ Note the PT ~$97 sits **BELOW** the live $106.6161 print — carried as an unresolved valuation flag, not acted on. |
+| **GEHC** | Q3 FY26 results (carried); Neal Sandy to President/CEO of PCS effective 11/16; consensus "Buy", avg PT $87.85 (undated); ⚠ conflicting marks $85.81 (11/04) vs **$71.45 (undated)** | ⚠ **NO** | ✓ **NO BREAK — HOLD.** Thesis intact, +7.9160%, XLV 2nd of twelve. |
+| **MCD** | 11/04 Q3: adj EPS +11%, non-GAAP $3.57 (+5.6% vs est), revenue $7.16bn +1.1% **MISSING** est, global comps +1.5%, **50th consecutive annual dividend raise**; shares +5.6-6% on the print; ⚠ **an 8-K filed 11/17 whose subject could not be retrieved** | ⚠ **NO** | ✓ **NO BREAK — HOLD.** ⚠ **The 11/17 8-K is HANDED FORWARD as a named open item on the book's largest and only rule-breaching sleeve — retrieve from SEC EDGAR directly.** |
+| **Macro** | ⚠ **NOT AVAILABLE for 2026-11-24.** Newest retrievable PCE items were Aug (headline +3.7% y/y, core 3.3%) and Oct 1 (Aug PCE +3.4% vs 3.7% est) — both carried, neither current | ⚠ **NO** | ⚠ **No macro catalyst can be confirmed for today or tomorrow. The core-PCE expectation carried by prior runs is NOT date-confirmable on this path — do not size anything off it.** |
+
+### ✓✓ RULE 13 — APPLIED, 40th OCCURRENCE, AND IT MATTERED ON EVERY SLEEVE
+The fallback returned conflicting and undated marks on **all three** positions. Every figure in today's TRADE-LOG entry is struck on live SIP `latestTrade` prints, not on these:
+| Sleeve | Fallback marks (discarded) | Live SIP print (used) | Impact had the stale mark been used |
+|---|---|---|---|
+| **GEHC** | $85.81 (11/04) / **$71.45 (undated, GuruFocus)** | **$82.4800** | ⚠⚠ **$71.45 would have put GEHC BELOW its $78.804 stop and mis-stated rule 7 by ~10 pp — i.e. reported an exit that has not happened.** |
+| **CLX** | "~$95 early 2026 / ~$104 August" | **$106.6161** | ⚠ Would have understated the sleeve and mis-stated the rule-7 gap. |
+| **MCD** | $278.07 (11/06) / $276.45 (11/08) / $281.53 (11/10) | **$280.4800** | ⚠ Would have moved the rule-3 breach read by up to 0.29 pp either way. |
+
+- ✓✓ **THE DISCIPLINE IS THE POINT: three sleeves, six conflicting third-party marks, and the rule-7 and rule-3 gates both turn on the number chosen. The freshest first-party source won in every case.**
+
+### Sector tape — ✓✓ THE 20-DAY RE-READ, AND THE INVERSION IS DEAD
+| # | 20-day settled (10/27 → 11/24) | | Today intraday (vs 11/23 settle) |
+|---|---|---|---|
+| 1 | ✓✓ **XLP (CLX)** +5.7143% | | ✓✓ **XLV (GEHC) +2.9025%** |
+| 2 | ✓✓ **XLV (GEHC)** +3.1253% | | ✓✓ **XLP (CLX) +1.8473%** |
+| 3 | ✓✓ **XLY (MCD)** +2.0961% | | ✓ **XLY (MCD) +0.6582%** |
+| 4 | XLRE +2.0146% | | SPY **-0.5702%** |
+| 5 | XLC +1.4240% | | ⚠⚠ **XLK -3.2755%** |
+| 6 | XLU +1.4002% | | |
+| 7 | XLF +0.5100% | | |
+| 8 | XLB -3.3700% | | |
+| 9 | XLI -3.6803% | | |
+| 10 | SPY -6.5470% | | |
+| 11 | XLE -11.4206% | | |
+| 12 | ⚠⚠ **XLK -16.9666%** | | |
+
+- ✓✓ **XLK's 20-DAY READING DETERIORATED (-12.8918% → -16.9666%) DESPITE TWO +8.8% SESSIONS INSIDE THE WINDOW. THE ONE-SESSION INVERSION FLAGGED ON 11/23 DID NOT SURVIVE A SECOND SESSION. RULE 9's CAUTION WAS CORRECT AND IS NOW VINDICATED BY PRICE, NOT MERELY BY BASIS.**
+- ⚠ **XLP's LEAD WIDENED +2.8365% → +5.7143% AND XLV MOVED 5th → 2nd. THE DEFENSIVE REGIME IS STRENGTHENING. THAT MAKES RULE 2's 33.4943 pt BREACH MORE EXPENSIVE, NOT LESS — the sectors the book is permitted to buy are precisely the ones working, and only decision 13 stands in the way.**
+
+### Calendar — ✓ FIRST-PARTY CONFIRMED (`alpaca.sh calendar 2026-11-24 2026-12-01`)
+| Date | Session |
+|---|---|
+| **Wed 11/25** | ✓ 09:30-16:00 — **THE LAST FULL SESSION OF THE WEEK** |
+| **Thu 11/26** | ⚠ **ABSENT FROM THE CALENDAR = THANKSGIVING HOLIDAY, MARKET CLOSED** |
+| **Fri 11/27** | ⚠ **HALF DAY, 09:30-13:00 ET — and the 11/27 WEEKLY REVIEW is due into that compressed bell** |
+| Mon 11/30 | 09:30-16:00 |
+| Tue 12/01 | 09:30-16:00 |
+
+### Nothing staged
+- ⚠ **NO CANDIDATE STAGED FOR 11/25. Rule 2 is 33.4943 pts in breach and the cure is 23 names wide under the 52-week-high basis — but decision 13 is unanswered and this run produced no dated catalyst for any name. Both gates stand.**
+- ✓ **NO EXIT TRIGGER ARMED ON ANY SLEEVE. Rule 14's bar was not met by anything, in either direction.**

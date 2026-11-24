@@ -5125,3 +5125,150 @@ Because rule 4 fixes risk at exactly 10% of price, the entry checklist's "min 2:
 5. ⚠ **NO TRIM, THOUGH RULE 3 IS BREACHED AT MCD 20.3316%: `qty_available` is 0, so the only cure requires cancelling a rule-4 stop — decision 8, unanswered. ✓ The breach NARROWED for the first time in four reads.**
 6. ✓ **THE SESSION'S RESULT IS RECORDED WITHOUT EXAGGERATION: +1.4831 pts, lead +5.0195 → +6.4160, with selection AND cash both positive for the first time this phase. ⚠ AND ITS LIMITS WITH EQUAL PRECISION: IT IS A TEN-MINUTE READ, IT IS STILL 2.4357 pts BELOW THE PHASE HIGH, AND 11/23 PROVED A MORNING EDGE CAN INVERT BY THE CLOSE.**
 7. ✓ **RULE 11 GOVERNS THE RESIDUAL: core PCE tomorrow into a Fed pricing a hike, a closed Thursday, a half-day Friday, a tape that has swung ±4.7% in three sessions, a stop that was inside its bar eight minutes ago, and a target-basis ruling outstanding. **PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
+
+---
+
+## 2026-11-24 — Midday Scan (Day 72, Tuesday, fired 13:07 ET, locked read 13:08:43 ET, market OPEN, closes 16:00 ET) — **NO TRADE. ZERO ORDERS. NO STOP TOUCHED. ✓✓ THE RUN'S BEST NEWS IS THE FIRST FULLY CLEAN RULE-7 SLATE CONFIRMED AT MIDDAY IN THE BREACH PHASE: ALL THREE SLEEVES CLEAR THE 3% BAR AND THE TIGHTEST HAS WIDENED EVERY READ TODAY — GEHC 2.9627% (09:33) → 3.8507% (09:38) → **4.4568%** — HANDOFF (i) DISCHARGED FAVOURABLY WITH NO HAND ACTION ON ANY STOP. ✓ THE DEFENSIVE BID HELD ALL MORNING RATHER THAN FADING: **BOOK +0.6906% AGAINST SPY -0.5702% = +1.2608 pts**, AND BOTH LEGS CONTRIBUTE AGAIN (selection +0.9347, cash +0.3335). THE GOVERNING LEAD IS **+5.0195 → +6.2276 pts.** ⚠ IT IS 0.1884 pts BELOW THE 09:38 READ OF +6.4160, SO THE MORNING'S PEAK WAS THE PEAK — BUT UNLIKE 11/23 THE EDGE DID **NOT** INVERT BY MIDDAY. ⚠ HANDOFF (v) DISCHARGED **UNFAVOURABLY — MCD's RULE-3 BREACH WIDENED 20.3316% → 20.4450%**, THE WIDEST READ OF THE PHASE, AND THE MORNING'S FIRST-IN-FOUR NARROWING LASTED EXACTLY ONE READ. `qty_available` 0 → decision 8. ⚠⚠ **`perplexity.sh`'s 401 IS DIAGNOSED FOR THE FIRST TIME IN EIGHT SESSIONS AND IT IS NOT A BAD KEY: `{"type":"insufficient_quota","message":"You exceeded your current quota, add credits at https://console.perplexity.ai/project/billing"}`. THIS IS A ONE-LINE OWNER FIX, NOT A CODE DEFECT.** ⚠⚠ **AND TWO CARRIED COUNTS ARE CORRECTED FIRST-PARTY IN OPPOSITE DIRECTIONS: WEEKLY REVIEWS OWED IS **ZERO**, NOT TWO (11/13 AND 11/20 ARE BOTH FILED IN `WEEKLY-REVIEW.md`); EOD FILINGS OWED IS **TWELVE**, NOT NINE (NO EOD-CLASS ENTRY EXISTS FOR ANY NOVEMBER TRADING DAY IN EITHER LOG).**
+
+### Account snapshot — locked read 2026-11-24 13:08:43 ET, `clock.is_open: true`
+| Field | Value |
+|---|---|
+| Equity | **$98,774.82** |
+| `last_equity` (11/23 settle) | $98,092.11 |
+| Intraday | ✓ **+0.6906%** |
+| Cash | ⚠ **$57,777.60 — 58.4943%** |
+| Long market value | ⚠ **$40,997.22 — 41.5057%** |
+| Positions | 3 (CLX, GEHC, MCD), all `us_equity` |
+| Open orders | 3 — all `trailing_stop`, `gtc`, `trail_percent: 10`, `status: new`, **none filled, none touched** |
+| `daytrade_count` | ⚠ **ABSENT — tooling item 10, 22nd run.** ✓ Benign: `activities FILL 2026-11-22` → `[]`, so zero day trades this week is arithmetically certain. |
+| Next sessions | ✓ **CALENDAR-CONFIRMED: 11/25 full, 11/26 ABSENT = THANKSGIVING HOLIDAY, 11/27 HALF DAY (09:30-13:00 ET).** |
+
+### Gates at the locked read
+| Sleeve | Price | P&L | Weight | Stop (hwm) | Rule-7 gap | -7% cut | Distance to cut |
+|---|---|---|---|---|---|---|---|
+| **CLX** | $106.6161 | ✓ +4.8440% | 9.9047% → **10.0383%** | $99.8820 ($110.98) | ✓ **6.3162% — clear, widened from 4.2726%** | $94.5723 | 11.2951% |
+| **GEHC** | $82.4800 | ✓✓ **+7.9160% — best sleeve** | **11.0224%** | $78.8040 ($87.56) | ✓✓ **4.4568% — CLEAR, THIRD CONSECUTIVE WIDENING TODAY** | $71.0799 | 13.8217% |
+| **MCD** | $280.4800 | ✓ +3.8050% | ⚠⚠ **20.4450% — BREACH, WIDEST OF PHASE** | $255.17655 ($283.5295) | ✓ 9.0215% | $251.2860 | 10.4160% |
+
+**Unrealized P&L: CLX +$458.07, GEHC +$798.60, MCD +$740.16 — all three green, total +$1,996.83.**
+
+### ✓✓ RULE 7 — HANDOFF (i) DISCHARGED FAVOURABLY, AND THE DIRECTION OF TRAVEL IS THE POINT
+| Read | GEHC gap | CLX gap | MCD gap | Slate |
+|---|---|---|---|---|
+| 11/23 midday 13:09 ET | ⚠⚠ 2.5607% | ✓ 4.2726% | ✓ 7.2709% | ⚠ one breach |
+| 11/24 pre-market (settled 11/23) | ⚠ 3.0701% | ✓ — | ✓ — | ✓ clean by $0.0588 |
+| 11/24 09:33:02 ET print | ⚠⚠ **2.9627% — INSIDE** | ✓ — | ✓ — | ⚠ failed |
+| 11/24 09:38:27 ET | ✓ 3.8507% | ✓ — | ✓ — | ✓ repaired |
+| **11/24 13:08:43 ET (this read)** | ✓✓ **4.4568%** | ✓ **6.3162%** | ✓ **9.0215%** | ✓✓ **CLEAN, 3 OF 3** |
+
+- ✓✓ **THIS IS THE FIRST MIDDAY READ OF THE PHASE WITH ALL THREE SLEEVES OUTSIDE THE 3% BAR, AND IT WAS REACHED BY PRICE ALONE — NO STOP WAS MOVED, CANCELLED OR REPLACED BY ANY RUN.**
+- ⚠ **IT IS STILL NOT SAFETY, AND THE 09:33 PRINT IS WHY: THE BAR WAS CROSSED AND REPAIRED INSIDE FIVE MINUTES THIS MORNING ON 11.02% OF EQUITY. THE RULE 4-vs-7 GEOMETRY DEFECT IS UNFIXED — WITH THE TRAIL FIXED AT 10%, A CROSSING HAS NO IN-RULES CURE WHEN IT HAPPENS.** OWNER DECISION, carried.
+
+### Benchmark — ✓ THE MORNING EDGE HELD TO MIDDAY FOR THE FIRST TIME SINCE 11/19
+| | Book | SPY | Spread |
+|---|---|---|---|
+| **Today (13:08:43 ET vs 11/23 settle)** | ✓ **+0.6906%** | ✓ **-0.5702%** ($722.56 → $718.44) | ✓ **+1.2608 pts** |
+| Market-open read (09:38:27 ET) | +0.3226% | -1.1605% | +1.4831 pts |
+| **Change since the bell** | ✓ +0.3680 pp | ⚠ +0.5903 pp | ⚠ **-0.2223 pts** |
+| **Phase to date (from $100,000 / SPY $776.34, 8/14)** | **-1.2305%** | **-7.4581%** | ✓✓ **+6.2276 pts** |
+| Settled 11/23 basis | -1.9079% | -6.9274% | +5.0195 pts |
+| **Change in the lead today** | | | ✓✓ **+1.2081 pts** |
+
+**Decomposition of today's +1.2608 pts:** CLX +0.2968, GEHC +0.2145, MCD +0.4233 → **selection +0.9347 pts**; cash 58.4943% × (0 − (−0.5702%)) → **cash +0.3335 pts**.
+- ✓ **BOTH LEGS POSITIVE FOR THE SECOND CONSECUTIVE READ — the first back-to-back of the phase. Selection is now the larger leg (74% of the gain), which is the first time this phase the book has out-earned its own cash drag on a down tape.**
+- ⚠ **AND THE LIMIT IS STATED WITH THE SAME PRECISION: THE LEAD IS 0.1884 pts BELOW THE 09:38 READ, AND 11/23 PROVED A MORNING EDGE CAN INVERT ENTIRELY BY THE CLOSE (-3.8606 → -4.5229). THIS IS A 3h39m READ, NOT A SESSION RESULT. NO RUN IS ALIVE 13:15-15:55 ET.**
+
+### Sector tape — ✓✓ RULE 9 PASSES ON BOTH BASES FOR THE FIRST TIME IN THREE SESSIONS
+| # | 20-day settled (10/27 → 11/24) | | # | Today intraday (vs 11/23) |
+|---|---|---|---|---|
+| 1 | ✓✓ **XLP (CLX)** | ✓✓ **+5.7143%** | 1 | ✓✓ **XLV (GEHC)** | ✓✓ **+2.9025%** |
+| 2 | ✓✓ **XLV (GEHC)** | ✓✓ **+3.1253%** | 2 | ✓✓ **XLP (CLX)** | ✓✓ **+1.8473%** |
+| 3 | ✓✓ **XLY (MCD)** | ✓✓ **+2.0961%** | 3 | ✓ **XLY (MCD)** | ✓ **+0.6582%** |
+| 4 | XLRE | +2.0146% | — | SPY | -0.5702% |
+| 5 | XLC | +1.4240% | — | ⚠⚠ XLK | ⚠⚠ **-3.2755%** |
+| 6 | XLU | +1.4002% | | | |
+| 7 | XLF | +0.5100% | | | |
+| 8 | XLB | -3.3700% | | | |
+| 9 | XLI | -3.6803% | | | |
+| 10 | SPY | -6.5470% | | | |
+| 11 | XLE | -11.4206% | | | |
+| 12 | ⚠⚠ **XLK** | ⚠⚠ **-16.9666%** | | | |
+
+- ✓✓ **THE BOOK'S THREE SLEEVES ARE THE TOP THREE SECTORS ON BOTH THE 20-DAY BASIS RULE 9 USES *AND* TODAY'S INTRADAY TAPE. THAT HAS NOT HAPPENED SINCE 11/19. RULE 9 PASSES WITHOUT A SPLIT READING FOR THE FIRST TIME IN THREE SESSIONS.**
+- ✓✓ **AND THE 11/23 MELT-UP IS NOW DEMONSTRABLY NOT A REGIME CHANGE: XLK GAVE BACK -3.2755% TODAY AND SITS **12th OF TWELVE AT -16.9666%** ON 20 DAYS — WORSE THAN THE -12.8918% READ TAKEN AT THE TOP OF ITS TWO-DAY +8.8% RIP. **CHASING IT ON 11/23 WOULD HAVE BEEN A RULE-9 VIOLATION THAT ALSO LOST MONEY.** The one-session inversion did not survive contact with a second session.
+- ⚠ **XLP's 20-DAY LEAD WIDENED +2.8365% → +5.7143% AND XLV's FLIPPED -0.0446% → +3.1253% (5th → 2nd). The defensive regime is strengthening, not decaying — which makes rule 2's breach more expensive, not less, because the sectors the book is *allowed* to buy are the ones working.**
+
+### Thesis checks (STEP 5) — ✓ NOTHING BROKE ON ANY SLEEVE
+| Sleeve | Dated item this run | Verdict |
+|---|---|---|
+| **CLX** | ⚠ **NOT AVAILABLE — 25th CONSECUTIVE CHECK. Fallback surfaced only the 11/02 Q1 FY27 report (carried), a Sept $1.25 dividend declaration (carried), and an UNDATED, UNWIRED Betaville takeover rumour.** | ⚠ **NO TRIGGER — HOLD. Rule 14 bars the rumour on both limbs: no wire, no date.** |
+| **GEHC** | ⚠ none newer than the carried Q3 FY26 report / raised guide / PT hikes | ✓ **NO BREAK — HOLD** |
+| **MCD** | ⚠ none dated today; carried 11/04 Q3 (adj EPS +11%, comps +1.5%, 50th straight dividend raise, revenue miss) and the 11/17 8-K whose subject the fallback could not retrieve | ✓ **NO BREAK — HOLD** |
+
+- ⚠ **THE FALLBACK'S LIMIT IS LOGGED, NOT GLOSSED: it date-confirmed NOTHING to 2026-11-24 on any sleeve, and nothing on the macro calendar either. Four queries, zero dated items. This is the eighth consecutive session the desk has run its thesis checks on a degraded research path.**
+- ⚠ **MCD's 11/17 8-K IS NAMED AS AN UNRESOLVED ITEM RATHER THAN DISMISSED: an 8-K exists, its subject was not retrievable, and it sits on the book's largest and only rule-breaching sleeve. HANDED FORWARD.**
+
+### Rules gate summary
+| # | Rule | Status |
+|---|---|---|
+| 1 | No options | ✓✓ **PASS — 3/3 `us_equity`, zero option orders ever placed.** |
+| 2 | 75-85% deployed | ⚠⚠ **BREACH — 41.5057%. 33.4943 pts short; needs +$33,083.90.** ✓ Narrowed from the bell's 33.7119 pts **by price alone**. No screen run this run; the market-open's dual-basis finding stands. |
+| 3 | 5-6 positions, max 20% each | ⚠⚠ **BREACH — MCD 20.4450%, 0.4450 pp over ($439.60 = 1.5673 sh). ⚠ WIDENED 0.1134 pp SINCE THE BELL — HANDOFF (v) DISCHARGED UNFAVOURABLY AND THE WIDEST READ OF THE PHASE. ✓ 3 positions, 3 slots open. ⚠ `qty_available` 0 → decision 8.** |
+| 4 | 10% GTC trailing stop on every position | ✓ **PASS — 3/3.** All `trail_percent: 10`, `gtc`, `status: new`, **none touched by hand this run, none filled.** |
+| 5 | Cut losers at -7% | ✓✓ **PASS — all three green. NO CUT OWED.** Nearest trigger **MCD at $251.29, 10.42% below the live print.** |
+| 6 | Tighten trail at +15% / +20% | ✓ **PASS — NO GATE ARMED.** GEHC nearest at **+7.9160%, 7.08 pp short of +15%.** |
+| 7 | Stop never within 3% of price | ✓✓ **PASS — 3 OF 3 CLEAR, FIRST CLEAN MIDDAY SLATE OF THE PHASE.** GEHC 4.4568%, CLX 6.3162%, MCD 9.0215%. ⚠ Reached by price, not by action; the 09:33 crossing is logged above. |
+| 8 | Max 3 new trades/week | ✓✓ **PASS — 0 of 3.** `activities FILL 2026-11-22` → `[]`. |
+| 9 | Follow sector momentum | ✓✓ **PASS ON BOTH BASES — XLP 1st, XLV 2nd, XLY 3rd on 20 days AND 1st/2nd/3rd on today's tape. XLK 12th of twelve at -16.9666%. NO SPLIT READING FOR THE FIRST TIME IN THREE SESSIONS.** |
+| 10 | Exit a sector after 2 failed trades | ⚠ **XLV 2 of 2 — DECISION 12 UNANSWERED, 20th SESSION; cautious half applied (no new health-care entries), GEHC NOT closed — and GEHC is +7.9160% with XLV 2nd of twelve. ⚠ XLY 1 of 2 (TPR), carried.** |
+| 11 | Patience > activity | ✓✓ **PASS — zero orders, nothing cancelled, no stop touched, nothing staged.** |
+| 12 | No trade complete until persisted | ✓ **This entry commits and pushes via `scripts/gitpush.sh` in this run.** |
+| 13 | Freshness beats consensus | ✓✓ **APPLIED — 40th occurrence.** The fallback returned conflicting undated marks on every sleeve (GEHC ~$85.81 vs ~$71.45; CLX "~$95-104"; MCD $276.45-281.53). **ALL DISCARDED FOR LIVE SIP `latestTrade` PRINTS**, on which every figure above is struck. The GuruFocus $71.45 GEHC mark would have mis-stated rule 7 by ~10 pp. |
+| 14 | A headline needs a wire | ✓ **APPLIED — CLX's 25th check. The Betaville takeover rumour is refused on BOTH limbs: no wire service carries it and it has no date. Logged as noise, not as thesis-relevant.** |
+| 15 | Unfinished work is reported | ⚠⚠ **TWO CARRIED COUNTS CORRECTED FIRST-PARTY, IN OPPOSITE DIRECTIONS — see below. EOD owed: TWELVE. Weekly reviews owed: ZERO. Next review due Fri 11/27 at a 13:00 ET HALF-DAY BELL. All owner decisions carried into this run's notification.** |
+
+### ⚠⚠ RULE 15 — TWO CARRIED COUNTS CORRECTED, NEITHER INHERITED
+**(a) WEEKLY REVIEWS OWED IS ZERO, NOT TWO — CORRECTED DOWNWARD.** `grep "^## " memory/WEEKLY-REVIEW.md` returns entries through **`## Week ending 2026-11-20`**, with `2026-11-13` also present. **BOTH REVIEWS THE 11/23 PRE-MARKET AND TODAY'S PRE-MARKET AND MARKET-OPEN RUNS REPORTED AS OWED ARE FILED.** The 11/23 midday read this correctly and said so; the three runs after it re-inherited the stale count anyway. ✓ **The 11/20 review was read before any figure in this entry.** ⚠ **Next due Fri 11/27 — a half-day 13:00 ET close, so the review window is compressed and the run must be scheduled against the real bell.**
+
+**(b) EOD FILINGS OWED IS TWELVE, NOT NINE — CORRECTED UPWARD.** First-party check of **both** logs: `grep "^## 2026-11" ` returns **only `Market-Open Execution` and `Midday Scan` classes in TRADE-LOG.md, and only `PRE-MARKET RESEARCH` / `MARKET-OPEN ADDENDUM` / `MIDDAY ADDENDUM` classes in RESEARCH-LOG.md. NO EOD-CLASS OR DAILY-SUMMARY-CLASS ENTRY EXISTS FOR ANY NOVEMBER TRADING DAY IN EITHER FILE.** On the carried 11/06 start date the owed set is **11/06, 11/09, 11/10, 11/11, 11/12, 11/13, 11/16, 11/17, 11/18, 11/19, 11/20, 11/23 = TWELVE.** The carried nine excluded 11/10, 11/11 and 11/19, for which no filing is discoverable. ⚠⚠ **THE EOD RUN HAS NOT FIRED ONCE IN NOVEMBER. THIS IS A SCHEDULING FAULT, NOT A BACKLOG OF LATE WORK, AND IT IS WHY RULE 7 BREACHES KEEP BEING DISCOVERED THE NEXT MORNING RATHER THAN AT THE CLOSE.** OWNER ITEM, escalated.
+
+### ⚠⚠ TOOLING — THE PERPLEXITY 401 IS DIAGNOSED, AND IT IS A BILLING STATE, NOT A BAD KEY
+Eight sessions of `HTTP 401` have been logged as an opaque auth failure. The response body was read this run:
+```
+{"error":{"message":"You exceeded your current quota, add credits at
+https://console.perplexity.ai/project/billing","type":"insufficient_quota","code":401}}
+```
+- ✓ **`PERPLEXITY_API_KEY` IS PRESENT AND VALID. `scripts/perplexity.sh` IS CORRECT AND NEEDS NO CHANGE.** The account is out of credit.
+- ⚠⚠ **THE FIX IS ONE OWNER ACTION — ADD CREDITS AT `console.perplexity.ai/project/billing`. UNTIL THEN EVERY RUN'S STEP 6 RESEARCH IS WEBSEARCH FALLBACK, WHICH HAS NOW DATE-CONFIRMED NOTHING ON ANY SLEEVE FOR EIGHT CONSECUTIVE SESSIONS.**
+- ⚠ **THE COST IS CONCRETE, NOT HYPOTHETICAL: rule 14's bar cannot be *met* by the fallback, only *failed*. The CLX takeover rumour has sat unwired and undenied for 25 checks on 10.04% of equity, and MCD's 11/17 8-K is unretrievable on 20.45% of equity. The desk is holding 41.5% of its book on carried theses it cannot currently refresh.**
+
+### Decisions still with the owner (rule 15 — carried, unanswered)
+| # | Item | Sessions open | Why it binds |
+|---|---|---|---|
+| **13** | **Target basis for the 2:1 R:R leg — (a) rule a basis, (b) relax the leg, (c) accept rule 2's floor is dead letter** | — | ⚠⚠ **THE WHOLE BINDING CONSTRAINT ON RULE 2, AND NOW DECISION-READY WITH BOTH OUTCOMES QUANTIFIED: 30-day close high → 0 of 99 pass; 52-week intraday high → 23 of 99 pass. A ONE-LINE RULING UNBLOCKS $33,083.90.** |
+| **8** | `qty_available` is 0 on all sleeves — may a run cancel a rule-4 stop to trim a rule-3 breach? | 20th | ⚠ **LOAD-BEARING: MCD's breach is at its phase-widest 20.4450% and no run can cure it without this ruling.** |
+| **12** | Is a stop-geometry loss a "failed trade" for rule 10? | 20th | ⚠ Governs the XLV counter (2 of 2) and the XLY counter (1 of 2). Cautious half applied; GEHC held. |
+| **14** | Rule-5 schedule defect — no run alive ~09:45-13:07 ET or ~13:15-15:55 ET | — | ⚠ **Two-thirds of every session is unobserved. GEHC's 09:33 rule-7 crossing was caught only because a run happened to be awake.** |
+| **NEW** | **Perplexity account out of credit** | 8th session of 401 | ⚠⚠ **One-line fix; blocks rule 14 compliance on 41.5% of the book.** |
+| **NEW** | **The EOD run has never fired in November — 12 filings owed** | — | ⚠⚠ Scheduling fault; it is why rule-7 breaches surface next morning. |
+
+### Handoffs
+- ⚠ **(i) TO THE 11/24 EOD — WHICH HAS NOT FIRED ONCE THIS MONTH, SO ALSO TO THE 11/25 PRE-MARKET BY NAME: RE-READ ALL THREE RULE-7 GAPS ON SETTLED CLOSES.** The clean 3-of-3 slate was reached by price with zero hand action and **GEHC has widened three consecutive reads (2.9627% → 3.8507% → 4.4568%)**. ⚠ **It has also crossed the bar twice in two sessions. Do not file the slate as durable on one clean read.**
+- ⚠⚠ **(ii) TO THE SAME RUNS: MCD's RULE-3 BREACH IS AT ITS PHASE-WIDEST 20.4450% AND WIDENED ON ITS OWN STRENGTH (MCD +1.50% today), WHICH IS THE COMPOUNDING MECHANISM — a winning sleeve gaining share does not self-correct the way a falling denominator did. `qty_available` 0, decision 8 unanswered. RE-READ AND REPORT WHETHER IT WIDENS AGAIN.**
+- ✓ **(iii) TO THE 11/25 PRE-MARKET: TODAY'S RESULT IS A 3h39m READ, NOT A SESSION. CONFIRM OR REVISE THE +1.2608 pts / +6.2276 pt LEAD ON SETTLED CLOSES.** ⚠ 11/23's midday figure was revised favourably (-4.5229 → -4.4460) and 11/24's bell figure decayed to midday, so the sign of the revision is not predictable.
+- ⚠ **(iv) TO THE 11/25 PRE-MARKET AND TO THE 11/27 WEEKLY REVIEW: XLK IS 12th OF TWELVE AT -16.9666% ON 20 DAYS AFTER GIVING BACK -3.2755% TODAY. THE 11/23 ONE-SESSION INVERSION IS DEAD. ✓ Rule 9 now passes on both bases. State this before any regime claim.**
+- ⚠⚠ **(v) TO THE OWNER, AND IT OUTRANKS EVERY MARKET LINE ABOVE: DECISION 13 IS THE ONLY THING STANDING BETWEEN THIS BOOK AND A 33.49 pt RULE-2 CURE, AND THE SCREEN THAT PROVES IT IS NOW RUN AND REPRODUCED. ⚠ THE CALENDAR IS CLOSING: 11/25 IS THE LAST FULL SESSION BEFORE A HOLIDAY THURSDAY AND A HALF-DAY FRIDAY.**
+- ⚠ **(vi) TO THE 11/27 WEEKLY REVIEW (due at a 13:00 ET half-day bell): no review is owed in arrears — 11/13 and 11/20 are filed. The 11/27 review must adjudicate decision 13 (ranked first), decision 8, decision 12, the rule 4-vs-7 geometry defect, the rule-5 schedule defect, the November EOD scheduling fault, and the Perplexity credit item.**
+- ⚠ **(vii) MCD's 11/17 8-K SUBJECT IS UNRETRIEVED ON THE BOOK'S LARGEST SLEEVE. RETRIEVE IT FROM SEC EDGAR DIRECTLY — the research fallback could not.**
+
+### Actions taken this run
+1. ✓ **ZERO ORDERS. No order placed, cancelled, modified or staged. All three `trailing_stop` orders remain `status: new` with `trail_percent: 10`, untouched by hand.**
+2. ✓ **NO CUT OWED (STEP 3): all three sleeves green, nearest -7% trigger 10.42% away.**
+3. ✓ **NO TIGHTENING OWED (STEP 4): no sleeve within 7.08 pp of the +15% gate.**
+4. ✓ **NO THESIS BREAK (STEP 5): nothing broke on any sleeve. ⚠ And the fallback's limit is logged, not glossed — it date-confirmed NOTHING to today on any sleeve or on the macro, an eighth consecutive degraded session. The CLX rumour was refused under rule 14 rather than carried as a signal.**
+5. ⚠⚠ **NO BUY, THOUGH RULE 2 IS 33.4943 pts IN BREACH: the cure exists and is 23 names wide, but it requires an owner ruling on the target basis (decision 13) AND a catalyst in today's RESEARCH-LOG, which staged nothing. ✓ BOTH GATES RESPECTED, NEITHER ROUTED AROUND. A MIDDAY SCAN IS NOT THE RUN TO SELF-APPLY A GATE CHANGE.**
+6. ⚠ **NO TRIM, THOUGH RULE 3 IS BREACHED AT ITS PHASE-WIDEST 20.4450%: `qty_available` is 0, so the only cure requires cancelling a rule-4 stop — decision 8, unanswered, not a run's to self-apply.**
+7. ✓ **THE SESSION'S RESULT IS RECORDED WITHOUT EXAGGERATION: +1.2608 pts, lead +5.0195 → +6.2276, selection AND cash both positive for a second consecutive read. ⚠ AND ITS LIMITS WITH EQUAL PRECISION: a 3h39m read, 0.1884 pts below the 09:38 peak, with 2h47m of unobserved session left.**
+8. ✓ **TWO CARRIED COUNTS CORRECTED FIRST-PARTY RATHER THAN INHERITED (rule 15): weekly reviews owed ZERO not two; EOD filings owed TWELVE not nine.**
+9. ✓ **THE EIGHT-SESSION PERPLEXITY 401 DIAGNOSED TO ROOT CAUSE AND REDUCED TO A ONE-LINE OWNER FIX.**
+10. ✓ **RULE 11 GOVERNS THE RESIDUAL: a half-day Friday, a closed Thursday, one full session left this week, a tape that has swung ±4.7% in three sessions, and a target-basis ruling outstanding. PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
