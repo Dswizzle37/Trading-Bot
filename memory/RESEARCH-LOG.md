@@ -21265,3 +21265,158 @@ Searched restricted to whitehouse.gov, ustr.gov, federalregister.gov, cbp.gov, c
 11. ✓ **TSCO RE-STRUCK ON A LIVE 0.03%-WIDE BOOK: 4.29:1 under basis B, 0.66:1 under the $42 PT. NOT PLACED, NOT STAGED.**
 12. ⚠ **TWO MISDATED SEARCH RESULTS DISCARDED RATHER THAN FOLDED IN: a December 22 holiday-rally item and a pair describing a hike to 3.75-4.00% with SPX at 7,615.70, neither consistent with the late-November tape.**
 13. ✓✓ **RULE 11 GOVERNS THE RESIDUAL: an active tech rout, a confirmed-hot core PCE, a priced December hike, an unpublished tariff list, 2h53m of liquidity and then a FOUR-DAY GAP. PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
+
+## 2026-11-26 — PRE-MARKET (Day 74, Thursday, fired 08:43 ET, THANKSGIVING — **MARKET CLOSED, ZERO ORDERS POSSIBLE**) — **HOLD. ✓✓ THE RESEARCH HEADLINE IS A STRUCTURAL FINDING, NOT A PRICE: THE 2:1 R:R LEG MATHEMATICALLY EXCLUDES THE ENTIRE DEFENSIVE UNIVERSE THAT RULE 9 POINTS AT — 9 OF 11 SCREENED STAPLES/UTILITY/REIT NAMES COME IN UNDER 1:1 EVEN UNDER BASIS B, AND THE 2 THAT CLEAR DO SO ONLY BECAUSE THEY SIT ~22-24% BELOW THEIR 52-WEEK HIGHS. ⚠ THE SECOND HEADLINE IS A CORRECTION OF OUR OWN NUMBER FOR THE SECOND READ RUNNING: THE PHASE LEAD IS +7.1191 pts, NOT THE +7.9676 CARRIED.**
+
+### ✓ SESSION STATUS — FIRST-PARTY, AUTHORITATIVE
+- ✓✓ **`clock.is_open: false`. 11/26 IS ABSENT FROM `/v2/calendar` = THANKSGIVING HOLIDAY. `next_open 2026-11-27T09:30:00-05:00`, `next_close 2026-11-27T13:00:00-05:00` — A 13:00 ET HALF DAY.**
+- ✓ Calendar first-party: 11/24 and 11/25 normal; **11/26 ABSENT**; 11/27 open 09:30 close **13:00**; 11/30 normal 16:00.
+- ✓ Secondary corroboration (Fidelity, QuantVPS) agrees: NYSE/Nasdaq closed 11/26, 13:00 ET close 11/27, SIFMA bond close 11/26. ⚠ Two retrieved sources dated Thanksgiving to 11/27 and 11/25 respectively — **DISCARDED as misdated; the first-party calendar governs.**
+- ✓✓ **NO ORDER COULD BE PLACED TODAY EVEN IF A RULE DEMANDED ONE. Every number below is the 11/25 SETTLED close, which makes this the cleanest read of the week — a settle, not a snapshot.**
+
+### Account snapshot (first-party, `balance_asof 2026-11-25`)
+| Field | Value |
+|---|---|
+| Equity | **$99,506.58** (`last_equity` identical — market closed) |
+| Cash | $57,777.60 |
+| Long market value | $41,728.98 |
+| Buying power | $347,951.54 (`regt` $157,284.18) |
+| **Deployed** | ⚠⚠ **41.9359% — RULE 2 BREACH, 33.0641 pts BELOW THE 75% FLOOR, $32,900.95 TO REACH IT** |
+| Positions | 3 of 5-6 (rule 3 count OK) |
+| Daytrades | 0 |
+| Endpoint | ✓ `paper-api.alpaca.markets/v2` — PAPER, confirmed, NOT TOUCHED |
+
+### Positions — all three green, all three stops live and untouched
+| Sym | Qty | Entry | 11/25 close | Gain | Peak gain | Wt% | GTC trail | Stop | Rule-7 gap | Breach px | To -7% |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | 101.6906 | 110.94 | ✓ **+9.0956%** | +9.1644% | 10.3686% | 10% `new` | 99.909 | ✓ 9.9432% | 102.999 | 16.10 pp |
+| GEHC | 132 | 76.43 | 83.33 | ✓ **+9.0279%** | +14.5623% | 11.0541% | 10% `new` | 78.804 | ⚠ **5.4314%** | 81.2412 | 16.03 pp |
+| MCD | 72 | 270.20 | 283.50 | ✓ **+4.9223%** | +6.0918% | ⚠ **20.5132%** | 10% `new` | 257.994 | ✓ 8.9968% | 265.9732 | 11.92 pp |
+- ✓ **RULE 4 SATISFIED THREE TIMES: three `trailing_stop` / `trail_percent: 10` / `time_in_force: gtc` orders, all `status: new`, none placed, cancelled or modified this run.**
+- ✓ **RULE 5 — NO CUT OWED. Nearest trigger 11.92 pp away (MCD).**
+- ✓ **RULE 6 — NO TIGHTEN OWED, AND HANDOFF (i) IS DISCHARGED NEGATIVELY BY THE CALENDAR: nothing could cross the +15% gate on a closed day. CLX 5.90 pp away, GEHC 5.97 pp. GEHC's *peak* gain is +14.5623%, i.e. the hwm came within 0.44 pp of arming rule 6 at some point — but rule 6 reads the position's gain, not its hwm, and that is +9.0279%.**
+- ✓ **RULE 7 — HANDOFF (ii) DISCHARGED, MARGINALLY UNFAVOURABLY. GEHC's gap 5.5051% (11/25 13:07 intraday) → 5.4314% (11/25 settle), room $4.526/share. The emergency stays UNARMED. ⚠ The defect is unchanged: the stop is pinned to an $87.56 hwm the price has not revisited, so a -2.51% session still re-arms it with no in-rules cure. 5th occurrence pending a ruling.**
+- ⚠ **RULE 3 — HANDOFF (iii) DISCHARGED FAVOURABLY FOR ONCE: MCD 20.6488% → 20.5132%, the breach NARROWED 0.1356 pt into the settle. Still breached, still uncurable while `qty_available` is 0 (decision 8, 24th session).**
+
+### Market context — 11/25 settled, first-party
+- ✓ **SPY $716.70, -0.2894% on the day.** ⚠ **AND THIS IS WHERE OUR OWN CARRIED NUMBER FAILS: the 11/25 midday read logged SPY -1.0551% at 13:07 ET. SPY then recovered +0.7592% into the bell. The "-1.0551% session" never happened.**
+- ⚠ **ONE CARRIED FIGURE CONTRADICTED AND NOT QUIETLY ADOPTED: the 11/25 midday entry revised SPY's 11/24 close UP to $718.91 "first-party". Today's `sip`, split-adjusted daily bar reads **$718.78** — the original figure. The revision does not reproduce. Using $718.78; the discrepancy is 0.018% and changes the session lead by 0.029 pt. Flagged, not buried.**
+- ✓ **The 7-session tape, first-party: 11/16 -1.912, 11/17 -1.015, 11/18 -0.306, 11/19 -1.962, 11/20 -3.640, 11/23 +4.709, 11/24 -0.486, 11/25 -0.289 (%).** ⚠⚠ **A retrieved secondary claim that the market "lost ground for seven straight days, its longest streak since the pandemic crash" IS FLATLY INCONSISTENT WITH THIS TAPE — 11/23 was +4.709%. DISCARDED AS MISDATED (almost certainly 2025), NOT FOLDED IN.**
+- ✓ **20-day sector momentum (11/25 close vs 10/28), first-party, rule 9's own metric:**
+  | Rank | Sector | 20d | 11/25 |
+  |---|---|---|---|
+  | 1 | **XLP** (CLX) | ✓✓ **+6.2874%** | +0.4571% |
+  | 2 | XLRE | +4.1063% | +0.9204% |
+  | 3 | XLU | +2.6359% | +0.4839% |
+  | 4 | **XLV** (GEHC) | +2.2034% | -0.5630% |
+  | 5 | XLC | +2.1718% | +0.8904% |
+  | 6 | **XLY** (MCD) | +1.8729% | -0.1954% |
+  | 7 | XLF | +0.6770% | +0.7129% |
+  | 8 | XLB | -1.2534% | +2.0730% |
+  | 9 | XLI | -3.2880% | +0.8292% |
+  | 10 | XLE | -11.0299% | +0.7444% |
+  | 11 | **XLK** | ⚠⚠ **-18.4346%** | -0.8276% |
+  | — | SPY | -7.2005% | -0.2894% |
+- ✓✓ **THE BOOK IS IN SECTORS 1, 4 AND 6 OF ELEVEN AND HOLDS ZERO TECH, WHICH IS 11.23 pp OF 20-DAY OUTPERFORMANCE VS SPY FOR XLP ALONE. RULE 9 IS BEING FOLLOWED, NOT ASSERTED.**
+- ✓ **Vol/commodity/rates proxies (first-party ETFs, DIRECTIONAL ONLY — these are not the VIX, WTI or Brent):** VIXY $23.28 **+4.441% on 11/25, +36.780% over 20d** (vol persistently bid); USO +3.293% / -16.017% 20d; BNO +2.857% / -15.312%; GLD +0.615% / -12.332%; TLT +0.920% / +1.543%; UUP -0.101% / +1.858%.
+- ⚠ **NOT BANKED (rule 14 — no wire, no dated primary): the actual 11/25 VIX, WTI and Brent settles could not be retrieved. Closest dated items are a Cboe note (week of 11/9: VIX +6 pts w/w to 25%, Brent below $100 first time in two months) and Newsquawk 11/18 ranges (WTI Jan'27 $82.38-84.77, Brent Jan'27 $91.00-93.37). An undated Yahoo VIX quote of 26.49 was REFUSED. The ETF proxies above are the only first-party read, and they say vol is bid and oil bounced.**
+- ⚠ **NOT BANKED: December 9 FOMC hike odds, retrieved at ~91% (Polymarket), ~92% (bond market) and 99.8% (one CME FedWatch citation) — a 9 pt spread across aggregators with no dated primary. BlackRock expects one quarter-point hike in December plus another in H1 2027. ✓ THE BANKED CARRIED FACT STANDS: OCTOBER CORE PCE 3.3% y/y, CONFIRMED HOT.**
+- ⚠ **NOT BANKED: E-mini S&P futures "+0.5%, ~35 index points" for the 11/27 half day. Retrieved from aggregators and it is a *this-morning* figure on a day the futures session itself halts 13:00 ET. Rule 13 bars sizing anything off it. Seasonal: SPX up on the Friday after Thanksgiving in 54 of 76 years since 1950 (71%) — a base rate, not a catalyst.**
+- ✓ No economic release lands today (market and bond market both closed). Nothing scheduled before the 11/27 open that was retrievable from a dated primary source.
+
+### ⚠⚠ THE RUN'S REAL FINDING — RULE 2's BREACH IS STRUCTURAL, AND BASIS B REWARDS DRAWDOWN
+Screened the defensive universe rule 9 points at (XLP/XLU/XLRE/XLC leaders), 11 names, 10% stop per rule 4, target = 52-week intraday high (**basis B**, the very basis decision 13 must ratify):
+| Sym | 11/25 | 20d | Stop (10%) | 52w high | **R:R under basis B** |
+|---|---|---|---|---|---|
+| PG | 173.23 | +9.46% | 155.91 | 174.56 | ⚠ **0.08:1** |
+| CHD | 113.31 | +8.17% | 101.98 | 115.46 | ⚠ 0.19:1 |
+| DUK | 131.90 | +6.74% | 118.71 | 134.49 | ⚠ 0.20:1 |
+| CL | 99.66 | +8.69% | 89.69 | 101.81 | ⚠ 0.22:1 |
+| KO | 97.59 | +6.39% | 87.83 | 100.56 | ⚠ 0.30:1 |
+| WELL | 246.18 | +8.35% | 221.56 | 255.20 | ⚠ 0.37:1 |
+| VZ | 47.28 | +9.50% | 42.55 | 51.68 | ⚠ 0.93:1 |
+| KR | 69.83 | +7.40% | 62.85 | 76.58 | ⚠ 0.97:1 |
+| O | 60.25 | +7.15% | 54.23 | 67.94 | ⚠ 1.28:1 |
+| **T** | 22.97 | +10.97% | 20.67 | 29.43 | ✓ **2.81:1** |
+| **HSY** | 182.57 | +11.48% | 164.31 | 239.48 | ✓✓ **3.12:1** |
+- ⚠⚠ **NINE OF ELEVEN FAIL THE 2:1 LEG — AND SEVEN FAIL BELOW 0.4:1 — NOT BECAUSE THEY ARE BAD TRADES BUT BECAUSE A 10% STOP REQUIRES A +20% TARGET, AND A STAPLE TRADING AT 97-99% OF ITS 52-WEEK HIGH HAS NO +20% LEFT ABOVE IT. PG IS THE EXTREME CASE: THE STRONGEST 60-DAY NAME IN THE SCREEN (+18.48%) SCORES 0.08:1 PRECISELY BECAUSE ITS MOMENTUM ALREADY WORKED.**
+- ⚠⚠ **AND THE CONVERSE IS THE ARGUMENT AGAINST BASIS B, MADE HERE AGAINST OUR OWN PREFERRED FIX: THE ONLY TWO NAMES THAT CLEAR 2:1 CLEAR IT BY BEING BROKEN. HSY sits 23.8% below its 52-week high and T 22.0% below. UNDER BASIS B, "GOOD R:R" IS A SYNONYM FOR "LARGE DRAWDOWN" — WHICH IS THE OPPOSITE OF WHAT RULE 9 ASKS FOR. The book's own CLX (2.07) and MCD (2.17) passed basis B for the same reason.**
+- ✓✓ **THIS IS WHY RULE 2 HAS BEEN BREACHED FOR THE WHOLE PHASE AND IT IS NOT PATIENCE AND NOT LAZINESS: rules 4, 9 and the 2:1 entry leg are MUTUALLY UNSATISFIABLE over the sector set rule 9 selects. The fix is not a better screen. It is decision 13, and the screen above is the first evidence that both of its stated options are flawed — (a) basis B is perverse, (b) relaxing the leg is at least honest. HANDED TO THE 11/27 WEEKLY REVIEW AS THE PRIMARY EXHIBIT.**
+
+### Trade ideas — 2 named, 1 carried, **NONE PLACED, NONE STAGED, NONE PLACEABLE TODAY**
+1. ⚠ **HSY — XLP, THE #1 MOMENTUM SECTOR. Entry ref $182.57 (11/25 settle), stop $164.31 (10% GTC trail), risk $18.26, basis-B target $239.48 → 3.12:1.** Catalyst, dated: Q3 FY26 (quarter ended 09/27/26) **beat — adj EPS $2.64 vs ~$2.11 est (incl. 22c of tariff refunds) — and FY26 EPS guidance RAISED to $8.00-8.26, +84-90% on last year's $4.34**; management points to **2027 margin improvement partly on cocoa-hedge timing**; quarterly dividend $1.452 payable 12/15, record 11/16. ⚠ **AND THE CASE AGAINST, STATED NOT BURIED: organic sales growth was TRIMMED to ~3%, the stock FELL on the print, S&P Global has HSY on NEGATIVE outlook for leverage and cocoa costs, Zacks #3 Hold, and its 3.12:1 comes from a 23.8% drawdown. BLOCKED BY DECISION 13.**
+2. ⚠ **TSCO — RE-STRUCK ON THE 11/25 SETTLE, 3rd CONSECUTIVE RE-STRIKE SO THE OWNER RULES ON A CURRENT NUMBER: $40.36 (+2.33% on 11/25, **+27.71% over 20 days**, 99.6% of its 6-month high — it reclaimed and exceeded the faded open the 11/25 midday flagged). Stop $36.324, risk $4.036. **3.94:1 under basis B ($56.28) / 0.41:1 under the $42 analyst PT** (was 4.29:1 / 0.66:1 — the R:R DETERIORATED as the price rose, which is the same arithmetic as the screen above). ⚠ XLY is sector 6 of 11 and is entangled with decision 12 (XLY 1 of 2 failed). BLOCKED BY DECISION 13 AND BY DECISION 12.**
+3. ⚠ **T — NAMED FOR COMPLETENESS AND EXPLICITLY NOT RECOMMENDED. $22.97, +10.97% 20d, stop $20.67, 2.81:1 basis B. Against it: Q3 FY26 beat but the stock fell 5.87% on it; sources CONFLICT on whether FY26 adj EPS was raised to ~$2.40 or merely reaffirmed at $2.25-2.35, and the raise is attributed to lower D&A from Mexico going held-for-sale rather than operations; net debt/adj EBITDA rose to 3.13x from 2.68x after the $23bn EchoStar spectrum deal; and it is a bond proxy into a ~92%-priced December hike. LOWEST CONVICTION OF THE THREE.**
+
+### Sleeve news — one new dated item each for CLX and GEHC, nothing for MCD
+- ⚠ **CLX — 29th CHECK: NO BID FOR CLOROX ON THE RECORD. REFUSED A 29th TIME UNDER RULE 14.** ✓ **One NEW dated item: an insider purchase of $400,251 per an SEC filing reported 11/05** — logged as routine, directionally mild positive, not a thesis change. Carried: Q1 FY27 **EPS $1.55 on $1.91bn revenue, beat, guidance revised**, stock +4.3% to $93.80 on 11/04; quarterly dividend $1.25 declared 11/17, paid 11/13, record 10/28; annual meeting 11/18. ⚠ **Carried risk UNCHANGED: consensus PT ~$97 sits BELOW the $110.94 mark and the gap has WIDENED again with the rally — the sleeve is 13.9% above where the street says it belongs.** ⚠ **Carried risk UNCHANGED: the tariff annexes (Sec 338 07/2026, plastic household/toilet articles and PAPER HOUSEHOLD GOODS at 50%; Sec 232 04/2026, steel/aluminium household articles at 50%). Not re-attempted today — no new primary document would have been published on a federal holiday. STILL A RISK FACTOR, STILL NOT AN EXIT TRIGGER.**
+- ✓ **GEHC — ONE NEW DATED ITEM, FAVOURABLE: a Business Wire release dated 11/19/2026 announcing an EXPANDED GLOBAL RESEARCH NETWORK FOR PHOTON-COUNTING CT.** Also retrieved, undated and therefore NOT banked: FDA clearance for AI feeding-tube detection on bedside X-ray; a manganese-based MRI agent advancing to Phase 3; a $500M/10-year Catholic Health alliance. Carried: Q3 10/28 growth across all segments, **FY2026 guidance RAISED to $4.95-5.05 EPS**; SOFIE Biosciences acquisition $945M cash, closing H1 2027; analyst mean Overweight (16 Buy / 2 OW / 6 Hold). ⚠ **One retrieved analyst 12-month target of $82.50 sits BELOW the $83.33 mark. ✓ NO THESIS BREAK.**
+- ✓ **MCD — NOTHING NEW. Carried 11/04 Q3: revenue $7.16bn +1.1% MISSED, adj EPS $3.57 +5.6% beat, US same-store -0.2%, global comps +1.5%, shares +5.6-6% on the print; dividend RAISED for the 50th consecutive year. One retrieved 1-year target est. $316.06 (aggregator, not banked).** ⚠ The 11/25 "NEXT strategy" `TeST` staging artifact was NOT re-admitted.
+
+### ⚠ MISSION METRIC — REVISED DOWN FOR THE SECOND CONSECUTIVE READ, AGAINST OUR OWN HEADLINE
+| Basis | Bot | SPY | Lead |
+|---|---|---|---|
+| **Session 11/25, SETTLED** | ✓ **+0.7000%** ($98,814.90 → $99,506.58) | -0.2894% (718.78 → 716.70) | ✓ **+0.9894 pts** |
+| Session 11/25, as logged intraday 13:07 | +0.8467% | -1.0551% | ⚠ +1.9018 pts |
+| **Phase, settled 08/25 → settled 11/25** | **+0.6941%** ($98,820.68 → $99,506.58) | **-6.4250%** (765.91 → 716.70) | ✓ **+7.1191 pts** |
+| Phase, as logged intraday 11/25 | +0.8408% | -7.1268% | ⚠ +7.9676 pts |
+- ⚠⚠ **HANDOFF (iv) DISCHARGED BY CUTTING OUR OWN NUMBER AGAIN: the session lead is +0.9894 pts, not +1.9018 (-0.9124), and the phase lead +7.1191 pts, not +7.9676 (-0.8485). SPY's +0.7592% recovery from 13:07 to the bell did it. THIS IS THE SECOND CONSECUTIVE RUN TO REVISE THIS FIGURE DOWNWARD, AND THE 11/25 MIDDAY ENTRY PREDICTED EXACTLY THAT ("13:07 ET IS 2h53m BEFORE THE BELL"). The lesson is now proven twice: INTRADAY LEADS ARE NOT RESULTS.**
+- ✓✓ **WHAT SURVIVES THE CUT IS STILL GOOD, AND IT IS NOW MEASURED ON A SETTLE RATHER THAN A SNAPSHOT: the book is +0.6941% for the phase while SPY is -6.4250%, all three sleeves are green, and the lead is +7.1191 pts on a clean close.**
+- ⚠⚠ **AND THE UNCOMFORTABLE ATTRIBUTION, RESTATED BECAUSE IT IS LESS FLATTERING THAN YESTERDAY'S VERSION: on a static-weight approximation, 58.0641% cash contributes roughly +3.73 pts of the +7.12 pt phase lead — **about 52%**. Yesterday's entry put cash at 32% and called the flip to selection "the run's real good news." ON THE SETTLE IT IS BACK TO ROUGHLY HALF. THE RULE-2 BREACH IS STILL DOING HALF THE WORK, AND THAT IS LUCK OF POSTURE IN A -6.4% TAPE, NOT STRATEGY.**
+
+### Risk factors — next session is the 11/27 HALF DAY
+1. ⚠⚠ **A 13:00 ET CLOSE ON 11/27 WITH HOLIDAY LIQUIDITY. Thin books exaggerate moves in both directions, and the quote books read today are already degraded (CLX bid/ask 103.66/115.61 = 10.8% wide; GEHC 79.08/86.62 = 9.1%; **MCD `ap: 0`, an ASK OF ZERO** — rule 13 applied, `latestTrade`/dailyBar close used throughout, equity reconciled to `$57,777.60 + $41,728.98 = $99,506.58` to the cent).**
+2. ⚠ **A DECEMBER 9 HIKE THAT IS ESSENTIALLY PRICED (~91-99% across sources) ON TOP OF A CONFIRMED-HOT 3.3% CORE PCE. Known negative; the risk is repricing, not surprise. It argues against the rate-sensitive ideas (T, O, DUK, WELL) specifically.**
+3. ⚠ **VOL IS PERSISTENTLY BID: VIXY +36.780% over 20 days and +4.441% on the last settle. A one-session gain does not clear that.**
+4. ⚠ **CLX's TARIFF EXPOSURE (paper/plastic household goods at 50% in dated primary annexes) ON 10.3686% OF EQUITY, with scope against CLX's actual COGS STILL UNESTABLISHED after four attempts.**
+5. ⚠ **CLX IS 13.9% ABOVE CONSENSUS PT AND GEHC IS FRACTIONALLY ABOVE ITS OWN. Two of three sleeves are priced past where the street says they belong.**
+6. ⚠ **GEHC's RULE 4-vs-7 GEOMETRY DEFECT: 5.4314% of room, stop pinned to an $87.56 hwm, breach at $81.2412, re-armed by a -2.51% session. 5th occurrence, UNAMENDED.**
+7. ⚠⚠ **AND THE LARGEST ONE IS OUR OWN POSTURE: 58.0641% CASH IS A BET THAT WORKED IN A -6.4% TAPE AND WILL HURT BADLY IN A HOLIDAY MELT-UP (base rate 71% up on the Friday after Thanksgiving). THE BREACH CUTS BOTH WAYS AND TODAY IT IS THE SIDE THAT COULD COST.**
+
+### Decision — **HOLD. ZERO ORDERS. (And no order was possible: the market is closed.)**
+1. ✓ **Rule 5 — no cut owed. All three green, nearest trigger 11.92 pp away.**
+2. ✓ **Rule 6 — no tighten owed. Nearest gate 5.90 pp (CLX).**
+3. ✓ **Rules 4 and 7 — no stop touched. Three GTC 10% trails, `status: new`.**
+4. ⚠⚠ **Rule 2 — no buy, despite a 33.0641 pt breach and $32,900.95 of room. Decision 13 unanswered, and today's screen shows WHY the breach persists rather than offering an excuse for it.**
+5. ⚠ **Rule 3 — no trim, despite MCD at 20.5132%. `qty_available` 0; decision 8 unanswered, 24th session.**
+6. ✓ **Rule 8 — 0 of 3 new trades used this week; the week ends at the 11/27 13:00 bell.**
+7. ✓✓ **Rule 15 — deliverable delivered: four handoffs discharged (two favourably, one marginally against, one by cutting our own headline), one carried first-party revision REFUSED because it does not reproduce, two misdated secondary claims discarded, one structural finding produced and escalated. NOTHING DROPPED SILENTLY.**
+8. ✓✓ **Rule 11 governs the residual. PATIENCE > ACTIVITY.**
+
+### Decisions with the owner (rule 15 — carried, unanswered)
+| # | Item | Why it binds |
+|---|---|---|
+| **13** | **Target basis for the 2:1 R:R leg — (a) basis B, (b) relax the leg, (c) accept rule 2's floor is dead letter** | ⚠⚠ **RANKED FIRST, AND TODAY'S SCREEN IS THE STRONGEST EVIDENCE YET: rules 4, 9 and the 2:1 leg are MUTUALLY UNSATISFIABLE over the defensive universe — 9 of 11 names score under 1:1, 7 of them under 0.4:1, and the 2 that pass pass BY BEING 22-24% BROKEN. Option (a) is perverse, which strengthens (b). ONE LINE UNBLOCKS $32,900.95 AND LOOSENS NO RISK LEG.** |
+| **8** | `qty_available` 0 — may a run cancel a rule-4 stop to trim a rule-3 breach? | ⚠ **24th session.** MCD 20.5132%, breached every read of the phase (narrowed 0.1356 pt today). |
+| **12** | Is a stop-geometry loss a "failed trade" for rule 10? | ⚠ **24th session.** Governs XLV (2 of 2) and XLY (1 of 2) — and XLY blocks TSCO independently of decision 13. |
+| **RULE 4-vs-7 GEOMETRY DEFECT** | A broker-ratcheted 10% trail can be driven inside rule 7's 3% floor with no in-rules cure | ⚠ **5th occurrence. Unarmed (GEHC 5.4314%, $4.526/share) but UNAMENDED. The $87.56 hwm pin means a -2.51% session re-arms it.** |
+| **16** | Rule 14's wires are unreadable — `reuters.com` DEMONSTRATED blocked by user-agent policy | ⚠ 2 occurrences, not re-tested today. ✓ Routed around again by restricting to company releases (Business Wire), SEC filings and government documents — **which IS the proposed amendment working.** |
+| **17** | `sec.gov` unresolvable / `data.sec.gov` proxy-refused from this sandbox | ⚠ Unchanged. SEC content reachable only via search results. |
+| **PERPLEXITY CREDIT** | `insufficient_quota`, **HTTP 401** | ⚠⚠ **12th SESSION. CONFIRMED AGAIN THIS RUN (401 on the first query). Every research figure in this entry is WebSearch fallback. One-line fix at `console.perplexity.ai/project/billing`.** |
+| **EOD NEVER FIRED IN NOVEMBER** | FOURTEEN owed | ⚠⚠ Scheduling fault. ✓ **Today it cost nothing — there was no close to observe.** |
+| **14** | Rule-5 schedule defect — no run alive ~09:45-13:07 ET or ~13:15-15:55 ET | ⚠ **And on 11/27 the whole session is 09:30-13:00, so the existing "midday" slot IS the close. SCHEDULE AGAINST THE REAL BELL.** |
+
+### Handoffs
+- ⚠⚠ **(i) TO THE 11/27 WEEKLY REVIEW — AND SCHEDULE IT AGAINST THE REAL 13:00 ET BELL, NOT 16:00. Last filed review: week ending 2026-11-20, so NO REVIEW IS OWED IN ARREARS. It must adjudicate, in this order: DECISION 13 (with today's 11-name screen as the primary exhibit — both of its options are now shown to be flawed), decision 8, decision 12, the RULE 4-vs-7 GEOMETRY DEFECT, the TARIFF ANNEX FINDING (CLX 10.3686% of equity), tooling 16 and 17, the Perplexity credit, the November EOD fault (FOURTEEN owed), and the rule-5 schedule defect.**
+- ⚠ **(ii) TO THE 11/27 MARKET-OPEN: RULE 6 IS LIVE AGAIN THE MOMENT THE BELL RINGS. CLX needs +5.90 pp, GEHC +5.97 pp to the +15% gate. If either crosses, cancel the 10% trail and place a 7% GTC trail — AND CHECK RULE 7's 3% FLOOR FIRST, because a 7% trail on a ratcheted hwm sits closer to price than the 10% it replaces. GEHC's hwm is $87.56; a 7% trail off it is $81.4308, which is ABOVE today's $83.33 mark less 3% ($80.83) — so the replacement would itself sit inside 3% of price if GEHC does not rally first. DO NOT PLACE IT BLIND.**
+- ⚠ **(iii) TO THE SAME RUN: RE-READ GEHC's RULE-7 GAP (5.4314%, $4.526/share, breach $81.2412) AND MCD's RULE-3 BREACH (20.5132%, narrowed) AND REPORT BOTH DIRECTIONS.**
+- ⚠ **(iv) TO THE SAME RUN: EXPECT A HALF-DAY SETTLE AT 13:00 ET AND CONFIRM OR REVISE +0.9894 pts (session) / +7.1191 pts (phase) AGAINST IT. TWO CONSECUTIVE RUNS HAVE NOW HAD TO CUT THIS FIGURE — DO NOT LOG AN INTRADAY LEAD AS A RESULT A THIRD TIME.**
+- ⚠ **(v) TO THE SAME RUN: THE SPY 11/24 CLOSE IS DISPUTED — $718.78 (today's `sip` daily bar, used here) vs $718.91 (the 11/25 midday "first-party revision", which does not reproduce). RESOLVE IT OR CARRY BOTH. Impact 0.029 pt.**
+- ⚠⚠ **(vi) TO THE OWNER, OUTRANKING EVERY MARKET LINE ABOVE: DECISION 13 HAS NOW BLOCKED THE ENTIRE WEEK AND TODAY'S SCREEN SHOWS THE BREACH IS STRUCTURAL, NOT BEHAVIOURAL. ⚠ ALSO ONE-LINE: PERPLEXITY CREDIT, 12th SESSION OF HTTP 401.**
+- ⚠ **(vii) STILL LIVE: ANY RUN THAT STAGES TSCO MUST HAVE DECISION 13 IN HAND — AND DECISION 12, SINCE TSCO IS XLY. Re-struck on the 11/25 settle: 3.94:1 under basis B, 0.41:1 under the $42 PT (both DETERIORATED from 4.29/0.66 as the price rose).**
+- ✓ **(viii) TO THE SAME RUN: HSY IS THE NAMED #1 IDEA IF AND ONLY IF DECISION 13 ARRIVES — $182.57 ref, $164.31 stop, 3.12:1 basis B, XLP. Re-strike it live before sizing anything (rule 13) and re-read the S&P negative outlook.**
+
+### Actions taken this run
+1. ✓✓ **ZERO ORDERS. Nothing placed, cancelled, modified or staged with the broker. Three `trailing_stop` orders remain `status: new`, `trail_percent: 10`, GTC, untouched by hand. THE MARKET WAS CLOSED AND THAT WAS ESTABLISHED FIRST-PARTY BEFORE ANYTHING ELSE.**
+2. ✓ **ALL ELEVEN REQUIRED ENV VARS VERIFIED BEFORE ANY WRAPPER CALL; PAPER ENDPOINT CONFIRMED AND NOT TOUCHED; NO `.env` CREATED OR SOURCED.**
+3. ✓✓ **THE HOLIDAY CAUGHT FIRST-PARTY AND NOT ASSUMED: `clock.is_open false` + 11/26 ABSENT from `/v2/calendar`. Two misdated secondary sources that put Thanksgiving on 11/27 and 11/25 were DISCARDED.**
+4. ✓✓ **THE RUN'S DELIVERABLE IS A STRUCTURAL FINDING, NOT A PRICE: an 11-name defensive screen PROVING rules 4, 9 and the 2:1 leg are mutually unsatisfiable — 9 of 11 under 1:1, 7 under 0.4:1 — AND SHOWING THAT BASIS B, OUR OWN PREFERRED FIX, REWARDS DRAWDOWN RATHER THAN MOMENTUM. Escalated to the weekly review as the primary exhibit for decision 13.**
+5. ⚠⚠ **HANDOFF (iv) DISCHARGED BY CUTTING OUR OWN HEADLINE FOR THE SECOND CONSECUTIVE RUN: +1.9018 → +0.9894 pts session, +7.9676 → +7.1191 pts phase. The 11/25 midday entry's own caveat was right again.**
+6. ⚠⚠ **AND THE ATTRIBUTION RESTATED LESS FLATTERINGLY THAN YESTERDAY: cash is back to ~52% of the phase lead on the settle, not the 32% logged intraday. The rule-2 breach is still doing half the work.**
+7. ⚠ **A CARRIED FIRST-PARTY "REVISION" REFUSED BECAUSE IT DOES NOT REPRODUCE: SPY 11/24 reads $718.78 today, not the $718.91 the 11/25 midday substituted. Flagged and handed forward rather than silently adopted in either direction.**
+8. ✓✓ **A SECONDARY CLAIM FALSIFIED AGAINST OUR OWN FIRST-PARTY TAPE: "seven straight down days, longest since the pandemic crash" is impossible when 11/23 printed +4.709%. DISCARDED.**
+9. ✓ **RULE 13 APPLIED A 44th TIME: three degraded closed-market books rejected (CLX 10.8% wide, GEHC 9.1% wide, **MCD with an ASK OF ZERO**) in favour of `latestTrade`/daily closes; equity reconciled to the cent.**
+10. ✓ **RULE 14 APPLIED SEVEN TIMES, REFUSED FIVE: CLX's 29th bid refusal; the undated Yahoo VIX 26.49; the 11/25 VIX/WTI/Brent settles (unretrievable, ETF proxies used instead and LABELLED as proxies); the December-hike odds spread; the 11/27 futures figure. BANKED: GEHC's 11/19 Business Wire photon-counting CT release, CLX's 11/05 insider purchase, HSY's Q3 guidance raise.**
+11. ✓ **TWO NEW TRADE IDEAS NAMED WITH DATED CATALYSTS, STOPS AND TARGETS (HSY, T) AND ONE RE-STRUCK (TSCO) — AND ALL THREE REPORTED WITH THEIR CASE AGAINST. T IS NAMED AND EXPLICITLY NOT RECOMMENDED. NONE PLACED.**
+12. ✓ **RULE 6 ARITHMETIC DONE IN ADVANCE FOR THE NEXT RUN RATHER THAN LEFT TO IT: a 7% trail off GEHC's $87.56 hwm is $81.4308, which would itself sit inside rule 7's 3% floor at today's price. The next run is warned not to place it blind.**
+13. ✓✓ **RULE 11 GOVERNS THE RESIDUAL: a closed market, a half day with holiday liquidity next, a priced hike, bid vol, and an unratified R:R basis. PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
