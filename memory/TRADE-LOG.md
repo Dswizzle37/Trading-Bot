@@ -5559,3 +5559,105 @@ https://console.perplexity.ai/project/billing","type":"insufficient_quota","code
 11. ✓ **TSCO's R:R RE-STRUCK ON A LIVE TIGHT-BOOK PRINT (39.38/39.39) SO THE OWNER'S DECISION-13 RULING IS MADE AGAINST TODAY'S NUMBER: 4.29:1 under basis B, 0.66:1 under the $42 analyst PT. NOT PLACED, NOT STAGED.**
 12. ✓ **RULE 6 FLAGGED FORWARD AS APPROACHING RATHER THAN LEFT TO SURPRISE THE NEXT RUN: GEHC closed 2.09 pp of its distance to the +15% gate in one session and is now 5.81 pp away.**
 13. ✓✓ **RULE 11 GOVERNS THE RESIDUAL: a confirmed-hot core PCE, a December hike priced, an active tech rout, an unpublished tariff list, 2h53m of liquidity and then a FOUR-DAY GAP. PATIENCE > ACTIVITY. NO ORDER WAS PLACED.**
+
+---
+
+## 2026-11-26 — Market-Open Execution (Day 74, Thursday, fired 09:36 ET, **THANKSGIVING — MARKET CLOSED**) — **ZERO ORDERS, AND ZERO ORDERS WERE *POSSIBLE*. ✓✓ THE RUN'S HEADLINE IS THAT ITS ASSIGNED DELIVERABLE DOES NOT EXIST TODAY: THERE IS NO OPEN TO EXECUTE INTO, CONFIRMED FIRST-PARTY TWO WAYS, AND THE SCHEDULER FIRED A MARKET-OPEN ROUTINE ONTO A HOLIDAY. ⚠ THE SECOND HEADLINE IS A CORRECTION OF OUR OWN CARRIED NUMBER FOR THE THIRD CONSECUTIVE RUN — BUT THIS TIME *UPWARD* AND FROM ARITHMETIC, NOT FROM THE TAPE: THE PHASE LEAD RE-STRUCK ON THE WEEKLY REVIEW'S OWN DECLARED BASIS IS **+7.1888 pts, NOT THE +7.1191 FILED AT 08:43** — A 0.0697 pt GAP THAT REDUCES TO A DISPUTED SPY BASIS ($776.34 vs AN IMPLIED $775.75). ✓ EVERY RULE GATE REPRODUCES THE 08:43 PRE-MARKET READ TO THE LAST DECIMAL, WHICH IS THE CORRECT RESULT ON A CLOSED DAY AND IS REPORTED AS CONFIRMATION, NOT AS A FRESH FINDING.**
+
+### ✓ SESSION STATUS — FIRST-PARTY, AUTHORITATIVE, AND IT GOVERNS THE WHOLE RUN
+- ✓✓ **`clock` → `is_open: false`, `timestamp 2026-11-26T09:36:19-05:00`, `next_open 2026-11-27T09:30:00-05:00`, `next_close 2026-11-27T13:00:00-05:00`.**
+- ✓✓ **`calendar 2026-11-24 2026-11-30` returns 11/24, 11/25, 11/27, 11/30 — **11/26 IS ABSENT = THANKSGIVING HOLIDAY.** Two independent first-party confirmations, no secondary source needed or used.**
+- ✓ **11/27 IS A HALF DAY: open 09:30, close **13:00** (`session_close 1700`). 11/30 normal 16:00.**
+- ✓✓ **NO ORDER COULD HAVE BEEN PLACED TODAY EVEN IF A RULE HAD DEMANDED ONE. Routine STEPS 4-5 (market orders, day TIF + stop placement) are inapplicable by the calendar, not skipped by choice. Every figure below is the **11/25 SETTLED CLOSE** — `equity` and `last_equity` are byte-identical, which is the signature of a closed day.**
+
+### Account snapshot (first-party)
+| Field | Value |
+|---|---|
+| Equity | **$99,506.58** (`last_equity` identical — closed day) |
+| Cash | $57,777.60 |
+| Long market value | $41,728.98 |
+| Buying power | $347,951.54 |
+| **Deployed** | ⚠⚠ **41.9359% — RULE 2 BREACH, 33.0641 pts BELOW THE 75% FLOOR ($32,900.95 TO REACH IT)** |
+| Positions | 3 of 5-6 |
+| Daytrades | 0 (`daytrade_count` null) |
+| Endpoint | ✓ `paper-api.alpaca.markets/v2` — **PAPER, CONFIRMED, NOT TOUCHED** |
+
+### Positions — all three green, all three stops live and untouched
+| Sym | Qty | Entry | 11/25 close | Gain | Wt % | Stop | Rule-7 gap | To -7% cut |
+|---|---|---|---|---|---|---|---|---|
+| CLX | 93 | $101.691 | $110.940 | **+9.0952%** | 10.3686% | $99.909 | ✓ 9.9432% | $94.573 (14.75% below) |
+| GEHC | 132 | $76.430 | $83.330 | **+9.0279%** | 11.0541% | $78.804 | ⚠ **5.4314%** (narrowest) | $71.080 (14.70% below) |
+| MCD | 72 | $270.200 | $283.500 | **+4.9223%** | ⚠⚠ **20.5132%** | $257.994 | ✓ 8.9968% | $251.286 (11.36% below) |
+
+### Rules gate summary
+| # | Rule | Status |
+|---|---|---|
+| 1 | No options | ✓✓ **PASS — 3/3 `us_equity`, zero option orders ever placed. `options_trading_level: 3` is an unused account attribute.** |
+| 2 | 75-85% deployed | ⚠⚠ **BREACH — 41.9359%, 33.0641 pts short. UNCHANGED BY CONSTRUCTION (closed day). No buy was possible; decision 13 still blocks the cure in any case.** |
+| 3 | 5-6 positions, max 20% each | ⚠⚠ **BREACH — MCD 20.5132%. ✓ Pre-market handoff (iii) re-read: UNCHANGED FROM THE SETTLE, as it must be. 3 positions, 3 slots open. `qty_available` 0 → decision 8, 25th session.** |
+| 4 | 10% GTC trailing stop on every position | ✓✓ **PASS — 3/3. All `trail_percent: 10`, `gtc`, `status: new`, NONE TOUCHED THIS RUN, NONE FILLED.** |
+| 5 | Cut losers at -7% | ✓✓ **PASS — ALL THREE GREEN, NO CUT OWED. Nearest trigger MCD, 11.36% below the mark.** |
+| 6 | Tighten trail at +15% / +20% | ✓ **PASS — NO GATE ARMED, AND NONE *COULD* ARM: nothing crosses +15% on a closed day. CLX 5.90 pp short, GEHC 5.97 pp.** |
+| 7 | Stop never within 3%; never move down | ✓ **PASS 3/3 — 9.9432% / 5.4314% / 8.9968%. No stop moved, ever, in either direction.** |
+| 8 | Max 3 new trades/week | ✓✓ **PASS — 0 of 3. `activities FILL 2026-11-23` → `[]`. Last fills 11/18.** |
+| 9 | Follow sector momentum | ✓ **CARRIED UNCHANGED BY CONSTRUCTION — no settled close exists after 11/25, so no sector ranking can have moved. 20-day basis as filed at 08:43. NOT re-presented as a fresh read.** |
+| 10 | Exit a sector after 2 failed trades | ⚠ **XLV 2 of 2 (UNH, 11/18) — DECISION 12 UNANSWERED, 24th SESSION. Cautious half applied: no new XLV exposure screened or staged. ⚠ XLY 1 of 2 (TPR).** |
+| 11 | Patience > activity | ✓✓ **PASS TRIVIALLY AND SUBSTANTIVELY — zero orders, nothing staged for 11/27's bell, no stop touched.** |
+| 12 | No trade complete until persisted | ✓ **Zero orders. This entry + the RESEARCH-LOG addendum pushed via `scripts/gitpush.sh` this run.** |
+| 13 | Freshness beats consensus | ✓ **APPLIED, 44th occurrence, AND THE RULE'S CORRECT OUTPUT TODAY IS "DO NOT QUOTE": no live quote exists on a closed day, so `latestQuote` was NOT consulted and NOT banked. Position marks are the settled 11/25 closes; equity reconciled to the cent ($57,777.60 + $41,728.98 = $99,506.58).** |
+| 14 | A headline needs a wire | ✓ **NO HEADLINE ACTED ON. No sweep run — a closed day produces no tradeable news and the three carried thesis items (CLX rumour 28x-refused, GEHC SOFIE, MCD Q3) cannot change status without a session. Deferred to 11/27 pre-market by design, not dropped.** |
+| 15 | Unfinished work is reported | ⚠⚠ **THIS RUN'S DELIVERABLE IS STRUCTURALLY UNDELIVERABLE AND IS REPORTED AS SUCH, NOT SILENTLY DROPPED — see below. EOD owed: FOURTEEN (no November EOD run has ever fired; today adds none — there is no close). Weekly reviews owed: ZERO; next due Fri 11/27 against a **13:00 ET** bell.** |
+
+### ⚠⚠ The one number that changed — and it changed by arithmetic, not by price
+- ⚠⚠ **PHASE LEAD RE-STRUCK FROM THE WEEKLY REVIEW'S OWN DECLARED BASIS (SPY 8/14 close **$776.34**, equity baseline **$100,000**): book **-0.4934%**, SPY **-7.6822%** (11/25 settle $716.70) → **LEAD +7.1888 pts.** The 08:43 pre-market filed **+7.1191**. ⚠ **THE 0.0697 pt GAP REDUCES ENTIRELY TO THE SPY BASIS: +7.1191 implies a basis of $775.75, not the $776.34 that `WEEKLY-REVIEW.md` states in three separate filed entries.** ✓ **BOTH ARE CARRIED, NEITHER IS SILENTLY ADOPTED, AND THE 11/27 WEEKLY REVIEW OWNS THE RECONCILIATION — it is the document whose own basis is in question.**
+- ✓ **SESSION LEAD: NOT APPLICABLE AND DELIBERATELY NOT COMPUTED. There is no session. The pre-market's +0.9894 pt session figure for 11/25 stands as the last settled one. ⚠ Three consecutive runs have now had to revise an intraday lead downward; filing a fourth on a non-existent session would be the same error in a new costume.**
+- ⚠ **Pre-market handoff (v) UNRESOLVED AND CARRIED: the SPY 11/24 close is disputed, $718.78 (`sip` daily bar) vs $718.91. It does not touch the phase calc (which uses 11/25) and is now entangled with the $776.34/$775.75 basis question above. BOTH GO TO THE WEEKLY REVIEW AS ONE ITEM.**
+
+### ⚠⚠ The rule-6 / rule-7 trap, re-verified numerically for 11/27
+- ⚠⚠ **IF GEHC CROSSES +15% ON FRIDAY, THE RULEBOOK'S OWN REMEDY BREACHES RULE 7 ON ARRIVAL. A 7% trail off GEHC's ratcheted **$87.56 hwm** places the stop at **$81.431** — which is **2.2791% below the $83.330 mark, INSIDE rule 7's 3% floor.** The replacement stop is geometrically *closer* to price than the 10% trail it replaces (5.4314%). ✓ **THIS CONFIRMS PRE-MARKET HANDOFF (ii) WITH THE EXACT NUMBER AND IT IS THE 5th OCCURRENCE OF THE DEFECT. DO NOT PLACE IT BLIND ON FRIDAY.**
+- ✓ For completeness, the same calc on the other two sleeves is benign: CLX 7%-on-hwm → $103.239 = 6.9413% gap ✓; MCD → $266.594 = 5.9634% gap ✓. **GEHC IS THE ONLY TRAPPED SLEEVE.**
+- ⚠ **AND THE UNDERLYING DEFECT IS UNCHANGED AND STILL UNAMENDED: GEHC's stop is pinned to an $87.56 hwm the price has not revisited, so a **-2.51%** session re-arms the rule-7 breach with no in-rules cure.**
+
+### Decision — **HOLD. ZERO ORDERS. NOTHING STAGED FOR FRIDAY'S BELL.**
+1. ✓✓ **NO ORDER PLACED, CANCELLED, MODIFIED OR STAGED — and on a holiday this is not a judgement call, it is the calendar.**
+2. ✓ **NO CUT OWED (rule 5), NO TIGHTEN OWED (rule 6), NO STOP TOUCHED (rules 4, 7).**
+3. ⚠ **NO BUY DESPITE RULE 2's 33.0641 pt BREACH — three independent blocks, any one sufficient: (a) the market is closed; (b) decision 13 is unanswered, 25th session, and handoffs (vii)/(viii) forbid staging TSCO or HSY without it; (c) rule 13 forbids sizing any order off a price no live RTH quote can confirm today.**
+4. ⚠ **NO TRIM DESPITE RULE 3's BREACH — `qty_available` 0; the only cure cancels a rule-4 stop, which is decision 8's to rule on, not a run's to self-apply.**
+5. ✓✓ **AND NOTHING WAS PRE-POSITIONED FOR FRIDAY. A half-day bell after a four-day gap is the worst liquidity of the quarter; rule 11 governs the residual exactly as it did on 11/25.**
+
+### Decisions still with the owner (rule 15 — carried, unanswered)
+| # | Item | Sessions | Why it binds |
+|---|---|---|---|
+| **13** | **Target basis for the 2:1 R:R leg — (a) basis B (52-week intraday high), (b) relax the leg, (c) accept rule 2's floor is dead letter** | **25th** | ⚠⚠ **RANKED FIRST AND IT HAS NOW BLOCKED AN ENTIRE WEEK. One line unblocks $32,900.95 and loosens no risk leg — the 10% stop is unchanged in every scenario. ⚠ Today's pre-market sharpened it AGAINST both options: 9 of 11 defensive names fail even under basis B, so the leg excludes the very universe rule 9 points at.** |
+| **8** | `qty_available` is 0 on all sleeves — may a run cancel a rule-4 stop to trim a rule-3 breach? | **25th** | ⚠ MCD 20.5132%, breached every read of the phase. No run can cure it without this ruling. |
+| **12** | Is a stop-geometry loss a "failed trade" for rule 10? | **25th** | ⚠ Governs XLV (2 of 2) and XLY (1 of 2) — entangled with decision 13, since TSCO is XLY. |
+| **RULE 4-vs-7 GEOMETRY DEFECT** | A broker-ratcheted 10% trail can be driven inside rule 7's 3% floor with no in-rules cure | **5th** | ⚠⚠ **RE-VERIFIED NUMERICALLY ABOVE AND IT IS LIVE FOR FRIDAY: a 7% trail on GEHC's hwm lands at 2.2791%, inside the floor. The rulebook's remedy currently breaches the rulebook.** |
+| **16** | Rule 14 names wires this agent cannot read — `reuters.com`, `apnews.com`, `afp.com` blocked by user-agent policy | **3rd** | ⚠ Not re-tested (no sweep run today). Proposed amendment: name official company releases, SEC filings, government statements, Bloomberg. |
+| **17** | `sec.gov` unresolvable / `data.sec.gov` proxy-refused from this sandbox | **3rd** | ⚠ Archive URLs reachable via search results — partial workaround only. |
+| **PERPLEXITY CREDIT** | Account out of credit — `insufficient_quota`, **HTTP 401** | ⚠⚠ **13th session** | ⚠⚠ **RE-CONFIRMED THIS RUN (401 on a holiday-calendar control query). One-line fix at `console.perplexity.ai/project/billing`. Every research figure in this log since 11/10 is WebSearch fallback.** |
+| **SPY PHASE BASIS** | **$776.34 (filed, 3 entries) vs $775.75 (implied by the carried +7.1191)** | **NEW** | ⚠ **0.0697 pt on the headline performance number. The weekly review must declare one.** |
+| **SCHEDULER FIRES ON MARKET HOLIDAYS** | A market-open execution routine fired at 09:36 ET on Thanksgiving | **NEW** | ⚠ **Harmless today because `clock`/`calendar` are checked first — but it is the mirror image of the November EOD fault, and it means the five-run schedule is calendar-blind in both directions.** |
+| **EOD RUN HAS NEVER FIRED IN NOVEMBER** | FOURTEEN owed | — | ⚠⚠ Scheduling fault, not late work. Today adds none — there is no close. |
+| **14** | Rule-5 schedule defect — no run alive ~09:45-13:07 ET or ~13:15-15:55 ET | — | ⚠ Two-thirds of every session unobserved. ⚠ **ON FRIDAY THIS IS ACUTE: a 13:00 bell means the 13:07 midday run fires AFTER the close and there is no in-session coverage at all past 09:45.** |
+
+### Handoffs
+- ⚠⚠ **(i) TO THE 11/27 MARKET-OPEN — AND IT IS THE ONLY HANDOFF THAT CAN COST MONEY: RULE 6 GOES LIVE THE MOMENT THE BELL RINGS AND ITS REMEDY IS TRAPPED ON GEHC. CLX needs +5.90 pp, GEHC +5.97 pp to the +15% gate. IF GEHC CROSSES, A 7% TRAIL OFF ITS $87.56 hwm LANDS AT $81.431 = **2.2791% OF THE $83.330 MARK — INSIDE RULE 7's 3% FLOOR.** CHECK RULE 7 BEFORE PLACING, RE-STRIKE ON A LIVE RTH QUOTE (rule 13), AND IF BOTH RULES CANNOT BE SATISFIED AT ONCE, REPORT THE CONFLICT — DO NOT SILENTLY PICK ONE.**
+- ⚠ **(ii) TO THE SAME RUN: RE-READ GEHC's RULE-7 GAP (5.4314%, breach price $81.2412, room $4.526/sh) AND MCD's RULE-3 BREACH (20.5132%) AND REPORT BOTH DIRECTIONS AGAINST A LIVE PRINT, NOT AGAINST THIS CARRIED SETTLE.**
+- ⚠⚠ **(iii) TO THE SAME RUN, AND SCHEDULE AGAINST THE REAL BELL: 11/27 CLOSES **13:00 ET**. THE 13:07 MIDDAY RUN WILL FIRE AFTER THE CLOSE AND THE 16:00 EOD DOES NOT EXIST. THAT MAKES THE MARKET-OPEN RUN THE *ONLY* IN-SESSION RUN ON FRIDAY — it must do the rule-5/6/7 work for the whole day, not defer any of it.**
+- ⚠ **(iv) TO THE SAME RUN: CONFIRM OR REVISE THE PHASE LEAD AGAINST THE 13:00 HALF-DAY SETTLE, AND STATE WHICH SPY BASIS WAS USED. Carried: +7.1888 pts on $776.34 / +7.1191 on $775.75. DO NOT FILE AN INTRADAY LEAD AS A RESULT — three consecutive runs have had to cut one.**
+- ⚠⚠ **(v) TO THE 11/27 WEEKLY REVIEW (due into the 13:00 ET bell): no review owed in arrears (11/20 filed). It must adjudicate, in this order: **DECISION 13** (with 11/26's 11-name defensive screen as primary exhibit — both options now shown flawed), decision 8, decision 12, the **RULE 4-vs-7 GEOMETRY DEFECT now numerically live for the next session**, the **SPY PHASE BASIS ($776.34 vs $775.75)** together with the disputed 11/24 close ($718.78 vs $718.91), the TARIFF ANNEX FINDING (CLX 10.3686% of equity), tooling 16 and 17, the Perplexity credit (13th session), the November EOD fault (FOURTEEN owed), the rule-5 schedule defect, and NEWLY the **CALENDAR-BLIND SCHEDULER**.**
+- ⚠⚠ **(vi) TO THE OWNER, OUTRANKING EVERY MARKET LINE ABOVE: DECISION 13 IS 25 SESSIONS OLD AND HAS COST THE DESK A FULL WEEK OF DEPLOYMENT. ⚠ ALSO ONE-LINE: PERPLEXITY CREDIT, 13th SESSION OF HTTP 401.**
+- ✓ **(vii) STILL LIVE, UNCHANGED: ANY RUN THAT STAGES TSCO MUST HAVE DECISION 13 **AND** DECISION 12 IN HAND (TSCO is XLY). Last struck on the 11/25 settle: 3.94:1 basis B, 0.41:1 on the $42 PT. NOT re-struck today — no live price exists to strike it against.**
+- ✓ **(viii) HSY REMAINS THE NAMED #1 IDEA IF AND ONLY IF DECISION 13 ARRIVES — $182.57 ref, $164.31 stop, 3.12:1 basis B, XLP. RE-STRIKE LIVE BEFORE SIZING (rule 13) AND RE-READ THE S&P NEGATIVE OUTLOOK.**
+
+### Actions taken this run
+1. ✓✓ **ZERO ORDERS. No order placed, cancelled, modified or staged. All three `trailing_stop` orders remain `status: new`, `trail_percent: 10`, GTC, untouched by hand.**
+2. ✓✓ **ALL ELEVEN REQUIRED ENV VARS VERIFIED PRESENT BEFORE ANY WRAPPER CALL** (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, PERPLEXITY_API_KEY, PERPLEXITY_MODEL, RESEND_API_KEY, NOTIFY_FROM, NOTIFY_TO, GH_TOKEN, GH_REPO). ✓ **PAPER ENDPOINT CONFIRMED AND NOT TOUCHED; NO `.env` CREATED OR SOURCED.**
+3. ✓✓ **THE HOLIDAY WAS ESTABLISHED FIRST-PARTY *BEFORE* ANY TRADING LOGIC RAN — `clock.is_open: false` AND 11/26 ABSENT FROM `/calendar`. The routine's STEPS 4-5 were then correctly declared inapplicable rather than attempted against a closed book.**
+4. ⚠⚠ **RULE 15 DISCHARGED ON THE RUN'S OWN DELIVERABLE: A MARKET-OPEN EXECUTION ROUTINE FIRED ONTO A DAY WITH NO MARKET OPEN. THIS IS REPORTED, NOT PAPERED OVER, AND THE EXECUTION DELIVERABLE IS HANDED FORWARD BY NAME AND DATE TO THE **11/27 MARKET-OPEN** RUN — which handoff (iii) flags will be Friday's ONLY in-session run.**
+5. ⚠⚠ **A CARRIED HEADLINE NUMBER WAS RE-STRUCK AND CORRECTED *UPWARD* FOR THE FIRST TIME IN THREE RUNS, AND THE CORRECTION WAS TRACED TO ITS CAUSE RATHER THAN LEFT AS A DISCREPANCY: +7.1191 → **+7.1888 pts**, the entire gap attributable to a SPY basis of $775.75 against the $776.34 that `WEEKLY-REVIEW.md` states three times. BOTH CARRIED, NEITHER ADOPTED, ESCALATED AS A NEW OWNER ITEM.**
+6. ✓✓ **EVERY OTHER GATE REPRODUCED THE 08:43 PRE-MARKET TO THE LAST DECIMAL — deployed 41.9359%, MCD 20.5132%, CLX 10.3686%, GEHC 11.0541%, GEHC rule-7 gap 5.4314%, equity reconciled to the cent — AND IS REPORTED AS *CONFIRMATION ON A CLOSED DAY*, NOT DRESSED UP AS A FRESH FINDING. An independent recomputation that matches is the correct result here.**
+7. ✓✓ **THE RULE-6/7 TRAP WAS CONVERTED FROM A WARNING INTO A NUMBER FOR THE NEXT RUN: 7%-on-hwm lands GEHC at 2.2791% (INSIDE the floor), CLX at 6.9413% and MCD at 5.9634% (both clear). GEHC IS THE ONLY TRAPPED SLEEVE AND FRIDAY'S RUN NOW HAS THE ARITHMETIC IN HAND.**
+8. ⚠ **RULE 13 APPLIED BY *DECLINING* TO QUOTE: no live quote exists on a closed day, so `latestQuote` was never consulted. On 11/25 the same rule caught a frozen MCD quote field; today its correct output is silence.**
+9. ⚠ **`perplexity.sh` RE-CONFIRMED HTTP 401 A 13th CONSECUTIVE SESSION on a control query. No WebSearch fallback was run — a closed day generates no tradeable news and rule 14 cuts only against acting.**
+10. ✓ **A NEW SCHEDULING FAULT NAMED AND ESCALATED: THE SCHEDULER IS CALENDAR-BLIND. It fired a market-open execution routine on Thanksgiving, which is the mirror image of the November EOD fault that has never fired at all.**
