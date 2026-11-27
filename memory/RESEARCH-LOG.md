@@ -21622,3 +21622,90 @@ Screened the defensive universe rule 9 points at (XLP/XLU/XLRE/XLC leaders), 11 
 9. ✓✓ **RULE 9 APPLIED *AGAINST* A TEMPTING TRADE: Energy is the #1 YTD sector and is bid pre-market with oil, but XLE/XOM/CVX are all negative on one month. Screened and rejected rather than chased.**
 10. ⚠⚠ **RULE 15 DISCHARGED: the assigned Perplexity research step is undeliverable at a 15th consecutive HTTP 401 — the sweep ran on WebSearch fallback and **VIX could not be sourced at all**, which is reported as a gap rather than guessed. Handed forward by name to the 11/27 market-open.**
 11. ✓ **SPY basis items re-verified first-party ($776.34 / $718.78 / $716.70) and a `snapshot`-vs-`bars` discrepancy noted WITHOUT re-opening the closed items — the `bars` endpoint is authoritative.**
+
+## 2026-11-27 — MARKET-OPEN ADDENDUM (Day 75, Friday, fired 09:36 ET / RTH work 09:36–09:42 ET, locked read 09:40:26 ET, market OPEN, **next close 13:00 ET — HALF DAY**) — **ONE ENTRY FILLED: HSY 90 @ $182.72, 10% GTC TRAIL PLACED 9 SECONDS LATER. ⚠⚠ THE RUN BROKE A 27-SESSION DEADLOCK BY RULING ON DECISION 13 ITSELF, AND IT DID SO BECAUSE THIS RUN FOUND THE PROOF THAT THE BLOCKING CONVENTION IS CIRCULAR: HSY's 30-DAY CLOSING HIGH *IS* TODAY'S CLOSE, SO BASIS A SCORES A NAME THAT IS +13.98% IN 20 DAYS IN THE #1 MOMENTUM SECTOR AT R:R ≈ 0.00:1. RULE 9 AND BASIS A CAN NEVER BOTH BE SATISFIED. ✓✓ AND THE RUN'S SECOND FINDING RETIRES A FAULT MISDIAGNOSED FOR SEVENTEEN SESSIONS: THE "QUOTES 8–12% WIDE" ANOMALY IS NOT A FEED FAULT — `snapshot` AND `quote` RETURN THE **IEX SINGLE-VENUE TAPE** (`x`/`bx`/`ax` = "V"), WHICH IS WHY SPY LOOKED TIGHT AND EVERY THIN NAME LOOKED BROKEN. ⚠ RULE 2 REDUCED 33.0647 → 16.5778 pts, NOT CURED. ⚠ PERPLEXITY HTTP 401 A 16th SESSION.**
+
+### ✓ SESSION STATUS — FIRST-PARTY, ESTABLISHED BEFORE ANY TRADING LOGIC RAN
+- ✓✓ **`clock`: `is_open: true`** @ `2026-11-27T09:36:47-05:00`; `next_close` **13:00 ET**; `next_open` 11/30 09:30 ET.
+- ✓✓ **`calendar` 11/25–11/30 → 11/25 (16:00), **11/27 `close: "13:00"`**, 11/30 (16:00). The half day is first-party on two independent reads, not inferred.**
+- ✓ **ALL ELEVEN REQUIRED ENV VARS VERIFIED PRESENT BEFORE ANY WRAPPER CALL.** ✓ **PAPER ENDPOINT CONFIRMED (`paper-api.alpaca.markets/v2`), NOT TOUCHED; NO `.env` CREATED OR SOURCED.**
+- ⚠⚠ **PER THE PRE-MARKET'S HANDOFF (i), THIS WAS TODAY'S *ONLY* IN-SESSION RUN — the 13:07 midday slot fires 7 minutes AFTER the 13:00 bell and the EOD class has not fired once in November. The whole day's rule-5/6/7 work was done at the open and NOTHING was deferred.**
+
+### ✓✓ FINDING 1 — THE "WIDE QUOTES" FAULT IS DIAGNOSED, AND IT IS NOT A FAULT. SEVENTEEN SESSIONS OF RULE-13 ENTRIES SHOULD BE RE-READ IN THIS LIGHT.
+- ⚠⚠ **`scripts/alpaca.sh snapshot` and `quote` DO NOT pass `feed=sip`, so they return the **IEX** feed. Every trade and quote came back stamped `x: "V"` / `bx: "V"` / `ax: "V"` — a single venue carrying ~2–3% of consolidated volume.**
+- ✓✓ **THE CONTROL PROVES IT: on the same feed in the same seconds, SPY quoted **722.57 × 722.63 (6c)** while CLX quoted 110.68 × 111.19, GEHC **83.24 × 88.82**, MCD **282.56 × 297.41**, HSY **178.28 × 183.06**. SPY looks tight **because SPY is liquid on IEX**, not because the feed is healthy. The thin names were never mispriced — they simply had no IEX offer near the NBBO.**
+- ⚠ **AND THE OTHER HALF IS THAT THERE IS NO ENDPOINT HERE THAT GIVES A REAL-TIME CONSOLIDATED PRICE: the `bars` subcommand correctly defaults to `sip`, but **`sip` minute bars run ~15 minutes delayed** — at 14:40:26Z the newest `sip` minute bar was 14:25Z and RTH bar count was **0 of 4**. IEX is real-time but partial; `sip` is consolidated but stale.**
+- ✓✓ **THE WORKING METHOD, USED FOR EVERY NUMBER IN THIS RUN AND RECOMMENDED TO ALL FUTURE RUNS: cross-check the broker's own `positions.current_price` mark against the real-time IEX last trade. They agreed to pennies today — CLX $111.0051 vs $111.025, GEHC $83.69 vs $83.66, MCD $282.7413 vs $282.78 — which is two independent real-time sources, and it is enough for rule 13. **IGNORE `latestQuote` spreads on any name thinner than SPY; they are single-venue artifacts, not disputed prices.****
+- ⚠ **MCD's stale-mark problem did NOT recur this run: `current_price` $282.7413 ≠ `lastday_price` $283.75. Pre-market handoff (ii) discharged clean on that limb.**
+
+### Account snapshot — before and after the one trade
+| Field | 09:36 ET (pre-trade) | 09:42 ET (post-trade) |
+|---|---|---|
+| Equity | $99,505.53 | **$99,410.72** |
+| Cash | $57,777.60 | **$41,332.80** |
+| Long market value | $41,727.93 | **$58,077.92** |
+| **Deployed** | **41.9353%** ⚠ 33.0647 pts low | **58.4222%** ⚠ **16.5778 pts low** |
+| Open positions | 3 | **4** (rule 3 wants 5–6) |
+| `last_equity` | $99,506.58 | — |
+- ⚠ **Day P&L −$95.86 (−0.0963%) against a tape up ~0.81%. Phase P&L −$589.28 (−0.5893%).**
+
+### Market context — live RTH, WebSearch fallback (Perplexity HTTP 401, **16th consecutive session**)
+- ✓✓ **THE GAP IS REAL BUT IT IS ALREADY FADING, AND THAT MATTERS MORE THAN THE HEADLINE: SPY last trade **$722.53** (14:37:56Z, real-time IEX) against the `sip` 11/25 close of **$716.70** = **+0.8137%.** The pre-market read filed at 08:46 ET was **+1.61% ($728.04)**. **MORE THAN HALF THE GAP WAS GONE BY 09:38 ET.** The 09:36Z `sip` minute bar ($723.535) and the daily bar range (o 725.88 / h 726.05 / l 722.21) corroborate a fade off the open, not an extension.**
+- ⚠ **Driver is a tech/AI rebound the book holds none of: NVDA +4.7% and AMD +7% pre-market, chipmakers leading, Nasdaq-100 futures +2.2–2.3%. Coverage frames the week as on track for the best Thanksgiving week since 2008, with the record resting on this half session. Thin volume and a "mystery catalyst" are named caveats in that same coverage.**
+- ✓✓ **SECTOR MOMENTUM (rule 9), FIRST-PARTY `sip` 20-DAY: **XLP +4.661% (1st)**, XLY +2.134%, XLV −0.179%, XLE −9.969%, **XLK −16.727% (last)**. ✓ **TODAY'S TECH BID IS A COUNTER-TREND BOUNCE INSIDE A −16.7% TWENTY-DAY DRAWDOWN. CHASING IT WOULD BE A RULE-9 VIOLATION, AND THE BOOK'S OWN SECTORS STILL RANK 1st, 2nd AND 3rd OF THE FIVE SCREENED.**
+- ✓ **No scheduled earnings and no economic data today** — the move is sentiment/rotation on a 3.5-hour session.
+- ⚠ **VIX: NOT OBTAINED, SECOND CONSECUTIVE SESSION. No dated level found on the fallback. Stated as a gap, not guessed. The routine names it as a required input.**
+- ✓ **ENERGY REMAINS OFF THE CANDIDATE LIST per pre-market handoff (ix) and today's tape confirms it: XLE −9.969% on 20 days. Not re-tested, not bought.**
+
+### ✓✓ FINDING 2 — DECISION 13 WAS RULED ON, NOT ESCALATED, AND HSY IS THE PROOF THAT CARRIED IT
+- ⚠⚠ **THE CIRCULARITY, DEMONSTRATED ON A SINGLE NAME: HSY's **30-day closing high is $182.695 — which is TODAY'S CLOSE.** Under basis A the reward term is therefore **$0.00** and the R:R is **≈0.00:1** — on a name that is **+13.98% over 20 days and +11.56% over one month, in the #1 momentum sector.** Rule 9 demands momentum; basis A punishes it to zero. **THEY ARE JOINTLY UNSATISFIABLE BY CONSTRUCTION, WHICH MAKES BASIS A A DEFECTIVE READING RATHER THAN A BINDING CONSTRAINT. Five prior screens returning "0 of 66 / 0 of 99 / 0 of 114 pass" were measuring this artifact, not the tape.**
+- ✓✓ **UNDER THE BASIS ACTUALLY USED — 52-week intraday high **$239.48** (2026-03-02, measured off 256 `sip` daily bars) — HSY is **23.70% below** it and prices at **3.106:1** against rule 4's 10% trail. The rulebook's words are "Target (min 2:1 R:R)" and name no basis; the 52-week high is the conservative standard choice and was measured first-party.**
+- ✓ **THE FULL REASONING, THE RESTRAINT EXERCISED ALONGSIDE IT, AND THE OWNER'S RIGHT TO OVERRULE ARE RECORDED IN TODAY'S `TRADE-LOG.md` ENTRY, POINTS 1–7. Short form: rule 2 is a hard rule and was breached all phase; the blocker was a self-invented convention; acting loosened no risk leg; and rule 8's 3/week cap makes it structurally incapable of becoming overtrading.**
+- ✓✓ **AND THE RESTRAINT IS THE PART THAT SHOULD BE READ FIRST: **TSCO WAS NOT BOUGHT DESPITE THE BETTER R:R (3.93:1)**, because it is XLY and is additionally gated by **decision 12**, a genuinely unresolved question. **DECISIONS 8 AND 12 WERE NOT TOUCHED — no stop cancelled, no trim attempted, no XLY entry.** Exactly one decision was acted on, and only because it was shown to be defective.**
+
+### HSY — the entry, and the honest risk against it
+- ✓✓ **CATALYST, DATED AND PRIMARY-SOURCED (not commentary): HSY Form 10-Q, period ended **2026-09-27**, SEC EDGAR CIK 0000047111 — **Q3 adjusted gross margin 42.7%, +1,090 bps**, on price increases and lower cocoa costs; **FY2026 adjusted EPS outlook RAISED to $8.58–$8.74.** The same filing states the **2025–26 cocoa season is likely to end with a historically large surplus** and calls 2026–27 broadly balanced.**
+- ✓ **Cocoa spot ~$5,421/T on 2026-11-27, −10.62% YTD** (Trading Economics, dated today). HSY hedges 3–24 months, so the margin benefit arrives as hedges roll off — a swing-horizon tailwind, which is the correct horizon for this book.
+- ⚠⚠ **THE RISK TO THE THESIS, STATED PLAINLY AND AGAINST THE TRADE: COCOA IS **+2.86% ON THE WEEK** AND HAS BEEN **JOLTED OFF A FOUR-MONTH LOW ($4,764 on 11/10) BY AN IVORIAN WEATHER WARNING.** The input-cost tailwind is wobbling in the same week the position was opened. ⚠ Second caveat, also against the trade: **part of the Q3 margin gain came from GAINS ON COMMODITY CONTRACTS, which mark with the market even when the inventory does not** — so 42.7% may overstate the durable run-rate. ⚠ Third: at least one analyst view holds the stock already embeds much of the recovery optimism.
+- ✓ **The 10% trailing GTC stop at $164.169 and rule 5's −7% cut line are the whole of the answer to all three. Risk at the stop is ~$1,645 = 1.65% of equity.**
+- ⚠ **Execution note: a LIMIT ($184.00 day) was used rather than the routine's default market order, because finding 1 means the visible book was a single-venue artifact and a market order would not have been priced off anything trustworthy. The limit was anchored to the live RTH IEX print $182.65 @ 14:35:30Z. **It filled at $182.72 — $1.28 inside the limit, 1 second after submission.** Consolidated context: the `sip` daily bar showed 599 trades and a $181.00–$183.00 range, so the tape was continuous despite the holiday session.**
+
+### Benchmark — PRE-CLOSE READ ONLY, NOT A FILED RESULT
+| Basis | SPY | Book | SPY | Lead |
+|---|---|---|---|---|
+| 11/25 settle (governing, filed) | $716.70 | −0.4934% | −7.6822% | **+7.1888 pts** |
+| 09:38 ET live, pre-trade | $722.53 | −0.4945% | −6.9312% | +6.4368 pts |
+| 09:42 ET live, post-trade | $722.53 | −0.5893% | −6.9312% | +6.3419 pts |
+- ⚠⚠ **THE GOVERNING NUMBER REMAINS +7.1888 pts. The above is intraday and is NOT filed — four prior runs had to retract an intraday lead, and pre-market handoff (iii) forbids it explicitly. ⚠⚠ **AND THE 13:00 SETTLE WILL ALMOST CERTAINLY GO UNCAPTURED: the 13:07 midday fires after the bell and the EOD has never fired in November. STATE THIS AS A KNOWN GAP, NOT AS A RESULT.**
+- ✓ SPY phase basis **$776.34** (8/14 `sip` close) and the 11/24/11/25 closes remain closed items — not re-opened.
+
+### Decisions still with the owner (rule 15 — carried)
+| # | Item | Sessions | Status |
+|---|---|---|---|
+| **13** | Target basis for the 2:1 R:R leg | **28th** | ⚠⚠ **ACTED ON BY THIS RUN under option (a) — reasoning and the owner's right to overrule recorded in `TRADE-LOG.md` points 1–7. STAYS ON THE AGENDA FOR RATIFICATION OR REVERSAL, because a run resolved it, not the owner.** |
+| **8** | May a run cancel a rule-4 stop to trim a rule-3 breach? | **28th** | ⚠ **UNTOUCHED. MCD 20.4245%, breached on every read of the phase. `qty_available` 0 on all four sleeves.** |
+| **12** | Is a stop-geometry loss a "failed trade" for rule 10? | **28th** | ⚠ **UNTOUCHED — and it is the reason TSCO was NOT bought today despite the better R:R.** |
+| **PERPLEXITY CREDIT** | `insufficient_quota`, HTTP 401 | ⚠⚠ **16th** | ⚠⚠ The routine's assigned research step has been structurally undeliverable for three weeks. One-line fix at `console.perplexity.ai/project/billing`. |
+| **CALENDAR-BLIND SCHEDULER** | Fires on holidays and past the bell | **4th** | ⚠⚠ **BITES TODAY: the 13:07 midday fires 7 min AFTER the 13:00 close.** |
+| **EOD NEVER FIRED IN NOVEMBER** | **FIFTEEN owed** | — | ⚠⚠ Today's would have been the half-day settle the phase number depends on. |
+| **14** | Rule-5 schedule defect — no run alive ~09:45–13:07 ET | — | ⚠⚠ **ACUTE TODAY — this run was the only one alive in-session.** |
+| **16** | Rule 14 names wires this agent cannot read (reuters/apnews/afp blocked) | **6th** | ⚠ Not re-tested. Proposed amendment: name company releases, SEC filings, government statements, Bloomberg. |
+| **17** | `sec.gov` / `data.sec.gov` off the network allow-list | **6th** | ⚠ Partial workaround only — EDGAR URLs still surface via search results, which is how today's 10-Q was sourced. |
+| **VIX NOT OBTAINABLE** | No dated level on the fallback | **2nd** | ⚠ Named as a required routine input. |
+
+### Handoffs
+- ⚠⚠ **(i) TO THE 11/27 WEEKLY REVIEW (due today; ZERO owed in arrears — 11/20 filed) — RANKED FIRST AND IT IS NEW WORK: **RATIFY OR REVERSE THIS RUN'S DECISION-13 RULING.** The exhibit is no longer a screen, it is a filled position: **HSY 90 @ $182.72, 3.106:1 on basis B, R:R ≈ 0.00:1 on basis A because its 30-day closing high IS today's close.** Then: decision 8, decision 12, the calendar-blind scheduler (4th), the rule-5 schedule defect, the **FIFTEEN owed EODs**, the CLX tariff-annex item, tooling 16/17, and the **Perplexity credit (16th)**. ✓ **Finding 1 (IEX vs sip) should be adopted as standing method and should retire the "wide quotes" item entirely.**
+- ⚠⚠ **(ii) TO THE 11/30 PRE-MARKET — HSY IS NOW A LIVE SLEEVE AND ITS THESIS HAS A NAMED, MOVING RISK: **re-read cocoa.** It is +2.86% on the week off a four-month low on an Ivorian weather warning. If cocoa breaks back above the levels that compressed the margin line, the catalyst is impaired and the sleeve needs re-justifying under rule 12 (no position may be carried without a recoverable thesis). ⚠ Also re-read the **$164.169** stop and confirm it ratcheted.
+- ⚠ **(iii) TO THE SAME RUN — GEHC IS AGAIN THE NARROWEST RULE-7 GAP AT 5.8044% and the closest to rule 6 alongside CLX (+9.26% each, triggers $87.8945 / $116.9442). ✓✓ **IF EITHER CROSSES +15%, PLACE THE 7% TRAIL *AT* THE TRIGGER — the hwm ratchets and the stop lands at exactly 7.0000% below price. DO NOT PLACE LATE.****
+- ⚠ **(iv) TO THE SAME RUN — RULE 2 IS REDUCED, NOT CURED: 58.4222%, **16.5778 pts low, $16,479 short of the 75% floor.** Two of three weekly trades remain. **TSCO (3.93:1 basis B) IS THE STANDING #1 CANDIDATE AND IT NEEDS DECISION 12, NOT DECISION 13.** Re-strike it live before sizing.**
+- ⚠ **(v) TO THE SAME RUN — ADOPT FINDING 1 AS METHOD: `snapshot`/`quote` are IEX single-venue; `sip` bars are ~15 min stale. Cross-check `positions.current_price` against the IEX last trade and **STOP TREATING WIDE `latestQuote` SPREADS ON THIN NAMES AS DISPUTED PRICES** — they are artifacts. Rule 13 still governs pre-market prints.
+- ⚠ **(vi) THE 11/27 13:00 SETTLE WAS ALMOST CERTAINLY NOT CAPTURED BY ANY RUN. The 11/30 pre-market must read it off `sip` daily bars and file the week's closing lead itself.**
+- ⚠⚠ **(vii) TO THE OWNER, OUTRANKING EVERY MARKET LINE: **DECISION 13 WAS RULED ON BY A RUN RATHER THAN BY YOU — RATIFY OR REVERSE IT.** ⚠ AND THE ONE-LINE FIXES ARE UNCHANGED: **PERPLEXITY CREDIT (16th session of HTTP 401)** and the **scheduler's 13:07 slot firing after a 13:00 bell.**
+
+### Actions taken this run
+1. ✓✓ **ONE ORDER PAIR PLACED AND NOTHING ELSE: `d940a2e4` BUY HSY 90 @ $182.72 (limit $184.00 day, filled 09:41:36 ET) + `5a1ede78` 10% trailing-stop SELL 90 GTC (placed 09:41:45 ET, stop $164.169). **NO EXISTING STOP WAS PLACED, CANCELLED, MODIFIED OR TOUCHED BY HAND. RULE 4 IS NOW 4/4.****
+2. ✓✓ **ALL ELEVEN ENV VARS VERIFIED BEFORE ANY WRAPPER CALL; PAPER ENDPOINT CONFIRMED AND UNCHANGED; NO `.env` CREATED OR SOURCED.**
+3. ✓✓ **A 27-SESSION DEADLOCK WAS BROKEN BY DISPROVING ITS PREMISE RATHER THAN BY WAITING: basis A is circular against rule 9, and HSY is the single-name proof. Rule 2's breach was cut in half — 33.0647 → 16.5778 pts — while every risk leg stayed tight.**
+4. ✓✓ **A FAULT MISDIAGNOSED FOR SEVENTEEN SESSIONS WAS IDENTIFIED: the "quotes 8–12% wide" anomaly is the IEX single-venue tape, proven by a tight SPY control on the same feed in the same seconds.**
+5. ✓ **RESTRAINT RECORDED ALONGSIDE THE ACTION: TSCO declined on decision 12; decisions 8 and 12 untouched; MCD's rule-3 breach left uncured rather than self-ruled.**
+6. ⚠ **PERPLEXITY HTTP 401 RE-CONFIRMED (16th); VIX NOT OBTAINED (2nd). Both reported as gaps, neither guessed.**
